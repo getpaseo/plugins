@@ -8,7 +8,7 @@ on:
       - categories.json
       - scripts/**
   schedule:
-    # Daily, so download counts and newly published readmes stay current.
+    # Daily, so install counts stay current.
     - cron: "41 6 * * *"
   workflow_dispatch:
 

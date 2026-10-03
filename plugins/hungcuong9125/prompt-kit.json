@@ -1,14 +1,9 @@
 {
-  "id": "prompt-kit",
-  "package": "paseo-prompt-kit",
-  "version": "0.6.0",
-  "integrity": "sha512-eiagOY1OokDx2iihfe3Vjh2dgKKP6IsBKbJYbfhM+TXw3aU7duV/rs/TUnBSeeWAk0cEsVg2Jd+EkeaPM8IJdA==",
+  "id": "hungcuong9125/prompt-kit",
   "repository": {
     "url": "https://github.com/hungcuong9125/paseo-prompt-kit"
   },
-  "categories": [
-    "timeline-and-composer"
-  ],
+  "categories": ["timeline-and-composer"],
   "submittedAt": "2026-09-22",
   "submittedBy": "hungcuong9125",
   "reviewedAt": "2026-10-03",
@@ -18,5 +13,12 @@
       "https://raw.githubusercontent.com/hungcuong9125/paseo-prompt-kit/main/docs/images/settings-provider-cli.png",
       "https://raw.githubusercontent.com/hungcuong9125/paseo-prompt-kit/main/docs/images/settings-direct-api.png"
     ]
+  },
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-prompt-kit",
+    "version": "0.6.0",
+    "resolved": "https://registry.npmjs.org/paseo-prompt-kit/-/paseo-prompt-kit-0.6.0.tgz",
+    "integrity": "sha512-eiagOY1OokDx2iihfe3Vjh2dgKKP6IsBKbJYbfhM+TXw3aU7duV/rs/TUnBSeeWAk0cEsVg2Jd+EkeaPM8IJdA=="
   }
 }

@@ -4,6 +4,7 @@ export interface SubmissionIssue {
   package: string;
   categories: string[];
   id?: string;
+  pluginPath?: string;
 }
 
 /** Parses the body GitHub renders from .github/ISSUE_TEMPLATE/submit-plugin.yml. */
@@ -24,14 +25,25 @@ export function parseSubmissionIssue(body: string, categories: Category[]): Subm
     return value === "_No response_" ? "" : value;
   };
 
-  const pkg = text("npm package").replace(/^npm:/, "");
-  if (!pkg) throw new Error("the issue has no npm package");
+  const pkg = (text("plugin source") || text("npm package")).replace(/^npm:/, "");
+  if (!pkg) throw new Error("the issue has no plugin source");
 
-  const labels = new Map(categories.map((category) => [category.label.toLowerCase(), category.slug]));
-  const checked = [...text("categories").matchAll(/^- \[[xX]\] (.+)$/gm)].map((match) => match[1].trim());
-  const slugs = checked.map((label) => labels.get(label.toLowerCase())).filter((slug): slug is string => Boolean(slug));
+  const labels = new Map(
+    categories.map((category) => [category.label.toLowerCase(), category.slug]),
+  );
+  const checked = [...text("categories").matchAll(/^- \[[xX]\] (.+)$/gm)].map((match) =>
+    match[1].trim(),
+  );
+  const slugs = checked
+    .map((label) => labels.get(label.toLowerCase()))
+    .filter((slug): slug is string => Boolean(slug));
   if (slugs.length === 0) throw new Error("the issue has no category ticked");
 
   const id = text("listing id");
-  return { package: pkg, categories: slugs, ...(id ? { id } : {}) };
+  return {
+    package: pkg,
+    categories: slugs,
+    ...(id ? { id } : {}),
+    ...(text("plugin path") ? { pluginPath: text("plugin path") } : {}),
+  };
 }

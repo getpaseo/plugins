@@ -4,7 +4,10 @@ import { browseUrl, githubOwner, normalizeRepositoryUrl, parseRepository } from 
 
 test("normalizes the repository URL shapes npm accepts", () => {
   const expected = "https://github.com/tomgrin10/paseo-defer";
-  assert.equal(normalizeRepositoryUrl("git+https://github.com/tomgrin10/paseo-defer.git"), expected);
+  assert.equal(
+    normalizeRepositoryUrl("git+https://github.com/tomgrin10/paseo-defer.git"),
+    expected,
+  );
   assert.equal(normalizeRepositoryUrl("git@github.com:tomgrin10/paseo-defer.git"), expected);
   assert.equal(normalizeRepositoryUrl("ssh://git@github.com/tomgrin10/paseo-defer.git"), expected);
   assert.equal(normalizeRepositoryUrl("github:tomgrin10/paseo-defer"), expected);
@@ -21,14 +24,26 @@ test("links to the plugin directory inside a monorepo", () => {
     url: "git+https://github.com/omercnet/paseo-plugins.git",
     directory: "paseo-dracula",
   });
-  assert.deepEqual(source, { url: "https://github.com/omercnet/paseo-plugins", directory: "paseo-dracula" });
-  assert.equal(browseUrl(source!), "https://github.com/omercnet/paseo-plugins/tree/HEAD/paseo-dracula");
-  assert.equal(browseUrl({ url: "https://github.com/tomgrin10/paseo-defer" }), "https://github.com/tomgrin10/paseo-defer");
+  assert.deepEqual(source, {
+    url: "https://github.com/omercnet/paseo-plugins",
+    directory: "paseo-dracula",
+  });
+  assert.equal(
+    browseUrl(source!),
+    "https://github.com/omercnet/paseo-plugins/tree/HEAD/paseo-dracula",
+  );
+  assert.equal(
+    browseUrl({ url: "https://github.com/tomgrin10/paseo-defer" }),
+    "https://github.com/tomgrin10/paseo-defer",
+  );
   assert.equal(
     browseUrl({ url: "https://gitlab.com/acme/plugins", directory: "review" }),
     "https://gitlab.com/acme/plugins/-/tree/HEAD/review",
   );
-  assert.equal(browseUrl({ url: "https://forge.example/acme/plugins", directory: "review" }), "https://forge.example/acme/plugins");
+  assert.equal(
+    browseUrl({ url: "https://forge.example/acme/plugins", directory: "review" }),
+    "https://forge.example/acme/plugins",
+  );
   assert.equal(parseRepository(undefined), null);
 });
 

@@ -1,0 +1,23 @@
+{
+  "id": "gpambrozio/model-pricing",
+  "repository": {
+    "url": "https://github.com/gpambrozio/paseo-plugins/tree/HEAD/model-pricing",
+    "commit": "08e75003b287208ef804f3d31b2fda2597f69dce"
+  },
+  "categories": ["usage-and-pricing"],
+  "submittedAt": "2026-09-19",
+  "submittedBy": "gpambrozio",
+  "reviewedAt": "2026-10-03",
+  "listing": {
+    "screenshots": [
+      "https://raw.githubusercontent.com/gpambrozio/paseo-plugins/main/model-pricing/docs/screenshot.png"
+    ]
+  },
+  "artifact": {
+    "kind": "npm",
+    "package": "@gpambrozio/paseo-model-pricing",
+    "version": "0.3.0",
+    "resolved": "https://registry.npmjs.org/@gpambrozio/paseo-model-pricing/-/paseo-model-pricing-0.3.0.tgz",
+    "integrity": "sha512-jLfC6iCLOwNACiili8nw3/qmBymoj6YHitMeGCa2RggiMdUhT6n+INRsSjoTs2kNzeYMftMfQ3MZJXeLLF1opA=="
+  }
+}

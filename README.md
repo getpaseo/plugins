@@ -1,76 +1,74 @@
 # Paseo plugins
 
-The registry behind [paseo.sh/plugins](https://paseo.sh/plugins). Every listed plugin is an npm package pinned to one reviewed version.
+The reviewed plugin registry behind [paseo.sh/plugins](https://paseo.sh/plugins).
+Each record pins an npm artifact or a Git commit. Merge approves that exact artifact.
 
-## How a plugin gets listed
+The [open registry protocol](PROTOCOL.md) is the client contract. Companies can host
+an internal registry by serving the same static JSON documents.
 
-1. Publish the package to npm with `paseo-plugin.json` in it. Optionally add `paseo-listing.json` (see below).
-2. Open a [submission issue](../../issues/new?template=submit-plugin.yml) with the package name and categories.
-3. A workflow pins the current version, verifies npm provenance when the package has it, and opens a pull request with the record.
-4. A maintainer reviews the published tarball and merges. Merging is the approval.
-5. The site picks the plugin up on the next publish run.
+## Submit a plugin
 
-New versions are not listed automatically. A daily workflow opens a pull request per new version with the diff between the two tarballs, and the listing moves only when that pull request is merged. Until then the site keeps showing, and the install command keeps pinning, the reviewed version.
+1. Publish an npm package containing `paseo-plugin.json`, or tag a GitHub repository
+   containing it. Monorepos can specify a relative plugin path.
+2. Open the submission issue with the source and categories.
+3. The workflow pins an exact artifact and opens a review PR. npm provenance
+   establishes source ownership when available. Otherwise the submitter must own
+   the declared GitHub repository, or be a public member of its organization.
+4. A maintainer reviews the artifact and merges. New versions go through the same
+   review, in a separate bump PR with the artifact diff.
+
+Git updates follow the newest version-sorted tag, including prerelease tags. They
+never follow HEAD. Tags are checked against the pinned commit during validation;
+a moved tag fails validation instead of silently changing the approved artifact.
 
 ## Records
 
-One file per plugin in `plugins/<id>.json`:
+Keep records in `plugins/<owner>/<slug>.json`. The owner is the GitHub repository
+owner, even when the npm publisher has a different name. `artifact` is the install
+pin; `repository` is the browseable source and optional proven source commit.
+
+Humans edit categories and optional `listing` overrides (`name`, HTTPS PNG `icon`,
+HTTPS `screenshots`). The bot writes artifact pins and review dates. The published
+index combines records with metadata and README content from their pinned artifacts.
+
+A plugin can ship a separate `paseo-listing.json` next to its strict manifest:
 
 ```json
 {
-  "id": "dracula",
-  "package": "@omercnet/paseo-dracula",
-  "version": "1.2.0",
-  "integrity": "sha512-…",
-  "repository": {
-    "url": "https://github.com/omercnet/paseo-plugins/tree/HEAD/paseo-dracula",
-    "commit": "d7b3e654f364b5be72edf6fd1d914a3750b53082"
-  },
-  "categories": ["themes"],
-  "submittedAt": "2026-09-17",
-  "submittedBy": "omercnet",
-  "reviewedAt": "2026-10-03"
-}
-```
-
-- `version` and `integrity` are the pin. They come from npm and change only through a bump pull request.
-- `repository.url` is what the package declares. `repository.commit` is present only when npm provenance proves which commit built the tarball. Without provenance, review the tarball; the repository is a claim.
-- `categories` and the optional `listing` block are the only fields a person edits. `listing` overrides `name`, `icon`, and `screenshots` for packages that do not ship `paseo-listing.json`. Values must be `https` URLs; the icon must be a PNG.
-
-Everything else the site shows (name, description, author, readme, icon, screenshots, download counts) is read from npm at build time, at the pinned version, and never committed here.
-
-## What the package can ship
-
-`paseo-listing.json` next to `paseo-plugin.json`:
-
-```json
-{
-  "name": "Dracula",
+  "name": "Example",
   "icon": "icon.png",
-  "screenshots": ["docs/screenshot.png", "https://example.com/wide.png"],
-  "readme": "LISTING.md"
+  "screenshots": ["docs/screenshot.png"],
+  "readme": "README.md"
 }
 ```
 
-Relative paths resolve inside the published tarball at the pinned version. `readme` defaults to the package `README.md`. This is a separate file because the daemon rejects unknown fields in `paseo-plugin.json`.
-
-## Published output
-
-`node scripts/build.ts` writes `dist/`, deployed to GitHub Pages:
-
-- `index.json`: every plugin's summary, author, and download counts, plus the category list. The site searches this client-side.
-- `plugins/<id>.json`: the summary plus the readme markdown.
+Relative assets resolve to the pinned artifact. Record overrides win over this file.
 
 ## Maintainers
 
+Node 22.18+ runs these TypeScript scripts with no dependencies:
+
 ```sh
-node scripts/add.ts @acme/paseo-review --categories git-and-code-review   # pin and write a record locally
-node scripts/validate.ts --online                                          # check records against npm
-node scripts/bump.ts --dry-run                                             # see pending bumps and write diffs to .tmp/diffs
-node scripts/build.ts                                                      # generate dist/
 npm test
+npm run add -- @acme/paseo-example --categories utilities
+npm run add -- https://github.com/acme/example --plugin-path plugins/example --categories utilities
+npm run validate -- --online
+npm run bump -- --dry-run
+npm run build
 ```
 
-Node 22.18 or newer runs the TypeScript directly. There are no dependencies.
+The dry run prints proposed PR bodies and writes full diffs to `.tmp/diffs/`.
+No pending versions means no proposed bodies. Inline diffs are capped at 60,000
+characters; workflows retain the full diff artifact.
 
-Set the `PLUGINS_BOT_TOKEN` secret to a token with `contents` and `pull-requests` write access. Pull requests opened with the default `github.token` do not trigger the Validate workflow.
+`dist/index.json` and `dist/plugins/<owner>/<slug>.json` conform to PROTOCOL.md.
+`REGISTRY_URL` controls the advertised registry base. `INSTALLS_URL` defaults to
+`https://paseo.sh/api/plugins/installs`; an unavailable counter omits `installs`.
+Counts are advisory install requests, including git artifacts. No npm downloads
+are queried.
+
+Before enabling workflows, create labels `submission` and `bump`. Set
+`PLUGINS_BOT_TOKEN` with contents and pull-requests write access so bot PRs trigger
+Validate; the default workflow token does not trigger downstream workflows.
+Enable GitHub Pages with GitHub Actions as its source. Configure the public
+`plugins.paseo.sh` Worker route to front the documents when install counting is wanted.

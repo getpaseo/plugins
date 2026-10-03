@@ -27,7 +27,9 @@ export function normalizeRepositoryUrl(raw: string): string | null {
   }
   const scp = value.match(/^(?:[\w.-]+@)?([\w.-]+):([\w./-]+)$/);
   if (scp && !value.includes("://")) value = `https://${scp[1]}/${scp[2]}`;
-  value = value.replace(/^(ssh|git):\/\/(?:[\w.-]+@)?/, "https://").replace(/^http:\/\//, "https://");
+  value = value
+    .replace(/^(ssh|git):\/\/(?:[\w.-]+@)?/, "https://")
+    .replace(/^http:\/\//, "https://");
   let parsed: URL;
   try {
     parsed = new URL(value);

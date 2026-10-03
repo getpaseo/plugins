@@ -1,5 +1,8 @@
 /** Minimal `--flag value` and `--flag` parsing for the scripts. */
-export function parseArgs(argv: string[]): { positional: string[]; flags: Map<string, string | true> } {
+export function parseArgs(argv: string[]): {
+  positional: string[];
+  flags: Map<string, string | true>;
+} {
   const positional: string[] = [];
   const flags = new Map<string, string | true>();
   for (let i = 0; i < argv.length; i += 1) {

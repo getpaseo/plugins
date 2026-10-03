@@ -1,7 +1,6 @@
 import { createWriteStream } from "node:fs";
 import { pipeline } from "node:stream/promises";
 import { Readable } from "node:stream";
-import { downloadRanges, isoDate } from "./dates.ts";
 
 export interface VersionDoc {
   name: string;
@@ -27,35 +26,29 @@ export interface Provenance {
   commit: string;
 }
 
-export interface Downloads {
-  total: number;
-  lastMonth: number;
-}
-
 export interface NpmClient {
   packument(name: string): Promise<Packument>;
   /** A file from the published tarball at an exact version, or null when it is not in the package. */
   file(name: string, version: string, path: string): Promise<string | null>;
   /** Source facts from a verified publish attestation, or null when the version has none. */
   provenance(name: string, version: string): Promise<Provenance | null>;
-  downloads(name: string, createdAt: string): Promise<Downloads>;
   tarball(url: string, destination: string): Promise<void>;
 }
 
 const REGISTRY = "https://registry.npmjs.org";
 const CDN = "https://cdn.jsdelivr.net/npm";
-const DOWNLOADS = "https://api.npmjs.org/downloads/point";
 const USER_AGENT = "paseo-plugins-registry";
 
 const RETRY_ATTEMPTS = 4;
 
 export function createNpmClient(fetchImpl: typeof fetch = fetch): NpmClient {
-  // The downloads API rate-limits bursts with 429; back off and retry before giving up.
+  // Retry package hosts when rate limited.
   async function get(url: string): Promise<Response> {
     let response = await fetchImpl(url, { headers: { "User-Agent": USER_AGENT } });
     for (let attempt = 1; response.status === 429 && attempt < RETRY_ATTEMPTS; attempt += 1) {
       const retryAfter = Number(response.headers.get("retry-after"));
-      const delayMs = Number.isFinite(retryAfter) && retryAfter > 0 ? retryAfter * 1000 : 1000 * 2 ** attempt;
+      const delayMs =
+        Number.isFinite(retryAfter) && retryAfter > 0 ? retryAfter * 1000 : 1000 * 2 ** attempt;
       await new Promise((resolve) => setTimeout(resolve, delayMs));
       response = await fetchImpl(url, { headers: { "User-Agent": USER_AGENT } });
     }
@@ -78,27 +71,16 @@ export function createNpmClient(fetchImpl: typeof fetch = fetch): NpmClient {
     async file(name, version, path) {
       const response = await get(`${CDN}/${name}@${version}/${path}`);
       if (response.status === 404 || response.status === 403) return null;
-      if (!response.ok) throw new Error(`jsDelivr ${name}@${version}/${path} responded ${response.status}`);
+      if (!response.ok)
+        throw new Error(`jsDelivr ${name}@${version}/${path} responded ${response.status}`);
       return response.text();
     },
     async provenance(name, version) {
       const encoded = name.replace("/", "%2F");
-      const doc = await getJson<AttestationsDoc>(`${REGISTRY}/-/npm/v1/attestations/${encoded}@${version}`);
-      return doc ? parseProvenance(doc) : null;
-    },
-    async downloads(name, createdAt) {
-      const today = isoDate();
-      const totals = await Promise.all(
-        downloadRanges(createdAt, today).map(async ([start, end]) => {
-          const point = await getJson<{ downloads: number }>(`${DOWNLOADS}/${start}:${end}/${name}`);
-          return point?.downloads ?? 0;
-        }),
+      const doc = await getJson<AttestationsDoc>(
+        `${REGISTRY}/-/npm/v1/attestations/${encoded}@${version}`,
       );
-      const lastMonth = await getJson<{ downloads: number }>(`${DOWNLOADS}/last-month/${name}`);
-      return {
-        total: totals.reduce((sum, count) => sum + count, 0),
-        lastMonth: lastMonth?.downloads ?? 0,
-      };
+      return doc ? parseProvenance(doc) : null;
     },
     async tarball(url, destination) {
       const response = await get(url);
@@ -120,7 +102,9 @@ export function parseProvenance(doc: AttestationsDoc): Provenance | null {
       Buffer.from(attestation.bundle.dsseEnvelope.payload, "base64").toString("utf8"),
     ) as {
       predicate?: {
-        buildDefinition?: { resolvedDependencies?: { uri?: string; digest?: { gitCommit?: string } }[] };
+        buildDefinition?: {
+          resolvedDependencies?: { uri?: string; digest?: { gitCommit?: string } }[];
+        };
         materials?: { uri?: string; digest?: { sha1?: string } }[];
       };
     };

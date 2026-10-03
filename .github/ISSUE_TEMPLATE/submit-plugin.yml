@@ -1,20 +1,25 @@
 name: Submit a plugin
-description: List a published npm package on paseo.sh/plugins.
+description: List a pinned npm or GitHub plugin on paseo.sh/plugins.
 title: "Submit: "
 labels: ["submission"]
 body:
   - type: markdown
     attributes:
       value: |
-        The package must already be on npm and ship `paseo-plugin.json`. A bot pins the current version and opens a pull request; a maintainer reviews the published tarball before it is listed. Later versions are picked up automatically and reviewed the same way.
+        Publish an npm package or a tagged GitHub repository containing `paseo-plugin.json`. A bot pins the artifact and opens a pull request. A maintainer reviews each submission and update before it is listed.
   - type: input
     id: package
     attributes:
-      label: npm package
-      description: The exact name on npm.
+      label: Plugin source
+      description: An npm package name or https://github.com/owner/repository URL. Git repositories need a release tag.
       placeholder: "@acme/paseo-review"
     validations:
       required: true
+  - type: input
+    id: plugin-path
+    attributes:
+      label: Plugin path
+      description: Optional relative directory inside a Git repository.
   - type: checkboxes
     id: categories
     attributes:
@@ -36,5 +41,5 @@ body:
     id: listing-id
     attributes:
       label: Listing ID
-      description: Optional. The URL slug under paseo.sh/plugins/. Derived from the package name when empty.
+      description: Optional slug in owner/slug. The owner comes from the source repository.
       placeholder: review

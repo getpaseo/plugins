@@ -1,7 +1,11 @@
 import { execFileSync, type ExecFileSyncOptions } from "node:child_process";
 
 export function run(command: string, args: string[], options: ExecFileSyncOptions = {}): string {
-  return execFileSync(command, args, { encoding: "utf8", stdio: ["ignore", "pipe", "inherit"], ...options })
+  return execFileSync(command, args, {
+    encoding: "utf8",
+    stdio: ["ignore", "pipe", "inherit"],
+    ...options,
+  })
     .toString()
     .trim();
 }

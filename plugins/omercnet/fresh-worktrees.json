@@ -1,16 +1,10 @@
 {
-  "id": "fresh-worktrees",
-  "package": "@omercnet/paseo-fresh-worktrees",
-  "version": "2.2.0",
-  "integrity": "sha512-WRarzdfTbrZ36JfzmvX9HfnIYh6Pp+GV9TkoeVwM7I6f1MAEZ4gzPEmT51lWuUyMGvwTs2HFB7LthCa+VYs7IA==",
+  "id": "omercnet/fresh-worktrees",
   "repository": {
     "url": "https://github.com/omercnet/paseo-plugins/tree/HEAD/fresh-worktrees",
     "commit": "d7b3e654f364b5be72edf6fd1d914a3750b53082"
   },
-  "categories": [
-    "git-and-code-review",
-    "automation"
-  ],
+  "categories": ["git-and-code-review", "automation"],
   "submittedAt": "2026-09-18",
   "submittedBy": "omercnet",
   "reviewedAt": "2026-10-03",
@@ -19,5 +13,12 @@
       "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/fresh-worktrees/docs/images/fresh-worktrees-behind.png",
       "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/fresh-worktrees/docs/images/fresh-worktrees-settings.png"
     ]
+  },
+  "artifact": {
+    "kind": "npm",
+    "package": "@omercnet/paseo-fresh-worktrees",
+    "version": "2.2.0",
+    "resolved": "https://registry.npmjs.org/@omercnet/paseo-fresh-worktrees/-/paseo-fresh-worktrees-2.2.0.tgz",
+    "integrity": "sha512-WRarzdfTbrZ36JfzmvX9HfnIYh6Pp+GV9TkoeVwM7I6f1MAEZ4gzPEmT51lWuUyMGvwTs2HFB7LthCa+VYs7IA=="
   }
 }

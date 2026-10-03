@@ -2,27 +2,53 @@ name: Submission
 
 on:
   issues:
-    types: [opened, edited]
+    types: [opened, edited, labeled]
+  schedule:
+    - cron: "23 2,10,18 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: submissions
+  cancel-in-progress: false
 
 jobs:
   submit:
-    if: contains(github.event.issue.labels.*.name, 'submission')
+    if: github.event_name != 'issues' || (github.event.issue.state == 'open' && contains(github.event.issue.labels.*.name, 'submission'))
     runs-on: ubuntu-latest
     permissions:
       contents: write
       issues: write
       pull-requests: write
+    env:
+      GH_TOKEN: ${{ secrets.PLUGINS_BOT_TOKEN || github.token }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.PLUGINS_BOT_TOKEN || github.token }}
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: |
+      - name: Configure author and ensure the label exists
+        run: |
           git config user.name "paseo-plugins[bot]"
           git config user.email "plugins@paseo.sh"
-      - name: Pin the package and open a pull request
+          gh label create submission --color 0E8A16 --description "Plugin submission" --force
+          gh label create needs-maintainer --color D93F0B --description "Requires a maintainer decision" --force
+      - name: Pin, validate inline, and open or update review PRs
+        # submit.ts runs npm test and validate --online --changed before pushing/creating a PR,
+        # recording success in its body. GITHUB_TOKEN PRs do not trigger Validate.
         env:
-          # A bot token lets the created PR trigger Validate; github.token does not.
-          GH_TOKEN: ${{ secrets.PLUGINS_BOT_TOKEN || github.token }}
-          ISSUE_NUMBER: ${{ github.event.issue.number }}
-        run: node scripts/submit.ts
+          EVENT_ISSUE: ${{ github.event.issue.number }}
+        shell: bash
+        run: |
+          if [ -n "$EVENT_ISSUE" ]; then
+            issues="$EVENT_ISSUE"
+          else
+            issues=$(gh api --paginate 'repos/{owner}/{repo}/issues?labels=submission&state=open&per_page=100' --jq '.[] | select(has("pull_request") | not) | .number')
+          fi
+          failed=0
+          for issue in $issues; do
+            ISSUE_NUMBER="$issue" node scripts/submit.ts || failed=1
+          done
+          exit "$failed"

@@ -1,3 +1,5 @@
+import { createHash } from "node:crypto";
+import { validateForReview } from "./lib/review.ts";
 // Turns a submission issue into a pull request that adds the pinned record.
 // Runs from .github/workflows/submit.yml with ISSUE_NUMBER and GH_TOKEN set.
 import { pinGit } from "./lib/git-artifact.ts";
@@ -31,11 +33,29 @@ const issue = ghJson<{ body: string; author: { login: string }; title: string }>
   "body,author,title",
 ]);
 
+const branch = `submit/issue-${issueNumber}`;
+const previous = ghJson<Array<{ number: number; state: string; body: string; url: string }>>([
+  "pr",
+  "list",
+  "--head",
+  branch,
+  "--state",
+  "all",
+  "--json",
+  "number,state,body,url",
+])[0];
+const revision = `<!-- submission:${issueNumber}:${createHash("sha256").update(issue.body).digest("hex")} -->`;
+if (previous && (previous.state !== "OPEN" || previous.body.includes(revision))) {
+  console.log(`Submission already processed: ${previous.url}`);
+  process.exit(0);
+}
+
 function comment(body: string) {
   gh(["issue", "comment", issueNumber!, "--body", body]);
 }
 
 try {
+  git(["checkout", "--detach", "origin/main"]);
   const categories = readCategories();
   const known = categorySlugs(categories);
   const submission = parseSubmissionIssue(issue.body, categories);
@@ -81,11 +101,11 @@ try {
   if (existing.some((item) => item.id === record.id))
     throw new Error(`${record.id} is already listed`);
 
-  const branch = `submit/${record.id}`;
-  git(["checkout", "-B", branch]);
+  git(["checkout", "-B", branch, "origin/main"]);
   writeRecord(record);
   git(["add", recordPath(record.id)]);
   git(["commit", "-m", `Add ${id} (${record.id})`]);
+  const validation = validateForReview();
   git(["push", "--force", "--set-upstream", "origin", branch]);
 
   const provenance =
@@ -96,6 +116,8 @@ try {
         : "No npm provenance. The repository link is what the package declares; review the tarball, not the repo.";
   const body = [
     `Closes #${issueNumber}. Submitted by @${issue.author.login}.`,
+    revision,
+    validation,
     "",
     `Pinned \`${record.id}\`.`,
     provenance,
@@ -109,20 +131,27 @@ try {
     serializeRecord(record).trim(),
     "```",
   ].join("\n");
-  const url = gh([
-    "pr",
-    "create",
-    "--title",
-    `Add ${id} (${record.id})`,
-    "--body",
-    body,
-    "--head",
-    branch,
-    "--label",
-    "submission",
-  ]);
-  comment(`Thanks! The listing is in review: ${url}`);
-  console.log(url);
+  if (previous) {
+    gh(["pr", "edit", String(previous.number), "--body", body]);
+    console.log(`Updated ${previous.url}`);
+  } else {
+    const url = gh([
+      "pr",
+      "create",
+      "--title",
+      `Add ${record.id}`,
+      "--body",
+      body,
+      "--head",
+      branch,
+      "--base",
+      "main",
+      "--label",
+      "submission",
+    ]);
+    comment(`Thanks! The listing is in review: ${url}`);
+    console.log(url);
+  }
 } catch (error) {
   const message = (error as Error).message;
   comment(

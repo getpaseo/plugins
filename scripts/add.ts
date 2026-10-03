@@ -1,6 +1,6 @@
 // Pins a package and writes its record. Used by maintainers locally and by submit.ts.
 //   node scripts/add.ts <npm package> --categories themes,utilities [--id dracula] [--submitted-by login] [--submitted-at YYYY-MM-DD]
-import { pinGit } from "./lib/git-artifact.ts";
+import { pinGit, parseGitSource } from "./lib/git-artifact.ts";
 import { existsSync } from "node:fs";
 import { flagString, parseArgs } from "./lib/args.ts";
 import { categorySlugs, readCategories } from "./lib/categories.ts";
@@ -35,11 +35,11 @@ if (duplicate || existsSync(recordPath(id))) {
   process.exit(1);
 }
 
-const record = pkg.startsWith("https://github.com/")
+const source = parseGitSource(pkg, flagString(flags, "plugin-path"));
+const record = source
   ? pinGit({
-      source: pkg,
+      ...source,
       slug: flagString(flags, "id"),
-      pluginPath: flagString(flags, "plugin-path"),
       categories,
       submittedBy: flagString(flags, "submitted-by"),
     })

@@ -1,3 +1,4 @@
+import { parseGitSource } from "./git-artifact.ts";
 import type { Category } from "./categories.ts";
 
 export interface SubmissionIssue {
@@ -40,10 +41,11 @@ export function parseSubmissionIssue(body: string, categories: Category[]): Subm
   if (slugs.length === 0) throw new Error("the issue has no category ticked");
 
   const id = text("listing id");
+  const git = parseGitSource(pkg, text("plugin path") || undefined);
   return {
-    package: pkg,
+    package: git?.source ?? pkg,
     categories: slugs,
     ...(id ? { id } : {}),
-    ...(text("plugin path") ? { pluginPath: text("plugin path") } : {}),
+    ...(git?.pluginPath ? { pluginPath: git.pluginPath } : {}),
   };
 }

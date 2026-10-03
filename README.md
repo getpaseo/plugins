@@ -14,8 +14,12 @@ an internal registry by serving the same static JSON documents.
 3. The workflow pins an exact artifact and opens a review PR. npm provenance
    establishes source ownership when available. Otherwise the submitter must own
    the declared GitHub repository, or be a public member of its organization.
-4. A maintainer reviews the artifact and merges. New versions go through the same
-   review, in a separate bump PR with the artifact diff.
+4. Review follows [REVIEW.md](REVIEW.md). New versions go through the same
+   security review, in a separate bump PR with the artifact diff.
+
+All changes go through pull requests, including hand-edited submissions and edits
+to existing records. See [BOTS.md](BOTS.md) for schedules, tokens, safe inspection,
+and the disabled Hub reviewer trigger.
 
 Git updates follow the newest version-sorted tag, including prerelease tags. They
 never follow HEAD. Tags are checked against the pinned commit during validation;
@@ -51,7 +55,8 @@ Node 22.18+ runs these TypeScript scripts with no dependencies:
 ```sh
 npm test
 npm run add -- @acme/paseo-example --categories utilities
-npm run add -- https://github.com/acme/example --plugin-path plugins/example --categories utilities
+npm run add -- https://github.com/acme/plugins --plugin-path plugins/example --categories utilities
+npm run add -- acme/plugins:plugins/example --categories utilities
 npm run validate -- --online
 npm run bump -- --dry-run
 npm run build
@@ -67,8 +72,7 @@ characters; workflows retain the full diff artifact.
 Counts are advisory install requests, including git artifacts. No npm downloads
 are queried.
 
-Before enabling workflows, create labels `submission` and `bump`. Set
-`PLUGINS_BOT_TOKEN` with contents and pull-requests write access so bot PRs trigger
-Validate; the default workflow token does not trigger downstream workflows.
-Enable GitHub Pages with GitHub Actions as its source. Configure the public
-`plugins.paseo.sh` Worker route to front the documents when install counting is wanted.
+Workflows create their labels and validate bot PRs inline using the default
+`GITHUB_TOKEN`. [BOTS.md](BOTS.md) lists repository setup requirements and the
+optional token override. Configure the public `plugins.paseo.sh` Worker route to
+front the documents when install counting is wanted.

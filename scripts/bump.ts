@@ -1,5 +1,6 @@
+import { validateForReview } from "./lib/review.ts";
 // Opens one pull request per plugin whose npm latest is newer than the pinned version.
-// Runs from .github/workflows/bump.yml daily. Each PR carries the tarball diff for review.
+// Runs from .github/workflows/bump.yml twice daily. Each PR carries the tarball diff for review.
 import { latestTag, withGitArtifact } from "./lib/git-artifact.ts";
 import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -72,6 +73,7 @@ for (const record of records) {
   writeRecord(next);
   git(["add", recordPath(record.id)]);
   git(["commit", "-m", `Bump ${record.id} to ${latest}`]);
+  const validation = validateForReview();
   git(["push", "--force", "--set-upstream", "origin", branch]);
   gh([
     "pr",
@@ -79,7 +81,7 @@ for (const record of records) {
     "--title",
     `Bump ${record.id} to ${latest}`,
     "--body",
-    bumpBody(record, next, diff),
+    `${bumpBody(record, next, diff)}\n\n${validation}`,
     "--head",
     branch,
     "--base",
@@ -125,6 +127,9 @@ function bumpBody(previous: PluginRecord, next: PluginRecord, diff: string): str
   return [
     `\`${next.id}\`: ${JSON.stringify(previous.artifact)} -> ${JSON.stringify(next.artifact)}`,
     provenance,
+    previous.submittedBy
+      ? `Submitted by @${previous.submittedBy}.`
+      : "Original submitter is not recorded; refer to the source owner.",
     "",
     "Merging approves this version. The published index keeps pointing at the previous one until then.",
     "",

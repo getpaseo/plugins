@@ -67,3 +67,17 @@ test("accepts a GitHub source and monorepo path", () => {
     },
   );
 });
+
+test("normalizes a monorepo shorthand from the submission form", () => {
+  assert.deepEqual(
+    parseSubmissionIssue(
+      "### Plugin source\nacme/plugins:packages/example\n### Categories\n- [x] Themes",
+      readCategories(),
+    ),
+    {
+      package: "https://github.com/acme/plugins",
+      pluginPath: "packages/example",
+      categories: ["themes"],
+    },
+  );
+});

@@ -78,59 +78,105 @@ test("record overrides win, and a package without a listing file gets a humanize
   assert.equal(plugin.installs, undefined);
 });
 
-test("a tagged Git artifact validates and builds from its exact checkout", async () => {
-  const { mkdtempSync, writeFileSync, rmSync } = await import("node:fs");
+test("a tagged monorepo artifact is pinned, validated and built through both submission syntaxes", async () => {
+  const { mkdtempSync, mkdirSync, writeFileSync, readFileSync, cpSync, rmSync } =
+    await import("node:fs");
   const { tmpdir } = await import("node:os");
   const { join } = await import("node:path");
+  const { fileURLToPath } = await import("node:url");
   const { run } = await import("./shell.ts");
-  const { parseRecord } = await import("./record.ts");
-  const { resolvePlugin } = await import("./listing.ts");
-  const { createNpmClient } = await import("./npm.ts");
-  const directory = mkdtempSync(join(tmpdir(), "registry-git-test-"));
-  const keys = ["GIT_CONFIG_COUNT", "GIT_CONFIG_KEY_0", "GIT_CONFIG_VALUE_0"];
-  const previous = keys.map((key) => process.env[key]);
+  const directory = mkdtempSync(join(tmpdir(), "registry-monorepo-test-"));
+  const repository = join(directory, "repository");
+  const registry = join(directory, "registry");
+  const pluginPath = "packages/example";
   try {
-    run("git", ["init", "-q", directory]);
+    run("git", ["init", "-q", repository]);
+    mkdirSync(join(repository, pluginPath), { recursive: true });
     writeFileSync(
-      join(directory, "paseo-plugin.json"),
-      JSON.stringify({ id: "example", description: "Git example" }),
+      join(repository, pluginPath, "paseo-plugin.json"),
+      JSON.stringify({ id: "example", description: "Pinned monorepo example" }),
     );
-    writeFileSync(join(directory, "README.md"), "# Git example\n");
-    run("git", ["add", "."], { cwd: directory });
+    writeFileSync(join(repository, pluginPath, "README.md"), "# Monorepo example\n");
+    writeFileSync(
+      join(repository, pluginPath, "paseo-listing.json"),
+      JSON.stringify({ screenshots: ["screen.png"] }),
+    );
+    writeFileSync(join(repository, "README.md"), "Wrong root README");
+    run("git", ["add", "."], { cwd: repository });
     run(
       "git",
       ["-c", "user.name=Test", "-c", "user.email=test@example.com", "commit", "-qm", "fixture"],
-      { cwd: directory },
+      { cwd: repository },
     );
-    run("git", ["tag", "v1.0.0"], { cwd: directory });
-    const commit = run("git", ["rev-parse", "HEAD"], { cwd: directory }).trim();
-    process.env.GIT_CONFIG_COUNT = "1";
-    process.env.GIT_CONFIG_KEY_0 = `url.file://${directory}.insteadOf`;
-    process.env.GIT_CONFIG_VALUE_0 = "https://github.com/acme/example.git";
-    const gitRecord = parseRecord(
-      {
-        ...record,
-        id: "acme/example",
-        repository: { url: "https://github.com/acme/example", commit },
-        artifact: {
-          kind: "git",
-          remote: "https://github.com/acme/example.git",
-          commit,
-          tag: "v1.0.0",
-        },
-      },
-      new Set(["themes"]),
+    run("git", ["tag", "v1.0.0"], { cwd: repository });
+    const commit = run("git", ["rev-parse", "HEAD"], { cwd: repository });
+    writeFileSync(join(repository, pluginPath, "README.md"), "Unreviewed HEAD");
+    run("git", ["add", "."], { cwd: repository });
+    run(
+      "git",
+      ["-c", "user.name=Test", "-c", "user.email=test@example.com", "commit", "-qm", "unreleased"],
+      { cwd: repository },
     );
-    const detail = await resolvePlugin(createNpmClient(), gitRecord);
-    assert.equal(detail.readme, "# Git example\n");
-    assert.equal(detail.description, "Git example");
-    assert.deepEqual(detail.artifact, gitRecord.artifact);
-    assert.equal(detail.author.github, "acme");
-  } finally {
-    keys.forEach((key, index) => {
-      if (previous[index] === undefined) delete process.env[key];
-      else process.env[key] = previous[index];
+    mkdirSync(join(registry, "plugins"), { recursive: true });
+    cpSync(fileURLToPath(new URL("..", import.meta.url)), join(registry, "scripts"), {
+      recursive: true,
     });
+    cpSync(
+      fileURLToPath(new URL("../../categories.json", import.meta.url)),
+      join(registry, "categories.json"),
+    );
+    const options = {
+      cwd: registry,
+      env: {
+        ...process.env,
+        INSTALLS_URL: "data:application/json,%7B%7D",
+        GIT_CONFIG_COUNT: "1",
+        GIT_CONFIG_KEY_0: `url.file://${repository}.insteadOf`,
+        GIT_CONFIG_VALUE_0: "https://github.com/acme/plugins.git",
+      },
+    };
+    run(
+      process.execPath,
+      ["scripts/add.ts", "acme/plugins:packages/example", "--categories", "themes"],
+      options,
+    );
+    run(
+      process.execPath,
+      [
+        "scripts/add.ts",
+        "https://github.com/acme/plugins",
+        "--plugin-path",
+        pluginPath,
+        "--id",
+        "acme/url-example",
+        "--categories",
+        "themes",
+      ],
+      options,
+    );
+    assert.match(
+      run(process.execPath, ["scripts/validate.ts", "--online"], options),
+      /2 record\(s\) match/,
+    );
+    run(process.execPath, ["scripts/build.ts"], options);
+    for (const slug of ["example", "url-example"]) {
+      const detail = JSON.parse(
+        readFileSync(join(registry, `dist/plugins/acme/${slug}.json`), "utf8"),
+      );
+      assert.equal(detail.readme, "# Monorepo example\n");
+      assert.equal(detail.description, "Pinned monorepo example");
+      assert.equal(detail.artifact.pluginPath, pluginPath);
+      assert.equal(detail.artifact.commit, commit);
+      assert.deepEqual(detail.screenshots, [
+        `https://github.com/acme/plugins/raw/${commit}/${pluginPath}/screen.png`,
+      ]);
+    }
+    run("git", ["tag", "-f", "v1.0.0"], { cwd: repository });
+    assert.throws(
+      () => run(process.execPath, ["scripts/validate.ts", "--online"], options),
+      /Command failed/,
+    );
+  } finally {
     rmSync(directory, { recursive: true, force: true });
   }
 });

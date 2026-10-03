@@ -11,7 +11,7 @@ body:
     id: package
     attributes:
       label: Plugin source
-      description: An npm package name or https://github.com/owner/repository URL. Git repositories need a release tag.
+      description: An npm package name, https://github.com/owner/repository URL plus Plugin path below, or owner/repository:path shorthand. Git repositories need a release tag.
       placeholder: "@acme/paseo-review"
     validations:
       required: true

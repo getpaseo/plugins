@@ -2,7 +2,7 @@ name: Bump
 
 on:
   schedule:
-    - cron: "17 5 * * *"
+    - cron: "17 5,17 * * *"
   workflow_dispatch:
 
 concurrency:
@@ -15,19 +15,25 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
+      issues: write
+    env:
+      GH_TOKEN: ${{ secrets.PLUGINS_BOT_TOKEN || github.token }}
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.PLUGINS_BOT_TOKEN || github.token }}
       - uses: actions/setup-node@v4
         with:
           node-version: 22
       - run: |
           git config user.name "paseo-plugins[bot]"
           git config user.email "plugins@paseo.sh"
-      - name: Open a pull request per new version
-        env:
-          GH_TOKEN: ${{ secrets.PLUGINS_BOT_TOKEN || github.token }}
+          gh label create bump --color 1D76DB --description "Pinned artifact update" --force
+          gh label create needs-maintainer --color D93F0B --description "Requires a maintainer decision" --force
+      - name: Validate inline and open a pull request per new version
+        # bump.ts runs npm test and validate --online --changed before each push/PR.
+        # It records success in the body because GITHUB_TOKEN PRs do not trigger Validate.
         run: node scripts/bump.ts
       - name: Keep full tarball diffs
         if: always()

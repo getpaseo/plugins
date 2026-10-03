@@ -4,6 +4,7 @@ import { join, resolve, relative } from "node:path";
 import { run } from "./shell.ts";
 import type { PluginRecord } from "./record.ts";
 import { parseArtifact } from "./record.ts";
+import { deriveId } from "./id.ts";
 import { isoDate } from "./dates.ts";
 
 export function withGitArtifact<T>(record: PluginRecord, consume: (directory: string) => T): T {
@@ -11,7 +12,15 @@ export function withGitArtifact<T>(record: PluginRecord, consume: (directory: st
   if (artifact.kind !== "git") throw new Error("Expected git artifact");
   const directory = mkdtempSync(join(tmpdir(), "paseo-registry-"));
   try {
-    run("git", ["clone", "--quiet", "--no-checkout", "--", artifact.remote, directory]);
+    run("git", [
+      "clone",
+      "--quiet",
+      "--no-checkout",
+      "--no-recurse-submodules",
+      "--",
+      artifact.remote,
+      directory,
+    ]);
     const commit = run("git", ["rev-parse", `refs/tags/${artifact.tag}^{commit}`], {
       cwd: directory,
     }).trim();
@@ -38,6 +47,25 @@ export function latestTag(remote: string): { tag: string; commit: string } {
   return { tag, commit: peeled ? peeled.split("\t")[0] : first[0] };
 }
 
+/** Normalize both submission forms before choosing the artifact type. */
+export function parseGitSource(
+  source: string,
+  pluginPath?: string,
+): { source: string; pluginPath?: string } | null {
+  const shorthand = /^(?:github:)?([a-zA-Z0-9-]+\/[\w.-]+):(.+)$/.exec(source);
+  const url = shorthand ? `https://github.com/${shorthand[1]}` : source;
+  if (!url.startsWith("https://github.com/")) return null;
+  const match = /^https:\/\/github\.com\/([a-zA-Z0-9-]+)\/([\w.-]+)\/?$/.exec(url);
+  if (!match) throw new Error("Use a GitHub repository URL and a separate plugin path");
+  if (shorthand && pluginPath && pluginPath !== shorthand[2])
+    throw new Error("Conflicting plugin paths");
+  const path = shorthand?.[2] ?? pluginPath;
+  return {
+    source: `https://github.com/${match[1]}/${match[2].replace(/\.git$/, "")}`,
+    ...(path ? { pluginPath: path } : {}),
+  };
+}
+
 export function pinGit(input: {
   source: string;
   slug?: string;
@@ -45,18 +73,26 @@ export function pinGit(input: {
   categories: string[];
   submittedBy?: string;
 }): PluginRecord {
-  const remote = input.source.replace(/\/$/, "").replace(/\.git$/, "");
+  const source = parseGitSource(input.source, input.pluginPath);
+  if (!source) throw new Error("Use a GitHub repository URL or owner/repo:path");
+  const remote = source.source;
   const match = /^https:\/\/github\.com\/([a-zA-Z0-9-]+)\/([\w.-]+)$/.exec(remote);
   if (!match) throw new Error("Use a GitHub repository URL");
-  const pin = latestTag(remote);
+  const owner = match[1].toLowerCase();
+  if (input.slug?.includes("/") && !input.slug.startsWith(`${owner}/`))
+    throw new Error("ID owner must match repository owner");
+  const slug =
+    input.slug?.split("/").at(-1) ??
+    deriveId(source.pluginPath?.split("/").at(-1) ?? match[2].toLowerCase());
+  const pin = latestTag(`${remote}.git`);
   const artifact = parseArtifact({
     kind: "git",
     remote: `${remote}.git`,
     ...pin,
-    pluginPath: input.pluginPath,
+    pluginPath: source.pluginPath,
   });
   const record: PluginRecord = {
-    id: `${match[1].toLowerCase()}/${input.slug ?? match[2].toLowerCase().replace(/^paseo-/, "")}`,
+    id: `${owner}/${slug}`,
     artifact,
     repository: { url: remote, commit: pin.commit },
     categories: input.categories,

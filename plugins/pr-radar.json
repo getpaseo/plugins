@@ -1,0 +1,20 @@
+{
+  "id": "pr-radar",
+  "package": "@omercnet/paseo-pr-radar",
+  "version": "1.2.0",
+  "integrity": "sha512-sk+zuzTGZ5Vmri2toic3z3uChm4d6kEShSr/UjkqfOTeILrsZVDHUc+XKX/CtZIQazT/vWvbgZ115+KUiAonCw==",
+  "repository": {
+    "url": "https://github.com/omercnet/paseo-plugins/tree/HEAD/pr-radar",
+    "commit": "d7b3e654f364b5be72edf6fd1d914a3750b53082"
+  },
+  "categories": [
+    "git-and-code-review",
+    "monitoring"
+  ],
+  "submittedAt": "2026-09-17",
+  "submittedBy": "omercnet",
+  "reviewedAt": "2026-10-03",
+  "listing": {
+    "name": "PR Radar"
+  }
+}

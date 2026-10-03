@@ -1,0 +1,22 @@
+{
+  "id": "launchd-jobs",
+  "package": "@gpambrozio/paseo-launchd-jobs",
+  "version": "0.5.0",
+  "integrity": "sha512-H6CQnalMdyQjW9ta9ZT40qEPJsREgNFSEAH8EC4sJXdz2Hz9tIsInSUmm2bDcgfY3D3HFffUrwf1mmeevi/wUA==",
+  "repository": {
+    "url": "https://github.com/gpambrozio/paseo-plugins/tree/HEAD/launchd-jobs",
+    "commit": "08e75003b287208ef804f3d31b2fda2597f69dce"
+  },
+  "categories": [
+    "automation"
+  ],
+  "submittedAt": "2026-09-19",
+  "submittedBy": "gpambrozio",
+  "reviewedAt": "2026-10-03",
+  "listing": {
+    "name": "launchd Jobs",
+    "screenshots": [
+      "https://raw.githubusercontent.com/gpambrozio/paseo-plugins/main/launchd-jobs/docs/screenshot.png"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+name: Submission
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  submit:
+    if: contains(github.event.issue.labels.*.name, 'submission')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: |
+          git config user.name "paseo-plugins[bot]"
+          git config user.email "plugins@paseo.sh"
+      - name: Pin the package and open a pull request
+        env:
+          # A bot token lets the created PR trigger Validate; github.token does not.
+          GH_TOKEN: ${{ secrets.PLUGINS_BOT_TOKEN || github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: node scripts/submit.ts

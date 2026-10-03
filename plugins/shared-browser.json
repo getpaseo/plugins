@@ -1,0 +1,22 @@
+{
+  "id": "shared-browser",
+  "package": "@omercnet/paseo-shared-browser",
+  "version": "1.2.0",
+  "integrity": "sha512-ddvtkBSzHLFzyTRZFixO1y+QXOKW0of8Uo3PSkETRhW5xhd9ep0jqsJJF9JSfWLt1ouvVa5K8zFXic/EBzQ8lw==",
+  "repository": {
+    "url": "https://github.com/omercnet/paseo-plugins/tree/HEAD/paseo-shared-browser",
+    "commit": "d7b3e654f364b5be72edf6fd1d914a3750b53082"
+  },
+  "categories": [
+    "workspace-panels"
+  ],
+  "submittedAt": "2026-09-18",
+  "submittedBy": "omercnet",
+  "reviewedAt": "2026-10-03",
+  "listing": {
+    "screenshots": [
+      "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/paseo-shared-browser/docs/images/shared-browser-wide.png",
+      "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/paseo-shared-browser/docs/images/shared-browser-compact.png"
+    ]
+  }
+}

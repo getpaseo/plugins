@@ -1,0 +1,40 @@
+name: Submit a plugin
+description: List a published npm package on paseo.sh/plugins.
+title: "Submit: "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The package must already be on npm and ship `paseo-plugin.json`. A bot pins the current version and opens a pull request; a maintainer reviews the published tarball before it is listed. Later versions are picked up automatically and reviewed the same way.
+  - type: input
+    id: package
+    attributes:
+      label: npm package
+      description: The exact name on npm.
+      placeholder: "@acme/paseo-review"
+    validations:
+      required: true
+  - type: checkboxes
+    id: categories
+    attributes:
+      label: Categories
+      description: Tick every category that fits. The first one ticked is the primary category.
+      options:
+        - label: Themes
+        - label: Agents & providers
+        - label: Monitoring & orchestration
+        - label: Timeline & composer
+        - label: Workspace panels
+        - label: Git & code review
+        - label: Automation & scheduling
+        - label: Notifications
+        - label: Usage & pricing
+        - label: Integrations
+        - label: Utilities
+  - type: input
+    id: listing-id
+    attributes:
+      label: Listing ID
+      description: Optional. The URL slug under paseo.sh/plugins/. Derived from the package name when empty.
+      placeholder: review

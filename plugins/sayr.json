@@ -1,0 +1,22 @@
+{
+  "id": "sayr",
+  "package": "@sayrio/paseo-plugin",
+  "version": "0.2.0",
+  "integrity": "sha512-LPmVkEPWl8Km6US4zQAzhqSbGm7lBDwCjgNoysOhCsDiRy0jbtDKYRg1XVgwwUkoEwhF1EdZHCPwIuT8IizyWQ==",
+  "repository": {
+    "url": "https://github.com/dorasto/sayr/tree/HEAD/packages/paseo-plugin",
+    "commit": "e70919b89df3cf9e95c18242939193a79c7593b1"
+  },
+  "categories": [
+    "integrations"
+  ],
+  "submittedAt": "2026-09-22",
+  "submittedBy": "tommerty",
+  "reviewedAt": "2026-10-03",
+  "listing": {
+    "screenshots": [
+      "https://raw.githubusercontent.com/dorasto/sayr/main/packages/paseo-plugin/assets/sayr-plguin-1.png",
+      "https://raw.githubusercontent.com/dorasto/sayr/main/packages/paseo-plugin/assets/paseo-plugin-2.png"
+    ]
+  }
+}

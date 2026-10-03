@@ -1,0 +1,38 @@
+name: Bump
+
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: bump
+  cancel-in-progress: false
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: |
+          git config user.name "paseo-plugins[bot]"
+          git config user.email "plugins@paseo.sh"
+      - name: Open a pull request per new version
+        env:
+          GH_TOKEN: ${{ secrets.PLUGINS_BOT_TOKEN || github.token }}
+        run: node scripts/bump.ts
+      - name: Keep full tarball diffs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tarball-diffs
+          path: .tmp/diffs
+          if-no-files-found: ignore

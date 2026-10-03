@@ -1,0 +1,22 @@
+{
+  "id": "prompt-kit",
+  "package": "paseo-prompt-kit",
+  "version": "0.6.0",
+  "integrity": "sha512-eiagOY1OokDx2iihfe3Vjh2dgKKP6IsBKbJYbfhM+TXw3aU7duV/rs/TUnBSeeWAk0cEsVg2Jd+EkeaPM8IJdA==",
+  "repository": {
+    "url": "https://github.com/hungcuong9125/paseo-prompt-kit"
+  },
+  "categories": [
+    "timeline-and-composer"
+  ],
+  "submittedAt": "2026-09-22",
+  "submittedBy": "hungcuong9125",
+  "reviewedAt": "2026-10-03",
+  "listing": {
+    "name": "PromptKit",
+    "screenshots": [
+      "https://raw.githubusercontent.com/hungcuong9125/paseo-prompt-kit/main/docs/images/settings-provider-cli.png",
+      "https://raw.githubusercontent.com/hungcuong9125/paseo-prompt-kit/main/docs/images/settings-direct-api.png"
+    ]
+  }
+}

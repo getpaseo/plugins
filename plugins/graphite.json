@@ -1,0 +1,15 @@
+{
+  "id": "graphite",
+  "package": "paseo-graphite",
+  "version": "0.2.4",
+  "integrity": "sha512-aAFvh+118c5mmSQ3sTsDKO8Is7g1ZU8m2+0fisr8nFrgPMu0m2mokPJnM/LaIqQc3Zaaak1chB6M6k0dWOPeIA==",
+  "repository": {
+    "url": "https://github.com/tomgrin10/paseo-graphite"
+  },
+  "categories": [
+    "git-and-code-review"
+  ],
+  "submittedAt": "2026-09-22",
+  "submittedBy": "tomgrin10",
+  "reviewedAt": "2026-10-03"
+}

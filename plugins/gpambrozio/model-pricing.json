@@ -4,7 +4,7 @@
     "url": "https://github.com/gpambrozio/paseo-plugins/tree/HEAD/model-pricing",
     "commit": "08e75003b287208ef804f3d31b2fda2597f69dce"
   },
-  "categories": ["usage-and-pricing"],
+  "categories": ["sidebar"],
   "submittedAt": "2026-09-19",
   "submittedBy": "gpambrozio",
   "reviewedAt": "2026-10-03",

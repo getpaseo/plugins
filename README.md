@@ -54,9 +54,9 @@ Node 22.18+ runs these TypeScript scripts with no dependencies:
 
 ```sh
 npm test
-npm run add -- @acme/paseo-example --categories utilities
-npm run add -- https://github.com/acme/plugins --plugin-path plugins/example --categories utilities
-npm run add -- acme/plugins:plugins/example --categories utilities
+npm run add -- @acme/paseo-example --categories utils
+npm run add -- https://github.com/acme/plugins --plugin-path plugins/example --categories utils
+npm run add -- acme/plugins:plugins/example --categories utils
 npm run validate -- --online
 npm run bump -- --dry-run
 npm run build

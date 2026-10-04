@@ -4,7 +4,7 @@
     "url": "https://github.com/omercnet/paseo-plugins/tree/HEAD/agent-monitor",
     "commit": "d7b3e654f364b5be72edf6fd1d914a3750b53082"
   },
-  "categories": ["monitoring"],
+  "categories": ["orchestration"],
   "submittedAt": "2026-09-17",
   "submittedBy": "omercnet",
   "reviewedAt": "2026-10-03",

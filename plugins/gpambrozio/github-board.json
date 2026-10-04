@@ -4,7 +4,7 @@
     "url": "https://github.com/gpambrozio/paseo-plugins/tree/HEAD/github-board",
     "commit": "530a66c592e20915169b5e67a35de8793f71ec60"
   },
-  "categories": ["integrations", "git-and-code-review"],
+  "categories": ["git"],
   "submittedAt": "2026-09-19",
   "submittedBy": "gpambrozio",
   "reviewedAt": "2026-10-03",

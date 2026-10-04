@@ -26,17 +26,15 @@ body:
       label: Categories
       description: Tick every category that fits. The first one ticked is the primary category.
       options:
+        - label: Daemon management
         - label: Themes
-        - label: Agents & providers
-        - label: Monitoring & orchestration
-        - label: Timeline & composer
-        - label: Workspace panels
-        - label: Git & code review
-        - label: Automation & scheduling
-        - label: Notifications
-        - label: Usage & pricing
-        - label: Integrations
-        - label: Utilities
+        - label: Providers
+        - label: Orchestration
+        - label: Git
+        - label: Workspaces
+        - label: Sidebar
+        - label: Extras
+        - label: Utils
   - type: input
     id: listing-id
     attributes:

@@ -4,7 +4,7 @@
     "url": "https://github.com/gpambrozio/paseo-plugins/tree/HEAD/herald",
     "commit": "b658d0ab58735959e46d12660ae179c002cdadda"
   },
-  "categories": ["notifications"],
+  "categories": ["sidebar"],
   "submittedAt": "2026-09-19",
   "submittedBy": "gpambrozio",
   "reviewedAt": "2026-10-03",

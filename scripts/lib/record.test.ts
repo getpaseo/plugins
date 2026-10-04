@@ -5,7 +5,7 @@ import { join } from "node:path";
 import { test } from "node:test";
 import { parseRecord, readRecords, serializeRecord, writeRecord } from "./record.ts";
 
-const known = new Set(["themes", "utilities"]);
+const known = new Set(["themes", "utils"]);
 const valid = {
   id: "omercnet/dracula",
   artifact: {

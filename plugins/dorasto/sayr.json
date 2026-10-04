@@ -4,7 +4,7 @@
     "url": "https://github.com/dorasto/sayr/tree/HEAD/packages/paseo-plugin",
     "commit": "e70919b89df3cf9e95c18242939193a79c7593b1"
   },
-  "categories": ["integrations"],
+  "categories": ["workspaces"],
   "submittedAt": "2026-09-22",
   "submittedBy": "tommerty",
   "reviewedAt": "2026-10-03",

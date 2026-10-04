@@ -15,7 +15,7 @@ plugins. Browser consumers need CORS when accessing the registry across origins.
 {
   "schemaVersion": 1,
   "registry": { "name": "Company plugins", "url": "https://plugins.example.com" },
-  "categories": [{ "slug": "utilities", "label": "Utilities", "description": "Tools" }],
+  "categories": [{ "slug": "utils", "label": "Utils", "description": "Tools" }],
   "plugins": [],
   "generatedAt": "2026-10-03T00:00:00.000Z"
 }
@@ -31,7 +31,7 @@ user or organization that owns the source repository.
   "id": "acme/example",
   "name": "Example",
   "description": "An internal Paseo plugin",
-  "categories": ["utilities"],
+  "categories": ["utils"],
   "author": { "github": "acme", "name": "Acme" },
   "repository": { "url": "https://github.com/acme/example" },
   "artifact": {

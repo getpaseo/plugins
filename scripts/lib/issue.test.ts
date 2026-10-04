@@ -10,9 +10,9 @@ const body = `### npm package
 ### Categories
 
 - [ ] Themes
-- [X] Git & code review
-- [x] Integrations
-- [ ] Utilities
+- [X] Git
+- [x] Workspaces
+- [ ] Utils
 
 ### Listing ID
 
@@ -23,7 +23,7 @@ test("reads the package, ticked categories, and optional id from the issue form"
   const categories = readCategories();
   assert.deepEqual(parseSubmissionIssue(body, categories), {
     package: "@acme/paseo-review",
-    categories: ["git-and-code-review", "integrations"],
+    categories: ["git", "workspaces"],
   });
   assert.deepEqual(
     parseSubmissionIssue(
@@ -34,7 +34,7 @@ test("reads the package, ticked categories, and optional id from the issue form"
     ),
     {
       package: "@acme/paseo-review",
-      categories: ["git-and-code-review", "integrations"],
+      categories: ["git", "workspaces"],
       id: "review",
     },
   );

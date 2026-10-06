@@ -1,0 +1,18 @@
+{
+  "id": "jegork/tidy-timeline",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/jegork/paseo-tidy-timeline.git",
+    "commit": "d58987b477288b2f9f07a418cd6e35df61c3478a"
+  },
+  "repository": {
+    "url": "https://github.com/jegork/paseo-tidy-timeline",
+    "commit": "d58987b477288b2f9f07a418cd6e35df61c3478a"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "jegork",
+  "reviewedAt": "2026-10-06"
+}

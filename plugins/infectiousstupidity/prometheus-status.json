@@ -1,0 +1,18 @@
+{
+  "id": "infectiousstupidity/prometheus-status",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/infectiousstupidity/paseo-prometheus-status.git",
+    "commit": "6722d00766a7be7e6cfeaac7b867a05e4c72e596"
+  },
+  "repository": {
+    "url": "https://github.com/infectiousstupidity/paseo-prometheus-status",
+    "commit": "6722d00766a7be7e6cfeaac7b867a05e4c72e596"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-10-06",
+  "reviewedAt": "2026-10-06"
+}

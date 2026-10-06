@@ -1,0 +1,18 @@
+{
+  "id": "drungrin/gsd-observer",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/drungrin/paseo-gsd-observer.git",
+    "commit": "588d71ca2cedd1bbfba8712462937bfb334faeb7"
+  },
+  "repository": {
+    "url": "https://github.com/drungrin/paseo-gsd-observer",
+    "commit": "588d71ca2cedd1bbfba8712462937bfb334faeb7"
+  },
+  "categories": [
+    "workspaces"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "drungrin",
+  "reviewedAt": "2026-10-06"
+}

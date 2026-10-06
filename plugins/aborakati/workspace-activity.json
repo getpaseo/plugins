@@ -1,0 +1,18 @@
+{
+  "id": "aborakati/workspace-activity",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/ABorakati/paseo-workspace-activity.git",
+    "commit": "6fa866b82fd65a4e1073c1642bfd1c978214a96e"
+  },
+  "repository": {
+    "url": "https://github.com/ABorakati/paseo-workspace-activity",
+    "commit": "6fa866b82fd65a4e1073c1642bfd1c978214a96e"
+  },
+  "categories": [
+    "workspaces"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "ABorakati",
+  "reviewedAt": "2026-10-06"
+}

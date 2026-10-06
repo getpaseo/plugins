@@ -1,0 +1,19 @@
+{
+  "id": "laokashouji/turn-changes",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/Laokashouji/paseo-turn-changes.git",
+    "commit": "47b011d02fd04b963438fb24b19ad5e46734b687"
+  },
+  "repository": {
+    "url": "https://github.com/Laokashouji/paseo-turn-changes",
+    "commit": "47b011d02fd04b963438fb24b19ad5e46734b687"
+  },
+  "categories": [
+    "git",
+    "workspaces"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "Laokashouji",
+  "reviewedAt": "2026-10-06"
+}

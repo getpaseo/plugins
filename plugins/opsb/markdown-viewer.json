@@ -1,0 +1,19 @@
+{
+  "id": "opsb/markdown-viewer",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/opsb/paseo-markdown-viewer.git",
+    "commit": "9a19dfe2837c7e4a510ed767fa89c920c3ad4195"
+  },
+  "repository": {
+    "url": "https://github.com/opsb/paseo-markdown-viewer",
+    "commit": "9a19dfe2837c7e4a510ed767fa89c920c3ad4195"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "opsb",
+  "reviewedAt": "2026-10-06"
+}

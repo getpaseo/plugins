@@ -1,0 +1,21 @@
+{
+  "id": "keefeere/continuity",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-continuity",
+    "version": "0.2.1",
+    "resolved": "https://registry.npmjs.org/paseo-continuity/-/paseo-continuity-0.2.1.tgz",
+    "integrity": "sha512-mEjqBAkGiyuPLEknrx8/IJlBdVakVTNleqEUExYthNZS/jzL7nr1jMUJebLXGkc7xT73zaIqnVBMf94EvtJ1HA=="
+  },
+  "repository": {
+    "url": "https://github.com/keefeere/paseo-continuity",
+    "commit": "063b7e272ee1946f05e9a4845d239821aa02a049"
+  },
+  "categories": [
+    "providers",
+    "orchestration"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "keefeere",
+  "reviewedAt": "2026-10-06"
+}

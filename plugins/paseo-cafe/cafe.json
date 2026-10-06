@@ -1,0 +1,20 @@
+{
+  "id": "paseo-cafe/cafe",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-cafe",
+    "version": "0.11.0",
+    "resolved": "https://registry.npmjs.org/paseo-cafe/-/paseo-cafe-0.11.0.tgz",
+    "integrity": "sha512-+WEFIQhIctQ9XDxzhqTsfW6VTxloDkhn/HZR4icPieHmXMBHupmTi1hDXMDcxumLBUAHre1LEQgGkWTaT2rCpg=="
+  },
+  "repository": {
+    "url": "https://github.com/paseo-cafe/paseo-cafe/tree/HEAD/plugin",
+    "commit": "266ff26c5fe0240783770ec1efc9799e939c0795"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "omercnet",
+  "reviewedAt": "2026-10-06"
+}

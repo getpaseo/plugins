@@ -1,30 +1,9 @@
-DeepSeek Harness adds a provider to Paseo so you can pick **DeepSeek Harness** when you create an agent. The agent runs through the DeepSeek Harness command line tool (`dsh`) on the daemon machine, and Paseo shows the conversation in its normal agent view. The plugin has no screens of its own.
+DeepSeek Harness adds a provider to Paseo so you can start agents that run through the DeepSeek Harness command line tool (`dsh`) on the daemon machine. Paseo shows the conversation in its normal agent view, and the plugin has no screens of its own.
 
-## How it works
+DeepSeek Harness must already be installed, logged in and configured on the daemon machine, with `dsh` on the daemon's `PATH`. The plugin refuses to start a session if `dsh --version` reports anything below 0.1.5-rc.1 or cannot be read. It also needs Paseo 0.8.0 or newer and Node.js 22.19.0 or newer on the daemon. The plugin does not install or configure `dsh` and does not read its credential files. The model and reasoning-effort choices come from the models `dsh` reports, so they follow your DeepSeek Harness setup.
 
-For each session the plugin starts `dsh --profile acp` as a child process, without a shell, and talks to it over the Agent Client Protocol. Paseo handles prompts, permission requests, usage and the timeline. The plugin passes the session's working directory, environment variables, configured MCP servers and images to `dsh`.
+Each agent session runs `dsh` as a child process under your operating system user, with the daemon's environment plus the session's environment variables. Any credentials in that environment reach `dsh`, and the plugin adds no sandbox or permission policy of its own. `dsh` itself makes the calls to DeepSeek's service.
 
-Model and reasoning-effort choices come from the models `dsh` reports, so they follow your DeepSeek Harness profile, and the model picker may show opaque model IDs. When you resume a session, `dsh` restores its own context and Paseo keeps the displayed history, so old messages are not replayed. If a resume fails, the plugin reports the error and does not start a new session.
-
-## Setup
-
-- DeepSeek Harness must be installed on the daemon machine and the daemon must find `dsh` on its `PATH`. Before each start the plugin runs `dsh --version` (5 second timeout) and refuses to start if the version is below 0.1.5-rc.1 or cannot be read. Any version at or above 0.1.5-rc.1 passes, with no upper limit.
-- The daemon needs Node.js 22.19.0 or newer.
-- Configure your DeepSeek API key in DeepSeek Harness itself. The plugin does not install, update or configure `dsh`, and it does not read `dsh` credential files.
-
-Two environment variables, read from the daemon's environment:
-
-| Variable | Default | Effect |
-| --- | --- | --- |
-| `DSH_PASEO_COMMAND` | `dsh` | Path to the executable to run. It is a path, not a shell command. |
-| `DSH_PASEO_PROFILE` | `acp` | Profile passed to `dsh`. An override must still speak ACP over stdio. |
-
-Set them where the daemon starts. Setting them in an unrelated terminal does not change a running daemon.
-
-## What to know
-
-- The plugin is trusted, unsandboxed code, and `dsh` runs tools as your operating system user. The plugin adds no sandbox and no permission-policy override.
-- The plugin makes no network requests and stores nothing itself. The `dsh` process it starts talks to DeepSeek.
-- Provider commands (slash commands handled by the provider) are refused.
+Resuming a session asks `dsh` to restore its own context. If that fails, the plugin reports the error and does not start a new session. Provider slash commands are refused.
 
 *This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/deepseek-harness).*

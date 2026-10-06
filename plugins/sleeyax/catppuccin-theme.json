@@ -1,0 +1,20 @@
+{
+  "id": "sleeyax/catppuccin-theme",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/sleeyax/paseo-plugins.git",
+    "commit": "41ff25de85931953ace4daa1a7923e20823514c5",
+    "tag": "discord-rich-presence-v0.1.0",
+    "pluginPath": "plugins/catppuccin-theme"
+  },
+  "repository": {
+    "url": "https://github.com/sleeyax/paseo-plugins",
+    "commit": "41ff25de85931953ace4daa1a7923e20823514c5"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "sleeyax",
+  "reviewedAt": "2026-10-06"
+}

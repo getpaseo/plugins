@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/commandcode-provider",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-commandcode-provider",
+    "version": "0.1.4",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-commandcode-provider/-/paseo-commandcode-provider-0.1.4.tgz",
+    "integrity": "sha512-GkT54MW6ufmy6cnTRrRL6xj0T9RHT7bZLiNlr6LAsb4TYr3ucl/qnozAz3/lfMMx6zD/H7TUQzbSIJ/nC909Hw=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-commandcode-provider"
+  },
+  "categories": [
+    "providers"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

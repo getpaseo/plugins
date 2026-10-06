@@ -1,0 +1,20 @@
+{
+  "id": "gpambrozio/firstmate",
+  "artifact": {
+    "kind": "npm",
+    "package": "@gpambrozio/paseo-firstmate",
+    "version": "0.3.1",
+    "resolved": "https://registry.npmjs.org/@gpambrozio/paseo-firstmate/-/paseo-firstmate-0.3.1.tgz",
+    "integrity": "sha512-s7lq4U/L8j08S1tL2pkuYulJdnI2Hw9fatHsfQa3E3D4LnLTvHbq8g+xelpKGKs6oH7kGvv97GOSAC94BHQxng=="
+  },
+  "repository": {
+    "url": "https://github.com/gpambrozio/paseo-plugins/tree/HEAD/firstmate",
+    "commit": "c262395428eb591ee41a14aa3867cdee64632a55"
+  },
+  "categories": [
+    "orchestration"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "gpambrozio",
+  "reviewedAt": "2026-10-06"
+}

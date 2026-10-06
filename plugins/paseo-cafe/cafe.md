@@ -1,24 +1,22 @@
-Paseo Cafe adds a Paseo Cafe sidebar surface for browsing the paseo.cafe plugin catalog and managing plugins from inside Paseo. Each listing shows the package version, description, categories, platforms, required Paseo version, caveats, health checks, and screenshots. Search and filtering run in the client. A composer attachment source called Paseo plugin attaches a plugin's full listing to a prompt, so an agent can review it before you install.
+Paseo Cafe adds a sidebar surface in Paseo for browsing the paseo.cafe plugin catalog and managing plugins from inside the app. A composer attachment source, Paseo plugin, attaches a plugin's full listing to a prompt so an agent can review it before you install.
 
-## Requirements and setup
+## Requirements
 
-The manifest accepts Paseo 0.8.0 up to but not including 0.12.0, with 0.11 prereleases accepted from 0.11.0-beta.1. The `paseo` command must be on the daemon host's `PATH`, because plugin management and the installed-plugin list go through the Paseo CLI. No account or key is needed.
+The manifest accepts Paseo 0.8.0 up to but not including 0.12.0, with 0.11 prereleases accepted from 0.11.0-beta.1. The `paseo` command must be on the daemon host's `PATH`, because the plugin manages other plugins by invoking the Paseo CLI. No account or key is needed.
 
-## Network access
+## Catalog
 
-- The daemon downloads the catalog as JSON from `https://paseo.cafe/api/plugins`. The request has a 10-second timeout, refuses redirects, and rejects responses over 16 MiB. Results are cached for five minutes, and Refresh skips the cache.
-- To use another catalog, set Catalog URL in the plugin's settings page. The `PASEO_CAFE_DIRECTORY_URL` environment variable on the daemon is used only when no setting is saved. Both must be HTTPS, or HTTP on localhost or a loopback address, and an invalid environment value is ignored.
-- The catalog decides which npm package and version, or Git repository and commit, the install button hands to the Paseo CLI. A catalog you point it at controls what gets installed, so use only a catalog you trust.
-- The client loads listing screenshots from the URLs the catalog supplies.
+The daemon downloads the catalog from paseo.cafe. To use another catalog, set Catalog URL in the plugin's settings; the `PASEO_CAFE_DIRECTORY_URL` environment variable on the daemon is used only when no setting is saved. A custom catalog must use HTTPS, or HTTP on localhost or a loopback address.
+
+The catalog decides which package or repository the install button hands to the Paseo CLI, so a catalog you point it at controls what gets installed. Plugins in the default catalog are community-submitted and run as unsandboxed code on the host. The catalog's screenshots load from the URLs it supplies.
 
 ## Plugin management
 
-The plugin invokes the Paseo CLI on the daemon host to install and update plugins. Installing happens after a confirmation step that shows the source and caveats. Plugins from this catalog are community-submitted, unsandboxed code that runs on the host.
+Installing and updating invoke the Paseo CLI on the daemon host. An install asks for confirmation and shows the source and caveats first. Updates use the exact version or commit the catalog lists and never downgrade.
 
-Updates use the exact version (npm) or commit (Git) from the catalog and never downgrade. When a package has a separate `next` release, the detail page offers it as an opt-in Preview. Preview users keep following that channel until they switch back to stable.
-
-Automatic updates are on by default for plugins installed through reviewed npm packages. Cafe checks 30 seconds after startup and every six hours, follows each plugin's Stable or Preview choice, and keeps one plugin's failure from blocking others. Turn them off per plugin on its detail page. Cafe updates itself the same way, using a detached process so the update survives the restart. Check now in the plugin's settings runs the check immediately.
-
-Plugins installed from Git under Paseo 0.8 stay pinned to their installed commit until reinstalled. On Paseo 0.8, attachment searches ignore a custom Catalog URL and use the default catalog.
+- When a package publishes a separate `next` release, its detail page offers it as an opt-in Preview. Stable stays the default.
+- Automatic updates are on by default for plugins installed from reviewed npm packages. You can turn them off for each plugin, and Check now runs the check immediately.
+- Cafe updates itself the same way.
+- Plugins installed from Git under Paseo 0.8 stay pinned to their installed commit until reinstalled, and on Paseo 0.8 attachment searches ignore a custom Catalog URL.
 
 *This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/paseo-cafe).*

@@ -1,5 +1,3 @@
-Dracula contributes two Paseo app themes: the dark Dracula Classic palette and the light Alucard Classic palette. Each variant defines background, foreground, raised surface, control, border, accent, muted foreground and focus colors from the corresponding Dracula palette. Paseo expands those seed colors across app surfaces, panels, menus, diffs, terminal colors and other interface elements.
+Adds two themes to Paseo's Appearance settings: Dracula, a dark theme, and Alucard, a light theme with a cream background and purple accent. Paseo derives the rest of the interface colors from each theme's background, text, border, accent and focus colors. Code syntax highlighting is a separate Appearance preference and does not change with the theme. The plugin only sets app colors and has no settings, background process, file access or network access.
 
-The manifest requires Paseo ^0.9.0, ^0.10.0 or ^0.11.0. The package also declares Node.js 24 or newer. Syntax highlighting remains a separate Appearance preference, so the app palette does not select a code highlighting theme.
-
-The published plugin consists of a client theme registration entrypoint and supporting metadata and documentation. It has no daemon entrypoint or install-time build steps. The entrypoint registers palettes without commands, RPC handlers, filesystem operations, process execution, environment reads or network requests.
+*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/paseo-dracula).*

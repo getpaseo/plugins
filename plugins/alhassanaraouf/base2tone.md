@@ -1,3 +1,3 @@
-Base2Tone contributes one dark color theme to Paseo. Its palette is ported from the Base2Tone theme for Obsidian by deathau. The theme uses a purple background and control palette, pale foreground colors and warm orange accent and focus colors. It appears as Base2Tone in Paseo's Appearance settings.
+Adds one dark theme, Base2Tone, to Paseo's Appearance settings. It uses a deep purple background and control palette, pale lavender text, and warm orange accent and focus colors. It only sets app colors and has no settings, background process, file access or network access.
 
-The manifest requires Paseo 0.8.0 or newer. The client entrypoint registers the palette through Paseo's theme API. The published package contains no daemon entrypoint, commands, RPC handlers or install-time build steps. Its theme code does not read files, credentials or environment variables, and makes no network requests. The contribution changes app colors and supplies a single dark appearance variant.
+*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/paseo-base2tone-theme).*

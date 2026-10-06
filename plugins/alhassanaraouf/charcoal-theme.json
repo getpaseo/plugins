@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/charcoal-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-charcoal-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-charcoal-theme/-/paseo-charcoal-theme-0.1.1.tgz",
+    "integrity": "sha512-4wH3MFNG/0g8McIr9Ps8Wh3CSQW3DLtfNWI/ykl8mrIPciA9+108IwU8iAgbBnNhuqTd+blOi/tTaLzxlH5YDw=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-charcoal-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/blue-topaz-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-blue-topaz-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-blue-topaz-theme/-/paseo-blue-topaz-theme-0.1.1.tgz",
+    "integrity": "sha512-o719LrZz721oJ8Mg8AYbZK6DpJ3PjJCxias5oI+yihKroF//If9jHBifkH9o2nQUuyYqUvhyzCSmEW7lzvwhPA=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-blue-topaz-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/discordian-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-discordian-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-discordian-theme/-/paseo-discordian-theme-0.1.1.tgz",
+    "integrity": "sha512-OeDFdfxjgrDsrX4PbGkKKf2BFWnAGOyCWFhwnuceXdgCHM9E1qepzn4KF/8bDOGvU14bOJwwjQLvyJ3pZKk56A=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-discordian-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

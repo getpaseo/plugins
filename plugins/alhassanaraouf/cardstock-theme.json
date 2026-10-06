@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/cardstock-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-cardstock-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-cardstock-theme/-/paseo-cardstock-theme-0.1.1.tgz",
+    "integrity": "sha512-73CmqpqxJeqF5RXbsP3dBuyTZqKVlC4u8L5EME3xWaSyOi+G6GCHEBfXEx7rLzmC049FL7Nu237mTgDEbkDb3g=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-cardstock-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

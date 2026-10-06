@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/border-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-border-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-border-theme/-/paseo-border-theme-0.1.1.tgz",
+    "integrity": "sha512-yEChzoAvOFV/Eo7/oV2zMlXZ0sLV3SOPcqKRLS/evsCg8V8ODu+62Fd0f/j/z+un5Uj3s3R5usPgaQONW+87PQ=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-border-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

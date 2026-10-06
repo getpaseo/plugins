@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/tokyo-night-storm-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-tokyo-night-storm-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-tokyo-night-storm-theme/-/paseo-tokyo-night-storm-theme-0.1.1.tgz",
+    "integrity": "sha512-58dIn9WzmScUOuLB40ZANGs76So++7u8mYDmP2bN6+SC+p887QR/OUDjjVnmvIRz4UDJ76sh3kV0DA/G8RCCzQ=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-tokyo-night-storm-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

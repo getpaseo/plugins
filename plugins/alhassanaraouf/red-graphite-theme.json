@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/red-graphite-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-red-graphite-theme",
+    "version": "0.1.2",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-red-graphite-theme/-/paseo-red-graphite-theme-0.1.2.tgz",
+    "integrity": "sha512-UtWeOfqMqFinVeFM4m9/Le7Azvwn2SLCEiHl6PYsdXMkmPVtakjn1HGBCtV2Vq22QUMT4FL9+8/kDZ6FOCxWxg=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-red-graphite-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

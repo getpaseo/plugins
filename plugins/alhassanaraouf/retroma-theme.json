@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/retroma-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-retroma-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-retroma-theme/-/paseo-retroma-theme-0.1.1.tgz",
+    "integrity": "sha512-bWnn6heDulRwIpJws61GGTT9o+eYKL3hsMGBh+OTE7BzCC3wVHvFCSJj8Y8/BzqkrDIzwZmWz7vNXb1/w6biSg=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-retroma-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

@@ -126,6 +126,14 @@ node scripts/validate.ts --online --changed --allow-imports
 existing pin without an author overview. Normal submissions and bumps use the
 same command without this flag.
 
+When a bump finds the author's overview, its commit removes the registry
+stopgap. When the file is absent, the bump retains the stopgap and opens a PR
+whose body explains why it cannot merge. Failed inline validation is reported in
+the PR body and workflow log. Validation still rejects the changed pin. Invalid overview content
+or a source lookup failure stops the bump run before changing branches or
+records, and no PR is opened for that pin. These failures never use the stopgap
+as a substitute for author content.
+
 The dry run prints proposed PR bodies and writes full diffs to `.tmp/diffs/`.
 No pending versions means no proposed bodies. Inline diffs are capped at 60,000
 characters; workflows retain the full diff artifact.

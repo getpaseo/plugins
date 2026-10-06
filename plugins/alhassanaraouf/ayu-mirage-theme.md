@@ -1,3 +1,3 @@
-Ayu Mirage adds a color palette to Paseo through the app theme API. It provides one dark appearance palette named Ayu Mirage. The palette defines background, foreground, raised surfaces, controls, borders, accent, muted text, and focus ring colors. The accent color is #3f455b.
+Ayu Mirage adds one dark color theme to Paseo, with a deep blue-gray background, warm off-white text and muted slate accents. There is no light variant. Select it under Settings, Appearance, Theme.
 
-The manifest requires Paseo 0.8.0 or later. The theme appears in the Appearance settings alongside other themes. Its contribution consists of fixed palette values in the client entrypoint. It has no server entrypoint, settings panel, provider integration, or account configuration. The supplied palette adapts colors to Paseo's theme tokens; it does not reproduce the full layout or styling of its upstream theme.
+*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/paseo-ayu-mirage-theme).*

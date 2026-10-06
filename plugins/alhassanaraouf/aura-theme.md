@@ -1,3 +1,3 @@
-Aura adds a color palette to Paseo through the app theme API. It provides Aura for dark appearance and Aura Light for light appearance. The palette defines background, foreground, raised surfaces, controls, borders, accent, muted text, and focus ring colors. The dark accent is #707afa, and the light accent is #e9b35c.
+Aura adds two color themes to Paseo, Aura (dark) and Aura Light, using a violet accent on near-black in the dark theme and a gold accent on warm cream in the light theme. Select one under Settings, Appearance, Theme.
 
-The manifest requires Paseo 0.8.0 or later. The theme appears in the Appearance settings alongside other themes. Its contribution consists of fixed palette values in the client entrypoint. It has no server entrypoint, settings panel, provider integration, or account configuration. The supplied palette adapts colors to Paseo's theme tokens; it does not reproduce the full layout or styling of its upstream theme.
+*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/paseo-aura-theme).*

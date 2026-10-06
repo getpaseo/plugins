@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/pisum-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-pisum-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-pisum-theme/-/paseo-pisum-theme-0.1.1.tgz",
+    "integrity": "sha512-4/YJfO6tosZGntVVgDGF2kpzXSLRdGEA8Er6LB4NiElr4cRB+mEk8A9uYYZSklWf6Wl8RbOO7txJM3He6n5ciA=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-pisum-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/notation-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-notation-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-notation-theme/-/paseo-notation-theme-0.1.1.tgz",
+    "integrity": "sha512-W/Y8EV6xaT8e5LnFDomGbcZr3kSeO5DK7DPCL1f7PKWxQAhwrMd149n4ImCdrgfeoSw38g0CncF3w9iJt8OUPA=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-notation-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

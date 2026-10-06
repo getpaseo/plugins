@@ -1,0 +1,3 @@
+Nier adds a color theme to Paseo using a palette ported from an Obsidian theme. It registers one palette, Nier, with dark appearance. The palette defines background, foreground, raised surfaces, controls, borders, accent, muted text, and focus ring colors. Its accent color is #6e695b.
+
+The manifest requires Paseo 0.8.0 or later. The client entrypoint registers fixed color values through the theme API. Its scope is app appearance: it contributes no server entrypoint, agent provider, or workspace workflow. The published implementation contains no network requests, environment reads, or credential access. The palette is defined in the plugin source, with no settings for editing individual colors.

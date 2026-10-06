@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/obsidian-ia-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-obsidian-ia-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-obsidian-ia-theme/-/paseo-obsidian-ia-theme-0.1.1.tgz",
+    "integrity": "sha512-1FErZIXCUP+8G6qPpgigfkXPqpunJhGps4Agj5Mm0y41WIhqKT78MIju+H9WYDOxkQT4+voxtzXnJRW+EDJthw=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-obsidian-ia-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/obsdn-dark-rmx-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-obsdn-dark-rmx-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-obsdn-dark-rmx-theme/-/paseo-obsdn-dark-rmx-theme-0.1.1.tgz",
+    "integrity": "sha512-/5ZNqHrP7Gl3t+hGeXEwFicOLUPBhMIeO7gik0nxXCCd8yvJy2D1IBvCN7y5S++sj/NvtsCO7/5zJH9Y0tl/MQ=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-obsdn-dark-rmx-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

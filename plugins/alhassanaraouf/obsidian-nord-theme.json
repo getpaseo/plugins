@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/obsidian-nord-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-obsidian-nord-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-obsidian-nord-theme/-/paseo-obsidian-nord-theme-0.1.1.tgz",
+    "integrity": "sha512-FmpwH/975qXp4+b8Ar4x3kGZ8phHScEd78wX/JuJzzb9w6xIGnFpqZ7uOgOU6fhdfVmRa4eiTgsV+0KveMdW4g=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-obsidian-nord-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

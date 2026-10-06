@@ -30,7 +30,8 @@ The record is only valid when the pin holds:
 - The version is exact and the integrity matches npm. A pin that npm no longer serves, or
   serves with a different integrity, is rejected.
 - A git commit is a full 40-character hash reachable on the remote. A tag that has moved
-  away from the pinned commit is rejected until the pin is updated.
+  away from the pinned commit is rejected until the pin is updated. A repository with no
+  release tag is pinned to a commit alone; automatic bumps start when it publishes a tag.
 - `paseo-plugin.json` exists at the artifact root, or under `pluginPath`.
 - The record's `id` owner is the GitHub owner of the source repository.
 - Ownership: npm provenance names the declared repository, or the submitter is the
@@ -46,8 +47,19 @@ Each of the following is read in the extracted artifact and reported with a file
 when present. The plugin's stated purpose, from its manifest description and overview, is
 what each is judged against.
 
-- Lifecycle scripts: `preinstall`, `install`, `postinstall`, `prepare`, or any script
-  Paseo would run on install. A plugin has no reason to run code at install time.
+- Install-time commands: the manifest's `install` and `build` commands and the package's
+  `preinstall`, `install`, `postinstall`, and `prepare` scripts. This is where most
+  vulnerabilities live, so every command and every script file it invokes is read in full
+  at the pinned commit, and the review says what each one does. Dependencies are
+  installed with `npm ci --ignore-scripts`; `npm install`, or `npm ci` without
+  `--ignore-scripts`, is changes requested unless every dependency lifecycle script that
+  would run has been read and is named in the review. The lockfile at the pinned commit
+  carries `resolved` pointing at the public npm registry and `integrity` for every entry;
+  a missing lockfile or an entry without either is changes requested, and an entry
+  resolved to a git URL or a tarball elsewhere is reviewed as a dependency. A command that
+  downloads anything and runs it, pulls a branch or tag, or installs a package the lockfile
+  does not fix bypasses the pin and is rejected. A build script only transforms files
+  already in the artifact.
 - Dependencies: each runtime dependency, what it is for, and whether it is what the plugin
   needs. Unused, typosquatted, or unpinned-to-a-fork dependencies are rejected.
 - Network: every outbound host the code can reach. Each one is justified by the purpose
@@ -59,6 +71,10 @@ what each is judged against.
   does not need.
 - Execution: `child_process`, `eval`, `new Function`, dynamic `import()` of remote or
   computed paths, and anything that fetches and runs code.
+- Runtime installs: a plugin that clones, downloads, installs, or updates software while
+  running is listed when the action runs only on the user's explicit confirmation and the
+  overview names what it installs and from where. One that does it unprompted is
+  rejected.
 - Readability: obfuscated code, or minified code with no source in the artifact or the
   declared repository at the pinned commit, is rejected. A bundle is acceptable when the
   repository holds its source at that commit.

@@ -9,7 +9,10 @@
   "submittedBy": "tommerty",
   "reviewedAt": "2026-10-03",
   "listing": {
-    "screenshots": []
+    "screenshots": [
+      "https://raw.githubusercontent.com/dorasto/sayr/main/packages/paseo-plugin/assets/sayr-plguin-1.png",
+      "https://raw.githubusercontent.com/dorasto/sayr/main/packages/paseo-plugin/assets/paseo-plugin-2.png"
+    ]
   },
   "artifact": {
     "kind": "npm",

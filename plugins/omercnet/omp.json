@@ -10,7 +10,10 @@
   "reviewedAt": "2026-10-03",
   "listing": {
     "name": "OMP",
-    "screenshots": []
+    "screenshots": [
+      "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/paseo-omp/docs/images/plugin-manager.png",
+      "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/paseo-omp/docs/images/workspace-settings.png"
+    ]
   },
   "artifact": {
     "kind": "npm",

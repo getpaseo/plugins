@@ -10,7 +10,10 @@
   "reviewedAt": "2026-10-03",
   "listing": {
     "name": "GitHub Board",
-    "screenshots": []
+    "screenshots": [
+      "https://raw.githubusercontent.com/gpambrozio/paseo-plugins/main/github-board/docs/screenshot.png",
+      "https://raw.githubusercontent.com/gpambrozio/paseo-plugins/main/github-board/docs/detail-panel.png"
+    ]
   },
   "artifact": {
     "kind": "npm",

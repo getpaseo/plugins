@@ -103,7 +103,6 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
       join(repository, pluginPath, "paseo-listing.json"),
       JSON.stringify({ screenshots: ["screen.png"] }),
     );
-    writeFileSync(join(repository, pluginPath, "screen.png"), "Pinned screenshot");
     writeFileSync(join(repository, "README.md"), "Wrong root README");
     run("git", ["add", "."], { cwd: repository });
     run(

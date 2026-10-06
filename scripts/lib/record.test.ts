@@ -25,6 +25,17 @@ const valid = {
   reviewedAt: "2026-10-03",
 };
 
+test("screenshot overrides require absolute https URLs", () => {
+  for (const screenshot of ["http://example.com/screen.png", "screen.png", "//example.com/screen.png", ""]) {
+    assert.throws(
+      () => parseRecord({ ...valid, listing: { screenshots: [screenshot] } }, known),
+      /listing.screenshots must be https URLs/,
+    );
+  }
+  const screenshots = ["https://raw.githubusercontent.com/acme/plugin/main/screen.png", "https://example.com/screen.png"];
+  assert.deepEqual(parseRecord({ ...valid, listing: { screenshots } }, known).listing?.screenshots, screenshots);
+});
+
 test("accepts a complete record and keeps field order when written", () => {
   const record = parseRecord(
     { ...valid, listing: { screenshots: ["https://example.com/a.png"] } },
@@ -59,7 +70,7 @@ test("reports every problem at once", () => {
   );
   assert.throws(
     () => parseRecord({ ...valid, listing: { icon: "https://example.com/icon.svg" } }, known),
-    /listing.icon must be a relative PNG/,
+    /listing.icon must be an https PNG/,
   );
   assert.throws(
     () => parseRecord({ ...valid, submittedAt: "yesterday" }, known),

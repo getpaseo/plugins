@@ -19,7 +19,7 @@ export interface PluginRecord {
   submittedBy?: string;
   /** Date the pinned version was approved. */
   reviewedAt: string;
-  /** Registry overrides for the pinned artifact's listing metadata. */
+  /** Overrides for packages that do not ship paseo-listing.json. */
   listing?: PluginListingOverrides;
 }
 
@@ -135,17 +135,16 @@ export function parseRecord(raw: unknown, knownCategories: Set<string>): PluginR
         else listing.name = raw.name;
       }
       if (raw.icon !== undefined) {
-        if (typeof raw.icon !== "string" || (!/^https:\/\/\S+\.png$/i.test(raw.icon) &&
-            !(mediaPath(raw.icon) !== null && /\.png$/i.test(raw.icon))))
-          problems.push("listing.icon must be a relative PNG path or a legacy https PNG URL");
+        if (typeof raw.icon !== "string" || !/^https:\/\/\S+\.png$/i.test(raw.icon))
+          problems.push("listing.icon must be an https PNG URL");
         else listing.icon = raw.icon;
       }
       if (raw.screenshots !== undefined) {
         if (
           !Array.isArray(raw.screenshots) ||
-          raw.screenshots.some((s) => typeof s !== "string" || (!/^https:\/\/\S+$/.test(s) && mediaPath(s) === null))
+          raw.screenshots.some((s) => typeof s !== "string" || !/^https:\/\/\S+$/.test(s))
         ) {
-          problems.push("listing.screenshots must be relative paths or legacy https URLs");
+          problems.push("listing.screenshots must be https URLs");
         } else listing.screenshots = raw.screenshots as string[];
       }
       for (const key of Object.keys(raw)) {
@@ -273,12 +272,4 @@ export function parseArtifact(raw: unknown): PluginArtifact {
     };
   }
   throw new Error("unsupported artifact kind");
-}
-
-/** Normalize a path without allowing URLs, traversal, or URL control characters. */
-export function mediaPath(value: string): string | null {
-  const path = value.replace(/^\.\//, "");
-  if (!path || /[\\:%?#\x00-\x1f]/.test(path) ||
-    path.split("/").some((part) => !part || part === "." || part === "..")) return null;
-  return path;
 }

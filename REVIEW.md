@@ -81,9 +81,6 @@ what each is judged against.
 - Source match: when the declared repository holds the source at the pinned commit, the
   artifact's code matches it. Extra files, changed logic, or a dependency the source does
   not declare is a mismatch, and a mismatch is rejected.
-- Listing assets: the icon and screenshots are paths inside the artifact, resolved at the
-  pinned commit. An absolute URL is rejected, because an image that can change after
-  review was not reviewed.
 - Scope: a pull request changes one record and its overview. Anything touching `.github/`,
   `scripts/`, `categories.json`, this file, or more than one record is a maintainer change
   and is never merged by the bot.

@@ -1,11 +1,9 @@
-import { parseGitSource } from "./git-artifact.ts";
+import { parseSubmissionSource, type SubmissionSource } from "./submission-source.ts";
 import type { Category } from "./categories.ts";
 
 export interface SubmissionIssue {
-  package: string;
+  source: SubmissionSource;
   categories: string[];
-  id?: string;
-  pluginPath?: string;
 }
 
 /** Parses the body GitHub renders from .github/ISSUE_TEMPLATE/submit-plugin.yml. */
@@ -26,8 +24,8 @@ export function parseSubmissionIssue(body: string, categories: Category[]): Subm
     return value === "_No response_" ? "" : value;
   };
 
-  const pkg = (text("plugin source") || text("npm package")).replace(/^npm:/, "");
-  if (!pkg) throw new Error("the issue has no plugin source");
+  const source = text("source");
+  if (!source) throw new Error("the issue has no plugin source");
 
   const labels = new Map(
     categories.map((category) => [category.label.toLowerCase(), category.slug]),
@@ -40,12 +38,5 @@ export function parseSubmissionIssue(body: string, categories: Category[]): Subm
     .filter((slug): slug is string => Boolean(slug));
   if (slugs.length === 0) throw new Error("the issue has no category ticked");
 
-  const id = text("listing id");
-  const git = parseGitSource(pkg, text("plugin path") || undefined);
-  return {
-    package: git?.source ?? pkg,
-    categories: slugs,
-    ...(id ? { id } : {}),
-    ...(git?.pluginPath ? { pluginPath: git.pluginPath } : {}),
-  };
+  return { source: parseSubmissionSource(source), categories: slugs };
 }

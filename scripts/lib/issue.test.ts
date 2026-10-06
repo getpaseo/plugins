@@ -1,83 +1,28 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import { test } from "node:test";
 import { readCategories } from "./categories.ts";
 import { parseSubmissionIssue } from "./issue.ts";
+import { parseSubmissionSource } from "./submission-source.ts";
 
-const body = `### npm package
+const body = readFileSync(new URL("../fixtures/submission-issue.md", import.meta.url), "utf8");
+const parse = (source: string) => parseSubmissionIssue(body.replace("@acme/paseo-review", source), readCategories());
 
-@acme/paseo-review
-
-### Categories
-
-- [ ] Themes
-- [X] Git
-- [x] Workspaces
-- [ ] Utils
-
-### Listing ID
-
-_No response_
-`;
-
-test("reads the package, ticked categories, and optional id from the issue form", () => {
-  const categories = readCategories();
-  assert.deepEqual(parseSubmissionIssue(body, categories), {
-    package: "@acme/paseo-review",
-    categories: ["git", "workspaces"],
+for (const source of [
+  "@acme/paseo-review", "paseo-review", "npm:@acme/paseo-review",
+  "https://www.npmjs.com/package/@acme/paseo-review",
+  "https://github.com/acme/paseo-review", "https://github.com/acme/paseo-review.git/",
+  "https://github.com/acme/monorepo/tree/main/plugins/review",
+  "github:acme/paseo-review", "git:https://github.com/acme/paseo-review.git",
+  "acme/monorepo:plugins/review",
+]) {
+  test(`reads Source and categories from GitHub's rendered issue: ${source}`, () => {
+    assert.deepEqual(parse(source), { source: parseSubmissionSource(source), categories: ["git", "workspaces"] });
   });
-  assert.deepEqual(
-    parseSubmissionIssue(
-      body
-        .replace("_No response_", "review")
-        .replace("@acme/paseo-review", "npm:@acme/paseo-review"),
-      categories,
-    ),
-    {
-      package: "@acme/paseo-review",
-      categories: ["git", "workspaces"],
-      id: "review",
-    },
-  );
-});
-
-test("rejects an issue with no category", () => {
-  const categories = readCategories();
-  assert.throws(
-    () => parseSubmissionIssue(body.replaceAll("[X]", "[ ]").replaceAll("[x]", "[ ]"), categories),
-    /no category/,
-  );
-  assert.throws(
-    () => parseSubmissionIssue("### Categories\n\n- [x] Themes\n", categories),
-    /no plugin source/,
-  );
-});
-
-test("accepts a GitHub source and monorepo path", () => {
-  const categories = [{ slug: "themes", label: "Themes", description: "Themes" }];
-  assert.deepEqual(
-    parseSubmissionIssue(
-      "### Plugin source\nhttps://github.com/acme/plugins\n### Plugin path\nplugins/example\n### Categories\n- [x] Themes\n### Listing ID\nexample",
-      categories,
-    ),
-    {
-      package: "https://github.com/acme/plugins",
-      pluginPath: "plugins/example",
-      categories: ["themes"],
-      id: "example",
-    },
-  );
-});
-
-test("normalizes a monorepo shorthand from the submission form", () => {
-  assert.deepEqual(
-    parseSubmissionIssue(
-      "### Plugin source\nacme/plugins:packages/example\n### Categories\n- [x] Themes",
-      readCategories(),
-    ),
-    {
-      package: "https://github.com/acme/plugins",
-      pluginPath: "packages/example",
-      categories: ["themes"],
-    },
-  );
+}
+test("rejects missing Source or categories and registry ids", () => {
+  assert.throws(() => parse("_No response_"), /no plugin source/);
+  assert.throws(() => parseSubmissionIssue(body.replaceAll("[x]", "[ ]"), readCategories()), /no category/);
+  assert.throws(() => parseSubmissionIssue(body.replace("### Source", "### Plugin source"), readCategories()), /no plugin source/);
+  assert.throws(() => parse("acme/review"), /paste the repository or package instead/i);
 });

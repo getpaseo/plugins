@@ -23,6 +23,13 @@ The pinned artifact at the exact pin in the record, fetched without executing an
 Nothing in the artifact is installed, built, required, imported, or run. `npm install`,
 `npm pack`, `node`, and any build step on the artifact are out of bounds for review.
 
+## Submissions
+
+The issue title names the plugin. The form collects its Source and Categories;
+the bot derives the listing id and pins the latest npm version or newest Git tag.
+A GitHub folder URL or install source can locate a plugin inside a repository.
+The `submission` label identifies these issues; the title has no required prefix.
+
 ## Pin
 
 The record is only valid when the pin holds:
@@ -30,8 +37,9 @@ The record is only valid when the pin holds:
 - The version is exact and the integrity matches npm. A pin that npm no longer serves, or
   serves with a different integrity, is rejected.
 - A git commit is a full 40-character hash reachable on the remote. A tag that has moved
-  away from the pinned commit is rejected until the pin is updated. A repository with no
-  release tag is pinned to a commit alone; automatic bumps start when it publishes a tag.
+  away from the pinned commit is rejected until the pin is updated. A maintainer can pin
+  a repository with no release tag to a commit alone; automatic bumps start when it
+  publishes a tag.
 - `paseo-plugin.json` exists at the artifact root, or under `pluginPath`.
 - The record's `id` owner is the GitHub owner of the source repository.
 - Ownership: npm provenance names the declared repository, or the submitter is the

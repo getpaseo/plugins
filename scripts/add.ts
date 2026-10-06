@@ -1,6 +1,7 @@
 // Pins a package and writes its record. Used by maintainers locally and by submit.ts.
 //   node scripts/add.ts <npm package> --categories themes,utils [--id dracula] [--submitted-by login] [--submitted-at YYYY-MM-DD]
-import { pinGit, parseGitSource } from "./lib/git-artifact.ts";
+import { pinGit } from "./lib/git-artifact.ts";
+import { parseSubmissionSource } from "./lib/submission-source.ts";
 import { existsSync } from "node:fs";
 import { flagString, parseArgs } from "./lib/args.ts";
 import { categorySlugs, readCategories } from "./lib/categories.ts";
@@ -24,23 +25,28 @@ if (!pkg || categories.length === 0) {
 }
 
 const known = categorySlugs(readCategories());
-const id = flagString(flags, "id") ?? deriveId(pkg);
+const source = parseSubmissionSource(pkg);
+const packageName = source.kind === "npm" ? source.package : pkg;
+const id = flagString(flags, "id") ?? deriveId(packageName);
 const existing = readRecords(known);
 const duplicate = existing.find(
   (record) =>
-    (record.artifact.kind === "npm" && record.artifact.package === pkg) || record.id === id,
+    (record.artifact.kind === "npm" && record.artifact.package === packageName) || record.id === id,
 );
 if (duplicate || existsSync(recordPath(id))) {
   console.error(`${pkg} is already listed as "${duplicate?.id ?? id}"`);
   process.exit(1);
 }
 
-const source = parseGitSource(pkg, flagString(flags, "plugin-path"));
-if (flags.has("commit") && (!source || !flagString(flags, "commit")))
+const pluginPath = flagString(flags, "plugin-path");
+if (source.kind === "git" && source.pluginPath && pluginPath && source.pluginPath !== pluginPath)
+  throw new Error("Conflicting plugin paths");
+if (flags.has("commit") && (source.kind !== "git" || !flagString(flags, "commit")))
   throw new Error("--commit requires a full SHA and a GitHub source");
-const record = source
+const record = source.kind === "git"
   ? pinGit({
       ...source,
+      pluginPath: pluginPath ?? source.pluginPath,
       commit: flagString(flags, "commit"),
       slug: flagString(flags, "id"),
       categories,
@@ -48,7 +54,7 @@ const record = source
     })
   : await pinRecord(
       createNpmClient(),
-      { id, package: pkg, categories, submittedBy: flagString(flags, "submitted-by") },
+      { id, package: packageName, categories, submittedBy: flagString(flags, "submitted-by") },
       { version: flagString(flags, "version"), submittedAt: flagString(flags, "submitted-at") },
     );
 parseRecord(record, known);

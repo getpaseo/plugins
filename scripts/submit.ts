@@ -4,7 +4,6 @@ import { validateForReview } from "./lib/review.ts";
 // Runs from .github/workflows/submit.yml with ISSUE_NUMBER and GH_TOKEN set.
 import { pinGit } from "./lib/git-artifact.ts";
 import { githubOwner } from "./lib/repository.ts";
-import { existsSync } from "node:fs";
 import { categorySlugs, readCategories } from "./lib/categories.ts";
 import { deriveId } from "./lib/id.ts";
 import { parseSubmissionIssue } from "./lib/issue.ts";
@@ -44,7 +43,7 @@ const previous = ghJson<Array<{ number: number; state: string; body: string; url
   "--json",
   "number,state,body,url",
 ])[0];
-const revision = `<!-- submission:${issueNumber}:${createHash("sha256").update(issue.body).digest("hex")} -->`;
+const revision = `<!-- submission:${issueNumber}:${createHash("sha256").update(JSON.stringify([issue.title, issue.body])).digest("hex")} -->`;
 if (previous && (previous.state !== "OPEN" || previous.body.includes(revision))) {
   console.log(`Submission already processed: ${previous.url}`);
   process.exit(0);
@@ -67,31 +66,27 @@ try {
   const categories = readCategories();
   const known = categorySlugs(categories);
   const submission = parseSubmissionIssue(issue.body, categories);
-  const id = submission.id ?? deriveId(submission.package);
+  const source = submission.source;
   const existing = readRecords(known);
   const duplicate = existing.find(
     (record) =>
-      (record.artifact.kind === "npm" && record.artifact.package === submission.package) ||
-      record.id === id,
+      source.kind === "npm" && record.artifact.kind === "npm" && record.artifact.package === source.package,
   );
-  if (duplicate || existsSync(recordPath(id))) {
-    closeAlreadyListed(duplicate?.id ?? id);
-  }
+  if (duplicate) closeAlreadyListed(duplicate.id);
 
-  const record = submission.package.startsWith("https://github.com/")
+  const record = source.kind === "git"
     ? pinGit({
-        source: submission.package,
-        slug: submission.id,
-        pluginPath: submission.pluginPath,
+        ...source,
         categories: submission.categories,
         submittedBy: issue.author.login,
       })
     : await pinRecord(createNpmClient(), {
-        id,
-        package: submission.package,
+        id: deriveId(source.package),
+        package: source.package,
         categories: submission.categories,
         submittedBy: issue.author.login,
       });
+  record.listing = { name: issue.title.trim() };
   parseRecord(record, known);
   if (existing.some((item) => item.id === record.id)) closeAlreadyListed(record.id);
   const owner = githubOwner(record.repository.url)!;
@@ -108,7 +103,7 @@ try {
   git(["checkout", "-B", branch, "origin/main"]);
   writeRecord(record);
   git(["add", recordPath(record.id)]);
-  git(["commit", "-m", `Add ${id} (${record.id})`]);
+  git(["commit", "-m", `Add ${record.id}`]);
   const validation = validateForReview();
   git(["push", "--force", "--set-upstream", "origin", branch]);
 

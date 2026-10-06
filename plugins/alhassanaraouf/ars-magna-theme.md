@@ -1,3 +1,3 @@
-Ars Magna adds a color palette to Paseo through the app theme API. It provides Ars Magna for dark appearance and Ars Magna Light for light appearance. The palette defines background, foreground, raised surfaces, controls, borders, accent, muted text, and focus ring colors. The dark accent is #c87800, and the light accent is #c87800.
+Ars Magna adds two color themes to Paseo, Ars Magna (dark) and Ars Magna Light, using an amber accent on a dark slate background in the dark theme and on white in the light theme. Select one under Settings, Appearance, Theme.
 
-The manifest requires Paseo 0.8.0 or later. The theme appears in the Appearance settings alongside other themes. Its contribution consists of fixed palette values in the client entrypoint. It has no server entrypoint, settings panel, provider integration, or account configuration. The supplied palette adapts colors to Paseo's theme tokens; it does not reproduce the full layout or styling of its upstream theme.
+*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/paseo-ars-magna-theme).*

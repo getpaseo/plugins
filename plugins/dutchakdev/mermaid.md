@@ -1,3 +1,7 @@
-Mermaid renders diagram fences in user and assistant messages inside the Paseo timeline. It draws a supported subset of flowcharts and sequence diagrams with inline controls for zoom, fit to view, a pop-out viewer, and source display. Rendering begins while the diagram is streaming. Unsupported diagrams remain visible as source text.
+Mermaid draws `mermaid` code blocks in agent and user messages as diagrams in the chat timeline instead of showing the source. It supports flowcharts and sequence diagrams only. Subgraphs, `style` and `classDef` directives, and other diagram types are not supported. Lines the parser does not recognize are counted under the drawing, and a diagram that cannot be parsed is shown as source.
 
-The manifest requires Paseo 0.8.0 or later. The plugin runs in the app and has no server entrypoint. It reads message text through timeline transformers and splits messages containing Mermaid fences into diagram and prose items. Surrounding prose uses the plugin's limited Markdown renderer. Flowchart subgraphs and styling directives are not drawn, and the parser does not implement every Mermaid feature. Parsing and drawing use the supplied source code locally, without a diagram service or additional account configuration.
+Diagrams are drawn from the message text when the message renders, and drawing starts while the code block is still streaming. A message that contains a diagram is rendered by the plugin, so the text around the diagram uses a limited Markdown renderer (headings, lists, emphasis and code). Messages without a diagram are left to Paseo. Each diagram has a toolbar for zoom, fit to view, pop out to a larger view, and show code.
+
+The plugin has no settings and needs no additional setup.
+
+*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/mermaid).*

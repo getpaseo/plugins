@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/ayu-mirage-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-ayu-mirage-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-ayu-mirage-theme/-/paseo-ayu-mirage-theme-0.1.1.tgz",
+    "integrity": "sha512-pAmIP6JX3ePD4aaXohuNM4EfVc3yD9Obslzs9/qiYHV5+CJYSN1bavN8DwWPfX5mE9dtgyXpptoZXrZ0Z3TQng=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-ayu-mirage-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

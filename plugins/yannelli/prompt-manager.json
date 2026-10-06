@@ -1,0 +1,20 @@
+{
+  "id": "yannelli/prompt-manager",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/yannelli/paseo-prompt-manager.git",
+    "commit": "f6a724bf56b85adc42373ea68e2b6f46ce6d11b0",
+    "tag": "v0.3.0"
+  },
+  "repository": {
+    "url": "https://github.com/yannelli/paseo-prompt-manager",
+    "commit": "f6a724bf56b85adc42373ea68e2b6f46ce6d11b0"
+  },
+  "categories": [
+    "utils",
+    "sidebar",
+    "git"
+  ],
+  "submittedAt": "2026-10-06",
+  "reviewedAt": "2026-10-06"
+}

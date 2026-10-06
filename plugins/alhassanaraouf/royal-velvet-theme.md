@@ -1,3 +1,3 @@
-Royal Velvet adds dark and light color themes to Paseo. The Appearance theme choices are Royal Velvet and Royal Velvet Light. Both variants supply fixed colors for backgrounds, text, raised surfaces, controls, borders, accents, muted text, and focus rings.
+Royal Velvet and Royal Velvet Light add dark and light themes to Paseo. Choose either one under Settings, Appearance, Theme. Royal Velvet has a dark blue-grey background (#21212c), off-white text (#f8f8f2), and a bright pink accent (#ff80c0). Royal Velvet Light has a light grey background (#f3f4f6), dark blue-grey text (#21222c), and a deep pink accent (#db006e). Requires Paseo 0.8.0 or later.
 
-The manifest requires Paseo 0.8.0 or later. The plugin contributes its palette through the client theme API. Its contribution is limited to app colors. It has no server entrypoint or runtime package dependencies, and its entrypoint does not read workspace files, agent messages, credentials, or environment variables, or make network requests.
+*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/paseo-royal-velvet-theme).*

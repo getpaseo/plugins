@@ -1,3 +1,3 @@
-Shiba Inu adds dark and light color themes to Paseo. The Appearance theme choices are Shiba Inu and Shiba Inu Light. Both variants supply fixed colors for backgrounds, text, raised surfaces, controls, borders, accents, muted text, and focus rings.
+Shiba Inu and Shiba Inu Light add dark and light themes to Paseo. Choose either one under Settings, Appearance, Theme. Shiba Inu has a dark blue-grey background (#2a2d3d), pale periwinkle text (#c6ceef), and a soft pink accent (#ebbcba). Shiba Inu Light has a near-white background (#fcfcfc), slate text (#4c4f69), and a coral accent (#de9584). Requires Paseo 0.8.0 or later.
 
-The manifest requires Paseo 0.8.0 or later. The plugin contributes its palette through the client theme API. Its contribution is limited to app colors. It has no server entrypoint or runtime package dependencies, and its entrypoint does not read workspace files, agent messages, credentials, or environment variables, or make network requests.
+*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/paseo-shiba-inu-theme).*

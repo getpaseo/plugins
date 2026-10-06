@@ -1,3 +1,3 @@
-Underwater adds dark and light color themes to Paseo. The Appearance theme choices are Underwater and Underwater Light. Both variants supply fixed colors for backgrounds, text, raised surfaces, controls, borders, accents, muted text, and focus rings.
+Underwater and Underwater Light add dark and light themes to Paseo. Choose either one under Settings, Appearance, Theme. Underwater has a dark navy-purple background (#19192e), lavender-white text (#e0def4), and a soft pink accent (#ebbcba). Underwater Light has a blush off-white background (#f5efee), muted purple text (#575279), and a coral accent (#d7827e). Requires Paseo 0.8.0 or later.
 
-The manifest requires Paseo 0.8.0 or later. The plugin contributes its palette through the client theme API. Its contribution is limited to app colors. It has no server entrypoint or runtime package dependencies, and its entrypoint does not read workspace files, agent messages, credentials, or environment variables, or make network requests.
+*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/paseo-underwater-theme).*

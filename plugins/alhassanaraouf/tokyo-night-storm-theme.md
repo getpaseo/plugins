@@ -1,3 +1,3 @@
-Tokyo Night Storm adds a dark color theme to Paseo, available as Tokyo Night Storm in the Appearance settings. It supplies fixed colors for backgrounds, text, raised surfaces, controls, borders, accents, muted text, and focus rings. This package includes one dark variant and does not contribute a light variant.
+Tokyo Night Storm adds a dark theme to Paseo. Choose it under Settings, Appearance, Theme. It has a dark blue background (#24283b), pale blue text (#c0caf5), and a light blue accent (#80d0ff). Requires Paseo 0.8.0 or later.
 
-The manifest requires Paseo 0.8.0 or later. The plugin contributes its palette through the client theme API. Its contribution is limited to app colors. It has no server entrypoint or runtime package dependencies, and its entrypoint does not read workspace files, agent messages, credentials, or environment variables, or make network requests.
+*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/paseo-tokyo-night-storm-theme).*

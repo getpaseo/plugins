@@ -120,6 +120,7 @@ for (const kind of ["npm", "git"] as const) {
         try {
           cpSync(fileURLToPath(new URL("..", import.meta.url)), join(registry, "scripts"), { recursive: true });
           cpSync(fileURLToPath(new URL("../../categories.json", import.meta.url)), join(registry, "categories.json"));
+          writeFileSync(join(registry, "featured.json"), "[]\n");
           mkdirSync(join(registry, "plugins/acme"), { recursive: true });
           const options = { cwd: registry, env: { ...process.env } };
           const commitRegistry = (message: string) => {

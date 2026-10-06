@@ -16,10 +16,14 @@ plugins. Browser consumers need CORS when accessing the registry across origins.
   "schemaVersion": 1,
   "registry": { "name": "Company plugins", "url": "https://plugins.example.com" },
   "categories": [{ "slug": "utils", "label": "Utils", "description": "Tools" }],
+  "featured": [],
   "plugins": [],
   "generatedAt": "2026-10-03T00:00:00.000Z"
 }
 ```
+
+The optional `featured` array contains maintainer-selected plugin IDs in display order,
+filtered to plugins present in the published directory.
 
 Each `plugins` entry has the shape below, omitting `readme`. The detail document is
 that same entry with `readme` (Markdown). IDs are lowercase `<owner>/<slug>`;

@@ -4,6 +4,7 @@
 import { validateArtifact } from "./lib/validate-artifact.ts";
 import { flagString, parseArgs } from "./lib/args.ts";
 import { categorySlugs, readCategories } from "./lib/categories.ts";
+import { readFeatured } from "./lib/featured.ts";
 import { createNpmClient } from "./lib/npm.ts";
 import { readOverview } from "./lib/overview.ts";
 import { readRecords } from "./lib/record.ts";
@@ -18,6 +19,7 @@ const base = flagString(flags, "base") ?? "origin/main";
 
 const known = categorySlugs(readCategories());
 const records = readRecords(known);
+readFeatured(records);
 const themesWithoutImages = records.filter((record) =>
   record.categories.includes("themes") && !record.listing?.media?.some((url) => mediaKind(url) === "image"),
 );

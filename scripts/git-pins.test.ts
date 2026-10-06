@@ -31,6 +31,7 @@ function fixture(t: TestContext, path = "") {
   const commit = git("rev-parse", "HEAD");
   cpSync(fileURLToPath(new URL(".", import.meta.url)), join(registry, "scripts"), { recursive: true });
   cpSync(fileURLToPath(new URL("../categories.json", import.meta.url)), join(registry, "categories.json"));
+  writeFileSync(join(registry, "featured.json"), "[]\n");
   mkdirSync(join(registry, "plugins"));
   const env = {
     ...process.env,

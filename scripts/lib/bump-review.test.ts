@@ -36,6 +36,7 @@ for (const scenario of ["present", "absent", "invalid", "network"] as const) {
       process.env.GIT_CONFIG_VALUE_0 = remote;
       cpSync(fileURLToPath(new URL("..", import.meta.url)), join(registry, "scripts"), { recursive: true });
       cpSync(fileURLToPath(new URL("../../categories.json", import.meta.url)), join(registry, "categories.json"));
+      writeFileSync(join(registry, "featured.json"), "[]\n");
       mkdirSync(join(registry, "plugins/acme"), { recursive: true });
       const recordPath = join(registry, "plugins/acme/example.json");
       const overviewPath = join(registry, "plugins/acme/example.md");

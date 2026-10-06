@@ -87,7 +87,7 @@ what each is judged against.
   first image in media order.
 - Visible surfaces: every theme and any plugin that adds a panel or other UI lists at
   least one image of that surface. A theme without an image is not listed.
-- Scope: a pull request changes one record and its overview. Anything touching `.github/`,
+- Scope: a pull request changes one record and its overview. Anything touching `.github/`, `featured.json`,
   `scripts/`, `categories.json`, this file, or more than one record is a maintainer change
   and is never merged by the bot.
 - Imports: a maintainer-approved import of listings from paseo.cafe is a pull request

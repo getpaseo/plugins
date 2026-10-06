@@ -41,6 +41,7 @@ export interface PublishedIndex {
   registry: { name: string; url: string };
   generatedAt: string;
   categories: Category[];
+  featured: string[];
   plugins: PublishedPlugin[];
 }
 

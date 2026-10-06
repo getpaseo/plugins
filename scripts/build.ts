@@ -2,6 +2,7 @@
 import { mkdirSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { categorySlugs, readCategories } from "./lib/categories.ts";
+import { readFeatured } from "./lib/featured.ts";
 import { type PublishedIndex, resolvePlugin, summarize } from "./lib/listing.ts";
 import { createNpmClient } from "./lib/npm.ts";
 import { readOverview } from "./lib/overview.ts";
@@ -10,6 +11,7 @@ import { readRecords } from "./lib/record.ts";
 const DIST = join(process.cwd(), "dist");
 const categories = readCategories();
 const records = readRecords(categorySlugs(categories));
+const featured = readFeatured(records);
 const client = createNpmClient();
 
 rmSync(DIST, { recursive: true, force: true });
@@ -41,11 +43,13 @@ for (const detail of details) {
   mkdirSync(dirname(join(DIST, "plugins", `${detail.id}.json`)), { recursive: true });
   writeFileSync(join(DIST, "plugins", `${detail.id}.json`), `${JSON.stringify(detail, null, 2)}\n`);
 }
+const publishedIds = new Set(details.map((detail) => detail.id));
 const index: PublishedIndex = {
   schemaVersion: 1,
   registry: { name: "Paseo plugins", url: process.env.REGISTRY_URL ?? "https://plugins.paseo.sh" },
   generatedAt: new Date().toISOString(),
   categories,
+  featured: featured.filter((id) => publishedIds.has(id)),
   plugins: details.map(summarize).sort((a, b) => a.id.localeCompare(b.id)),
 };
 writeFileSync(join(DIST, "index.json"), `${JSON.stringify(index, null, 2)}\n`);

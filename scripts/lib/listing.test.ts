@@ -136,6 +136,7 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
       fileURLToPath(new URL("../../categories.json", import.meta.url)),
       join(registry, "categories.json"),
     );
+    writeFileSync(join(registry, "featured.json"), '["acme/url-example", "acme/example"]\n');
     const options = {
       cwd: registry,
       env: {
@@ -178,6 +179,8 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
       /2 record\(s\) match/,
     );
     run(process.execPath, ["scripts/build.ts"], options);
+    const index = JSON.parse(readFileSync(join(registry, "dist/index.json"), "utf8"));
+    assert.deepEqual(index.featured, ["acme/url-example", "acme/example"]);
     for (const slug of ["example", "url-example"]) {
       const detail = JSON.parse(
         readFileSync(join(registry, `dist/plugins/acme/${slug}.json`), "utf8"),

@@ -1,4 +1,4 @@
-import { mkdtempSync, readFileSync, existsSync, realpathSync, rmSync } from "node:fs";
+import { mkdtempSync, readFileSync, existsSync, realpathSync, rmSync, statSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join, resolve, relative } from "node:path";
 import { run } from "./shell.ts";
@@ -142,4 +142,12 @@ export function readOptional(directory: string, name: string): string | null {
   if (relative(realpathSync(directory), realpathSync(file)).startsWith(".."))
     throw new Error("Listing file escapes plugin directory");
   return readFileSync(file, "utf8");
+}
+
+/** A regular file contained by the artifact root, including after resolving symlinks. */
+export function artifactFileExists(directory: string, path: string): boolean {
+  const root = realpathSync(directory);
+  const file = resolve(root, path);
+  if (relative(root, file).startsWith("..") || !existsSync(file)) return false;
+  return !relative(root, realpathSync(file)).startsWith("..") && statSync(file).isFile();
 }

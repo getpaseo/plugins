@@ -1,3 +1,3 @@
-Ayu adds a color theme to Paseo using palette values ported from the Obsidian theme bcdavasconcelos/Obsidian-Ayu. The plugin provides one light appearance variant named Ayu. Its palette defines the background, foreground, raised surfaces, controls, borders, accent, muted foreground and focus ring. The theme is listed in Paseo’s Appearance settings.
+Ayu adds one light theme, Ayu, with a near-white background, muted purple text and a black accent. Select it in Settings, Appearance, Theme. It requires Paseo 0.8.0 or later.
 
-The manifest requires Paseo 0.8.0 or later. The client entrypoint registers fixed color values through Paseo’s theme API. It contains no daemon entrypoint, provider configuration, account integration or environment reads. The implementation makes no network requests and reads no workspace files. Its contribution is limited to these app color values; it does not include the upstream theme’s Obsidian styles or change agent behavior.
+*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/paseo-ayu-theme).*

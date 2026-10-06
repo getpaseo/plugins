@@ -1,0 +1,20 @@
+{
+  "id": "hieunt286/bm",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-bm-plugin",
+    "version": "0.5.5",
+    "resolved": "https://registry.npmjs.org/paseo-bm-plugin/-/paseo-bm-plugin-0.5.5.tgz",
+    "integrity": "sha512-CK33Ha5cI7in+aMIOBjsflrrXPaKrC/DgfZXNpZyEGIpI7bkNWDRFWGvdsK3PO2U8zQweuwAB6HewgBKU6zy0w=="
+  },
+  "repository": {
+    "url": "https://github.com/hieunt286/paseo-bm/tree/HEAD/plugin-package",
+    "commit": "5f6dee4f4cec4fa04c105d1e91f1f2174a8de03d"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "hieunt286",
+  "reviewedAt": "2026-10-06"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "itsjustanks/daemon",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/itsjustanks/paseo-plugin-daemon.git",
+    "commit": "3621929c1fb04118b6d033245448eb1c7f2bfac9",
+    "tag": "v0.12.1"
+  },
+  "repository": {
+    "url": "https://github.com/itsjustanks/paseo-plugin-daemon",
+    "commit": "3621929c1fb04118b6d033245448eb1c7f2bfac9"
+  },
+  "categories": [
+    "daemon-management"
+  ],
+  "submittedAt": "2026-10-06",
+  "reviewedAt": "2026-10-06"
+}

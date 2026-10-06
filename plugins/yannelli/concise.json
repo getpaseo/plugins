@@ -1,0 +1,18 @@
+{
+  "id": "yannelli/concise",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/yannelli/paseo-plugin-concise.git",
+    "commit": "78c69ca0b6efc0336adb1085e1cf8d01f3c766e1",
+    "tag": "v2.4.0"
+  },
+  "repository": {
+    "url": "https://github.com/yannelli/paseo-plugin-concise",
+    "commit": "78c69ca0b6efc0336adb1085e1cf8d01f3c766e1"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-06",
+  "reviewedAt": "2026-10-06"
+}

@@ -35,12 +35,16 @@ Humans edit categories and optional `listing` overrides (`name`, HTTPS PNG `icon
 HTTPS `screenshots`). The bot writes artifact pins and review dates. The published
 index combines records with metadata from their pinned artifacts.
 
-Authors can ship `OVERVIEW.md` beside `paseo-plugin.json` (under `pluginPath` in a
-Git monorepo). The author owns this overview. At import time, a reviewer can add
-`plugins/<owner>/<slug>.md` as a registry stopgap. When a version bump changes what
-the plugin does and an author overview is still absent, the reviewer updates the
-registry stopgap. On a bump that introduces an author overview, the reviewer
-deletes the stopgap. Submitters can propose stopgap edits by pull request.
+Authors must keep `OVERVIEW.md` beside `paseo-plugin.json` in the repository at the
+pinned source commit. Git monorepos use `artifact.pluginPath`; npm monorepos use
+the pinned package's `repository.directory` and proven `repository.commit`.
+The author owns this overview.
+
+Approved imports can temporarily use `plugins/<owner>/<slug>.md` in the registry.
+An unchanged imported artifact keeps this exception while its stopgap exists.
+Every version bump requires the author's overview and removes the stopgap in the
+same PR. Normal new submissions require an author overview. A stopgap cannot
+satisfy a changed artifact pin, even when the import allowance is enabled.
 
 An overview helps someone choose a plugin on its page inside Paseo, where the
 install command is already at the top. A README assumes GitHub: it carries
@@ -68,29 +72,19 @@ Every migration-written registry overview ends exactly with this italic credit,
 using the migration assignment's `cafeFile` minus `.json` as `<cafe-slug>`:
 
 ```md
-*This overview was generated from the plugin's [paseo.cafe listing](https://paseo.cafe/plugins/<cafe-slug>).*
+*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/<cafe-slug>).*
 ```
 
 Author-owned artifact overviews never receive this credit.
 
-Validation enforces only the no-install-command rule: `paseo plugin add`,
-`npm install`, and `npm i` are rejected in registry overviews and readable artifact
-`OVERVIEW.md` files. Online validation checks the raw artifact overview even when
-an explicit listing readme has higher priority. The rest of the content contract
-is reviewed by a person.
+Validation requires an overview and rejects `paseo plugin add`, `npm install`, and
+`npm i` in both author overviews and registry stopgaps. The rest of the content
+contract is reviewed by a person.
 
-The detail document keeps its existing `readme` field. For both npm and Git
-artifacts, it uses the first readable source in this order:
-
-1. The `readme` path in `paseo-listing.json`, when set.
-2. Artifact `OVERVIEW.md` beside `paseo-plugin.json`.
-3. Registry `plugins/<owner>/<slug>.md`.
-4. Artifact `README.md`.
-5. Artifact `readme.md`.
-6. An empty string.
-
-Missing files continue through the fallback chain. An empty readable file keeps
-its priority. Artifact paths are relative to the plugin directory.
+The detail document keeps its existing `readme` field. It publishes the pinned
+author `OVERVIEW.md`, or the registry import stopgap when author content is absent.
+With neither source it fails. `README.md`, `readme.md`, and `paseo-listing.json`
+readme overrides are never used for overview content.
 
 A plugin can ship a separate `paseo-listing.json` next to its strict manifest:
 
@@ -98,8 +92,7 @@ A plugin can ship a separate `paseo-listing.json` next to its strict manifest:
 {
   "name": "Example",
   "icon": "icon.png",
-  "screenshots": ["docs/screenshot.png"],
-  "readme": "README.md"
+  "screenshots": ["docs/screenshot.png"]
 }
 ```
 
@@ -118,6 +111,20 @@ npm run validate -- --online
 npm run bump -- --dry-run
 npm run build
 ```
+
+Online validation compares artifact and source pins with the merge base of
+`origin/main` and `HEAD`. `--base <ref>` selects a different comparison base;
+`--changed` limits online checks to committed record and overview changes.
+Metadata-only edits retain the unchanged-import exception. For an approved new
+migration import with a registry stopgap, run:
+
+```sh
+node scripts/validate.ts --online --changed --allow-imports
+```
+
+`--allow-imports` permits only new import records. It never permits a changed
+existing pin without an author overview. Normal submissions and bumps use the
+same command without this flag.
 
 The dry run prints proposed PR bodies and writes full diffs to `.tmp/diffs/`.
 No pending versions means no proposed bodies. Inline diffs are capped at 60,000

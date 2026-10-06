@@ -18,7 +18,7 @@ mkdirSync(join(DIST, "plugins"), { recursive: true });
 // Bound concurrent requests to package hosts.
 const CONCURRENCY = 3;
 const details = await mapLimit(records, CONCURRENCY, (record) =>
-  // Registry content is the stopgap after explicit and author-owned artifact content.
+  // Registry content is the import stopgap after the pinned author overview.
   resolvePlugin(client, record, readOverview(record.id)),
 );
 let installs: Record<string, number> = {};

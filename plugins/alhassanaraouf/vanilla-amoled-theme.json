@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/vanilla-amoled-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-vanilla-amoled-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-vanilla-amoled-theme/-/paseo-vanilla-amoled-theme-0.1.1.tgz",
+    "integrity": "sha512-nZECjFuPnSxIAxl1gRLDYFrlg5HHrBI955z4VluLhoj4ugGr53MzILuczN8GvDr+dkThIFYMve5jlRQTNry8Zw=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-vanilla-amoled-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

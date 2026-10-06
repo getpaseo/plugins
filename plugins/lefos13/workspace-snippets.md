@@ -1,0 +1,5 @@
+Workspace snippets runs saved shell commands and scripts from a workspace's root package.json in dedicated Paseo terminals. It adds a workspace panel, a sidebar screen, header buttons, a Command Center entry, and a snippet slash command. Commands support run, restart, stop, close, and an inline preview of recent terminal output.
+
+The plugin requires Paseo 0.10.2 or newer on both the daemon and app. Package scripts use npm, pnpm, yarn, or bun according to package metadata and root lockfiles. Project snippets are shared across worktrees, while workspace snippets belong to one directory. Running from the sidebar reuses or opens the project's local workspace.
+
+Commands run in the host's interactive shell. The plugin reads root package metadata and terminal output, and stores snippets in unencrypted host settings shared by connected clients. Snippets should not contain secrets. Status indicates whether the terminal is open, without reporting command completion or exit codes. Monorepo subpackages are not scanned.

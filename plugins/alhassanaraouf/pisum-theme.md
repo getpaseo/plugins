@@ -1,3 +1,3 @@
-Pisum adds a color theme to Paseo using a palette ported from an Obsidian theme. It registers one palette, Pisum, with dark appearance. The palette defines background, foreground, raised surfaces, controls, borders, accent, muted text, and focus ring colors. Its accent color is #b57614.
+Pisum adds a color theme to Paseo: Pisum, a dark theme. It uses a blue-green gray background (#364549) with cream text (#fbf1c7), an amber accent (#b57614), and an orange focus ring (#fe8019). It requires Paseo 0.8.0 or later and needs no setup beyond choosing the theme under Settings, Appearance. It has no settings of its own.
 
-The manifest requires Paseo 0.8.0 or later. The client entrypoint registers fixed color values through the theme API. Its scope is app appearance: it contributes no server entrypoint, agent provider, or workspace workflow. The published implementation contains no network requests, environment reads, or credential access. The palette is defined in the plugin source, with no settings for editing individual colors.
+*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/paseo-pisum-theme).*

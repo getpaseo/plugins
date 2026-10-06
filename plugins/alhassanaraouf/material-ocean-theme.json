@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/material-ocean-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-material-ocean-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-material-ocean-theme/-/paseo-material-ocean-theme-0.1.1.tgz",
+    "integrity": "sha512-7lxoTLylMZUNNvmRczZ1j/3ZQ5Q6GbSCoJSU6uEAGXpxp9hk6d3rIZ0677x9NDIqOtBD2haQe34tRTMMYTlAuw=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-material-ocean-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

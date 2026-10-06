@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/minimal-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-minimal-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-minimal-theme/-/paseo-minimal-theme-0.1.1.tgz",
+    "integrity": "sha512-7YvAhzFqdz8A569Q8K6h5O89MOMxG+oCrDd4/3CPZ8ThvZGiI1eE8OPIyNCQS2pTiX3rYRirHnnEWnobcIv4EQ=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-minimal-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

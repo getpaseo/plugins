@@ -1,0 +1,19 @@
+{
+  "id": "stevecastaneda/workspace-links",
+  "artifact": {
+    "kind": "npm",
+    "package": "@stevecastaneda/paseo-workspace-links",
+    "version": "0.4.0",
+    "resolved": "https://registry.npmjs.org/@stevecastaneda/paseo-workspace-links/-/paseo-workspace-links-0.4.0.tgz",
+    "integrity": "sha512-4ix+9puDqchuVxn93ewPeJOsmWoUqdyL/3SDKkNF1Xo08XO2kJO68yFfNRkUgBzjBJwM9hde2Dy9/m/dY9rH/w=="
+  },
+  "repository": {
+    "url": "https://github.com/stevecastaneda/paseo-plugins/tree/HEAD/workspace-links"
+  },
+  "categories": [
+    "workspaces"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "stevecastaneda",
+  "reviewedAt": "2026-10-06"
+}

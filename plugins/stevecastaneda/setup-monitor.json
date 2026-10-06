@@ -1,0 +1,19 @@
+{
+  "id": "stevecastaneda/setup-monitor",
+  "artifact": {
+    "kind": "npm",
+    "package": "@stevecastaneda/paseo-setup-monitor",
+    "version": "0.3.0",
+    "resolved": "https://registry.npmjs.org/@stevecastaneda/paseo-setup-monitor/-/paseo-setup-monitor-0.3.0.tgz",
+    "integrity": "sha512-gGg4fU/Xru2fHTwnYnmWhnZRxfqTMwWNoKhrawjZmLpyqiVc+bjQBN8YN6BhPhwrq0mXqCszF00xYTidoCqBXg=="
+  },
+  "repository": {
+    "url": "https://github.com/stevecastaneda/paseo-plugins/tree/HEAD/setup-monitor"
+  },
+  "categories": [
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "stevecastaneda",
+  "reviewedAt": "2026-10-06"
+}

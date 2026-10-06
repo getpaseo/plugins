@@ -1,0 +1,21 @@
+{
+  "id": "denny64/github-kanban",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-github-kanban",
+    "version": "0.3.0",
+    "resolved": "https://registry.npmjs.org/paseo-github-kanban/-/paseo-github-kanban-0.3.0.tgz",
+    "integrity": "sha512-hZTc3oQCj4h6oom7fAt6EdZoxDZlNSXPiNfTk0JU0OzhjrtfL9ffZWrjUbPLW5Sxpem8OD23+Pdwb53DXyO2ZA=="
+  },
+  "repository": {
+    "url": "https://github.com/denny64/paseo-github-kanban"
+  },
+  "categories": [
+    "workspaces",
+    "git",
+    "orchestration"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "denny64",
+  "reviewedAt": "2026-10-06"
+}

@@ -11,7 +11,7 @@ A **Send to Paseo** sidebar screen shows bridge status, the pairing token, setti
 
 ## Setup
 
-1. The companion browser extension must be present in the browser, and plugins must be enabled in Paseo.
+1. The companion browser extension must be present in the browser.
 2. In the sidebar screen, copy the **Pairing token** and paste it into the extension's options page. **Regenerate** issues a new token and unpairs any extension that has the old one.
 
 Requirements on the daemon host:

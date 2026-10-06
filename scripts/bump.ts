@@ -2,13 +2,15 @@ import { validateForReview } from "./lib/review.ts";
 // Opens one pull request per plugin whose npm latest is newer than the pinned version.
 // Runs from .github/workflows/bump.yml twice daily. Each PR carries the tarball diff for review.
 import { latestTag, withGitArtifact } from "./lib/git-artifact.ts";
-import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { categorySlugs, readCategories } from "./lib/categories.ts";
 import { createNpmClient, resolveVersion } from "./lib/npm.ts";
+import { readAuthorOverview } from "./lib/overview.ts";
 import { repinRecord } from "./lib/pin.ts";
 import {
   type PluginRecord,
+  RECORDS_DIR,
   parseRecord,
   readRecords,
   recordPath,
@@ -72,8 +74,16 @@ for (const record of records) {
   git(["checkout", "-B", branch, "origin/main"]);
   writeRecord(next);
   git(["add", recordPath(record.id)]);
+  const overview = await overviewHandoff(next);
+  if (overview.drop) git(["rm", "--quiet", registryOverviewPath(record.id)]);
   git(["commit", "-m", `Bump ${record.id} to ${latest}`]);
-  const validation = validateForReview();
+  let validation: string;
+  try {
+    validation = validateForReview();
+  } catch (error) {
+    // The PR still opens so the reviewer can request changes from the author.
+    validation = `Inline validation failed: ${(error as Error).message.split("\n")[0]}. See the Bump workflow log.`;
+  }
   git(["push", "--force", "--set-upstream", "origin", branch]);
   gh([
     "pr",
@@ -81,7 +91,7 @@ for (const record of records) {
     "--title",
     `Bump ${record.id} to ${latest}`,
     "--body",
-    `${bumpBody(record, next, diff)}\n\n${validation}`,
+    `${bumpBody(record, next, diff)}\n\n${overview.note}${validation}`,
     "--head",
     branch,
     "--base",
@@ -93,6 +103,31 @@ for (const record of records) {
   opened += 1;
 }
 console.log(`${opened} bump PR(s) opened`);
+
+function registryOverviewPath(id: string): string {
+  return join(RECORDS_DIR, `${id}.md`);
+}
+
+/**
+ * The registry copy of an overview exists only for plugins imported without one, and only
+ * while their pin is unchanged. A bump needs the author's OVERVIEW.md; the first one that
+ * finds it removes the registry copy.
+ */
+async function overviewHandoff(next: PluginRecord): Promise<{ drop: boolean; note: string }> {
+  const registryCopy = existsSync(registryOverviewPath(next.id));
+  const author = (await readAuthorOverview(client, next)) !== null;
+  if (!author)
+    return {
+      drop: false,
+      note: "This version has no OVERVIEW.md. The registry requires one to update a listing; the bump cannot merge until the repository adds it.\n\n",
+    };
+  return registryCopy
+    ? {
+        drop: true,
+        note: "This version ships OVERVIEW.md, so the registry's copy is removed in this bump.\n\n",
+      }
+    : { drop: false, note: "" };
+}
 
 async function tarballDiff(record: PluginRecord, nextTarball: string): Promise<string> {
   if (record.artifact.kind !== "npm") throw new Error("Expected npm artifact");

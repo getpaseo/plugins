@@ -82,10 +82,15 @@ the overview is updated in the same pull request.
 Every listing's page shows an overview instead of the README. A README assumes its reader
 is on GitHub: it carries installation steps, technical detail, badges, and grows long. The
 overview is read inside Paseo, where the install command already sits at the top of the
-page, by someone deciding whether to install. Authors ship it as `OVERVIEW.md` next to
-`paseo-plugin.json`; when a plugin has none, the registry carries one at
-`plugins/<owner>/<slug>.md` as a stopgap, written at import or by the reviewer, and the
-artifact's own file takes over on the bump that adds it.
+page, by someone deciding whether to install.
+
+`OVERVIEW.md` next to `paseo-plugin.json` is required. A submission or a bump whose
+repository has no `OVERVIEW.md` at the pinned commit fails validation and gets changes
+requested naming the file. Records imported from paseo.cafe are the exception: they carry
+one written at import at `plugins/<owner>/<slug>.md`, ending with the line
+`*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/<slug>).*`.
+The author may replace that file by pull request, and the author's own `OVERVIEW.md` takes
+over on the first bump, which removes the registry copy.
 
 What it contains, in this order:
 
@@ -100,12 +105,12 @@ What it contains, in this order:
 Length follows the plugin's complexity: a theme is a paragraph, a provider plugin with
 settings can be longer. The test is that nothing in it is noise to someone choosing. Never
 installation commands, badges, changelogs, contributing or license sections, marketing
-language, or claims the source does not support. An overview written at import ends with
-an italic line crediting the plugin's paseo.cafe listing; an author's own carries no such
-line.
+language, or claims the source does not support.
 
-The reviewer checks an author's `OVERVIEW.md` against this shape on submission and on a
-bump, and requests changes when it is a README in disguise.
+The reviewer checks `OVERVIEW.md` against this shape on submission and on a bump, and
+requests changes when it is a README in disguise. A pull request that changes a
+registry-carried overview merges when it comes from the plugin's repository owner or the
+record's submitter and fits the shape; from anyone else it waits for the maintainer.
 
 ## Outcomes
 

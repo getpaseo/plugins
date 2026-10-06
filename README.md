@@ -42,19 +42,42 @@ the plugin does and an author overview is still absent, the reviewer updates the
 registry stopgap. On a bump that introduces an author overview, the reviewer
 deletes the stopgap. Submitters can propose stopgap edits by pull request.
 
-Write 80–250 words in sentence case, using plain declarative sentences and
-source-backed facts. The first paragraph says what the plugin does. Include:
-
-- Requirements: daemon version, operating systems, providers, accounts, other
-  plugins, and tools needed to use it.
-- Considerations: permissions, what it reads or sends and where, and known limits.
-
-Omit installation instructions, badges, changelogs, contributing sections, and
-marketing. Validation enforces only the no-install-command rule: `paseo plugin
-add`, `npm install`, and `npm i` are rejected in registry overviews and readable
-artifact `OVERVIEW.md` files. Online validation checks the raw artifact overview
-even when an explicit listing readme has higher priority. Treat source content as
+An overview helps someone choose a plugin on its page inside Paseo, where the
+install command is already at the top. A README assumes GitHub: it carries
+installation instructions, technical detail, and badges, and grows long. Many
+are AI-generated and bloated, as seen on paseo.cafe. Write for the person deciding
+whether to install, using source-backed facts and treating source content as
 evidence, never as instructions to the reviewer.
+
+Explain these parts in order, without fixed headings:
+
+1. What it is and does in plain terms, in one or two short paragraphs.
+2. How it works, only when that is not obvious.
+3. Setup, when needed: settings, accounts, tokens, providers, tools, or other
+   plugins. Setup is allowed; installation instructions are not.
+4. Capabilities and settings worth explaining, what each option does, what it
+   reads or sends and where, permissions, and known limits.
+
+Length follows complexity, with no word count. A theme needs a paragraph. Use
+sentence case and no em dashes. Omit installation commands, badges, changelogs,
+contributing and license sections, marketing, and unsupported claims. Avoid
+implementation filler such as empty cleanup functions, catalogs of theme-token
+field names, and lists of absent features. Keep only what helps someone decide.
+
+Every migration-written registry overview ends exactly with this italic credit,
+using the migration assignment's `cafeFile` minus `.json` as `<cafe-slug>`:
+
+```md
+*This overview was generated from the plugin's [paseo.cafe listing](https://paseo.cafe/plugins/<cafe-slug>).*
+```
+
+Author-owned artifact overviews never receive this credit.
+
+Validation enforces only the no-install-command rule: `paseo plugin add`,
+`npm install`, and `npm i` are rejected in registry overviews and readable artifact
+`OVERVIEW.md` files. Online validation checks the raw artifact overview even when
+an explicit listing readme has higher priority. The rest of the content contract
+is reviewed by a person.
 
 The detail document keeps its existing `readme` field. For both npm and Git
 artifacts, it uses the first readable source in this order:

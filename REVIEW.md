@@ -79,19 +79,33 @@ the overview is updated in the same pull request.
 
 ## Overview
 
-Every listing carries a curated overview at `plugins/<owner>/<slug>.md`, shown on the
-plugin's page instead of its README. The reviewer writes it on submission and revises it on
-a bump that changes behavior. Submitters may propose edits by pull request.
+Every listing's page shows an overview instead of the README. A README assumes its reader
+is on GitHub: it carries installation steps, technical detail, badges, and grows long. The
+overview is read inside Paseo, where the install command already sits at the top of the
+page, by someone deciding whether to install. Authors ship it as `OVERVIEW.md` next to
+`paseo-plugin.json`; when a plugin has none, the registry carries one at
+`plugins/<owner>/<slug>.md` as a stopgap, written at import or by the reviewer, and the
+artifact's own file takes over on the bump that adds it.
 
-Shape, in sentence case, plain declarative sentences, 80 to 250 words:
+What it contains, in this order:
 
-1. What the plugin does, in the first paragraph. The thing a user gets.
-2. Requirements: daemon version, OS, providers, accounts, other plugins, external tools.
-3. Considerations: permissions it asks for, what it reads or sends and where, known limits.
+1. What it is and what it does, in plain terms. One or two short paragraphs.
+2. How it works, only when that is not obvious from the first paragraph.
+3. Setup, when any is required: settings to fill in, accounts or tokens to connect,
+   providers or tools that must be present, other plugins it depends on. Setup is allowed;
+   installation is not.
+4. Capabilities or settings worth explaining: what each option does, what the plugin reads
+   or sends and where, the permissions it asks for, known limits.
 
-Not in an overview: installation instructions (the page shows the install command), badges,
-changelogs, contributing sections, marketing language, or anything the source does not
-state. The overview is derived from the manifest, the README, and the code as reviewed.
+Length follows the plugin's complexity: a theme is a paragraph, a provider plugin with
+settings can be longer. The test is that nothing in it is noise to someone choosing. Never
+installation commands, badges, changelogs, contributing or license sections, marketing
+language, or claims the source does not support. An overview written at import ends with
+an italic line crediting the plugin's paseo.cafe listing; an author's own carries no such
+line.
+
+The reviewer checks an author's `OVERVIEW.md` against this shape on submission and on a
+bump, and requests changes when it is a README in disguise.
 
 ## Outcomes
 

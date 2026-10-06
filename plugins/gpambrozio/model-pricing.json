@@ -9,7 +9,9 @@
   "submittedBy": "gpambrozio",
   "reviewedAt": "2026-10-03",
   "listing": {
-    "screenshots": []
+    "screenshots": [
+      "https://raw.githubusercontent.com/gpambrozio/paseo-plugins/main/model-pricing/docs/screenshot.png"
+    ]
   },
   "artifact": {
     "kind": "npm",

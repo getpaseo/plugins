@@ -9,7 +9,10 @@
   "reviewedAt": "2026-10-03",
   "listing": {
     "name": "PromptKit",
-    "screenshots": []
+    "screenshots": [
+      "https://raw.githubusercontent.com/hungcuong9125/paseo-prompt-kit/main/docs/images/settings-provider-cli.png",
+      "https://raw.githubusercontent.com/hungcuong9125/paseo-prompt-kit/main/docs/images/settings-direct-api.png"
+    ]
   },
   "artifact": {
     "kind": "npm",

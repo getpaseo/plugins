@@ -9,7 +9,10 @@
   "submittedBy": "omercnet",
   "reviewedAt": "2026-10-03",
   "listing": {
-    "screenshots": []
+    "screenshots": [
+      "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/paseo-beads/docs/images/paseo-beads-wide.png",
+      "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/paseo-beads/docs/images/paseo-beads-compact.png"
+    ]
   },
   "artifact": {
     "kind": "npm",

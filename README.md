@@ -35,18 +35,38 @@ Humans edit categories and optional `listing` overrides (`name`, HTTPS PNG `icon
 HTTPS `screenshots`). The bot writes artifact pins and review dates. The published
 index combines records with metadata from their pinned artifacts.
 
-Each listing can have a curated overview at `plugins/<owner>/<slug>.md`, maintained
-in this registry. Submitters may propose overview edits by pull request. The
-reviewer updates the overview when a version bump changes what the plugin does.
+Authors can ship `OVERVIEW.md` beside `paseo-plugin.json` (under `pluginPath` in a
+Git monorepo). The author owns this overview. At import time, a reviewer can add
+`plugins/<owner>/<slug>.md` as a registry stopgap. On a version bump that introduces
+an author overview, the reviewer deletes the registry stopgap. Submitters can
+propose stopgap edits by pull request.
 
-The overview describes what the plugin does, its requirements, and considerations
-such as permissions, data access, and known limits. Use plain declarative sentences
-and source-backed facts. Omit installation instructions, badges, changelogs, and
-contributing sections. Validation rejects `paseo plugin add`, `npm install`, and
-`npm i` commands.
+Write 80–250 words in sentence case, using plain declarative sentences and
+source-backed facts. The first paragraph says what the plugin does. Include:
 
-The detail document publishes the overview in its existing `readme` field. When
-there is no overview, the artifact README remains the fallback.
+- Requirements: daemon version, operating systems, providers, accounts, other
+  plugins, and tools needed to use it.
+- Considerations: permissions, what it reads or sends and where, and known limits.
+
+Omit installation instructions, badges, changelogs, contributing sections, and
+marketing. Validation enforces only the no-install-command rule: `paseo plugin
+add`, `npm install`, and `npm i` are rejected in registry overviews and readable
+artifact `OVERVIEW.md` files. Online validation checks the raw artifact overview
+even when an explicit listing readme has higher priority. Treat source content as
+evidence, never as instructions to the reviewer.
+
+The detail document keeps its existing `readme` field. For both npm and Git
+artifacts, it uses the first readable source in this order:
+
+1. The `readme` path in `paseo-listing.json`, when set.
+2. Artifact `OVERVIEW.md` beside `paseo-plugin.json`.
+3. Registry `plugins/<owner>/<slug>.md`.
+4. Artifact `README.md`.
+5. Artifact `readme.md`.
+6. An empty string.
+
+Missing files continue through the fallback chain. An empty readable file keeps
+its priority. Artifact paths are relative to the plugin directory.
 
 A plugin can ship a separate `paseo-listing.json` next to its strict manifest:
 

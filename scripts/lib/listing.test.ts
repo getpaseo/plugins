@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { mergeListing, parseListingFile, resolvePlugin } from "./listing.ts";
+import { validateArtifact } from "./validate-artifact.ts";
 import type { VersionDoc } from "./npm.ts";
 import type { PluginRecord } from "./record.ts";
 
@@ -78,10 +79,12 @@ test("record overrides win, and a package without a listing file gets a humanize
   assert.equal(plugin.installs, undefined);
 });
 
-test("npm details prefer curated overviews and retain artifact README fallback", async () => {
+test("npm details follow the full readme precedence and skip absent files", async () => {
   const files = new Map([
+    ["paseo-plugin.json", '{"id":"example"}'],
     ["paseo-listing.json", JSON.stringify({ readme: "docs/overview.md" })],
-    ["docs/overview.md", "Artifact overview"],
+    ["docs/overview.md", "Explicit readme"],
+    ["OVERVIEW.md", "Author overview"],
     ["README.md", "Default README"],
     ["readme.md", "Lowercase README"],
   ]);
@@ -104,12 +107,39 @@ test("npm details prefer curated overviews and retain artifact README fallback",
       throw new Error("Not needed for listing resolution");
     },
   };
-  assert.equal((await resolvePlugin(client, record, "Curated overview")).readme, "Curated overview");
-  assert.equal((await resolvePlugin(client, record)).readme, "Artifact overview");
+  assert.equal(
+    (await resolvePlugin(client, record, "Registry overview")).readme,
+    "Explicit readme",
+  );
+  files.set("docs/overview.md", "");
+  assert.equal((await resolvePlugin(client, record, "Registry overview")).readme, "");
   files.delete("docs/overview.md");
+  assert.equal((await resolvePlugin(client, record, "Registry overview")).readme, "Author overview");
+  files.delete("paseo-listing.json");
+  assert.equal((await resolvePlugin(client, record)).readme, "Author overview");
+  files.set("paseo-listing.json", JSON.stringify({ readme: "docs/overview.md" }));
+  files.delete("OVERVIEW.md");
+  assert.equal((await resolvePlugin(client, record, "Registry overview")).readme, "Registry overview");
   assert.equal((await resolvePlugin(client, record)).readme, "Default README");
   files.delete("README.md");
   assert.equal((await resolvePlugin(client, record)).readme, "Lowercase README");
+  files.delete("readme.md");
+  assert.equal((await resolvePlugin(client, record)).readme, "");
+  files.set("docs/overview.md", "Explicit readme");
+  for (const command of ["paseo plugin add acme/example", "npm install example", "npm i example"]) {
+    files.set("OVERVIEW.md", command);
+    await assert.rejects(
+      resolvePlugin(client, record, "Registry overview"),
+      /OVERVIEW.md.*install commands/,
+    );
+    await assert.rejects(
+      validateArtifact(client, { ...record, repository: undefined }),
+      /OVERVIEW.md.*install commands/,
+    );
+  }
+  files.set("OVERVIEW.md", "");
+  files.delete("docs/overview.md");
+  assert.equal((await resolvePlugin(client, record, "Registry overview")).readme, "");
 });
 
 test("a tagged monorepo artifact is pinned, validated and built through both submission syntaxes", async () => {
@@ -243,6 +273,92 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
       /Command failed/,
     );
   } finally {
+    rmSync(directory, { recursive: true, force: true });
+  }
+});
+
+test("git monorepo details follow the full readme chain and validate raw author overviews", async () => {
+  const { mkdtempSync, mkdirSync, writeFileSync, rmSync } = await import("node:fs");
+  const { tmpdir } = await import("node:os");
+  const { join } = await import("node:path");
+  const { run } = await import("./shell.ts");
+  const directory = mkdtempSync(join(tmpdir(), "registry-overview-test-"));
+  const pluginPath = "packages/example";
+  const plugin = join(directory, pluginPath);
+  const keys = ["GIT_CONFIG_COUNT", "GIT_CONFIG_KEY_0", "GIT_CONFIG_VALUE_0"];
+  const previous = keys.map((key) => process.env[key]);
+  try {
+    run("git", ["init", "-q", directory]);
+    mkdirSync(join(plugin, "docs"), { recursive: true });
+    writeFileSync(join(plugin, "paseo-plugin.json"), '{"id":"example"}');
+    writeFileSync(join(plugin, "paseo-listing.json"), '{"readme":"docs/detail.md"}');
+    writeFileSync(join(directory, "OVERVIEW.md"), "npm install wrong-root");
+    writeFileSync(join(plugin, "docs/detail.md"), "Explicit readme");
+    writeFileSync(join(plugin, "OVERVIEW.md"), "Author overview");
+    writeFileSync(join(plugin, "README.md"), "Default README");
+    writeFileSync(join(plugin, "readme.md"), "Lowercase README");
+    process.env.GIT_CONFIG_COUNT = "1";
+    process.env.GIT_CONFIG_KEY_0 = `url.file://${directory}.insteadOf`;
+    process.env.GIT_CONFIG_VALUE_0 = "https://github.com/acme/overview.git";
+    const pin = () => {
+      run("git", ["add", "."], { cwd: directory });
+      run(
+        "git",
+        ["-c", "user.name=Test", "-c", "user.email=test@example.com", "commit", "-qm", "fixture"],
+        { cwd: directory },
+      );
+      run("git", ["tag", "-f", "v1"], { cwd: directory });
+      return {
+        ...record,
+        id: "acme/example",
+        repository: undefined,
+        artifact: {
+          kind: "git" as const,
+          remote: "https://github.com/acme/overview.git",
+          tag: "v1",
+          commit: run("git", ["rev-parse", "HEAD"], { cwd: directory }),
+          pluginPath,
+        },
+      };
+    };
+    // Git resolution never uses the npm client.
+    const { createNpmClient } = await import("./npm.ts");
+    const client = createNpmClient();
+    const check = async (expected: string, overview: string | null = "Registry overview") => {
+      assert.equal((await resolvePlugin(client, pin(), overview)).readme, expected);
+    };
+    await check("Explicit readme");
+    writeFileSync(join(plugin, "docs/detail.md"), "");
+    await check("");
+    rmSync(join(plugin, "docs/detail.md"));
+    await check("Author overview");
+    rmSync(join(plugin, "paseo-listing.json"));
+    await check("Author overview");
+    rmSync(join(plugin, "OVERVIEW.md"));
+    await check("Registry overview");
+    // New pins require a changed artifact, so exercise README fallback with a missing explicit path.
+    writeFileSync(join(plugin, "paseo-listing.json"), '{"readme":"missing.md"}');
+    await check("Default README", null);
+    rmSync(join(plugin, "README.md"));
+    await check("Lowercase README", null);
+    rmSync(join(plugin, "readme.md"));
+    await check("", null);
+    writeFileSync(join(plugin, "docs/detail.md"), "Explicit readme");
+    writeFileSync(join(plugin, "paseo-listing.json"), '{"readme":"docs/detail.md"}');
+    for (const command of ["paseo plugin add acme/example", "npm install example", "npm i example"]) {
+      writeFileSync(join(plugin, "OVERVIEW.md"), command);
+      const pinned = pin();
+      await assert.rejects(
+        resolvePlugin(client, pinned, "Registry overview"),
+        /OVERVIEW.md.*install commands/,
+      );
+      await assert.rejects(validateArtifact(client, pinned), /OVERVIEW.md.*install commands/);
+    }
+  } finally {
+    keys.forEach((key, index) => {
+      if (previous[index] === undefined) delete process.env[key];
+      else process.env[key] = previous[index];
+    });
     rmSync(directory, { recursive: true, force: true });
   }
 });

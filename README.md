@@ -8,8 +8,9 @@ an internal registry by serving the same static JSON documents.
 
 ## Submit a plugin
 
-1. Publish an npm package containing `paseo-plugin.json`, or tag a GitHub repository
-   containing it. Monorepos can specify a relative plugin path.
+1. Publish an npm package containing `paseo-plugin.json`, or submit a GitHub repository
+   containing it with a release tag or an explicitly pinned full Git commit.
+   Monorepos can specify a relative plugin path.
 2. Open the submission issue with the source and categories.
 3. The workflow pins an exact artifact and opens a review PR. npm provenance
    establishes source ownership when available. Otherwise the submitter must own
@@ -22,7 +23,11 @@ to existing records. See [BOTS.md](BOTS.md) for schedules, tokens, safe inspecti
 and the disabled Hub reviewer trigger.
 
 Git updates follow the newest version-sorted tag, including prerelease tags. They
-never follow HEAD. Tags are checked against the pinned commit during validation;
+never follow HEAD. Commit-only records are skipped while the repository has no tags.
+The first tag triggers a proposed tagged version, even when it names the already
+pinned commit. Network, authentication, and invalid-tag failures stop the run; they
+are not treated as repositories without tags. Tags are checked against the pinned
+commit during validation;
 a moved tag fails validation instead of silently changing the approved artifact.
 
 ## Records
@@ -108,10 +113,18 @@ npm test
 npm run add -- @acme/paseo-example --categories utils
 npm run add -- https://github.com/acme/plugins --plugin-path plugins/example --categories utils
 npm run add -- acme/plugins:plugins/example --categories utils
+npm run add -- https://github.com/acme/plugin --commit "$COMMIT" --categories utils
+npm run add -- acme/plugins:plugins/example --commit "$COMMIT" --categories utils
 npm run validate -- --online
 npm run bump -- --dry-run
 npm run build
 ```
+
+`COMMIT` in these examples is the full 40-character SHA. `--commit` is supported
+by the maintainer add command for GitHub sources. It pins
+that exact reachable commit and records no tag. Without it, Git submissions keep
+using the newest version-sorted tag. The manifest and author overview belong at
+the pin, under `--plugin-path` (or the shorthand path) for a monorepo.
 
 Online validation compares artifact and source pins with the merge base of
 `origin/main` and `HEAD`. `--base <ref>` selects a different comparison base;

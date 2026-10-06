@@ -18,7 +18,7 @@ const categories =
     .filter(Boolean) ?? [];
 if (!pkg || categories.length === 0) {
   console.error(
-    "usage: node scripts/add.ts <npm package> --categories a,b [--id id] [--submitted-by login] [--submitted-at YYYY-MM-DD] [--version x.y.z]",
+    "usage: node scripts/add.ts <npm package> --categories a,b [--id id] [--submitted-by login] [--submitted-at YYYY-MM-DD] [--version x.y.z] [--commit full-SHA] [--plugin-path path]",
   );
   process.exit(2);
 }
@@ -36,9 +36,12 @@ if (duplicate || existsSync(recordPath(id))) {
 }
 
 const source = parseGitSource(pkg, flagString(flags, "plugin-path"));
+if (flags.has("commit") && (!source || !flagString(flags, "commit")))
+  throw new Error("--commit requires a full SHA and a GitHub source");
 const record = source
   ? pinGit({
       ...source,
+      commit: flagString(flags, "commit"),
       slug: flagString(flags, "id"),
       categories,
       submittedBy: flagString(flags, "submitted-by"),

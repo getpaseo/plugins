@@ -39,6 +39,13 @@ function withCheckout<T>(
       artifact.remote,
       directory,
     ]);
+    if (run("git", ["cat-file", "-t", artifact.commit], { cwd: directory }) !== "commit")
+      throw new Error("Pin must name a Git commit");
+    const reachable = run("git", [
+      "for-each-ref", `--contains=${artifact.commit}`, "--format=%(refname)",
+      "refs/remotes", "refs/tags",
+    ], { cwd: directory });
+    if (!reachable) throw new Error("Pinned commit is not reachable on the declared remote");
     if (artifact.tag) {
       const commit = run("git", ["rev-parse", `refs/tags/${artifact.tag}^{commit}`], {
         cwd: directory,
@@ -56,11 +63,11 @@ function withCheckout<T>(
   }
 }
 
-export function latestTag(remote: string): { tag: string; commit: string } {
+export function latestTag(remote: string): { tag: string; commit: string } | null {
   const output = run("git", ["ls-remote", "--tags", "--sort=-version:refname", "--", remote]);
   const lines = output.trim().split("\n").filter(Boolean);
   const first = lines[0]?.split("\t");
-  if (!first) throw new Error("Repository needs a release tag; HEAD is never approved implicitly");
+  if (!first) return null;
   const tag = first[1].replace(/^refs\/tags\//, "").replace(/\^\{\}$/, "");
   const peeled = lines.find((line) => line.endsWith(`\trefs/tags/${tag}^{}`));
   return { tag, commit: peeled ? peeled.split("\t")[0] : first[0] };
@@ -91,6 +98,7 @@ export function pinGit(input: {
   pluginPath?: string;
   categories: string[];
   submittedBy?: string;
+  commit?: string;
 }): PluginRecord {
   const source = parseGitSource(input.source, input.pluginPath);
   if (!source) throw new Error("Use a GitHub repository URL or owner/repo:path");
@@ -103,7 +111,10 @@ export function pinGit(input: {
   const slug =
     input.slug?.split("/").at(-1) ??
     deriveId(source.pluginPath?.split("/").at(-1) ?? match[2].toLowerCase());
-  const pin = latestTag(`${remote}.git`);
+  const pin = input.commit !== undefined
+    ? { commit: input.commit }
+    : latestTag(`${remote}.git`);
+  if (!pin) throw new Error("Repository needs a release tag or an explicit --commit pin; HEAD is never approved implicitly");
   const artifact = parseArtifact({
     kind: "git",
     remote: `${remote}.git`,

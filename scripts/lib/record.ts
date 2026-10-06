@@ -221,7 +221,7 @@ export function writeRecord(record: PluginRecord, dir = RECORDS_DIR): string {
 
 export type PluginArtifact =
   | { kind: "npm"; package: string; version: string; resolved: string; integrity: string }
-  | { kind: "git"; remote: string; commit: string; tag: string; pluginPath?: string };
+  | { kind: "git"; remote: string; commit: string; tag?: string; pluginPath?: string };
 
 export function parseArtifact(raw: unknown): PluginArtifact {
   if (!raw || typeof raw !== "object") throw new Error("artifact is required");
@@ -254,8 +254,9 @@ export function parseArtifact(raw: unknown): PluginArtifact {
       throw new Error("artifact.remote must be a GitHub repository URL");
     if (typeof artifact.commit !== "string" || !COMMIT_PATTERN.test(artifact.commit))
       throw new Error("artifact.commit must be a full SHA");
-    if (typeof artifact.tag !== "string" || !artifact.tag || artifact.tag.startsWith("-"))
-      throw new Error("artifact.tag is required");
+    if (artifact.tag !== undefined &&
+      (typeof artifact.tag !== "string" || !artifact.tag || artifact.tag.startsWith("-")))
+      throw new Error("artifact.tag must be a non-empty tag");
     if (
       artifact.pluginPath !== undefined &&
       (typeof artifact.pluginPath !== "string" ||
@@ -266,7 +267,7 @@ export function parseArtifact(raw: unknown): PluginArtifact {
       kind: "git",
       remote: artifact.remote,
       commit: artifact.commit,
-      tag: artifact.tag,
+      ...(typeof artifact.tag === "string" ? { tag: artifact.tag } : {}),
       ...(typeof artifact.pluginPath === "string" ? { pluginPath: artifact.pluginPath } : {}),
     };
   }

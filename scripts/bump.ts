@@ -46,7 +46,11 @@ for (const record of records) {
     diff = await tarballDiff(record, resolveVersion(packument, latest).dist.tarball);
   } else {
     const pin = latestTag(artifact.remote);
-    if (pin.commit === artifact.commit) continue;
+    if (!pin) {
+      if (artifact.tag) throw new Error(`${record.id}: repository no longer has release tags`);
+      continue;
+    }
+    if (artifact.tag && pin.commit === artifact.commit) continue;
     latest = pin.tag;
     next = {
       ...record,

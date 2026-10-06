@@ -110,8 +110,9 @@ export function mergeListing(input: {
 export async function resolvePlugin(
   client: NpmClient,
   record: PluginRecord,
+  overview: string | null = null,
 ): Promise<PublishedPluginDetail> {
-  if (record.artifact.kind === "git") return resolveGitPlugin(record);
+  if (record.artifact.kind === "git") return resolveGitPlugin(record, overview);
   const artifact = record.artifact;
   const packument = await client.packument(artifact.package);
   const doc = resolveVersion(packument, artifact.version);
@@ -125,7 +126,9 @@ export async function resolvePlugin(
   );
   const readmePath = listingFile.readme ?? "README.md";
   const readme =
+    overview ??
     (await client.file(doc.name, doc.version, readmePath)) ??
+    (readmePath !== "README.md" ? await client.file(doc.name, doc.version, "README.md") : null) ??
     (await client.file(doc.name, doc.version, "readme.md"));
   return mergeListing({
     record,
@@ -141,7 +144,7 @@ export function summarize(detail: PublishedPluginDetail): PublishedPlugin {
   return summary;
 }
 
-function resolveGitPlugin(record: PluginRecord): PublishedPluginDetail {
+function resolveGitPlugin(record: PluginRecord, overview: string | null): PublishedPluginDetail {
   const artifact = record.artifact;
   if (artifact.kind !== "git") throw new Error("Expected git artifact");
   return withGitArtifact(record, (directory) => {
@@ -165,7 +168,12 @@ function resolveGitPlugin(record: PluginRecord): PublishedPluginDetail {
       reviewedAt: date,
       updatedAt: date,
       publishedAt: date,
-      readme: readOptional(directory, listing.readme ?? "README.md") ?? "",
+      readme:
+        overview ??
+        readOptional(directory, listing.readme ?? "README.md") ??
+        readOptional(directory, "README.md") ??
+        readOptional(directory, "readme.md") ??
+        "",
     };
   });
 }

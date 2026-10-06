@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { mergeListing, parseListingFile } from "./listing.ts";
+import { mergeListing, parseListingFile, resolvePlugin } from "./listing.ts";
 import type { VersionDoc } from "./npm.ts";
 import type { PluginRecord } from "./record.ts";
 
@@ -76,6 +76,40 @@ test("record overrides win, and a package without a listing file gets a humanize
   assert.deepEqual(plugin.author, { npm: "omercnet", name: "omercnet", github: "omercnet" });
   assert.equal(plugin.readme, "");
   assert.equal(plugin.installs, undefined);
+});
+
+test("npm details prefer curated overviews and retain artifact README fallback", async () => {
+  const files = new Map([
+    ["paseo-listing.json", JSON.stringify({ readme: "docs/overview.md" })],
+    ["docs/overview.md", "Artifact overview"],
+    ["README.md", "Default README"],
+    ["readme.md", "Lowercase README"],
+  ]);
+  const client = {
+    async packument() {
+      return {
+        name: doc.name,
+        "dist-tags": { latest: doc.version },
+        time: { [doc.version]: "2026-09-27T09:59:16.690Z" },
+        versions: { [doc.version]: doc },
+      };
+    },
+    async file(_name: string, _version: string, path: string) {
+      return files.get(path) ?? null;
+    },
+    async provenance() {
+      return null;
+    },
+    async tarball() {
+      throw new Error("Not needed for listing resolution");
+    },
+  };
+  assert.equal((await resolvePlugin(client, record, "Curated overview")).readme, "Curated overview");
+  assert.equal((await resolvePlugin(client, record)).readme, "Artifact overview");
+  files.delete("docs/overview.md");
+  assert.equal((await resolvePlugin(client, record)).readme, "Default README");
+  files.delete("README.md");
+  assert.equal((await resolvePlugin(client, record)).readme, "Lowercase README");
 });
 
 test("a tagged monorepo artifact is pinned, validated and built through both submission syntaxes", async () => {
@@ -171,6 +205,38 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
         `https://github.com/acme/plugins/raw/${commit}/${pluginPath}/screen.png`,
       ]);
     }
+    const overview = join(registry, "plugins/acme/example.md");
+    writeFileSync(overview, "# Example\n\nA curated description.\n");
+    run(process.execPath, ["scripts/build.ts"], options);
+    assert.equal(
+      JSON.parse(readFileSync(join(registry, "dist/plugins/acme/example.json"), "utf8")).readme,
+      "# Example\n\nA curated description.\n",
+    );
+    assert.match(run(process.execPath, ["scripts/validate.ts"], options), /2 record\(s\)/);
+    run("git", ["init", "-q"], options);
+    run("git", ["add", "plugins"], options);
+    run(
+      "git",
+      ["-c", "user.name=Test", "-c", "user.email=test@example.com", "commit", "-qm", "records"],
+      options,
+    );
+    run("git", ["update-ref", "refs/remotes/origin/main", "HEAD"], options);
+    writeFileSync(overview, "An updated curated description.");
+    run("git", ["add", "plugins/acme/example.md"], options);
+    run(
+      "git",
+      ["-c", "user.name=Test", "-c", "user.email=test@example.com", "commit", "-qm", "overview"],
+      options,
+    );
+    assert.match(
+      run(process.execPath, ["scripts/validate.ts", "--online", "--changed"], options),
+      /1 record\(s\) match/,
+    );
+    for (const command of ["paseo plugin add acme/example", "npm install example", "npm i example"]) {
+      writeFileSync(overview, command);
+      assert.throws(() => run(process.execPath, ["scripts/validate.ts"], options), /Command failed/);
+    }
+    writeFileSync(overview, "A curated description.");
     run("git", ["tag", "-f", "v1.0.0"], { cwd: repository });
     assert.throws(
       () => run(process.execPath, ["scripts/validate.ts", "--online"], options),

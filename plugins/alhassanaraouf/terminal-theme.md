@@ -1,3 +1,3 @@
-Terminal adds a dark color theme to Paseo, available as Terminal in the Appearance settings. It supplies fixed colors for backgrounds, text, raised surfaces, controls, borders, accents, muted text, and focus rings. This package includes one dark variant and does not contribute a light variant.
+Terminal adds a dark theme to Paseo. Choose it under Settings, Appearance, Theme. It has a black background (#000000) with bright green (#15d00d) for text and the accent, and a very dark green (#0a2b08) for controls. Requires Paseo 0.8.0 or later.
 
-The manifest requires Paseo 0.8.0 or later. The plugin contributes its palette through the client theme API. Its contribution is limited to app colors. It has no server entrypoint or runtime package dependencies, and its entrypoint does not read workspace files, agent messages, credentials, or environment variables, or make network requests.
+*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/paseo-terminal-theme).*

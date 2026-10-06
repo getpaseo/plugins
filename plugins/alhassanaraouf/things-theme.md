@@ -1,3 +1,3 @@
-Things adds dark and light color themes to Paseo. The Appearance theme choices are Things and Things Light. Both variants supply fixed colors for backgrounds, text, raised surfaces, controls, borders, accents, muted text, and focus rings.
+Things and Things Light add dark and light themes to Paseo. Choose either one under Settings, Appearance, Theme. Things has a black background, light grey text (#dadada), and a blue accent (#4c8ce6). Things Light has a white background, near-black text (#222222), and the same blue accent (#4c8ce6). Requires Paseo 0.8.0 or later.
 
-The manifest requires Paseo 0.8.0 or later. The plugin contributes its palette through the client theme API. Its contribution is limited to app colors. It has no server entrypoint or runtime package dependencies, and its entrypoint does not read workspace files, agent messages, credentials, or environment variables, or make network requests.
+*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/paseo-things-theme).*

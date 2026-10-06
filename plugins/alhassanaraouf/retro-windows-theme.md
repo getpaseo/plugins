@@ -1,3 +1,3 @@
-Retro Windows adds dark and light color themes to Paseo. The Appearance theme choices are Retro Windows and Retro Windows Light. Both variants supply fixed colors for backgrounds, text, raised surfaces, controls, borders, accents, muted text, and focus rings.
+Retro Windows and Retro Windows Light add dark and light themes to Paseo. Choose either one under Settings, Appearance, Theme. Retro Windows has a neutral dark grey background (#1e1e1e), light grey text (#e0e0e0), and a muted blue accent (#4f6fb0). Retro Windows Light has a white background, black text, a navy accent (#000080), and classic Windows grey (#d4d0c8) for controls. Requires Paseo 0.8.0 or later.
 
-The manifest requires Paseo 0.8.0 or later. The plugin contributes its palette through the client theme API. Its contribution is limited to app colors. It has no server entrypoint or runtime package dependencies, and its entrypoint does not read workspace files, agent messages, credentials, or environment variables, or make network requests.
+*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/paseo-retro-windows-theme).*

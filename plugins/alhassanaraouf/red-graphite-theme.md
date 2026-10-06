@@ -1,3 +1,3 @@
-Red Graphite adds dark and light color themes to Paseo. The Appearance theme choices are Red Graphite and Red Graphite Light. Both variants supply fixed colors for backgrounds, text, raised surfaces, controls, borders, accents, muted text, and focus rings.
+Red Graphite and Red Graphite Light add dark and light themes to Paseo. Choose either one under Settings, Appearance, Theme. Red Graphite has a slate-blue background (#282f3e), near-white text (#eff1f5), and a golden-yellow accent (#f6cd74). Red Graphite Light has an off-white background (#f7f7f8), dark grey text (#292c2e), and a red accent (#cb4c48). Requires Paseo 0.8.0 or later.
 
-The manifest requires Paseo 0.8.0 or later. The plugin contributes its palette through the client theme API. Its contribution is limited to app colors. It has no server entrypoint or runtime package dependencies, and its entrypoint does not read workspace files, agent messages, credentials, or environment variables, or make network requests.
+*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/paseo-red-graphite-theme).*

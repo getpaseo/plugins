@@ -1,3 +1,3 @@
-Shimmering Focus adds dark and light color themes to Paseo. The Appearance theme choices are Shimmering Focus and Shimmering Focus Light. Both variants supply fixed colors for backgrounds, text, raised surfaces, controls, borders, accents, muted text, and focus rings.
+Shimmering Focus and Shimmering Focus Light add dark and light themes to Paseo. Choose either one under Settings, Appearance, Theme. Shimmering Focus has a dark blue-grey background (#1a1c23), pale blue-grey text (#c3c8df), and a teal accent (#108189). Shimmering Focus Light has a near-white background (#fbfcfd), navy text (#1f295c), and the same teal accent (#108189). Requires Paseo 0.8.0 or later.
 
-The manifest requires Paseo 0.8.0 or later. The plugin contributes its palette through the client theme API. Its contribution is limited to app colors. It has no server entrypoint or runtime package dependencies, and its entrypoint does not read workspace files, agent messages, credentials, or environment variables, or make network requests.
+*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/paseo-shimmering-focus-theme).*

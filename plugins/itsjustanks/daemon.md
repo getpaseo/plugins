@@ -1,6 +1,6 @@
 Adds a **Hosts** page, workspace tab and status dot to Paseo for seeing what is slowing a computer down, stopping runaway jobs, and reaching dev servers running on a host. Requires Paseo 0.9.0 or later.
 
-It lists the heaviest processes, judged against the container's own memory limit. You choose which to stop, see what will stop (children included) before confirming, and every stop is logged. Paseo, its plugins, agents, terminals and databases are never stopped. Health checks run in the background by default and only flag problems, and nothing is stopped automatically.
+It lists the heaviest processes, judged against the container's own memory limit. You choose which to stop, see what will stop (children included) before confirming, and every stop is logged. The Processes tab refuses to stop processes it recognizes as Paseo components, agents, Paseo terminal shells, or databases and system services, and applies the same checks to each child before stopping it. Recognition is by process name and path, so it is not a guarantee for every agent or database, and there is no setting to override it. Health checks run in the background by default and only flag problems, and they never start a stop. After you confirm a stop, the target and its children that are still running after a short grace period are checked again and stopped forcefully only if they are the same processes and still eligible.
 
 Each dev server can be reached three ways:
 

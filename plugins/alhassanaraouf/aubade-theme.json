@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/aubade-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-aubade-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-aubade-theme/-/paseo-aubade-theme-0.1.1.tgz",
+    "integrity": "sha512-gdkTezfBDBqEAG9RiPm6Dk+3uharx3FNB6NUqU9tdQJVJaCRhDUEdL7coQunkkDsX5PWDPO89HFb54h7wPpwdw=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-aubade-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

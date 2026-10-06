@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/pink-topaz-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-pink-topaz-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-pink-topaz-theme/-/paseo-pink-topaz-theme-0.1.1.tgz",
+    "integrity": "sha512-naMLfe/BSUaTV1TTdKl6uqQ22+BL8IEh9/98iD/8L23mOB7GXfNwTb+SGLFhmji1XLPLC91+Sia9wxQpNAce2g=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-pink-topaz-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/obsidianotion-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-obsidianotion-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-obsidianotion-theme/-/paseo-obsidianotion-theme-0.1.1.tgz",
+    "integrity": "sha512-fqffYEk81xtO5rT1upiD5Xha8K9rutuzyVqoj5e5IaK3027r5Uwn1MJge3WB3IDg9B7EO57y/dx38c3V6MXE6g=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-obsidianotion-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

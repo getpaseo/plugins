@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/obuntu-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-obuntu-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-obuntu-theme/-/paseo-obuntu-theme-0.1.1.tgz",
+    "integrity": "sha512-+s8shaXPFWrmZzPmt9MX+wR13Gu0jsv1sCgVBUKyyU8SeplwTuOwajD8TUGphlC1DaLhMv5O3B7VODXUk4j24Q=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-obuntu-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

@@ -54,6 +54,14 @@ function comment(body: string) {
   gh(["issue", "comment", issueNumber!, "--body", body]);
 }
 
+function closeAlreadyListed(id: string): never {
+  gh([
+    "issue", "close", issueNumber!, "--comment",
+    `Already listed: [${id}](https://paseo.sh/plugins/${id}).`,
+  ]);
+  process.exit(0);
+}
+
 try {
   git(["checkout", "--detach", "origin/main"]);
   const categories = readCategories();
@@ -67,9 +75,7 @@ try {
       record.id === id,
   );
   if (duplicate || existsSync(recordPath(id))) {
-    throw new Error(
-      `\`${submission.package}\` is already listed as \`${duplicate?.id ?? id}\`. Updates are picked up automatically; no issue is needed.`,
-    );
+    closeAlreadyListed(duplicate?.id ?? id);
   }
 
   const record = submission.package.startsWith("https://github.com/")
@@ -87,6 +93,7 @@ try {
         submittedBy: issue.author.login,
       });
   parseRecord(record, known);
+  if (existing.some((item) => item.id === record.id)) closeAlreadyListed(record.id);
   const owner = githubOwner(record.repository.url)!;
   const proven = record.artifact.kind === "npm" && record.repository.commit;
   if (!proven && owner.toLowerCase() !== issue.author.login.toLowerCase()) {
@@ -98,9 +105,6 @@ try {
       );
     }
   }
-  if (existing.some((item) => item.id === record.id))
-    throw new Error(`${record.id} is already listed`);
-
   git(["checkout", "-B", branch, "origin/main"]);
   writeRecord(record);
   git(["add", recordPath(record.id)]);

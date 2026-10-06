@@ -1,0 +1,20 @@
+{
+  "id": "zedrover/ratex-math-render",
+  "artifact": {
+    "kind": "npm",
+    "package": "ratex-math-render",
+    "version": "0.1.2",
+    "resolved": "https://registry.npmjs.org/ratex-math-render/-/ratex-math-render-0.1.2.tgz",
+    "integrity": "sha512-FZw1tltvTZbhWsZ9nTjrNE4PaqkV784iiYndXC5xSeYjlCbvazD1OzgJEiko/ch4YX7Xz5L56nw521zXAy6v0A=="
+  },
+  "repository": {
+    "url": "https://github.com/ZedRover/ratex-paseo",
+    "commit": "68af1d3a5260116485b640038ae80e0ad69b29cc"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "ZedRover",
+  "reviewedAt": "2026-10-06"
+}

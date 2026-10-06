@@ -1,0 +1,20 @@
+{
+  "id": "geoqiao/agent-activity",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/geoqiao/paseo-stuff.git",
+    "commit": "abc4d96de8648fae95f778e19c4393cbd9fcd7a6",
+    "tag": "readable-agent-activity-v0.1.0-beta.9",
+    "pluginPath": "plugins/agent-activity"
+  },
+  "repository": {
+    "url": "https://github.com/geoqiao/paseo-stuff",
+    "commit": "abc4d96de8648fae95f778e19c4393cbd9fcd7a6"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "geoqiao",
+  "reviewedAt": "2026-10-06"
+}

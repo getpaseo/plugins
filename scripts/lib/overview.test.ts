@@ -1,4 +1,6 @@
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
+import { readFileSync } from "node:fs";
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync, cpSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
@@ -39,10 +41,18 @@ for (const kind of ["npm", "git"] as const) {
         return run("git", ["rev-parse", "HEAD"], { cwd: directory });
       };
       const commit = pin("v1");
+      const tarball = join(directory, "fixture.tgz");
+      // The published package has its own root, independent of the source monorepo path.
+      const packageDirectory = join(directory, "package");
+      mkdirSync(packageDirectory);
+      writeFileSync(join(packageDirectory, "paseo-plugin.json"), '{"id":"example"}');
+      writeFileSync(join(packageDirectory, "paseo-listing.json"), '{"readme":"README.md"}');
+      run("tar", ["-czf", tarball, "package"], { cwd: directory });
+      const integrity = "sha512-" + createHash("sha512").update(readFileSync(tarball)).digest("base64");
       const doc: VersionDoc = {
         name: "@acme/example", version: "1.0.0",
         repository: { url: remote, directory: pluginPath },
-        dist: { integrity: "sha512-YWJj", tarball: "https://registry.npmjs.org/example.tgz" },
+        dist: { integrity, tarball: "https://registry.npmjs.org/example.tgz" },
       };
       let provenanceCommit = commit;
       const client: NpmClient = {
@@ -57,7 +67,7 @@ for (const kind of ["npm", "git"] as const) {
             : "Wrong tarball content";
         },
         async provenance() { return { repositoryUrl: remote.replace(/\.git$/, ""), commit: provenanceCommit }; },
-        async tarball() { throw new Error("Plugin artifacts must not execute"); },
+        async tarball(_url, destination) { cpSync(tarball, destination); },
       };
       const record: PluginRecord = {
         id: "acme/example", categories: ["themes"], submittedAt: "2026-10-06", reviewedAt: "2026-10-06",

@@ -1,3 +1,4 @@
+import { withNpmArtifact } from "./npm-artifact.ts";
 import { readAuthorOverview, requireOverview } from "./overview.ts";
 import type { Category } from "./categories.ts";
 import { authorOf, type NpmClient, resolveVersion, type VersionDoc } from "./npm.ts";
@@ -71,18 +72,10 @@ export async function validateListingMedia(client: NpmClient, record: PluginReco
       (path) => artifactFileExists(directory, path),
     ));
   }
-  const artifact = record.artifact;
-  const media = effectiveMedia(record, parseListingFile(
-    await client.file(artifact.package, artifact.version, "paseo-listing.json"),
+  return withNpmArtifact(client, record.artifact, (files) => check(
+    effectiveMedia(record, parseListingFile(files.text("paseo-listing.json"))),
+    (path) => files.contains(path),
   ));
-  const paths = [media.icon, ...(media.screenshots ?? [])]
-    .filter((value): value is string => value !== undefined)
-    .map(mediaPath).filter((value): value is string => value !== null);
-  const present = new Set<string>();
-  for (const path of new Set(paths)) {
-    if (await client.file(artifact.package, artifact.version, path) !== null) present.add(path);
-  }
-  return check(media, (path) => present.has(path));
 }
 
 const CDN = "https://cdn.jsdelivr.net/npm";
@@ -162,8 +155,8 @@ export async function resolvePlugin(
       `${artifact.package}@${artifact.version} integrity on npm differs from the pinned record`,
     );
   }
-  const listingFile = parseListingFile(
-    await client.file(doc.name, doc.version, "paseo-listing.json"),
+  const listingFile = await withNpmArtifact(client, artifact,
+    (files) => parseListingFile(files.text("paseo-listing.json")),
   );
   return mergeListing({
     record,

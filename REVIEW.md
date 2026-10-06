@@ -68,6 +68,10 @@ what each is judged against.
 - Scope: a pull request changes one record and its overview. Anything touching `.github/`,
   `scripts/`, `categories.json`, this file, or more than one record is a maintainer change
   and is never merged by the bot.
+- Imports: a maintainer-approved import of listings from paseo.cafe is a pull request
+  labeled `approved-import`, which lets validation accept new records carrying a registry
+  overview. The label changes nothing else; a changed pin in such a pull request is held
+  to the same rules.
 
 ## Bumps
 

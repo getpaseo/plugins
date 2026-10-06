@@ -1,3 +1,3 @@
-Material Ocean adds an app color scheme to Paseo using a palette ported from an Obsidian theme. The package contributes one dark appearance named Material Ocean. Its color definitions cover the background, foreground, raised surfaces, controls, borders, accent, muted text, and focus ring. The theme is available through the Appearance settings described in the package README.
+Adds one dark color theme to Paseo, **Material Ocean**. It has no light variant. Open Settings → Appearance and set Theme to Material Ocean. It requires Paseo 0.8.0 or later.
 
-The manifest requires Paseo 0.8.0 or later. The client entrypoint registers fixed color values through Paseo’s theme API and returns an empty cleanup function. The published package contains no server entrypoint or runtime dependencies. Its contribution is limited to appearance; the inspected entrypoint does not read files, access credentials, or send network requests.
+*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/paseo-material-ocean-theme).*

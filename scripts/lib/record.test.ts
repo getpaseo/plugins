@@ -59,7 +59,7 @@ test("reports every problem at once", () => {
   );
   assert.throws(
     () => parseRecord({ ...valid, listing: { icon: "https://example.com/icon.svg" } }, known),
-    /listing.icon must be a relative PNG/,
+    /listing.icon must be an https PNG/,
   );
   assert.throws(
     () => parseRecord({ ...valid, submittedAt: "yesterday" }, known),

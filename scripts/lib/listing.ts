@@ -1,9 +1,8 @@
-import { withNpmArtifact } from "./npm-artifact.ts";
 import { readAuthorOverview, requireOverview } from "./overview.ts";
 import type { Category } from "./categories.ts";
 import { authorOf, type NpmClient, resolveVersion, type VersionDoc } from "./npm.ts";
-import { artifactFileExists, readOptional, withGitArtifact } from "./git-artifact.ts";
-import { mediaPath, type PluginRecord } from "./record.ts";
+import { readOptional, withGitArtifact } from "./git-artifact.ts";
+import type { PluginRecord } from "./record.ts";
 
 /** What paseo-listing.json in the package may declare. */
 export interface ListingFile {
@@ -44,44 +43,10 @@ export interface PublishedIndex {
   plugins: PublishedPlugin[];
 }
 
-function effectiveMedia(record: PluginRecord, listing: ListingFile): ListingFile {
-  return {
-    icon: record.listing?.icon ?? listing.icon,
-    screenshots: record.listing?.screenshots ?? listing.screenshots ?? [],
-  };
-}
-
-/** Validate what publication will show, using files from the pinned artifact only. */
-export async function validateListingMedia(client: NpmClient, record: PluginRecord): Promise<string[]> {
-  const check = (media: ListingFile, exists: (path: string) => boolean): string[] => {
-    const problems: string[] = [];
-    const entries = [
-      ...(media.icon !== undefined ? [["icon", media.icon]] : []),
-      ...(media.screenshots ?? []).map((value, index) => [`screenshots[${index}]`, value]),
-    ];
-    for (const [field, value] of entries) {
-      const path = mediaPath(value);
-      if (path === null) problems.push(`${record.id}: ${field} must be a relative path inside the pinned artifact`);
-      else if (!exists(path)) problems.push(`${record.id}: ${field} file "${path}" is missing from the pinned artifact`);
-    }
-    return problems;
-  };
-  if (record.artifact.kind === "git") {
-    return withGitArtifact(record, (directory) => check(
-      effectiveMedia(record, parseListingFile(readOptional(directory, "paseo-listing.json"))),
-      (path) => artifactFileExists(directory, path),
-    ));
-  }
-  return withNpmArtifact(client, record.artifact, (files) => check(
-    effectiveMedia(record, parseListingFile(files.text("paseo-listing.json"))),
-    (path) => files.contains(path),
-  ));
-}
-
 const CDN = "https://cdn.jsdelivr.net/npm";
 
 export function packageFileUrl(pkg: string, version: string, path: string): string {
-  return `${CDN}/${pkg}@${version}/${(mediaPath(path) ?? path).split("/").map(encodeURIComponent).join("/")}`;
+  return `${CDN}/${pkg}@${version}/${path.replace(/^\.?\//, "")}`;
 }
 
 function assetUrl(pkg: string, version: string, value: string): string {
@@ -119,7 +84,8 @@ export function mergeListing(input: {
 }): PublishedPluginDetail {
   const { record, doc, listingFile } = input;
   const author = authorOf(doc);
-  const { icon, screenshots = [] } = effectiveMedia(record, listingFile);
+  const screenshots = record.listing?.screenshots ?? listingFile.screenshots ?? [];
+  const icon = record.listing?.icon ?? listingFile.icon;
   return {
     id: record.id,
     name: record.listing?.name ?? listingFile.name ?? humanizeId(record.id),
@@ -155,8 +121,8 @@ export async function resolvePlugin(
       `${artifact.package}@${artifact.version} integrity on npm differs from the pinned record`,
     );
   }
-  const listingFile = await withNpmArtifact(client, artifact,
-    (files) => parseListingFile(files.text("paseo-listing.json")),
+  const listingFile = parseListingFile(
+    await client.file(doc.name, doc.version, "paseo-listing.json"),
   );
   return mergeListing({
     record,
@@ -179,8 +145,8 @@ function resolveGitPlugin(record: PluginRecord, overview: string): PublishedPlug
     const manifest = JSON.parse(readOptional(directory, "paseo-plugin.json")!);
     const listing = parseListingFile(readOptional(directory, "paseo-listing.json"));
     const base = `${artifact.remote.replace(/\.git$/, "")}/raw/${artifact.commit}/${artifact.pluginPath ? `${artifact.pluginPath}/` : ""}`;
-    const asset = (value: string) => (value.startsWith("https://") ? value : `${base}${(mediaPath(value) ?? value).split("/").map(encodeURIComponent).join("/")}`);
-    const { icon, screenshots = [] } = effectiveMedia(record, listing);
+    const asset = (value: string) => (value.startsWith("https://") ? value : `${base}${value}`);
+    const icon = record.listing?.icon ?? listing.icon;
     const date = new Date(record.reviewedAt).toISOString();
     return {
       id: record.id,
@@ -191,7 +157,7 @@ function resolveGitPlugin(record: PluginRecord, overview: string): PublishedPlug
       categories: record.categories,
       author: { github: record.id.split("/")[0] },
       ...(icon ? { icon: asset(icon) } : {}),
-      screenshots: screenshots.map(asset),
+      screenshots: (record.listing?.screenshots ?? listing.screenshots ?? []).map(asset),
       submittedAt: new Date(record.submittedAt).toISOString(),
       reviewedAt: date,
       updatedAt: date,

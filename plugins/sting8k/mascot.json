@@ -1,0 +1,19 @@
+{
+  "id": "sting8k/mascot",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-mascot",
+    "version": "0.1.0",
+    "resolved": "https://registry.npmjs.org/paseo-mascot/-/paseo-mascot-0.1.0.tgz",
+    "integrity": "sha512-OKoQveSDN+d1+JSrRm5g16foccO4+0x3CP69JM/EaaS57cA6pv7uVlSJZX5fuSl5kHmbX0i30kvnavUPae17aw=="
+  },
+  "repository": {
+    "url": "https://github.com/sting8k/paseo-mascot"
+  },
+  "categories": [
+    "extras"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "sting8k",
+  "reviewedAt": "2026-10-06"
+}

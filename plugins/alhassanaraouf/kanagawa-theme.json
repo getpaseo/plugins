@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/kanagawa-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-kanagawa-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-kanagawa-theme/-/paseo-kanagawa-theme-0.1.1.tgz",
+    "integrity": "sha512-dyC1CbYyOZKHNwhLj/Y/GdgX3l9jsix7Ynu4gXu3JGBfcMJBvw8ulI3gQ+ZY/cjL6R/JTk7JPhYqdFjBGnK+KA=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-kanagawa-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

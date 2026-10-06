@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/maple-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-maple-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-maple-theme/-/paseo-maple-theme-0.1.1.tgz",
+    "integrity": "sha512-Wp9Ha+gtqcMYq5IgIc5XfSPcM6nkBybfCDQMDJ3431BlP+VsNw/JD/JF/bSZZQWr614shFPzQ9LpskvUPz4VdA=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-maple-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

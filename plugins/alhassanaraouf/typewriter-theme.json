@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/typewriter-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-typewriter-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-typewriter-theme/-/paseo-typewriter-theme-0.1.1.tgz",
+    "integrity": "sha512-Wj0DfQjXQ1kZkBmZdsCJO66B2zyzY500wtbmybcrLFSzipWvul3Ir5Ddcfy91WTlGiTTfi4t6rK9q2OpV90l7Q=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-typewriter-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

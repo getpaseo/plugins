@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/retro-windows-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-retro-windows-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-retro-windows-theme/-/paseo-retro-windows-theme-0.1.1.tgz",
+    "integrity": "sha512-mIPxCdCPx5UcGnlSsk+7MWpOEPGmArITSPUHL0hpypXOeo7ZdEoF+SUb+lAnmE9TUrmA85xQNXtwcHChYA1yIg=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-retro-windows-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

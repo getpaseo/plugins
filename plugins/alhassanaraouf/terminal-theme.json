@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/terminal-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-terminal-theme",
+    "version": "0.1.2",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-terminal-theme/-/paseo-terminal-theme-0.1.2.tgz",
+    "integrity": "sha512-HeqQVdJ1leCWu4E1QD7Q2bZmm/Ebg819HITHvq2qQ/v0nc/4aa6QA416e3iUtYdscFYAU8wTxYLB3Sq7Mmp8TQ=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-terminal-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

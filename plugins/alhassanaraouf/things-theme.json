@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/things-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-things-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-things-theme/-/paseo-things-theme-0.1.1.tgz",
+    "integrity": "sha512-EnlQjKre6jFeERkC3ceNMlRRfoNIHlXu2FGyw3+FGaUcFl4ZsCGQweuF4fZbXzuz9A0IROLwkHtXPGTe4mJBlw=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-things-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

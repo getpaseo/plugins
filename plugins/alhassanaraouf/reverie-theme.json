@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/reverie-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-reverie-theme",
+    "version": "0.1.2",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-reverie-theme/-/paseo-reverie-theme-0.1.2.tgz",
+    "integrity": "sha512-m9tW+80C7kU1868reZaqLmYzlHFUwoA/Kd9BKxXJOyBzvQyvE3vMiEBt02qrGMZdCO4p83h3L9GPkRB4HJosMg=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-reverie-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

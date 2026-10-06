@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/underwater-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-underwater-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-underwater-theme/-/paseo-underwater-theme-0.1.1.tgz",
+    "integrity": "sha512-PK7K/WZX+tAKtuD4lnsDfH3+VfG7edB1hiKLbLmDnoF5TD8OeIxhF4QQ66/duwSMPjnbczUeBg7Z+zoKwrJL1g=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-underwater-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

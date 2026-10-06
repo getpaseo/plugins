@@ -8,15 +8,20 @@ an internal registry by serving the same static JSON documents.
 
 ## Submit a plugin
 
-1. Publish an npm package containing `paseo-plugin.json`, or submit a GitHub repository
-   containing it with a release tag or an explicitly pinned full Git commit.
-   Monorepos can specify a relative plugin path.
-2. Open the submission issue with the source and categories.
-3. The workflow pins an exact artifact and opens a review PR. npm provenance
-   establishes source ownership when available. Otherwise the submitter must own
-   the declared GitHub repository, or be a public member of its organization.
-4. Review follows [REVIEW.md](REVIEW.md). New versions go through the same
-   security review, in a separate bump PR with the artifact diff.
+1. Open the submission form and use your plugin's name as the issue title.
+2. In **Source**, paste its GitHub repository or folder URL, npm package page or
+   name, or Git/npm source accepted by `paseo plugin add`, then tick its categories.
+   Registry ids and local directories cannot be submitted.
+3. The bot derives the listing id from the source, pins the latest npm version or
+   newest repository tag, and opens a pull request. A branch in a GitHub folder
+   URL locates the plugin directory; the bot still pins the newest tag.
+4. A maintainer reviews it under [REVIEW.md](REVIEW.md), and the approved listing
+   appears on [paseo.sh/plugins](https://paseo.sh/plugins). New versions receive
+   the same review in a separate bump PR.
+
+npm packages with provenance can be submitted by anyone. Without provenance,
+the submitter must own the source repository or be a public member of its organization.
+Use an unversioned source; the form has no version, tag, path, or listing-id fields.
 
 All changes go through pull requests, including hand-edited submissions and edits
 to existing records. See [BOTS.md](BOTS.md) for schedules, tokens, safe inspection,
@@ -123,7 +128,7 @@ npm run build
 
 `COMMIT` in these examples is the full 40-character SHA. `--commit` is supported
 by the maintainer add command for GitHub sources. It pins
-that exact reachable commit and records no tag. Without it, Git submissions keep
+that exact reachable commit and records no tag. Without it, the maintainer command keeps
 using the newest version-sorted tag. The manifest and author overview belong at
 the pin, under `--plugin-path` (or the shorthand path) for a monorepo.
 

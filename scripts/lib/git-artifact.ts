@@ -6,6 +6,7 @@ import type { PluginRecord } from "./record.ts";
 import { parseArtifact } from "./record.ts";
 import { deriveId } from "./id.ts";
 import type { RepositorySource } from "./repository.ts";
+import { parseSubmissionSource } from "./submission-source.ts";
 import { isoDate } from "./dates.ts";
 
 export function withGitArtifact<T>(record: PluginRecord, consume: (directory: string) => T): T {
@@ -73,25 +74,6 @@ export function latestTag(remote: string): { tag: string; commit: string } | nul
   return { tag, commit: peeled ? peeled.split("\t")[0] : first[0] };
 }
 
-/** Normalize both submission forms before choosing the artifact type. */
-export function parseGitSource(
-  source: string,
-  pluginPath?: string,
-): { source: string; pluginPath?: string } | null {
-  const shorthand = /^(?:github:)?([a-zA-Z0-9-]+\/[\w.-]+):(.+)$/.exec(source);
-  const url = shorthand ? `https://github.com/${shorthand[1]}` : source;
-  if (!url.startsWith("https://github.com/")) return null;
-  const match = /^https:\/\/github\.com\/([a-zA-Z0-9-]+)\/([\w.-]+)\/?$/.exec(url);
-  if (!match) throw new Error("Use a GitHub repository URL and a separate plugin path");
-  if (shorthand && pluginPath && pluginPath !== shorthand[2])
-    throw new Error("Conflicting plugin paths");
-  const path = shorthand?.[2] ?? pluginPath;
-  return {
-    source: `https://github.com/${match[1]}/${match[2].replace(/\.git$/, "")}`,
-    ...(path ? { pluginPath: path } : {}),
-  };
-}
-
 export function pinGit(input: {
   source: string;
   slug?: string;
@@ -100,8 +82,11 @@ export function pinGit(input: {
   submittedBy?: string;
   commit?: string;
 }): PluginRecord {
-  const source = parseGitSource(input.source, input.pluginPath);
-  if (!source) throw new Error("Use a GitHub repository URL or owner/repo:path");
+  const source = parseSubmissionSource(input.source);
+  if (source.kind !== "git") throw new Error("Use a GitHub repository source");
+  if (source.pluginPath && input.pluginPath && source.pluginPath !== input.pluginPath)
+    throw new Error("Conflicting plugin paths");
+  const pluginPath = source.pluginPath ?? input.pluginPath;
   const remote = source.source;
   const match = /^https:\/\/github\.com\/([a-zA-Z0-9-]+)\/([\w.-]+)$/.exec(remote);
   if (!match) throw new Error("Use a GitHub repository URL");
@@ -110,7 +95,7 @@ export function pinGit(input: {
     throw new Error("ID owner must match repository owner");
   const slug =
     input.slug?.split("/").at(-1) ??
-    deriveId(source.pluginPath?.split("/").at(-1) ?? match[2].toLowerCase());
+    deriveId(pluginPath?.split("/").at(-1) ?? match[2].toLowerCase());
   const pin = input.commit !== undefined
     ? { commit: input.commit }
     : latestTag(`${remote}.git`);
@@ -119,7 +104,7 @@ export function pinGit(input: {
     kind: "git",
     remote: `${remote}.git`,
     ...pin,
-    pluginPath: source.pluginPath,
+    pluginPath,
   });
   const record: PluginRecord = {
     id: `${owner}/${slug}`,

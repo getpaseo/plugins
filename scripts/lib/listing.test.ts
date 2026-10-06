@@ -78,39 +78,6 @@ test("record overrides win, and a package without a listing file gets a humanize
   assert.equal(plugin.installs, undefined);
 });
 
-test("npm details prefer curated overviews and retain artifact README fallback", async () => {
-  const files = new Map([
-    ["paseo-listing.json", JSON.stringify({ readme: "docs/overview.md" })],
-    ["docs/overview.md", "Artifact overview"],
-    ["README.md", "Default README"],
-    ["readme.md", "Lowercase README"],
-  ]);
-  const client = {
-    async packument() {
-      return {
-        name: doc.name,
-        "dist-tags": { latest: doc.version },
-        time: { [doc.version]: "2026-09-27T09:59:16.690Z" },
-        versions: { [doc.version]: doc },
-      };
-    },
-    async file(_name: string, _version: string, path: string) {
-      return files.get(path) ?? null;
-    },
-    async provenance() {
-      return null;
-    },
-    async tarball() {
-      throw new Error("Not needed for listing resolution");
-    },
-  };
-  assert.equal((await resolvePlugin(client, record, "Curated overview")).readme, "Curated overview");
-  assert.equal((await resolvePlugin(client, record)).readme, "Artifact overview");
-  files.delete("docs/overview.md");
-  assert.equal((await resolvePlugin(client, record)).readme, "Default README");
-  files.delete("README.md");
-  assert.equal((await resolvePlugin(client, record)).readme, "Lowercase README");
-});
 
 test("a tagged monorepo artifact is pinned, validated and built through both submission syntaxes", async () => {
   const { mkdtempSync, mkdirSync, writeFileSync, readFileSync, cpSync, rmSync } =
@@ -130,7 +97,8 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
       join(repository, pluginPath, "paseo-plugin.json"),
       JSON.stringify({ id: "example", description: "Pinned monorepo example" }),
     );
-    writeFileSync(join(repository, pluginPath, "README.md"), "# Monorepo example\n");
+    writeFileSync(join(repository, pluginPath, "OVERVIEW.md"), "Monorepo example overview.\n");
+    writeFileSync(join(repository, pluginPath, "README.md"), "Wrong README");
     writeFileSync(
       join(repository, pluginPath, "paseo-listing.json"),
       JSON.stringify({ screenshots: ["screen.png"] }),
@@ -144,7 +112,7 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
     );
     run("git", ["tag", "v1.0.0"], { cwd: repository });
     const commit = run("git", ["rev-parse", "HEAD"], { cwd: repository });
-    writeFileSync(join(repository, pluginPath, "README.md"), "Unreviewed HEAD");
+    writeFileSync(join(repository, pluginPath, "OVERVIEW.md"), "Unreviewed HEAD");
     run("git", ["add", "."], { cwd: repository });
     run(
       "git",
@@ -188,6 +156,14 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
       ],
       options,
     );
+    run("git", ["init", "-q"], options);
+    run("git", ["add", "plugins"], options);
+    run(
+      "git",
+      ["-c", "user.name=Test", "-c", "user.email=test@example.com", "commit", "-qm", "records"],
+      options,
+    );
+    run("git", ["update-ref", "refs/remotes/origin/main", "HEAD"], options);
     assert.match(
       run(process.execPath, ["scripts/validate.ts", "--online"], options),
       /2 record\(s\) match/,
@@ -197,7 +173,7 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
       const detail = JSON.parse(
         readFileSync(join(registry, `dist/plugins/acme/${slug}.json`), "utf8"),
       );
-      assert.equal(detail.readme, "# Monorepo example\n");
+      assert.equal(detail.readme, "Monorepo example overview.\n");
       assert.equal(detail.description, "Pinned monorepo example");
       assert.equal(detail.artifact.pluginPath, pluginPath);
       assert.equal(detail.artifact.commit, commit);
@@ -210,17 +186,9 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
     run(process.execPath, ["scripts/build.ts"], options);
     assert.equal(
       JSON.parse(readFileSync(join(registry, "dist/plugins/acme/example.json"), "utf8")).readme,
-      "# Example\n\nA curated description.\n",
+      "Monorepo example overview.\n",
     );
     assert.match(run(process.execPath, ["scripts/validate.ts"], options), /2 record\(s\)/);
-    run("git", ["init", "-q"], options);
-    run("git", ["add", "plugins"], options);
-    run(
-      "git",
-      ["-c", "user.name=Test", "-c", "user.email=test@example.com", "commit", "-qm", "records"],
-      options,
-    );
-    run("git", ["update-ref", "refs/remotes/origin/main", "HEAD"], options);
     writeFileSync(overview, "An updated curated description.");
     run("git", ["add", "plugins/acme/example.md"], options);
     run(

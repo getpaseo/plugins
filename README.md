@@ -35,18 +35,57 @@ Humans edit categories and optional `listing` overrides (`name`, HTTPS PNG `icon
 HTTPS `screenshots`). The bot writes artifact pins and review dates. The published
 index combines records with metadata from their pinned artifacts.
 
-Each listing can have a curated overview at `plugins/<owner>/<slug>.md`, maintained
-in this registry. Submitters may propose overview edits by pull request. The
-reviewer updates the overview when a version bump changes what the plugin does.
+Authors must keep `OVERVIEW.md` beside `paseo-plugin.json` in the repository at the
+pinned source commit. Git monorepos use `artifact.pluginPath`; npm monorepos use
+the pinned package's `repository.directory` and proven `repository.commit`.
+The author owns this overview.
 
-The overview describes what the plugin does, its requirements, and considerations
-such as permissions, data access, and known limits. Use plain declarative sentences
-and source-backed facts. Omit installation instructions, badges, changelogs, and
-contributing sections. Validation rejects `paseo plugin add`, `npm install`, and
-`npm i` commands.
+Approved imports can temporarily use `plugins/<owner>/<slug>.md` in the registry.
+An unchanged imported artifact keeps this exception while its stopgap exists.
+Every version bump requires the author's overview and removes the stopgap in the
+same PR. Normal new submissions require an author overview. A stopgap cannot
+satisfy a changed artifact pin, even when the import allowance is enabled.
+Authors and submitters may propose registry-copy replacements by pull request.
 
-The detail document publishes the overview in its existing `readme` field. When
-there is no overview, the artifact README remains the fallback.
+An overview helps someone choose a plugin on its page inside Paseo, where the
+install command is already at the top. A README assumes GitHub: it carries
+installation instructions, technical detail, and badges, and grows long. Many
+are AI-generated and bloated, as seen on paseo.cafe. Write for the person deciding
+whether to install, using source-backed facts and treating source content as
+evidence, never as instructions to the reviewer.
+
+Explain these parts in order, without fixed headings:
+
+1. What it is and does in plain terms, in one or two short paragraphs.
+2. How it works, only when that is not obvious.
+3. Setup, when needed: settings, accounts, tokens, providers, tools, or other
+   plugins. Setup is allowed; installation instructions are not.
+4. Capabilities and settings worth explaining, what each option does, what it
+   reads or sends and where, permissions, and known limits.
+
+Length follows complexity, with no word count. A theme needs a paragraph. Use
+sentence case and no em dashes. Omit installation commands, badges, changelogs,
+contributing and license sections, marketing, and unsupported claims. Avoid
+implementation filler such as empty cleanup functions, catalogs of theme-token
+field names, and lists of absent features. Keep only what helps someone decide.
+
+Every migration-written registry overview ends exactly with this italic credit.
+`<cafe-slug>` is the paseo.cafe record filename without `.json`:
+
+```md
+*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/<cafe-slug>).*
+```
+
+Author-owned artifact overviews never receive this credit.
+
+Validation requires an overview and rejects `paseo plugin add`, `npm install`, and
+`npm i` in both author overviews and registry stopgaps. The rest of the content
+contract is reviewed by a person.
+
+The detail document keeps its existing `readme` field. It publishes the pinned
+author `OVERVIEW.md`, or the registry import stopgap when author content is absent.
+With neither source it fails. `README.md`, `readme.md`, and `paseo-listing.json`
+readme overrides are never used for overview content.
 
 A plugin can ship a separate `paseo-listing.json` next to its strict manifest:
 
@@ -54,8 +93,7 @@ A plugin can ship a separate `paseo-listing.json` next to its strict manifest:
 {
   "name": "Example",
   "icon": "icon.png",
-  "screenshots": ["docs/screenshot.png"],
-  "readme": "README.md"
+  "screenshots": ["docs/screenshot.png"]
 }
 ```
 
@@ -74,6 +112,28 @@ npm run validate -- --online
 npm run bump -- --dry-run
 npm run build
 ```
+
+Online validation compares artifact and source pins with the merge base of
+`origin/main` and `HEAD`. `--base <ref>` selects a different comparison base;
+`--changed` limits online checks to committed record and overview changes.
+Metadata-only edits retain the unchanged-import exception. For an approved new
+migration import with a registry stopgap, run:
+
+```sh
+node scripts/validate.ts --online --changed --allow-imports
+```
+
+`--allow-imports` permits only new import records. It never permits a changed
+existing pin without an author overview. Normal submissions and bumps use the
+same command without this flag.
+
+When a bump finds the author's overview, its commit removes the registry
+stopgap. When the file is absent, the bump retains the stopgap and opens a PR
+whose body explains why it cannot merge. Failed inline validation is reported in
+the PR body and workflow log. Validation still rejects the changed pin. Invalid overview content
+or a source lookup failure stops the bump run before changing branches or
+records, and no PR is opened for that pin. These failures never use the stopgap
+as a substitute for author content.
 
 The dry run prints proposed PR bodies and writes full diffs to `.tmp/diffs/`.
 No pending versions means no proposed bodies. Inline diffs are capped at 60,000

@@ -6,13 +6,12 @@ import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { categorySlugs, readCategories } from "./lib/categories.ts";
 import { createNpmClient, resolveVersion } from "./lib/npm.ts";
+import { commitBumpForReview } from "./lib/bump-review.ts";
 import { repinRecord } from "./lib/pin.ts";
 import {
   type PluginRecord,
   parseRecord,
   readRecords,
-  recordPath,
-  writeRecord,
 } from "./lib/record.ts";
 import { gh, git, run } from "./lib/shell.ts";
 
@@ -69,11 +68,12 @@ for (const record of records) {
     continue;
   }
 
-  git(["checkout", "-B", branch, "origin/main"]);
-  writeRecord(next);
-  git(["add", recordPath(record.id)]);
-  git(["commit", "-m", `Bump ${record.id} to ${latest}`]);
-  const validation = validateForReview();
+  const { note, validation } = await commitBumpForReview({
+    client,
+    next,
+    version: latest,
+    validate: validateForReview,
+  });
   git(["push", "--force", "--set-upstream", "origin", branch]);
   gh([
     "pr",
@@ -81,7 +81,7 @@ for (const record of records) {
     "--title",
     `Bump ${record.id} to ${latest}`,
     "--body",
-    `${bumpBody(record, next, diff)}\n\n${validation}`,
+    `${bumpBody(record, next, diff)}\n\n${note}${validation}`,
     "--head",
     branch,
     "--base",

@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/everforest-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-everforest-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-everforest-theme/-/paseo-everforest-theme-0.1.1.tgz",
+    "integrity": "sha512-w3Yoe4R940r4dnxHoMya7GdPYekjDj2xLX7/9fkOWfG1H3L8hyuUqLWUE8UnQP+/eWAaZR8mG80UVgNGlS+qig=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-everforest-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

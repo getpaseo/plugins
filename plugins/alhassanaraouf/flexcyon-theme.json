@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/flexcyon-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-flexcyon-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-flexcyon-theme/-/paseo-flexcyon-theme-0.1.1.tgz",
+    "integrity": "sha512-aEwcsCgwblr90dmTLLCtlsNNPUZnYMRtBMg8ZlnkEUekXQFd88+okS5nfIq3MEcqEdrGxLWDHgFj/2/Bed45tg=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-flexcyon-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

@@ -1,8 +1,8 @@
-// Checks every record offline, and with --online checks pinned versions against npm.
+// Checks every record offline, and with --online checks pinned versions against their artifacts.
 //   node scripts/validate.ts [--online] [--changed]   (--changed limits online checks to records changed vs origin/main)
-import { withGitArtifact } from "./lib/git-artifact.ts";
+import { validateArtifact } from "./lib/validate-artifact.ts";
 import { categorySlugs, readCategories } from "./lib/categories.ts";
-import { createNpmClient, resolveVersion } from "./lib/npm.ts";
+import { createNpmClient } from "./lib/npm.ts";
 import { readOverview } from "./lib/overview.ts";
 import { readRecords } from "./lib/record.ts";
 import { git } from "./lib/shell.ts";
@@ -31,26 +31,7 @@ const client = createNpmClient();
 const problems: string[] = [];
 for (const record of selected) {
   try {
-    if (record.artifact.kind === "git") {
-      withGitArtifact(record, () => undefined);
-      continue;
-    }
-    const artifact = record.artifact;
-    const packument = await client.packument(artifact.package);
-    const doc = resolveVersion(packument, artifact.version);
-    if (doc.dist.tarball !== artifact.resolved)
-      problems.push(`${record.id}: tarball URL differs from pin`);
-    if (doc.dist.integrity !== artifact.integrity)
-      problems.push(`${record.id}: integrity does not match npm for ${artifact.version}`);
-    if ((await client.file(doc.name, doc.version, "paseo-plugin.json")) === null) {
-      problems.push(`${record.id}: ${artifact.version} does not ship paseo-plugin.json`);
-    }
-    if (record.repository?.commit) {
-      const provenance = await client.provenance(doc.name, doc.version);
-      if (!provenance || provenance.commit !== record.repository.commit) {
-        problems.push(`${record.id}: repository.commit is not backed by npm provenance`);
-      }
-    }
+    problems.push(...(await validateArtifact(client, record)));
   } catch (error) {
     problems.push(`${record.id}: ${(error as Error).message}`);
   }

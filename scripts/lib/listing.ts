@@ -1,3 +1,4 @@
+import { validateOverview } from "./overview.ts";
 import type { Category } from "./categories.ts";
 import { authorOf, type NpmClient, resolveVersion, type VersionDoc } from "./npm.ts";
 import { readOptional, withGitArtifact } from "./git-artifact.ts";
@@ -124,11 +125,16 @@ export async function resolvePlugin(
   const listingFile = parseListingFile(
     await client.file(doc.name, doc.version, "paseo-listing.json"),
   );
-  const readmePath = listingFile.readme ?? "README.md";
+  // Validate the raw author overview even when an explicit listing path wins.
+  const authorOverview = validateOverview(
+    await client.file(doc.name, doc.version, "OVERVIEW.md"),
+    `${record.id}/OVERVIEW.md`,
+  );
   const readme =
+    (listingFile.readme ? await client.file(doc.name, doc.version, listingFile.readme) : null) ??
+    authorOverview ??
     overview ??
-    (await client.file(doc.name, doc.version, readmePath)) ??
-    (readmePath !== "README.md" ? await client.file(doc.name, doc.version, "README.md") : null) ??
+    (await client.file(doc.name, doc.version, "README.md")) ??
     (await client.file(doc.name, doc.version, "readme.md"));
   return mergeListing({
     record,
@@ -150,6 +156,10 @@ function resolveGitPlugin(record: PluginRecord, overview: string | null): Publis
   return withGitArtifact(record, (directory) => {
     const manifest = JSON.parse(readOptional(directory, "paseo-plugin.json")!);
     const listing = parseListingFile(readOptional(directory, "paseo-listing.json"));
+    const authorOverview = validateOverview(
+      readOptional(directory, "OVERVIEW.md"),
+      `${record.id}/OVERVIEW.md`,
+    );
     const base = `${artifact.remote.replace(/\.git$/, "")}/raw/${artifact.commit}/${artifact.pluginPath ? `${artifact.pluginPath}/` : ""}`;
     const asset = (value: string) => (value.startsWith("https://") ? value : `${base}${value}`);
     const icon = record.listing?.icon ?? listing.icon;
@@ -169,8 +179,9 @@ function resolveGitPlugin(record: PluginRecord, overview: string | null): Publis
       updatedAt: date,
       publishedAt: date,
       readme:
+        (listing.readme ? readOptional(directory, listing.readme) : null) ??
+        authorOverview ??
         overview ??
-        readOptional(directory, listing.readme ?? "README.md") ??
         readOptional(directory, "README.md") ??
         readOptional(directory, "readme.md") ??
         "",

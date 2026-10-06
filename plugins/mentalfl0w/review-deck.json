@@ -1,0 +1,19 @@
+{
+  "id": "mentalfl0w/review-deck",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/mentalfl0w/review-deck.git",
+    "commit": "4fe8e04c362224b2f5b37dcad399c9b7f1d638a2",
+    "tag": "v2.0.1"
+  },
+  "repository": {
+    "url": "https://github.com/mentalfl0w/review-deck",
+    "commit": "4fe8e04c362224b2f5b37dcad399c9b7f1d638a2"
+  },
+  "categories": [
+    "git"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "mentalfl0w",
+  "reviewedAt": "2026-10-06"
+}

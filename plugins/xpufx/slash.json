@@ -1,0 +1,19 @@
+{
+  "id": "xpufx/slash",
+  "artifact": {
+    "kind": "npm",
+    "package": "@xpufx/paseo-slash",
+    "version": "0.1.4",
+    "resolved": "https://registry.npmjs.org/@xpufx/paseo-slash/-/paseo-slash-0.1.4.tgz",
+    "integrity": "sha512-ggUW0eSN0uEgVvxwhhzjSxsn5LKsoG4tgdErDNvUa135KcGXdHm6vHCuR9qFEyduqcHtXkI0iLcKgrPUqAi2gw=="
+  },
+  "repository": {
+    "url": "https://github.com/xpufx/paseo"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "xpufx",
+  "reviewedAt": "2026-10-06"
+}

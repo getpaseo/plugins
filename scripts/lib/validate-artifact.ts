@@ -1,3 +1,4 @@
+import { validateListingMedia } from "./listing.ts";
 import { readAuthorOverview, requireOverview, validateOverview } from "./overview.ts";
 import { type NpmClient, resolveVersion } from "./npm.ts";
 import { parseArtifact, type PluginRecord } from "./record.ts";
@@ -17,6 +18,7 @@ export async function validateArtifact(
   const imported = unchanged || (!previous && context.allowNewImport);
   const registry = validateOverview(context.registryOverview ?? null, `${record.id}.md`);
   requireOverview(author, imported ? registry : null, record.id);
+  if (!unchanged) problems.push(...await validateListingMedia(client, record));
   if (record.artifact.kind === "git") return problems;
   const artifact = record.artifact;
   const packument = await client.packument(artifact.package);

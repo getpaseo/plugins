@@ -1,0 +1,20 @@
+{
+  "id": "alysnnix/github-integration",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/alysnnix/paseo-github-integration.git",
+    "commit": "d6f7184a4db16fb1be930700d1e960872caf8c2e",
+    "tag": "v1.0.1"
+  },
+  "repository": {
+    "url": "https://github.com/alysnnix/paseo-github-integration",
+    "commit": "d6f7184a4db16fb1be930700d1e960872caf8c2e"
+  },
+  "categories": [
+    "git",
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alysnnix",
+  "reviewedAt": "2026-10-06"
+}

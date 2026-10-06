@@ -1,0 +1,17 @@
+{
+  "id": "nerveband/display-switcher",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/nerveband/paseo-display-switcher.git",
+    "commit": "2d47ca7af1d672e257d1daa4909c7fbfb3e46fd8"
+  },
+  "repository": {
+    "url": "https://github.com/nerveband/paseo-display-switcher",
+    "commit": "2d47ca7af1d672e257d1daa4909c7fbfb3e46fd8"
+  },
+  "categories": [
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-06",
+  "reviewedAt": "2026-10-06"
+}

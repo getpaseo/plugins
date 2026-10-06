@@ -1,0 +1,18 @@
+{
+  "id": "yoseptf/emoji",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/YoseptF/paseo-emoji.git",
+    "commit": "425e37563234d05a3ceaf15040db221625537db9"
+  },
+  "repository": {
+    "url": "https://github.com/YoseptF/paseo-emoji",
+    "commit": "425e37563234d05a3ceaf15040db221625537db9"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "YoseptF",
+  "reviewedAt": "2026-10-06"
+}

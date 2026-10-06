@@ -1,0 +1,20 @@
+{
+  "id": "jegork/ado",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/jegork/paseo-ado.git",
+    "commit": "77af95a28767b45f2589f1f041c8ecd70b71e8c7"
+  },
+  "repository": {
+    "url": "https://github.com/jegork/paseo-ado",
+    "commit": "77af95a28767b45f2589f1f041c8ecd70b71e8c7"
+  },
+  "categories": [
+    "git",
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "jegork",
+  "reviewedAt": "2026-10-06"
+}

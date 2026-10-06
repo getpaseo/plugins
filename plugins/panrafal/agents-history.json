@@ -1,0 +1,19 @@
+{
+  "id": "panrafal/agents-history",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/panrafal/paseo-plugins.git",
+    "commit": "004c6a80c6aa8e76bb563694c3eee5c2c0b0466f",
+    "pluginPath": "agents-history"
+  },
+  "repository": {
+    "url": "https://github.com/panrafal/paseo-plugins",
+    "commit": "004c6a80c6aa8e76bb563694c3eee5c2c0b0466f"
+  },
+  "categories": [
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "panrafal",
+  "reviewedAt": "2026-10-06"
+}

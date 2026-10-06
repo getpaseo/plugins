@@ -1,3 +1,3 @@
-Flexoki adds the dark Flexoki palette and the light Flexoki Light palette to Paseo. Its colors are ported from the upstream Obsidian theme identified in the package README. The palette defines background, foreground, raised surfaces, controls, borders, accent, muted foreground, and focus ring colors. Its background colors are #100f0f and #fffcf0.
+This plugin adds two themes to Paseo, ported from an Obsidian theme: Flexoki (dark) and Flexoki Light (light). Select either under Settings → Appearance → Theme. It changes Paseo's colors only and has no settings. It requires Paseo 0.8.0 or later.
 
-The manifest requires Paseo 0.8.0 or later. The client entrypoint registers fixed color values through the theme API. It contains no server entrypoint, settings, account integration, or provider configuration. This port contributes color palettes; the shipped code does not add the upstream theme’s layouts or other Obsidian behavior.
+*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/paseo-flexoki-theme).*

@@ -1,0 +1,17 @@
+{
+  "id": "scowalt/plain",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/scowalt/paseo-plain.git",
+    "commit": "3f1d281cf6fc6c094878405f5945d3d9e250f86d",
+    "tag": "v0.2.0"
+  },
+  "repository": {
+    "url": "https://github.com/scowalt/paseo-plain"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-06",
+  "reviewedAt": "2026-10-06"
+}

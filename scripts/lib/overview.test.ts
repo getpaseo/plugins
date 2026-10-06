@@ -61,12 +61,19 @@ for (const kind of ["npm", "git"] as const) {
       };
       const record: PluginRecord = {
         id: "acme/example", categories: ["themes"], submittedAt: "2026-10-06", reviewedAt: "2026-10-06",
+        listing: {
+          icon: "https://raw.githubusercontent.com/acme/overview/main/icon.png",
+          screenshots: ["https://raw.githubusercontent.com/acme/overview/main/screen.png", "https://example.com/screen.png"],
+        },
         repository: { url: "https://github.com/acme/overview/tree/HEAD/packages/example", commit },
         artifact: kind === "git" ? { kind, remote, commit, tag: "v1", pluginPath }
           : { kind, package: doc.name, version: doc.version, resolved: doc.dist.tarball, integrity: doc.dist.integrity },
       };
       assert.equal(await readAuthorOverview(client, record), "Author overview");
-      assert.equal((await resolvePlugin(client, record, "Registry stopgap")).readme, "Author overview");
+      const published = await resolvePlugin(client, record, "Registry stopgap");
+      assert.equal(published.readme, "Author overview");
+      assert.equal(published.icon, record.listing!.icon);
+      assert.deepEqual(published.screenshots, record.listing!.screenshots);
       assert.deepEqual(await validateArtifact(client, record), []);
       rmSync(join(plugin, "OVERVIEW.md"));
       const absentCommit = pin("v2");

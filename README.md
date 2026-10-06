@@ -21,7 +21,6 @@ an internal registry by serving the same static JSON documents.
 
 npm packages with provenance can be submitted by anyone. Without provenance,
 the submitter must own the source repository or be a public member of its organization.
-Use an unversioned source; the form has no version, tag, path, or listing-id fields.
 
 All changes go through pull requests, including hand-edited submissions and edits
 to existing records. See [BOTS.md](BOTS.md) for schedules, tokens, safe inspection,

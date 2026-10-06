@@ -3,6 +3,7 @@
 import { withGitArtifact } from "./lib/git-artifact.ts";
 import { categorySlugs, readCategories } from "./lib/categories.ts";
 import { createNpmClient, resolveVersion } from "./lib/npm.ts";
+import { readOverview } from "./lib/overview.ts";
 import { readRecords } from "./lib/record.ts";
 import { git } from "./lib/shell.ts";
 
@@ -11,6 +12,7 @@ const changedOnly = process.argv.includes("--changed");
 
 const known = categorySlugs(readCategories());
 const records = readRecords(known);
+for (const record of records) readOverview(record.id);
 console.log(`${records.length} record(s) are well-formed`);
 if (!online) process.exit(0);
 
@@ -20,7 +22,7 @@ if (changedOnly) {
     git(["diff", "--name-only", "origin/main...HEAD", "--", "plugins/"])
       .split("\n")
       .filter(Boolean)
-      .map((path) => path.replace(/^plugins\//, "").replace(/\.json$/, "")),
+      .map((path) => path.replace(/^plugins\//, "").replace(/\.(?:json|md)$/, "")),
   );
   selected = records.filter((record) => changed.has(record.id));
 }

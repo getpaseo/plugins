@@ -4,6 +4,7 @@ import { dirname, join } from "node:path";
 import { categorySlugs, readCategories } from "./lib/categories.ts";
 import { type PublishedIndex, resolvePlugin, summarize } from "./lib/listing.ts";
 import { createNpmClient } from "./lib/npm.ts";
+import { readOverview } from "./lib/overview.ts";
 import { readRecords } from "./lib/record.ts";
 
 const DIST = join(process.cwd(), "dist");
@@ -16,7 +17,9 @@ mkdirSync(join(DIST, "plugins"), { recursive: true });
 
 // Bound concurrent requests to package hosts.
 const CONCURRENCY = 3;
-const details = await mapLimit(records, CONCURRENCY, (record) => resolvePlugin(client, record));
+const details = await mapLimit(records, CONCURRENCY, (record) =>
+  resolvePlugin(client, record, readOverview(record.id)),
+);
 let installs: Record<string, number> = {};
 try {
   const response = await fetch(

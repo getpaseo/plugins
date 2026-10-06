@@ -33,7 +33,20 @@ pin; `repository` is the browseable source and optional proven source commit.
 
 Humans edit categories and optional `listing` overrides (`name`, HTTPS PNG `icon`,
 HTTPS `screenshots`). The bot writes artifact pins and review dates. The published
-index combines records with metadata and README content from their pinned artifacts.
+index combines records with metadata from their pinned artifacts.
+
+Each listing can have a curated overview at `plugins/<owner>/<slug>.md`, maintained
+in this registry. Submitters may propose overview edits by pull request. The
+reviewer updates the overview when a version bump changes what the plugin does.
+
+The overview describes what the plugin does, its requirements, and considerations
+such as permissions, data access, and known limits. Use plain declarative sentences
+and source-backed facts. Omit installation instructions, badges, changelogs, and
+contributing sections. Validation rejects `paseo plugin add`, `npm install`, and
+`npm i` commands.
+
+The detail document publishes the overview in its existing `readme` field. When
+there is no overview, the artifact README remains the fallback.
 
 A plugin can ship a separate `paseo-listing.json` next to its strict manifest:
 

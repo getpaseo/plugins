@@ -1,23 +1,21 @@
 {
   "id": "dorasto/sayr",
+  "repository": {
+    "url": "https://github.com/dorasto/sayr/tree/HEAD/packages/paseo-plugin",
+    "commit": "e70919b89df3cf9e95c18242939193a79c7593b1"
+  },
+  "categories": ["workspaces"],
+  "submittedAt": "2026-09-22",
+  "submittedBy": "tommerty",
+  "reviewedAt": "2026-10-03",
+  "listing": {
+    "screenshots": []
+  },
   "artifact": {
     "kind": "npm",
     "package": "@sayrio/paseo-plugin",
     "version": "0.2.0",
     "resolved": "https://registry.npmjs.org/@sayrio/paseo-plugin/-/paseo-plugin-0.2.0.tgz",
     "integrity": "sha512-LPmVkEPWl8Km6US4zQAzhqSbGm7lBDwCjgNoysOhCsDiRy0jbtDKYRg1XVgwwUkoEwhF1EdZHCPwIuT8IizyWQ=="
-  },
-  "repository": {
-    "url": "https://github.com/dorasto/sayr/tree/HEAD/packages/paseo-plugin",
-    "commit": "e70919b89df3cf9e95c18242939193a79c7593b1"
-  },
-  "categories": [
-    "workspaces"
-  ],
-  "submittedAt": "2026-09-22",
-  "submittedBy": "tommerty",
-  "reviewedAt": "2026-10-03",
-  "listing": {
-    "screenshots": []
   }
 }

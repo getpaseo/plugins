@@ -1,23 +1,21 @@
 {
   "id": "gpambrozio/herald",
+  "repository": {
+    "url": "https://github.com/gpambrozio/paseo-plugins/tree/HEAD/herald",
+    "commit": "b658d0ab58735959e46d12660ae179c002cdadda"
+  },
+  "categories": ["sidebar"],
+  "submittedAt": "2026-09-19",
+  "submittedBy": "gpambrozio",
+  "reviewedAt": "2026-10-03",
+  "listing": {
+    "screenshots": []
+  },
   "artifact": {
     "kind": "npm",
     "package": "@gpambrozio/paseo-herald",
     "version": "0.5.1",
     "resolved": "https://registry.npmjs.org/@gpambrozio/paseo-herald/-/paseo-herald-0.5.1.tgz",
     "integrity": "sha512-rXdlaxgRlYP3nmZrvbG29sQeluz5JC7TPuJDgKzyh9itDH1AvZYGjLgGp9XZGKxdBBhaGxgGAFhDh+VTL8h9dw=="
-  },
-  "repository": {
-    "url": "https://github.com/gpambrozio/paseo-plugins/tree/HEAD/herald",
-    "commit": "b658d0ab58735959e46d12660ae179c002cdadda"
-  },
-  "categories": [
-    "sidebar"
-  ],
-  "submittedAt": "2026-09-19",
-  "submittedBy": "gpambrozio",
-  "reviewedAt": "2026-10-03",
-  "listing": {
-    "screenshots": []
   }
 }

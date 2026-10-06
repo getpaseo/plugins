@@ -1,24 +1,22 @@
 {
   "id": "gpambrozio/github-board",
-  "artifact": {
-    "kind": "npm",
-    "package": "@gpambrozio/paseo-github-board",
-    "version": "0.10.0",
-    "resolved": "https://registry.npmjs.org/@gpambrozio/paseo-github-board/-/paseo-github-board-0.10.0.tgz",
-    "integrity": "sha512-G6LxSsbt4Kt36yWEB2rXUxOwNLFsA4DbF20ViroVqaicMPjaw5H4JUWXjzEZAxWJT+0DlH12/TtqN4I0sNoQtg=="
-  },
   "repository": {
     "url": "https://github.com/gpambrozio/paseo-plugins/tree/HEAD/github-board",
     "commit": "530a66c592e20915169b5e67a35de8793f71ec60"
   },
-  "categories": [
-    "git"
-  ],
+  "categories": ["git"],
   "submittedAt": "2026-09-19",
   "submittedBy": "gpambrozio",
   "reviewedAt": "2026-10-03",
   "listing": {
     "name": "GitHub Board",
     "screenshots": []
+  },
+  "artifact": {
+    "kind": "npm",
+    "package": "@gpambrozio/paseo-github-board",
+    "version": "0.10.0",
+    "resolved": "https://registry.npmjs.org/@gpambrozio/paseo-github-board/-/paseo-github-board-0.10.0.tgz",
+    "integrity": "sha512-G6LxSsbt4Kt36yWEB2rXUxOwNLFsA4DbF20ViroVqaicMPjaw5H4JUWXjzEZAxWJT+0DlH12/TtqN4I0sNoQtg=="
   }
 }

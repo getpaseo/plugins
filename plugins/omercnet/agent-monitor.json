@@ -1,23 +1,21 @@
 {
   "id": "omercnet/agent-monitor",
+  "repository": {
+    "url": "https://github.com/omercnet/paseo-plugins/tree/HEAD/agent-monitor",
+    "commit": "d7b3e654f364b5be72edf6fd1d914a3750b53082"
+  },
+  "categories": ["orchestration"],
+  "submittedAt": "2026-09-17",
+  "submittedBy": "omercnet",
+  "reviewedAt": "2026-10-03",
+  "listing": {
+    "screenshots": []
+  },
   "artifact": {
     "kind": "npm",
     "package": "@omercnet/paseo-agent-monitor",
     "version": "1.2.0",
     "resolved": "https://registry.npmjs.org/@omercnet/paseo-agent-monitor/-/paseo-agent-monitor-1.2.0.tgz",
     "integrity": "sha512-dY7/3f49sPMVwb+Wr7iUsw4jCoQWRX2UF9Li+uU8yJdN0cj4BvTsz4GDiR3OsKk8zJ1/o01DSRi1e4uDRS3TmA=="
-  },
-  "repository": {
-    "url": "https://github.com/omercnet/paseo-plugins/tree/HEAD/agent-monitor",
-    "commit": "d7b3e654f364b5be72edf6fd1d914a3750b53082"
-  },
-  "categories": [
-    "orchestration"
-  ],
-  "submittedAt": "2026-09-17",
-  "submittedBy": "omercnet",
-  "reviewedAt": "2026-10-03",
-  "listing": {
-    "screenshots": []
   }
 }

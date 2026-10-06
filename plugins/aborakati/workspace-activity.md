@@ -1,14 +1,10 @@
-Workspace Activity adds two panels that show what the agents in one workspace are doing: **Agent Monitor** and **Tasks**. Both open as workspace tabs or docked in the Explorer, from the Command Center, or with `/agents` and `/tasks` in the composer.
+Workspace Activity shows what the agents in a workspace are doing. **Agent Monitor** lists the workspace's agents and their subagents, and lets you read their transcripts and inspect tool calls. **Tasks** collects the todo lists those agents write.
 
-**Agent Monitor** shows every agent in the workspace, including archived ones under an **Archived** filter, as a tree of parents and their subagents with counts of running, attention-needed, idle and archived agents. You can expand the transcript and inspect each tool call's input, output and status. **Steer** sends a prompt to a running agent, **Stop** interrupts the running turn (the agent stays alive and idle, and a later prompt resumes it), and a card action archives an agent. You can also open any agent in its own tab. These actions run only when you press them.
+From Agent Monitor you can steer a running agent with a new prompt, stop its current turn, or archive it. Each action runs only when you press it.
 
-**Tasks** collects the todo lists that agents in the workspace emit, groups them by agent with completed and total counts, filters by status (All, In Progress, Pending, Completed) and links back to the agent thread. Both panels stay empty until an agent has run in the workspace.
+## Access
 
-## What it reads
-
-- The plugin reads agent lists and timelines of the current workspace through Paseo's plugin interface, and reads provider subagent lists and transcripts. It has no credentials, files or network access of its own.
-- Stopping a turn, listing provider subagents and reading their transcripts go through the plugin's daemon side, which sends requests to the Paseo daemon over the plugin process channel, because the plugin interface has no calls for them. Steering and archiving use Paseo's normal agent calls.
-- It stores nothing.
+The plugin reads the workspace's agents, timelines and subagent transcripts. It has no credentials, files or network access of its own, and it stores nothing.
 
 Requires Paseo 0.8.0 or later.
 

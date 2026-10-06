@@ -1,17 +1,10 @@
-Markdown Viewer adds a **Markdown** panel to every workspace for reading markdown files in tabs. A tab refreshes when its file changes on disk, and the panel can open files that agents write.
+Markdown Viewer adds a **Markdown** panel to every workspace for reading markdown files in tabs. A tab updates as its file changes on disk. You can open a file by path from the panel or a slash command.
 
-Open it from the workspace panel list, from the Command Center (**Open markdown viewer**), or with `/md <path>` in the composer, which opens the tab without sending a prompt to the agent. The viewer renders headings, lists, task boxes, tables, code blocks, quotes, links, Obsidian wikilinks and YAML frontmatter in every Paseo theme, on desktop, web and phones.
+**Follow mode** is on by default. When an agent writes or edits a markdown file through its edit tools, the file opens as a background tab, marked until you view it. A separate **Bring forward** setting, off by default, also raises the panel when that happens. The plugin ships a script agents can run to ask the panel to open a file.
 
-## Follow mode
+## Access
 
-Two host-wide settings control it. **Follow agents** (on by default) opens a background tab, marked with a green dot until you view it, when an agent finishes a structured write or edit of a markdown file. **Bring forward** (off by default) also raises the panel. Files written through a shell heredoc are not detected. Agents can show a file explicitly with the plugin's `bin/open-markdown <path>` script, which writes a small request file into an inbox folder under the Paseo home directory. The daemon turns it into a row in that agent's conversation, and the row opens the tab. No network port is opened.
-
-## What it reads and runs
-
-- Only `.md`, `.markdown` and `.mdx` files up to 2 MB are served. A relative path is confined to the workspace directory, including through symlinks. An absolute path or `~/` path you type is read as typed, from anywhere the daemon user can read.
-- The daemon watches each open file's folder for changes and re-checks it about every 1.5 seconds, and the panel waits on a long poll until the content differs.
-- **Show in Finder** runs the platform's file opener (`open -R` on macOS, `explorer.exe` on Windows, `xdg-open` on the containing folder elsewhere) on a file the viewer could display.
-- Follow mode subscribes to every live agent's timeline on the daemon. The plugin reads its own saved settings file under the Paseo home directory and creates and drains the inbox folder `~/.paseo/plugin-data/paseo-markdown-viewer/inbox`. It makes no outbound network requests.
+A relative path is confined to the workspace directory. An absolute or `~/` path that you type is read from anywhere the daemon's user can read, but only markdown files are served. **Show in Finder** runs the platform's file opener on the file. Follow settings are saved locally in the Paseo home directory. The plugin makes no network requests.
 
 Requires Paseo 0.8.0 or later.
 

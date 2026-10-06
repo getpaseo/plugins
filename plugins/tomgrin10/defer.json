@@ -1,22 +1,22 @@
 {
   "id": "tomgrin10/defer",
-  "repository": {
-    "url": "https://github.com/tomgrin10/paseo-defer"
-  },
-  "categories": ["utils"],
-  "submittedAt": "2026-09-22",
-  "submittedBy": "tomgrin10",
-  "reviewedAt": "2026-10-03",
-  "listing": {
-    "screenshots": [
-      "https://raw.githubusercontent.com/tomgrin10/paseo-defer/main/docs/defer-popover.png"
-    ]
-  },
   "artifact": {
     "kind": "npm",
     "package": "paseo-defer",
     "version": "2.1.9",
     "resolved": "https://registry.npmjs.org/paseo-defer/-/paseo-defer-2.1.9.tgz",
     "integrity": "sha512-xBBf4TUC8zkTh9WMzQRRDt0alRAYPRCmUdBnBI1ZEkatUFC4i9MxFHgaTY939xij99dASM/261IWqctcKsQppQ=="
+  },
+  "repository": {
+    "url": "https://github.com/tomgrin10/paseo-defer"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-09-22",
+  "submittedBy": "tomgrin10",
+  "reviewedAt": "2026-10-03",
+  "listing": {
+    "screenshots": []
   }
 }

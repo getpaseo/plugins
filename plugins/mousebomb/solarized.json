@@ -1,0 +1,19 @@
+{
+  "id": "mousebomb/solarized",
+  "artifact": {
+    "kind": "npm",
+    "package": "@mousebomb/paseo-solarized",
+    "version": "0.1.0",
+    "resolved": "https://registry.npmjs.org/@mousebomb/paseo-solarized/-/paseo-solarized-0.1.0.tgz",
+    "integrity": "sha512-L+/sp8NvpcbHRwr5RYecQLyx6Evgcl0xu0Y8GI4jTy0Iepfn+w0pqKSTssdMXKGuLq7wCsybaTn1fQMyceSWnQ=="
+  },
+  "repository": {
+    "url": "https://github.com/mousebomb/paseo-solarized"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "mousebomb",
+  "reviewedAt": "2026-10-06"
+}

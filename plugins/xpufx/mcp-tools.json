@@ -1,0 +1,19 @@
+{
+  "id": "xpufx/mcp-tools",
+  "artifact": {
+    "kind": "npm",
+    "package": "@xpufx/paseo-mcp-tools",
+    "version": "0.1.7",
+    "resolved": "https://registry.npmjs.org/@xpufx/paseo-mcp-tools/-/paseo-mcp-tools-0.1.7.tgz",
+    "integrity": "sha512-wTKY2cTf6j9N6yVP6BeNjiXGf791sCJJ5iToMfdAI6E67JqKgvfXq+OKPOQJgMWIwtGAuupeJzEVP10HX4KVnA=="
+  },
+  "repository": {
+    "url": "https://github.com/xpufx/paseo"
+  },
+  "categories": [
+    "daemon-management"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "xpufx",
+  "reviewedAt": "2026-10-06"
+}

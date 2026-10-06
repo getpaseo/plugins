@@ -1,0 +1,21 @@
+{
+  "id": "jmkelly/beads-board",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-beads-board",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/paseo-beads-board/-/paseo-beads-board-0.1.1.tgz",
+    "integrity": "sha512-gcJa6jjn7Zm+hnOIhllhdN+zzQLzCUvQE48PZRx0uR3z2/niE+bigtpmnmtTpj2xEsrTdxfzRSOKvWceGcemJA=="
+  },
+  "repository": {
+    "url": "https://github.com/jmkelly/paseo-beads-board"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "jmkelly",
+  "reviewedAt": "2026-10-06"
+}

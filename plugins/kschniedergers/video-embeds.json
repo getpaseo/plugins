@@ -1,0 +1,19 @@
+{
+  "id": "kschniedergers/video-embeds",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/kschniedergers/paseo-plugins.git",
+    "commit": "da91d9b635afbd60211c66a71c0b9c06b72b828e",
+    "pluginPath": "video-embeds"
+  },
+  "repository": {
+    "url": "https://github.com/kschniedergers/paseo-plugins",
+    "commit": "da91d9b635afbd60211c66a71c0b9c06b72b828e"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "kschniedergers",
+  "reviewedAt": "2026-10-06"
+}

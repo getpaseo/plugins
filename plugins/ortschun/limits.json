@@ -1,0 +1,18 @@
+{
+  "id": "ortschun/limits",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/ortschun/paseo-limits.git",
+    "commit": "4b5c761cde469ff2800c67c2f33034ff4ca3e2d6"
+  },
+  "repository": {
+    "url": "https://github.com/ortschun/paseo-limits",
+    "commit": "4b5c761cde469ff2800c67c2f33034ff4ca3e2d6"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "ortschun",
+  "reviewedAt": "2026-10-06"
+}

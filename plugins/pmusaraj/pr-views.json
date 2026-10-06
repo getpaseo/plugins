@@ -1,0 +1,19 @@
+{
+  "id": "pmusaraj/pr-views",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/pmusaraj/paseo-pr-views.git",
+    "commit": "cc66c6fb3d694db2b292397b3486f0eed304c390"
+  },
+  "repository": {
+    "url": "https://github.com/pmusaraj/paseo-pr-views",
+    "commit": "cc66c6fb3d694db2b292397b3486f0eed304c390"
+  },
+  "categories": [
+    "git",
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "pmusaraj",
+  "reviewedAt": "2026-10-06"
+}

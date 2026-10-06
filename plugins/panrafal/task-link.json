@@ -1,0 +1,19 @@
+{
+  "id": "panrafal/task-link",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/panrafal/paseo-plugins.git",
+    "commit": "004c6a80c6aa8e76bb563694c3eee5c2c0b0466f",
+    "pluginPath": "task-link"
+  },
+  "repository": {
+    "url": "https://github.com/panrafal/paseo-plugins",
+    "commit": "004c6a80c6aa8e76bb563694c3eee5c2c0b0466f"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "panrafal",
+  "reviewedAt": "2026-10-06"
+}

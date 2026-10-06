@@ -1,0 +1,20 @@
+{
+  "id": "jegork/grafana",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/jegork/paseo-grafana.git",
+    "commit": "4e06ab68561f1c8032d72693e40d375de5220daf"
+  },
+  "repository": {
+    "url": "https://github.com/jegork/paseo-grafana",
+    "commit": "4e06ab68561f1c8032d72693e40d375de5220daf"
+  },
+  "categories": [
+    "sidebar",
+    "orchestration",
+    "utils"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "jegork",
+  "reviewedAt": "2026-10-06"
+}

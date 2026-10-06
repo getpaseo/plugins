@@ -14,7 +14,13 @@
     "git",
     "sidebar"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-14",
   "submittedBy": "alysnnix",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-14",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/alysnnix/paseo-github-integration/d6f7184a4db16fb1be930700d1e960872caf8c2e/images/board.png",
+      "https://raw.githubusercontent.com/alysnnix/paseo-github-integration/d6f7184a4db16fb1be930700d1e960872caf8c2e/images/detail-panel.png"
+    ]
+  }
 }

@@ -13,7 +13,13 @@
   "categories": [
     "providers"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-12",
   "submittedBy": "alhassanaraouf",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-12",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/alhassanaraouf/paseo-commandcode-provider/e0e5861b6df8c8647308d3e2d1b89ca52165c453/images/composer.png",
+      "https://raw.githubusercontent.com/alhassanaraouf/paseo-commandcode-provider/e0e5861b6df8c8647308d3e2d1b89ca52165c453/images/modes.png"
+    ]
+  }
 }

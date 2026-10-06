@@ -13,7 +13,12 @@
     "git",
     "sidebar"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-18",
   "submittedBy": "pmusaraj",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-18",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/pmusaraj/paseo-pr-views/cc66c6fb3d694db2b292397b3486f0eed304c390/images/github-pr-views.png"
+    ]
+  }
 }

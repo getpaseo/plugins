@@ -3,12 +3,14 @@
   "repository": {
     "url": "https://github.com/tomgrin10/paseo-defer"
   },
-  "categories": ["utils"],
-  "submittedAt": "2026-09-22",
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-09-10",
   "submittedBy": "tomgrin10",
-  "reviewedAt": "2026-10-03",
+  "reviewedAt": "2026-09-10",
   "listing": {
-    "screenshots": [
+    "media": [
       "https://raw.githubusercontent.com/tomgrin10/paseo-defer/main/docs/defer-popover.png"
     ]
   },

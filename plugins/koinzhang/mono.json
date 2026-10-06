@@ -14,7 +14,15 @@
   "categories": [
     "themes"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-24",
   "submittedBy": "koinzhang",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-24",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/koinzhang/paseo-plugins/8369d5710e27ccfe769b665416be1e62b21862bf/mono/images/mono-1.png",
+      "https://raw.githubusercontent.com/koinzhang/paseo-plugins/8369d5710e27ccfe769b665416be1e62b21862bf/mono/images/mono-2.png",
+      "https://raw.githubusercontent.com/koinzhang/paseo-plugins/8369d5710e27ccfe769b665416be1e62b21862bf/mono/images/mono-3.png",
+      "https://raw.githubusercontent.com/koinzhang/paseo-plugins/8369d5710e27ccfe769b665416be1e62b21862bf/mono/images/mono-4.png"
+    ]
+  }
 }

@@ -12,7 +12,19 @@
   "categories": [
     "utils"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-15",
   "submittedBy": "ABorakati",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-15",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/ABorakati/beautiful-chat/42b61d8301b5400a67821bbbfcf99fa8b681dc37/images/hero.png",
+      "https://raw.githubusercontent.com/ABorakati/beautiful-chat/42b61d8301b5400a67821bbbfcf99fa8b681dc37/images/thread.png",
+      "https://raw.githubusercontent.com/ABorakati/beautiful-chat/42b61d8301b5400a67821bbbfcf99fa8b681dc37/docs/images/tool-bash.png",
+      "https://raw.githubusercontent.com/ABorakati/beautiful-chat/42b61d8301b5400a67821bbbfcf99fa8b681dc37/docs/images/tool-read.png",
+      "https://raw.githubusercontent.com/ABorakati/beautiful-chat/42b61d8301b5400a67821bbbfcf99fa8b681dc37/docs/images/tool-image.png",
+      "https://raw.githubusercontent.com/ABorakati/beautiful-chat/42b61d8301b5400a67821bbbfcf99fa8b681dc37/docs/images/tool-edit.png",
+      "https://raw.githubusercontent.com/ABorakati/beautiful-chat/42b61d8301b5400a67821bbbfcf99fa8b681dc37/docs/images/tool-thinking.png",
+      "https://raw.githubusercontent.com/ABorakati/beautiful-chat/42b61d8301b5400a67821bbbfcf99fa8b681dc37/docs/images/tool-mcp.png"
+    ]
+  }
 }

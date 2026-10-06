@@ -39,6 +39,7 @@ function fixture(t: TestContext, source: string, listingId = "") {
   const original = JSON.stringify(record);
   writeFileSync(recordFile, original);
   cpSync(fileURLToPath(new URL("../categories.json", import.meta.url)), join(registry, "categories.json"));
+  writeFileSync(join(registry, "featured.json"), "[]\n");
   git(registry, "add", "plugins", "categories.json");
   git(registry, "commit", "-qm", "registry");
   git(registry, "update-ref", "refs/remotes/origin/main", "HEAD");

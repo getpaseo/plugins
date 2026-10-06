@@ -12,7 +12,12 @@
   "categories": [
     "utils"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-15",
   "submittedBy": "ortschun",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-15",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/ortschun/paseo-limits/4b5c761cde469ff2800c67c2f33034ff4ca3e2d6/images/pill.png"
+    ]
+  }
 }

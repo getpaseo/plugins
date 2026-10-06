@@ -13,7 +13,13 @@
   "categories": [
     "orchestration"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-24",
   "submittedBy": "Vokturz",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-24",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/Vokturz/paseo-plugins/48f7fc0326b032732326192566b723d33730b50f/peer-agents/images/01-peer-created.png",
+      "https://raw.githubusercontent.com/Vokturz/paseo-plugins/48f7fc0326b032732326192566b723d33730b50f/peer-agents/images/02-peer-conversation.png"
+    ]
+  }
 }

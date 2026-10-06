@@ -2,6 +2,7 @@ import { mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { githubOwner } from "./repository.ts";
+import { parseMedia } from "./media.ts";
 import { isIsoDate } from "./dates.ts";
 
 /** One file in plugins/. Humans edit categories and listing; the bot writes the rest. */
@@ -26,7 +27,7 @@ export interface PluginRecord {
 export interface PluginListingOverrides {
   name?: string;
   icon?: string;
-  screenshots?: string[];
+  media?: string[];
 }
 
 export const RECORDS_DIR = fileURLToPath(new URL("../../plugins", import.meta.url));
@@ -139,16 +140,12 @@ export function parseRecord(raw: unknown, knownCategories: Set<string>): PluginR
           problems.push("listing.icon must be an https PNG URL");
         else listing.icon = raw.icon;
       }
-      if (raw.screenshots !== undefined) {
-        if (
-          !Array.isArray(raw.screenshots) ||
-          raw.screenshots.some((s) => typeof s !== "string" || !/^https:\/\/\S+$/.test(s))
-        ) {
-          problems.push("listing.screenshots must be https URLs");
-        } else listing.screenshots = raw.screenshots as string[];
+      if (raw.media !== undefined) {
+        try { listing.media = parseMedia(raw.media); }
+        catch (error) { problems.push(`listing.${(error as Error).message}`); }
       }
       for (const key of Object.keys(raw)) {
-        if (!["name", "icon", "screenshots"].includes(key))
+        if (!["name", "icon", "media"].includes(key))
           problems.push(`unknown field "listing.${key}"`);
       }
     }

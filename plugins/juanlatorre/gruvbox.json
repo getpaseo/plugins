@@ -12,7 +12,13 @@
   "categories": [
     "themes"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-14",
   "submittedBy": "juanlatorre",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-14",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/juanlatorre/paseo-gruvbox/4d7d73f89a434db23f9870ff37b8c24d6244b6eb/images/preview-dark.png",
+      "https://raw.githubusercontent.com/juanlatorre/paseo-gruvbox/4d7d73f89a434db23f9870ff37b8c24d6244b6eb/images/preview-light.png"
+    ]
+  }
 }

@@ -16,7 +16,13 @@
     "workspaces",
     "sidebar"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-08",
   "submittedBy": "omercnet",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-08",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/agent-crew/docs/images/agent-crew-overview.png",
+      "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/agent-crew/docs/images/agent-crew-action.png"
+    ]
+  }
 }

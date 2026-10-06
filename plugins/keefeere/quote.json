@@ -14,7 +14,15 @@
     "utils",
     "workspaces"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-30",
   "submittedBy": "keefeere",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-30",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/keefeere/paseo-quote/f6484cb4047b7393d12e86b512d897ff548c4f76/images/01-selection-bar.png",
+      "https://raw.githubusercontent.com/keefeere/paseo-quote/f6484cb4047b7393d12e86b512d897ff548c4f76/images/02-quote.png",
+      "https://raw.githubusercontent.com/keefeere/paseo-quote/f6484cb4047b7393d12e86b512d897ff548c4f76/images/03-reply.png",
+      "https://raw.githubusercontent.com/keefeere/paseo-quote/f6484cb4047b7393d12e86b512d897ff548c4f76/images/04-side-chat.png"
+    ]
+  }
 }

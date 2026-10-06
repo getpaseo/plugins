@@ -14,7 +14,15 @@
     "workspaces",
     "utils"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-24",
   "submittedBy": "cuongntr",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-24",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/cuongntr/paseo-beads-viewer/b4c35acebdece0252fea72bcc3fbd5f9194ec9b7/images/board.png",
+      "https://raw.githubusercontent.com/cuongntr/paseo-beads-viewer/b4c35acebdece0252fea72bcc3fbd5f9194ec9b7/images/overview.png",
+      "https://raw.githubusercontent.com/cuongntr/paseo-beads-viewer/b4c35acebdece0252fea72bcc3fbd5f9194ec9b7/images/plan.png",
+      "https://raw.githubusercontent.com/cuongntr/paseo-beads-viewer/b4c35acebdece0252fea72bcc3fbd5f9194ec9b7/images/risks.png"
+    ]
+  }
 }

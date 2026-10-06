@@ -16,7 +16,15 @@
     "workspaces",
     "utils"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-19",
   "submittedBy": "koinzhang",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-19",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/koinzhang/paseo-plugins/05964539e56528df3438f4d32818b08b8578136b/activity/images/activity-1.png",
+      "https://raw.githubusercontent.com/koinzhang/paseo-plugins/05964539e56528df3438f4d32818b08b8578136b/activity/images/activity-2.png",
+      "https://raw.githubusercontent.com/koinzhang/paseo-plugins/05964539e56528df3438f4d32818b08b8578136b/activity/images/activity-3.png",
+      "https://raw.githubusercontent.com/koinzhang/paseo-plugins/05964539e56528df3438f4d32818b08b8578136b/activity/images/activity-4.png"
+    ]
+  }
 }

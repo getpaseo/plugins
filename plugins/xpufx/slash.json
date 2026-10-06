@@ -13,7 +13,13 @@
   "categories": [
     "utils"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-18",
   "submittedBy": "xpufx",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-18",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/xpufx/paseo/main/plugins/slash/docs/screenshots/slash-console.jpg",
+      "https://raw.githubusercontent.com/xpufx/paseo/main/plugins/slash/docs/screenshots/slash-autocomplete.jpg"
+    ]
+  }
 }

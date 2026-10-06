@@ -60,10 +60,10 @@ for (const kind of ["npm", "git"] as const) {
         async tarball() { throw new Error("Plugin artifacts must not execute"); },
       };
       const record: PluginRecord = {
-        id: "acme/example", categories: ["themes"], submittedAt: "2026-10-06", reviewedAt: "2026-10-06",
+        id: "acme/example", categories: ["utils"], submittedAt: "2026-09-20", reviewedAt: "2026-09-20",
         listing: {
           icon: "https://raw.githubusercontent.com/acme/overview/main/icon.png",
-          screenshots: ["https://raw.githubusercontent.com/acme/overview/main/screen.png", "https://example.com/screen.png"],
+          media: [],
         },
         repository: { url: "https://github.com/acme/overview/tree/HEAD/packages/example", commit },
         artifact: kind === "git" ? { kind, remote, commit, tag: "v1", pluginPath }
@@ -73,7 +73,13 @@ for (const kind of ["npm", "git"] as const) {
       const published = await resolvePlugin(client, record, "Registry stopgap");
       assert.equal(published.readme, "Author overview");
       assert.equal(published.icon, record.listing!.icon);
-      assert.deepEqual(published.screenshots, record.listing!.screenshots);
+      assert.deepEqual(published.media, record.listing!.media);
+      assert.equal(published.publishedAt, "2026-09-20T00:00:00.000Z");
+      assert.equal(published.updatedAt, "2026-09-20T00:00:00.000Z");
+      const media = ["https://example.test/demo.mp4", "https://example.test/card.png"];
+      const withMedia = await resolvePlugin(client, { ...record, listing: { media } }, "Registry stopgap");
+      assert.deepEqual(withMedia.media, media);
+      assert.equal("screenshots" in withMedia, false);
       assert.deepEqual(await validateArtifact(client, record), []);
       rmSync(join(plugin, "OVERVIEW.md"));
       const absentCommit = pin("v2");
@@ -114,6 +120,7 @@ for (const kind of ["npm", "git"] as const) {
         try {
           cpSync(fileURLToPath(new URL("..", import.meta.url)), join(registry, "scripts"), { recursive: true });
           cpSync(fileURLToPath(new URL("../../categories.json", import.meta.url)), join(registry, "categories.json"));
+          writeFileSync(join(registry, "featured.json"), "[]\n");
           mkdirSync(join(registry, "plugins/acme"), { recursive: true });
           const options = { cwd: registry, env: { ...process.env } };
           const commitRegistry = (message: string) => {

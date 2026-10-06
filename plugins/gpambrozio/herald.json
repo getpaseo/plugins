@@ -4,12 +4,14 @@
     "url": "https://github.com/gpambrozio/paseo-plugins/tree/HEAD/herald",
     "commit": "b658d0ab58735959e46d12660ae179c002cdadda"
   },
-  "categories": ["sidebar"],
-  "submittedAt": "2026-09-19",
+  "categories": [
+    "sidebar"
+  ],
+  "submittedAt": "2026-09-18",
   "submittedBy": "gpambrozio",
-  "reviewedAt": "2026-10-03",
+  "reviewedAt": "2026-09-18",
   "listing": {
-    "screenshots": [
+    "media": [
       "https://raw.githubusercontent.com/gpambrozio/paseo-plugins/main/herald/docs/panel.png",
       "https://raw.githubusercontent.com/gpambrozio/paseo-plugins/main/herald/docs/timeline-card.png"
     ]

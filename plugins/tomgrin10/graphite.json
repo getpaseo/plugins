@@ -3,15 +3,20 @@
   "repository": {
     "url": "https://github.com/tomgrin10/paseo-graphite"
   },
-  "categories": ["git"],
+  "categories": [
+    "git"
+  ],
   "submittedAt": "2026-09-22",
   "submittedBy": "tomgrin10",
-  "reviewedAt": "2026-10-03",
+  "reviewedAt": "2026-09-22",
   "artifact": {
     "kind": "npm",
     "package": "paseo-graphite",
     "version": "0.2.4",
     "resolved": "https://registry.npmjs.org/paseo-graphite/-/paseo-graphite-0.2.4.tgz",
     "integrity": "sha512-aAFvh+118c5mmSQ3sTsDKO8Is7g1ZU8m2+0fisr8nFrgPMu0m2mokPJnM/LaIqQc3Zaaak1chB6M6k0dWOPeIA=="
+  },
+  "listing": {
+    "media": []
   }
 }

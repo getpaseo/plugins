@@ -14,7 +14,12 @@
   "categories": [
     "git"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-10",
   "submittedBy": "tomgrin10",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-10",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/tomgrin10/send-to-paseo/main/docs/screenshots/hero-github-pr-popover.png"
+    ]
+  }
 }

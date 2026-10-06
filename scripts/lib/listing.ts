@@ -1,3 +1,4 @@
+import { parseMedia } from "./media.ts";
 import { readAuthorOverview, requireOverview } from "./overview.ts";
 import type { Category } from "./categories.ts";
 import { authorOf, type NpmClient, resolveVersion, type VersionDoc } from "./npm.ts";
@@ -8,7 +9,7 @@ import type { PluginRecord } from "./record.ts";
 export interface ListingFile {
   name?: string;
   icon?: string;
-  screenshots?: string[];
+  media?: string[];
 }
 
 /** One plugin as the website reads it. */
@@ -22,10 +23,10 @@ export interface PublishedPlugin {
   categories: string[];
   author: { npm?: string; name?: string; github: string };
   icon?: string;
-  screenshots: string[];
+  media: string[];
   submittedAt: string;
   reviewedAt: string;
-  /** When the pinned version was published to npm. */
+  /** Registry publication date, derived from the record review date. */
   publishedAt: string;
   updatedAt: string;
   installs?: number;
@@ -40,6 +41,7 @@ export interface PublishedIndex {
   registry: { name: string; url: string };
   generatedAt: string;
   categories: Category[];
+  featured: string[];
   plugins: PublishedPlugin[];
 }
 
@@ -59,8 +61,7 @@ export function parseListingFile(text: string | null): ListingFile {
   const listing: ListingFile = {};
   if (typeof raw.name === "string") listing.name = raw.name;
   if (typeof raw.icon === "string") listing.icon = raw.icon;
-  if (Array.isArray(raw.screenshots))
-    listing.screenshots = raw.screenshots.filter((s): s is string => typeof s === "string");
+  if (raw.media !== undefined) listing.media = parseMedia(raw.media);
   return listing;
 }
 
@@ -77,14 +78,13 @@ export function humanizeId(id: string): string {
 export function mergeListing(input: {
   record: PluginRecord;
   doc: VersionDoc;
-  publishedAt: string;
   listingFile: ListingFile;
   readme: string | null;
   installs?: number;
 }): PublishedPluginDetail {
   const { record, doc, listingFile } = input;
   const author = authorOf(doc);
-  const screenshots = record.listing?.screenshots ?? listingFile.screenshots ?? [];
+  const media = record.listing?.media ?? listingFile.media ?? [];
   const icon = record.listing?.icon ?? listingFile.icon;
   return {
     id: record.id,
@@ -96,10 +96,10 @@ export function mergeListing(input: {
     categories: record.categories,
     author: { ...author, github: record.id.split("/")[0] },
     ...(icon ? { icon: assetUrl(doc.name, doc.version, icon) } : {}),
-    screenshots: screenshots.map((url) => assetUrl(doc.name, doc.version, url)),
+    media,
     submittedAt: new Date(record.submittedAt).toISOString(),
     reviewedAt: new Date(record.reviewedAt).toISOString(),
-    publishedAt: input.publishedAt,
+    publishedAt: new Date(record.reviewedAt).toISOString(),
     updatedAt: new Date(record.reviewedAt).toISOString(),
     ...(input.installs !== undefined ? { installs: input.installs } : {}),
     readme: input.readme ?? "",
@@ -127,7 +127,6 @@ export async function resolvePlugin(
   return mergeListing({
     record,
     doc,
-    publishedAt: packument.time[doc.version] ?? packument.time.created,
     listingFile,
     readme,
   });
@@ -157,7 +156,7 @@ function resolveGitPlugin(record: PluginRecord, overview: string): PublishedPlug
       categories: record.categories,
       author: { github: record.id.split("/")[0] },
       ...(icon ? { icon: asset(icon) } : {}),
-      screenshots: (record.listing?.screenshots ?? listing.screenshots ?? []).map(asset),
+      media: record.listing?.media ?? listing.media ?? [],
       submittedAt: new Date(record.submittedAt).toISOString(),
       reviewedAt: date,
       updatedAt: date,

@@ -14,7 +14,17 @@
     "orchestration",
     "utils"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-29",
   "submittedBy": "oliexe",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-29",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/oliexe/paseo-bots/main/docs/splash.png",
+      "https://raw.githubusercontent.com/oliexe/paseo-bots/main/docs/bot.png",
+      "https://raw.githubusercontent.com/oliexe/paseo-bots/main/docs/skills.png",
+      "https://raw.githubusercontent.com/oliexe/paseo-bots/main/docs/mcp.png",
+      "https://raw.githubusercontent.com/oliexe/paseo-bots/main/docs/apps.png",
+      "https://raw.githubusercontent.com/oliexe/paseo-bots/main/docs/teams.png"
+    ]
+  }
 }

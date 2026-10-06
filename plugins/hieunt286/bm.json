@@ -14,7 +14,16 @@
   "categories": [
     "utils"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-25",
   "submittedBy": "hieunt286",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-25",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/hieunt286/paseo-bm/ab6c56a8561469fd8660780f063d7b03e2bd95b3/plugin-package/images/01-inbox.jpg",
+      "https://raw.githubusercontent.com/hieunt286/paseo-bm/ab6c56a8561469fd8660780f063d7b03e2bd95b3/plugin-package/images/02-projects.jpg",
+      "https://raw.githubusercontent.com/hieunt286/paseo-bm/ab6c56a8561469fd8660780f063d7b03e2bd95b3/plugin-package/images/03-project-beads.jpg",
+      "https://raw.githubusercontent.com/hieunt286/paseo-bm/ab6c56a8561469fd8660780f063d7b03e2bd95b3/plugin-package/images/04-settings-autonomy.jpg",
+      "https://raw.githubusercontent.com/hieunt286/paseo-bm/ab6c56a8561469fd8660780f063d7b03e2bd95b3/plugin-package/images/05-chat-manager.jpg"
+    ]
+  }
 }

@@ -13,7 +13,14 @@
   "categories": [
     "sidebar"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-29",
   "submittedBy": "stv1024",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-29",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/stv1024/token-ledger/c134fc03def775c428f4efe782bec68effe30e99/images/screenshot-panel.png",
+      "https://raw.githubusercontent.com/stv1024/token-ledger/c134fc03def775c428f4efe782bec68effe30e99/images/screenshot-pill.jpg",
+      "https://raw.githubusercontent.com/stv1024/token-ledger/c134fc03def775c428f4efe782bec68effe30e99/docs/promo-poster.jpg"
+    ]
+  }
 }

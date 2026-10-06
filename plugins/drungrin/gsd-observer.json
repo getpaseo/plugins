@@ -12,7 +12,19 @@
   "categories": [
     "workspaces"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-14",
   "submittedBy": "drungrin",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-14",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/drungrin/paseo-gsd-observer/588d71ca2cedd1bbfba8712462937bfb334faeb7/docs/screenshots/overview.png",
+      "https://raw.githubusercontent.com/drungrin/paseo-gsd-observer/588d71ca2cedd1bbfba8712462937bfb334faeb7/docs/screenshots/plans.png",
+      "https://raw.githubusercontent.com/drungrin/paseo-gsd-observer/588d71ca2cedd1bbfba8712462937bfb334faeb7/docs/screenshots/context.png",
+      "https://raw.githubusercontent.com/drungrin/paseo-gsd-observer/588d71ca2cedd1bbfba8712462937bfb334faeb7/docs/screenshots/validation.png",
+      "https://raw.githubusercontent.com/drungrin/paseo-gsd-observer/588d71ca2cedd1bbfba8712462937bfb334faeb7/docs/screenshots/verification.png",
+      "https://raw.githubusercontent.com/drungrin/paseo-gsd-observer/588d71ca2cedd1bbfba8712462937bfb334faeb7/docs/screenshots/uat.png",
+      "https://raw.githubusercontent.com/drungrin/paseo-gsd-observer/588d71ca2cedd1bbfba8712462937bfb334faeb7/docs/screenshots/todos.png",
+      "https://raw.githubusercontent.com/drungrin/paseo-gsd-observer/588d71ca2cedd1bbfba8712462937bfb334faeb7/docs/screenshots/parking-lot.png"
+    ]
+  }
 }

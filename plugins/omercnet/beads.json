@@ -4,12 +4,14 @@
     "url": "https://github.com/omercnet/paseo-plugins/tree/HEAD/paseo-beads",
     "commit": "d7b3e654f364b5be72edf6fd1d914a3750b53082"
   },
-  "categories": ["workspaces"],
-  "submittedAt": "2026-09-17",
+  "categories": [
+    "workspaces"
+  ],
+  "submittedAt": "2026-09-11",
   "submittedBy": "omercnet",
-  "reviewedAt": "2026-10-03",
+  "reviewedAt": "2026-09-11",
   "listing": {
-    "screenshots": [
+    "media": [
       "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/paseo-beads/docs/images/paseo-beads-wide.png",
       "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/paseo-beads/docs/images/paseo-beads-compact.png"
     ]

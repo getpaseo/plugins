@@ -3,13 +3,15 @@
   "repository": {
     "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-base2tone-theme"
   },
-  "categories": ["themes"],
+  "categories": [
+    "themes"
+  ],
   "submittedAt": "2026-09-24",
   "submittedBy": "alhassanaraouf",
-  "reviewedAt": "2026-10-03",
+  "reviewedAt": "2026-09-24",
   "listing": {
     "name": "Base2Tone",
-    "screenshots": [
+    "media": [
       "https://raw.githubusercontent.com/alhassanaraouf/paseo-themes/main/packages/paseo-base2tone-theme/preview.png"
     ]
   },

@@ -13,7 +13,16 @@
   "categories": [
     "daemon-management"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-18",
   "submittedBy": "xpufx",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-18",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/xpufx/paseo/main/plugins/mcp-tools/screenshots/mcp-servers.png",
+      "https://raw.githubusercontent.com/xpufx/paseo/main/plugins/mcp-tools/screenshots/mcp-diagnostic.png",
+      "https://raw.githubusercontent.com/xpufx/paseo/main/plugins/mcp-tools/screenshots/mcp-settings.png",
+      "https://raw.githubusercontent.com/xpufx/paseo/main/plugins/mcp-tools/screenshots/mcp-server-details.png",
+      "https://raw.githubusercontent.com/xpufx/paseo/main/plugins/mcp-tools/screenshots/mcp-execute.png"
+    ]
+  }
 }

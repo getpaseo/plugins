@@ -14,7 +14,13 @@
     "workspaces",
     "sidebar"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-25",
   "submittedBy": "stv1024",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-25",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/stv1024/paseo-auto-pin/78875433650d222fd79c64efbb1bb094fe8e60b7/docs/demo.gif",
+      "https://raw.githubusercontent.com/stv1024/paseo-auto-pin/78875433650d222fd79c64efbb1bb094fe8e60b7/promo/poster.png"
+    ]
+  }
 }

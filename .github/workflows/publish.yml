@@ -6,6 +6,7 @@ on:
     paths:
       - plugins/**
       - categories.json
+      - featured.json
       - scripts/**
   schedule:
     # Daily, so install counts stay current.

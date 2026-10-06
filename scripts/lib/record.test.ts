@@ -25,26 +25,34 @@ const valid = {
   reviewedAt: "2026-10-03",
 };
 
-test("screenshot overrides require absolute https URLs", () => {
-  for (const screenshot of ["http://example.com/screen.png", "screen.png", "//example.com/screen.png", ""]) {
+test("media overrides require absolute https URLs", () => {
+  for (const entry of ["http://example.com/screen.png", "screen.png", "//example.com/screen.png", ""]) {
     assert.throws(
-      () => parseRecord({ ...valid, listing: { screenshots: [screenshot] } }, known),
-      /listing.screenshots must be https URLs/,
+      () => parseRecord({ ...valid, listing: { media: [entry] } }, known),
+      /listing.media/,
     );
   }
-  const screenshots = ["https://raw.githubusercontent.com/acme/plugin/main/screen.png", "https://example.com/screen.png"];
-  assert.deepEqual(parseRecord({ ...valid, listing: { screenshots } }, known).listing?.screenshots, screenshots);
+  const media = ["https://raw.githubusercontent.com/acme/plugin/main/screen.png", "https://example.com/screen.png"];
+  assert.deepEqual(parseRecord({ ...valid, listing: { media } }, known).listing?.media, media);
 });
 
 test("accepts a complete record and keeps field order when written", () => {
   const record = parseRecord(
-    { ...valid, listing: { screenshots: ["https://example.com/a.png"] } },
+    { ...valid, listing: { media: ["https://example.com/a.png"] } },
     known,
   );
   assert.equal(record.repository?.commit, valid.repository.commit);
   const text = serializeRecord({ reviewedAt: record.reviewedAt, ...record } as typeof record);
   assert.equal(Object.keys(JSON.parse(text))[0], "id");
   assert.ok(text.endsWith("}\n"));
+});
+
+test("media accepts images and videos; the old screenshots field and invalid entries are rejected", () => {
+  const media = ["https://example.test/demo.webm", "https://example.test/card.JPG?size=2"];
+  assert.deepEqual(parseRecord({ ...valid, listing: { media } }, known).listing?.media, media);
+  assert.throws(() => parseRecord({ ...valid, listing: { screenshots: [] } }, known), /unknown field "listing.screenshots"/);
+  for (const url of ["screen.png", "http://example.test/screen.png", "https://example.test/screen.svg"])
+    assert.throws(() => parseRecord({ ...valid, listing: { media: [url] } }, known), (error: Error) => error.message.includes(url));
 });
 
 test("reports every problem at once", () => {

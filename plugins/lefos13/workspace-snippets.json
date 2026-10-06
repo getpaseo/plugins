@@ -15,7 +15,15 @@
     "workspaces",
     "sidebar"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-10-01",
   "submittedBy": "lefos13",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-10-01",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/lefos13/paseo-workspace-snippets/671ae0b420ae66b65b5efc8890efad06859de50e/images/01-snippets-screen.png",
+      "https://raw.githubusercontent.com/lefos13/paseo-workspace-snippets/671ae0b420ae66b65b5efc8890efad06859de50e/images/02-sidebar-entry.png",
+      "https://raw.githubusercontent.com/lefos13/paseo-workspace-snippets/671ae0b420ae66b65b5efc8890efad06859de50e/images/03-header-button.png",
+      "https://raw.githubusercontent.com/lefos13/paseo-workspace-snippets/671ae0b420ae66b65b5efc8890efad06859de50e/images/04-command-center.png"
+    ]
+  }
 }

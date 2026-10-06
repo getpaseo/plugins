@@ -13,6 +13,11 @@
     "workspaces",
     "utils"
   ],
-  "submittedAt": "2026-10-06",
-  "reviewedAt": "2026-10-06"
+  "submittedAt": "2026-09-10",
+  "reviewedAt": "2026-09-10",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/infectiousstupidity/paseo-prometheus-status/6722d00766a7be7e6cfeaac7b867a05e4c72e596/docs/images/status-pane.png"
+    ]
+  }
 }

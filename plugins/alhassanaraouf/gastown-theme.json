@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/gastown-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-gastown-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-gastown-theme/-/paseo-gastown-theme-0.1.1.tgz",
+    "integrity": "sha512-vsizFqV04GnDi1LyBR/25Tr/27C0ABbgNq0+ggQfTw5Umepk7s/uWYKDYvlk4uIEiJhE/Cuz6+gKJHJqG9EWWA=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-gastown-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

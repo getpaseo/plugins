@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/evangelion-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-evangelion-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-evangelion-theme/-/paseo-evangelion-theme-0.1.1.tgz",
+    "integrity": "sha512-24ugWjqPR3zildCrT7vO35VER47u8YzWLHOJSipbIa+xEQsHcRf9rQg6KqJ9ECMbfc/Y4GsmUlklRVdValnKGA=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-evangelion-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

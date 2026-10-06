@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/ebullientworks-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-ebullientworks-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-ebullientworks-theme/-/paseo-ebullientworks-theme-0.1.1.tgz",
+    "integrity": "sha512-QH+7QkAnVZRlnhPjfeKtSOx9OZ/GhVpl5ikq3acgvP6BR7aA9vNDs0gGBr9Y2e1df2utAlRDP/8OgkB29SKIYQ=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-ebullientworks-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

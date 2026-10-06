@@ -1,0 +1,3 @@
+Fancy-a-Story adds the dark Fancy-a-Story palette and the light Fancy-a-Story Light palette to Paseo. Its colors are ported from the upstream Obsidian theme identified in the package README. The palette defines background, foreground, raised surfaces, controls, borders, accent, muted foreground, and focus ring colors. Its background colors are #1f1f1f and #e7e7e7.
+
+The manifest requires Paseo 0.8.0 or later. The client entrypoint registers fixed color values through the theme API. It contains no server entrypoint, settings, account integration, or provider configuration. This port contributes color palettes; the shipped code does not add the upstream theme’s layouts or other Obsidian behavior.

@@ -1,0 +1,17 @@
+{
+  "id": "maplumex/archive-branch-cleanup",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/MaplumeX/paseo-archive-branch-cleanup.git",
+    "commit": "59bc5335e7cd3d5e61fc375565bb1fca9faee6da"
+  },
+  "repository": {
+    "url": "https://github.com/MaplumeX/paseo-archive-branch-cleanup",
+    "commit": "59bc5335e7cd3d5e61fc375565bb1fca9faee6da"
+  },
+  "categories": [
+    "git"
+  ],
+  "submittedAt": "2026-10-06",
+  "reviewedAt": "2026-10-06"
+}

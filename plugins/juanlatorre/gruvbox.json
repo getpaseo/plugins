@@ -1,0 +1,18 @@
+{
+  "id": "juanlatorre/gruvbox",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/juanlatorre/paseo-gruvbox.git",
+    "commit": "4d7d73f89a434db23f9870ff37b8c24d6244b6eb"
+  },
+  "repository": {
+    "url": "https://github.com/juanlatorre/paseo-gruvbox",
+    "commit": "4d7d73f89a434db23f9870ff37b8c24d6244b6eb"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "juanlatorre",
+  "reviewedAt": "2026-10-06"
+}

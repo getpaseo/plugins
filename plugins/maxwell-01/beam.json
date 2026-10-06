@@ -1,0 +1,20 @@
+{
+  "id": "maxwell-01/beam",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/maxwell-01/paseo-beam.git",
+    "commit": "975f8c4c062cb78ca82b203c8952e6c31621a9e6",
+    "pluginPath": "beam"
+  },
+  "repository": {
+    "url": "https://github.com/maxwell-01/paseo-beam",
+    "commit": "975f8c4c062cb78ca82b203c8952e6c31621a9e6"
+  },
+  "categories": [
+    "git",
+    "workspaces"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "maxwell-01",
+  "reviewedAt": "2026-10-06"
+}

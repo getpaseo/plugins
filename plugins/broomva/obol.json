@@ -1,0 +1,18 @@
+{
+  "id": "broomva/obol",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/broomva/obol.git",
+    "commit": "71d563a0abf6581e761ebd79fa5bd18fb14ba8b2"
+  },
+  "repository": {
+    "url": "https://github.com/broomva/obol",
+    "commit": "71d563a0abf6581e761ebd79fa5bd18fb14ba8b2"
+  },
+  "categories": [
+    "providers",
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-06",
+  "reviewedAt": "2026-10-06"
+}

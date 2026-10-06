@@ -1,6 +1,5 @@
 name: Submit a plugin
 description: List your plugin on paseo.sh/plugins.
-title: ""
 labels: ["submission"]
 body:
   - type: input

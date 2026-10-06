@@ -1,0 +1,20 @@
+{
+  "id": "stv1024/auto-pin",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-auto-pin",
+    "version": "0.4.1",
+    "resolved": "https://registry.npmjs.org/paseo-auto-pin/-/paseo-auto-pin-0.4.1.tgz",
+    "integrity": "sha512-Ovnr7jY9FBFUwf2HKBczLe4uBAtkaF3Qq2lp+IFyp64ThIJuD2of36ez/kfY1mSSC6PS8pTEKSefvWTL1bLwVA=="
+  },
+  "repository": {
+    "url": "https://github.com/stv1024/paseo-auto-pin"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "stv1024",
+  "reviewedAt": "2026-10-06"
+}

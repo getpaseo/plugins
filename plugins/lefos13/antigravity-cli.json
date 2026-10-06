@@ -1,0 +1,20 @@
+{
+  "id": "lefos13/antigravity-cli",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-plugin-antigravity-cli",
+    "version": "0.9.1",
+    "resolved": "https://registry.npmjs.org/paseo-plugin-antigravity-cli/-/paseo-plugin-antigravity-cli-0.9.1.tgz",
+    "integrity": "sha512-HAb3eFgJu9SDr2vYQXlcpiDtW4KtlImluaTS9vba+g3FwrYAwmhrfH5WenX6hByMzRDHAB2HnFj49cGjASygxQ=="
+  },
+  "repository": {
+    "url": "https://github.com/lefos13/paseo-plugin-antigravity-cli"
+  },
+  "categories": [
+    "providers",
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "lefos13",
+  "reviewedAt": "2026-10-06"
+}

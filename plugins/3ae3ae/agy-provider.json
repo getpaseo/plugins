@@ -1,0 +1,19 @@
+{
+  "id": "3ae3ae/agy-provider",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/3ae3ae/paseo-plugin-agy-provider.git",
+    "commit": "8d64f21fa60f43ea737b2dbe8170e3d202e1db29",
+    "tag": "v0.1.1"
+  },
+  "repository": {
+    "url": "https://github.com/3ae3ae/paseo-plugin-agy-provider",
+    "commit": "8d64f21fa60f43ea737b2dbe8170e3d202e1db29"
+  },
+  "categories": [
+    "providers"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "3ae3ae",
+  "reviewedAt": "2026-10-06"
+}

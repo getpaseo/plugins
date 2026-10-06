@@ -1,0 +1,9 @@
+Smart Session lets Claude Code agents in Paseo check how full their context is, save task state and compact themselves, and it records context and Claude plan usage over time. It requires Paseo 0.8.0 or later and is aimed at Claude Code agents. It needs the `claude` CLI and `node` on the daemon host.
+
+The plugin never compacts a session on its own. A hook asks an agent whether to compact when its context passes a threshold, and the agent can compact, defer or keep working. Settings cover turning Smart Compact off, the thresholds for large and small context windows, automatic enrolment, the composer pill, and whether the plugin registers its hooks.
+
+On load, when you change the hook-registration setting, and when you open its install status, the plugin edits Claude Code configuration on the daemon host. It adds hook entries that run scripts from this plugin to Claude Code's `settings.json`, leaving other entries alone, keeping a backup and removing its own entries when you turn the setting off. It also registers a user-scope MCP server named `smart-session` through `claude mcp add-json`, and without the `claude` CLI on the daemon's PATH the agent tools are missing.
+
+For usage history, the plugin periodically reads your Claude Code OAuth token, from its credentials file or the macOS keychain, and uses it to request plan usage from `api.anthropic.com`, without storing or logging the token. If it finds no token it sends nothing, and it falls back to the Paseo daemon's usage reading and to Claude Code's cached usage in `~/.claude.json`. It also reads Claude Code transcripts to attribute token spend and connects to the local daemon, using a daemon password from the environment or a password file when one is required. Its logs, settings and per-agent task-state files are stored under `$PASEO_HOME/plugin-data/smart-session/`.
+
+*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/smart-session).*

@@ -1,0 +1,20 @@
+{
+  "id": "keefeere/terminal-integration",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-terminal-integration",
+    "version": "0.5.0",
+    "resolved": "https://registry.npmjs.org/paseo-terminal-integration/-/paseo-terminal-integration-0.5.0.tgz",
+    "integrity": "sha512-hBueOl4Rzl4tc/lRaRUuV9FmmbnV8EwnKd6NK1yCwb2qWufRmHvAaYndsw856o+7NKY6sYXvG8UqMsVfemiZ4g=="
+  },
+  "repository": {
+    "url": "https://github.com/keefeere/paseo-terminal-integration",
+    "commit": "e1721060e876810fee0972159324722931d135cf"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "keefeere",
+  "reviewedAt": "2026-10-06"
+}

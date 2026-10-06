@@ -1,0 +1,7 @@
+Remote Editor adds an "Open in editor" action that opens a workspace folder in VS Code, Cursor or Zed, over SSH when the Paseo daemon runs on another machine or as a local folder when it runs on yours. It is hidden on iOS and Android and available on desktop and web clients, and it requires Paseo 0.8.0 or later.
+
+The editor runs on your machine, so it needs its own remote or SSH support and a working `ssh <user>@<host>` connection to the daemon host. In the plugin's settings you can set the default editor and the SSH host, user and port, which helps when the daemon's hostname does not resolve from your machine, and you can turn on a local-folder mode for a daemon on the same machine. VS Code and Cursor links carry no port, so a non-standard port needs an `~/.ssh/config` alias.
+
+The plugin reads the daemon's hostname and username and builds an editor link containing the SSH user, host and folder path, which your operating system hands to the editor. The built-in editors use app links (`vscode://`, `cursor://`, `zed://`). You can also define custom editors with your own link template, and templates are not restricted, so one that starts with `http://` or `https://` navigates the client to that address with the SSH user, host, port and path filled in, which sends them to whoever runs it. Use only templates you trust.
+
+*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/remote-editor).*

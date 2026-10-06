@@ -45,6 +45,7 @@ An unchanged imported artifact keeps this exception while its stopgap exists.
 Every version bump requires the author's overview and removes the stopgap in the
 same PR. Normal new submissions require an author overview. A stopgap cannot
 satisfy a changed artifact pin, even when the import allowance is enabled.
+Authors and submitters may propose registry-copy replacements by pull request.
 
 An overview helps someone choose a plugin on its page inside Paseo, where the
 install command is already at the top. A README assumes GitHub: it carries
@@ -68,8 +69,8 @@ contributing and license sections, marketing, and unsupported claims. Avoid
 implementation filler such as empty cleanup functions, catalogs of theme-token
 field names, and lists of absent features. Keep only what helps someone decide.
 
-Every migration-written registry overview ends exactly with this italic credit,
-using the migration assignment's `cafeFile` minus `.json` as `<cafe-slug>`:
+Every migration-written registry overview ends exactly with this italic credit.
+`<cafe-slug>` is the paseo.cafe record filename without `.json`:
 
 ```md
 *This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/<cafe-slug>).*

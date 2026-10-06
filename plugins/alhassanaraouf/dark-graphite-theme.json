@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/dark-graphite-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-dark-graphite-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-dark-graphite-theme/-/paseo-dark-graphite-theme-0.1.1.tgz",
+    "integrity": "sha512-6MX+n6SplEKzO6vWHQHA8741SWh1pOfZajYvmR3ZFaaJZWi/iwC/7DTErNSPlf4gPHTyIFwCUJ8pq9YFi6WGcg=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-dark-graphite-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/comfort-color-dark-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-comfort-color-dark-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-comfort-color-dark-theme/-/paseo-comfort-color-dark-theme-0.1.1.tgz",
+    "integrity": "sha512-Nc2lhKrBMROcvUHrqJpi3+ZudFZfZECzqBf3w3SbRJGZLF+JjDUD6WOAVVxEw3lqMeFXE+LglKqq+LvH6LL8Jg=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-comfort-color-dark-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

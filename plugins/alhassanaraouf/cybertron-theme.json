@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/cybertron-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-cybertron-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-cybertron-theme/-/paseo-cybertron-theme-0.1.1.tgz",
+    "integrity": "sha512-pLe2q0PeEERpqDmK6hpvDKI+9/5A9RcdEYTwHMVrlIf05Cd3fvyjnCBrMez9uxl5kxLBh1Ro4Zy/6n1UljJAvQ=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-cybertron-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

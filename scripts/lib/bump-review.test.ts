@@ -40,7 +40,7 @@ for (const scenario of ["present", "absent", "invalid", "network"] as const) {
       const recordPath = join(registry, "plugins/acme/example.json");
       const overviewPath = join(registry, "plugins/acme/example.md");
       const previous: PluginRecord = {
-        id: "acme/example", categories: ["themes"], submittedAt: "2026-10-06", reviewedAt: "2026-10-06",
+        id: "acme/example", categories: ["utils"], submittedAt: "2026-10-06", reviewedAt: "2026-10-06",
         repository: { url: "https://github.com/acme/bump", commit: oldCommit },
         artifact: { kind: "git", remote, tag: "v1", commit: oldCommit },
       };

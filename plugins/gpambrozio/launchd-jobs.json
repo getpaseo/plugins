@@ -4,13 +4,15 @@
     "url": "https://github.com/gpambrozio/paseo-plugins/tree/HEAD/launchd-jobs",
     "commit": "08e75003b287208ef804f3d31b2fda2597f69dce"
   },
-  "categories": ["daemon-management"],
-  "submittedAt": "2026-09-19",
+  "categories": [
+    "daemon-management"
+  ],
+  "submittedAt": "2026-09-06",
   "submittedBy": "gpambrozio",
-  "reviewedAt": "2026-10-03",
+  "reviewedAt": "2026-09-06",
   "listing": {
     "name": "launchd Jobs",
-    "screenshots": [
+    "media": [
       "https://raw.githubusercontent.com/gpambrozio/paseo-plugins/main/launchd-jobs/docs/screenshot.png"
     ]
   },

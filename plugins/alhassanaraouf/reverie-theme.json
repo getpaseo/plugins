@@ -13,7 +13,13 @@
   "categories": [
     "themes"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-24",
   "submittedBy": "alhassanaraouf",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-24",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/alhassanaraouf/paseo-themes/d3ce6b58b749418209284617edf3555263dabfe1/packages/paseo-reverie-theme/preview-dark.png",
+      "https://raw.githubusercontent.com/alhassanaraouf/paseo-themes/d3ce6b58b749418209284617edf3555263dabfe1/packages/paseo-reverie-theme/preview-light.png"
+    ]
+  }
 }

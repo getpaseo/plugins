@@ -14,7 +14,13 @@
   "categories": [
     "daemon-management"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-28",
   "submittedBy": "hichamboushaba",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-28",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/hichamboushaba/paseo-plugins/d15242bc107b004e493f2e13cccb057ccd4cc296/keep-awake/images/settings.png",
+      "https://raw.githubusercontent.com/hichamboushaba/paseo-plugins/d15242bc107b004e493f2e13cccb057ccd4cc296/keep-awake/images/workspace-menu.png"
+    ]
+  }
 }

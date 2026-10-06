@@ -40,12 +40,11 @@ test("assets in the package resolve to the pinned version on the CDN", () => {
   const plugin = mergeListing({
     record,
     doc,
-    publishedAt: "2026-09-27T09:59:16.690Z",
     listingFile: parseListingFile(
       JSON.stringify({
         name: "Dracula",
         icon: "icon.png",
-        screenshots: ["./docs/a.png", "https://x.test/b.png"],
+        media: ["https://x.test/a.mp4", "https://x.test/b.png"],
       }),
     ),
     readme: "# Dracula\n",
@@ -53,8 +52,8 @@ test("assets in the package resolve to the pinned version on the CDN", () => {
   });
   assert.equal(plugin.name, "Dracula");
   assert.equal(plugin.icon, "https://cdn.jsdelivr.net/npm/@omercnet/paseo-dracula@1.2.0/icon.png");
-  assert.deepEqual(plugin.screenshots, [
-    "https://cdn.jsdelivr.net/npm/@omercnet/paseo-dracula@1.2.0/docs/a.png",
+  assert.deepEqual(plugin.media, [
+    "https://x.test/a.mp4",
     "https://x.test/b.png",
   ]);
   assert.deepEqual(plugin.author, { npm: "omercnet", name: "Omer Cohen", github: "omercnet" });
@@ -64,18 +63,28 @@ test("assets in the package resolve to the pinned version on the CDN", () => {
 
 test("record overrides win, and a package without a listing file gets a humanized name", () => {
   const plugin = mergeListing({
-    record: { ...record, listing: { screenshots: ["https://x.test/override.png"] } },
+    record: { ...record, listing: { media: ["https://x.test/override.png"] } },
     doc: { ...doc, author: undefined, repository: undefined },
-    publishedAt: "2026-09-27T09:59:16.690Z",
     listingFile: parseListingFile(null),
     readme: null,
   });
   assert.equal(plugin.name, "Dracula");
-  assert.deepEqual(plugin.screenshots, ["https://x.test/override.png"]);
+  assert.deepEqual(plugin.media, ["https://x.test/override.png"]);
   assert.equal(plugin.icon, undefined);
   assert.deepEqual(plugin.author, { npm: "omercnet", name: "omercnet", github: "omercnet" });
   assert.equal(plugin.readme, "");
   assert.equal(plugin.installs, undefined);
+});
+
+test("publication date comes from the record review date, not the npm release", () => {
+  const plugin = mergeListing({
+    record,
+    doc,
+    listingFile: {},
+    readme: "Overview.",
+  });
+  assert.equal(plugin.publishedAt, "2026-10-03T00:00:00.000Z");
+  assert.equal(plugin.updatedAt, "2026-10-03T00:00:00.000Z");
 });
 
 
@@ -101,7 +110,7 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
     writeFileSync(join(repository, pluginPath, "README.md"), "Wrong README");
     writeFileSync(
       join(repository, pluginPath, "paseo-listing.json"),
-      JSON.stringify({ screenshots: ["screen.png"] }),
+      JSON.stringify({ media: [] }),
     );
     writeFileSync(join(repository, "README.md"), "Wrong root README");
     run("git", ["add", "."], { cwd: repository });
@@ -139,7 +148,7 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
     };
     run(
       process.execPath,
-      ["scripts/add.ts", "acme/plugins:packages/example", "--categories", "themes"],
+      ["scripts/add.ts", "acme/plugins:packages/example", "--categories", "utils"],
       options,
     );
     run(
@@ -152,7 +161,7 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
         "--id",
         "acme/url-example",
         "--categories",
-        "themes",
+        "utils",
       ],
       options,
     );
@@ -177,9 +186,7 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
       assert.equal(detail.description, "Pinned monorepo example");
       assert.equal(detail.artifact.pluginPath, pluginPath);
       assert.equal(detail.artifact.commit, commit);
-      assert.deepEqual(detail.screenshots, [
-        `https://github.com/acme/plugins/raw/${commit}/${pluginPath}/screen.png`,
-      ]);
+      assert.deepEqual(detail.media, []);
     }
     const overview = join(registry, "plugins/acme/example.md");
     writeFileSync(overview, "# Example\n\nA curated description.\n");

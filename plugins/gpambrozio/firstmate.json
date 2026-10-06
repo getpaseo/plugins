@@ -14,7 +14,15 @@
   "categories": [
     "orchestration"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-25",
   "submittedBy": "gpambrozio",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-25",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/gpambrozio/paseo-plugins/c262395428eb591ee41a14aa3867cdee64632a55/firstmate/docs/demo.webp",
+      "https://raw.githubusercontent.com/gpambrozio/paseo-plugins/c262395428eb591ee41a14aa3867cdee64632a55/firstmate/docs/landed.png",
+      "https://raw.githubusercontent.com/gpambrozio/paseo-plugins/c262395428eb591ee41a14aa3867cdee64632a55/firstmate/docs/board.png",
+      "https://raw.githubusercontent.com/gpambrozio/paseo-plugins/c262395428eb591ee41a14aa3867cdee64632a55/firstmate/docs/watch.png"
+    ]
+  }
 }

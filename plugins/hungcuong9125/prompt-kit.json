@@ -3,13 +3,15 @@
   "repository": {
     "url": "https://github.com/hungcuong9125/paseo-prompt-kit"
   },
-  "categories": ["utils"],
-  "submittedAt": "2026-09-22",
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-09-24",
   "submittedBy": "hungcuong9125",
-  "reviewedAt": "2026-10-03",
+  "reviewedAt": "2026-09-24",
   "listing": {
     "name": "PromptKit",
-    "screenshots": [
+    "media": [
       "https://raw.githubusercontent.com/hungcuong9125/paseo-prompt-kit/main/docs/images/settings-provider-cli.png",
       "https://raw.githubusercontent.com/hungcuong9125/paseo-prompt-kit/main/docs/images/settings-direct-api.png"
     ]

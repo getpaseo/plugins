@@ -14,7 +14,16 @@
     "providers",
     "sidebar"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-24",
   "submittedBy": "lefos13",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-24",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/lefos13/paseo-plugin-antigravity-cli/4d97a6be5f4f01e8564359808c6384f05df3d365/images/01-chat.jpg",
+      "https://raw.githubusercontent.com/lefos13/paseo-plugin-antigravity-cli/4d97a6be5f4f01e8564359808c6384f05df3d365/images/02-slash-commands.jpg",
+      "https://raw.githubusercontent.com/lefos13/paseo-plugin-antigravity-cli/4d97a6be5f4f01e8564359808c6384f05df3d365/images/03-provider-enabled.jpg",
+      "https://raw.githubusercontent.com/lefos13/paseo-plugin-antigravity-cli/4d97a6be5f4f01e8564359808c6384f05df3d365/images/04-models.jpg",
+      "https://raw.githubusercontent.com/lefos13/paseo-plugin-antigravity-cli/4d97a6be5f4f01e8564359808c6384f05df3d365/images/05-multiple-accounts.jpg"
+    ]
+  }
 }

@@ -14,7 +14,14 @@
   "categories": [
     "utils"
   ],
-  "submittedAt": "2026-10-06",
-  "reviewedAt": "2026-10-06",
-  "submittedBy": "geoqiao"
+  "submittedAt": "2026-09-12",
+  "reviewedAt": "2026-09-12",
+  "submittedBy": "geoqiao",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/geoqiao/paseo-stuff/8f1895fbc4c123623832bef9c76ece69f55a4273/plugins/math-renderer/images/math-compact.png",
+      "https://raw.githubusercontent.com/geoqiao/paseo-stuff/8f1895fbc4c123623832bef9c76ece69f55a4273/plugins/math-renderer/images/math-dark.png",
+      "https://raw.githubusercontent.com/geoqiao/paseo-stuff/8f1895fbc4c123623832bef9c76ece69f55a4273/plugins/math-renderer/images/math-light.png"
+    ]
+  }
 }

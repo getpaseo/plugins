@@ -4,13 +4,15 @@
     "url": "https://github.com/gpambrozio/paseo-plugins/tree/HEAD/github-board",
     "commit": "530a66c592e20915169b5e67a35de8793f71ec60"
   },
-  "categories": ["git"],
-  "submittedAt": "2026-09-19",
+  "categories": [
+    "git"
+  ],
+  "submittedAt": "2026-09-09",
   "submittedBy": "gpambrozio",
-  "reviewedAt": "2026-10-03",
+  "reviewedAt": "2026-09-09",
   "listing": {
     "name": "GitHub Board",
-    "screenshots": [
+    "media": [
       "https://raw.githubusercontent.com/gpambrozio/paseo-plugins/main/github-board/docs/screenshot.png",
       "https://raw.githubusercontent.com/gpambrozio/paseo-plugins/main/github-board/docs/detail-panel.png"
     ]

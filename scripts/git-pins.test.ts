@@ -173,7 +173,7 @@ test("commit-only validation preserves author overview and import rules", (t) =>
   const allowed = f.cli("validate", "--online", "--changed", "--allow-imports");
   assert.equal(allowed.status, 0, allowed.stderr);
   registryGit("update-ref", "refs/remotes/origin/main", "HEAD");
-  imported.categories = ["themes"];
+  imported.categories = ["workspaces"];
   writeFileSync(f.recordPath, JSON.stringify(imported));
   registryGit("add", "plugins");
   registryGit("commit", "-qm", "metadata only");

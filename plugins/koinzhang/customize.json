@@ -14,7 +14,14 @@
   "categories": [
     "utils"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-25",
   "submittedBy": "koinzhang",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-25",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/koinzhang/paseo-plugins/9033318495a6c0d1fccc96cc9caaa421eb25402f/customize/images/customize-1.png",
+      "https://raw.githubusercontent.com/koinzhang/paseo-plugins/9033318495a6c0d1fccc96cc9caaa421eb25402f/customize/images/customize-2.png",
+      "https://raw.githubusercontent.com/koinzhang/paseo-plugins/9033318495a6c0d1fccc96cc9caaa421eb25402f/customize/images/customize-3.png"
+    ]
+  }
 }

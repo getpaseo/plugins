@@ -13,7 +13,17 @@
   "categories": [
     "extras"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-10-01",
   "submittedBy": "sting8k",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-10-01",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/sting8k/paseo-mascot/043e7c871b38b191fe43ec91b2e335a450040792/assets/perch.png",
+      "https://raw.githubusercontent.com/sting8k/paseo-mascot/043e7c871b38b191fe43ec91b2e335a450040792/assets/asleep.png",
+      "https://raw.githubusercontent.com/sting8k/paseo-mascot/043e7c871b38b191fe43ec91b2e335a450040792/assets/poke.png",
+      "https://raw.githubusercontent.com/sting8k/paseo-mascot/043e7c871b38b191fe43ec91b2e335a450040792/assets/dizzy.png",
+      "https://raw.githubusercontent.com/sting8k/paseo-mascot/043e7c871b38b191fe43ec91b2e335a450040792/assets/picker.png",
+      "https://raw.githubusercontent.com/sting8k/paseo-mascot/043e7c871b38b191fe43ec91b2e335a450040792/assets/owl.png"
+    ]
+  }
 }

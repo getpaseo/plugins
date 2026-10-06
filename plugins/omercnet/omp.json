@@ -4,13 +4,15 @@
     "url": "https://github.com/omercnet/paseo-plugins/tree/HEAD/paseo-omp",
     "commit": "d7b3e654f364b5be72edf6fd1d914a3750b53082"
   },
-  "categories": ["providers"],
-  "submittedAt": "2026-09-17",
+  "categories": [
+    "providers"
+  ],
+  "submittedAt": "2026-09-13",
   "submittedBy": "omercnet",
-  "reviewedAt": "2026-10-03",
+  "reviewedAt": "2026-09-13",
   "listing": {
     "name": "OMP",
-    "screenshots": [
+    "media": [
       "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/paseo-omp/docs/images/plugin-manager.png",
       "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/paseo-omp/docs/images/workspace-settings.png"
     ]

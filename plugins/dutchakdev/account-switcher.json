@@ -13,7 +13,12 @@
   "categories": [
     "providers"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-10-05",
   "submittedBy": "dutchakdev",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-10-05",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/dutchakdev/paseo-plugin-account-switcher/47cbe84f85477286bf81b52a40fc7e1f741dafe6/docs/assets/account-switcher-overview.png"
+    ]
+  }
 }

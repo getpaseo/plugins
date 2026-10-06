@@ -37,7 +37,7 @@ owner, even when the npm publisher has a different name. `artifact` is the insta
 pin; `repository` is the browseable source and optional proven source commit.
 
 Humans edit categories and optional `listing` overrides (`name`, HTTPS PNG `icon`,
-HTTPS `screenshots`). The bot writes artifact pins and review dates. The published
+HTTPS `media`). The bot writes artifact pins and review dates. The published
 index combines records with metadata from their pinned artifacts.
 
 Authors must keep `OVERVIEW.md` beside `paseo-plugin.json` in the repository at the
@@ -98,11 +98,12 @@ A plugin can ship a separate `paseo-listing.json` next to its strict manifest:
 {
   "name": "Example",
   "icon": "icon.png",
-  "screenshots": ["docs/screenshot.png"]
+  "media": ["https://example.com/demo.mp4", "https://example.com/screen.png"]
 }
 ```
 
-Relative assets resolve to the pinned artifact. Record overrides win over this file.
+Relative icons resolve to the pinned artifact. Media entries are HTTPS image or video URLs;
+record overrides win over this file. Cards use the first image in media order.
 
 ## Maintainers
 

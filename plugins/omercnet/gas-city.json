@@ -15,7 +15,14 @@
     "orchestration",
     "daemon-management"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-11",
   "submittedBy": "omercnet",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-11",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/paseo-gas-city/docs/images/paseo-gas-city-wide-overview.png",
+      "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/paseo-gas-city/docs/images/paseo-gas-city-wide-events.png",
+      "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/paseo-gas-city/docs/images/paseo-gas-city-compact-overview.png"
+    ]
+  }
 }

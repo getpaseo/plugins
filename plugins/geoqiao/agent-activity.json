@@ -14,7 +14,14 @@
   "categories": [
     "utils"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-12",
   "submittedBy": "geoqiao",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-12",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/geoqiao/paseo-stuff/28ade236fb53633dd54a5ab3fad807a8a7774b0e/plugins/agent-activity/images/01-json-comparison.png",
+      "https://raw.githubusercontent.com/geoqiao/paseo-stuff/28ade236fb53633dd54a5ab3fad807a8a7774b0e/plugins/agent-activity/images/02-code-comparison.png",
+      "https://raw.githubusercontent.com/geoqiao/paseo-stuff/28ade236fb53633dd54a5ab3fad807a8a7774b0e/plugins/agent-activity/images/03-preview-comparison.png"
+    ]
+  }
 }

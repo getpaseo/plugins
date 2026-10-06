@@ -15,7 +15,13 @@
     "providers",
     "utils"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-26",
   "submittedBy": "omercnet",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-26",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/context-mode/screenshot.png",
+      "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/context-mode/screenshot-compact.png"
+    ]
+  }
 }

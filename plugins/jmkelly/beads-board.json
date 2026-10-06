@@ -15,7 +15,15 @@
     "sidebar",
     "utils"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-28",
   "submittedBy": "jmkelly",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-28",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/jmkelly/paseo-beads-board/2a501e7caa780ae85ed02aa49d8d3a01add0e6d8/images/bead-detail.png",
+      "https://raw.githubusercontent.com/jmkelly/paseo-beads-board/2a501e7caa780ae85ed02aa49d8d3a01add0e6d8/images/board-closed-column.png",
+      "https://raw.githubusercontent.com/jmkelly/paseo-beads-board/2a501e7caa780ae85ed02aa49d8d3a01add0e6d8/images/board.png",
+      "https://raw.githubusercontent.com/jmkelly/paseo-beads-board/2a501e7caa780ae85ed02aa49d8d3a01add0e6d8/images/create-bead.png"
+    ]
+  }
 }

@@ -12,7 +12,12 @@
   "categories": [
     "utils"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-16",
   "submittedBy": "YoseptF",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-16",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/YoseptF/paseo-emoji/425e37563234d05a3ceaf15040db221625537db9/images/screenshot.png"
+    ]
+  }
 }

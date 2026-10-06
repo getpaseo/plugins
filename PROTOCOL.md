@@ -39,7 +39,7 @@ user or organization that owns the source repository.
     "remote": "https://github.com/acme/example.git",
     "commit": "0123456789abcdef0123456789abcdef01234567"
   },
-  "screenshots": [],
+  "media": [],
   "submittedAt": "2026-10-03T00:00:00.000Z",
   "reviewedAt": "2026-10-03T00:00:00.000Z",
   "updatedAt": "2026-10-03T00:00:00.000Z",
@@ -50,7 +50,10 @@ user or organization that owns the source repository.
 
 Optional fields: `license` (string), `author.name`, `author.npm`,
 `repository.commit` (full commit SHA), `icon` (HTTPS PNG URL), and `installs`
-(nonnegative integer). Screenshots are HTTPS URLs. Dates use ISO 8601.
+(nonnegative integer). Media are HTTPS URLs whose paths end in the extensions
+`png`, `jpg`, `jpeg`, `webp`, `gif`, `mp4`, or
+`webm` (case-insensitive). Keep their display order; the card thumbnail is the first
+image entry, even when a video comes first. Dates use ISO 8601.
 
 ## Artifact pins
 

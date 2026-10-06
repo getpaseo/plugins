@@ -14,7 +14,15 @@
   "categories": [
     "utils"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-09",
   "submittedBy": "omercnet",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-09",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/paseo-cafe/paseo-cafe/266ff26c5fe0240783770ec1efc9799e939c0795/plugin/images/catalog-browse.webp",
+      "https://raw.githubusercontent.com/paseo-cafe/paseo-cafe/266ff26c5fe0240783770ec1efc9799e939c0795/plugin/images/install-review.webp",
+      "https://raw.githubusercontent.com/paseo-cafe/paseo-cafe/266ff26c5fe0240783770ec1efc9799e939c0795/plugin/images/plugin-detail.webp",
+      "https://raw.githubusercontent.com/paseo-cafe/paseo-cafe/266ff26c5fe0240783770ec1efc9799e939c0795/plugin/images/screenshot-gallery.webp"
+    ]
+  }
 }

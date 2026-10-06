@@ -13,6 +13,18 @@
   "categories": [
     "utils"
   ],
-  "submittedAt": "2026-10-06",
-  "reviewedAt": "2026-10-06"
+  "submittedAt": "2026-09-10",
+  "reviewedAt": "2026-09-10",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/yannelli/paseo-plugin-concise/78c69ca0b6efc0336adb1085e1cf8d01f3c766e1/docs/images/github-banner.png",
+      "https://raw.githubusercontent.com/yannelli/paseo-plugin-concise/78c69ca0b6efc0336adb1085e1cf8d01f3c766e1/docs/images/composer-on.png",
+      "https://raw.githubusercontent.com/yannelli/paseo-plugin-concise/78c69ca0b6efc0336adb1085e1cf8d01f3c766e1/docs/images/activity-desktop.png",
+      "https://raw.githubusercontent.com/yannelli/paseo-plugin-concise/78c69ca0b6efc0336adb1085e1cf8d01f3c766e1/docs/images/configuration-light.png",
+      "https://raw.githubusercontent.com/yannelli/paseo-plugin-concise/78c69ca0b6efc0336adb1085e1cf8d01f3c766e1/docs/images/playground.png",
+      "https://raw.githubusercontent.com/yannelli/paseo-plugin-concise/78c69ca0b6efc0336adb1085e1cf8d01f3c766e1/docs/images/compact.png",
+      "https://raw.githubusercontent.com/yannelli/paseo-plugin-concise/78c69ca0b6efc0336adb1085e1cf8d01f3c766e1/docs/images/composer-off.png",
+      "https://raw.githubusercontent.com/yannelli/paseo-plugin-concise/78c69ca0b6efc0336adb1085e1cf8d01f3c766e1/docs/images/activity-filtered.png"
+    ]
+  }
 }

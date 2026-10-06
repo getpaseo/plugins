@@ -12,7 +12,13 @@
   "categories": [
     "workspaces"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-08",
   "submittedBy": "ABorakati",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-08",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/ABorakati/paseo-workspace-activity/6fa866b82fd65a4e1073c1642bfd1c978214a96e/docs/images/agent-monitor.png",
+      "https://raw.githubusercontent.com/ABorakati/paseo-workspace-activity/6fa866b82fd65a4e1073c1642bfd1c978214a96e/docs/images/tasks.png"
+    ]
+  }
 }

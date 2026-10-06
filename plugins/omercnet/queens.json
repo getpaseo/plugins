@@ -15,7 +15,14 @@
     "extras",
     "sidebar"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-20",
   "submittedBy": "omercnet",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-20",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/queens/docs/images/queens-wide.png",
+      "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/queens/docs/images/queens-compact.png",
+      "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/queens/docs/images/queens-composer.png"
+    ]
+  }
 }

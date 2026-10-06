@@ -15,6 +15,16 @@
     "sidebar",
     "git"
   ],
-  "submittedAt": "2026-10-06",
-  "reviewedAt": "2026-10-06"
+  "submittedAt": "2026-09-10",
+  "reviewedAt": "2026-09-10",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/yannelli/paseo-prompt-manager/f6a724bf56b85adc42373ea68e2b6f46ce6d11b0/docs/images/github-banner.png",
+      "https://raw.githubusercontent.com/yannelli/paseo-prompt-manager/f6a724bf56b85adc42373ea68e2b6f46ce6d11b0/docs/promo/light/library.png",
+      "https://raw.githubusercontent.com/yannelli/paseo-prompt-manager/f6a724bf56b85adc42373ea68e2b6f46ce6d11b0/docs/promo/light/composer.png",
+      "https://raw.githubusercontent.com/yannelli/paseo-prompt-manager/f6a724bf56b85adc42373ea68e2b6f46ce6d11b0/docs/promo/light/history.png",
+      "https://raw.githubusercontent.com/yannelli/paseo-prompt-manager/f6a724bf56b85adc42373ea68e2b6f46ce6d11b0/docs/promo/light/import.png",
+      "https://raw.githubusercontent.com/yannelli/paseo-prompt-manager/f6a724bf56b85adc42373ea68e2b6f46ce6d11b0/docs/promo/light/git-sync.png"
+    ]
+  }
 }

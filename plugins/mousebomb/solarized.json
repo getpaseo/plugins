@@ -13,7 +13,13 @@
   "categories": [
     "themes"
   ],
-  "submittedAt": "2026-10-06",
+  "submittedAt": "2026-09-21",
   "submittedBy": "mousebomb",
-  "reviewedAt": "2026-10-06"
+  "reviewedAt": "2026-09-21",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/mousebomb/paseo-solarized/18503b4fe8a8b42bd0b5a3ea3aa9a119211b52da/README.assets/image-20260902062537168.png",
+      "https://raw.githubusercontent.com/mousebomb/paseo-solarized/18503b4fe8a8b42bd0b5a3ea3aa9a119211b52da/README.assets/image-20260902062342515.png"
+    ]
+  }
 }

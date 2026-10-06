@@ -81,6 +81,12 @@ what each is judged against.
 - Source match: when the declared repository holds the source at the pinned commit, the
   artifact's code matches it. Extra files, changed logic, or a dependency the source does
   not declare is a mismatch, and a mismatch is rejected.
+- Listing media: entries are HTTPS image (`png`, `jpg`, `jpeg`, `webp`, `gif`) or video (`mp4`,
+  `webm`) URLs, with case-insensitive extensions. Each URL returns HTTP 200 and an
+  `image/*` or `video/*` content type. SVG is not accepted. The card thumbnail is the
+  first image in media order.
+- Visible surfaces: every theme and any plugin that adds a panel or other UI lists at
+  least one image of that surface. A theme without an image is not listed.
 - Scope: a pull request changes one record and its overview. Anything touching `.github/`,
   `scripts/`, `categories.json`, this file, or more than one record is a maintainer change
   and is never merged by the bot.

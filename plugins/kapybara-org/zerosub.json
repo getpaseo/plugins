@@ -1,0 +1,19 @@
+{
+  "id": "kapybara-org/zerosub",
+  "artifact": {
+    "kind": "npm",
+    "package": "@kapybara/zerosub",
+    "version": "1.2.1",
+    "resolved": "https://registry.npmjs.org/@kapybara/zerosub/-/zerosub-1.2.1.tgz",
+    "integrity": "sha512-jM0C9tkRNPfq1Vz//8EYtmQpbg+hfh4PSSnOtSGOwPO+UNaiX6nj5mCDO1xS1rNBhL7DuxefsIn1EcjXnei6ZQ=="
+  },
+  "repository": {
+    "url": "https://github.com/kapybara-org/zerosub"
+  },
+  "categories": [
+    "providers"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "sanjaydotpro",
+  "reviewedAt": "2026-10-06"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "stv1024/token-ledger",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-token-ledger",
+    "version": "0.6.3",
+    "resolved": "https://registry.npmjs.org/paseo-token-ledger/-/paseo-token-ledger-0.6.3.tgz",
+    "integrity": "sha512-HkdVLJbatXaoM2WRaOIZs4pXrr8fZzdZeTg/isSe29nm2p+Tr61nRrCzGDBF8ep8naOuM/Hjid/RcKvKp35zCw=="
+  },
+  "repository": {
+    "url": "https://github.com/stv1024/token-ledger"
+  },
+  "categories": [
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "stv1024",
+  "reviewedAt": "2026-10-06"
+}

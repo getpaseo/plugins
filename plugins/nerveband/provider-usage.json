@@ -1,0 +1,19 @@
+{
+  "id": "nerveband/provider-usage",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/nerveband/paseo-provider-usage.git",
+    "commit": "aa0523d1a552fa1df744574f3b5920f7016e49cb",
+    "tag": "v0.4.0"
+  },
+  "repository": {
+    "url": "https://github.com/nerveband/paseo-provider-usage",
+    "commit": "aa0523d1a552fa1df744574f3b5920f7016e49cb"
+  },
+  "categories": [
+    "sidebar",
+    "providers"
+  ],
+  "submittedAt": "2026-10-06",
+  "reviewedAt": "2026-10-06"
+}

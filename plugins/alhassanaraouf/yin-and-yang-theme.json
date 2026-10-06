@@ -1,0 +1,19 @@
+{
+  "id": "alhassanaraouf/yin-and-yang-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alhassanaraouf/paseo-yin-and-yang-theme",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@alhassanaraouf/paseo-yin-and-yang-theme/-/paseo-yin-and-yang-theme-0.1.1.tgz",
+    "integrity": "sha512-7oOrly5tcehsUq4ozjlJCfMSP34WFszEfjIPZ2AQmcLhjTLfw3Q/V4ON5dY3GC9xXkelLAwZpVL1NECn18t8wA=="
+  },
+  "repository": {
+    "url": "https://github.com/alhassanaraouf/paseo-themes/tree/HEAD/packages/paseo-yin-and-yang-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "alhassanaraouf",
+  "reviewedAt": "2026-10-06"
+}

@@ -9,10 +9,7 @@
   "submittedBy": "omercnet",
   "reviewedAt": "2026-10-03",
   "listing": {
-    "screenshots": [
-      "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/fresh-worktrees/docs/images/fresh-worktrees-behind.png",
-      "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/fresh-worktrees/docs/images/fresh-worktrees-settings.png"
-    ]
+    "screenshots": []
   },
   "artifact": {
     "kind": "npm",

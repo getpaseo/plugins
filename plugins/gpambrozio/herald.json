@@ -9,10 +9,7 @@
   "submittedBy": "gpambrozio",
   "reviewedAt": "2026-10-03",
   "listing": {
-    "screenshots": [
-      "https://raw.githubusercontent.com/gpambrozio/paseo-plugins/main/herald/docs/panel.png",
-      "https://raw.githubusercontent.com/gpambrozio/paseo-plugins/main/herald/docs/timeline-card.png"
-    ]
+    "screenshots": []
   },
   "artifact": {
     "kind": "npm",

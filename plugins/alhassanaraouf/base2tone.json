@@ -9,9 +9,7 @@
   "reviewedAt": "2026-10-03",
   "listing": {
     "name": "Base2Tone",
-    "screenshots": [
-      "https://raw.githubusercontent.com/alhassanaraouf/paseo-themes/main/packages/paseo-base2tone-theme/preview.png"
-    ]
+    "screenshots": []
   },
   "artifact": {
     "kind": "npm",

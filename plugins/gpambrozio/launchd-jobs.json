@@ -10,9 +10,7 @@
   "reviewedAt": "2026-10-03",
   "listing": {
     "name": "launchd Jobs",
-    "screenshots": [
-      "https://raw.githubusercontent.com/gpambrozio/paseo-plugins/main/launchd-jobs/docs/screenshot.png"
-    ]
+    "screenshots": []
   },
   "artifact": {
     "kind": "npm",

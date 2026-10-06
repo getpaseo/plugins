@@ -9,10 +9,7 @@
   "submittedBy": "omercnet",
   "reviewedAt": "2026-10-03",
   "listing": {
-    "screenshots": [
-      "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/paseo-dracula/screenshot.png",
-      "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/paseo-dracula/screenshot-alucard.png"
-    ]
+    "screenshots": []
   },
   "artifact": {
     "kind": "npm",

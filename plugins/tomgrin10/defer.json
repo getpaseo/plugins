@@ -8,9 +8,7 @@
   "submittedBy": "tomgrin10",
   "reviewedAt": "2026-10-03",
   "listing": {
-    "screenshots": [
-      "https://raw.githubusercontent.com/tomgrin10/paseo-defer/main/docs/defer-popover.png"
-    ]
+    "screenshots": []
   },
   "artifact": {
     "kind": "npm",

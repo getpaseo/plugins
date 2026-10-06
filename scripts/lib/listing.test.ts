@@ -133,7 +133,7 @@ test("npm details follow the full readme precedence and skip absent files", asyn
       /OVERVIEW.md.*install commands/,
     );
     await assert.rejects(
-      validateArtifact(client, { ...record, repository: undefined }),
+      validateArtifact(client, { ...record, repository: { url: record.repository.url } }),
       /OVERVIEW.md.*install commands/,
     );
   }
@@ -311,7 +311,7 @@ test("git monorepo details follow the full readme chain and validate raw author 
       return {
         ...record,
         id: "acme/example",
-        repository: undefined,
+        repository: { url: "https://github.com/acme/overview" },
         artifact: {
           kind: "git" as const,
           remote: "https://github.com/acme/overview.git",

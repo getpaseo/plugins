@@ -1,5 +1,3 @@
-Velocity contributes dark and light appearances to Paseo's appearance settings. The palette uses gray surfaces and blue accents, with a white background in the light appearance. It defines colors for the app background, foreground, raised surfaces, controls, borders, accents, muted text, and focus rings.
+Velocity is a color theme for Paseo with a dark variant (charcoal background, light gray text, blue accent) and a light variant (white background, dark gray text, blue accent). It only changes colors (background, text, raised surfaces, controls, borders, accent, muted text and focus ring). Requires Paseo 0.8.0 or newer. Select **Velocity** or **Velocity Light** under Settings, Appearance, Theme.
 
-The manifest requires Paseo 0.8.0 or newer. The plugin contains a client entrypoint that registers fixed color values through Paseo's theme API. It has no server entrypoint or plugin build step.
-
-Its contribution is limited to the supplied appearance palettes. The entrypoint does not read workspace files, conversation content, credentials, or environment variables, and does not make network requests. The package includes the theme source and an MIT license.
+*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/paseo-velocity-theme).*

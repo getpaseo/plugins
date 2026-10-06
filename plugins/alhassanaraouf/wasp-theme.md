@@ -1,5 +1,3 @@
-Wasp contributes dark and light appearances to Paseo's appearance settings. The palette uses charcoal surfaces, cream text, and yellow accents in the dark appearance, with cream surfaces and orange accents in the light appearance. It defines colors for the app background, foreground, raised surfaces, controls, borders, accents, muted text, and focus rings.
+Wasp is a color theme for Paseo with a dark variant (charcoal background, cream text, yellow accent) and a light variant (warm off-white background, dark brown text, amber accent). It only changes colors (background, text, raised surfaces, controls, borders, accent, muted text and focus ring). Requires Paseo 0.8.0 or newer. Select **Wasp** or **Wasp Light** under Settings, Appearance, Theme.
 
-The manifest requires Paseo 0.8.0 or newer. The plugin contains a client entrypoint that registers fixed color values through Paseo's theme API. It has no server entrypoint or plugin build step.
-
-Its contribution is limited to the supplied appearance palettes. The entrypoint does not read workspace files, conversation content, credentials, or environment variables, and does not make network requests. The package includes the theme source and an MIT license.
+*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/paseo-wasp-theme).*

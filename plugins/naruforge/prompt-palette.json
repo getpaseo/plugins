@@ -1,0 +1,19 @@
+{
+  "id": "naruforge/prompt-palette",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/NaruForge/Paseo-Plugin.git",
+    "commit": "2023cc2532e6264f17063def44cb9fcf8798fecb",
+    "tag": "v0.1.0-rc.3",
+    "pluginPath": "plugins/prompt-palette"
+  },
+  "repository": {
+    "url": "https://github.com/NaruForge/Paseo-Plugin",
+    "commit": "2023cc2532e6264f17063def44cb9fcf8798fecb"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-06",
+  "reviewedAt": "2026-10-06"
+}

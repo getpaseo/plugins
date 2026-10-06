@@ -1,0 +1,20 @@
+{
+  "id": "keefeere/quote",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-quote",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/paseo-quote/-/paseo-quote-0.1.1.tgz",
+    "integrity": "sha512-MP9ZtYvqrG/fFe8SwKWpqW33WPh/IduEnczwb0EO6jKvgmzzTliXmZItR6+7hqoALCTCWZ5Mn6DCYm342FUAcg=="
+  },
+  "repository": {
+    "url": "https://github.com/keefeere/paseo-quote"
+  },
+  "categories": [
+    "utils",
+    "workspaces"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "keefeere",
+  "reviewedAt": "2026-10-06"
+}

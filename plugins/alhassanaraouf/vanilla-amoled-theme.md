@@ -1,5 +1,3 @@
-Vanilla AMOLED contributes one dark appearance to Paseo's appearance settings. The palette uses a black background, white text, and purple accents. It defines colors for the app background, foreground, raised surfaces, controls, borders, accents, muted text, and focus rings.
+Vanilla AMOLED is a color theme for Paseo with a dark theme on a pure black (#000000) background with white text and a violet accent (#483699). It only changes colors (background, text, raised surfaces, controls, borders, accent, muted text and focus ring). Requires Paseo 0.8.0 or newer. Select **Vanilla AMOLED** under Settings, Appearance, Theme.
 
-The manifest requires Paseo 0.8.0 or newer. The plugin contains a client entrypoint that registers fixed color values through Paseo's theme API. It has no server entrypoint or plugin build step.
-
-Its contribution is limited to the supplied appearance palettes. The entrypoint does not read workspace files, conversation content, credentials, or environment variables, and does not make network requests. The package includes the theme source and an MIT license.
+*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/paseo-vanilla-amoled-theme).*

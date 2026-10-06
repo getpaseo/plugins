@@ -1,7 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { mergeListing, parseListingFile, resolvePlugin } from "./listing.ts";
-import { validateArtifact } from "./validate-artifact.ts";
 import type { VersionDoc } from "./npm.ts";
 import type { PluginRecord } from "./record.ts";
 
@@ -79,68 +78,6 @@ test("record overrides win, and a package without a listing file gets a humanize
   assert.equal(plugin.installs, undefined);
 });
 
-test("npm details follow the full readme precedence and skip absent files", async () => {
-  const files = new Map([
-    ["paseo-plugin.json", '{"id":"example"}'],
-    ["paseo-listing.json", JSON.stringify({ readme: "docs/overview.md" })],
-    ["docs/overview.md", "Explicit readme"],
-    ["OVERVIEW.md", "Author overview"],
-    ["README.md", "Default README"],
-    ["readme.md", "Lowercase README"],
-  ]);
-  const client = {
-    async packument() {
-      return {
-        name: doc.name,
-        "dist-tags": { latest: doc.version },
-        time: { [doc.version]: "2026-09-27T09:59:16.690Z" },
-        versions: { [doc.version]: doc },
-      };
-    },
-    async file(_name: string, _version: string, path: string) {
-      return files.get(path) ?? null;
-    },
-    async provenance() {
-      return null;
-    },
-    async tarball() {
-      throw new Error("Not needed for listing resolution");
-    },
-  };
-  assert.equal(
-    (await resolvePlugin(client, record, "Registry overview")).readme,
-    "Explicit readme",
-  );
-  files.set("docs/overview.md", "");
-  assert.equal((await resolvePlugin(client, record, "Registry overview")).readme, "");
-  files.delete("docs/overview.md");
-  assert.equal((await resolvePlugin(client, record, "Registry overview")).readme, "Author overview");
-  files.delete("paseo-listing.json");
-  assert.equal((await resolvePlugin(client, record)).readme, "Author overview");
-  files.set("paseo-listing.json", JSON.stringify({ readme: "docs/overview.md" }));
-  files.delete("OVERVIEW.md");
-  assert.equal((await resolvePlugin(client, record, "Registry overview")).readme, "Registry overview");
-  assert.equal((await resolvePlugin(client, record)).readme, "Default README");
-  files.delete("README.md");
-  assert.equal((await resolvePlugin(client, record)).readme, "Lowercase README");
-  files.delete("readme.md");
-  assert.equal((await resolvePlugin(client, record)).readme, "");
-  files.set("docs/overview.md", "Explicit readme");
-  for (const command of ["paseo plugin add acme/example", "npm install example", "npm i example"]) {
-    files.set("OVERVIEW.md", command);
-    await assert.rejects(
-      resolvePlugin(client, record, "Registry overview"),
-      /OVERVIEW.md.*install commands/,
-    );
-    await assert.rejects(
-      validateArtifact(client, { ...record, repository: { url: record.repository.url } }),
-      /OVERVIEW.md.*install commands/,
-    );
-  }
-  files.set("OVERVIEW.md", "");
-  files.delete("docs/overview.md");
-  assert.equal((await resolvePlugin(client, record, "Registry overview")).readme, "");
-});
 
 test("a tagged monorepo artifact is pinned, validated and built through both submission syntaxes", async () => {
   const { mkdtempSync, mkdirSync, writeFileSync, readFileSync, cpSync, rmSync } =
@@ -160,7 +97,8 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
       join(repository, pluginPath, "paseo-plugin.json"),
       JSON.stringify({ id: "example", description: "Pinned monorepo example" }),
     );
-    writeFileSync(join(repository, pluginPath, "README.md"), "# Monorepo example\n");
+    writeFileSync(join(repository, pluginPath, "OVERVIEW.md"), "Monorepo example overview.\n");
+    writeFileSync(join(repository, pluginPath, "README.md"), "Wrong README");
     writeFileSync(
       join(repository, pluginPath, "paseo-listing.json"),
       JSON.stringify({ screenshots: ["screen.png"] }),
@@ -174,7 +112,7 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
     );
     run("git", ["tag", "v1.0.0"], { cwd: repository });
     const commit = run("git", ["rev-parse", "HEAD"], { cwd: repository });
-    writeFileSync(join(repository, pluginPath, "README.md"), "Unreviewed HEAD");
+    writeFileSync(join(repository, pluginPath, "OVERVIEW.md"), "Unreviewed HEAD");
     run("git", ["add", "."], { cwd: repository });
     run(
       "git",
@@ -218,6 +156,14 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
       ],
       options,
     );
+    run("git", ["init", "-q"], options);
+    run("git", ["add", "plugins"], options);
+    run(
+      "git",
+      ["-c", "user.name=Test", "-c", "user.email=test@example.com", "commit", "-qm", "records"],
+      options,
+    );
+    run("git", ["update-ref", "refs/remotes/origin/main", "HEAD"], options);
     assert.match(
       run(process.execPath, ["scripts/validate.ts", "--online"], options),
       /2 record\(s\) match/,
@@ -227,7 +173,7 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
       const detail = JSON.parse(
         readFileSync(join(registry, `dist/plugins/acme/${slug}.json`), "utf8"),
       );
-      assert.equal(detail.readme, "# Monorepo example\n");
+      assert.equal(detail.readme, "Monorepo example overview.\n");
       assert.equal(detail.description, "Pinned monorepo example");
       assert.equal(detail.artifact.pluginPath, pluginPath);
       assert.equal(detail.artifact.commit, commit);
@@ -240,17 +186,9 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
     run(process.execPath, ["scripts/build.ts"], options);
     assert.equal(
       JSON.parse(readFileSync(join(registry, "dist/plugins/acme/example.json"), "utf8")).readme,
-      "# Example\n\nA curated description.\n",
+      "Monorepo example overview.\n",
     );
     assert.match(run(process.execPath, ["scripts/validate.ts"], options), /2 record\(s\)/);
-    run("git", ["init", "-q"], options);
-    run("git", ["add", "plugins"], options);
-    run(
-      "git",
-      ["-c", "user.name=Test", "-c", "user.email=test@example.com", "commit", "-qm", "records"],
-      options,
-    );
-    run("git", ["update-ref", "refs/remotes/origin/main", "HEAD"], options);
     writeFileSync(overview, "An updated curated description.");
     run("git", ["add", "plugins/acme/example.md"], options);
     run(
@@ -273,92 +211,6 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
       /Command failed/,
     );
   } finally {
-    rmSync(directory, { recursive: true, force: true });
-  }
-});
-
-test("git monorepo details follow the full readme chain and validate raw author overviews", async () => {
-  const { mkdtempSync, mkdirSync, writeFileSync, rmSync } = await import("node:fs");
-  const { tmpdir } = await import("node:os");
-  const { join } = await import("node:path");
-  const { run } = await import("./shell.ts");
-  const directory = mkdtempSync(join(tmpdir(), "registry-overview-test-"));
-  const pluginPath = "packages/example";
-  const plugin = join(directory, pluginPath);
-  const keys = ["GIT_CONFIG_COUNT", "GIT_CONFIG_KEY_0", "GIT_CONFIG_VALUE_0"];
-  const previous = keys.map((key) => process.env[key]);
-  try {
-    run("git", ["init", "-q", directory]);
-    mkdirSync(join(plugin, "docs"), { recursive: true });
-    writeFileSync(join(plugin, "paseo-plugin.json"), '{"id":"example"}');
-    writeFileSync(join(plugin, "paseo-listing.json"), '{"readme":"docs/detail.md"}');
-    writeFileSync(join(directory, "OVERVIEW.md"), "npm install wrong-root");
-    writeFileSync(join(plugin, "docs/detail.md"), "Explicit readme");
-    writeFileSync(join(plugin, "OVERVIEW.md"), "Author overview");
-    writeFileSync(join(plugin, "README.md"), "Default README");
-    writeFileSync(join(plugin, "readme.md"), "Lowercase README");
-    process.env.GIT_CONFIG_COUNT = "1";
-    process.env.GIT_CONFIG_KEY_0 = `url.file://${directory}.insteadOf`;
-    process.env.GIT_CONFIG_VALUE_0 = "https://github.com/acme/overview.git";
-    const pin = () => {
-      run("git", ["add", "."], { cwd: directory });
-      run(
-        "git",
-        ["-c", "user.name=Test", "-c", "user.email=test@example.com", "commit", "-qm", "fixture"],
-        { cwd: directory },
-      );
-      run("git", ["tag", "-f", "v1"], { cwd: directory });
-      return {
-        ...record,
-        id: "acme/example",
-        repository: { url: "https://github.com/acme/overview" },
-        artifact: {
-          kind: "git" as const,
-          remote: "https://github.com/acme/overview.git",
-          tag: "v1",
-          commit: run("git", ["rev-parse", "HEAD"], { cwd: directory }),
-          pluginPath,
-        },
-      };
-    };
-    // Git resolution never uses the npm client.
-    const { createNpmClient } = await import("./npm.ts");
-    const client = createNpmClient();
-    const check = async (expected: string, overview: string | null = "Registry overview") => {
-      assert.equal((await resolvePlugin(client, pin(), overview)).readme, expected);
-    };
-    await check("Explicit readme");
-    writeFileSync(join(plugin, "docs/detail.md"), "");
-    await check("");
-    rmSync(join(plugin, "docs/detail.md"));
-    await check("Author overview");
-    rmSync(join(plugin, "paseo-listing.json"));
-    await check("Author overview");
-    rmSync(join(plugin, "OVERVIEW.md"));
-    await check("Registry overview");
-    // New pins require a changed artifact, so exercise README fallback with a missing explicit path.
-    writeFileSync(join(plugin, "paseo-listing.json"), '{"readme":"missing.md"}');
-    await check("Default README", null);
-    rmSync(join(plugin, "README.md"));
-    await check("Lowercase README", null);
-    rmSync(join(plugin, "readme.md"));
-    await check("", null);
-    writeFileSync(join(plugin, "docs/detail.md"), "Explicit readme");
-    writeFileSync(join(plugin, "paseo-listing.json"), '{"readme":"docs/detail.md"}');
-    for (const command of ["paseo plugin add acme/example", "npm install example", "npm i example"]) {
-      writeFileSync(join(plugin, "OVERVIEW.md"), command);
-      const pinned = pin();
-      await assert.rejects(
-        resolvePlugin(client, pinned, "Registry overview"),
-        /OVERVIEW.md.*install commands/,
-      );
-      await assert.rejects(validateArtifact(client, pinned), /OVERVIEW.md.*install commands/);
-    }
-  } finally {
-    keys.forEach((key, index) => {
-      if (previous[index] === undefined) delete process.env[key];
-      else process.env[key] = previous[index];
-    });
     rmSync(directory, { recursive: true, force: true });
   }
 });

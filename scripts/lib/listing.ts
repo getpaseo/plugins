@@ -1,4 +1,4 @@
-import { validateOverview } from "./overview.ts";
+import { readAuthorOverview, requireOverview } from "./overview.ts";
 import type { Category } from "./categories.ts";
 import { authorOf, type NpmClient, resolveVersion, type VersionDoc } from "./npm.ts";
 import { readOptional, withGitArtifact } from "./git-artifact.ts";
@@ -9,7 +9,6 @@ export interface ListingFile {
   name?: string;
   icon?: string;
   screenshots?: string[];
-  readme?: string;
 }
 
 /** One plugin as the website reads it. */
@@ -62,7 +61,6 @@ export function parseListingFile(text: string | null): ListingFile {
   if (typeof raw.icon === "string") listing.icon = raw.icon;
   if (Array.isArray(raw.screenshots))
     listing.screenshots = raw.screenshots.filter((s): s is string => typeof s === "string");
-  if (typeof raw.readme === "string") listing.readme = raw.readme;
   return listing;
 }
 
@@ -113,7 +111,8 @@ export async function resolvePlugin(
   record: PluginRecord,
   overview: string | null = null,
 ): Promise<PublishedPluginDetail> {
-  if (record.artifact.kind === "git") return resolveGitPlugin(record, overview);
+  const readme = requireOverview(await readAuthorOverview(client, record), overview, record.id);
+  if (record.artifact.kind === "git") return resolveGitPlugin(record, readme);
   const artifact = record.artifact;
   const packument = await client.packument(artifact.package);
   const doc = resolveVersion(packument, artifact.version);
@@ -125,17 +124,6 @@ export async function resolvePlugin(
   const listingFile = parseListingFile(
     await client.file(doc.name, doc.version, "paseo-listing.json"),
   );
-  // Validate the raw author overview even when an explicit listing path wins.
-  const authorOverview = validateOverview(
-    await client.file(doc.name, doc.version, "OVERVIEW.md"),
-    `${record.id}/OVERVIEW.md`,
-  );
-  const readme =
-    (listingFile.readme ? await client.file(doc.name, doc.version, listingFile.readme) : null) ??
-    authorOverview ??
-    overview ??
-    (await client.file(doc.name, doc.version, "README.md")) ??
-    (await client.file(doc.name, doc.version, "readme.md"));
   return mergeListing({
     record,
     doc,
@@ -150,16 +138,12 @@ export function summarize(detail: PublishedPluginDetail): PublishedPlugin {
   return summary;
 }
 
-function resolveGitPlugin(record: PluginRecord, overview: string | null): PublishedPluginDetail {
+function resolveGitPlugin(record: PluginRecord, overview: string): PublishedPluginDetail {
   const artifact = record.artifact;
   if (artifact.kind !== "git") throw new Error("Expected git artifact");
   return withGitArtifact(record, (directory) => {
     const manifest = JSON.parse(readOptional(directory, "paseo-plugin.json")!);
     const listing = parseListingFile(readOptional(directory, "paseo-listing.json"));
-    const authorOverview = validateOverview(
-      readOptional(directory, "OVERVIEW.md"),
-      `${record.id}/OVERVIEW.md`,
-    );
     const base = `${artifact.remote.replace(/\.git$/, "")}/raw/${artifact.commit}/${artifact.pluginPath ? `${artifact.pluginPath}/` : ""}`;
     const asset = (value: string) => (value.startsWith("https://") ? value : `${base}${value}`);
     const icon = record.listing?.icon ?? listing.icon;
@@ -178,13 +162,7 @@ function resolveGitPlugin(record: PluginRecord, overview: string | null): Publis
       reviewedAt: date,
       updatedAt: date,
       publishedAt: date,
-      readme:
-        (listing.readme ? readOptional(directory, listing.readme) : null) ??
-        authorOverview ??
-        overview ??
-        readOptional(directory, "README.md") ??
-        readOptional(directory, "readme.md") ??
-        "",
+      readme: overview,
     };
   });
 }

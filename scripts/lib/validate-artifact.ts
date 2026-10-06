@@ -1,17 +1,23 @@
-import { validateOverview } from "./overview.ts";
-import { readOptional, withGitArtifact } from "./git-artifact.ts";
+import { readAuthorOverview, requireOverview, validateOverview } from "./overview.ts";
 import { type NpmClient, resolveVersion } from "./npm.ts";
-import type { PluginRecord } from "./record.ts";
+import { parseArtifact, type PluginRecord } from "./record.ts";
 
 /** Check the pinned artifact without running any plugin code. */
-export async function validateArtifact(client: NpmClient, record: PluginRecord): Promise<string[]> {
+export async function validateArtifact(
+  client: NpmClient,
+  record: PluginRecord,
+  context: { previous?: PluginRecord | null; registryOverview?: string | null; allowNewImport?: boolean } = {},
+): Promise<string[]> {
   const problems: string[] = [];
-  if (record.artifact.kind === "git") {
-    withGitArtifact(record, (directory) => {
-      validateOverview(readOptional(directory, "OVERVIEW.md"), `${record.id}/OVERVIEW.md`);
-    });
-    return problems;
-  }
+  const author = await readAuthorOverview(client, record);
+  const previous = context.previous;
+  const unchanged = previous &&
+    JSON.stringify(parseArtifact(previous.artifact)) === JSON.stringify(parseArtifact(record.artifact)) &&
+    previous.repository.commit === record.repository.commit;
+  const imported = unchanged || (!previous && context.allowNewImport);
+  const registry = validateOverview(context.registryOverview ?? null, `${record.id}.md`);
+  requireOverview(author, imported ? registry : null, record.id);
+  if (record.artifact.kind === "git") return problems;
   const artifact = record.artifact;
   const packument = await client.packument(artifact.package);
   const doc = resolveVersion(packument, artifact.version);
@@ -22,10 +28,6 @@ export async function validateArtifact(client: NpmClient, record: PluginRecord):
   if ((await client.file(doc.name, doc.version, "paseo-plugin.json")) === null) {
     problems.push(`${record.id}: ${artifact.version} does not ship paseo-plugin.json`);
   }
-  validateOverview(
-    await client.file(doc.name, doc.version, "OVERVIEW.md"),
-    `${record.id}/OVERVIEW.md`,
-  );
   if (record.repository?.commit) {
     const provenance = await client.provenance(doc.name, doc.version);
     if (!provenance || provenance.commit !== record.repository.commit) {

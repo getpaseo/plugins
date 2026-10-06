@@ -37,9 +37,10 @@ index combines records with metadata from their pinned artifacts.
 
 Authors can ship `OVERVIEW.md` beside `paseo-plugin.json` (under `pluginPath` in a
 Git monorepo). The author owns this overview. At import time, a reviewer can add
-`plugins/<owner>/<slug>.md` as a registry stopgap. On a version bump that introduces
-an author overview, the reviewer deletes the registry stopgap. Submitters can
-propose stopgap edits by pull request.
+`plugins/<owner>/<slug>.md` as a registry stopgap. When a version bump changes what
+the plugin does and an author overview is still absent, the reviewer updates the
+registry stopgap. On a bump that introduces an author overview, the reviewer
+deletes the stopgap. Submitters can propose stopgap edits by pull request.
 
 Write 80–250 words in sentence case, using plain declarative sentences and
 source-backed facts. The first paragraph says what the plugin does. Include:

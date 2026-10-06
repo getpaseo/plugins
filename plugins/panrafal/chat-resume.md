@@ -1,11 +1,7 @@
-Adds composer pills to agents that stopped without finishing, so you can continue the work without retyping. It requires Paseo 0.7.2 or newer.
+Adds composer pills to agents that stopped before finishing, so you can pick the work back up. It requires Paseo 0.7.2 or newer.
 
-Pills appear on idle or errored agents in two cases. The first is a provider usage-limit or quota stop, including Claude's monthly spend limit and a turn that ended with no output at all after your message. The second is a turn that stopped mid-work without saying why, such as after a daemon restart. Agents with a pending permission request are left alone.
+Detection is heuristic. A pill appears on an idle or errored agent when its last turn hit a provider usage limit (including a turn that ended with no output at all) or stopped mid-work without saying why. Agents waiting on a permission request get no pill, and neither does a turn whose last tool call was cancelled, which reads as a deliberate interruption. After a quota stop you can continue the same agent, schedule it to continue shortly after the limit renews, or hand the work to a new agent on another provider or model. A turn that stopped mid-work gets a single Continue pill.
 
-For a quota stop, **Continue** sends a follow-up on the same agent once the parsed renewal time has passed or when no renewal time is found. **Resume when renewed** creates one heartbeat that continues the same agent two minutes after the renewal time. **Handover** opens an editable prompt and a choice of other ready providers and models, then starts a new agent in the same workspace carrying the source agent's labels. The default prompt tells the new agent to read the source agent's history with `paseo inspect` and `paseo logs`. For an unfinished turn you get a single Continue pill that asks the agent to review the conversation and workspace and finish the work.
-
-Detection is heuristic. A turn that ends on a tool call without a closing message reads as unfinished, and a turn whose last tool call was cancelled is treated as a deliberate interruption and gets no pill.
-
-The plugin reads the tail of each agent's timeline through the daemon and, for Claude and Codex, the on-disk transcripts. Resume when renewed runs `paseo heartbeat create` on the daemon host.
+The plugin reads agent timelines, and the tails of provider transcripts on disk, on the daemon to detect these stops. It takes no continuation, scheduling, or handover action unless you press a pill. A handover starts a new agent in the same workspace with a prompt you can edit, which points it at the source agent's history through the `paseo inspect` and `paseo logs` commands. It does not receive a full copy of the conversation. Scheduling runs `paseo heartbeat create` on the daemon host.
 
 *This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/chat-resume).*

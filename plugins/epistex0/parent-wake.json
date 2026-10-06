@@ -1,0 +1,19 @@
+{
+  "id": "epistex0/parent-wake",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/EPISTEX0/paseo-parent-wake.git",
+    "commit": "4318bc168e7f366bf690a2c25f815c3c70b34205",
+    "tag": "v0.3.0"
+  },
+  "repository": {
+    "url": "https://github.com/EPISTEX0/paseo-parent-wake",
+    "commit": "4318bc168e7f366bf690a2c25f815c3c70b34205"
+  },
+  "categories": [
+    "orchestration"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "EPISTEX0",
+  "reviewedAt": "2026-10-06"
+}

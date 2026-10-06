@@ -1,0 +1,20 @@
+{
+  "id": "hichamboushaba/keep-awake",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-keep-awake",
+    "version": "0.1.2",
+    "resolved": "https://registry.npmjs.org/paseo-keep-awake/-/paseo-keep-awake-0.1.2.tgz",
+    "integrity": "sha512-py6V/KpQR3dmx0CqtFU0+1Fgjn1nxOfRP2U86M+a2sPWlTIgZt758OyLTo97g8bT8wV1ICFU7uN3EyNUEKLoGA=="
+  },
+  "repository": {
+    "url": "https://github.com/hichamboushaba/paseo-plugins/tree/HEAD/keep-awake",
+    "commit": "d15242bc107b004e493f2e13cccb057ccd4cc296"
+  },
+  "categories": [
+    "daemon-management"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "hichamboushaba",
+  "reviewedAt": "2026-10-06"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "koinzhang/mono",
+  "artifact": {
+    "kind": "npm",
+    "package": "@koinzhang/paseo-plugin-mono",
+    "version": "0.2.1",
+    "resolved": "https://registry.npmjs.org/@koinzhang/paseo-plugin-mono/-/paseo-plugin-mono-0.2.1.tgz",
+    "integrity": "sha512-hOqDYaSN5k66T0VcOcXUaKsLl7imL7X5x+D5CavBIkem96jEK2fFPH+DFqDnUwljD/EhiQfyJM8TdQee9lNghw=="
+  },
+  "repository": {
+    "url": "https://github.com/koinzhang/paseo-plugins/tree/HEAD/mono",
+    "commit": "5bae6dd6ff47f1c3e56d055d1a985d9f67c6383e"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-06",
+  "submittedBy": "koinzhang",
+  "reviewedAt": "2026-10-06"
+}

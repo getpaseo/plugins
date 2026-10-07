@@ -70,7 +70,7 @@ for (const scenario of ["present", "absent", "invalid", "network"] as const) {
       }
       const review = () => commitBumpForReview({
         client, next, version: "v2", registryRoot: registry,
-        validate: () => {
+        validate: async () => {
           run(process.execPath, ["scripts/validate.ts", "--online", "--changed"], options);
           return "Inline validation passed.";
         },

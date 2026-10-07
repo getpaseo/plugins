@@ -19,6 +19,11 @@ an internal registry by serving the same static JSON documents.
    appears on [paseo.sh/plugins](https://paseo.sh/plugins). New versions receive
    the same review in a separate bump PR.
 
+The bot processes an issue when it is opened. Edits and label changes do not run
+it again. If a change is needed, its comment explains what to fix; after fixing
+it, ask a maintainer to rerun that issue. Service failures go to maintainers via
+`needs-maintainer` and the workflow log instead of asking you to edit the issue.
+
 npm packages with provenance can be submitted by anyone. Without provenance,
 the submitter must own the source repository or be a public member of its organization.
 
@@ -111,7 +116,8 @@ record overrides win over this file. Cards use the first image in media order.
 
 ## Maintainers
 
-Node 22.18+ runs these TypeScript scripts with no dependencies:
+Node 22.18+ runs these TypeScript scripts with no npm dependencies. Git and tar
+must be available on PATH:
 
 ```sh
 npm test

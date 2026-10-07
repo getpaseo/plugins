@@ -1,3 +1,4 @@
+import { AuthorError } from "./problems.ts";
 import { mkdtempSync, readFileSync, existsSync, realpathSync, rmSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join, resolve, relative } from "node:path";
@@ -54,10 +55,15 @@ function withCheckout<T>(
       if (commit !== artifact.commit) throw new Error("tag no longer matches reviewed commit");
     }
     run("git", ["checkout", "--quiet", "--detach", artifact.commit], { cwd: directory });
-    const plugin = realpathSync(resolve(directory, artifact.pluginPath ?? "."));
+    const path = resolve(directory, artifact.pluginPath ?? ".");
+    if (!existsSync(path)) throw new AuthorError(`The release has no plugin directory at ${artifact.pluginPath}. Correct the folder in Source or publish a release containing it.`);
+    const plugin = realpathSync(path);
     if (relative(directory, plugin).startsWith(".."))
-      throw new Error("plugin path escapes checkout");
-    JSON.parse(readFileSync(join(plugin, "paseo-plugin.json"), "utf8"));
+      throw new AuthorError("The plugin directory points outside the repository. Replace the directory link with the plugin files and publish a new release.");
+    const manifest = readOptional(plugin, "paseo-plugin.json");
+    if (manifest === null) throw new AuthorError("The release does not contain paseo-plugin.json in the plugin directory. Add the manifest and publish a new release, or correct the folder in Source.");
+    try { JSON.parse(manifest); }
+    catch { throw new AuthorError("paseo-plugin.json is not valid JSON. Fix the file and publish a new release."); }
     return consume(plugin);
   } finally {
     rmSync(directory, { recursive: true, force: true });
@@ -99,7 +105,7 @@ export function pinGit(input: {
   const pin = input.commit !== undefined
     ? { commit: input.commit }
     : latestTag(`${remote}.git`);
-  if (!pin) throw new Error("Repository needs a release tag or an explicit --commit pin; HEAD is never approved implicitly");
+  if (!pin) throw new AuthorError("Repository needs a release tag. Publish a Git tag containing the plugin, then ask a maintainer to rerun the submission.");
   const artifact = parseArtifact({
     kind: "git",
     remote: `${remote}.git`,

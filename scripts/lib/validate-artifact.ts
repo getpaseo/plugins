@@ -1,3 +1,4 @@
+import { AuthorError } from "./problems.ts";
 import { readAuthorOverview, requireOverview, validateOverview } from "./overview.ts";
 import { type NpmClient, resolveVersion } from "./npm.ts";
 import { parseArtifact, type PluginRecord } from "./record.ts";
@@ -26,7 +27,7 @@ export async function validateArtifact(
   if (doc.dist.integrity !== artifact.integrity)
     problems.push(`${record.id}: integrity does not match npm for ${artifact.version}`);
   if ((await client.file(doc.name, doc.version, "paseo-plugin.json")) === null) {
-    problems.push(`${record.id}: ${artifact.version} does not ship paseo-plugin.json`);
+    throw new AuthorError(`${record.id}: ${artifact.version} does not ship paseo-plugin.json. Include the manifest at the package root and publish a new version.`);
   }
   if (record.repository?.commit) {
     const provenance = await client.provenance(doc.name, doc.version);

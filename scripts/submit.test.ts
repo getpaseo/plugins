@@ -49,10 +49,13 @@ function fixture(t: TestContext, source: string) {
   git(registry, "update-ref", "refs/remotes/origin/main", "HEAD");
   const body = readFileSync(new URL("fixtures/submission-issue.md", import.meta.url), "utf8")
     .replace("@acme/paseo-review", source);
-  const issue = { body, author: { login: "acme" }, title: "Example plugin" };
+  const issue = { body, author: { login: "acme" }, title: "Example plugin", state: "OPEN", labels: [{ name: "submission" }] };
   const issueFile = join(root, "issue.json");
   const callsFile = join(root, "calls.jsonl");
   const previousFile = join(root, "previous.json");
+  const membershipFile = join(root, "membership-status");
+  const summaryFile = join(root, "summary.md");
+  writeFileSync(membershipFile, "204");
   writeFileSync(previousFile, "[]");
   writeFileSync(issueFile, JSON.stringify(issue));
   // A local implementation of the gh process interface records issue mutations;
@@ -64,7 +67,12 @@ if (args[0] === "issue" && args[1] === "view") console.log(fs.readFileSync(proce
 else if (args[0] === "pr" && args[1] === "list") console.log(fs.readFileSync(process.env.SUBMIT_PREVIOUS, "utf8"));
 else if (args[0] === "pr" && args[1] === "create") console.log("https://github.com/acme/registry/pull/1");
 else if (args[0] === "pr" && args[1] === "edit") {}
-else if (args[0] !== "issue" || !["close", "comment"].includes(args[1])) process.exit(99);
+else if (args[0] === "api") {
+  const status = Number(fs.readFileSync(process.env.SUBMIT_MEMBERSHIP, "utf8"));
+  console.log("HTTP/2.0 " + status);
+  process.exit(status === 204 ? 0 : 1);
+}
+else if (args[0] !== "issue" || !["close", "comment", "edit"].includes(args[1])) process.exit(99);
 `, { mode: 0o755 });
   const origin = join(root, "origin.git");
   git(root, "init", "--bare", "-q", origin);
@@ -73,10 +81,10 @@ else if (args[0] !== "issue" || !["close", "comment"].includes(args[1])) process
   writeFileSync(join(registry, "package.json"), JSON.stringify({ type: "module", scripts: { test: "node --test scripts/lib/issue.test.ts" } }));
   const run = () => spawnSync(process.execPath, ["scripts/submit.ts"], {
     cwd: registry, encoding: "utf8",
-    env: { ...process.env, PATH: `${bin}:${process.env.PATH}`, ISSUE_NUMBER: "42", SUBMIT_CALLS: callsFile, SUBMIT_ISSUE: issueFile, SUBMIT_PREVIOUS: previousFile,
+    env: { ...process.env, PATH: `${bin}:${process.env.PATH}`, ISSUE_NUMBER: "42", SUBMIT_CALLS: callsFile, SUBMIT_ISSUE: issueFile, SUBMIT_PREVIOUS: previousFile, SUBMIT_MEMBERSHIP: membershipFile, GITHUB_STEP_SUMMARY: summaryFile,
       GIT_CONFIG_COUNT: "1", GIT_CONFIG_KEY_0: `url.file://${remote}.insteadOf`, GIT_CONFIG_VALUE_0: "https://github.com/acme/example.git" },
   });
-  return { run, issue, issueFile, previousFile, remote, registry, git, calls: () => readFileSync(callsFile, "utf8").trim().split("\n").map((line) => JSON.parse(line)), unchanged: () => assert.equal(readFileSync(recordFile, "utf8"), original) };
+  return { run, issue, issueFile, previousFile, membershipFile, summaryFile, remote, registry, git, calls: () => readFileSync(callsFile, "utf8").trim().split("\n").map((line) => JSON.parse(line)), unchanged: () => assert.equal(readFileSync(recordFile, "utf8"), original) };
 }
 
 for (const [name, source] of [
@@ -160,3 +168,133 @@ test("changing only the issue title updates the listing name in its existing PR"
   assert.equal(record.listing.name, "Renamed plugin");
   assert.equal(f.calls().filter((args) => args[0] === "pr" && args[1] === "edit").length, 1);
 });
+
+
+test("submission workflow only starts on opening or an explicit single-issue dispatch", () => {
+  const workflow = readFileSync(new URL("../.github/workflows/submit.yml", import.meta.url), "utf8");
+  assert.match(workflow, /types: \[opened\]/);
+  assert.doesNotMatch(workflow, /schedule:|cron:|edited|labeled|--paginate/);
+  assert.match(workflow, /issue_number:/);
+  assert.match(workflow, /required: true/);
+  assert.match(workflow, /group:.*issue/);
+});
+
+test("missing author overview reaches the author with a release instruction", (t) => {
+  const f = fixture(t, "github:acme/example:plugins/review");
+  rmSync(join(f.remote, "plugins/review/OVERVIEW.md"));
+  f.git(f.remote, "add", ".");
+  f.git(f.remote, "commit", "-qm", "missing overview");
+  f.git(f.remote, "tag", "v2.0.0");
+  const result = f.run();
+  assert.equal(result.status, 1);
+  const comment = f.calls().find((args) => args[1] === "comment").at(-1);
+  assert.match(comment, /OVERVIEW.md/);
+  assert.match(comment, /publish|release/i);
+  assert.match(comment, /maintainer.*rerun/i);
+  assert.doesNotMatch(comment, /Command failed|Edit the issue to fix it/);
+});
+
+test("theme metadata unsupported by the form is routed to maintainers without blaming the author", (t) => {
+  const f = fixture(t, "github:acme/example:plugins/review");
+  writeFileSync(f.issueFile, JSON.stringify({ ...f.issue, body: f.issue.body.replace("- [ ] Themes", "- [x] Themes") }));
+  const result = f.run();
+  assert.equal(result.status, 1);
+  assert.equal(f.calls().some((args) => args[1] === "comment"), false);
+  assert.equal(f.calls().some((args) => args.includes("--add-label") && args.includes("needs-maintainer")), true);
+  assert.match(result.stderr, /image/i);
+  assert.match(readFileSync(f.summaryFile, "utf8"), /image.*maintainer/i);
+});
+
+test("infrastructure failure is logged and labeled, without asking the author to edit", (t) => {
+  const f = fixture(t, "github:acme/example:plugins/review");
+  rmSync(f.remote, { recursive: true });
+  const result = f.run();
+  assert.equal(result.status, 1);
+  assert.equal(f.calls().some((args) => args[1] === "comment"), false);
+  assert.equal(f.calls().some((args) => args.includes("--add-label") && args.includes("needs-maintainer")), true);
+});
+
+test("an intentional rerun repins an unchanged issue after a new release", (t) => {
+  const f = fixture(t, "github:acme/example:plugins/review");
+  assert.equal(f.run().status, 0);
+  const created = f.calls().find((args) => args[0] === "pr" && args[1] === "create");
+  writeFileSync(f.previousFile, JSON.stringify([{
+    number: 1, state: "OPEN", body: created[created.indexOf("--body") + 1],
+    url: "https://github.com/acme/registry/pull/1",
+  }]));
+  f.git(f.remote, "commit", "--allow-empty", "-qm", "release");
+  f.git(f.remote, "tag", "v2.0.0");
+  const result = f.run();
+  assert.equal(result.status, 0, result.stderr);
+  const record = JSON.parse(readFileSync(join(f.registry, "plugins/acme/review.json"), "utf8"));
+  assert.equal(record.artifact.tag, "v2.0.0");
+});
+
+
+test("an invalid overview in an existing registry record is not blamed on the submitter", (t) => {
+  const f = fixture(t, "github:acme/example:plugins/review");
+  writeFileSync(join(f.registry, "plugins/acme/example.md"), "npm install unrelated");
+  f.git(f.registry, "add", "plugins/acme/example.md");
+  f.git(f.registry, "commit", "-qm", "invalid registry overview");
+  f.git(f.registry, "update-ref", "refs/remotes/origin/main", "HEAD");
+  const result = f.run();
+  assert.equal(result.status, 1);
+  assert.equal(f.calls().some((args) => args[1] === "comment"), false);
+  assert.equal(f.calls().some((args) => args.includes("needs-maintainer")), true);
+});
+
+
+for (const status of [404, 503]) {
+  test(`GitHub membership HTTP ${status} distinguishes ownership from an outage`, (t) => {
+    const f = fixture(t, "github:acme/example:plugins/review");
+    writeFileSync(f.issueFile, JSON.stringify({ ...f.issue, author: { login: "visitor" } }));
+    writeFileSync(f.membershipFile, String(status));
+    const result = f.run();
+    assert.equal(result.status, 1);
+    const comments = f.calls().filter((args) => args[1] === "comment");
+    if (status === 404) {
+      assert.equal(comments.length, 1);
+      assert.match(comments[0].at(-1), /Ask the repository owner/);
+      assert.match(comments[0].at(-1), /maintainer.*rerun/);
+    } else {
+      assert.equal(comments.length, 0);
+      assert.equal(f.calls().some((args) => args.includes("needs-maintainer")), true);
+    }
+  });
+}
+
+for (const scenario of ["no tag", "missing manifest", "invalid manifest", "invalid overview"]) {
+  test(`${scenario} tells the author which release content to fix`, (t) => {
+    const f = fixture(t, "github:acme/example:plugins/review");
+    if (scenario === "no tag") f.git(f.remote, "tag", "-d", "v1.0.0");
+    else {
+      if (scenario === "missing manifest") rmSync(join(f.remote, "plugins/review/paseo-plugin.json"));
+      if (scenario === "invalid manifest") writeFileSync(join(f.remote, "plugins/review/paseo-plugin.json"), "invalid");
+      if (scenario === "invalid overview") writeFileSync(join(f.remote, "plugins/review/OVERVIEW.md"), "npm install example");
+      f.git(f.remote, "add", ".");
+      f.git(f.remote, "commit", "-qm", scenario);
+      f.git(f.remote, "tag", "v2.0.0");
+    }
+    const result = f.run();
+    assert.equal(result.status, 1);
+    const comment = f.calls().find((args) => args[1] === "comment").at(-1);
+    assert.match(comment, /publish/i);
+    assert.match(comment, /maintainer.*rerun/i);
+    assert.doesNotMatch(comment, /Command failed/);
+    assert.match(comment, scenario === "no tag" ? /release tag/ : scenario === "invalid overview" ? /OVERVIEW.md.*install commands/ : /paseo-plugin.json/);
+  });
+}
+
+for (const scenario of ["closed issue", "missing label", "closed PR", "merged PR"]) {
+  test(`dispatch leaves a ${scenario} alone`, (t) => {
+    const f = fixture(t, "github:acme/example:plugins/review");
+    if (scenario === "closed issue") writeFileSync(f.issueFile, JSON.stringify({ ...f.issue, state: "CLOSED" }));
+    if (scenario === "missing label") writeFileSync(f.issueFile, JSON.stringify({ ...f.issue, labels: [] }));
+    if (scenario.endsWith("PR")) writeFileSync(f.previousFile, JSON.stringify([{
+      number: 1, state: scenario === "closed PR" ? "CLOSED" : "MERGED", url: "https://github.com/acme/registry/pull/1",
+    }]));
+    const result = f.run();
+    assert.equal(result.status, 0, result.stderr);
+    assert.equal(f.calls().every((args) => args[1] === "view" || args[1] === "list"), true);
+  });
+}

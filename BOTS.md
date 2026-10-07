@@ -6,22 +6,46 @@ pinned artifact; publishing serves only records already on `main`.
 
 | Workflow       | Trigger (UTC)                                                        | Work                                                                                                    |
 | -------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| `submit.yml`   | Issues opened, edited, or labeled; 02:23, 10:23, 18:23 daily; manual | Pin submissions and open a PR linked to the issue. Retry missed issues and update open PRs after edits. |
+| `submit.yml`   | Submission issue opened; manual with an issue number | Pin one submission and open or update its review PR. |
 | `bump.yml`     | 05:17 and 17:17 daily; manual                                        | Open one PR per new pinned version, naming `submittedBy` and including an artifact diff.                |
 | `validate.yml` | Every PR, including existing-record edits; every push to main        | Run tests and online pin validation.                                                                    |
 | `publish.yml`  | Relevant changes merged to main; 06:41 daily; manual                 | Build static documents and publish them through GitHub Pages.                                           |
 
-Submission retries reuse one branch per issue. A content digest avoids repeated
-PR updates for unchanged issues; merged or closed PRs are not recreated by the
-submission workflow. The reviewer owns reopening stale reviews.
+Submissions run once when opened. Edits, label changes, and schedules do not
+process them. Maintainers can rerun one open submission deliberately in Actions
+(**Submission → Run workflow → issue_number**), or with:
+
+```sh
+gh workflow run submit.yml -f issue_number=123
+```
+
+A rerun reads the current issue and latest release even if the issue text has not
+changed. It reuses that issue's branch and open PR; merged or closed PRs are not
+recreated. Closed issues and issues without the `submission` label are skipped.
+Concurrency is scoped to the issue, so another submission does not replace a
+pending run. The reviewer owns reopening stale reviews.
+
+Known author-fixable failures produce a comment naming the problem, the change,
+and the need to ask a maintainer for a rerun. Network, tooling, and registry
+failures keep their diagnostics in the workflow log and job summary and add
+`needs-maintainer`; they do not post an error comment on the author's issue.
+Inspect the failed run, resolve its cause, rerun that issue, and remove the label
+when handled. Theme submissions currently need a maintainer to supply image
+media in the record: the form has no media input. Manifest metadata ingestion
+is a separate registry change; this workflow does not ask for a listing file.
+
+npm package files come from one cached tarball per version, verified against
+npm's SHA-512 before reading. No package code runs, and files are read to stdout
+without extracting paths or links onto disk. Published asset URLs and the
+provenance-pinned repository source of author overviews are unchanged.
 
 ## Tokens and repository setup
 
 - Use the default `GITHUB_TOKEN`. Enable Actions' permission to create pull requests.
-- Both creation workflows run `npm test` and `node scripts/validate.ts --online --changed` inline after committing the candidate and before pushing or creating its PR. A failure stops that PR. The PR body records successful validation.
+- Both creation workflows run `npm test` and the shared checks behind `node scripts/validate.ts --online --changed` inline after committing the candidate and before pushing or creating its PR. A failure stops that PR. The PR body records successful validation.
 - `GITHUB_TOKEN` PRs do not trigger `validate.yml`. Do not require the Validate status check until bot PRs trigger it. Hub receives App webhooks, so this limitation does not prevent Hub review.
 - `PLUGINS_BOT_TOKEN` is optional. If set, both checkout/push and `gh` use it so downstream PR validation can run. Grant contents, issues, and pull-requests write access.
-- Creation workflows create their `submission` or `bump` label and `needs-maintainer` idempotently. No manual label bootstrap is needed; a manual or scheduled run provisions them before the first submission.
+- Creation workflows create their `submission` or `bump` label and `needs-maintainer` idempotently. No manual label bootstrap is needed; a manual run provisions them before the first submission.
 - Install the `paseo-bot` App on `getpaseo/plugins`. Main branch protection must allow that App to merge.
 - Require pull requests for main. Configure CODEOWNERS review for protected paths if desired; the file alone does not enable branch protection.
 - Enable GitHub Pages with GitHub Actions as its source.

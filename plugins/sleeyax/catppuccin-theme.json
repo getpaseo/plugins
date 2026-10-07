@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/sleeyax/paseo-plugins.git",
-    "commit": "e5ea056c6381acdbd554c7acd51e03c4bb40d160",
-    "tag": "catppuccin-theme-v0.1.0",
+    "commit": "c511fa81bebcf5fa1590f2b0dea75344c324148a",
+    "tag": "guided-review-v0.1.0",
     "pluginPath": "plugins/catppuccin-theme"
   },
   "repository": {
     "url": "https://github.com/sleeyax/paseo-plugins",
-    "commit": "e5ea056c6381acdbd554c7acd51e03c4bb40d160"
+    "commit": "c511fa81bebcf5fa1590f2b0dea75344c324148a"
   },
   "categories": [
     "themes"

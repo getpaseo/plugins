@@ -1,0 +1,28 @@
+{
+  "id": "sleeyax/catppuccin-theme",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/sleeyax/paseo-plugins.git",
+    "commit": "e5ea056c6381acdbd554c7acd51e03c4bb40d160",
+    "tag": "catppuccin-theme-v0.1.0",
+    "pluginPath": "plugins/catppuccin-theme"
+  },
+  "repository": {
+    "url": "https://github.com/sleeyax/paseo-plugins",
+    "commit": "e5ea056c6381acdbd554c7acd51e03c4bb40d160"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-07",
+  "submittedBy": "sleeyax",
+  "reviewedAt": "2026-10-07",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/sleeyax/paseo-plugins/e5ea056c6381acdbd554c7acd51e03c4bb40d160/plugins/catppuccin-theme/docs/screenshots/latte.png",
+      "https://raw.githubusercontent.com/sleeyax/paseo-plugins/e5ea056c6381acdbd554c7acd51e03c4bb40d160/plugins/catppuccin-theme/docs/screenshots/frappe.png",
+      "https://raw.githubusercontent.com/sleeyax/paseo-plugins/e5ea056c6381acdbd554c7acd51e03c4bb40d160/plugins/catppuccin-theme/docs/screenshots/macchiato.png",
+      "https://raw.githubusercontent.com/sleeyax/paseo-plugins/e5ea056c6381acdbd554c7acd51e03c4bb40d160/plugins/catppuccin-theme/docs/screenshots/mocha.png"
+    ]
+  }
+}

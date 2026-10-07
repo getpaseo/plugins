@@ -47,7 +47,8 @@ pin; `repository` is the browseable source and optional proven source commit.
 
 Humans edit categories and optional `listing` overrides (`name`, HTTPS PNG `icon`,
 HTTPS `media`). The bot writes artifact pins and review dates. The published
-index combines records with metadata from their pinned artifacts.
+index combines records with metadata from their pinned manifests. See
+[plugin metadata](#plugin-metadata) for fields and override precedence.
 
 Authors must keep `OVERVIEW.md` beside `paseo-plugin.json` in the repository at the
 pinned source commit. Git monorepos use `artifact.pluginPath`; npm monorepos use
@@ -98,21 +99,56 @@ contract is reviewed by a person.
 
 The detail document keeps its existing `readme` field. It publishes the pinned
 author `OVERVIEW.md`, or the registry import stopgap when author content is absent.
-With neither source it fails. `README.md`, `readme.md`, and `paseo-listing.json`
-readme overrides are never used for overview content.
+With neither source it fails. `README.md` and `readme.md` are never used for
+overview content.
 
-A plugin can ship a separate `paseo-listing.json` next to its strict manifest:
+## Plugin metadata
+
+Declare your display name, icon, screenshots, and demo videos in `paseo-plugin.json`:
 
 ```json
 {
+  "id": "example",
   "name": "Example",
-  "icon": "icon.png",
-  "media": ["https://example.com/demo.mp4", "https://example.com/screen.png"]
+  "description": "A short description of what the plugin does.",
+  "icon": "assets/icon.png",
+  "media": ["assets/screenshot.png", "https://example.com/demo.mp4"],
+  "requirements": { "paseo": ">=0.11.0" }
 }
 ```
 
-Relative icons resolve to the pinned artifact. Media entries are HTTPS image or video URLs;
-record overrides win over this file. Cards use the first image in media order.
+`name`, `icon`, and `media` are optional manifest fields. Include only assets
+that exist in your release. `icon` is a package-relative PNG path. Each `media`
+entry is a package-relative path or an HTTPS URL with an image extension
+(`png`, `jpg`, `jpeg`, `webp`, `gif`) or video extension (`mp4`, `webm`).
+SVG and URLs without a supported extension are not accepted by the registry.
+Paths use forward slashes and stay inside the plugin directory. For npm,
+include local asset files in the published package's `files` list.
+
+The registry reads the manifest from the pinned npm tarball or Git commit.
+Relative assets become URLs pointing to that version, under `pluginPath` for
+Git monorepos. Media keep their declared order; cards use the first image.
+Manifests declaring these fields require Paseo 0.11.0 or later.
+
+The existing record's `listing` values override the manifest **per field**:
+
+| Field | First choice | Otherwise |
+| --- | --- | --- |
+| Name | `listing.name` | Manifest `name`, then a humanized registry id |
+| Icon | `listing.icon` | Manifest `icon`, or no icon |
+| Media | `listing.media` | Manifest `media`, or an empty array |
+
+An explicit `listing.media: []` replaces all manifest media. The submission
+bot saves the issue title as `listing.name`. Maintainers can keep using the
+same overrides without changing existing records.
+
+The registry does not read `paseo-listing.json`. Move its metadata into the
+manifest when publishing a new release.
+
+Categories describe where a plugin is listed. Selecting **Themes** does not
+identify the plugin as a theme or trigger a screenshot requirement in the
+submission bot. The PR reviewer determines which screenshots are needed from
+what the plugin does, following [the review policy](REVIEW.md#content).
 
 ## Maintainers
 

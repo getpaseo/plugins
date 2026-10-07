@@ -20,7 +20,7 @@ export interface PluginRecord {
   submittedBy?: string;
   /** Date the pinned version was approved. */
   reviewedAt: string;
-  /** Overrides for packages that do not ship paseo-listing.json. */
+  /** Per-field overrides for metadata from the pinned paseo-plugin.json. */
   listing?: PluginListingOverrides;
 }
 

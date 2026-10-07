@@ -6,7 +6,7 @@ import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { test } from "node:test";
 
-test("validation requires an image on every theme record", (t) => {
+test("offline validation treats Themes as a category, not a plugin type", (t) => {
   const registry = mkdtempSync(join(tmpdir(), "theme-media-test-"));
   t.after(() => rmSync(registry, { recursive: true, force: true }));
   cpSync(fileURLToPath(new URL(".", import.meta.url)), join(registry, "scripts"), { recursive: true });
@@ -25,8 +25,7 @@ test("validation requires an image on every theme record", (t) => {
   };
   for (const listing of [undefined, { media: [] }, { media: ["https://example.test/demo.mp4"] }]) {
     const result = validate({ ...record, listing });
-    assert.notEqual(result.status, 0);
-    assert.match(result.stderr, /acme\/example: themes require at least one image/);
+    assert.equal(result.status, 0, result.stderr);
   }
   assert.equal(validate({ ...record, listing: { media: ["https://example.test/demo.webm", "https://example.test/screen.PNG?size=2"] } }).status, 0);
   assert.equal(validate({ ...record, categories: ["utils"] }).status, 0);

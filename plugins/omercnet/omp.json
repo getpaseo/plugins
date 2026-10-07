@@ -1,27 +1,27 @@
 {
   "id": "omercnet/omp",
+  "artifact": {
+    "kind": "npm",
+    "package": "@omercnet/paseo-omp",
+    "version": "1.3.0",
+    "resolved": "https://registry.npmjs.org/@omercnet/paseo-omp/-/paseo-omp-1.3.0.tgz",
+    "integrity": "sha512-XWhtFVbCZujr9trSQZWdfR5XqLuKtO10BR+o9vykNaR6Hwh0Siweom8mmokwqxscLXIp/yYfWlf2OBbY9WMpQQ=="
+  },
   "repository": {
     "url": "https://github.com/omercnet/paseo-plugins/tree/HEAD/paseo-omp",
-    "commit": "d7b3e654f364b5be72edf6fd1d914a3750b53082"
+    "commit": "8e8dfa1aebbe7c23673f344e75d93dfac91daba9"
   },
   "categories": [
     "providers"
   ],
   "submittedAt": "2026-09-13",
   "submittedBy": "omercnet",
-  "reviewedAt": "2026-09-13",
+  "reviewedAt": "2026-10-07",
   "listing": {
     "name": "OMP",
     "media": [
       "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/paseo-omp/docs/images/plugin-manager.png",
       "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/paseo-omp/docs/images/workspace-settings.png"
     ]
-  },
-  "artifact": {
-    "kind": "npm",
-    "package": "@omercnet/paseo-omp",
-    "version": "1.2.0",
-    "resolved": "https://registry.npmjs.org/@omercnet/paseo-omp/-/paseo-omp-1.2.0.tgz",
-    "integrity": "sha512-ueZede5D34hoNrdF4y6DBaomErA+hHcv+bcz0Sd6eArQKqF8L6ecKXdBe2tEZd3Ev8uQwxMHuiDQhMBx3q6gOw=="
   }
 }

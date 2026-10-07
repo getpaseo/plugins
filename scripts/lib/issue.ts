@@ -1,3 +1,4 @@
+import { AuthorError } from "./problems.ts";
 import { parseSubmissionSource, type SubmissionSource } from "./submission-source.ts";
 import type { Category } from "./categories.ts";
 
@@ -25,7 +26,7 @@ export function parseSubmissionIssue(body: string, categories: Category[]): Subm
   };
 
   const source = text("source");
-  if (!source) throw new Error("the issue has no plugin source");
+  if (!source) throw new AuthorError("The issue has no plugin source. Fill in Source with the public npm package or GitHub repository URL.");
 
   const labels = new Map(
     categories.map((category) => [category.label.toLowerCase(), category.slug]),
@@ -36,7 +37,11 @@ export function parseSubmissionIssue(body: string, categories: Category[]): Subm
   const slugs = checked
     .map((label) => labels.get(label.toLowerCase()))
     .filter((slug): slug is string => Boolean(slug));
-  if (slugs.length === 0) throw new Error("the issue has no category ticked");
+  if (slugs.length === 0) throw new AuthorError("The issue has no category ticked. Tick at least one category in the issue.");
 
-  return { source: parseSubmissionSource(source), categories: slugs };
+  try {
+    return { source: parseSubmissionSource(source), categories: slugs };
+  } catch (error) {
+    throw new AuthorError(`The Source field is invalid: ${(error as Error).message} Update Source in the issue.`);
+  }
 }

@@ -1,6 +1,7 @@
-import { createWriteStream } from "node:fs";
-import { pipeline } from "node:stream/promises";
-import { Readable } from "node:stream";
+import { writeFile } from "node:fs/promises";
+import { createHash } from "node:crypto";
+import { readPackageFile } from "./npm-artifact.ts";
+import { AuthorError } from "./problems.ts";
 
 export interface VersionDoc {
   name: string;
@@ -36,7 +37,6 @@ export interface NpmClient {
 }
 
 const REGISTRY = "https://registry.npmjs.org";
-const CDN = "https://cdn.jsdelivr.net/npm";
 const USER_AGENT = "paseo-plugins-registry";
 
 const RETRY_ATTEMPTS = 4;
@@ -62,18 +62,43 @@ export function createNpmClient(fetchImpl: typeof fetch = fetch): NpmClient {
     return (await response.json()) as T;
   }
 
-  return {
-    async packument(name) {
+  // A client owns one snapshot of metadata and bytes for each artifact. Concurrent
+  // reads share the same request; tarball diff consumers reuse these bytes too.
+  const metadata = new Map<string, Promise<Packument>>();
+  const downloads = new Map<string, Promise<Buffer>>();
+  const packages = new Map<string, Promise<Buffer>>();
+  function packument(name: string): Promise<Packument> {
+    if (!metadata.has(name)) metadata.set(name, (async () => {
       const doc = await getJson<Packument>(`${REGISTRY}/${name}`);
-      if (!doc) throw new Error(`npm package ${name} does not exist`);
+      if (!doc) throw new AuthorError(`npm package ${name} does not exist. Check the Source field or publish the package publicly on npm.`);
       return doc;
-    },
+    })());
+    return metadata.get(name)!;
+  }
+  function download(url: string): Promise<Buffer> {
+    if (!downloads.has(url)) downloads.set(url, (async () => {
+      const response = await get(url);
+      if (!response.ok) throw new Error(`${url} responded ${response.status}`);
+      return Buffer.from(await response.arrayBuffer());
+    })());
+    return downloads.get(url)!;
+  }
+  function artifact(name: string, version: string): Promise<Buffer> {
+    const key = `${name}@${version}`;
+    if (!packages.has(key)) packages.set(key, (async () => {
+      const doc = resolveVersion(await packument(name), version);
+      const bytes = await download(doc.dist.tarball);
+      const integrity = `sha512-${createHash("sha512").update(bytes).digest("base64")}`;
+      if (integrity !== doc.dist.integrity) throw new Error(`${key}: downloaded tarball integrity does not match npm`);
+      return bytes;
+    })());
+    return packages.get(key)!;
+  }
+
+  return {
+    packument,
     async file(name, version, path) {
-      const response = await get(`${CDN}/${name}@${version}/${path}`);
-      if (response.status === 404 || response.status === 403) return null;
-      if (!response.ok)
-        throw new Error(`jsDelivr ${name}@${version}/${path} responded ${response.status}`);
-      return response.text();
+      return readPackageFile(await artifact(name, version), path);
     },
     async provenance(name, version) {
       const encoded = name.replace("/", "%2F");
@@ -83,9 +108,7 @@ export function createNpmClient(fetchImpl: typeof fetch = fetch): NpmClient {
       return doc ? parseProvenance(doc) : null;
     },
     async tarball(url, destination) {
-      const response = await get(url);
-      if (!response.ok || !response.body) throw new Error(`${url} responded ${response.status}`);
-      await pipeline(Readable.fromWeb(response.body as never), createWriteStream(destination));
+      await writeFile(destination, await download(url));
     },
   };
 }
@@ -122,7 +145,7 @@ export function parseProvenance(doc: AttestationsDoc): Provenance | null {
 export function resolveVersion(packument: Packument, requested?: string): VersionDoc {
   const version = requested ?? packument["dist-tags"].latest;
   const doc = packument.versions[version];
-  if (!doc) throw new Error(`${packument.name}@${version} is not published`);
+  if (!doc) throw new AuthorError(`${packument.name}@${version} is not published. Publish a version and set the npm latest tag to it.`);
   return doc;
 }
 

@@ -2,13 +2,16 @@ name: Submission
 
 on:
   issues:
-    types: [opened, edited, labeled]
-  schedule:
-    - cron: "23 2,10,18 * * *"
+    types: [opened]
   workflow_dispatch:
+    inputs:
+      issue_number:
+        description: Open submission issue to process again
+        required: true
+        type: string
 
 concurrency:
-  group: submissions
+  group: submission-${{ github.event.issue.number || inputs.issue_number }}
   cancel-in-progress: false
 
 jobs:
@@ -39,16 +42,5 @@ jobs:
         # submit.ts runs npm test and validate --online --changed before pushing/creating a PR,
         # recording success in its body. GITHUB_TOKEN PRs do not trigger Validate.
         env:
-          EVENT_ISSUE: ${{ github.event.issue.number }}
-        shell: bash
-        run: |
-          if [ -n "$EVENT_ISSUE" ]; then
-            issues="$EVENT_ISSUE"
-          else
-            issues=$(gh api --paginate 'repos/{owner}/{repo}/issues?labels=submission&state=open&per_page=100' --jq '.[] | select(has("pull_request") | not) | .number')
-          fi
-          failed=0
-          for issue in $issues; do
-            ISSUE_NUMBER="$issue" node scripts/submit.ts || failed=1
-          done
-          exit "$failed"
+          ISSUE_NUMBER: ${{ github.event.issue.number || inputs.issue_number }}
+        run: node scripts/submit.ts

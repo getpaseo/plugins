@@ -10,7 +10,7 @@ export async function commitBumpForReview(input: {
   client: NpmClient;
   next: PluginRecord;
   version: string;
-  validate: () => string;
+  validate: () => string | Promise<string>;
   registryRoot?: string;
 }): Promise<{ note: string; validation: string }> {
   const { client, next, version, validate } = input;
@@ -33,7 +33,7 @@ export async function commitBumpForReview(input: {
   git(["commit", "-m", `Bump ${next.id} to ${version}`], options);
   let validation: string;
   try {
-    validation = validate();
+    validation = await validate();
   } catch {
     // Command errors can include local paths or credentials; details stay in the log.
     validation = "Inline validation failed. See the Bump workflow log.";

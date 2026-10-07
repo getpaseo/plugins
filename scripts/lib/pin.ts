@@ -1,3 +1,4 @@
+import { AuthorError } from "./problems.ts";
 import { isoDate } from "./dates.ts";
 import { type NpmClient, resolveVersion } from "./npm.ts";
 import type { PluginRecord } from "./record.ts";
@@ -21,14 +22,16 @@ export async function pinRecord(
   const doc = resolveVersion(packument, options.version);
   const manifest = await client.file(doc.name, doc.version, "paseo-plugin.json");
   if (manifest === null) {
-    throw new Error(
-      `${doc.name}@${doc.version} does not ship paseo-plugin.json, so it is not a Paseo plugin`,
+    throw new AuthorError(
+      `${doc.name}@${doc.version} does not ship paseo-plugin.json. Include it at the package root and publish a new version.`,
     );
   }
+  try { JSON.parse(manifest); }
+  catch { throw new AuthorError(`${doc.name}@${doc.version}: paseo-plugin.json is not valid JSON. Fix the file and publish a new version.`); }
   const provenance = await client.provenance(doc.name, doc.version);
   const source = parseRepository(doc.repository);
   if (provenance && source && !sameRepository(source.url, provenance.repositoryUrl)) {
-    throw new Error("Declared repository differs from npm provenance");
+    throw new AuthorError("The package repository differs from npm provenance. Correct package.json repository to match the repository used to publish, then publish a new version.");
   }
   const sourceUrl = provenance?.repositoryUrl ?? source?.url;
   const today = options.today ?? isoDate();
@@ -43,7 +46,7 @@ export async function pinRecord(
     : undefined;
 
   const owner = repository && githubOwner(repository.url)?.toLowerCase();
-  if (!owner) throw new Error("A GitHub source repository is required");
+  if (!owner) throw new AuthorError("A GitHub source repository is required. Set package.json repository to the public GitHub source repository and publish a new version.");
   const slug = submission.id.split("/").at(-1);
   if (submission.id.includes("/") && !submission.id.startsWith(`${owner}/`))
     throw new Error("ID owner must match repository owner");

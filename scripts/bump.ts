@@ -76,7 +76,7 @@ for (const record of records) {
     client,
     next,
     version: latest,
-    validate: validateForReview,
+    validate: () => validateForReview({ client }),
   });
   git(["push", "--force", "--set-upstream", "origin", branch]);
   gh([

@@ -1,6 +1,12 @@
 import assert from "node:assert/strict";
-import { test } from "node:test";
-import { authorOf, parseProvenance } from "./npm.ts";
+import { test, type TestContext } from "node:test";
+import { authorOf, parseProvenance, createNpmClient } from "./npm.ts";
+
+import { execFileSync } from "node:child_process";
+import { createHash } from "node:crypto";
+import { mkdtempSync, mkdirSync, writeFileSync, rmSync, readFileSync, symlinkSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
 
 function envelope(predicateType: string, statement: unknown) {
   return {
@@ -83,4 +89,55 @@ test("prefers the declared author name and falls back to the npm user", () => {
     }),
     { npm: "gpambrozio", name: "gpambrozio" },
   );
+});
+
+// Real npm-shaped archives, served through the client's HTTP interface.
+function packageFixture(t: TestContext, integrity?: string) {
+  const root = mkdtempSync(join(tmpdir(), "npm-artifact-"));
+  t.after(() => rmSync(root, { recursive: true, force: true }));
+  mkdirSync(join(root, "package"));
+  writeFileSync(join(root, "package/paseo-plugin.json"), '{"id":"example"}');
+  writeFileSync(join(root, "package/OVERVIEW.md"), "An overview from the package.");
+  symlinkSync("/etc/passwd", join(root, "package/link"));
+  const archive = execFileSync("tar", ["-czf", "-", "-C", root, "package"]);
+  const url = "https://registry.npmjs.org/example/-/example-1.0.0.tgz";
+  const doc = { name: "example", version: "1.0.0", dist: {
+    tarball: url, integrity: integrity ?? `sha512-${createHash("sha512").update(archive).digest("base64")}`,
+  } };
+  const requests: string[] = [];
+  const client = createNpmClient(async (input) => {
+    const target = String(input);
+    requests.push(target);
+    if (target === url) return new Response(archive);
+    if (target === "https://registry.npmjs.org/example") return Response.json({
+      name: "example", "dist-tags": { latest: "1.0.0" }, versions: { "1.0.0": doc }, time: {},
+    });
+    return new Response("CDN unavailable", { status: 502 });
+  });
+  return { client, root, archive, url, requests };
+}
+
+test("package reads share one verified npm tarball, without contacting a CDN", async (t) => {
+  const f = packageFixture(t);
+  const files = await Promise.all([
+    f.client.file("example", "1.0.0", "paseo-plugin.json"),
+    f.client.file("example", "1.0.0", "OVERVIEW.md"),
+    f.client.file("example", "1.0.0", "absent.md"),
+  ]);
+  assert.deepEqual(files, ['{"id":"example"}', "An overview from the package.", null]);
+  const destination = join(f.root, "download.tgz");
+  await f.client.tarball(f.url, destination);
+  assert.deepEqual(readFileSync(destination), f.archive);
+  assert.deepEqual(f.requests.sort(), ["https://registry.npmjs.org/example", f.url].sort());
+});
+
+test("package bytes must match npm's SHA-512 before any file is read", async (t) => {
+  const f = packageFixture(t, "sha512-wrong");
+  await assert.rejects(f.client.file("example", "1.0.0", "paseo-plugin.json"), /integrity/i);
+});
+
+test("package reads reject traversal and links instead of reading the host filesystem", async (t) => {
+  const f = packageFixture(t);
+  await assert.rejects(f.client.file("example", "1.0.0", "../outside"), /path/i);
+  await assert.rejects(f.client.file("example", "1.0.0", "link"), /regular file/i);
 });

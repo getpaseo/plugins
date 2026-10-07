@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-plugin-tunnel",
-    "version": "0.3.2",
-    "resolved": "https://registry.npmjs.org/paseo-plugin-tunnel/-/paseo-plugin-tunnel-0.3.2.tgz",
-    "integrity": "sha512-y+L4gbLnYE8qCA3BQEr2sPlVk3+zcAqSRPs6skY6lHzF5gLMaFINLJSod+4zzTTyHp0sNcJodk0G7QsHDb8+Qw=="
+    "version": "0.3.3",
+    "resolved": "https://registry.npmjs.org/paseo-plugin-tunnel/-/paseo-plugin-tunnel-0.3.3.tgz",
+    "integrity": "sha512-xoCAoTnhMn2B6GXnWFIz+iKlI+4h+XBFwWK7tFErpGUi5od7PgLNEupcFYL8SI3unpN3c91d537z+R88OWKBjA=="
   },
   "repository": {
     "url": "https://github.com/lyhu/paseo-plugin-tunnel"
@@ -15,8 +15,8 @@
     "extras"
   ],
   "submittedAt": "2026-10-06",
-  "reviewedAt": "2026-10-06",
   "submittedBy": "lyhu",
+  "reviewedAt": "2026-10-07",
   "listing": {
     "media": []
   }

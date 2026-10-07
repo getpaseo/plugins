@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-workspace-snippets",
-    "version": "0.2.4",
-    "resolved": "https://registry.npmjs.org/paseo-workspace-snippets/-/paseo-workspace-snippets-0.2.4.tgz",
-    "integrity": "sha512-VnPmS8NmXVJjcvbOz7MuMAfFo6bf2L6SDjfaadLUOuFbjd+COIa47QtczT9CMmB7+Kmc0FlhMc4u+fb5ou2n/g=="
+    "version": "0.2.6",
+    "resolved": "https://registry.npmjs.org/paseo-workspace-snippets/-/paseo-workspace-snippets-0.2.6.tgz",
+    "integrity": "sha512-qGGF62XM1DuXloF9fbKDJyg9S0KvYSXgiIJINawScpVXDWX/pLDefy5EjbqXsakxrc2nFcVpZfwxuj/nTh/I9g=="
   },
   "repository": {
     "url": "https://github.com/lefos13/paseo-workspace-snippets"
@@ -17,7 +17,7 @@
   ],
   "submittedAt": "2026-10-01",
   "submittedBy": "lefos13",
-  "reviewedAt": "2026-10-01",
+  "reviewedAt": "2026-10-07",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/lefos13/paseo-workspace-snippets/671ae0b420ae66b65b5efc8890efad06859de50e/images/01-snippets-screen.png",

@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/yannelli/paseo-prompt-manager.git",
-    "commit": "f6a724bf56b85adc42373ea68e2b6f46ce6d11b0",
-    "tag": "v0.3.0"
+    "commit": "2338a9a605f2aaa2412f5ec73f4ae735747f3984",
+    "tag": "v0.4.0"
   },
   "repository": {
     "url": "https://github.com/yannelli/paseo-prompt-manager",
-    "commit": "f6a724bf56b85adc42373ea68e2b6f46ce6d11b0"
+    "commit": "2338a9a605f2aaa2412f5ec73f4ae735747f3984"
   },
   "categories": [
     "utils",
@@ -16,7 +16,7 @@
     "git"
   ],
   "submittedAt": "2026-09-10",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-10-07",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/yannelli/paseo-prompt-manager/f6a724bf56b85adc42373ea68e2b6f46ce6d11b0/docs/images/github-banner.png",

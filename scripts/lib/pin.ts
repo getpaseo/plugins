@@ -1,3 +1,4 @@
+import { readArtifactFiles } from "./artifact-files.ts";
 import { AuthorError } from "./problems.ts";
 import { isoDate } from "./dates.ts";
 import { type NpmClient, resolveVersion } from "./npm.ts";
@@ -20,7 +21,11 @@ export async function pinRecord(
 ): Promise<PluginRecord> {
   const packument = await client.packument(submission.package);
   const doc = resolveVersion(packument, options.version);
-  const manifest = await client.file(doc.name, doc.version, "paseo-plugin.json");
+  const artifact: PluginRecord["artifact"] = {
+    kind: "npm", package: doc.name, version: doc.version,
+    resolved: doc.dist.tarball, integrity: doc.dist.integrity,
+  };
+  const { manifest } = await readArtifactFiles(client, artifact);
   if (manifest === null) {
     throw new AuthorError(
       `${doc.name}@${doc.version} does not ship paseo-plugin.json. Include it at the package root and publish a new version.`,
@@ -52,13 +57,7 @@ export async function pinRecord(
     throw new Error("ID owner must match repository owner");
   return {
     id: `${owner}/${slug}`,
-    artifact: {
-      kind: "npm",
-      package: doc.name,
-      version: doc.version,
-      resolved: doc.dist.tarball,
-      integrity: doc.dist.integrity,
-    },
+    artifact,
     repository: repository!,
     categories: submission.categories,
     submittedAt: options.submittedAt ?? today,

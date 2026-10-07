@@ -50,10 +50,11 @@ HTTPS `media`). The bot writes artifact pins and review dates. The published
 index combines records with metadata from their pinned manifests. See
 [plugin metadata](#plugin-metadata) for fields and override precedence.
 
-Authors must keep `OVERVIEW.md` beside `paseo-plugin.json` in the repository at the
-pinned source commit. Git monorepos use `artifact.pluginPath`; npm monorepos use
-the pinned package's `repository.directory` and proven `repository.commit`.
-The author owns this overview.
+Authors must ship `OVERVIEW.md` beside `paseo-plugin.json` in the submitted artifact.
+For npm, include both files at the published package root. The registry reads them
+from the verified tarball at the pinned version; repository metadata and provenance
+are not needed to read package files. For GitHub, include both files at the pinned
+commit, under `artifact.pluginPath` for a monorepo. The author owns this overview.
 
 Approved imports can temporarily use `plugins/<owner>/<slug>.md` in the registry.
 An unchanged imported artifact keeps this exception while its stopgap exists.

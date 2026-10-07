@@ -5,6 +5,7 @@ import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { test, type TestContext } from "node:test";
+import { readArtifactFiles } from "./artifact-files.ts";
 import { resolvePlugin } from "./listing.ts";
 import { createNpmClient } from "./npm.ts";
 import type { PluginRecord } from "./record.ts";
@@ -25,6 +26,10 @@ function fixture(t: TestContext, kind: "npm" | "git", manifest: unknown, listing
   const remote = "https://github.com/acme/manifest.git";
   const git = (...args: string[]) => execFileSync("git", args, { cwd: root, encoding: "utf8" }).trim();
   git("init", "-q");
+  if (kind === "npm") {
+    writeFileSync(join(plugin, "paseo-plugin.json"), '{"name":"Repository name"}');
+    writeFileSync(join(plugin, "OVERVIEW.md"), "Repository overview.");
+  }
   git("add", ".");
   git("-c", "user.name=Test", "-c", "user.email=test@example.com", "commit", "-qm", "published");
   const commit = git("rev-parse", "HEAD");
@@ -41,6 +46,7 @@ function fixture(t: TestContext, kind: "npm" | "git", manifest: unknown, listing
     if (previous[i] === undefined) delete process.env[key]; else process.env[key] = previous[i];
   }));
   writeFileSync(join(plugin, "paseo-plugin.json"), JSON.stringify(manifest));
+  writeFileSync(join(plugin, "OVERVIEW.md"), "A theme for focused work.");
   const archive = execFileSync("tar", ["-czf", "-", "-C", root, pluginPath]);
   const doc = { name: "@acme/example", version: "1.0.0", description: "Package description", dist: {
     tarball: "https://registry.npmjs.org/example/-/example-1.0.0.tgz",
@@ -66,7 +72,7 @@ function fixture(t: TestContext, kind: "npm" | "git", manifest: unknown, listing
     : `https://github.com/acme/manifest/raw/${commit}/${pluginPath}/`;
   const detail = () => resolvePlugin(client, record, "Imported overview");
   const validate = () => validateArtifact(client, record, { previous: record, registryOverview: "Imported overview" });
-  return { record, detail, validate, base };
+  return { record, client, detail, validate, base };
 }
 
 for (const kind of ["npm", "git"] as const) {
@@ -76,6 +82,7 @@ for (const kind of ["npm", "git"] as const) {
       media: ["assets/demo.mp4", "assets/screen shot.PNG"], futureField: true,
     });
     const detail = await f.detail();
+    assert.equal(detail.readme, "A theme for focused work.");
     assert.equal(detail.name, "Author name");
     assert.equal(detail.icon, `${f.base}assets/icon.png`);
     assert.deepEqual(detail.media, [`${f.base}assets/demo.mp4`, `${f.base}assets/screen%20shot.PNG`]);
@@ -141,4 +148,23 @@ for (const kind of ["npm", "git"] as const) {
       await assert.rejects(f.validate(), (error: Error) => error instanceof AuthorError && pattern.test(error.message));
     });
   }
+}
+
+test("npm file reads need only the artifact pin, without repository metadata or provenance", async (t) => {
+  const { client, record } = fixture(t, "npm", { name: "Package name" });
+  const files = await readArtifactFiles(client, record.artifact);
+  assert.deepEqual(files, {
+    manifest: '{"name":"Package name"}',
+    overview: "A theme for focused work.",
+  });
+});
+
+for (const field of ["integrity", "resolved"] as const) {
+  test(`npm rejects a changed ${field} pin before returning package files`, async (t) => {
+    const { client, record } = fixture(t, "npm", { name: "Package name" });
+    assert.equal(record.artifact.kind, "npm");
+    await assert.rejects(readArtifactFiles(client, {
+      ...record.artifact, [field]: "changed",
+    }), /differs from the pinned record/);
+  });
 }

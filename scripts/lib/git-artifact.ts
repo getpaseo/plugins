@@ -6,24 +6,13 @@ import { run } from "./shell.ts";
 import type { PluginRecord } from "./record.ts";
 import { parseArtifact } from "./record.ts";
 import { deriveId } from "./id.ts";
-import type { RepositorySource } from "./repository.ts";
 import { parseSubmissionSource } from "./submission-source.ts";
 import { isoDate } from "./dates.ts";
 
-export function withGitArtifact<T>(record: PluginRecord, consume: (directory: string) => T): T {
+export function withGitArtifact<T>(record: Pick<PluginRecord, "artifact">, consume: (directory: string) => T): T {
   const artifact = record.artifact;
   if (artifact.kind !== "git") throw new Error("Expected git artifact");
   return withCheckout(artifact, consume);
-}
-
-/** Read a source repository at an exact reviewed commit, without running its code. */
-export function withRepositoryCommit<T>(
-  source: RepositorySource,
-  commit: string,
-  consume: (directory: string) => T,
-): T {
-  if (!/^[0-9a-f]{40}$/.test(commit)) throw new Error("Expected a full repository commit");
-  return withCheckout({ remote: source.url, commit, pluginPath: source.directory }, consume);
 }
 
 function withCheckout<T>(

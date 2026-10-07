@@ -1,6 +1,5 @@
-import { readOptional, withGitArtifact } from "./git-artifact.ts";
+import type { ArtifactFiles } from "./artifact-files.ts";
 import { mediaKind } from "./media.ts";
-import { type NpmClient, resolveVersion } from "./npm.ts";
 import { AuthorError } from "./problems.ts";
 import type { PluginRecord } from "./record.ts";
 
@@ -14,21 +13,12 @@ export interface PluginMetadata {
 /** Read metadata at the artifact pin and apply the registry's per-field overrides.
  * Categories do not determine a plugin's type or its content requirements.
  */
-export async function resolveMetadata(client: NpmClient, record: PluginRecord): Promise<PluginMetadata> {
+export function resolveMetadata(files: ArtifactFiles, record: PluginRecord): PluginMetadata {
   const artifact = record.artifact;
-  if (artifact.kind === "git") {
-    return withGitArtifact(record, (directory) => {
-      const base = `${artifact.remote.replace(/\.git$/, "")}/raw/${artifact.commit}/${artifact.pluginPath ? `${encodePath(artifact.pluginPath)}/` : ""}`;
-      return readMetadata(readOptional(directory, "paseo-plugin.json"), record, base);
-    });
-  }
-  const doc = resolveVersion(await client.packument(artifact.package), artifact.version);
-  if (doc.dist.integrity !== artifact.integrity || doc.dist.tarball !== artifact.resolved) {
-    throw new Error(`${artifact.package}@${artifact.version} integrity on npm differs from the pinned record`);
-  }
-  const manifest = await client.file(artifact.package, artifact.version, "paseo-plugin.json");
-  const base = `https://cdn.jsdelivr.net/npm/${artifact.package}@${artifact.version}/`;
-  return readMetadata(manifest, record, base);
+  const base = artifact.kind === "git"
+    ? `${artifact.remote.replace(/\.git$/, "")}/raw/${artifact.commit}/${artifact.pluginPath ? `${encodePath(artifact.pluginPath)}/` : ""}`
+    : `https://cdn.jsdelivr.net/npm/${artifact.package}@${artifact.version}/`;
+  return readMetadata(files.manifest, record, base);
 }
 
 function readMetadata(text: string | null, record: PluginRecord, base: string): PluginMetadata {

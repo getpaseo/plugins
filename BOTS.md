@@ -36,8 +36,9 @@ the PR reviewer decides which screenshots the plugin needs under REVIEW.md.
 
 npm package files come from one cached tarball per version, verified against
 npm's SHA-512 before reading. No package code runs, and files are read to stdout
-without extracting paths or links onto disk. Published asset URLs and the
-provenance-pinned repository source of author overviews are unchanged.
+without extracting paths or links onto disk. npm manifests and overviews come
+from that tarball; GitHub files come from the pinned commit and plugin directory.
+Published asset URLs still use jsDelivr for npm and raw GitHub URLs for Git.
 
 ## Tokens and repository setup
 

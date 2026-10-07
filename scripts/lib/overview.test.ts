@@ -13,7 +13,7 @@ import { run } from "./shell.ts";
 import { validateArtifact } from "./validate-artifact.ts";
 
 for (const kind of ["npm", "git"] as const) {
-  test(`${kind}: pinned repository overview is required except for unchanged or approved new imports`, async () => {
+  test(`${kind}: pinned artifact overview is required except for unchanged or approved new imports`, async () => {
     const directory = mkdtempSync(join(tmpdir(), "registry-required-overview-"));
     const pluginPath = "packages/example";
     const plugin = join(directory, pluginPath);
@@ -45,16 +45,18 @@ for (const kind of ["npm", "git"] as const) {
         dist: { integrity: "sha512-YWJj", tarball: "https://registry.npmjs.org/example.tgz" },
       };
       let provenanceCommit = commit;
+      const overviews = new Map<string, string | null>([[doc.version, "Tarball overview"]]);
+      const expectedOverview = kind === "npm" ? "Tarball overview" : "Author overview";
       const client: NpmClient = {
         async packument() {
-          return { name: doc.name, "dist-tags": { latest: "9.0.0" }, time: { [doc.version]: "2026-10-06" }, versions: { [doc.version]: doc } };
+          return { name: doc.name, "dist-tags": { latest: "9.0.0" }, time: { [doc.version]: "2026-10-06" }, versions: Object.fromEntries([...overviews.keys()].map(version => [version, { ...doc, version }])) };
         },
         async file(_name, version, path) {
-          assert.equal(version, doc.version);
+          assert.ok(overviews.has(version));
           // Published README/OVERVIEW content is deliberately different from the repository.
           return path === "paseo-plugin.json" ? '{"id":"example"}'
             : path === "paseo-listing.json" ? '{"readme":"README.md"}'
-            : "Wrong tarball content";
+            : overviews.get(version)!;
         },
         async provenance() { return { repositoryUrl: remote.replace(/\.git$/, ""), commit: provenanceCommit }; },
         async tarball() { throw new Error("Plugin artifacts must not execute"); },
@@ -69,9 +71,9 @@ for (const kind of ["npm", "git"] as const) {
         artifact: kind === "git" ? { kind, remote, commit, tag: "v1", pluginPath }
           : { kind, package: doc.name, version: doc.version, resolved: doc.dist.tarball, integrity: doc.dist.integrity },
       };
-      assert.equal(await readAuthorOverview(client, record), "Author overview");
+      assert.equal(await readAuthorOverview(client, record), expectedOverview);
       const published = await resolvePlugin(client, record, "Registry stopgap");
-      assert.equal(published.readme, "Author overview");
+      assert.equal(published.readme, expectedOverview);
       assert.equal(published.icon, record.listing!.icon);
       assert.deepEqual(published.media, record.listing!.media);
       assert.equal(published.publishedAt, "2026-09-20T00:00:00.000Z");
@@ -81,17 +83,25 @@ for (const kind of ["npm", "git"] as const) {
       assert.deepEqual(withMedia.media, media);
       assert.equal("screenshots" in withMedia, false);
       assert.deepEqual(await validateArtifact(client, record), []);
+      if (record.artifact.kind === "npm") {
+        overviews.set("2.0.0", null);
+        // A missing package file must not fall back to the repository, which still has it.
+        assert.equal(await readAuthorOverview(client, {
+          ...record, artifact: { ...record.artifact, version: "2.0.0" },
+        }), null);
+      }
       rmSync(join(plugin, "OVERVIEW.md"));
       const absentCommit = pin("v2");
+      overviews.set("2.0.0", null);
       provenanceCommit = absentCommit;
       const absent: PluginRecord = {
         ...record, repository: { ...record.repository, commit: absentCommit },
         artifact: kind === "git" ? { ...record.artifact, kind, remote, commit: absentCommit, tag: "v2", pluginPath }
-          : { kind, package: doc.name, version: doc.version, resolved: doc.dist.tarball, integrity: doc.dist.integrity },
+          : { kind, package: doc.name, version: "2.0.0", resolved: doc.dist.tarball, integrity: doc.dist.integrity },
       };
       // The old pin must still read its own overview after HEAD loses it.
-      assert.equal(await readAuthorOverview(client, record), "Author overview");
-      assert.equal((await resolvePlugin(client, record, "Registry stopgap")).readme, "Author overview");
+      assert.equal(await readAuthorOverview(client, record), expectedOverview);
+      assert.equal((await resolvePlugin(client, record, "Registry stopgap")).readme, expectedOverview);
       assert.equal((await resolvePlugin(client, absent, "Registry stopgap")).readme, "Registry stopgap");
       assert.equal(await readAuthorOverview(client, absent), null);
       await assert.rejects(resolvePlugin(client, absent), /OVERVIEW.md.*required/);
@@ -109,6 +119,7 @@ for (const kind of ["npm", "git"] as const) {
         writeFileSync(join(plugin, "OVERVIEW.md"), command);
         const invalidCommit = pin(`invalid-${index}`);
         provenanceCommit = invalidCommit;
+        overviews.set("2.0.0", command);
         const invalid = { ...absent, repository: { ...absent.repository, commit: invalidCommit }, artifact: kind === "git" ? { ...absent.artifact, kind, remote, commit: invalidCommit, tag: `invalid-${index}`, pluginPath } : absent.artifact };
         await assert.rejects(resolvePlugin(client, invalid, "Registry stopgap"), /OVERVIEW.md.*install commands/);
         await assert.rejects(validateArtifact(client, invalid, { previous: invalid, registryOverview: "Registry stopgap" }), /OVERVIEW.md.*install commands/);

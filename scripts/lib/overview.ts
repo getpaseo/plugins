@@ -1,7 +1,7 @@
 import { AuthorError } from "./problems.ts";
-import { readOptional, withGitArtifact, withRepositoryCommit } from "./git-artifact.ts";
-import { type NpmClient, resolveVersion } from "./npm.ts";
-import { parseRepository } from "./repository.ts";
+import { readOptional } from "./git-artifact.ts";
+import type { NpmClient } from "./npm.ts";
+import { readArtifactFiles } from "./artifact-files.ts";
 import { type PluginRecord, RECORDS_DIR } from "./record.ts";
 
 /** Registry stopgap for plugins without an author-owned overview. */
@@ -23,19 +23,13 @@ export function validateOverview(overview: string | null, source: string): strin
 
 /** The author's OVERVIEW.md as validate resolves it for this record, null when absent. */
 export async function readAuthorOverview(client: NpmClient, record: PluginRecord): Promise<string | null> {
-  const read = (directory: string) =>
-    validateOverview(readOptional(directory, "OVERVIEW.md"), `${record.id}/OVERVIEW.md`);
-  if (record.artifact.kind === "git") return withGitArtifact(record, read);
-  if (!record.repository.commit) return null;
-  const doc = resolveVersion(await client.packument(record.artifact.package), record.artifact.version);
-  const source = parseRepository(doc.repository);
-  if (!source) throw new AuthorError(`${record.id}: pinned npm version has no source repository. Set package.json repository to the public source repository and publish a new version.`);
-  return withRepositoryCommit(source, record.repository.commit, read);
+  const files = await readArtifactFiles(client, record.artifact);
+  return validateOverview(files.overview, `${record.id}/OVERVIEW.md`);
 }
 
 /** The existing protocol field contains only an author overview or an import stopgap. */
 export function requireOverview(author: string | null, registry: string | null, id: string): string {
   const overview = author ?? registry;
-  if (overview === null) throw new AuthorError(`${id}/OVERVIEW.md is required. Add OVERVIEW.md beside paseo-plugin.json in the source repository and publish a new release. For npm submissions, publish with provenance so the registry can verify the source commit, or submit the tagged GitHub repository instead.`);
+  if (overview === null) throw new AuthorError(`${id}/OVERVIEW.md is required. Add OVERVIEW.md beside paseo-plugin.json in the submitted artifact and publish a new release. For npm, include it at the published package root; for GitHub, include it in the plugin directory at the pinned commit.`);
   return overview;
 }

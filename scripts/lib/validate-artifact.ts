@@ -1,5 +1,6 @@
+import { readArtifactFiles } from "./artifact-files.ts";
 import { resolveMetadata } from "./metadata.ts";
-import { readAuthorOverview, requireOverview, validateOverview } from "./overview.ts";
+import { requireOverview, validateOverview } from "./overview.ts";
 import type { NpmClient } from "./npm.ts";
 import { parseArtifact, type PluginRecord } from "./record.ts";
 
@@ -10,7 +11,8 @@ export async function validateArtifact(
   context: { previous?: PluginRecord | null; registryOverview?: string | null; allowNewImport?: boolean } = {},
 ): Promise<string[]> {
   const problems: string[] = [];
-  const author = await readAuthorOverview(client, record);
+  const files = await readArtifactFiles(client, record.artifact);
+  const author = validateOverview(files.overview, `${record.id}/OVERVIEW.md`);
   const previous = context.previous;
   const unchanged = previous &&
     JSON.stringify(parseArtifact(previous.artifact)) === JSON.stringify(parseArtifact(record.artifact)) &&
@@ -18,7 +20,7 @@ export async function validateArtifact(
   const imported = unchanged || (!previous && context.allowNewImport);
   const registry = validateOverview(context.registryOverview ?? null, `${record.id}.md`);
   requireOverview(author, imported ? registry : null, record.id);
-  await resolveMetadata(client, record);
+  resolveMetadata(files, record);
   if (record.artifact.kind === "git") return problems;
   const artifact = record.artifact;
   if (record.repository?.commit) {

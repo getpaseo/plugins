@@ -123,9 +123,10 @@ overview is read inside Paseo, where the install command already sits at the top
 page, by someone deciding whether to install.
 
 `OVERVIEW.md` next to `paseo-plugin.json` is required. A submission or a bump whose
-repository has no `OVERVIEW.md` at the pinned commit fails validation and gets changes
-requested naming the file. Records imported from paseo.cafe are the exception: they carry
-one written at import at `plugins/<owner>/<slug>.md`, ending with the line
+pinned artifact has no `OVERVIEW.md` fails validation and gets changes requested
+naming the file. npm reads the verified tarball at the pinned version; GitHub reads
+the plugin directory at the pinned commit. Records imported from paseo.cafe are
+the exception: they carry one written at import at `plugins/<owner>/<slug>.md`, ending with the line
 `*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/<slug>).*`.
 The author may replace that file by pull request, and the author's own `OVERVIEW.md` takes
 over on the first bump, which removes the registry copy.

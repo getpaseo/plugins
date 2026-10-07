@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/sleeyax/paseo-plugins.git",
-    "commit": "e5ea056c6381acdbd554c7acd51e03c4bb40d160",
-    "tag": "catppuccin-theme-v0.1.0",
+    "commit": "41ff25de85931953ace4daa1a7923e20823514c5",
+    "tag": "discord-rich-presence-v0.1.0",
     "pluginPath": "plugins/catppuccin-theme"
   },
   "repository": {
     "url": "https://github.com/sleeyax/paseo-plugins",
-    "commit": "e5ea056c6381acdbd554c7acd51e03c4bb40d160"
+    "commit": "41ff25de85931953ace4daa1a7923e20823514c5"
   },
   "categories": [
     "themes"

@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "@xpufx/paseo-slash",
-    "version": "0.1.4",
-    "resolved": "https://registry.npmjs.org/@xpufx/paseo-slash/-/paseo-slash-0.1.4.tgz",
-    "integrity": "sha512-ggUW0eSN0uEgVvxwhhzjSxsn5LKsoG4tgdErDNvUa135KcGXdHm6vHCuR9qFEyduqcHtXkI0iLcKgrPUqAi2gw=="
+    "version": "0.1.5",
+    "resolved": "https://registry.npmjs.org/@xpufx/paseo-slash/-/paseo-slash-0.1.5.tgz",
+    "integrity": "sha512-MEDS0FUhmdTzb9paqY0FM3T07ZVI7jNfFHQLQ4+9IAt8CGrJIuAV7/mMDbYJgGED16FnsqRJWWK1mgxAPXkUhQ=="
   },
   "repository": {
     "url": "https://github.com/xpufx/paseo"

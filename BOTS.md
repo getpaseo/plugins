@@ -30,9 +30,9 @@ and the need to ask a maintainer for a rerun. Network, tooling, and registry
 failures keep their diagnostics in the workflow log and job summary and add
 `needs-maintainer`; they do not post an error comment on the author's issue.
 Inspect the failed run, resolve its cause, rerun that issue, and remove the label
-when handled. Theme submissions currently need a maintainer to supply image
-media in the record: the form has no media input. Manifest metadata ingestion
-is a separate registry change; this workflow does not ask for a listing file.
+when handled. Submission reads metadata from the pinned `paseo-plugin.json`
+and preserves record overrides. Categories do not trigger content requirements;
+the PR reviewer decides which screenshots the plugin needs under REVIEW.md.
 
 npm package files come from one cached tarball per version, verified against
 npm's SHA-512 before reading. No package code runs, and files are read to stdout

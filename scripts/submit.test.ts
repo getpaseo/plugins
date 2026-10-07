@@ -194,15 +194,13 @@ test("missing author overview reaches the author with a release instruction", (t
   assert.doesNotMatch(comment, /Command failed|Edit the issue to fix it/);
 });
 
-test("theme metadata unsupported by the form is routed to maintainers without blaming the author", (t) => {
+test("a submission categorized as Themes reaches PR review without screenshots", (t) => {
   const f = fixture(t, "github:acme/example:plugins/review");
   writeFileSync(f.issueFile, JSON.stringify({ ...f.issue, body: f.issue.body.replace("- [ ] Themes", "- [x] Themes") }));
   const result = f.run();
-  assert.equal(result.status, 1);
-  assert.equal(f.calls().some((args) => args[1] === "comment"), false);
-  assert.equal(f.calls().some((args) => args.includes("--add-label") && args.includes("needs-maintainer")), true);
-  assert.match(result.stderr, /image/i);
-  assert.match(readFileSync(f.summaryFile, "utf8"), /image.*maintainer/i);
+  assert.equal(result.status, 0, result.stderr);
+  assert.equal(f.calls().some((args) => args[0] === "pr" && args[1] === "create"), true);
+  assert.equal(f.calls().some((args) => args.includes("needs-maintainer")), false);
 });
 
 test("infrastructure failure is logged and labeled, without asking the author to edit", (t) => {

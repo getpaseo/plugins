@@ -4,7 +4,7 @@ import { readFeatured } from "./featured.ts";
 import { createNpmClient, type NpmClient } from "./npm.ts";
 import { readOverview } from "./overview.ts";
 import { readRecords } from "./record.ts";
-import { checkMediaUrls, mediaKind } from "./media.ts";
+import { checkMediaUrls } from "./media.ts";
 import { git } from "./shell.ts";
 
 export class RegistryValidationError extends Error {
@@ -28,12 +28,6 @@ export async function validateRegistry(options: {
   const known = categorySlugs(readCategories());
   const records = readRecords(known);
   readFeatured(records);
-  const themesWithoutImages = records.filter((record) =>
-    record.categories.includes("themes") && !record.listing?.media?.some((url) => mediaKind(url) === "image"),
-  );
-  if (themesWithoutImages.length) {
-    throw new Error(themesWithoutImages.map((record) => `${record.id}: themes require at least one image. A maintainer must supply record media; the submission form does not collect images.`).join("\n"));
-  }
   for (const record of records) readOverview(record.id);
   console.log(`${records.length} record(s) are well-formed`);
   if (!online) return;

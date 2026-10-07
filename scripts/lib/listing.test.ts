@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { mergeListing, parseListingFile, resolvePlugin } from "./listing.ts";
-import type { VersionDoc } from "./npm.ts";
+import { resolvePlugin } from "./listing.ts";
+import type { NpmClient, VersionDoc } from "./npm.ts";
 import type { PluginRecord } from "./record.ts";
 
 const doc: VersionDoc = {
@@ -36,57 +36,22 @@ const record: PluginRecord = {
   reviewedAt: "2026-10-03",
 };
 
-test("assets in the package resolve to the pinned version on the CDN", () => {
-  const plugin = mergeListing({
-    record,
-    doc,
-    listingFile: parseListingFile(
-      JSON.stringify({
-        name: "Dracula",
-        icon: "icon.png",
-        media: ["https://x.test/a.mp4", "https://x.test/b.png"],
-      }),
-    ),
-    readme: "# Dracula\n",
-    installs: 42,
-  });
+test("publication preserves author, overview, and review dates", async () => {
+  const client: NpmClient = {
+    async packument() { return { name: doc.name, "dist-tags": { latest: doc.version }, versions: { [doc.version]: doc }, time: {} }; },
+    async file() { return '{"name":"Dracula"}'; },
+    async provenance() { return null; },
+    async tarball() { throw new Error("Not needed"); },
+  };
+  const plugin = await resolvePlugin(client, { ...record, repository: { url: record.repository.url } }, "Overview.");
   assert.equal(plugin.name, "Dracula");
-  assert.equal(plugin.icon, "https://cdn.jsdelivr.net/npm/@omercnet/paseo-dracula@1.2.0/icon.png");
-  assert.deepEqual(plugin.media, [
-    "https://x.test/a.mp4",
-    "https://x.test/b.png",
-  ]);
+  assert.equal(plugin.description, doc.description);
   assert.deepEqual(plugin.author, { npm: "omercnet", name: "Omer Cohen", github: "omercnet" });
-  assert.equal(plugin.repository?.commit, record.repository?.commit);
-  assert.equal(plugin.readme, "# Dracula\n");
-});
-
-test("record overrides win, and a package without a listing file gets a humanized name", () => {
-  const plugin = mergeListing({
-    record: { ...record, listing: { media: ["https://x.test/override.png"] } },
-    doc: { ...doc, author: undefined, repository: undefined },
-    listingFile: parseListingFile(null),
-    readme: null,
-  });
-  assert.equal(plugin.name, "Dracula");
-  assert.deepEqual(plugin.media, ["https://x.test/override.png"]);
-  assert.equal(plugin.icon, undefined);
-  assert.deepEqual(plugin.author, { npm: "omercnet", name: "omercnet", github: "omercnet" });
-  assert.equal(plugin.readme, "");
-  assert.equal(plugin.installs, undefined);
-});
-
-test("publication date comes from the record review date, not the npm release", () => {
-  const plugin = mergeListing({
-    record,
-    doc,
-    listingFile: {},
-    readme: "Overview.",
-  });
+  assert.equal(plugin.readme, "Overview.");
   assert.equal(plugin.publishedAt, "2026-10-03T00:00:00.000Z");
   assert.equal(plugin.updatedAt, "2026-10-03T00:00:00.000Z");
+  assert.equal(plugin.installs, undefined);
 });
-
 
 test("a tagged monorepo artifact is pinned, validated and built through both submission syntaxes", async () => {
   const { mkdtempSync, mkdirSync, writeFileSync, readFileSync, cpSync, rmSync } =
@@ -104,8 +69,10 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
     mkdirSync(join(repository, pluginPath), { recursive: true });
     writeFileSync(
       join(repository, pluginPath, "paseo-plugin.json"),
-      JSON.stringify({ id: "example", description: "Pinned monorepo example" }),
+      JSON.stringify({ id: "example", name: "Manifest name", description: "Pinned monorepo example", icon: "assets/icon.png", media: ["assets/demo.mp4", "assets/screen.png"] }),
     );
+    mkdirSync(join(repository, pluginPath, "assets"));
+    for (const asset of ["icon.png", "demo.mp4", "screen.png"]) writeFileSync(join(repository, pluginPath, "assets", asset), "fixture");
     writeFileSync(join(repository, pluginPath, "OVERVIEW.md"), "Monorepo example overview.\n");
     writeFileSync(join(repository, pluginPath, "README.md"), "Wrong README");
     writeFileSync(
@@ -189,7 +156,13 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
       assert.equal(detail.description, "Pinned monorepo example");
       assert.equal(detail.artifact.pluginPath, pluginPath);
       assert.equal(detail.artifact.commit, commit);
-      assert.deepEqual(detail.media, []);
+      const base = `https://github.com/acme/plugins/raw/${commit}/${pluginPath}/`;
+      assert.equal(detail.name, "Manifest name");
+      assert.equal(detail.icon, `${base}assets/icon.png`);
+      assert.deepEqual(detail.media, [`${base}assets/demo.mp4`, `${base}assets/screen.png`]);
+      const summary = index.plugins.find((item: { id: string }) => item.id === detail.id);
+      const { readme, ...expectedSummary } = detail;
+      assert.deepEqual(summary, expectedSummary);
     }
     const overview = join(registry, "plugins/acme/example.md");
     writeFileSync(overview, "# Example\n\nA curated description.\n");

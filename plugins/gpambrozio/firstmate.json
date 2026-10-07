@@ -3,20 +3,20 @@
   "artifact": {
     "kind": "npm",
     "package": "@gpambrozio/paseo-firstmate",
-    "version": "0.3.1",
-    "resolved": "https://registry.npmjs.org/@gpambrozio/paseo-firstmate/-/paseo-firstmate-0.3.1.tgz",
-    "integrity": "sha512-s7lq4U/L8j08S1tL2pkuYulJdnI2Hw9fatHsfQa3E3D4LnLTvHbq8g+xelpKGKs6oH7kGvv97GOSAC94BHQxng=="
+    "version": "0.3.4",
+    "resolved": "https://registry.npmjs.org/@gpambrozio/paseo-firstmate/-/paseo-firstmate-0.3.4.tgz",
+    "integrity": "sha512-Wm2fvOnoWy01E5d+wPPwfdTYMenFyZd+UpQil9VMxGGEFKBBih2aVvZjN/TfqxpIBa2hIpNMXY7tNO5SO/G7xw=="
   },
   "repository": {
     "url": "https://github.com/gpambrozio/paseo-plugins/tree/HEAD/firstmate",
-    "commit": "c262395428eb591ee41a14aa3867cdee64632a55"
+    "commit": "6cf78bfa31c5093f68e3cb2678e976d8c2cde42f"
   },
   "categories": [
     "orchestration"
   ],
   "submittedAt": "2026-09-25",
   "submittedBy": "gpambrozio",
-  "reviewedAt": "2026-09-25",
+  "reviewedAt": "2026-10-07",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/gpambrozio/paseo-plugins/c262395428eb591ee41a14aa3867cdee64632a55/firstmate/docs/demo.webp",

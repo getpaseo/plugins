@@ -1,25 +1,25 @@
 {
   "id": "gpambrozio/model-pricing",
+  "artifact": {
+    "kind": "npm",
+    "package": "@gpambrozio/paseo-model-pricing",
+    "version": "0.4.0",
+    "resolved": "https://registry.npmjs.org/@gpambrozio/paseo-model-pricing/-/paseo-model-pricing-0.4.0.tgz",
+    "integrity": "sha512-ouWanWJN38mB0wdco8i4aTlHz/x/gLYQcTXGTUg5mLVvoP7aCGpd1382ElsonzvrBS8/llPnxxC2BVr1Mt3ZAA=="
+  },
   "repository": {
     "url": "https://github.com/gpambrozio/paseo-plugins/tree/HEAD/model-pricing",
-    "commit": "08e75003b287208ef804f3d31b2fda2597f69dce"
+    "commit": "51e1b0a366e8ce885346f7017e100226f5aeb52d"
   },
   "categories": [
     "sidebar"
   ],
   "submittedAt": "2026-09-19",
   "submittedBy": "gpambrozio",
-  "reviewedAt": "2026-09-19",
+  "reviewedAt": "2026-10-07",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/gpambrozio/paseo-plugins/main/model-pricing/docs/screenshot.png"
     ]
-  },
-  "artifact": {
-    "kind": "npm",
-    "package": "@gpambrozio/paseo-model-pricing",
-    "version": "0.3.0",
-    "resolved": "https://registry.npmjs.org/@gpambrozio/paseo-model-pricing/-/paseo-model-pricing-0.3.0.tgz",
-    "integrity": "sha512-jLfC6iCLOwNACiili8nw3/qmBymoj6YHitMeGCa2RggiMdUhT6n+INRsSjoTs2kNzeYMftMfQ3MZJXeLLF1opA=="
   }
 }

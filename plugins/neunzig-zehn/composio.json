@@ -1,0 +1,23 @@
+{
+  "id": "neunzig-zehn/composio",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/neunzig-zehn/paseo-composio.git",
+    "commit": "87b4a3617e5926550f203ddd2a573bb6e72fba83",
+    "tag": "v0.1.0"
+  },
+  "repository": {
+    "url": "https://github.com/neunzig-zehn/paseo-composio",
+    "commit": "87b4a3617e5926550f203ddd2a573bb6e72fba83"
+  },
+  "categories": [
+    "daemon-management",
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-07",
+  "submittedBy": "moritz-mode",
+  "reviewedAt": "2026-10-07",
+  "listing": {
+    "name": "Composio"
+  }
+}

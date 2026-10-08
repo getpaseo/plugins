@@ -1,15 +1,15 @@
-Workboard is a kanban board for your Paseo workspaces. Each active workspace is one task, and you can also keep draft tasks that have no workspace yet and start one later with **Start work**.
+Workboard is a kanban board for Paseo workspaces and draft tasks. Each active workspace becomes one task. Drafts can hold a title and description before you create or attach a workspace with **Start work**. Moving a card changes its managed workspace status label; an agent finishing does not complete the task. The board shows agent activity separately, plus the PR, CI and review information Paseo supplies.
 
-A task's status is a managed workspace label, so moving a card between groups changes the label, and changing the label in Paseo moves the card. An agent finishing does not complete a task. Existing active workspaces are imported automatically, and ones without a status label land in Inbox without a label being written. Groups, labels, colors and optional sidebar pinning of in-progress workspaces are set in the plugin's settings. The board also shows compact PR, CI and review information that Paseo supplies.
+Configure groups, labels, colors and optional sidebar pinning in the plugin settings. New drafts, unlabeled workspace imports and Start work have independent default groups. Card order is saved within each column; desktop supports dragging, while compact layouts offer ordering controls. The interface follows Paseo's Chinese or English language setting.
 
-## Version and access
+The plugin requires Paseo 0.9.1 or later and Node 22 or later on the daemon host. It uses the host session through an internal bridge for operations not exposed by the public plugin API, including label writes. That bridge can need changes after a Paseo upgrade. Native mobile clients have not been verified.
 
-The manifest requires exactly Paseo app and daemon 0.9.1, and the package declares Node 22 or later for the daemon host. Paseo 0.9.1 lets plugins read labels but not write them, so Workboard uses an internal host bridge that reuses the host session to write labels and workspaces. It can need changes on any later Paseo version. The plugin's backend runs unsandboxed beside the daemon, and its README says the mobile clients are not verified.
+## Data access and archiving
 
-## Automatic archiving
+Workboard reads workspace, agent and conversation activity through Paseo and stores drafts, task history and preferences in its host-scoped plugin settings. It changes workspace labels and, when enabled, sidebar pins. Git safety checks run Git commands in workspace directories, including `git ls-remote` against the configured upstream; that command uses the host's normal Git credentials. It does not send conversations to another service.
 
-Automatic archiving is opt-in and off by default. When on, it considers a workspace in a done or canceled group once 30 days have passed since its last verified conversation. It skips workspaces with a running or waiting agent, a running script or an open terminal. It also checks that the Git directory is clean and pushed to its upstream. It postpones the archive if the conversation history is incomplete.
+Automatic archiving is opt-in and off by default. Its delay is configurable from 1 to 365 days, with a 30-day default. It considers only completed or canceled workspaces, checks conversation activity again, and postpones archiving when activity cannot be bounded. Running or waiting agents, running scripts, open terminals, unmanaged worktrees, dirty Git state or an unverified upstream prevent archiving. Archive checks use exact or conservative upper-bound activity times; incomplete observations are marked on cards.
 
-The README warns that archiving can stop agents and terminals and can remove a managed worktree, and that Workboard cannot restore either. Leave this setting off unless you want that behavior.
+Archiving uses Paseo's native workspace operation, which can stop agents and terminals and remove a managed worktree. Workboard retains uncertain archive outcomes for manual review. Restoring a draft or resolving its board record does not restore a natively archived workspace or deleted worktree.
 
 *This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/paseo-workboard).*

@@ -1,0 +1,28 @@
+{
+  "id": "creatorkoo/cswap-usage",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/creatorKoo/paseo-cswap-usage.git",
+    "commit": "401ffff400dbd66c3601e9fb73c3c0085a709c1a",
+    "tag": "v0.5.0"
+  },
+  "repository": {
+    "url": "https://github.com/creatorKoo/paseo-cswap-usage",
+    "commit": "401ffff400dbd66c3601e9fb73c3c0085a709c1a"
+  },
+  "categories": [
+    "providers",
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-10-08",
+  "submittedBy": "creatorKoo",
+  "reviewedAt": "2026-10-08",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/creatorKoo/paseo-cswap-usage/401ffff400dbd66c3601e9fb73c3c0085a709c1a/docs/pill-popover.png",
+      "https://raw.githubusercontent.com/creatorKoo/paseo-cswap-usage/401ffff400dbd66c3601e9fb73c3c0085a709c1a/docs/screenshot.png",
+      "https://raw.githubusercontent.com/creatorKoo/paseo-cswap-usage/401ffff400dbd66c3601e9fb73c3c0085a709c1a/docs/pill-tooltip.png"
+    ]
+  }
+}

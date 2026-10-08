@@ -1,0 +1,22 @@
+{
+  "id": "supermomonga/zcode-provider",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/supermomonga/paseo-plugin-zcode-provider.git",
+    "commit": "2372c9f131f981fd151b0b92179f258169f5c048",
+    "tag": "zcode-runtime-v3.14.3"
+  },
+  "repository": {
+    "url": "https://github.com/supermomonga/paseo-plugin-zcode-provider",
+    "commit": "2372c9f131f981fd151b0b92179f258169f5c048"
+  },
+  "categories": [
+    "providers"
+  ],
+  "submittedAt": "2026-10-08",
+  "submittedBy": "supermomonga",
+  "reviewedAt": "2026-10-08",
+  "listing": {
+    "name": "ZCode Provider"
+  }
+}

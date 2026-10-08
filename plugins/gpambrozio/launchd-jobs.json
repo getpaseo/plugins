@@ -1,26 +1,26 @@
 {
   "id": "gpambrozio/launchd-jobs",
+  "artifact": {
+    "kind": "npm",
+    "package": "@gpambrozio/paseo-launchd-jobs",
+    "version": "0.6.0",
+    "resolved": "https://registry.npmjs.org/@gpambrozio/paseo-launchd-jobs/-/paseo-launchd-jobs-0.6.0.tgz",
+    "integrity": "sha512-kxv5of01I3OkR6h6qnJpqEhdo4erUzTdZC/YnZki61RSRTAH9+Ssjaa1WPJGmVvK7SbQs4O/PJY9aaLb6eFeig=="
+  },
   "repository": {
     "url": "https://github.com/gpambrozio/paseo-plugins/tree/HEAD/launchd-jobs",
-    "commit": "08e75003b287208ef804f3d31b2fda2597f69dce"
+    "commit": "98e18e4b96e730fe61c691504ecc2a0ca217a9ea"
   },
   "categories": [
     "daemon-management"
   ],
   "submittedAt": "2026-09-06",
   "submittedBy": "gpambrozio",
-  "reviewedAt": "2026-09-06",
+  "reviewedAt": "2026-10-08",
   "listing": {
     "name": "launchd Jobs",
     "media": [
-      "https://raw.githubusercontent.com/gpambrozio/paseo-plugins/main/launchd-jobs/docs/screenshot.png"
+      "https://raw.githubusercontent.com/gpambrozio/paseo-plugins/98e18e4b96e730fe61c691504ecc2a0ca217a9ea/launchd-jobs/docs/screenshot.png"
     ]
-  },
-  "artifact": {
-    "kind": "npm",
-    "package": "@gpambrozio/paseo-launchd-jobs",
-    "version": "0.5.0",
-    "resolved": "https://registry.npmjs.org/@gpambrozio/paseo-launchd-jobs/-/paseo-launchd-jobs-0.5.0.tgz",
-    "integrity": "sha512-H6CQnalMdyQjW9ta9ZT40qEPJsREgNFSEAH8EC4sJXdz2Hz9tIsInSUmm2bDcgfY3D3HFffUrwf1mmeevi/wUA=="
   }
 }

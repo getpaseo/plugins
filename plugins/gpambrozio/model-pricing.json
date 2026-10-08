@@ -16,10 +16,10 @@
   ],
   "submittedAt": "2026-09-19",
   "submittedBy": "gpambrozio",
-  "reviewedAt": "2026-10-07",
+  "reviewedAt": "2026-10-08",
   "listing": {
     "media": [
-      "https://raw.githubusercontent.com/gpambrozio/paseo-plugins/main/model-pricing/docs/screenshot.png"
+      "https://raw.githubusercontent.com/gpambrozio/paseo-plugins/51e1b0a366e8ce885346f7017e100226f5aeb52d/model-pricing/docs/screenshot.png"
     ]
   }
 }

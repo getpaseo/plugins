@@ -2,6 +2,8 @@ GitHub Board adds a **GitHub** sidebar screen showing your issues, draft pull re
 
 From a card you can read the description and comments and send it to an agent. **Send to chat** creates a new workspace on the project whose git remote matches the card's repository, starts the agent you pick, and sends your first message. The default prompt per column can be edited, globally or per project, and the board can be filtered by repository.
 
+Opening and closing cards updates the panel within the current board. A link that names a card opens it on arrival; back and forward leave the board rather than stepping through cards. Reloading returns to the card named in the original link, rather than the last card clicked.
+
 Two actions write directly to GitHub:
 
 - Adding or removing labels on issues and pull requests.

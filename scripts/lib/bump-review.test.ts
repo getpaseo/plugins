@@ -95,8 +95,8 @@ for (const scenario of ["present", "absent", "invalid", "network"] as const) {
       } else {
         assert.equal(readFileSync(overviewPath, "utf8"), "Imported stopgap.");
         assert.equal(run("git", ["show", `${commit}:plugins/acme/example.md`], options), "Imported stopgap.");
-        assert.match(result.note, /bump cannot merge/);
-        assert.equal(result.validation, "Inline validation failed. See the Bump workflow log.");
+        assert.match(result.note, /registry overview.*retained/i);
+        assert.equal(result.validation, "Inline validation passed.");
       }
     } finally {
       keys.forEach((key, index) => {

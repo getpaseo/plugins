@@ -1,6 +1,5 @@
 // Checks every record offline, and with --online checks pinned versions against their artifacts.
-//   node scripts/validate.ts [--online] [--changed] [--base <ref>] [--allow-imports]
-// --allow-imports permits approved new imports with registry stopgaps, never changed pins.
+//   node scripts/validate.ts [--online] [--changed] [--base <ref>]
 import { flagString, parseArgs } from "./lib/args.ts";
 import { validateRegistry } from "./lib/validate-registry.ts";
 
@@ -9,7 +8,6 @@ try {
   await validateRegistry({
     online: flags.has("online"),
     changedOnly: flags.has("changed"),
-    allowNewImport: flags.has("allow-imports"),
     base: flagString(flags, "base"),
   });
 } catch (error) {

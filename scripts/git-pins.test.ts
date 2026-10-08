@@ -139,7 +139,7 @@ test("commit pins require a manifest at the declared plugin path", (t) => {
   assert.equal(existsSync(f.recordPath), false);
 });
 
-test("commit-only validation preserves author overview and import rules", (t) => {
+test("commit-only validation accepts registry overviews for submissions and bumps", (t) => {
   const f = fixture(t);
   const registryGit = (...args: string[]) => {
     const result = spawnSync("git", args, { cwd: f.registry, encoding: "utf8" });
@@ -168,11 +168,8 @@ test("commit-only validation preserves author overview and import rules", (t) =>
   writeFileSync(f.recordPath.replace(/\.json$/, ".md"), "Imported overview.\n\n*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/fixture).*\n");
   registryGit("add", "plugins");
   registryGit("commit", "-qm", "approved import");
-  const missing = f.cli("validate", "--online", "--changed");
-  assert.notEqual(missing.status, 0);
-  assert.match(missing.stderr, /OVERVIEW.md is required/);
-  const allowed = f.cli("validate", "--online", "--changed", "--allow-imports");
-  assert.equal(allowed.status, 0, allowed.stderr);
+  const fallback = f.cli("validate", "--online", "--changed");
+  assert.equal(fallback.status, 0, fallback.stderr);
   registryGit("update-ref", "refs/remotes/origin/main", "HEAD");
   imported.categories = ["workspaces"];
   writeFileSync(f.recordPath, JSON.stringify(imported));
@@ -188,7 +185,6 @@ test("commit-only validation preserves author overview and import rules", (t) =>
   writeFileSync(f.recordPath, JSON.stringify(imported));
   registryGit("add", "plugins");
   registryGit("commit", "-qm", "pin update");
-  const changed = f.cli("validate", "--online", "--changed", "--allow-imports");
-  assert.notEqual(changed.status, 0);
-  assert.match(changed.stderr, /OVERVIEW.md is required/);
+  const changed = f.cli("validate", "--online", "--changed");
+  assert.equal(changed.status, 0, changed.stderr);
 });

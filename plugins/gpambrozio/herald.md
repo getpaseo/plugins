@@ -1,4 +1,6 @@
-Herald speaks one sentence aloud when an agent needs you, and lists everything waiting in a **Herald** sidebar panel. It announces questions, plan approvals, tool permission requests, finished turns and errors, and also leaves the sentence as a card in the agent's conversation so you can replay it.
+Herald speaks one sentence aloud when an agent needs you, and lists everything waiting in the **Herald** screen, opened from the sidebar. It announces questions, plan approvals, tool permission requests, finished turns and errors, and also leaves the sentence as a card in the agent's conversation so you can replay it.
+
+The sidebar badge counts waiting agents. Press the badge for a quick list, then choose an agent to open Herald at its card.
 
 For each event a short-lived helper agent writes the sentence with a model you choose (Claude Haiku 4.5 by default). The helper session is deleted once the sentence is written, which you can turn off.
 
@@ -6,7 +8,7 @@ What is sent: for a finished turn, the helper receives your last message and wha
 
 Setup and limits:
 
-- Paseo 0.9.0 or newer on the daemon and the device running the app.
+- Paseo 0.11.0 or newer on the daemon and the device running the app.
 - The `paseo` command on the daemon's `PATH`. Herald uses it only to delete helper sessions, and without it they accumulate.
 - Speech plays on the device running the app. The desktop app speaks on its own, and a browser tab speaks after you press **Test voice** once. Phones cannot speak from a plugin, but Herald can vibrate. The default voice comes from the `say` command on a Mac daemon, and a non-Mac daemon uses the browser's voice.
 

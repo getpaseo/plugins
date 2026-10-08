@@ -19,6 +19,10 @@
   "submittedBy": "creatorKoo",
   "reviewedAt": "2026-10-08",
   "listing": {
-    "name": "cswap-usage"
+    "media": [
+      "https://raw.githubusercontent.com/creatorKoo/paseo-cswap-usage/401ffff400dbd66c3601e9fb73c3c0085a709c1a/docs/pill-popover.png",
+      "https://raw.githubusercontent.com/creatorKoo/paseo-cswap-usage/401ffff400dbd66c3601e9fb73c3c0085a709c1a/docs/screenshot.png",
+      "https://raw.githubusercontent.com/creatorKoo/paseo-cswap-usage/401ffff400dbd66c3601e9fb73c3c0085a709c1a/docs/pill-tooltip.png"
+    ]
   }
 }

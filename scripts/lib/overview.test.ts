@@ -13,7 +13,7 @@ import { run } from "./shell.ts";
 import { validateArtifact } from "./validate-artifact.ts";
 
 for (const kind of ["npm", "git"] as const) {
-  test(`${kind}: pinned artifact overview is required except for unchanged or approved new imports`, async () => {
+  test(`${kind}: author overview wins; registry fallback works for submissions and bumps`, async () => {
     const directory = mkdtempSync(join(tmpdir(), "registry-required-overview-"));
     const pluginPath = "packages/example";
     const plugin = join(directory, pluginPath);
@@ -104,17 +104,10 @@ for (const kind of ["npm", "git"] as const) {
       assert.equal((await resolvePlugin(client, record, "Registry stopgap")).readme, expectedOverview);
       assert.equal((await resolvePlugin(client, absent, "Registry stopgap")).readme, "Registry stopgap");
       assert.equal(await readAuthorOverview(client, absent), null);
-      await assert.rejects(resolvePlugin(client, absent), /OVERVIEW.md.*required/);
-      await assert.rejects(validateArtifact(client, absent), /OVERVIEW.md.*required/);
-      await assert.rejects(validateArtifact(client, absent, { registryOverview: "Registry stopgap" }), /OVERVIEW.md.*required/);
-      assert.deepEqual(await validateArtifact(client, absent, { previous: absent, registryOverview: "Registry stopgap" }), []);
-      assert.deepEqual(await validateArtifact(client, absent, { previous: { ...absent, listing: { name: "Old name" } }, registryOverview: "Registry stopgap" }), []);
-      assert.deepEqual(await validateArtifact(client, absent, { registryOverview: "Registry stopgap", allowNewImport: true }), []);
-      const changed = kind === "npm"
-        ? { ...absent, artifact: { ...absent.artifact, integrity: "sha512-bmV3" } }
-        : record;
-      await assert.rejects(validateArtifact(client, absent, { previous: changed, registryOverview: "Registry stopgap", allowNewImport: true }), /OVERVIEW.md.*required/);
-      await assert.rejects(validateArtifact(client, absent, { previous: absent }), /OVERVIEW.md.*required/);
+      await assert.rejects(resolvePlugin(client, absent), /overview is required/);
+      await assert.rejects(validateArtifact(client, absent), /overview is required/);
+      assert.deepEqual(await validateArtifact(client, absent, { registryOverview: "Registry fallback" }), []);
+      await assert.rejects(validateArtifact(client, absent, { registryOverview: "npm install example" }), /install commands/);
       for (const [index, command] of ["paseo plugin add acme/example", "npm install example", "npm i example"].entries()) {
         writeFileSync(join(plugin, "OVERVIEW.md"), command);
         const invalidCommit = pin(`invalid-${index}`);
@@ -122,7 +115,7 @@ for (const kind of ["npm", "git"] as const) {
         overviews.set("2.0.0", command);
         const invalid = { ...absent, repository: { ...absent.repository, commit: invalidCommit }, artifact: kind === "git" ? { ...absent.artifact, kind, remote, commit: invalidCommit, tag: `invalid-${index}`, pluginPath } : absent.artifact };
         await assert.rejects(resolvePlugin(client, invalid, "Registry stopgap"), /OVERVIEW.md.*install commands/);
-        await assert.rejects(validateArtifact(client, invalid, { previous: invalid, registryOverview: "Registry stopgap" }), /OVERVIEW.md.*install commands/);
+        await assert.rejects(validateArtifact(client, invalid, { registryOverview: "Registry stopgap" }), /OVERVIEW.md.*install commands/);
       }
       if (kind === "git") {
         rmSync(join(plugin, "OVERVIEW.md"));
@@ -145,8 +138,7 @@ for (const kind of ["npm", "git"] as const) {
           writeFileSync(join(registry, "plugins/acme/example.md"), "Imported stopgap.");
           commitRegistry("import");
           const validate = (...args: string[]) => run(process.execPath, ["scripts/validate.ts", "--online", "--changed", ...args], options);
-          assert.throws(() => validate(), /Command failed/);
-          assert.match(validate("--allow-imports"), /1 record\(s\) match/);
+          assert.match(validate(), /1 record\(s\) match/);
           run("git", ["update-ref", "refs/remotes/origin/main", "HEAD"], options);
           writeFileSync(join(registry, "plugins/acme/example.json"), serializeRecord({ ...absent, listing: { name: "Updated name" } }));
           commitRegistry("metadata");
@@ -154,14 +146,13 @@ for (const kind of ["npm", "git"] as const) {
           writeFileSync(join(registry, "plugins/acme/example.json"), serializeRecord({ ...absent, artifact: { ...absent.artifact, tag: "invalid-0", commit: run("git", ["rev-parse", "invalid-0"], { cwd: directory }) } }));
           // This next commit has an overview, but its install command is invalid.
           commitRegistry("invalid author overview");
-          assert.throws(() => validate("--allow-imports"), /Command failed/);
+          assert.throws(() => validate(), /Command failed/);
           writeFileSync(join(registry, "plugins/acme/example.json"), serializeRecord({
             ...absent,
             artifact: { kind: "git", remote, tag: "v3", commit: missingBumpCommit, pluginPath },
           }));
           commitRegistry("bump missing author overview");
-          assert.throws(() => validate(), /Command failed/);
-          assert.throws(() => validate("--allow-imports"), /Command failed/);
+          assert.match(validate(), /1 record\(s\) match/);
           writeFileSync(join(registry, "plugins/acme/example.json"), serializeRecord(record));
           commitRegistry("bump with author overview and stopgap");
           assert.match(validate(), /1 record\(s\) match/);

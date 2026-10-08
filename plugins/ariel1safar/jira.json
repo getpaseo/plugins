@@ -1,0 +1,19 @@
+{
+  "id": "ariel1safar/jira",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/ariel1safar/paseo-jira.git",
+    "commit": "04ab4ed5863f3fbf4a024bb41cf8999673450ab9",
+    "tag": "v0.1.1"
+  },
+  "repository": {
+    "url": "https://github.com/ariel1safar/paseo-jira",
+    "commit": "04ab4ed5863f3fbf4a024bb41cf8999673450ab9"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-08",
+  "submittedBy": "ariel1safar",
+  "reviewedAt": "2026-10-08"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "saratscheff/reopen-archived",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/saratscheff/paseo-reopen-archived.git",
+    "commit": "169ddcce0255cfc636eb6bd5e8126581507c9a4e",
+    "tag": "v0.1.1"
+  },
+  "repository": {
+    "url": "https://github.com/saratscheff/paseo-reopen-archived",
+    "commit": "169ddcce0255cfc636eb6bd5e8126581507c9a4e"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-10-08",
+  "submittedBy": "saratscheff",
+  "reviewedAt": "2026-10-08",
+  "listing": {
+    "name": "Reopen archived",
+    "media": [
+      "https://raw.githubusercontent.com/saratscheff/paseo-reopen-archived/169ddcce0255cfc636eb6bd5e8126581507c9a4e/assets/command-center.png"
+    ]
+  }
+}

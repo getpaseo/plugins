@@ -19,11 +19,11 @@ export class RegistryValidationError extends Error {
 export async function validateRegistry(options: {
   online?: boolean;
   changedOnly?: boolean;
-  allowNewImport?: boolean;
+  overviewPendingFor?: string;
   base?: string;
   client?: NpmClient;
 } = {}): Promise<void> {
-  const { online = false, changedOnly = false, allowNewImport = false,
+  const { online = false, changedOnly = false, overviewPendingFor,
     base = "origin/main", client = createNpmClient() } = options;
   const known = categorySlugs(readCategories());
   const records = readRecords(known);
@@ -32,11 +32,9 @@ export async function validateRegistry(options: {
   console.log(`${records.length} record(s) are well-formed`);
   if (!online) return;
 
-  // Compare pins to the branch base, rather than treating any edited record as a bump.
-  const baseCommit = git(["merge-base", base, "HEAD"]);
-  const baseFiles = new Set(git(["ls-tree", "-r", "--name-only", baseCommit, "--", "plugins/"]).split("\n"));
   let selected = records;
   if (changedOnly) {
+    const baseCommit = git(["merge-base", base, "HEAD"]);
     const changed = new Set(
       git(["diff", "--name-only", `${baseCommit}...HEAD`, "--", "plugins/"])
         .split("\n")
@@ -57,15 +55,9 @@ export async function validateRegistry(options: {
   const problems: Array<{ id: string; error: Error }> = [];
   for (const record of selected) {
     try {
-      const path = `plugins/${record.id}.json`;
-      // Historical records use their original schema; validateArtifact compares only their pins.
-      const previous = baseFiles.has(path)
-        ? JSON.parse(git(["show", `${baseCommit}:${path}`]))
-        : null;
       for (const message of await validateArtifact(client, record, {
-        previous,
         registryOverview: readOverview(record.id),
-        allowNewImport,
+        overviewRequired: record.id !== overviewPendingFor,
       })) problems.push({ id: record.id, error: new Error(message) });
     } catch (error) {
       problems.push({ id: record.id, error: error as Error });

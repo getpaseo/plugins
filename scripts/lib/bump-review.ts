@@ -25,7 +25,9 @@ export async function commitBumpForReview(input: {
   git(["add", recordPath(next.id, directory)], options);
   const drop = author !== null && existsSync(overviewPath);
   const note = author === null
-    ? "This version has no OVERVIEW.md. The registry requires one to update a listing; the bump cannot merge until a release includes it in the submitted artifact.\n\n"
+    ? existsSync(overviewPath)
+      ? "This version has no OVERVIEW.md. The registry overview is retained for review and publication.\n\n"
+      : "This version has no overview. The reviewer can write the registry overview before publication.\n\n"
     : drop
       ? "This version ships OVERVIEW.md, so the registry's copy is removed in this bump.\n\n"
       : "";

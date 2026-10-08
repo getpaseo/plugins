@@ -1,13 +1,23 @@
-Adds a **Hosts** page, workspace tab and status dot to Paseo for seeing what is slowing a computer down, stopping runaway jobs, and reaching dev servers running on a host. Requires Paseo 0.9.0 or later.
+Adds a **Hosts** page, workspace tab and status indicator to Paseo for monitoring CPU, memory, processes, disk usage and dev servers. Requires Paseo 0.9.0 or later; process management supports Linux and macOS. Readings use the container's memory limit when available.
 
-It lists the heaviest processes, judged against the container's own memory limit. You choose which to stop and confirm what will stop (children included), and every stop is logged. The Processes tab refuses to stop processes it recognizes by name and path as Paseo components, agents, terminal shells, or databases and system services, and checks each child the same way. That recognition is not a guarantee for every agent or database. Health checks only flag problems and never start a stop.
+You can select a runaway job, review the processes and children that would stop, and confirm the stop. Hosts sends SIGTERM and then SIGKILL to survivors after its grace period, checking process identity and logging actions. It excludes recognized Paseo components, agents, shells, databases and system services from ordinary process stops. Recognition relies on process names, paths and ownership and cannot identify every program.
 
-Each dev server can be reached three ways:
+The optional memory guard is off by default. When enabled, sustained critical memory pressure lets it stop the largest eligible job through the same checked stop path. It checks the setting and current pressure again before stopping and before escalation. An agent or dev server affected by stopping a build can lose its work in progress.
 
-- **Browser link.** A temporary public `trycloudflare.com` address protected by a session cookie, for opening the app from any browser. It needs `cloudflared` on the host. When you press **Set up browser links**, the plugin downloads `cloudflared` from the Cloudflare releases on GitHub (macOS and Linux, x64 and arm64) and runs it. Nothing is downloaded until you do.
-- **Paired hosts.** Two Paseo hosts that both run this plugin give each other a private localhost link through the Paseo relay (`wss://relay.paseo.sh` by default, end to end encrypted). Pairing grants no agent, file, process or daemon control and can be revoked from the hosting side.
-- **SSH forward.** Saved presets that use the host's own `ssh`.
+If a plugin stops answering, **Restart** asks for confirmation and runs `paseo plugin reload <id>`. If that command times out, Hosts identifies that plugin's daemon child from launch logs, checks its identity, sends SIGTERM and then SIGKILL if necessary, and retries the reload. Ambiguous process matches are refused; it does not restart the daemon or itself.
 
-You can also watch health URLs on other machines and send Git projects between paired hosts. Each transfer needs a separate sharing permission, shows a commit preview first, and is checked out in isolation. Nothing syncs automatically.
+## Data access and disk reports
+
+Background checks read system process and memory information and Paseo's `daemon.log`, every 10 seconds on Linux or 30 seconds on macOS. Workspace and process reports include paths and activity. Disk scans measure workspace folders, unlinked worktrees, temporary files and caches without following symlinks or crossing devices. They read Git ignore/tracking information and package-manager configuration to locate caches, and save scan results under the plugin's state directory.
+
+Hosts does not delete the reported folders. **Ask an agent** provides a reviewable request with paths, sizes and cleanup checks; the agent acts with its own permissions. Health and disk reports, plus selected terminal output, can be attached to conversations. Review the context before sending it to an agent. Process actions and connection/transfer records are stored locally.
+
+## Dev-server connections
+
+- **Browser links:** temporary public `trycloudflare.com` addresses protected by a session cookie. **Set up browser links** downloads the pinned official `cloudflared` release from GitHub, verifies its checksum and runs it. Linux and macOS x64/arm64 are supported; no download occurs until you request setup. Links expire and can be closed or extended.
+- **Paired hosts:** two Paseo hosts running this plugin provide private localhost links through the Paseo relay (`wss://relay.paseo.sh` by default), with end-to-end encryption. Pairing grants no agent, file, process or daemon control and can be revoked.
+- **SSH forwards:** saved presets use the host's `ssh` and its normal SSH configuration and credentials.
+
+You can configure health URLs for the daemon to check on other machines. Git project transfers between paired hosts require separate sharing permission, a commit preview and an isolated checkout. Nothing syncs automatically. These features use network access for the connections you configure; monitoring data is not automatically sent to an agent.
 
 *This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/daemon-link).*

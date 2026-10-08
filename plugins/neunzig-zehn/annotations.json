@@ -1,0 +1,22 @@
+{
+  "id": "neunzig-zehn/annotations",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/neunzig-zehn/paseo-annotations.git",
+    "commit": "b921586b52cc2f937cf7814efc83d106310824fe",
+    "tag": "v0.1.0"
+  },
+  "repository": {
+    "url": "https://github.com/neunzig-zehn/paseo-annotations",
+    "commit": "b921586b52cc2f937cf7814efc83d106310824fe"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-08",
+  "submittedBy": "moritz-mode",
+  "reviewedAt": "2026-10-08",
+  "listing": {
+    "name": "Annotations"
+  }
+}

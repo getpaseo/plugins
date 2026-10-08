@@ -131,22 +131,30 @@ is already provided by the listing page. Explain purpose, necessary setup, usefu
 data access, permissions and meaningful limitations. Setup for accounts, tokens or external
 tools belongs here; commands to install the plugin do not.
 
-Prefer a useful author-written `OVERVIEW.md` shipped beside `paseo-plugin.json`.
-When it is absent or needs editing, write or revise `plugins/<owner>/<slug>.md` in the
-registry using the README and verified review findings. Do not copy the README wholesale,
-invent behavior or require a new plugin release solely for this editorial work.
+Use the author's `OVERVIEW.md` shipped beside `paseo-plugin.json` when present.
+When it is absent, use `plugins/<owner>/<slug>.md` in the registry. If neither
+exists, write the registry overview using the README and verified review findings.
+Do not copy the README wholesale, invent behavior or require a new plugin release
+solely to supply this page.
 
-The registry copy is the reviewed listing override. Keep it accurate on bumps; remove it
-when the artifact's own overview fully supplies the intended page. Existing import credits
-describe the original import and are not added to newly reviewed plugins.
+New submissions may enter review without an overview; complete the page before
+approval. Bumps keep using the registry overview until the artifact supplies its own.
+Review and update the registry text when the plugin's behavior changes. When the
+author supplies an overview, it takes precedence and the redundant registry copy
+can be removed. A registry copy does not override an existing author overview.
+
+Judge the displayed page. Offer ordinary editorial improvements as next-release
+advice instead of creating an unused registry copy or holding publication for it.
+Existing import credits describe the original import and are not added to newly
+reviewed plugins.
 
 Length follows complexity. A theme may need one paragraph; a provider with setup and data
 access may need more. Use plain factual language. Omit installation instructions, badges,
 changelogs, contributing and license sections, marketing, and implementation detail that
 does not help someone choose.
 
-Tell the author when you wrote or edited the overview and recommend shipping a suitable
-one in the next release. Explain that it is written for the listing page, where installation
+Tell the author when you wrote or edited the registry overview and recommend shipping
+their own in the next release. Explain that it is written for the listing page, where installation
 is already shown. Link to the
 [publishing guide's overview guidance](https://paseo.sh/docs/plugins/publishing#your-listing-page)
 for its format. An imperfect supplied overview is editorial work, not an automatic rejection.

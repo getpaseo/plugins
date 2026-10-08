@@ -71,7 +71,7 @@ function fixture(t: TestContext, kind: "npm" | "git", manifest: unknown, listing
   const base = kind === "npm" ? "https://cdn.jsdelivr.net/npm/@acme/example@1.0.0/"
     : `https://github.com/acme/manifest/raw/${commit}/${pluginPath}/`;
   const detail = () => resolvePlugin(client, record, "Imported overview");
-  const validate = () => validateArtifact(client, record, { previous: record, registryOverview: "Imported overview" });
+  const validate = () => validateArtifact(client, record, { registryOverview: "Imported overview" });
   return { record, client, detail, validate, base };
 }
 

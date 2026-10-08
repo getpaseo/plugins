@@ -16,8 +16,15 @@
   ],
   "submittedAt": "2026-10-07",
   "submittedBy": "Gabsplat",
-  "reviewedAt": "2026-10-07",
+  "reviewedAt": "2026-10-08",
   "listing": {
-    "name": "Theme Studio"
+    "name": "Theme Studio",
+    "media": [
+      "https://cdn.jsdelivr.net/npm/paseo-theme-studio@0.6.2/images/studio.png",
+      "https://cdn.jsdelivr.net/npm/paseo-theme-studio@0.6.2/images/packs.png",
+      "https://cdn.jsdelivr.net/npm/paseo-theme-studio@0.6.2/images/design.png",
+      "https://cdn.jsdelivr.net/npm/paseo-theme-studio@0.6.2/images/mobile.png",
+      "https://cdn.jsdelivr.net/npm/paseo-theme-studio@0.6.2/images/component.png"
+    ]
   }
 }

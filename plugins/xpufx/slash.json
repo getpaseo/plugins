@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "@xpufx/paseo-slash",
-    "version": "0.1.4",
-    "resolved": "https://registry.npmjs.org/@xpufx/paseo-slash/-/paseo-slash-0.1.4.tgz",
-    "integrity": "sha512-ggUW0eSN0uEgVvxwhhzjSxsn5LKsoG4tgdErDNvUa135KcGXdHm6vHCuR9qFEyduqcHtXkI0iLcKgrPUqAi2gw=="
+    "version": "0.1.6",
+    "resolved": "https://registry.npmjs.org/@xpufx/paseo-slash/-/paseo-slash-0.1.6.tgz",
+    "integrity": "sha512-fDQDHhH6sIeS94nt1iS5ozgZXd8uPbU/EEiqRDU3JdGllPz9Dih3pmljSbmpDI0EoxfqhI+8vIdrmiu3TWHptg=="
   },
   "repository": {
     "url": "https://github.com/xpufx/paseo"
@@ -15,11 +15,11 @@
   ],
   "submittedAt": "2026-09-18",
   "submittedBy": "xpufx",
-  "reviewedAt": "2026-09-18",
+  "reviewedAt": "2026-10-08",
   "listing": {
     "media": [
-      "https://raw.githubusercontent.com/xpufx/paseo/main/plugins/slash/docs/screenshots/slash-console.jpg",
-      "https://raw.githubusercontent.com/xpufx/paseo/main/plugins/slash/docs/screenshots/slash-autocomplete.jpg"
+      "https://unpkg.com/@xpufx/paseo-slash@0.1.6/docs/screenshots/slash-console.jpg",
+      "https://unpkg.com/@xpufx/paseo-slash@0.1.6/docs/screenshots/slash-autocomplete.jpg"
     ]
   }
 }

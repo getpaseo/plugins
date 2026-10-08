@@ -4,7 +4,7 @@
     "kind": "git",
     "remote": "https://github.com/sleeyax/paseo-plugins.git",
     "commit": "c511fa81bebcf5fa1590f2b0dea75344c324148a",
-    "tag": "guided-review-v0.1.0",
+    "tag": "discord-rich-presence-v0.2.0",
     "pluginPath": "plugins/discord-rich-presence"
   },
   "repository": {
@@ -16,7 +16,7 @@
   ],
   "submittedAt": "2026-09-11",
   "submittedBy": "sleeyax",
-  "reviewedAt": "2026-10-07",
+  "reviewedAt": "2026-10-08",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/sleeyax/paseo-plugins/41ff25de85931953ace4daa1a7923e20823514c5/plugins/discord-rich-presence/docs/screenshots/presence2.png",

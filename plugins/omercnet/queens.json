@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "@omercnet/paseo-queens",
-    "version": "2.2.0",
-    "resolved": "https://registry.npmjs.org/@omercnet/paseo-queens/-/paseo-queens-2.2.0.tgz",
-    "integrity": "sha512-KkQmz9ZAQsqeVvofpxdeZUgMftRr2WHeaMRSIrsx9wp4IvyrQUzgIpxmEUQO6F4Ne6L69Z4ejWRNKU75zUkCvw=="
+    "version": "2.2.1",
+    "resolved": "https://registry.npmjs.org/@omercnet/paseo-queens/-/paseo-queens-2.2.1.tgz",
+    "integrity": "sha512-jr+0vZM536onjJdhBrAKVxkwK9a9nxQJXw5gfYc0bTDivLArqwhOnldKdxOrHrDsI7ULm3uQ5yAwPvaJ72y6ng=="
   },
   "repository": {
     "url": "https://github.com/omercnet/paseo-plugins/tree/HEAD/queens",
-    "commit": "d7b3e654f364b5be72edf6fd1d914a3750b53082"
+    "commit": "1a393debaa3dad7e67cfe22720517166f67c596a"
   },
   "categories": [
     "extras",
@@ -17,7 +17,7 @@
   ],
   "submittedAt": "2026-09-20",
   "submittedBy": "omercnet",
-  "reviewedAt": "2026-09-20",
+  "reviewedAt": "2026-10-08",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/queens/docs/images/queens-wide.png",

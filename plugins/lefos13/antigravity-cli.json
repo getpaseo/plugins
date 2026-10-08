@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-plugin-antigravity-cli",
-    "version": "0.9.1",
-    "resolved": "https://registry.npmjs.org/paseo-plugin-antigravity-cli/-/paseo-plugin-antigravity-cli-0.9.1.tgz",
-    "integrity": "sha512-HAb3eFgJu9SDr2vYQXlcpiDtW4KtlImluaTS9vba+g3FwrYAwmhrfH5WenX6hByMzRDHAB2HnFj49cGjASygxQ=="
+    "version": "0.9.3",
+    "resolved": "https://registry.npmjs.org/paseo-plugin-antigravity-cli/-/paseo-plugin-antigravity-cli-0.9.3.tgz",
+    "integrity": "sha512-TeLmkYomqC7JAHmASl1dNRqmeoLTa9nT0DVIqsYAJD8HclV5OHSOariDRNKniBYc/WCWMZt7uf9dsRhtn5NfcQ=="
   },
   "repository": {
     "url": "https://github.com/lefos13/paseo-plugin-antigravity-cli"
@@ -16,7 +16,7 @@
   ],
   "submittedAt": "2026-09-24",
   "submittedBy": "lefos13",
-  "reviewedAt": "2026-09-24",
+  "reviewedAt": "2026-10-08",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/lefos13/paseo-plugin-antigravity-cli/4d97a6be5f4f01e8564359808c6384f05df3d365/images/01-chat.jpg",

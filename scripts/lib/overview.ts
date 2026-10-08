@@ -4,7 +4,7 @@ import type { NpmClient } from "./npm.ts";
 import { readArtifactFiles } from "./artifact-files.ts";
 import { type PluginRecord, RECORDS_DIR } from "./record.ts";
 
-/** Registry stopgap for plugins without an author-owned overview. */
+/** Registry overview used when the artifact has no author-owned overview. */
 export function readOverview(id: string, directory = RECORDS_DIR): string | null {
   const overview = readOptional(directory, `${id}.md`);
   return validateOverview(overview, `${id}.md`);
@@ -27,9 +27,9 @@ export async function readAuthorOverview(client: NpmClient, record: PluginRecord
   return validateOverview(files.overview, `${record.id}/OVERVIEW.md`);
 }
 
-/** The existing protocol field contains only an author overview or an import stopgap. */
+/** Author content takes precedence over the registry fallback. */
 export function requireOverview(author: string | null, registry: string | null, id: string): string {
   const overview = author ?? registry;
-  if (overview === null) throw new AuthorError(`${id}/OVERVIEW.md is required. Add OVERVIEW.md beside paseo-plugin.json in the submitted artifact and publish a new release. For npm, include it at the published package root; for GitHub, include it in the plugin directory at the pinned commit.`);
+  if (overview === null) throw new AuthorError(`${id}: an overview is required before publication. The reviewer can write plugins/${id}.md when the artifact has no OVERVIEW.md.`);
   return overview;
 }

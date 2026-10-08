@@ -1,26 +1,26 @@
 {
   "id": "gpambrozio/herald",
+  "artifact": {
+    "kind": "npm",
+    "package": "@gpambrozio/paseo-herald",
+    "version": "0.6.0",
+    "resolved": "https://registry.npmjs.org/@gpambrozio/paseo-herald/-/paseo-herald-0.6.0.tgz",
+    "integrity": "sha512-41qxQlmkN8d+RqodnkcYLba9dyaxa1f24SRaCJDCek4nBRSqFquAGeltD4jiMnRbp+TtyKwcF316eMg7aBWZMQ=="
+  },
   "repository": {
     "url": "https://github.com/gpambrozio/paseo-plugins/tree/HEAD/herald",
-    "commit": "b658d0ab58735959e46d12660ae179c002cdadda"
+    "commit": "385af515bbaaeceb2a0dc0bc05b5b9a038b93c30"
   },
   "categories": [
     "sidebar"
   ],
   "submittedAt": "2026-09-18",
   "submittedBy": "gpambrozio",
-  "reviewedAt": "2026-09-18",
+  "reviewedAt": "2026-10-08",
   "listing": {
     "media": [
-      "https://raw.githubusercontent.com/gpambrozio/paseo-plugins/main/herald/docs/panel.png",
-      "https://raw.githubusercontent.com/gpambrozio/paseo-plugins/main/herald/docs/timeline-card.png"
+      "https://raw.githubusercontent.com/gpambrozio/paseo-plugins/385af515bbaaeceb2a0dc0bc05b5b9a038b93c30/herald/docs/panel.png",
+      "https://raw.githubusercontent.com/gpambrozio/paseo-plugins/385af515bbaaeceb2a0dc0bc05b5b9a038b93c30/herald/docs/timeline-card.png"
     ]
-  },
-  "artifact": {
-    "kind": "npm",
-    "package": "@gpambrozio/paseo-herald",
-    "version": "0.5.1",
-    "resolved": "https://registry.npmjs.org/@gpambrozio/paseo-herald/-/paseo-herald-0.5.1.tgz",
-    "integrity": "sha512-rXdlaxgRlYP3nmZrvbG29sQeluz5JC7TPuJDgKzyh9itDH1AvZYGjLgGp9XZGKxdBBhaGxgGAFhDh+VTL8h9dw=="
   }
 }

@@ -18,9 +18,6 @@ jobs:
           node-version: 22
       - run: npm test
       - name: Check records
-        # A maintainer-labeled `approved-import` pull request may add new records that carry a
-        # registry overview instead of an author OVERVIEW.md. Changed pins stay strict either way.
         run: >-
           node scripts/validate.ts --online
           ${{ github.event_name == 'pull_request' && '--changed' || '' }}
-          ${{ github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'approved-import') && '--allow-imports' || '' }}

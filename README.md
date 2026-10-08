@@ -50,17 +50,17 @@ HTTPS `media`). The bot writes artifact pins and review dates. The published
 index combines records with metadata from their pinned manifests. See
 [plugin metadata](#plugin-metadata) for fields and override precedence.
 
-Authors must ship `OVERVIEW.md` beside `paseo-plugin.json` in the submitted artifact.
+Authors can ship `OVERVIEW.md` beside `paseo-plugin.json` in the submitted artifact.
 For npm, include both files at the published package root. The registry reads them
 from the verified tarball at the pinned version; repository metadata and provenance
-are not needed to read package files. For GitHub, include both files at the pinned
-commit, under `artifact.pluginPath` for a monorepo. The author owns this overview.
+are not needed to read package files. For GitHub, include them at the pinned
+commit, under `artifact.pluginPath` for a monorepo.
 
-Approved imports can temporarily use `plugins/<owner>/<slug>.md` in the registry.
-An unchanged imported artifact keeps this exception while its stopgap exists.
-Every version bump requires the author's overview and removes the stopgap in the
-same PR. Normal new submissions require an author overview. A stopgap cannot
-satisfy a changed artifact pin, even when the import allowance is enabled.
+When the artifact has no overview, the listing uses `plugins/<owner>/<slug>.md`
+from the registry. New submissions can reach review without either file; the
+reviewer writes the registry overview before approval. Bumps retain that page
+and the reviewer updates it for changed behavior. When a release supplies the
+author's own overview, it takes precedence and the bump removes the registry copy.
 Authors and submitters may propose registry-copy replacements by pull request.
 
 An overview helps someone choose a plugin on its page inside Paseo, where the
@@ -94,14 +94,14 @@ Every migration-written registry overview ends exactly with this italic credit.
 
 Author-owned artifact overviews never receive this credit.
 
-Validation requires an overview and rejects `paseo plugin add`, `npm install`, and
-`npm i` in both author overviews and registry stopgaps. The rest of the content
+Publication validation requires an author or registry overview and rejects `paseo plugin add`, `npm install`, and
+`npm i` in both author overviews and registry overviews. The rest of the content
 contract is reviewed by a person.
 
 The detail document keeps its existing `readme` field. It publishes the pinned
-author `OVERVIEW.md`, or the registry import stopgap when author content is absent.
+author `OVERVIEW.md`, or the registry overview when author content is absent.
 With neither source it fails. `README.md` and `readme.md` are never used for
-overview content.
+overview content automatically; the reviewer uses the README to write a suitable page.
 
 ## Plugin metadata
 
@@ -174,27 +174,25 @@ that exact reachable commit and records no tag. Without it, the maintainer comma
 using the newest version-sorted tag. The manifest and author overview belong at
 the pin, under `--plugin-path` (or the shorthand path) for a monorepo.
 
-Online validation compares artifact and source pins with the merge base of
-`origin/main` and `HEAD`. `--base <ref>` selects a different comparison base;
-`--changed` limits online checks to committed record and overview changes.
-Metadata-only edits retain the unchanged-import exception. For an approved new
-migration import with a registry stopgap, run:
+Online validation checks records against their pinned artifacts.
+`--changed` limits online checks to committed record and overview changes since
+the merge base of `origin/main` and `HEAD`; `--base <ref>` selects another base:
 
 ```sh
-node scripts/validate.ts --online --changed --allow-imports
+node scripts/validate.ts --online --changed
 ```
 
-`--allow-imports` permits only new import records. It never permits a changed
-existing pin without an author overview. Normal submissions and bumps use the
-same command without this flag.
+The same command accepts a registry overview for new submissions and changed
+pins. No import label or validation exception is needed. Submission intake
+defers only the submitted plugin's missing overview until review; publication
+validation still requires an overview.
 
-When a bump finds the author's overview, its commit removes the registry
-stopgap. When the file is absent, the bump retains the stopgap and opens a PR
-whose body explains why it cannot merge. Failed inline validation is reported in
-the PR body and workflow log. Validation still rejects the changed pin. Invalid overview content
-or a source lookup failure stops the bump run before changing branches or
-records, and no PR is opened for that pin. These failures never use the stopgap
-as a substitute for author content.
+When a bump finds the author's overview, its commit removes the registry copy.
+When the file is absent, the bump retains the registry overview for review and
+publication. If both are missing, the reviewer writes one before approval.
+Other validation failures are reported in the PR body and workflow log.
+Invalid overview content or an artifact lookup failure stops the bump before
+changing branches or records.
 
 The dry run prints proposed PR bodies and writes full diffs to `.tmp/diffs/`.
 No pending versions means no proposed bodies. Inline diffs are capped at 60,000

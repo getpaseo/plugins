@@ -2,13 +2,13 @@ PR Radar adds a screen and a sidebar row that list the open pull requests linked
 
 ## Setup
 
-The GitHub CLI (`gh`) must be installed and authenticated on the machine running the Paseo daemon.
+Requires Paseo ^0.9.0, ^0.10.0 or ^0.11.0; the package declares Node.js 24 or newer. The GitHub CLI (`gh`) must be installed and authenticated on the machine running the Paseo daemon.
 
 ## Reads and sends
 
 - Reads workspaces, agents and their linked pull requests from your Paseo host.
 - Runs `gh` on the daemon host, using your `gh` credentials, to get your login, search your authored and review-requested open pull requests, and read review, mergeability and check status from GitHub.
-- Remembers each pull request's last-seen state on the daemon host to show what changed since you last marked updates as seen.
+- Remembers each pull request's last-seen state in `plugin-data/pr-radar/inbox-state.json` under the configured Paseo home on the daemon host to show what changed since you last marked updates as seen.
 - On "needs you" rows, an action sends a prompt to an existing agent in the linked workspace or starts a new agent there with one of your configured agent profiles. If there is no workspace but a local project exists, it creates a checkout of the pull request first. The prompt asks the agent to review the pull request or fix its blocker, and not to merge.
 
 *This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/pr-radar).*

@@ -179,19 +179,32 @@ test("submission workflow only starts on opening or an explicit single-issue dis
   assert.match(workflow, /group:.*issue/);
 });
 
-test("missing author overview reaches the author with a release instruction", (t) => {
+test("submission without an overview reaches review, then requires the reviewer page before publication", (t) => {
   const f = fixture(t, "github:acme/example:plugins/review");
   rmSync(join(f.remote, "plugins/review/OVERVIEW.md"));
   f.git(f.remote, "add", ".");
   f.git(f.remote, "commit", "-qm", "missing overview");
   f.git(f.remote, "tag", "v2.0.0");
   const result = f.run();
-  assert.equal(result.status, 1);
+  assert.equal(result.status, 0, result.stderr);
+  const created = f.calls().find((args) => args[0] === "pr" && args[1] === "create");
+  assert.ok(created);
+  assert.match(created[created.indexOf("--body") + 1], /overview.*review/i);
   const comment = f.calls().find((args) => args[1] === "comment").at(-1);
-  assert.match(comment, /OVERVIEW.md/);
-  assert.match(comment, /publish|release/i);
-  assert.match(comment, /maintainer.*rerun/i);
-  assert.doesNotMatch(comment, /Command failed|Edit the issue to fix it/);
+  assert.match(comment, /listing is in review/);
+  assert.doesNotMatch(comment, /publish|release|maintainer/i);
+  const validate = () => spawnSync(process.execPath, ["scripts/validate.ts", "--online", "--changed"], {
+    cwd: f.registry, encoding: "utf8",
+    env: { ...process.env, GIT_CONFIG_COUNT: "1",
+      GIT_CONFIG_KEY_0: `url.file://${f.remote}.insteadOf`,
+      GIT_CONFIG_VALUE_0: "https://github.com/acme/example.git" },
+  });
+  assert.notEqual(validate().status, 0, "publication still requires an overview");
+  writeFileSync(join(f.registry, "plugins/acme/review.md"), "A reviewer-written overview.");
+  f.git(f.registry, "add", "plugins/acme/review.md");
+  f.git(f.registry, "commit", "-qm", "complete listing overview");
+  const ready = validate();
+  assert.equal(ready.status, 0, ready.stderr);
 });
 
 test("a submission categorized as Themes reaches PR review without screenshots", (t) => {

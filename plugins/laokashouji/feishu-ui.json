@@ -3,18 +3,19 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/Laokashouji/paseo-feishu-ui.git",
-    "commit": "3d960670f661fa169cdbbe1975fb1f7c07a732b7"
+    "commit": "a1c4d01fa0faa518b64ac20e7cd9e0834870bdd1",
+    "tag": "v0.3.9"
   },
   "repository": {
     "url": "https://github.com/Laokashouji/paseo-feishu-ui",
-    "commit": "3d960670f661fa169cdbbe1975fb1f7c07a732b7"
+    "commit": "a1c4d01fa0faa518b64ac20e7cd9e0834870bdd1"
   },
   "categories": [
     "themes"
   ],
   "submittedAt": "2026-09-14",
   "submittedBy": "Laokashouji",
-  "reviewedAt": "2026-09-14",
+  "reviewedAt": "2026-10-08",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/Laokashouji/paseo-feishu-ui/3d960670f661fa169cdbbe1975fb1f7c07a732b7/images/design-reference-dark.png",

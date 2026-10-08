@@ -17,6 +17,10 @@
   "submittedBy": "moritz-mode",
   "reviewedAt": "2026-10-08",
   "listing": {
-    "name": "Annotations"
+    "name": "Annotations",
+    "media": [
+      "https://raw.githubusercontent.com/neunzig-zehn/paseo-annotations/b921586b52cc2f937cf7814efc83d106310824fe/assets/hero.png",
+      "https://raw.githubusercontent.com/neunzig-zehn/paseo-annotations/b921586b52cc2f937cf7814efc83d106310824fe/assets/screenshot-selection.png"
+    ]
   }
 }

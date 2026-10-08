@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "@omercnet/paseo-agent-monitor",
-    "version": "1.2.1",
-    "resolved": "https://registry.npmjs.org/@omercnet/paseo-agent-monitor/-/paseo-agent-monitor-1.2.1.tgz",
-    "integrity": "sha512-/UMJU4y8uymVZ1S5AhslWroqwE5qELcL0mxAfnqrNWyEAjqvIQW97CcCM7Pt5hGk8KUdMgDUXpdjGa0XtX7iww=="
+    "version": "1.2.2",
+    "resolved": "https://registry.npmjs.org/@omercnet/paseo-agent-monitor/-/paseo-agent-monitor-1.2.2.tgz",
+    "integrity": "sha512-OwPQLbVWtZCuIT7/NYfKEoehNEDGOW096BCIMtYP/r3leACtt6Vm7z9tgMOQy3LANRdX77seFkOYijmWLWazyQ=="
   },
   "repository": {
     "url": "https://github.com/omercnet/paseo-plugins/tree/HEAD/agent-monitor",
-    "commit": "8e8dfa1aebbe7c23673f344e75d93dfac91daba9"
+    "commit": "1a393debaa3dad7e67cfe22720517166f67c596a"
   },
   "categories": [
     "orchestration"

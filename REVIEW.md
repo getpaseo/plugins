@@ -1,177 +1,188 @@
 # Review policy
 
-This is the bar every pull request to the registry has to clear before it merges. A
-maintainer and the review bot read the same text; a decision that is not grounded in a
-section here is not a registry decision. The bot reads this file from `main`, never from
-the pull request under review.
+The registry helps authors publish useful plugins and helps Paseo users install reviewed
+artifacts. Reviewers complete the listing work they can do themselves and check the artifact
+for malicious, deceptive, or seriously unsafe behavior. Ordinary submissions should move
+through to approval once concrete requirements are met.
 
-A listing is a promise to Paseo users: the pinned artifact is what the record says it is,
-it does what the overview says it does, and it does nothing a plugin of its stated purpose
-has no business doing. Review establishes those three things from the artifact itself. The
-repository, the README, and the submitter's description are claims about the artifact;
-the artifact is the evidence.
+This file defines acceptance for human reviewers and the review bot. Read it from main.
+The bot's operating prompt defines how it carries out the work. Editorial preferences and
+hypothetical improvements are not additional acceptance requirements.
 
-## What is reviewed
+## The artifact is the product
 
-The pinned artifact at the exact pin in the record, fetched without executing anything:
+Review exactly what the record installs, without executing it:
 
-- npm: the tarball at `artifact.resolved`, after its SHA-512 matches `artifact.integrity`
-  and the version and integrity match what npm reports for the package.
-- git: the tree at `artifact.commit` on `artifact.remote`, under `artifact.pluginPath`
-  when set, after the commit is confirmed to exist on that remote.
+- npm: download the tarball at `artifact.resolved`, verify its SHA-512 against
+  `artifact.integrity`, and confirm the version and integrity with npm.
+- Git: inspect the tree at `artifact.commit` on `artifact.remote`, under
+  `artifact.pluginPath` when present. Confirm the commit exists and a recorded tag
+  still identifies it.
 
-Nothing in the artifact is installed, built, required, imported, or run. `npm install`,
-`npm pack`, `node`, and any build step on the artifact are out of bounds for review.
+An npm package does not require a GitHub source repository, a reachable npm `gitHead`,
+or a source-comparison result. Inspect the published package itself. Optional repository
+material can help explain it; missing repository material and differences caused by
+publishing are not independent blockers.
 
-## Submissions
+Never install, build, import, require, or run plugin code or its dependencies during review.
+Fetching, extracting, reading and comparing artifacts, and viewing static listing images,
+are allowed. Run trusted registry validation, not scripts supplied by a plugin or changes
+to registry machinery supplied by a PR.
 
-The issue title names the plugin. The form collects its Source and Categories;
-the bot derives the listing id and pins the latest npm version or newest Git tag.
-A GitHub folder URL or install source can locate a plugin inside a repository.
-The `submission` label identifies these issues; the title has no required prefix.
+For bumps, independently extract and compare the old and new artifacts. Apply content checks
+to the changes and the behavior those changes affect. Do not present existing behavior as
+a newly introduced problem. Complete the necessary inspection before approving.
 
-## Pin
+## Concrete acceptance requirements
 
-The record is only valid when the pin holds:
+The record must identify the intended plugin and install the exact reviewed artifact.
+Check the pin, integrity, manifest, package metadata, plugin path and required entry files.
+Use submission identity, package provenance where available, and registry ownership data
+to check attribution and permission to submit. A repository source checkout is not required
+to inspect an npm package.
 
-- The version is exact and the integrity matches npm. A pin that npm no longer serves, or
-  serves with a different integrity, is rejected.
-- A git commit is a full 40-character hash reachable on the remote. A tag that has moved
-  away from the pinned commit is rejected until the pin is updated. A maintainer can pin
-  a repository with no release tag to a commit alone; automatic bumps start when it
-  publishes a tag.
-- `paseo-plugin.json` exists at the artifact root, or under `pluginPath`.
-- The record's `id` owner is the GitHub owner of the source repository.
-- Ownership: npm provenance names the declared repository, or the submitter is the
-  repository owner or a public member of its organization.
+Review install and build commands and every script they invoke. Dependency installation
+must use a lockfile that fixes the dependency tree; inspect its resolved sources and
+integrity information in the package manager's format. An installation that needs a
+lockfile but does not include one is a concrete packaging blocker. Host-provided libraries
+and development-only dependencies do not create an installation requirement. Read lifecycle
+scripts that would execute; do not execute them yourself. Build commands must have an
+understandable purpose and operate on the reviewed inputs.
 
-`node scripts/validate.ts --online --changed` checks these mechanically and is run in
-every review, because pull requests opened by the registry's own workflows do not trigger
-the Validate workflow.
+Every published listing needs an accurate overview. Visual plugins need suitable media,
+as described below. The reviewer can supply or correct these in the registry PR.
 
-## Content
+Run the registry validator against the completed proposal. A validator failure is evidence
+to understand, not an instruction to pass its diagnostics to an author. Distinguish an
+artifact defect, a registry edit you can complete, and a factory implementation that
+conflicts with this policy. Record a factory conflict for correction without treating it
+as an author obligation or silently bypassing publication checks.
 
-Each of the following is read in the extracted artifact and reported with a file and line
-when present. The plugin's stated purpose, from its manifest description and overview, is
-what each is judged against.
+## Security review
 
-- Install-time commands: the manifest's `install` and `build` commands and the package's
-  `preinstall`, `install`, `postinstall`, and `prepare` scripts. This is where most
-  vulnerabilities live, so every command and every script file it invokes is read in full
-  at the pinned commit, and the review says what each one does. Dependencies are
-  installed with `npm ci --ignore-scripts`; `npm install`, or `npm ci` without
-  `--ignore-scripts`, is changes requested unless every dependency lifecycle script that
-  would run has been read and is named in the review. The lockfile at the pinned commit
-  carries `resolved` pointing at the public npm registry and `integrity` for every entry;
-  a missing lockfile or an entry without either is changes requested, and an entry
-  resolved to a git URL or a tarball elsewhere is reviewed as a dependency. A command that
-  downloads anything and runs it, pulls a branch or tag, or installs a package the lockfile
-  does not fix bypasses the pin and is rejected. A build script only transforms files
-  already in the artifact.
-- Dependencies: each runtime dependency, what it is for, and whether it is what the plugin
-  needs. Unused, typosquatted, or unpinned-to-a-fork dependencies are rejected.
-- Network: every outbound host the code can reach. Each one is justified by the purpose
-  (a GitHub plugin reaching api.github.com) or the plugin is rejected.
-- Credentials and environment: every read of environment variables, credential files,
-  keychains, tokens, or other plugins' storage. Each one is justified by the purpose or the
-  plugin is rejected.
-- Filesystem: writes outside the plugin's own storage, and reads of user files the purpose
-  does not need.
-- Execution: `child_process`, `eval`, `new Function`, dynamic `import()` of remote or
-  computed paths, and anything that fetches and runs code.
-- Runtime installs: a plugin that clones, downloads, installs, or updates software while
-  running is listed when the action runs only on the user's explicit confirmation and the
-  overview names what it installs and from where. One that does it unprompted is
-  rejected.
-- Readability: obfuscated code, or minified code with no source in the artifact or the
-  declared repository at the pinned commit, is rejected. A bundle is acceptable when the
-  repository holds its source at that commit.
-- Source match: when the declared repository holds the source at the pinned commit, the
-  artifact's code matches it. Extra files, changed logic, or a dependency the source does
-  not declare is a mismatch, and a mismatch is rejected.
-- Listing media: review the manifest metadata after applying any registry `listing`
-  overrides. Entries are HTTPS image (`png`, `jpg`, `jpeg`, `webp`, `gif`) or video (`mp4`,
-  `webm`) URLs, with case-insensitive extensions. Each URL returns HTTP 200 and an
-  `image/*` or `video/*` content type. SVG is not accepted. The card thumbnail is the
-  first image in media order.
-- Visible surfaces: every theme and any plugin that adds a panel or other UI lists at
-  least one image of that surface. A theme without an image is not listed. Determine
-  what the plugin does from the artifact; categories are organizational labels. A
-  plugin categorized as Themes can be a tool for creating themes. The PR reviewer
-  applies this requirement; submission does not infer it from a category.
-- Scope: a pull request changes one record and its overview. Anything touching `.github/`, `featured.json`,
-  `scripts/`, `categories.json`, this file, or more than one record is a maintainer change
-  and is never merged by the bot.
-- Imports: a maintainer-approved import of listings from paseo.cafe is a pull request
-  labeled `approved-import`, which lets validation accept new records carrying a registry
-  overview. The label changes nothing else; a changed pin in such a pull request is held
-  to the same rules.
+Judge access and execution against what the plugin does. Inspect:
 
-## Bumps
+- Dependencies and preparation scripts: their purpose, resolved origin, installation
+  behavior, and unexplained or deceptive additions.
+- Network requests: destinations, data sent, credential attachment, and what initiates them.
+- Credentials and environment: secrets, configuration, keychain and other-plugin storage
+  reads, their use, and where the data goes.
+- Filesystem operations: what is read, written or deleted and the user's control over it.
+- Execution: subprocesses, shell construction, eval, generated or remote code, and the
+  path from external input to execution.
+- Runtime software installation: what is downloaded or installed, from where, and the
+  user's explicit confirmation. The overview must explain these actions.
+- Readability: whether the artifact can be meaningfully inspected, including bundled
+  code and any supporting source maps or source that is available.
 
-A bump is reviewed as a diff between the two artifacts, extracted and compared by the
-reviewer, not from the pull request body. The content checks above apply to what changed.
-A bump that adds a lifecycle script, a dependency, a host, or a credential read is held to
-the same justification as a new submission. When the diff changes what the plugin does,
-the overview is updated in the same pull request.
+Record concrete harmful behavior, such as credential theft, concealed data transmission,
+code injection, unprompted remote execution, or destructive actions outside the plugin's
+purpose. Explain the input or action that triggers it and the resulting effect. Intentional
+subprocesses, service connections, configuration reads and media requests are assessed in
+context. Their presence, or a preference for a different implementation, is not a finding
+by itself. Do not require a fixed network allowlist as a general condition of listing.
+
+Source unavailability does not establish malice. If code cannot be adequately inspected,
+state the specific obstacle and what evidence is missing. Do not claim either a completed
+security review or a confirmed exploit from a scan alone.
+
+## Complete the listing
+
+Use the submission, PR discussion, artifact, README, available documentation and assets to
+understand the author's intent and finish the registry work. Reviewers may modify the
+record, its listing metadata, and its registry overview on the submission or bump branch.
+Use verified information, preserve the plugin's identity and behavior, and review any newly
+selected artifact before approving it.
+
+Make the edits you own rather than handing routine registry work back to the author.
+Request author involvement only when necessary information or an artifact change is outside
+your authority. Account for what the author has already supplied before asking for more.
+
+A plugin review covers one record and its overview. Changes to registry scripts, workflows,
+policy, categories or other registry infrastructure belong to repository maintenance and
+are not merged through the plugin-review process.
+
+## Images and media
+
+Themes, workspace panels and other visual plugin interfaces need at least one image showing
+that interface. Plugins without a visual interface do not need screenshots. Judge the
+plugin's behavior, not its category label.
+
+Use suitable assets already available in the author's material when completing a listing.
+Decide whether they show the plugin clearly and are suitable for its page; routine image
+selection and presentation judgments belong to the reviewer. Improving an already adequate
+image is advice for a later release, not a reason to hold this one.
+
+Registry media entries follow the metadata format: HTTPS image URLs with png, jpg, jpeg,
+webp or gif extensions, or mp4/webm video URLs, case-insensitively. They must resolve with
+the corresponding image or video content type. SVG is not accepted. The first image is
+the card thumbnail. Apply registry `listing` overrides after manifest metadata.
+These listing-format requirements do not impose a network policy on the plugin's runtime.
+
+When no suitable image is available for a visual plugin, explain exactly what the author
+must supply, where it belongs and in what format, linking to the
+[publishing guide's media instructions](https://paseo.sh/docs/plugins/publishing#icons-and-screenshots).
+Do not ask the maintainer to select or judge ordinary screenshots.
 
 ## Overview
 
-Every listing's page shows an overview instead of the README. A README assumes its reader
-is on GitHub: it carries installation steps, technical detail, badges, and grows long. The
-overview is read inside Paseo, where the install command already sits at the top of the
-page, by someone deciding whether to install.
+The overview helps someone decide whether to install the plugin inside Paseo. Installation
+is already provided by the listing page. Explain purpose, necessary setup, useful capabilities,
+data access, permissions and meaningful limitations. Setup for accounts, tokens or external
+tools belongs here; commands to install the plugin do not.
 
-`OVERVIEW.md` next to `paseo-plugin.json` is required. A submission or a bump whose
-pinned artifact has no `OVERVIEW.md` fails validation and gets changes requested
-naming the file. npm reads the verified tarball at the pinned version; GitHub reads
-the plugin directory at the pinned commit. Records imported from paseo.cafe are
-the exception: they carry one written at import at `plugins/<owner>/<slug>.md`, ending with the line
-`*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/<slug>).*`.
-The author may replace that file by pull request, and the author's own `OVERVIEW.md` takes
-over on the first bump, which removes the registry copy.
+Prefer a useful author-written `OVERVIEW.md` shipped beside `paseo-plugin.json`.
+When it is absent or needs editing, write or revise `plugins/<owner>/<slug>.md` in the
+registry using the README and verified review findings. Do not copy the README wholesale,
+invent behavior or require a new plugin release solely for this editorial work.
 
-What it contains, in this order:
+The registry copy is the reviewed listing override. Keep it accurate on bumps; remove it
+when the artifact's own overview fully supplies the intended page. Existing import credits
+describe the original import and are not added to newly reviewed plugins.
 
-1. What it is and what it does, in plain terms. One or two short paragraphs.
-2. How it works, only when that is not obvious from the first paragraph.
-3. Setup, when any is required: settings to fill in, accounts or tokens to connect,
-   providers or tools that must be present, other plugins it depends on. Setup is allowed;
-   installation is not.
-4. Capabilities or settings worth explaining: what each option does, what the plugin reads
-   or sends and where, the permissions it asks for, known limits.
+Length follows complexity. A theme may need one paragraph; a provider with setup and data
+access may need more. Use plain factual language. Omit installation instructions, badges,
+changelogs, contributing and license sections, marketing, and implementation detail that
+does not help someone choose.
 
-Length follows the plugin's complexity: a theme is a paragraph, a provider plugin with
-settings can be longer. The test is that nothing in it is noise to someone choosing. Never
-installation commands, badges, changelogs, contributing or license sections, marketing
-language, or claims the source does not support.
+Tell the author when you wrote or edited the overview and recommend shipping a suitable
+one in the next release. Explain that it is written for the listing page, where installation
+is already shown. Link to the
+[publishing guide's overview guidance](https://paseo.sh/docs/plugins/publishing#your-listing-page)
+for its format. An imperfect supplied overview is editorial work, not an automatic rejection.
 
-The reviewer checks `OVERVIEW.md` against this shape on submission and on a bump, and
-requests changes when it is a README in disguise. A pull request that changes a
-registry-carried overview merges when it comes from the plugin's repository owner or the
-record's submitter and fits the shape; from anyone else it waits for the maintainer.
+## Outcomes and communication
 
-## Outcomes
+Approve and merge once the artifact review is complete, hard requirements are met and the
+listing is ready. Approval is the expected outcome for useful, legitimate plugins. Complete
+reasonable registry edits first; do not turn optional improvements into conditions.
 
-Every pull request ends in exactly one of these, with one review on the pull request
-recording what decided it.
+Request changes only for a concrete blocker that genuinely needs the author. State why it
+blocks publication and the exact action, data, location and format needed to resolve it.
+Link the relevant publishing documentation. A list of technical findings is not a request
+the author can act on.
 
-- **Merge.** Pin holds, every content check is justified, overview present. Squash merge
-  against the reviewed commit.
-- **Changes requested.** Something the submitter can fix: a moved tag, a missing manifest,
-  a category that does not fit, an unjustified dependency they can drop, a README claim the
-  code does not support. The review names the exact change. The submitter is told on the
-  submission issue as well, because workflow-opened pull requests have no human author to
-  notify. Fourteen quiet days close the pull request; a new commit or comment reopens it.
-- **Closed.** Malicious or deceptive: hidden execution, exfiltration, credential theft, a
-  tarball that does not match its source, obfuscation with no source. The review names the
-  file and line. The submission issue is closed with the same text. On a bump, the listed
-  version may share the problem: an issue titled `Delist <id>?` is opened with the evidence,
-  labeled `needs-maintainer`, and the maintainer decides. Nothing is delisted automatically.
-- **needs-maintainer.** This policy does not settle it, or the change is a maintainer
-  change. The review opens with the questions the maintainer has to answer, each one a
-  yes/no or A/B with the reviewer's pick, then the data points below.
+Reserve `needs-maintainer` for credible malicious behavior, a serious safety concern, or a
+decision about an already published unsafe version that exceeds the reviewer's authority.
+State the evidence and the decision needed. Routine editorial judgments, incomplete work,
+optional improvements and speculative concerns are not maintainer decisions. Never delist
+an existing plugin automatically.
 
-A review always records: the artifact and version, the integrity result, what was
-extracted and inspected, lifecycle scripts, dependencies, hosts, credential and environment
-reads, the source match result, the decision, and the reviewed commit.
+Clearly malicious or deceptive submissions may be closed with the evidence and a concise
+explanation. For a serious unresolved safety concern, hold publication and ask the maintainer
+the specific safety decision. Never describe uncertainty as proof of malicious intent.
+
+Every completed review gets one concise author-facing outcome message on the PR, including
+approvals. Say what happened, what registry edits were made, and what the author needs to do.
+If nothing is required now, make that clear and separate any useful next-release advice
+from requirements. For workflow-created PRs, notify the human submitter on the linked
+submission issue with a short outcome and a link to the full PR review.
+
+Put audit evidence in a collapsed `Review data` block: reviewed artifact and commit,
+integrity, inspected scope, installation and dependencies, access and execution findings,
+listing edits, and remaining uncertainty. Keep the author-facing part easy to scan.
+When a maintainer decision is necessary, end with `For the maintainer:` and short questions.
+
+The purpose of these rules is to get legitimate plugins published safely and reduce work
+for authors and maintainers. The reviewer owns completion and ordinary judgment. Apply that
+purpose when instructions overlap; escalate concrete serious risks, not the smallest doubt.

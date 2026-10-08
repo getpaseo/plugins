@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "@omercnet/paseo-pr-radar",
-    "version": "1.2.1",
-    "resolved": "https://registry.npmjs.org/@omercnet/paseo-pr-radar/-/paseo-pr-radar-1.2.1.tgz",
-    "integrity": "sha512-wYK8r2UoAy90ZrMn9EfEKqsSG6yil8UFwdOi4igJBVLGtA+rUKCLr9wv3/L5NhT3SiJ0XyoPLvsGWIyfBGwxVQ=="
+    "version": "1.2.2",
+    "resolved": "https://registry.npmjs.org/@omercnet/paseo-pr-radar/-/paseo-pr-radar-1.2.2.tgz",
+    "integrity": "sha512-UEPQTh2HcK2b/A4+6L3EbkzSCVVx5De0OGQH//iTIdYyL0ZZxWtlZmog56leJwc2874Slx7QB0Oq3WPfpGNcNA=="
   },
   "repository": {
     "url": "https://github.com/omercnet/paseo-plugins/tree/HEAD/pr-radar",
-    "commit": "8e8dfa1aebbe7c23673f344e75d93dfac91daba9"
+    "commit": "1a393debaa3dad7e67cfe22720517166f67c596a"
   },
   "categories": [
     "git"

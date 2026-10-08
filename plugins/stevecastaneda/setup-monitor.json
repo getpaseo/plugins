@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "@stevecastaneda/paseo-setup-monitor",
-    "version": "0.3.0",
-    "resolved": "https://registry.npmjs.org/@stevecastaneda/paseo-setup-monitor/-/paseo-setup-monitor-0.3.0.tgz",
-    "integrity": "sha512-gGg4fU/Xru2fHTwnYnmWhnZRxfqTMwWNoKhrawjZmLpyqiVc+bjQBN8YN6BhPhwrq0mXqCszF00xYTidoCqBXg=="
+    "version": "0.4.0",
+    "resolved": "https://registry.npmjs.org/@stevecastaneda/paseo-setup-monitor/-/paseo-setup-monitor-0.4.0.tgz",
+    "integrity": "sha512-XHUEYw13E1iJHhSnHaq2oTpk4S/LOZ6k5mQSo0i1ozwa2KyueeYA2qCXAQKvJY7M2ck9gzv6G8ElYjNTvhLl1Q=="
   },
   "repository": {
     "url": "https://github.com/stevecastaneda/paseo-plugins/tree/HEAD/setup-monitor"
@@ -15,7 +15,7 @@
   ],
   "submittedAt": "2026-09-10",
   "submittedBy": "stevecastaneda",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-10-08",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/11832dda662c62cb9b00ad93ef913d939f8591b0/setup-monitor/explorer.png"

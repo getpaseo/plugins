@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/creatorKoo/paseo-cswap-usage.git",
-    "commit": "401ffff400dbd66c3601e9fb73c3c0085a709c1a",
-    "tag": "v0.5.0"
+    "commit": "93471655a4806efeb6fd53fb18574f671cf18703",
+    "tag": "v0.5.1"
   },
   "repository": {
     "url": "https://github.com/creatorKoo/paseo-cswap-usage",
-    "commit": "401ffff400dbd66c3601e9fb73c3c0085a709c1a"
+    "commit": "93471655a4806efeb6fd53fb18574f671cf18703"
   },
   "categories": [
     "providers",
@@ -17,7 +17,7 @@
   ],
   "submittedAt": "2026-10-08",
   "submittedBy": "creatorKoo",
-  "reviewedAt": "2026-10-08",
+  "reviewedAt": "2026-10-09",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/creatorKoo/paseo-cswap-usage/401ffff400dbd66c3601e9fb73c3c0085a709c1a/docs/pill-popover.png",

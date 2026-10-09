@@ -1,0 +1,30 @@
+{
+  "id": "supermomonga/canvas",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/supermomonga/paseo-plugin-canvas.git",
+    "commit": "746aa1b927b656e7e2e9fa870ea2227b7997f979",
+    "tag": "v0.1.0"
+  },
+  "repository": {
+    "url": "https://github.com/supermomonga/paseo-plugin-canvas",
+    "commit": "746aa1b927b656e7e2e9fa870ea2227b7997f979"
+  },
+  "categories": [
+    "orchestration",
+    "extras",
+    "utils"
+  ],
+  "submittedAt": "2026-10-09",
+  "submittedBy": "supermomonga",
+  "reviewedAt": "2026-10-09",
+  "listing": {
+    "name": "Canvas",
+    "media": [
+      "https://raw.githubusercontent.com/supermomonga/paseo-plugin-canvas/746aa1b927b656e7e2e9fa870ea2227b7997f979/images/1.png",
+      "https://raw.githubusercontent.com/supermomonga/paseo-plugin-canvas/746aa1b927b656e7e2e9fa870ea2227b7997f979/images/2.png",
+      "https://raw.githubusercontent.com/supermomonga/paseo-plugin-canvas/746aa1b927b656e7e2e9fa870ea2227b7997f979/images/3.png",
+      "https://raw.githubusercontent.com/supermomonga/paseo-plugin-canvas/746aa1b927b656e7e2e9fa870ea2227b7997f979/images/4.png"
+    ]
+  }
+}

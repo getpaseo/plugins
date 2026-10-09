@@ -18,7 +18,8 @@
   "reviewedAt": "2026-10-08",
   "listing": {
     "media": [
-      "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/11832dda662c62cb9b00ad93ef913d939f8591b0/workspace-links/explorer.png"
+      "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/dc43bff3ee0ce6d2b4e2b88762202c15e12fd376/workspace-links/popover.png",
+      "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/dc43bff3ee0ce6d2b4e2b88762202c15e12fd376/workspace-links/explorer.png"
     ]
   }
 }

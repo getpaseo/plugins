@@ -1,0 +1,22 @@
+{
+  "id": "lerenn/excalidraw",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/lerenn/paseo-excalidraw.git",
+    "commit": "5b8775e6279fcb33b97612b5eee002f4aa77d8d8"
+  },
+  "repository": {
+    "url": "https://github.com/lerenn/paseo-excalidraw",
+    "commit": "5b8775e6279fcb33b97612b5eee002f4aa77d8d8"
+  },
+  "categories": [
+    "workspaces",
+    "extras"
+  ],
+  "submittedAt": "2026-10-09",
+  "submittedBy": "lerenn",
+  "reviewedAt": "2026-10-09",
+  "listing": {
+    "name": "Excalidraw"
+  }
+}

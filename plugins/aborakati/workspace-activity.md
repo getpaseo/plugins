@@ -5,3 +5,5 @@ Agent Monitor groups agents and subagents into a tree, with status filters, rece
 Tasks collects todo snapshots from the current workspace’s agent timelines, groups them by agent and filters them by status. It reflects tasks emitted by agents rather than creating a separate task store. Both panels update through the host’s agent and timeline subscriptions; their contents depend on the history the daemon makes available.
 
 The plugin reads agent metadata and conversation/tool content through Paseo and displays it to connected clients. It has no independent external service, credential-store access, filesystem writes, software installation or shell execution. Sending a steering prompt can start more agent work and is handled by the selected provider, which can be remote. Listing requests read a bounded page of up to 200 agents before workspace filtering, so very large hosts can have incomplete results. Live behavior across every supported host/provider combination has not been verified by this listing review.
+
+*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/workspace-activity).*

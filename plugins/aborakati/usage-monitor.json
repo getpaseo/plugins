@@ -1,0 +1,27 @@
+{
+  "id": "aborakati/usage-monitor",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/ABorakati/paseo-usage-monitor.git",
+    "commit": "4b9758691237dda40665c6f107b569e7292dccbc"
+  },
+  "repository": {
+    "url": "https://github.com/ABorakati/paseo-usage-monitor",
+    "commit": "4b9758691237dda40665c6f107b569e7292dccbc"
+  },
+  "categories": [
+    "daemon-management",
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-10-08",
+  "submittedBy": "ABorakati",
+  "reviewedAt": "2026-10-09",
+  "listing": {
+    "name": "Usage Monitor",
+    "media": [
+      "https://raw.githubusercontent.com/ABorakati/paseo-usage-monitor/4b9758691237dda40665c6f107b569e7292dccbc/docs/images/usage-limits.png",
+      "https://raw.githubusercontent.com/ABorakati/paseo-usage-monitor/4b9758691237dda40665c6f107b569e7292dccbc/docs/images/usage-history.png"
+    ]
+  }
+}

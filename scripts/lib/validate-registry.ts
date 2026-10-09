@@ -1,3 +1,4 @@
+import { requireCompletedSubmissions } from "./submission.ts";
 import { validateArtifact } from "./validate-artifact.ts";
 import { categorySlugs, readCategories } from "./categories.ts";
 import { readFeatured } from "./featured.ts";
@@ -25,6 +26,7 @@ export async function validateRegistry(options: {
 } = {}): Promise<void> {
   const { online = false, changedOnly = false, overviewPendingFor,
     base = "origin/main", client = createNpmClient() } = options;
+  requireCompletedSubmissions();
   const known = categorySlugs(readCategories());
   const records = readRecords(known);
   readFeatured(records);
@@ -44,8 +46,8 @@ export async function validateRegistry(options: {
     selected = records.filter((record) => changed.has(record.id));
   }
 
-  const mediaProblems = await checkMediaUrls(records.flatMap((record) => record.listing?.media ?? []));
-  for (const record of records) {
+  const mediaProblems = await checkMediaUrls(selected.flatMap((record) => record.listing?.media ?? []));
+  for (const record of selected) {
     for (const url of record.listing?.media ?? []) {
       if (mediaProblems.has(url)) console.error(`${record.id}: media ${url}: ${mediaProblems.get(url)}`);
     }

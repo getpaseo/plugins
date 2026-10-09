@@ -4,35 +4,36 @@ All additions and updates reach `main` through pull requests. Hand-edited pull
 requests are accepted, including edits to existing records. Merging approves the
 pinned artifact; publishing serves only records already on `main`.
 
-| Workflow       | Trigger (UTC)                                                        | Work                                                                                                    |
-| -------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| `submit.yml`   | Submission issue opened; manual with an issue number | Pin one submission and open or update its review PR. |
-| `bump.yml`     | 05:17 and 17:17 daily; manual                                        | Open one PR per new pinned version, naming `submittedBy` and including an artifact diff.                |
-| `validate.yml` | Every PR, including existing-record edits; every push to main        | Run tests and online pin validation.                                                                    |
-| `publish.yml`  | Relevant changes merged to main; 06:41 daily; manual                 | Build static documents and publish them through GitHub Pages.                                           |
+| Workflow | Trigger | Work |
+| --- | --- | --- |
+| `submit.yml` | Issue opened, edited, reopened or labeled; recovery at :07/:37 UTC; manual | Open a PR with submission details for review. |
+| `bump.yml` | 05:17 and 17:17 UTC; manual | Propose new npm versions. Git updates are manual. |
+| `validate.yml` | PRs and pushes to main | Test the registry and validate completed records. |
+| `publish.yml` | Relevant main changes; daily; manual | Publish approved pinned records. |
 
-Submissions run once when opened. Edits, label changes, and schedules do not
-process them. Maintainers can rerun one open submission deliberately in Actions
-(**Submission → Run workflow → issue_number**), or with:
+Intake parses the source and carries author-supplied references and categories into
+`submissions/<issue>.json`. It does not download plugins, require Git tags, verify
+ownership, or run registry publication checks before creating the PR. Missing
+categories are completed by the reviewer. The submission file is review input;
+it is removed when the reviewer writes the approved record.
+
+Edits retry issues that have no PR. Scheduled recovery processes open submission
+issues that never reached a PR, including old failures. Manual dispatch accepts
+an issue number or recovers all waiting submissions when omitted:
 
 ```sh
+gh workflow run submit.yml
 gh workflow run submit.yml -f issue_number=123
 ```
 
-A rerun reads the current issue and latest release even if the issue text has not
-changed. It reuses that issue's branch and open PR; merged or closed PRs are not
-recreated. Closed issues and issues without the `submission` label are skipped.
-Concurrency is scoped to the issue, so another submission does not replace a
-pending run. The reviewer owns reopening stale reviews.
+Existing PR branches are left alone, including reviewer edits. Closed issues and
+issues without the submission label are skipped. Existing closed or merged PRs
+are not recreated. For a new manual Git update, open a new submission issue.
+The reviewer reads subsequent comments and issue edits.
 
-Known author-fixable failures produce a comment naming the problem, the change,
-and the need to ask a maintainer for a rerun. Network, tooling, and registry
-failures keep their diagnostics in the workflow log and job summary and add
-`needs-maintainer`; they do not post an error comment on the author's issue.
-Inspect the failed run, resolve its cause, rerun that issue, and remove the label
-when handled. Submission reads metadata from the pinned `paseo-plugin.json`
-and preserves record overrides. Categories do not trigger content requirements;
-the PR reviewer decides which screenshots the plugin needs under REVIEW.md.
+Invalid source text receives a correction request; service failures receive an
+acknowledgement and automatic retry. Neither creates a maintainer hold. Repeated
+identical intake messages are suppressed.
 
 npm package files come from one cached tarball per version, verified against
 npm's SHA-512 before reading. No package code runs, and files are read to stdout
@@ -43,7 +44,7 @@ Published asset URLs still use jsDelivr for npm and raw GitHub URLs for Git.
 ## Tokens and repository setup
 
 - Use the default `GITHUB_TOKEN`. Enable Actions' permission to create pull requests.
-- Both creation workflows run `npm test` and the shared checks behind `node scripts/validate.ts --online --changed` inline after committing the candidate and before pushing or creating its PR. A failure stops that PR. The PR body records successful validation.
+- Submission creation runs only intake sanity checks. The reviewer resolves the artifact and runs trusted publication validation after completing the record. npm bump PRs retain validation evidence inside a collapsed details section.
 - `GITHUB_TOKEN` PRs do not trigger `validate.yml`. Do not require the Validate status check until bot PRs trigger it. Hub receives App webhooks, so this limitation does not prevent Hub review.
 - `PLUGINS_BOT_TOKEN` is optional. If set, both checkout/push and `gh` use it so downstream PR validation can run. Grant contents, issues, and pull-requests write access.
 - Creation workflows create their `submission` or `bump` label and `needs-maintainer` idempotently. No manual label bootstrap is needed; a manual run provisions them before the first submission.
@@ -53,26 +54,25 @@ Published asset URLs still use jsDelivr for npm and raw GitHub URLs for Git.
 
 ## Reviewer
 
-The disabled trigger is **paseo-plugin-review**, in
-`~/dev/skills/hub/.paseo/triggers/scheduled-plugin-review.yml`. That file owns
-selection, timing, labels, GitHub commands, reports, and outcomes. [REVIEW.md](REVIEW.md)
-on `main` owns judgment. Never use the PR head's policy to judge its own changes.
+The `paseo-plugin-review` trigger runs every 30 minutes. Its private operating
+configuration owns timing and execution; [REVIEW.md](REVIEW.md) on main owns
+acceptance. Never use the PR head's policy to judge its own changes.
 
-One bot performs both Security and advisory Quality review. Its hourly schedule
-at :12 (Europe/Berlin) exceeds the two-to-three-times-daily review expectation;
-Actions schedules own submission and bump creation. The trigger remains
-`enabled: false` until activation is approved.
+The reviewer handles a single submission file and its eventual plugin record and
+overview, or an existing record update. Infrastructure changes remain repository
+maintenance. For Git, resolve the supplied ref or current `main` commit during
+review. Review and store the exact commit before merging. A release tag is optional.
+Git updates are considered only when submitted manually.
 
-Only exactly one changed `plugins/<owner>/<slug>.json` file is eligible for
-automatic merge. Multiple records, deletions, owner changes, `.github/`, `scripts/`,
-`REVIEW.md`, `PROTOCOL.md`, `categories.json`, and all other changes are
-maintainer-only. CODEOWNERS covers the policy and automation paths; the bot checks
-the complete changed-file list and never edits a record.
+Every public review outcome mentions the human submitter, including approvals.
+For an automation-created PR, use the linked issue author or recorded
+`submittedBy`, not the automation account. Read public replies before deciding
+what remains. The reviewer owns listing edits, ordinary decisions and author
+follow-up; credible serious safety decisions alone need maintainer escalation.
 
-Changes-requested PRs close after 14 days without a new commit or comment. A new
-commit or comment reopens a stale closure on the next run. For a malicious bump,
-close the PR and create one deduplicated `Delist <id>?` issue labeled
-`needs-maintainer`. The reviewer never delists.
+Keep the visible PR body to the plugin name, version change and review status.
+Artifact hashes, JSON, diffs and validation instructions belong in collapsed
+details. Review evidence belongs under a separate collapsed review-data section.
 
 ## Static artifact inspection
 
@@ -97,8 +97,7 @@ mkdir "$inspection_dir/artifact"
 tar -xzf "$inspection_dir/artifact.tgz" -C "$inspection_dir/artifact" --no-same-owner --no-same-permissions
 ```
 
-Read the extracted manifest, package.json, README, and shipped source. Compare
-with repository source at `repository.commit` when provided. On bumps, inspect
+Read the extracted manifest, package.json, README, and shipped source. Optional repository source can help explain a package; matching it is not a requirement. On bumps, inspect
 both artifacts and compare them with `diff -ruN`; the PR body's diff is a claim.
 
 For Git, set `artifact_remote` and `artifact_commit` from the record:
@@ -109,7 +108,7 @@ git clone --no-checkout --no-recurse-submodules -- "$artifact_remote" "$inspecti
 git -C "$inspection_dir/repository" checkout --detach "$artifact_commit"
 ```
 
-Verify the tag points to that commit. Read `paseo-plugin.json` and source under
+If a tag is recorded, verify it points to that commit. Read `paseo-plugin.json` and source under
 `artifact.pluginPath`, or the repository root when absent. Do not initialize
 submodules or execute anything in the checkout. Record unresolved dependencies
 and references in the review.

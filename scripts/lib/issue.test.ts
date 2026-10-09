@@ -20,9 +20,9 @@ for (const source of [
     assert.deepEqual(parse(source), { source: parseSubmissionSource(source), categories: ["git", "workspaces"] });
   });
 }
-test("rejects missing Source or categories and registry ids", () => {
+test("rejects missing Source and registry ids", () => {
   assert.throws(() => parse("_No response_"), /no plugin source/);
-  assert.throws(() => parseSubmissionIssue(body.replaceAll("[x]", "[ ]"), readCategories()), /no category/);
+  assert.deepEqual(parseSubmissionIssue(body.replaceAll("[x]", "[ ]"), readCategories()).categories, []);
   assert.throws(() => parseSubmissionIssue(body.replace("### Source", "### Plugin source"), readCategories()), /no plugin source/);
   assert.throws(() => parse("acme/review"), /paste the repository or package instead/i);
 });

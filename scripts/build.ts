@@ -1,3 +1,4 @@
+import { requireCompletedSubmissions } from "./lib/submission.ts";
 // Generates dist/: index.json for the list pages and plugins/<id>.json for the detail pages.
 import { mkdirSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -7,6 +8,8 @@ import { type PublishedIndex, resolvePlugin, summarize } from "./lib/listing.ts"
 import { createNpmClient } from "./lib/npm.ts";
 import { readOverview } from "./lib/overview.ts";
 import { readRecords } from "./lib/record.ts";
+
+requireCompletedSubmissions();
 
 const DIST = join(process.cwd(), "dist");
 const categories = readCategories();

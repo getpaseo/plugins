@@ -37,7 +37,6 @@ export function parseSubmissionIssue(body: string, categories: Category[]): Subm
   const slugs = checked
     .map((label) => labels.get(label.toLowerCase()))
     .filter((slug): slug is string => Boolean(slug));
-  if (slugs.length === 0) throw new AuthorError("The issue has no category ticked. Tick at least one category in the issue.");
 
   try {
     return { source: parseSubmissionSource(source), categories: slugs };

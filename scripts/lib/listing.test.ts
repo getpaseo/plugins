@@ -116,14 +116,14 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
     };
     run(
       process.execPath,
-      ["scripts/add.ts", "acme/plugins:packages/example", "--categories", "utils"],
+      ["scripts/add.ts", "acme/plugins:packages/example#v1.0.0", "--categories", "utils"],
       options,
     );
     run(
       process.execPath,
       [
         "scripts/add.ts",
-        "https://github.com/acme/plugins",
+        "https://github.com/acme/plugins#v1.0.0",
         "--plugin-path",
         pluginPath,
         "--id",

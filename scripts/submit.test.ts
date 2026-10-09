@@ -63,7 +63,8 @@ function fixture(t: TestContext, source: string) {
   writeFileSync(join(bin, "gh"), `#!${process.execPath}\nconst fs = require("node:fs");
 const args = process.argv.slice(2);
 fs.appendFileSync(process.env.SUBMIT_CALLS, JSON.stringify(args) + "\\n");
-if (args[0] === "issue" && args[1] === "view") console.log(fs.readFileSync(process.env.SUBMIT_ISSUE, "utf8"));
+if (args[0] === "issue" && args[1] === "list") console.log(JSON.stringify([{ number: 42 }]));
+else if (args[0] === "issue" && args[1] === "view") console.log(fs.readFileSync(process.env.SUBMIT_ISSUE, "utf8"));
 else if (args[0] === "pr" && args[1] === "list") console.log(fs.readFileSync(process.env.SUBMIT_PREVIOUS, "utf8"));
 else if (args[0] === "pr" && args[1] === "create") console.log("https://github.com/acme/registry/pull/1");
 else if (args[0] === "pr" && args[1] === "edit") {}
@@ -79,7 +80,7 @@ else if (args[0] !== "issue" || !["close", "comment", "edit"].includes(args[1]))
   git(registry, "remote", "add", "origin", origin);
   // Real parser tests exercise inline validation without recursively spawning this suite.
   writeFileSync(join(registry, "package.json"), JSON.stringify({ type: "module", scripts: { test: "node --test scripts/lib/issue.test.ts" } }));
-  const run = () => spawnSync(process.execPath, ["scripts/submit.ts"], {
+  const run = (script = "submit") => spawnSync(process.execPath, [`scripts/${script}.ts`], {
     cwd: registry, encoding: "utf8",
     env: { ...process.env, PATH: `${bin}:${process.env.PATH}`, ISSUE_NUMBER: "42", SUBMIT_CALLS: callsFile, SUBMIT_ISSUE: issueFile, SUBMIT_PREVIOUS: previousFile, SUBMIT_MEMBERSHIP: membershipFile, GITHUB_STEP_SUMMARY: summaryFile,
       GIT_CONFIG_COUNT: "1", GIT_CONFIG_KEY_0: `url.file://${remote}.insteadOf`, GIT_CONFIG_VALUE_0: "https://github.com/acme/example.git" },
@@ -87,225 +88,110 @@ else if (args[0] !== "issue" || !["close", "comment", "edit"].includes(args[1]))
   return { run, issue, issueFile, previousFile, membershipFile, summaryFile, remote, registry, git, calls: () => readFileSync(callsFile, "utf8").trim().split("\n").map((line) => JSON.parse(line)), unchanged: () => assert.equal(readFileSync(recordFile, "utf8"), original) };
 }
 
-for (const [name, source] of [
-  ["existing npm package", "@acme/paseo-example"],
-  ["npm package URL", "https://www.npmjs.com/package/@acme/paseo-example"],
-  ["npm install source", "npm:@acme/paseo-example"],
-  ["Git id resolved from the pinned source", "https://github.com/acme/example"],
-  ["Git install source", "github:acme/example"],
-]) {
-  test(`submission closes ${name} successfully`, (t) => {
-    const f = fixture(t, source);
-    if (source.startsWith("https://")) {
-      writeFileSync(f.issueFile, JSON.stringify({ ...f.issue, author: { login: "visitor" } }));
-    }
-    const result = f.run();
-    assert.equal(result.status, 0, result.stderr);
-    assert.deepEqual(f.calls().filter((args) => args[0] === "issue" && args[1] !== "view"), [
-      ["issue", "close", "42", "--comment", "Already listed: [acme/example](https://paseo.sh/plugins/acme/example)."],
-    ]);
-    assert.equal(f.calls().some((args) => args[0] === "pr" && args[1] !== "list"), false);
-    f.unchanged();
-  });
-}
-
-test("invalid submissions still report an error and remain open", (t) => {
-  const f = fixture(t, "@acme/paseo-example");
-  writeFileSync(f.issueFile, JSON.stringify({ ...f.issue, body: "### Source\n@acme/example" }));
-  const result = f.run();
-  assert.equal(result.status, 1);
-  assert.equal(f.calls().some((args) => args[1] === "close"), false);
-  assert.match(f.calls().find((args) => args[1] === "comment").at(-1), /no category ticked/);
-  f.unchanged();
-});
-
-for (const source of ["acme/example", "./plugin"]) {
-  test(`submission rejects ${source} with an actionable comment`, (t) => {
-    const f = fixture(t, source);
-    assert.equal(f.run().status, 1);
-    assert.match(f.calls().find((args) => args[1] === "comment").at(-1), /paste the repository or package instead/i);
-    assert.equal(f.calls().some((args) => args[1] === "close"), false);
-    f.unchanged();
-  });
-}
 
 for (const source of [
-  "https://github.com/acme/example/tree/ignored/plugins/review",
-  "acme/example:plugins/review",
+  "https://github.com/acme/example",
+  "https://github.com/acme/example/tree/1234567890123456789012345678901234567890/plugins/review",
+  "github:acme/example#v1.0.0",
+  "npm:@acme/paseo-example",
 ]) {
-  test(`submission pins the newest tag and derives the id from ${source}`, (t) => {
+  test(`intake opens a review proposal without artifact or ownership gates: ${source}`, (t) => {
     const f = fixture(t, source);
-    f.git(f.remote, "commit", "--allow-empty", "-qm", "release");
-    f.git(f.remote, "tag", "-a", "v2.0.0", "-m", "Release");
-    const commit = f.git(f.remote, "rev-parse", "HEAD");
-    f.git(f.remote, "commit", "--allow-empty", "-qm", "unreleased");
+    // No remote, invalid unrelated registry data, and no org membership:
+    // none of these should prevent opening the review.
+    rmSync(f.remote, { recursive: true });
+    writeFileSync(join(f.registry, "plugins/acme/example.json"), "broken unrelated record");
+    writeFileSync(f.membershipFile, "404");
+    writeFileSync(f.issueFile, JSON.stringify({ ...f.issue, author: { login: "visitor" } }));
     const result = f.run();
     assert.equal(result.status, 0, result.stderr);
-    const record = JSON.parse(readFileSync(join(f.registry, "plugins/acme/review.json"), "utf8"));
-    assert.equal(record.id, "acme/review");
-    assert.equal(record.artifact.pluginPath, "plugins/review");
-    assert.equal(record.artifact.tag, "v2.0.0");
-    assert.equal(record.artifact.commit, commit);
-    assert.equal(record.listing.name, "Example plugin");
-    assert.equal(f.calls().some((args) => args[0] === "pr" && args[1] === "create"), true);
-    f.unchanged();
+    const proposal = JSON.parse(readFileSync(join(f.registry, "submissions/42.json"), "utf8"));
+    assert.equal(proposal.submittedBy, "visitor");
+    assert.equal(proposal.title, "Example plugin");
+    if (source.includes("/tree/")) assert.equal(proposal.source.ref, "1234567890123456789012345678901234567890");
+    else if (source.includes("#")) assert.equal(proposal.source.ref, "v1.0.0");
+    else assert.equal(proposal.source.ref, undefined);
+    assert.equal(f.calls().some((a) => a[0] === "pr" && a[1] === "create"), true);
+    assert.equal(f.calls().some((a) => a[0] === "api" || a.includes("needs-maintainer")), false);
   });
 }
 
-test("changing only the issue title updates the listing name in its existing PR", (t) => {
-  const f = fixture(t, "github:acme/example:plugins/review");
-  const first = f.run();
-  assert.equal(first.status, 0, first.stderr);
-  const created = f.calls().find((args) => args[0] === "pr" && args[1] === "create");
-  writeFileSync(f.previousFile, JSON.stringify([{
-    number: 1, state: "OPEN", body: created[created.indexOf("--body") + 1],
-    url: "https://github.com/acme/registry/pull/1",
-  }]));
-  writeFileSync(f.issueFile, JSON.stringify({ ...f.issue, title: "Renamed plugin" }));
-  const updated = f.run();
-  assert.equal(updated.status, 0, updated.stderr);
-  const record = JSON.parse(readFileSync(join(f.registry, "plugins/acme/review.json"), "utf8"));
-  assert.equal(record.listing.name, "Renamed plugin");
-  assert.equal(f.calls().filter((args) => args[0] === "pr" && args[1] === "edit").length, 1);
-});
-
-
-test("submission workflow only starts on opening or an explicit single-issue dispatch", () => {
-  const workflow = readFileSync(new URL("../.github/workflows/submit.yml", import.meta.url), "utf8");
-  assert.match(workflow, /types: \[opened\]/);
-  assert.doesNotMatch(workflow, /schedule:|cron:|edited|labeled|--paginate/);
-  assert.match(workflow, /issue_number:/);
-  assert.match(workflow, /required: true/);
-  assert.match(workflow, /group:.*issue/);
-});
-
-test("submission without an overview reaches review, then requires the reviewer page before publication", (t) => {
-  const f = fixture(t, "github:acme/example:plugins/review");
-  rmSync(join(f.remote, "plugins/review/OVERVIEW.md"));
-  f.git(f.remote, "add", ".");
-  f.git(f.remote, "commit", "-qm", "missing overview");
-  f.git(f.remote, "tag", "v2.0.0");
+test("missing categories are completed by the reviewer", (t) => {
+  const f = fixture(t, "github:acme/example");
+  writeFileSync(f.issueFile, JSON.stringify({ ...f.issue, body: "### Source\nhttps://github.com/acme/example" }));
   const result = f.run();
   assert.equal(result.status, 0, result.stderr);
-  const created = f.calls().find((args) => args[0] === "pr" && args[1] === "create");
-  assert.ok(created);
-  assert.match(created[created.indexOf("--body") + 1], /overview.*review/i);
-  const comment = f.calls().find((args) => args[1] === "comment").at(-1);
-  assert.match(comment, /listing is in review/);
-  assert.doesNotMatch(comment, /publish|release|maintainer/i);
-  const validate = () => spawnSync(process.execPath, ["scripts/validate.ts", "--online", "--changed"], {
-    cwd: f.registry, encoding: "utf8",
-    env: { ...process.env, GIT_CONFIG_COUNT: "1",
-      GIT_CONFIG_KEY_0: `url.file://${f.remote}.insteadOf`,
-      GIT_CONFIG_VALUE_0: "https://github.com/acme/example.git" },
-  });
-  assert.notEqual(validate().status, 0, "publication still requires an overview");
-  writeFileSync(join(f.registry, "plugins/acme/review.md"), "A reviewer-written overview.");
-  f.git(f.registry, "add", "plugins/acme/review.md");
-  f.git(f.registry, "commit", "-qm", "complete listing overview");
-  const ready = validate();
-  assert.equal(ready.status, 0, ready.stderr);
+  assert.deepEqual(JSON.parse(readFileSync(join(f.registry, "submissions/42.json"), "utf8")).categories, []);
 });
 
-test("a submission categorized as Themes reaches PR review without screenshots", (t) => {
-  const f = fixture(t, "github:acme/example:plugins/review");
-  writeFileSync(f.issueFile, JSON.stringify({ ...f.issue, body: f.issue.body.replace("- [ ] Themes", "- [x] Themes") }));
-  const result = f.run();
-  assert.equal(result.status, 0, result.stderr);
-  assert.equal(f.calls().some((args) => args[0] === "pr" && args[1] === "create"), true);
-  assert.equal(f.calls().some((args) => args.includes("needs-maintainer")), false);
+test("missing source gets a clear correction without asking for a maintainer", (t) => {
+  const f = fixture(t, "github:acme/example");
+  writeFileSync(f.issueFile, JSON.stringify({ ...f.issue, body: "### Source\n_No response_" }));
+  assert.equal(f.run().status, 1);
+  const comment = f.calls().find((a) => a[1] === "comment").at(-1);
+  assert.match(comment, /source/i);
+  assert.doesNotMatch(comment, /maintainer|release tag/i);
+  assert.equal(f.calls().some((a) => a.includes("needs-maintainer")), false);
 });
 
-test("infrastructure failure is logged and labeled, without asking the author to edit", (t) => {
-  const f = fixture(t, "github:acme/example:plugins/review");
-  rmSync(f.remote, { recursive: true });
-  const result = f.run();
-  assert.equal(result.status, 1);
-  assert.equal(f.calls().some((args) => args[1] === "comment"), false);
-  assert.equal(f.calls().some((args) => args.includes("--add-label") && args.includes("needs-maintainer")), true);
-});
-
-test("an intentional rerun repins an unchanged issue after a new release", (t) => {
-  const f = fixture(t, "github:acme/example:plugins/review");
+test("reruns preserve reviewer edits on an existing PR", (t) => {
+  const f = fixture(t, "github:acme/example");
   assert.equal(f.run().status, 0);
-  const created = f.calls().find((args) => args[0] === "pr" && args[1] === "create");
-  writeFileSync(f.previousFile, JSON.stringify([{
-    number: 1, state: "OPEN", body: created[created.indexOf("--body") + 1],
-    url: "https://github.com/acme/registry/pull/1",
-  }]));
-  f.git(f.remote, "commit", "--allow-empty", "-qm", "release");
-  f.git(f.remote, "tag", "v2.0.0");
-  const result = f.run();
-  assert.equal(result.status, 0, result.stderr);
-  const record = JSON.parse(readFileSync(join(f.registry, "plugins/acme/review.json"), "utf8"));
-  assert.equal(record.artifact.tag, "v2.0.0");
+  const head = f.git(f.registry, "rev-parse", "HEAD");
+  writeFileSync(f.previousFile, JSON.stringify([{ number: 1, state: "OPEN", url: "https://github.com/acme/registry/pull/1" }]));
+  writeFileSync(f.issueFile, JSON.stringify({ ...f.issue, title: "New title" }));
+  assert.equal(f.run().status, 0);
+  assert.equal(f.git(f.registry, "rev-parse", "HEAD"), head);
+  assert.equal(f.calls().filter((a) => a[0] === "pr" && a[1] === "create").length, 1);
 });
 
-
-test("an invalid overview in an existing registry record is not blamed on the submitter", (t) => {
-  const f = fixture(t, "github:acme/example:plugins/review");
-  writeFileSync(join(f.registry, "plugins/acme/example.md"), "npm install unrelated");
-  f.git(f.registry, "add", "plugins/acme/example.md");
-  f.git(f.registry, "commit", "-qm", "invalid registry overview");
-  f.git(f.registry, "update-ref", "refs/remotes/origin/main", "HEAD");
-  const result = f.run();
-  assert.equal(result.status, 1);
-  assert.equal(f.calls().some((args) => args[1] === "comment"), false);
-  assert.equal(f.calls().some((args) => args.includes("needs-maintainer")), true);
+test("unreviewed submissions cannot be published as approved listings", (t) => {
+  const f = fixture(t, "github:acme/example");
+  assert.equal(f.run().status, 0);
+  const result = spawnSync(process.execPath, ["scripts/build.ts"], { cwd: f.registry, encoding: "utf8" });
+  assert.notEqual(result.status, 0);
+  assert.match(result.stderr, /review.*submission|submission.*review/i);
 });
-
-
-for (const status of [404, 503]) {
-  test(`GitHub membership HTTP ${status} distinguishes ownership from an outage`, (t) => {
-    const f = fixture(t, "github:acme/example:plugins/review");
-    writeFileSync(f.issueFile, JSON.stringify({ ...f.issue, author: { login: "visitor" } }));
-    writeFileSync(f.membershipFile, String(status));
-    const result = f.run();
-    assert.equal(result.status, 1);
-    const comments = f.calls().filter((args) => args[1] === "comment");
-    if (status === 404) {
-      assert.equal(comments.length, 1);
-      assert.match(comments[0].at(-1), /Ask the repository owner/);
-      assert.match(comments[0].at(-1), /maintainer.*rerun/);
-    } else {
-      assert.equal(comments.length, 0);
-      assert.equal(f.calls().some((args) => args.includes("needs-maintainer")), true);
-    }
-  });
-}
-
-for (const scenario of ["no tag", "missing manifest", "invalid manifest", "invalid overview"]) {
-  test(`${scenario} tells the author which release content to fix`, (t) => {
-    const f = fixture(t, "github:acme/example:plugins/review");
-    if (scenario === "no tag") f.git(f.remote, "tag", "-d", "v1.0.0");
-    else {
-      if (scenario === "missing manifest") rmSync(join(f.remote, "plugins/review/paseo-plugin.json"));
-      if (scenario === "invalid manifest") writeFileSync(join(f.remote, "plugins/review/paseo-plugin.json"), "invalid");
-      if (scenario === "invalid overview") writeFileSync(join(f.remote, "plugins/review/OVERVIEW.md"), "npm install example");
-      f.git(f.remote, "add", ".");
-      f.git(f.remote, "commit", "-qm", scenario);
-      f.git(f.remote, "tag", "v2.0.0");
-    }
-    const result = f.run();
-    assert.equal(result.status, 1);
-    const comment = f.calls().find((args) => args[1] === "comment").at(-1);
-    assert.match(comment, /publish/i);
-    assert.match(comment, /maintainer.*rerun/i);
-    assert.doesNotMatch(comment, /Command failed/);
-    assert.match(comment, scenario === "no tag" ? /release tag/ : scenario === "invalid overview" ? /OVERVIEW.md.*install commands/ : /paseo-plugin.json/);
-  });
-}
 
 for (const scenario of ["closed issue", "missing label", "closed PR", "merged PR"]) {
-  test(`dispatch leaves a ${scenario} alone`, (t) => {
-    const f = fixture(t, "github:acme/example:plugins/review");
+  test(`intake leaves a ${scenario} alone`, (t) => {
+    const f = fixture(t, "github:acme/example");
     if (scenario === "closed issue") writeFileSync(f.issueFile, JSON.stringify({ ...f.issue, state: "CLOSED" }));
     if (scenario === "missing label") writeFileSync(f.issueFile, JSON.stringify({ ...f.issue, labels: [] }));
-    if (scenario.endsWith("PR")) writeFileSync(f.previousFile, JSON.stringify([{
-      number: 1, state: scenario === "closed PR" ? "CLOSED" : "MERGED", url: "https://github.com/acme/registry/pull/1",
-    }]));
+    if (scenario.endsWith("PR")) writeFileSync(f.previousFile, JSON.stringify([{ number: 1, state: scenario === "closed PR" ? "CLOSED" : "MERGED", url: "https://github.com/acme/registry/pull/1" }]));
     const result = f.run();
     assert.equal(result.status, 0, result.stderr);
-    assert.equal(f.calls().every((args) => args[1] === "view" || args[1] === "list"), true);
+    assert.equal(f.calls().every((a) => a[1] === "view" || a[1] === "list"), true);
   });
 }
+
+
+test("recovery opens waiting submissions and skips branches already in review", (t) => {
+  const f = fixture(t, "github:acme/example");
+  assert.equal(f.run("retry-submissions").status, 0);
+  writeFileSync(f.previousFile, JSON.stringify([{ headRefName: "submit/issue-42" }]));
+  assert.equal(f.run("retry-submissions").status, 0);
+  assert.equal(f.calls().filter((a) => a[0] === "pr" && a[1] === "create").length, 1);
+});
+
+test("service failures acknowledge the submitter without a maintainer hold", (t) => {
+  const f = fixture(t, "github:acme/example");
+  f.git(f.registry, "remote", "set-url", "origin", "/nonexistent-intake-test-remote");
+  const result = f.run();
+  assert.notEqual(result.status, 0);
+  const message = f.calls().find((a) => a[1] === "comment").at(-1);
+  assert.match(message, /retry automatically/);
+  assert.doesNotMatch(message, /needs.maintainer|Command failed/);
+  assert.equal(f.calls().some((a) => a.includes("needs-maintainer")), false);
+});
+
+test("repeated invalid input does not repeat the same author request", (t) => {
+  const f = fixture(t, "github:acme/example");
+  const issue = { ...f.issue, body: "### Source\n_No response_" };
+  writeFileSync(f.issueFile, JSON.stringify(issue));
+  assert.equal(f.run().status, 1);
+  const message = f.calls().find((a) => a[1] === "comment").at(-1);
+  writeFileSync(f.issueFile, JSON.stringify({ ...issue, comments: [{ body: message }] }));
+  assert.equal(f.run().status, 1);
+  assert.equal(f.calls().filter((a) => a[1] === "comment").length, 1);
+});

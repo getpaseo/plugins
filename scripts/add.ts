@@ -1,4 +1,4 @@
-// Pins a package and writes its record. Used by maintainers locally and by submit.ts.
+// Pins a package and writes its record. Used by reviewers after intake.
 //   node scripts/add.ts <npm package> --categories themes,utils [--id dracula] [--submitted-by login] [--submitted-at YYYY-MM-DD]
 import { pinGit } from "./lib/git-artifact.ts";
 import { parseSubmissionSource } from "./lib/submission-source.ts";
@@ -55,7 +55,7 @@ const record = source.kind === "git"
   : await pinRecord(
       createNpmClient(),
       { id, package: packageName, categories, submittedBy: flagString(flags, "submitted-by") },
-      { version: flagString(flags, "version"), submittedAt: flagString(flags, "submitted-at") },
+      { version: flagString(flags, "version") ?? (source.kind === "npm" ? source.version : undefined), submittedAt: flagString(flags, "submitted-at") },
     );
 parseRecord(record, known);
 if (existing.some((item) => item.id === record.id))

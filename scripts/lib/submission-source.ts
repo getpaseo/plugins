@@ -1,19 +1,28 @@
 import { normalizeRepositoryUrl } from "./repository.ts";
 
 export type SubmissionSource =
-  | { kind: "npm"; package: string }
-  | { kind: "git"; source: string; pluginPath?: string };
+  | { kind: "npm"; package: string; version?: string }
+  | { kind: "git"; source: string; pluginPath?: string; ref?: string };
 
-/** Browser links and install sources become an unversioned registry submission. */
+/** Preserve submitted revisions; intake does not choose a release. */
 export function parseSubmissionSource(input: string): SubmissionSource {
   let reference = input.trim();
-  const npmPage = /^https:\/\/(?:www\.)?npmjs\.com\/package\/((?:@[^/]+\/)?[^/]+)\/?$/.exec(reference);
-  if (npmPage) reference = `npm:${decodeURIComponent(npmPage[1])}`;
+  let ref: string | undefined;
+  const hash = reference.indexOf("#");
+  if (hash !== -1) {
+    ref = decodeURIComponent(reference.slice(hash + 1));
+    reference = reference.slice(0, hash);
+    if (!ref || /[\s\x00-\x1f]/.test(ref) || ref.startsWith("-")) throw new Error("Use a non-empty Git reference.");
+  }
+  const npmPage = /^https:\/\/(?:www\.)?npmjs\.com\/package\/((?:@[^/]+\/)?[^/]+)(?:\/v\/([^/]+))?\/?$/.exec(reference);
+  if (npmPage) reference = `npm:${decodeURIComponent(npmPage[1])}${npmPage[2] ? `@${npmPage[2]}` : ""}`;
 
   // Read browser paths before URL normalization can erase traversal segments.
-  const tree = /^https:\/\/github\.com\/([^/]+\/[^/]+)\/tree\/[^/]+(?:\/(.*))?$/.exec(reference);
+  const tree = /^https:\/\/github\.com\/([^/]+\/[^/]+)\/tree\/([^/]+)(?:\/(.*))?$/.exec(reference);
   if (tree) {
-    const path = tree[2] ? decodeURIComponent(tree[2].replace(/\/$/, "")) : undefined;
+    if (ref) throw new Error("Supply one Git reference.");
+    ref = decodeURIComponent(tree[2]);
+    const path = tree[3] ? decodeURIComponent(tree[3].replace(/\/$/, "")) : undefined;
     if (path && !isPortableRelativePluginPath(path))
       throw new Error("Plugin path must stay inside the repository");
     reference = `https://github.com/${tree[1]}${path ? `:${path}` : ""}`;
@@ -28,22 +37,18 @@ export function parseSubmissionSource(input: string): SubmissionSource {
     throw new Error("Registry ids and host directories are not submissions; paste the repository or package instead.");
   }
   const pkg = parsed.source.replace(/^npm:/, "");
-  if (/^(?:@[a-z0-9][\w.-]*\/)?[a-z0-9][\w.-]*$/.test(pkg)) {
+  const npm = /^((?:@[a-z0-9][\w.-]*\/)?[a-z0-9][\w.-]*)(?:@([^\s/:]+))?$/.exec(pkg);
+  if (npm) {
+    if (ref) throw new Error("Use @version for an npm package.");
     if (parsed.pluginPath) throw new Error("Submit the npm package containing the plugin at its root.");
-    return { kind: "npm", package: pkg };
-  }
-  if (
-    parsed.source.startsWith("npm:") ||
-    /^(?:@[a-z0-9][\w.-]*\/)?[a-z0-9][\w.-]*@[^:]+$/.test(pkg)
-  ) {
-    throw new Error("Paste an npm package without a version; the bot lists the latest published version.");
+    return { kind: "npm", package: npm[1], ...(npm[2] ? { version: npm[2] } : {}) };
   }
 
   // A path suffix disambiguates the legacy install shorthand from a registry id.
   const source = parsed.pluginPath && /^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(parsed.source)
     ? `github:${parsed.source}` : parsed.source;
   const remote = normalizeGitSource(source);
-  if (/[?#]/.test(remote)) throw new Error("Paste the repository without a ref; the bot pins its newest tag.");
+  if (/[?#]/.test(remote)) throw new Error("Use a GitHub repository URL, optionally with #ref or /tree/ref.");
   const url = normalizeRepositoryUrl(remote.replace(/\/$/, ""));
   if (!url || !/^https:\/\/github\.com\/[\w.-]+\/[\w.-]+$/.test(url)) {
     throw new Error("Paste a GitHub repository or npm package instead.");
@@ -51,6 +56,7 @@ export function parseSubmissionSource(input: string): SubmissionSource {
   return {
     kind: "git",
     source: url,
+    ...(ref ? { ref } : {}),
     ...(parsed.pluginPath && parsed.pluginPath !== "." ? { pluginPath: parsed.pluginPath } : {}),
   };
 }

@@ -12,32 +12,29 @@ an internal registry by serving the same static JSON documents.
 2. In **Source**, paste its GitHub repository or folder URL, npm package page or
    name, or Git/npm source accepted by `paseo plugin add`, then tick its categories.
    Registry ids and local directories cannot be submitted.
-3. The bot derives the listing id from the source, pins the latest npm version or
-   newest repository tag, and opens a pull request. A branch in a GitHub folder
-   URL locates the plugin directory; the bot still pins the newest tag.
-4. A maintainer reviews it under [REVIEW.md](REVIEW.md), and the approved listing
-   appears on [paseo.sh/plugins](https://paseo.sh/plugins). New versions receive
-   the same review in a separate bump PR.
+3. The bot opens a review PR containing your submission. Git tags and commits
+   are optional. When supplied, the reviewer uses that reference; otherwise the
+   reviewer resolves the current `main` commit. npm submissions use the supplied
+   version, or `latest` when omitted.
+4. The reviewer inspects the artifact under [REVIEW.md](REVIEW.md), completes the
+   listing, and tags you in the outcome. Approved listings appear on
+   [paseo.sh/plugins](https://paseo.sh/plugins).
 
-The bot processes an issue when it is opened. Edits and label changes do not run
-it again. If a change is needed, its comment explains what to fix; after fixing
-it, ask a maintainer to rerun that issue. Service failures go to maintainers via
-`needs-maintainer` and the workflow log instead of asking you to edit the issue.
+Intake checks that the source is understandable. Missing categories, overviews,
+screenshots, source provenance, or unrelated registry failures do not prevent a
+review PR. Identity, artifact contents and listing completion belong to review.
 
-npm packages with provenance can be submitted by anyone. Without provenance,
-the submitter must own the source repository or be a public member of its organization.
+Issue edits retry intake automatically. Every 30 minutes, intake also recovers
+open submissions without a PR. Once a PR exists, the reviewer owns it and reads
+updates from the linked issue; intake never overwrites the reviewer's edits.
+Service failures receive an acknowledgement and retry without a maintainer hold.
 
-All changes go through pull requests, including hand-edited submissions and edits
-to existing records. See [BOTS.md](BOTS.md) for schedules, tokens, safe inspection,
-and the disabled Hub reviewer trigger.
+npm updates receive automatic bump PRs. **Git updates are manual:** open a new
+submission with the desired reference, or propose a new commit in the existing
+registry record. The reviewer resolves and reviews that update. Git repositories
+are never scanned for newer tags or commits by the bump workflow.
 
-Git updates follow the newest version-sorted tag, including prerelease tags. They
-never follow HEAD. Commit-only records are skipped while the repository has no tags.
-The first tag triggers a proposed tagged version, even when it names the already
-pinned commit. Network, authentication, and invalid-tag failures stop the run; they
-are not treated as repositories without tags. Tags are checked against the pinned
-commit during validation;
-a moved tag fails validation instead of silently changing the approved artifact.
+See [BOTS.md](BOTS.md) for the workflow and reviewer responsibilities.
 
 ## Records
 
@@ -170,8 +167,7 @@ npm run build
 
 `COMMIT` in these examples is the full 40-character SHA. `--commit` is supported
 by the maintainer add command for GitHub sources. It pins
-that exact reachable commit and records no tag. Without it, the maintainer command keeps
-using the newest version-sorted tag. The manifest and author overview belong at
+that exact reachable commit and records no tag. Without it, the reviewer command resolves the supplied source ref, or `main` when omitted. The manifest and author overview belong at
 the pin, under `--plugin-path` (or the shorthand path) for a monorepo.
 
 Online validation checks records against their pinned artifacts.
@@ -183,9 +179,9 @@ node scripts/validate.ts --online --changed
 ```
 
 The same command accepts a registry overview for new submissions and changed
-pins. No import label or validation exception is needed. Submission intake
-defers only the submitted plugin's missing overview until review; publication
-validation still requires an overview.
+pins. No import label or validation exception is needed. Submission intake writes `submissions/<issue>.json` rather than an installable
+record. The reviewer replaces it with the pinned record and completes the overview
+before merging. Validation and publication reject unresolved submission files.
 
 When a bump finds the author's overview, its commit removes the registry copy.
 When the file is absent, the bump retains the registry overview for review and
@@ -204,7 +200,7 @@ characters; workflows retain the full diff artifact.
 Counts are advisory install requests, including git artifacts. No npm downloads
 are queried.
 
-Workflows create their labels and validate bot PRs inline using the default
-`GITHUB_TOKEN`. [BOTS.md](BOTS.md) lists repository setup requirements and the
+Workflows create their labels using the default `GITHUB_TOKEN`.
+Submission intake leaves artifact validation to review; npm bumps include validation details. [BOTS.md](BOTS.md) lists repository setup requirements and the
 optional token override. Configure the public `plugins.paseo.sh` Worker route to
 front the documents when install counting is wanted.

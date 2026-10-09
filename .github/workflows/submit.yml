@@ -2,16 +2,18 @@ name: Submission
 
 on:
   issues:
-    types: [opened]
+    types: [opened, edited, reopened, labeled]
+  schedule:
+    - cron: "7,37 * * * *"
   workflow_dispatch:
     inputs:
       issue_number:
-        description: Open submission issue to process again
-        required: true
+        description: Issue number, or leave empty to recover all waiting submissions
+        required: false
         type: string
 
 concurrency:
-  group: submission-${{ github.event.issue.number || inputs.issue_number }}
+  group: submission-${{ github.event.issue.number || inputs.issue_number || 'recovery' }}
   cancel-in-progress: false
 
 jobs:
@@ -38,9 +40,12 @@ jobs:
           git config user.email "plugins@paseo.sh"
           gh label create submission --color 0E8A16 --description "Plugin submission" --force
           gh label create needs-maintainer --color D93F0B --description "Requires a maintainer decision" --force
-      - name: Pin, validate inline, and open or update review PRs
-        # submit.ts runs npm test and validate --online --changed before pushing/creating a PR,
-        # recording success in its body. GITHUB_TOKEN PRs do not trigger Validate.
+      - name: Open review PRs for submissions
         env:
           ISSUE_NUMBER: ${{ github.event.issue.number || inputs.issue_number }}
-        run: node scripts/submit.ts
+        run: |
+          if [ -n "$ISSUE_NUMBER" ]; then
+            node scripts/submit.ts
+          else
+            node scripts/retry-submissions.ts
+          fi

@@ -9,6 +9,19 @@ This file defines acceptance for human reviewers and the review bot. Read it fro
 The bot's operating prompt defines how it carries out the work. Editorial preferences and
 hypothetical improvements are not additional acceptance requirements.
 
+## From submission to review
+
+Intake is a sanity check that opens a PR with `submissions/<issue>.json`.
+Read the linked issue and use the supplied Git reference when present. Otherwise
+resolve the current `main` commit during review. A tag or commit is not required
+from the author. Record the exact reviewed commit before approval.
+
+The reviewer creates or updates the plugin record, completes categories and
+listing content, and removes the submission file before final validation and
+merge. A submission for an existing Git plugin can request a manual update.
+Git updates are never automatically bumped. npm updates can be proposed by the
+bump workflow.
+
 ## The artifact is the product
 
 Review exactly what the record installs, without executing it:
@@ -194,3 +207,11 @@ When a maintainer decision is necessary, end with `For the maintainer:` and shor
 The purpose of these rules is to get legitimate plugins published safely and reduce work
 for authors and maintainers. The reviewer owns completion and ordinary judgment. Apply that
 purpose when instructions overlap; escalate concrete serious risks, not the smallest doubt.
+
+
+## Notify the submitter
+
+Mention the human submitter with `@login` in every public review outcome,
+including approval. Use the linked submission issue's author, or the recorded
+`submittedBy` for bumps. An automation account that opened the PR is not the
+human submitter. Read the issue and PR replies before posting an outcome.

@@ -31,7 +31,7 @@ jobs:
           git config user.email "plugins@paseo.sh"
           gh label create bump --color 1D76DB --description "Pinned artifact update" --force
           gh label create needs-maintainer --color D93F0B --description "Requires a maintainer decision" --force
-      - name: Validate inline and open a pull request per new version
+      - name: Review new npm versions (Git updates are manual)
         # bump.ts runs npm test and validate --online --changed before each push/PR.
         # It records success in the body because GITHUB_TOKEN PRs do not trigger Validate.
         run: node scripts/bump.ts

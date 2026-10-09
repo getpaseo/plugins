@@ -17,7 +17,7 @@ function fixture(t: TestContext, path = "") {
     return result.stdout.trim();
   };
   mkdirSync(remote);
-  git("init", "-q");
+  git("init", "-q", "-b", "main");
   git("config", "user.name", "Test");
   git("config", "user.email", "test@example.com");
   const plugin = join(remote, path);
@@ -70,6 +70,25 @@ for (const path of ["", "plugins/example"]) {
   });
 }
 
+test("reviewer resolves main without tags and honors a supplied Git ref", (t) => {
+  const f = fixture(t);
+  f.git("tag", "v1.0.0");
+  f.git("commit", "--allow-empty", "-qm", "main advances");
+  const head = f.git("rev-parse", "HEAD");
+  const result = f.add();
+  assert.equal(result.status, 0, result.stderr);
+  assert.equal(f.record().artifact.commit, head);
+  assert.equal(f.record().artifact.tag, undefined);
+  rmSync(f.recordPath);
+  const tagged = f.cli("add", "github:acme/fixture#v1.0.0", "--categories", "utils");
+  assert.equal(tagged.status, 0, tagged.stderr);
+  assert.equal(f.record().artifact.commit, f.commit);
+  rmSync(f.recordPath);
+  f.git("tag", "-d", "v1.0.0");
+  assert.equal(f.add().status, 0);
+  assert.equal(f.record().artifact.commit, head);
+});
+
 test("add rejects malformed, missing and unreachable commits", (t) => {
   const f = fixture(t);
   const branch = f.git("branch", "--show-current");
@@ -86,45 +105,20 @@ test("add rejects malformed, missing and unreachable commits", (t) => {
   }
 });
 
-test("commit-only bump skips no tags and proposes first tag on same commit", (t) => {
+
+test("automatic bumps never inspect Git sources, including tagged or unavailable repositories", (t) => {
   const f = fixture(t);
   assert.equal(f.add("--commit", f.commit).status, 0);
-  const before = readFileSync(f.recordPath, "utf8");
-  const skip = f.cli("bump", "--dry-run");
-  assert.equal(skip.status, 0, skip.stderr);
-  assert.doesNotMatch(skip.stdout, /Git tag/);
-  f.git("tag", "-a", "v1.0.0", "-m", "first release");
-  const bump = f.cli("bump", "--dry-run");
-  assert.equal(bump.status, 0, bump.stderr);
-  assert.match(bump.stdout, /Git tag `v1.0.0`/);
-  assert.equal(readFileSync(f.recordPath, "utf8"), before);
-});
-
-test("tagged submissions and version bumps retain their pins", (t) => {
-  const f = fixture(t);
-  f.git("tag", "v1.0.0");
-  const added = f.add();
-  assert.equal(added.status, 0, added.stderr);
-  assert.equal(f.record().artifact.tag, "v1.0.0");
-  writeFileSync(join(f.plugin, "OVERVIEW.md"), "Updated fixture.");
-  f.git("add", ".");
-  f.git("commit", "-qm", "update");
   f.git("tag", "v2.0.0");
+  const record = f.record();
+  record.artifact.tag = "v2.0.0";
+  writeFileSync(f.recordPath, JSON.stringify(record));
+  const before = readFileSync(f.recordPath, "utf8");
+  rmSync(f.remote, { recursive: true });
   const bump = f.cli("bump", "--dry-run");
   assert.equal(bump.status, 0, bump.stderr);
-  assert.match(bump.stdout, /Git tag `v2.0.0`/);
-});
-
-test("bump propagates remote failures and invalid tags", (t) => {
-  const f = fixture(t);
-  assert.equal(f.add("--commit", f.commit).status, 0);
-  f.git("tag", "blob-tag", f.git("hash-object", "paseo-plugin.json"));
-  const invalid = f.cli("bump", "--dry-run");
-  assert.notEqual(invalid.status, 0);
-  rmSync(f.remote, { recursive: true });
-  const unavailable = f.cli("bump", "--dry-run");
-  assert.notEqual(unavailable.status, 0);
-  assert.match(unavailable.stderr, /repository|git/i);
+  assert.match(bump.stdout, /0 bump PR/);
+  assert.equal(readFileSync(f.recordPath, "utf8"), before);
 });
 
 test("commit pins require a manifest at the declared plugin path", (t) => {
@@ -187,4 +181,31 @@ test("commit-only validation accepts registry overviews for submissions and bump
   registryGit("commit", "-qm", "pin update");
   const changed = f.cli("validate", "--online", "--changed");
   assert.equal(changed.status, 0, changed.stderr);
+});
+
+
+test("changed-record review ignores unreachable media on an unchanged listing", (t) => {
+  const f = fixture(t);
+  assert.equal(f.add("--commit", f.commit).status, 0);
+  const old = f.record();
+  old.id = "acme/old";
+  old.listing = { media: ["https://unrelated-plugin.invalid/image.png"] };
+  rmSync(f.recordPath);
+  writeFileSync(join(f.registry, "plugins/acme/old.json"), JSON.stringify(old));
+  const git = (...args: string[]) => {
+    const r = spawnSync("git", args, { cwd: f.registry, encoding: "utf8" });
+    assert.equal(r.status, 0, r.stderr);
+  };
+  git("init", "-q");
+  git("config", "user.name", "Test");
+  git("config", "user.email", "test@example.com");
+  git("add", "plugins", "categories.json", "featured.json");
+  git("commit", "-qm", "existing registry");
+  git("update-ref", "refs/remotes/origin/main", "HEAD");
+  assert.equal(f.add("--commit", f.commit).status, 0);
+  git("add", "plugins");
+  git("commit", "-qm", "submitted plugin");
+  const result = f.cli("validate", "--online", "--changed");
+  assert.equal(result.status, 0, result.stderr);
+  assert.match(result.stdout, /1 record.*match/);
 });

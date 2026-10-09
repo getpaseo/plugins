@@ -59,14 +59,19 @@ function withCheckout<T>(
   }
 }
 
-export function latestTag(remote: string): { tag: string; commit: string } | null {
-  const output = run("git", ["ls-remote", "--tags", "--sort=-version:refname", "--", remote]);
-  const lines = output.trim().split("\n").filter(Boolean);
-  const first = lines[0]?.split("\t");
-  if (!first) return null;
-  const tag = first[1].replace(/^refs\/tags\//, "").replace(/\^\{\}$/, "");
-  const peeled = lines.find((line) => line.endsWith(`\trefs/tags/${tag}^{}`));
-  return { tag, commit: peeled ? peeled.split("\t")[0] : first[0] };
+/** Resolve a reviewer's selected ref. Intake never calls this. */
+function resolveGitRef(remote: string, ref: string): { commit: string; tag?: string } {
+  if (/^[0-9a-f]{40}$/.test(ref)) return { commit: ref };
+  const branch = ref.startsWith("refs/heads/") ? ref : `refs/heads/${ref}`;
+  const tag = ref.startsWith("refs/tags/") ? ref : `refs/tags/${ref}`;
+  const output = run("git", ["ls-remote", "--", remote, branch, tag, `${tag}^{}`]);
+  const refs = new Map(output.split("\n").filter(Boolean).map((line) => {
+    const [commit, name] = line.split("\t");
+    return [name, commit];
+  }));
+  const commit = refs.get(branch) ?? refs.get(`${tag}^{}`) ?? refs.get(tag);
+  if (!commit) throw new AuthorError(`Git reference ${ref} was not found in ${remote}.`);
+  return { commit, ...(!refs.has(branch) ? { tag: tag.slice("refs/tags/".length) } : {}) };
 }
 
 export function pinGit(input: {
@@ -76,6 +81,7 @@ export function pinGit(input: {
   categories: string[];
   submittedBy?: string;
   commit?: string;
+  ref?: string;
 }): PluginRecord {
   const source = parseSubmissionSource(input.source);
   if (source.kind !== "git") throw new Error("Use a GitHub repository source");
@@ -93,8 +99,7 @@ export function pinGit(input: {
     deriveId(pluginPath?.split("/").at(-1) ?? match[2].toLowerCase());
   const pin = input.commit !== undefined
     ? { commit: input.commit }
-    : latestTag(`${remote}.git`);
-  if (!pin) throw new AuthorError("Repository needs a release tag. Publish a Git tag containing the plugin, then ask a maintainer to rerun the submission.");
+    : resolveGitRef(`${remote}.git`, input.ref ?? source.ref ?? "main");
   const artifact = parseArtifact({
     kind: "git",
     remote: `${remote}.git`,

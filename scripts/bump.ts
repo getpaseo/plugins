@@ -1,7 +1,7 @@
 import { validateForReview } from "./lib/review.ts";
 // Opens one pull request per plugin whose npm latest is newer than the pinned version.
 // Runs from .github/workflows/bump.yml twice daily. Each PR carries the tarball diff for review.
-import { latestTag, withGitArtifact } from "./lib/git-artifact.ts";
+import { bumpBody } from "./lib/bump-message.ts";
 import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { categorySlugs, readCategories } from "./lib/categories.ts";
@@ -15,7 +15,6 @@ import {
 } from "./lib/record.ts";
 import { gh, git, run } from "./lib/shell.ts";
 
-const DIFF_LIMIT = 60_000;
 const TMP = join(process.cwd(), ".tmp");
 const dryRun = process.argv.includes("--dry-run");
 
@@ -35,33 +34,12 @@ let opened = 0;
 
 for (const record of records) {
   const artifact = record.artifact;
-  let next: PluginRecord;
-  let latest: string;
-  let diff: string;
-  if (artifact.kind === "npm") {
-    const packument = await client.packument(artifact.package);
-    latest = packument["dist-tags"].latest;
-    if (latest === artifact.version) continue;
-    next = await repinRecord(client, record, latest);
-    diff = await tarballDiff(record, resolveVersion(packument, latest).dist.tarball);
-  } else {
-    const pin = latestTag(artifact.remote);
-    if (!pin) {
-      if (artifact.tag) throw new Error(`${record.id}: repository no longer has release tags`);
-      continue;
-    }
-    if (artifact.tag && pin.commit === artifact.commit) continue;
-    latest = pin.tag;
-    next = {
-      ...record,
-      artifact: { ...artifact, ...pin },
-      repository: { ...record.repository, commit: pin.commit },
-      reviewedAt: new Date().toISOString().slice(0, 10),
-    };
-    diff = withGitArtifact(next, (directory) =>
-      run("git", ["diff", artifact.commit, pin.commit, "--", "."], { cwd: directory }),
-    );
-  }
+  if (artifact.kind !== "npm") continue;
+  const packument = await client.packument(artifact.package);
+  const latest = packument["dist-tags"].latest;
+  if (latest === artifact.version) continue;
+  const next = await repinRecord(client, record, latest);
+  const diff = await tarballDiff(record, resolveVersion(packument, latest).dist.tarball);
   const branch = `bump/${record.id}-${latest}`;
   if (openBranches.has(branch)) continue;
   parseRecord(next, known);
@@ -85,7 +63,7 @@ for (const record of records) {
     "--title",
     `Bump ${record.id} to ${latest}`,
     "--body",
-    `${bumpBody(record, next, diff)}\n\n${note}${validation}`,
+    bumpBody(record, next, diff, note, validation),
     "--head",
     branch,
     "--base",
@@ -118,31 +96,4 @@ async function tarballDiff(record: PluginRecord, nextTarball: string): Promise<s
   } finally {
     rmSync(dir, { recursive: true, force: true });
   }
-}
-
-function bumpBody(previous: PluginRecord, next: PluginRecord, diff: string): string {
-  const truncated = diff.length > DIFF_LIMIT;
-  const provenance =
-    next.artifact.kind === "git"
-      ? `Git tag \`${next.artifact.tag}\` pins commit \`${next.artifact.commit}\`.`
-      : next.repository?.commit
-        ? `Provenance verified: built from ${next.repository.url} at \`${next.repository.commit}\`.`
-        : "No npm provenance for this version. Review the tarball diff below, not the repository.";
-  return [
-    `\`${next.id}\`: ${JSON.stringify(previous.artifact)} -> ${JSON.stringify(next.artifact)}`,
-    provenance,
-    previous.submittedBy
-      ? `Submitted by @${previous.submittedBy}.`
-      : "Original submitter is not recorded; refer to the source owner.",
-    "",
-    "Merging approves this version. The published index keeps pointing at the previous one until then.",
-    "",
-    `<details><summary>Artifact diff${truncated ? " (truncated; the full diff is in the workflow artifact)" : ""}</summary>`,
-    "",
-    "```diff",
-    truncated ? diff.slice(0, DIFF_LIMIT) : diff || "(no file changes)",
-    "```",
-    "",
-    "</details>",
-  ].join("\n");
 }

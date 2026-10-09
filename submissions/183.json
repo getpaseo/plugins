@@ -1,0 +1,12 @@
+{
+  "issue": 183,
+  "title": "pi subagent viewer",
+  "submittedBy": "skyscribe-yf",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/skyscribe-yf/paseo-plugin-subagent-viewer"
+  },
+  "categories": [
+    "orchestration"
+  ]
+}

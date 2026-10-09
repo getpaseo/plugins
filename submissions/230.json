@@ -1,0 +1,13 @@
+{
+  "issue": 230,
+  "title": "gh stack",
+  "submittedBy": "cprecioso",
+  "source": {
+    "kind": "npm",
+    "package": "@cprecioso/paseo-gh-stack"
+  },
+  "categories": [
+    "git",
+    "sidebar"
+  ]
+}

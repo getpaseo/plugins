@@ -1,0 +1,14 @@
+{
+  "issue": 213,
+  "title": "Add Workspace Activity",
+  "submittedBy": "ABorakati",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/ABorakati/paseo-workspace-activity"
+  },
+  "categories": [
+    "providers",
+    "orchestration",
+    "sidebar"
+  ]
+}

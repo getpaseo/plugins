@@ -10,7 +10,11 @@ If a plugin stops answering, **Restart** asks for confirmation and runs `paseo p
 
 Background checks read system process and memory information and Paseo's `daemon.log`, every 10 seconds on Linux or 30 seconds on macOS. Workspace and process reports include paths and activity. Disk scans measure workspace folders, unlinked worktrees, temporary files and caches without following symlinks or crossing devices. They read Git ignore/tracking information and package-manager configuration to locate caches, and save scan results under the plugin's state directory.
 
-Hosts does not delete the reported folders. **Ask an agent** provides a reviewable request with paths, sizes and cleanup checks; the agent acts with its own permissions. Health and disk reports, plus selected terminal output, can be attached to conversations. Review the context before sending it to an agent. Process actions and connection/transfer records are stored locally.
+In **Workspaces**, you can select eligible tool-managed folders such as `node_modules`, `.next` or Python caches, review the paths, sizes and regeneration costs, then confirm permanent deletion. Larger selections require an extra acknowledgment. Hosts checks the folder identity and ownership, Git tracking and ignore state, protected paths, running processes and open files again. `node_modules` needs a nearby package manifest and lockfile. Temporary workspace roots, shared caches, browser downloads, workspace roots and general output folders such as `dist`, `build` or coverage reports are left for **Ask an agent**.
+
+Deletion moves the selected folder into a private quarantine beside it, inspects it, then removes it using the system's one-filesystem `rm`. A refused check attempts to put it back. An interrupted deletion can leave an incomplete folder or a hidden quarantine; Hosts reports that state and does not silently delete leftovers. Reinstall or rebuild to restore generated contents. These checks are snapshots, not a lock against other programs starting or changing files afterward. Files manually placed deep inside otherwise recognized tool-managed directories can be lost, so keep your own work outside those directories.
+
+**Ask an agent** provides a reviewable request with paths, sizes and cleanup checks; the agent acts with its own permissions. Health and disk reports, plus selected terminal output, can be attached to conversations. Review the context before sending it to an agent. Process actions and connection/transfer records are stored locally.
 
 ## Dev-server connections
 

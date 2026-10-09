@@ -1,0 +1,27 @@
+{
+  "id": "cprecioso/gh-stack",
+  "artifact": {
+    "kind": "npm",
+    "package": "@cprecioso/paseo-gh-stack",
+    "version": "0.2.2",
+    "resolved": "https://registry.npmjs.org/@cprecioso/paseo-gh-stack/-/paseo-gh-stack-0.2.2.tgz",
+    "integrity": "sha512-7GviMUJpxfPwt2VyhxSqS1zxeE2Rh9rU4oNP1YM2YKyVieTgHpVX5bl9BvWQXQrc+bZnSYv6cmtt9HbPfW4MDw=="
+  },
+  "repository": {
+    "url": "https://github.com/cprecioso/paseo-gh-stack",
+    "commit": "a09f5d6ca4d49f87a4d0543ff8ba8a55128d2807"
+  },
+  "categories": [
+    "git",
+    "workspaces"
+  ],
+  "submittedAt": "2026-10-09",
+  "submittedBy": "cprecioso",
+  "reviewedAt": "2026-10-09",
+  "listing": {
+    "name": "gh stack",
+    "media": [
+      "https://raw.githubusercontent.com/cprecioso/paseo-gh-stack/a09f5d6ca4d49f87a4d0543ff8ba8a55128d2807/images/stack-panel.png"
+    ]
+  }
+}

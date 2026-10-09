@@ -15,10 +15,10 @@
   ],
   "submittedAt": "2026-09-10",
   "submittedBy": "stevecastaneda",
-  "reviewedAt": "2026-10-08",
+  "reviewedAt": "2026-10-09",
   "listing": {
     "media": [
-      "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/11832dda662c62cb9b00ad93ef913d939f8591b0/setup-monitor/explorer.png"
+      "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/71a95f1a55211fd744a7a619590f97b00c5e13f4/setup-monitor/popover.png"
     ]
   }
 }

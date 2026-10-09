@@ -19,6 +19,7 @@
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/11832dda662c62cb9b00ad93ef913d939f8591b0/time-since/composer-pill.png"
-    ]
+    ],
+    "icon": "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/598a25dff2fe99d5ec3517eed25618875e9438d0/time-since/icon.png"
   }
 }

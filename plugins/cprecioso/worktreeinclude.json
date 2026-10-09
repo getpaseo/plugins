@@ -1,0 +1,25 @@
+{
+  "id": "cprecioso/worktreeinclude",
+  "artifact": {
+    "kind": "npm",
+    "package": "@cprecioso/paseo-worktreeinclude",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@cprecioso/paseo-worktreeinclude/-/paseo-worktreeinclude-0.1.1.tgz",
+    "integrity": "sha512-Ypy34B9dkNuGb+kx0v0/uCb+iUQqw3+UJUjeXGUvSJmuyyPHR9Rwx5fO8uE8E3stE3I9wiich5ZhN9Vj9AWIJA=="
+  },
+  "repository": {
+    "url": "https://github.com/cprecioso/paseo-worktreeinclude",
+    "commit": "d32b1a4d1eeced93c964073813be5289d6150171"
+  },
+  "categories": [
+    "git",
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-10-09",
+  "submittedBy": "cprecioso",
+  "reviewedAt": "2026-10-09",
+  "listing": {
+    "name": "worktreeinclude"
+  }
+}

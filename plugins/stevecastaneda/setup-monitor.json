@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "@stevecastaneda/paseo-setup-monitor",
-    "version": "0.4.0",
-    "resolved": "https://registry.npmjs.org/@stevecastaneda/paseo-setup-monitor/-/paseo-setup-monitor-0.4.0.tgz",
-    "integrity": "sha512-XHUEYw13E1iJHhSnHaq2oTpk4S/LOZ6k5mQSo0i1ozwa2KyueeYA2qCXAQKvJY7M2ck9gzv6G8ElYjNTvhLl1Q=="
+    "version": "0.4.3",
+    "resolved": "https://registry.npmjs.org/@stevecastaneda/paseo-setup-monitor/-/paseo-setup-monitor-0.4.3.tgz",
+    "integrity": "sha512-a7WPesD/0HHK66WN/+AYt456Hy7qy1ZoFDfzeRONmN3RZHvsVPhtl/l06WjawbMHuWQ4WbeTnRSrZgZ4e6NUEw=="
   },
   "repository": {
     "url": "https://github.com/stevecastaneda/paseo-plugins/tree/HEAD/setup-monitor"

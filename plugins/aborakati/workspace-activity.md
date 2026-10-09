@@ -1,11 +1,9 @@
-Workspace Activity shows what the agents in a workspace are doing. **Agent Monitor** lists the workspace's agents and their subagents, and lets you read their transcripts and inspect tool calls. **Tasks** collects the todo lists those agents write.
+Workspace Activity adds **Agent Monitor** and **Tasks** panels as workspace tabs or in the Explorer. Open them from the workspace panel picker, the Command Center, or `/agents` and `/tasks`. Requires Paseo 0.8.0 or newer as declared by the plugin; there are no accounts or keys to configure.
 
-From Agent Monitor you can steer a running agent with a new prompt, stop its current turn, or archive it. Each action runs only when you press it.
+Agent Monitor groups agents and subagents into a tree, with status filters, recent activity and expandable transcripts, tool inputs and outputs. Its controls open an agent, send a steering message, stop the current turn or archive an agent. These act through Paseo on the selected agent: steering sends your text to its provider, Stop interrupts its current work, and Archive invokes Paseo’s agent archive action. Provider-native subagent visibility depends on what the provider and daemon report.
 
-## Access
+Tasks collects todo snapshots from the current workspace’s agent timelines, groups them by agent and filters them by status. It reflects tasks emitted by agents rather than creating a separate task store. Both panels update through the host’s agent and timeline subscriptions; their contents depend on the history the daemon makes available.
 
-The plugin reads the workspace's agents, timelines and subagent transcripts. It has no credentials, files or network access of its own, and it stores nothing.
-
-Requires Paseo 0.8.0 or later.
+The plugin reads agent metadata and conversation/tool content through Paseo and displays it to connected clients. It has no independent external service, credential-store access, filesystem writes, software installation or shell execution. Sending a steering prompt can start more agent work and is handled by the selected provider, which can be remote. Listing requests read a bounded page of up to 200 agents before workspace filtering, so very large hosts can have incomplete results. Live behavior across every supported host/provider combination has not been verified by this listing review.
 
 *This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/workspace-activity).*

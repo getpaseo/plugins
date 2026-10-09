@@ -1,4 +1,4 @@
-OMP adds an agent provider for the OMP coding agent, plus an OMP sidebar and workspace panel for configuring it. Choose **OMP Plugin** when creating an agent, and Paseo runs OMP on the daemon host and maps its prompts, images, steering, tool permissions, subagents, session history and conversation rewind into Paseo. It runs alongside Paseo's bundled `omp` provider without changing it or migrating existing `omp` agents. It is an alpha preview, so sessions from an earlier preview may need to be re-imported after an upgrade.
+OMP adds an agent provider for the OMP coding agent, plus an OMP sidebar and workspace panel for configuring it. Choose **OMP Plugin** when creating an agent, and Paseo runs OMP on the daemon host and maps its prompts, images, steering, tool permissions, subagents, session history and conversation rewind into Paseo. It runs alongside Paseo's bundled `omp` provider without changing it or migrating existing `omp` agents. Review release notes for migration requirements before upgrading.
 
 ## Setup
 

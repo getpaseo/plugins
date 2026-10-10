@@ -3,18 +3,18 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/itsjustanks/paseo-mcp.git",
-    "commit": "8a3d1bf7e592d7793c818dd9bc3213c4d59b1c26",
-    "tag": "v0.19.2"
+    "commit": "3a6e6d1ec5e9440367fc1d948be76dd20df30a81",
+    "tag": "v0.20.0"
   },
   "repository": {
     "url": "https://github.com/itsjustanks/paseo-mcp",
-    "commit": "8a3d1bf7e592d7793c818dd9bc3213c4d59b1c26"
+    "commit": "3a6e6d1ec5e9440367fc1d948be76dd20df30a81"
   },
   "categories": [
     "daemon-management"
   ],
   "submittedAt": "2026-09-10",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-10-08",
   "listing": {
     "media": []
   }

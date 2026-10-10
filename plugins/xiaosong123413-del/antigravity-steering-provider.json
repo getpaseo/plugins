@@ -1,0 +1,21 @@
+{
+  "id": "xiaosong123413-del/antigravity-steering-provider",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/xiaosong123413-del/paseo-antigravity-steering.git",
+    "commit": "121fac443837d554d8af9cc1799bd3ca5479ccf8"
+  },
+  "repository": {
+    "url": "https://github.com/xiaosong123413-del/paseo-antigravity-steering",
+    "commit": "121fac443837d554d8af9cc1799bd3ca5479ccf8"
+  },
+  "categories": [
+    "providers"
+  ],
+  "submittedAt": "2026-10-10",
+  "submittedBy": "xiaosong123413-del",
+  "reviewedAt": "2026-10-10",
+  "listing": {
+    "name": "Antigravity Steering"
+  }
+}

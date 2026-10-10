@@ -1,0 +1,7 @@
+Pi Subagent Viewer shows pi-subagents child runs inside Paseo, with a Subagents workspace or Explorer panel, a Command Center action, and live cards for the parent agent’s subagent tool calls. It displays run state, steps, process liveness, current tool arguments and recent output. Requires Paseo 0.10.3 or newer and pi-subagents producing run artifacts on the daemon host.
+
+The panel defaults to runs under the workspace directory or its project root, including nested worktrees. You can switch to all workspaces on the host. Live rows refresh every 1.5 seconds, and live timeline cards every 2 seconds.
+
+The daemon reads pi-subagents status, event and output files from matching temporary run directories and joins them to agent metadata under the default Paseo home. It checks process liveness with signal zero, reads bounded output/event tails, and sends those details to connected clients. Tool arguments and output can contain sensitive data; the plugin does not redact them. It does not start, steer or stop agents, write files, install software or contact an external service.
+
+Only `pi-subagents-*` roots directly under the system temporary directory or `/tmp` are discovered. Project-local artifact directories and arbitrary custom temporary roots are not scanned. Agent matching uses `~/.paseo/agents`, so custom Paseo homes are not discovered. Runs are observations of filesystem state and can be missing or stale; control remains in Pi.

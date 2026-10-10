@@ -20,6 +20,7 @@
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/geoqiao/paseo-stuff/724473250b01b70c335ad0d546c587e233720568/plugins/deepseek-harness/images/cover.png"
-    ]
+    ],
+    "name": "DeepSeek Harness"
   }
 }

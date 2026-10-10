@@ -1,0 +1,18 @@
+{
+  "id": "pedrozimmermannsoares/sidebar-organizer",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/pedrozimmermannsoares/paseo-sidebar-organizer.git",
+    "commit": "f6e15d9cac2fded1585ba844d753a8a2cb6d57e2"
+  },
+  "repository": {
+    "url": "https://github.com/pedrozimmermannsoares/paseo-sidebar-organizer",
+    "commit": "f6e15d9cac2fded1585ba844d753a8a2cb6d57e2"
+  },
+  "categories": [
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-10",
+  "submittedBy": "pedrozimmermannsoares",
+  "reviewedAt": "2026-10-10"
+}

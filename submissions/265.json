@@ -1,0 +1,12 @@
+{
+  "issue": 265,
+  "title": "Sidebar organizer",
+  "submittedBy": "pedrozimmermannsoares",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/pedrozimmermannsoares/paseo-sidebar-organizer"
+  },
+  "categories": [
+    "sidebar"
+  ]
+}

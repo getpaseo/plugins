@@ -1,0 +1,22 @@
+{
+  "id": "skevetter/memory",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/skevetter/paseo-memory.git",
+    "commit": "e09fec874bf182b717973e9de1c7b6fbb79b6b01",
+    "tag": "v1.2.2"
+  },
+  "repository": {
+    "url": "https://github.com/skevetter/paseo-memory",
+    "commit": "e09fec874bf182b717973e9de1c7b6fbb79b6b01"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-08",
+  "submittedBy": "skevetter",
+  "reviewedAt": "2026-10-08",
+  "listing": {
+    "name": "Paseo Memory"
+  }
+}

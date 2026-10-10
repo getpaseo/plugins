@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/zwmmm/title-style.git",
-    "commit": "04912928b1f41075be6be6bce015a5e3c142110b"
+    "commit": "1bb9e78c54c54b01d2dea101c2d092a9f251a9cd"
   },
   "repository": {
     "url": "https://github.com/zwmmm/title-style",
-    "commit": "04912928b1f41075be6be6bce015a5e3c142110b"
+    "commit": "1bb9e78c54c54b01d2dea101c2d092a9f251a9cd"
   },
   "categories": [
     "workspaces",
@@ -19,8 +19,8 @@
   "listing": {
     "name": "Title style",
     "media": [
-      "https://raw.githubusercontent.com/zwmmm/title-style/04912928b1f41075be6be6bce015a5e3c142110b/assets/title-style-settings.png",
-      "https://raw.githubusercontent.com/zwmmm/title-style/04912928b1f41075be6be6bce015a5e3c142110b/assets/title-style-sidebar.png"
+      "https://raw.githubusercontent.com/zwmmm/title-style/1bb9e78c54c54b01d2dea101c2d092a9f251a9cd/assets/title-style-settings.png",
+      "https://raw.githubusercontent.com/zwmmm/title-style/1bb9e78c54c54b01d2dea101c2d092a9f251a9cd/assets/title-style-sidebar.png"
     ]
   }
 }

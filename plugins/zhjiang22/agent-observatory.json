@@ -1,0 +1,20 @@
+{
+  "id": "zhjiang22/agent-observatory",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/zhjiang22/paseo-plugins.git",
+    "commit": "c8608e7e5b75f57c7bbe3f860f87f769d084e463",
+    "pluginPath": "agent-observatory"
+  },
+  "repository": {
+    "url": "https://github.com/zhjiang22/paseo-plugins",
+    "commit": "c8608e7e5b75f57c7bbe3f860f87f769d084e463"
+  },
+  "categories": [
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-10-10",
+  "submittedBy": "zhjiang22",
+  "reviewedAt": "2026-10-10"
+}

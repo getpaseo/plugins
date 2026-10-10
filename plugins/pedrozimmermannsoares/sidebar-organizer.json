@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/pedrozimmermannsoares/paseo-sidebar-organizer.git",
-    "commit": "f4f26b92637b773d023e8041200c31ffc9c5a8d8"
+    "commit": "f6e15d9cac2fded1585ba844d753a8a2cb6d57e2"
   },
   "repository": {
     "url": "https://github.com/pedrozimmermannsoares/paseo-sidebar-organizer",
-    "commit": "f4f26b92637b773d023e8041200c31ffc9c5a8d8"
+    "commit": "f6e15d9cac2fded1585ba844d753a8a2cb6d57e2"
   },
   "categories": [
     "sidebar"

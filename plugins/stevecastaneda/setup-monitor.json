@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "@stevecastaneda/paseo-setup-monitor",
-    "version": "0.4.3",
-    "resolved": "https://registry.npmjs.org/@stevecastaneda/paseo-setup-monitor/-/paseo-setup-monitor-0.4.3.tgz",
-    "integrity": "sha512-a7WPesD/0HHK66WN/+AYt456Hy7qy1ZoFDfzeRONmN3RZHvsVPhtl/l06WjawbMHuWQ4WbeTnRSrZgZ4e6NUEw=="
+    "version": "0.4.4",
+    "resolved": "https://registry.npmjs.org/@stevecastaneda/paseo-setup-monitor/-/paseo-setup-monitor-0.4.4.tgz",
+    "integrity": "sha512-xFrKUav6pR/jFvy7j6T8ZnSQti4rrX96/7KXz6yJP0iyxisleESllKUS3uEV44MRG7pe7h39xi4zSlHohS0DXw=="
   },
   "repository": {
     "url": "https://github.com/stevecastaneda/paseo-plugins/tree/HEAD/setup-monitor"
@@ -15,7 +15,7 @@
   ],
   "submittedAt": "2026-09-10",
   "submittedBy": "stevecastaneda",
-  "reviewedAt": "2026-10-09",
+  "reviewedAt": "2026-10-10",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/71a95f1a55211fd744a7a619590f97b00c5e13f4/setup-monitor/popover.png"

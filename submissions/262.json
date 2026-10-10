@@ -1,0 +1,13 @@
+{
+  "issue": 262,
+  "title": "Playwright Pulse",
+  "submittedBy": "stevecastaneda",
+  "source": {
+    "kind": "npm",
+    "package": "@stevecastaneda/paseo-playwright-pulse"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ]
+}

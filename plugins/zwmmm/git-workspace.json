@@ -1,0 +1,26 @@
+{
+  "id": "zwmmm/git-workspace",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/zwmmm/git-workspace.git",
+    "commit": "8f5a16a7fd0216d0560ad5c48b6fce76aaeb4e32"
+  },
+  "repository": {
+    "url": "https://github.com/zwmmm/git-workspace",
+    "commit": "8f5a16a7fd0216d0560ad5c48b6fce76aaeb4e32"
+  },
+  "categories": [
+    "git",
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-10",
+  "submittedBy": "zwmmm",
+  "reviewedAt": "2026-10-10",
+  "listing": {
+    "name": "Git workspace",
+    "media": [
+      "https://raw.githubusercontent.com/zwmmm/git-workspace/8f5a16a7fd0216d0560ad5c48b6fce76aaeb4e32/assets/screenshot.png"
+    ]
+  }
+}

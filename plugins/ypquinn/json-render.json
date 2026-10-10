@@ -1,0 +1,26 @@
+{
+  "id": "ypquinn/json-render",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/YPQuinn/paseo-json-render.git",
+    "commit": "b9514767e62bdb910fc9ac3cc0e16d2efd74b204"
+  },
+  "repository": {
+    "url": "https://github.com/YPQuinn/paseo-json-render",
+    "commit": "b9514767e62bdb910fc9ac3cc0e16d2efd74b204"
+  },
+  "categories": [
+    "utils",
+    "workspaces"
+  ],
+  "submittedAt": "2026-10-10",
+  "submittedBy": "YPQuinn",
+  "reviewedAt": "2026-10-10",
+  "listing": {
+    "name": "JSON Render",
+    "media": [
+      "https://raw.githubusercontent.com/YPQuinn/paseo-json-render/b9514767e62bdb910fc9ac3cc0e16d2efd74b204/assets/preview-desktop.png",
+      "https://raw.githubusercontent.com/YPQuinn/paseo-json-render/b9514767e62bdb910fc9ac3cc0e16d2efd74b204/assets/preview-mobile-dark.png"
+    ]
+  }
+}

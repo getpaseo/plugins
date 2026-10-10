@@ -16,8 +16,11 @@
   ],
   "submittedAt": "2026-09-25",
   "submittedBy": "fxbing",
-  "reviewedAt": "2026-10-08",
+  "reviewedAt": "2026-10-10",
   "listing": {
-    "media": []
+    "media": [
+      "https://raw.githubusercontent.com/fxbing/paseo-workboard/e8cba65b8ed5494f1a05c48658273a28d69e55f8/images/workboard-en.png",
+      "https://raw.githubusercontent.com/fxbing/paseo-workboard/e8cba65b8ed5494f1a05c48658273a28d69e55f8/images/workboard-zh-CN.png"
+    ]
   }
 }

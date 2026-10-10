@@ -1,0 +1,18 @@
+{
+  "id": "jasprw/aside-provider",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/JasprW/paseo-aside-provider.git",
+    "commit": "ed494a2ca6e4a64f9d0e56db08b6bfedf6e4a97c"
+  },
+  "repository": {
+    "url": "https://github.com/JasprW/paseo-aside-provider",
+    "commit": "ed494a2ca6e4a64f9d0e56db08b6bfedf6e4a97c"
+  },
+  "categories": [
+    "providers"
+  ],
+  "submittedAt": "2026-10-10",
+  "submittedBy": "JasprW",
+  "reviewedAt": "2026-10-10"
+}

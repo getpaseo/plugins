@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-auto-pin",
-    "version": "0.4.1",
-    "resolved": "https://registry.npmjs.org/paseo-auto-pin/-/paseo-auto-pin-0.4.1.tgz",
-    "integrity": "sha512-Ovnr7jY9FBFUwf2HKBczLe4uBAtkaF3Qq2lp+IFyp64ThIJuD2of36ez/kfY1mSSC6PS8pTEKSefvWTL1bLwVA=="
+    "version": "0.5.0",
+    "resolved": "https://registry.npmjs.org/paseo-auto-pin/-/paseo-auto-pin-0.5.0.tgz",
+    "integrity": "sha512-P6LpKqpvzpDU9DyVh1ts0laS66OgAoqZiXh6OLCxX2kNaHeF8+cLXLPaQvfRJ5yLDV5cijMkf+n3F7n0JbhNug=="
   },
   "repository": {
     "url": "https://github.com/stv1024/paseo-auto-pin"
@@ -16,9 +16,11 @@
   ],
   "submittedAt": "2026-09-25",
   "submittedBy": "stv1024",
-  "reviewedAt": "2026-09-25",
+  "reviewedAt": "2026-10-09",
   "listing": {
     "media": [
+      "https://cdn.jsdelivr.net/npm/paseo-auto-pin@0.5.0/assets/screenshot-panel.png",
+      "https://cdn.jsdelivr.net/npm/paseo-auto-pin@0.5.0/assets/screenshot-commands.png",
       "https://raw.githubusercontent.com/stv1024/paseo-auto-pin/78875433650d222fd79c64efbb1bb094fe8e60b7/docs/demo.gif",
       "https://raw.githubusercontent.com/stv1024/paseo-auto-pin/78875433650d222fd79c64efbb1bb094fe8e60b7/promo/poster.png"
     ]

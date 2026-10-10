@@ -22,6 +22,7 @@
       "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/439db3adc01b6bda213b8b5a485f660c76ccbfe9/progress/images/2-ticket.png",
       "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/439db3adc01b6bda213b8b5a485f660c76ccbfe9/progress/images/3-question.png",
       "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/439db3adc01b6bda213b8b5a485f660c76ccbfe9/progress/images/4-pill.png"
-    ]
+    ],
+    "icon": "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/e4afb2f47e28f6d10dfd9575ec7763a118763364/progress/icon.png"
   }
 }

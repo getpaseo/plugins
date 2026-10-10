@@ -1,0 +1,21 @@
+{
+  "id": "zhjiang22/server-browser",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/zhjiang22/paseo-plugins.git",
+    "commit": "93dbea13e18b5af5fcac259fcbf81311363a9bf8",
+    "pluginPath": "server-browser"
+  },
+  "repository": {
+    "url": "https://github.com/zhjiang22/paseo-plugins",
+    "commit": "93dbea13e18b5af5fcac259fcbf81311363a9bf8"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-10-10",
+  "submittedBy": "zhjiang22",
+  "reviewedAt": "2026-10-10"
+}

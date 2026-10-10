@@ -1,0 +1,13 @@
+{
+  "issue": 269,
+  "title": "Title style",
+  "submittedBy": "zwmmm",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/zwmmm/title-style"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ]
+}

@@ -20,6 +20,7 @@
     "media": [
       "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/dc43bff3ee0ce6d2b4e2b88762202c15e12fd376/workspace-links/popover.png",
       "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/dc43bff3ee0ce6d2b4e2b88762202c15e12fd376/workspace-links/explorer.png"
-    ]
+    ],
+    "icon": "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/598a25dff2fe99d5ec3517eed25618875e9438d0/workspace-links/icon.png"
   }
 }

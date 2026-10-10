@@ -19,6 +19,7 @@
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/71a95f1a55211fd744a7a619590f97b00c5e13f4/setup-monitor/popover.png"
-    ]
+    ],
+    "icon": "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/598a25dff2fe99d5ec3517eed25618875e9438d0/setup-monitor/icon.png"
   }
 }

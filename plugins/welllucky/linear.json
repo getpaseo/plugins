@@ -1,0 +1,23 @@
+{
+  "id": "welllucky/linear",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/welllucky/paseo-linear-plugin.git",
+    "commit": "cfe6d31733d0454a4ef2edf7168a3174e7aefecb"
+  },
+  "repository": {
+    "url": "https://github.com/welllucky/paseo-linear-plugin",
+    "commit": "cfe6d31733d0454a4ef2edf7168a3174e7aefecb"
+  },
+  "categories": [
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-10-08",
+  "submittedBy": "welllucky",
+  "reviewedAt": "2026-10-09",
+  "listing": {
+    "name": "Linear dashboard",
+    "media": []
+  }
+}

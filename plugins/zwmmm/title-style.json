@@ -1,0 +1,26 @@
+{
+  "id": "zwmmm/title-style",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/zwmmm/title-style.git",
+    "commit": "1bb9e78c54c54b01d2dea101c2d092a9f251a9cd"
+  },
+  "repository": {
+    "url": "https://github.com/zwmmm/title-style",
+    "commit": "1bb9e78c54c54b01d2dea101c2d092a9f251a9cd"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-10-10",
+  "submittedBy": "zwmmm",
+  "reviewedAt": "2026-10-10",
+  "listing": {
+    "name": "Title style",
+    "media": [
+      "https://raw.githubusercontent.com/zwmmm/title-style/1bb9e78c54c54b01d2dea101c2d092a9f251a9cd/assets/title-style-settings.png",
+      "https://raw.githubusercontent.com/zwmmm/title-style/1bb9e78c54c54b01d2dea101c2d092a9f251a9cd/assets/title-style-sidebar.png"
+    ]
+  }
+}

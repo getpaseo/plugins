@@ -17,6 +17,7 @@
   "submittedBy": "stevecastaneda",
   "reviewedAt": "2026-10-10",
   "listing": {
-    "media": []
+    "media": [],
+    "icon": "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/e4afb2f47e28f6d10dfd9575ec7763a118763364/history/icon.png"
   }
 }

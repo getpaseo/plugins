@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-workboard",
-    "version": "0.1.0",
-    "resolved": "https://registry.npmjs.org/paseo-workboard/-/paseo-workboard-0.1.0.tgz",
-    "integrity": "sha512-hexy0m+TmZgywlQnzM/wVmXnvGeQNJOvZCyBprSqNfrwn8qeR9EaYozv+GYzy6x8dI20cQ7zZVZY6Gp0aSNkCw=="
+    "version": "0.2.0",
+    "resolved": "https://registry.npmjs.org/paseo-workboard/-/paseo-workboard-0.2.0.tgz",
+    "integrity": "sha512-DiYleRgst+ja4T4pIt4ETMdnB8BMdsu48PYPxnz1iB9j5BDo9ukgTYc+mPTofi40XzoXn3g7EV5uTwrfVHA/vA=="
   },
   "repository": {
     "url": "https://github.com/fxbing/paseo-workboard"
@@ -16,8 +16,11 @@
   ],
   "submittedAt": "2026-09-25",
   "submittedBy": "fxbing",
-  "reviewedAt": "2026-09-25",
+  "reviewedAt": "2026-10-10",
   "listing": {
-    "media": []
+    "media": [
+      "https://raw.githubusercontent.com/fxbing/paseo-workboard/e8cba65b8ed5494f1a05c48658273a28d69e55f8/images/workboard-en.png",
+      "https://raw.githubusercontent.com/fxbing/paseo-workboard/e8cba65b8ed5494f1a05c48658273a28d69e55f8/images/workboard-zh-CN.png"
+    ]
   }
 }

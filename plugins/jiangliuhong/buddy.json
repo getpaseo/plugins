@@ -1,0 +1,19 @@
+{
+  "id": "jiangliuhong/buddy",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/jiangliuhong/paseo-buddy.git",
+    "commit": "317553d8f5de3701be46d0fa25efff4f12001974"
+  },
+  "repository": {
+    "url": "https://github.com/jiangliuhong/paseo-buddy",
+    "commit": "317553d8f5de3701be46d0fa25efff4f12001974"
+  },
+  "categories": [
+    "extras",
+    "utils"
+  ],
+  "submittedAt": "2026-10-10",
+  "submittedBy": "jiangliuhong",
+  "reviewedAt": "2026-10-10"
+}

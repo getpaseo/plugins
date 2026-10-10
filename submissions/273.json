@@ -1,0 +1,14 @@
+{
+  "issue": 273,
+  "title": "Terracotta Themes",
+  "submittedBy": "zhjiang22",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/zhjiang22/paseo-plugins",
+    "ref": "c8608e7e5b75f57c7bbe3f860f87f769d084e463",
+    "pluginPath": "claude-theme"
+  },
+  "categories": [
+    "themes"
+  ]
+}

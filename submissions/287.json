@@ -1,0 +1,15 @@
+{
+  "issue": 287,
+  "title": "Server Browser",
+  "submittedBy": "zhjiang22",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/zhjiang22/paseo-plugins",
+    "ref": "880ea574aa6eec9e954c636803e603b41bea12c3",
+    "pluginPath": "server-browser"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ]
+}

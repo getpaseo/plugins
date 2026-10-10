@@ -1,0 +1,18 @@
+{
+  "id": "jasprw/codex-enterprise-usage",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/JasprW/paseo-codex-enterprise-usage.git",
+    "commit": "30d80c8a5132f8ce5e6205479cfcce9da3160b09"
+  },
+  "repository": {
+    "url": "https://github.com/JasprW/paseo-codex-enterprise-usage",
+    "commit": "30d80c8a5132f8ce5e6205479cfcce9da3160b09"
+  },
+  "categories": [
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-10",
+  "submittedBy": "JasprW",
+  "reviewedAt": "2026-10-10"
+}

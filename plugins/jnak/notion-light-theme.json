@@ -1,0 +1,19 @@
+{
+  "id": "jnak/notion-light-theme",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/jnak/paseo-notion-light-theme.git",
+    "commit": "07baf75334547566fcfb4eda80c3e9129afd7226",
+    "tag": "v0.1.0"
+  },
+  "repository": {
+    "url": "https://github.com/jnak/paseo-notion-light-theme",
+    "commit": "07baf75334547566fcfb4eda80c3e9129afd7226"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-11",
+  "submittedBy": "jnak",
+  "reviewedAt": "2026-10-11"
+}

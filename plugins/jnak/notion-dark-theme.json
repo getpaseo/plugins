@@ -1,0 +1,19 @@
+{
+  "id": "jnak/notion-dark-theme",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/jnak/paseo-notion-dark-theme.git",
+    "commit": "0d8a0ed8bfd3ac6205f2f72911b5af3556e0c3d0",
+    "tag": "v0.1.0"
+  },
+  "repository": {
+    "url": "https://github.com/jnak/paseo-notion-dark-theme",
+    "commit": "0d8a0ed8bfd3ac6205f2f72911b5af3556e0c3d0"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-11",
+  "submittedBy": "jnak",
+  "reviewedAt": "2026-10-11"
+}

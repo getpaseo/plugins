@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "@stevecastaneda/paseo-history",
-    "version": "0.4.3",
-    "resolved": "https://registry.npmjs.org/@stevecastaneda/paseo-history/-/paseo-history-0.4.3.tgz",
-    "integrity": "sha512-uqx0j7Yf9RpxYycME0/N1NKEWOAEjri+Ztb8qcUuGQ25rFOk2mW59IhVGiTN0+IMmp4e98VDcx7eejbNqdJTzw=="
+    "version": "0.5.0",
+    "resolved": "https://registry.npmjs.org/@stevecastaneda/paseo-history/-/paseo-history-0.5.0.tgz",
+    "integrity": "sha512-x7jQsr/EaTIEyAMNVm4k2xXFqHHhu3iw/LCxl9cJNbsecitwCn+2qPV7U89IjrttYsqmd6qwqbN8BMr70a2Enw=="
   },
   "repository": {
     "url": "https://github.com/stevecastaneda/paseo-plugins/tree/HEAD/history"
@@ -15,13 +15,5 @@
   ],
   "submittedAt": "2026-10-01",
   "submittedBy": "stevecastaneda",
-  "reviewedAt": "2026-10-11",
-  "listing": {
-    "media": [
-      "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/2c37489a4984d58b5c25cf997220608bf2c70c9e/history/images/1-conversation.png",
-      "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/2c37489a4984d58b5c25cf997220608bf2c70c9e/history/images/2-tags.png",
-      "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/2c37489a4984d58b5c25cf997220608bf2c70c9e/history/images/3-source.png"
-    ],
-    "icon": "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/e4afb2f47e28f6d10dfd9575ec7763a118763364/history/icon.png"
-  }
+  "reviewedAt": "2026-10-11"
 }

@@ -18,7 +18,9 @@
   "reviewedAt": "2026-10-10",
   "listing": {
     "media": [
-      "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/11832dda662c62cb9b00ad93ef913d939f8591b0/time-since/composer-pill.png"
+      "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/6997762ece758cb0abe90d34e1671de1f237039a/time-since/images/composer-pill.png",
+      "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/6997762ece758cb0abe90d34e1671de1f237039a/time-since/images/popover.png",
+      "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/6997762ece758cb0abe90d34e1671de1f237039a/time-since/images/options.png"
     ],
     "icon": "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/e4afb2f47e28f6d10dfd9575ec7763a118763364/time-since/icon.png"
   }

@@ -18,7 +18,10 @@
   "reviewedAt": "2026-10-10",
   "listing": {
     "media": [
-      "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/71a95f1a55211fd744a7a619590f97b00c5e13f4/setup-monitor/popover.png"
-    ]
+      "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/6997762ece758cb0abe90d34e1671de1f237039a/setup-monitor/images/popover.png",
+      "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/6997762ece758cb0abe90d34e1671de1f237039a/setup-monitor/images/popover-failed.png",
+      "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/6997762ece758cb0abe90d34e1671de1f237039a/setup-monitor/images/button.png"
+    ],
+    "icon": "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/6997762ece758cb0abe90d34e1671de1f237039a/setup-monitor/icon.png"
   }
 }

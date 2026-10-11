@@ -20,9 +20,9 @@
   "listing": {
     "icon": "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/e4afb2f47e28f6d10dfd9575ec7763a118763364/playwright-pulse/icon.png",
     "media": [
-      "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/e4afb2f47e28f6d10dfd9575ec7763a118763364/playwright-pulse/images/1-panel.png",
-      "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/e4afb2f47e28f6d10dfd9575ec7763a118763364/playwright-pulse/images/2-folders.png",
-      "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/e4afb2f47e28f6d10dfd9575ec7763a118763364/playwright-pulse/images/3-slowest.png"
+      "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/6997762ece758cb0abe90d34e1671de1f237039a/playwright-pulse/images/1-panel.png",
+      "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/6997762ece758cb0abe90d34e1671de1f237039a/playwright-pulse/images/2-folders.png",
+      "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/6997762ece758cb0abe90d34e1671de1f237039a/playwright-pulse/images/3-slowest.png"
     ]
   }
 }

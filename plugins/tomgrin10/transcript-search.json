@@ -1,0 +1,26 @@
+{
+  "id": "tomgrin10/transcript-search",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-transcript-search",
+    "version": "0.2.1",
+    "resolved": "https://registry.npmjs.org/paseo-transcript-search/-/paseo-transcript-search-0.2.1.tgz",
+    "integrity": "sha512-3V1pHnu3O2M/XbnBr1ILDC9fx1pthn9uasEskTPYEIjt2QibgaA2n6JnQNxrW1cErwO+KiFp/JoahTXpAYkOMw=="
+  },
+  "repository": {
+    "url": "https://github.com/tomgrin10/paseo-transcript-search",
+    "commit": "39392e8b9b1f6e640c8b897dd282a976f160fcde"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-12",
+  "submittedBy": "tomgrin10",
+  "reviewedAt": "2026-10-12",
+  "listing": {
+    "name": "Transcript Search",
+    "media": [
+      "https://cdn.jsdelivr.net/npm/paseo-transcript-search@0.2.1/docs/screenshots/transcript-search.png"
+    ]
+  }
+}

@@ -18,6 +18,7 @@
   "submittedBy": "tomgrin10",
   "reviewedAt": "2026-10-11",
   "listing": {
+    "name": "Defer",
     "media": [
       "https://cdn.jsdelivr.net/npm/paseo-defer@2.4.0/docs/defer-popover.png"
     ]

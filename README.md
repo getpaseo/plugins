@@ -62,6 +62,11 @@ and the reviewer updates it for changed behavior. When a release supplies the
 author's own overview, it takes precedence and the bump removes the registry copy.
 Authors and submitters may propose registry-copy replacements by pull request.
 
+A listing also needs a one-sentence description. When the artifact supplies none
+(no npm package `description`, or no manifest `description` for Git), the reviewer
+writes one as `listing.description` before approval. When a release supplies the
+author's own description, the bump removes the registry one.
+
 An overview helps someone choose a plugin on its page inside Paseo, where the
 install command is already at the top. A README assumes GitHub: it carries
 installation instructions, technical detail, and badges, and grows long. Many

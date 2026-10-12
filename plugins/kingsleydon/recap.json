@@ -19,6 +19,7 @@
     "name": "Recap",
     "media": [
       "https://raw.githubusercontent.com/kingsleydon/paseo-recap/d5349c600a42c62c4b428b864b1fe53956aa57c3/docs/images/recap.png"
-    ]
+    ],
+    "description": "Writes a short recap of each agent's goal, progress, and next step after every turn."
   }
 }

@@ -25,6 +25,7 @@
       "https://raw.githubusercontent.com/ABorakati/beautiful-chat/42b61d8301b5400a67821bbbfcf99fa8b681dc37/docs/images/tool-edit.png",
       "https://raw.githubusercontent.com/ABorakati/beautiful-chat/42b61d8301b5400a67821bbbfcf99fa8b681dc37/docs/images/tool-thinking.png",
       "https://raw.githubusercontent.com/ABorakati/beautiful-chat/42b61d8301b5400a67821bbbfcf99fa8b681dc37/docs/images/tool-mcp.png"
-    ]
+    ],
+    "description": "Restyles the chat stream with themed, syntax-highlighted cards for tool calls, reasoning, prompts, and replies."
   }
 }

@@ -17,6 +17,7 @@
   "submittedBy": "ZFhuang",
   "reviewedAt": "2026-09-15",
   "listing": {
-    "media": []
+    "media": [],
+    "description": "Adds a Git Tree workspace tab showing the commit graph with diffs, search, and git operations."
   }
 }

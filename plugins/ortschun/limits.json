@@ -18,6 +18,7 @@
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/ortschun/paseo-limits/4b5c761cde469ff2800c67c2f33034ff4ca3e2d6/images/pill.png"
-    ]
+    ],
+    "description": "Shows the usage limits of the current agent's provider as a pill above the composer."
   }
 }

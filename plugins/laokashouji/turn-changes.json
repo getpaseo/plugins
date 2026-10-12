@@ -21,6 +21,7 @@
     "media": [
       "https://raw.githubusercontent.com/Laokashouji/paseo-turn-changes/47b011d02fd04b963438fb24b19ad5e46734b687/images/01-turn-card.png",
       "https://raw.githubusercontent.com/Laokashouji/paseo-turn-changes/47b011d02fd04b963438fb24b19ad5e46734b687/images/02-diff-review.png"
-    ]
+    ],
+    "description": "Summarizes the files an agent changed in each turn, with a diff view, file tree, and undo."
   }
 }

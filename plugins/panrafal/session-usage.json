@@ -20,6 +20,7 @@
     "media": [
       "https://raw.githubusercontent.com/panrafal/paseo-plugins/004c6a80c6aa8e76bb563694c3eee5c2c0b0466f/session-usage/images/allowances.png",
       "https://raw.githubusercontent.com/panrafal/paseo-plugins/004c6a80c6aa8e76bb563694c3eee5c2c0b0466f/session-usage/images/session-usage.png"
-    ]
+    ],
+    "description": "Reports token use, tool calls, timing, and estimated cost for agent sessions on the host."
   }
 }

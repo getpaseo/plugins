@@ -18,6 +18,7 @@
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/YoseptF/paseo-emoji/425e37563234d05a3ceaf15040db221625537db9/images/screenshot.png"
-    ]
+    ],
+    "description": "Adds Slack-style :emoji: autocomplete to the composer."
   }
 }

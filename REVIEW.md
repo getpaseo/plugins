@@ -62,7 +62,7 @@ and development-only dependencies do not create an installation requirement. Rea
 scripts that would execute; do not execute them yourself. Build commands must have an
 understandable purpose and operate on the reviewed inputs.
 
-Every published listing needs an accurate overview. Visual plugins need suitable media,
+Every published listing needs an accurate overview and a one-sentence description. Visual plugins need suitable media,
 as described below. The reviewer can supply or correct these in the registry PR.
 
 Run the registry validator against the completed proposal. A validator failure is evidence

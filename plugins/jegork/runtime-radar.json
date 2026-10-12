@@ -17,6 +17,7 @@
   "submittedBy": "jegork",
   "reviewedAt": "2026-09-13",
   "listing": {
-    "media": []
+    "media": [],
+    "description": "Lists listening ports and Docker containers on the daemon machine, tied to the workspaces they run in."
   }
 }

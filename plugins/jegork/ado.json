@@ -18,6 +18,7 @@
   "submittedBy": "jegork",
   "reviewedAt": "2026-09-13",
   "listing": {
-    "media": []
+    "media": [],
+    "description": "Adds Azure DevOps pull request status, creation, and completion to workspaces through the Azure CLI."
   }
 }

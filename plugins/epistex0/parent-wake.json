@@ -17,6 +17,7 @@
   "submittedBy": "EPISTEX0",
   "reviewedAt": "2026-09-18",
   "listing": {
-    "media": []
+    "media": [],
+    "description": "Notifies a parent agent whenever a child agent asks for permission or finishes a turn."
   }
 }

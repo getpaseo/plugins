@@ -1,25 +1,26 @@
 {
   "id": "tomgrin10/plugin",
   "artifact": {
-    "kind": "git",
-    "remote": "https://github.com/tomgrin10/send-to-paseo.git",
-    "commit": "4f60d13ee4e234f72139253c59357051f96de840",
-    "tag": "v1.4.0",
-    "pluginPath": "plugin"
+    "kind": "npm",
+    "package": "send-to-paseo",
+    "version": "1.4.2",
+    "resolved": "https://registry.npmjs.org/send-to-paseo/-/send-to-paseo-1.4.2.tgz",
+    "integrity": "sha512-ffRHxr2G3aa6pNF+GX+IS0d9JGdUXcmQWWfvf8vqbmJNFAaui5xAIzGHVrVBLDcgLHqiRGc7bwAW8L2HZ2aymg=="
   },
   "repository": {
-    "url": "https://github.com/tomgrin10/send-to-paseo",
-    "commit": "4f60d13ee4e234f72139253c59357051f96de840"
+    "url": "https://github.com/tomgrin10/send-to-paseo/tree/HEAD/plugin",
+    "commit": "324e8fe32ce55659d2ffcf007ea50a5d4774c062"
   },
   "categories": [
     "git"
   ],
   "submittedAt": "2026-09-10",
   "submittedBy": "tomgrin10",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-10-12",
   "listing": {
+    "name": "Send to Paseo",
     "media": [
-      "https://raw.githubusercontent.com/tomgrin10/send-to-paseo/main/docs/screenshots/hero-github-pr-popover.png"
+      "https://raw.githubusercontent.com/tomgrin10/send-to-paseo/324e8fe32ce55659d2ffcf007ea50a5d4774c062/docs/screenshots/hero-github-pr-popover.png"
     ]
   }
 }

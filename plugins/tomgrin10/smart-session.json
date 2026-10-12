@@ -18,8 +18,9 @@
   "submittedBy": "tomgrin10",
   "reviewedAt": "2026-09-10",
   "listing": {
+    "name": "Smart Session",
     "media": [
-      "https://raw.githubusercontent.com/tomgrin10/paseo-smart-session/aef02c5fc8d9211cb70e68110ae93911d4012ab7/docs/screenshots/smart-compact-handoff.png"
+      "https://cdn.jsdelivr.net/npm/paseo-smart-session@1.2.6/docs/screenshots/smart-compact-handoff.png"
     ]
   }
 }

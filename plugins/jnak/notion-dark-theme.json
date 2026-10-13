@@ -7,13 +7,13 @@
     "tag": "v0.1.1"
   },
   "repository": {
-    "url": "https://github.com/jnak/paseo-notion-dark-theme",
-    "commit": "e9586d43dbd817dca93b8a81a5bd74e6c30db82a"
+    "url": "https://github.com/jnak/paseo-notion-dark-theme"
   },
   "categories": [
     "themes"
   ],
-  "submittedAt": "2026-10-11",
+  "submittedAt": "2026-10-11T18:54:23Z",
   "submittedBy": "jnak",
-  "reviewedAt": "2026-10-11"
+  "reviewedAt": "2026-10-13T11:33:51Z",
+  "publishedAt": "2026-10-13T11:33:51Z"
 }

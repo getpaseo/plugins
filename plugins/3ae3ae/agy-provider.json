@@ -15,6 +15,7 @@
   ],
   "submittedAt": "2026-09-11",
   "submittedBy": "3ae3ae",
+  "publishedAt": "2026-09-11",
   "reviewedAt": "2026-09-11",
   "listing": {
     "media": [
@@ -22,6 +23,7 @@
       "https://raw.githubusercontent.com/3ae3ae/paseo-plugin-agy-provider/5d50b2350911afb4baae855d05eb5bf1c9ca9f7e/images/conversation.jpg",
       "https://raw.githubusercontent.com/3ae3ae/paseo-plugin-agy-provider/5d50b2350911afb4baae855d05eb5bf1c9ca9f7e/images/demo.gif",
       "https://raw.githubusercontent.com/3ae3ae/paseo-plugin-agy-provider/5d50b2350911afb4baae855d05eb5bf1c9ca9f7e/images/models.jpg"
-    ]
+    ],
+    "description": "Adds Google's Antigravity coding agent as a Paseo provider through its ACP server."
   }
 }

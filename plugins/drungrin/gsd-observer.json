@@ -14,6 +14,7 @@
   ],
   "submittedAt": "2026-09-14",
   "submittedBy": "drungrin",
+  "publishedAt": "2026-09-14",
   "reviewedAt": "2026-09-14",
   "listing": {
     "media": [
@@ -25,6 +26,7 @@
       "https://raw.githubusercontent.com/drungrin/paseo-gsd-observer/588d71ca2cedd1bbfba8712462937bfb334faeb7/docs/screenshots/uat.png",
       "https://raw.githubusercontent.com/drungrin/paseo-gsd-observer/588d71ca2cedd1bbfba8712462937bfb334faeb7/docs/screenshots/todos.png",
       "https://raw.githubusercontent.com/drungrin/paseo-gsd-observer/588d71ca2cedd1bbfba8712462937bfb334faeb7/docs/screenshots/parking-lot.png"
-    ]
+    ],
+    "description": "Shows a GSD project's planning state as a read-only board built from the workspace's .planning folder."
   }
 }

@@ -15,8 +15,10 @@
   ],
   "submittedAt": "2026-09-10",
   "submittedBy": "panrafal",
+  "publishedAt": "2026-09-10",
   "reviewedAt": "2026-09-10",
   "listing": {
-    "media": []
+    "media": [],
+    "description": "Adds composer pills to agents that stopped before finishing so you can continue or hand off the work."
   }
 }

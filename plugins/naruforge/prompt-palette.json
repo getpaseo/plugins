@@ -15,10 +15,12 @@
     "utils"
   ],
   "submittedAt": "2026-09-10",
+  "publishedAt": "2026-09-10",
   "reviewedAt": "2026-09-10",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/NaruForge/Paseo-Plugin/294cf5200eb61a8580026d638198999ce0fbb90e/plugins/prompt-palette/../../docs/screenshots/prompt-palette/settings-live.png"
-    ]
+    ],
+    "description": "Keeps a library of saved prompts and sends one to an agent from a composer pill."
   }
 }

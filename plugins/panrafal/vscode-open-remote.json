@@ -15,11 +15,13 @@
   ],
   "submittedAt": "2026-09-10",
   "submittedBy": "panrafal",
+  "publishedAt": "2026-09-10",
   "reviewedAt": "2026-09-10",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/panrafal/paseo-plugins/004c6a80c6aa8e76bb563694c3eee5c2c0b0466f/vscode-open-remote/images/vscode-open-remote-pill.png",
       "https://raw.githubusercontent.com/panrafal/paseo-plugins/004c6a80c6aa8e76bb563694c3eee5c2c0b0466f/vscode-open-remote/images/vscode-open-remote-settings.png"
-    ]
+    ],
+    "description": "Adds an Editor pill that opens the agent's working directory in VS Code or Cursor over SSH."
   }
 }

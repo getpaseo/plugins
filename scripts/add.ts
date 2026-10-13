@@ -1,5 +1,5 @@
 // Pins a package and writes its record. Used by reviewers after intake.
-//   node scripts/add.ts <npm package> --categories themes,utils [--id dracula] [--submitted-by login] [--submitted-at YYYY-MM-DD]
+//   node scripts/add.ts <npm package> --categories themes,utils [--id dracula] [--submitted-by login] [--submitted-at <ISO timestamp>]
 import { pinGit } from "./lib/git-artifact.ts";
 import { parseSubmissionSource } from "./lib/submission-source.ts";
 import { existsSync } from "node:fs";
@@ -19,7 +19,7 @@ const categories =
     .filter(Boolean) ?? [];
 if (!pkg || categories.length === 0) {
   console.error(
-    "usage: node scripts/add.ts <npm package> --categories a,b [--id id] [--submitted-by login] [--submitted-at YYYY-MM-DD] [--version x.y.z] [--commit full-SHA] [--plugin-path path]",
+    "usage: node scripts/add.ts <npm package> --categories a,b [--id id] [--submitted-by login] [--submitted-at <ISO timestamp>] [--version x.y.z] [--commit full-SHA] [--plugin-path path]",
   );
   process.exit(2);
 }

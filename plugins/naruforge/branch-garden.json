@@ -16,11 +16,13 @@
     "sidebar"
   ],
   "submittedAt": "2026-09-10",
+  "publishedAt": "2026-09-10",
   "reviewedAt": "2026-09-10",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/NaruForge/Paseo-Plugin/294cf5200eb61a8580026d638198999ce0fbb90e/plugins/branch-garden/../../docs/screenshots/branch-garden/overview-live.png",
       "https://raw.githubusercontent.com/NaruForge/Paseo-Plugin/294cf5200eb61a8580026d638198999ce0fbb90e/plugins/branch-garden/../../docs/screenshots/branch-garden/repository-live.png"
-    ]
+    ],
+    "description": "Shows the local Git branches and worktrees of your projects in one sidebar page to spot cleanup candidates."
   }
 }

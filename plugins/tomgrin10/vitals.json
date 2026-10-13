@@ -3,20 +3,24 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-vitals",
-    "version": "0.1.3",
-    "resolved": "https://registry.npmjs.org/paseo-vitals/-/paseo-vitals-0.1.3.tgz",
-    "integrity": "sha512-XHa/oW2vg1O95rrcVoG4rDsHW162+OoE0uKYlaO9ZQm7aA2N7u+11FyZ9gjXqc0dzUYPGqNcu+1Rsp4Nl+jTPg=="
+    "version": "0.1.4",
+    "resolved": "https://registry.npmjs.org/paseo-vitals/-/paseo-vitals-0.1.4.tgz",
+    "integrity": "sha512-zQl6SveEXt6m3x5s96AsHbHmSYtgr6TdV3Sl4Ww8PXWbxhr0XhVsOf8WYZEMpOZjvDmXFY1YATR1PXHKsPNR9A=="
   },
   "repository": {
-    "url": "https://github.com/tomgrin10/paseo-vitals"
+    "url": "https://github.com/tomgrin10/paseo-vitals",
+    "commit": "24f78e9550d6a1232d0eee52a44e3da4a82abe83"
   },
   "categories": [
     "daemon-management"
   ],
   "submittedAt": "2026-09-22",
   "submittedBy": "tomgrin10",
-  "reviewedAt": "2026-09-22",
+  "publishedAt": "2026-09-22",
+  "reviewedAt": "2026-10-11",
   "listing": {
-    "media": []
+    "media": [
+      "https://raw.githubusercontent.com/tomgrin10/paseo-vitals/24f78e9550d6a1232d0eee52a44e3da4a82abe83/docs/images/host-vitals.png"
+    ]
   }
 }

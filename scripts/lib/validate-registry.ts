@@ -4,7 +4,7 @@ import { categorySlugs, readCategories } from "./categories.ts";
 import { readFeatured } from "./featured.ts";
 import { createNpmClient, type NpmClient } from "./npm.ts";
 import { readOverview } from "./overview.ts";
-import { readRecords } from "./record.ts";
+import { readRecords, recordDateProblems } from "./record.ts";
 import { checkMediaUrls } from "./media.ts";
 import { git } from "./shell.ts";
 
@@ -44,6 +44,10 @@ export async function validateRegistry(options: {
         .map((path) => path.replace(/^plugins\//, "").replace(/\.(?:json|md)$/, "")),
     );
     selected = records.filter((record) => changed.has(record.id));
+    const dateProblems = selected.flatMap((record) =>
+      recordDateProblems(record, listedRecord(baseCommit, record.id))
+        .map((message) => ({ id: record.id, error: new Error(message) })));
+    if (dateProblems.length) throw new RegistryValidationError(dateProblems);
   }
 
   const mediaProblems = await checkMediaUrls(selected.flatMap((record) => record.listing?.media ?? []));
@@ -69,4 +73,11 @@ export async function validateRegistry(options: {
     throw new RegistryValidationError(problems);
   }
   console.log(`${selected.length} record(s) match their pinned artifacts`);
+}
+
+/** The record as listed at the base commit, or undefined when it is new. */
+function listedRecord(commit: string, id: string): Record<string, unknown> | undefined {
+  const path = `plugins/${id}.json`;
+  if (!git(["ls-tree", "--name-only", commit, "--", path])) return undefined;
+  return JSON.parse(git(["show", `${commit}:${path}`]));
 }

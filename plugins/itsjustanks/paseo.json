@@ -17,8 +17,10 @@
     "sidebar"
   ],
   "submittedAt": "2026-09-10",
+  "publishedAt": "2026-09-10",
   "reviewedAt": "2026-09-10",
   "listing": {
-    "media": []
+    "media": [],
+    "description": "Manages a local 9router instance and routes agents through it as a provider that pools your model accounts."
   }
 }

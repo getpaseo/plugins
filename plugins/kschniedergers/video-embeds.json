@@ -15,10 +15,12 @@
   ],
   "submittedAt": "2026-09-11",
   "submittedBy": "kschniedergers",
+  "publishedAt": "2026-09-11",
   "reviewedAt": "2026-09-11",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/kschniedergers/paseo-plugins/da91d9b635afbd60211c66a71c0b9c06b72b828e/video-embeds/images/inline-player.png"
-    ]
+    ],
+    "description": "Plays video files that an assistant message embeds as a markdown image."
   }
 }

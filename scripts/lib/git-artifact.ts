@@ -7,7 +7,7 @@ import type { PluginRecord } from "./record.ts";
 import { parseArtifact } from "./record.ts";
 import { deriveId } from "./id.ts";
 import { parseSubmissionSource } from "./submission-source.ts";
-import { isoDate } from "./dates.ts";
+import { recordTime } from "./dates.ts";
 
 export function withGitArtifact<T>(record: Pick<PluginRecord, "artifact">, consume: (directory: string) => T): T {
   const artifact = record.artifact;
@@ -106,14 +106,16 @@ export function pinGit(input: {
     ...pin,
     pluginPath,
   });
+  const now = recordTime();
   const record: PluginRecord = {
     id: `${owner}/${slug}`,
     artifact,
     repository: { url: remote, commit: pin.commit },
     categories: input.categories,
-    submittedAt: isoDate(),
-    reviewedAt: isoDate(),
+    submittedAt: now,
     ...(input.submittedBy ? { submittedBy: input.submittedBy } : {}),
+    publishedAt: now,
+    reviewedAt: now,
   };
   withGitArtifact(record, () => undefined);
   return record;

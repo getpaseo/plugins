@@ -15,10 +15,12 @@
   ],
   "submittedAt": "2026-09-10",
   "submittedBy": "panrafal",
+  "publishedAt": "2026-09-10",
   "reviewedAt": "2026-09-10",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/panrafal/paseo-plugins/004c6a80c6aa8e76bb563694c3eee5c2c0b0466f/agents-dash-list/images/agents-dash-list.png"
-    ]
+    ],
+    "description": "Adds a sidebar dashboard of workspaces across all hosts, ordered by what needs your attention."
   }
 }

@@ -62,7 +62,7 @@ for (const kind of ["npm", "git"] as const) {
         async tarball() { throw new Error("Plugin artifacts must not execute"); },
       };
       const record: PluginRecord = {
-        id: "acme/example", categories: ["utils"], submittedAt: "2026-09-20", reviewedAt: "2026-09-20",
+        id: "acme/example", categories: ["utils"], submittedAt: "2026-09-20T00:00:00Z", publishedAt: "2026-09-20T00:00:00Z", reviewedAt: "2026-09-20T00:00:00Z",
         listing: {
           icon: "https://raw.githubusercontent.com/acme/overview/main/icon.png",
           media: [],

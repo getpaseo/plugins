@@ -1,0 +1,27 @@
+{
+  "id": "a31521424/host-monitor",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/a31521424/paseo-kit.git",
+    "commit": "e5329652200a0787aabc8fc323e70c34f5db18d3",
+    "pluginPath": "plugins/host-monitor"
+  },
+  "repository": {
+    "url": "https://github.com/a31521424/paseo-kit",
+    "commit": "e5329652200a0787aabc8fc323e70c34f5db18d3"
+  },
+  "categories": [
+    "daemon-management",
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-12",
+  "submittedBy": "a31521424",
+  "publishedAt": "2026-10-12",
+  "reviewedAt": "2026-10-12",
+  "listing": {
+    "name": "Host monitor",
+    "media": [
+      "https://raw.githubusercontent.com/a31521424/paseo-kit/e5329652200a0787aabc8fc323e70c34f5db18d3/plugins/host-monitor/assets/screenshot.png"
+    ]
+  }
+}

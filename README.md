@@ -216,6 +216,9 @@ No pending versions means no proposed bodies. Inline diffs are capped at 60,000
 characters; workflows retain the full diff artifact.
 
 `dist/index.json` and `dist/plugins/<owner>/<slug>.json` conform to PROTOCOL.md.
+A record whose pinned source cannot be fetched or resolved is left out of that
+publish and logged as `Skipped <id>: <reason>`; the other plugins still deploy.
+The build fails only when no record resolves.
 `REGISTRY_URL` controls the advertised registry base. `INSTALLS_URL` defaults to
 `https://paseo.sh/api/plugins/installs`; an unavailable counter omits `installs`.
 Counts are advisory install requests, including git artifacts. No npm downloads

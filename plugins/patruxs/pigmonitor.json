@@ -3,12 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/Patruxs/PigMonitor.git",
-    "commit": "b1dafdaca17f2b06a64fb09a5954fe64daf93af6",
-    "tag": "v0.2.1"
+    "commit": "45c93b8ca9ea86abc45f60d7769ef14c3536ec0c"
   },
   "repository": {
     "url": "https://github.com/Patruxs/PigMonitor",
-    "commit": "b1dafdaca17f2b06a64fb09a5954fe64daf93af6"
+    "commit": "45c93b8ca9ea86abc45f60d7769ef14c3536ec0c"
   },
   "categories": [
     "orchestration",
@@ -22,9 +21,9 @@
   "listing": {
     "name": "PigMonitor",
     "media": [
-      "https://raw.githubusercontent.com/Patruxs/PigMonitor/b1dafdaca17f2b06a64fb09a5954fe64daf93af6/docs/media/overview.png",
-      "https://raw.githubusercontent.com/Patruxs/PigMonitor/b1dafdaca17f2b06a64fb09a5954fe64daf93af6/docs/media/graph.png",
-      "https://raw.githubusercontent.com/Patruxs/PigMonitor/b1dafdaca17f2b06a64fb09a5954fe64daf93af6/docs/media/sessions.png"
+      "https://raw.githubusercontent.com/Patruxs/PigMonitor/45c93b8ca9ea86abc45f60d7769ef14c3536ec0c/docs/media/overview.png",
+      "https://raw.githubusercontent.com/Patruxs/PigMonitor/45c93b8ca9ea86abc45f60d7769ef14c3536ec0c/docs/media/graph.png",
+      "https://raw.githubusercontent.com/Patruxs/PigMonitor/45c93b8ca9ea86abc45f60d7769ef14c3536ec0c/docs/media/sessions.png"
     ]
   }
 }

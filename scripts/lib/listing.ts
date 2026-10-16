@@ -1,5 +1,5 @@
 import { readArtifactFiles } from "./artifact-files.ts";
-import { validateOverview, requireOverview } from "./overview.ts";
+import { requireOverview } from "./overview.ts";
 import type { Category } from "./categories.ts";
 import { authorOf, type NpmClient, resolveVersion } from "./npm.ts";
 import { resolveMetadata } from "./metadata.ts";
@@ -45,7 +45,7 @@ export async function resolvePlugin(
   overview: string | null = null,
 ): Promise<PublishedPluginDetail> {
   const files = await readArtifactFiles(client, record.artifact);
-  const readme = requireOverview(validateOverview(files.overview, `${record.id}/OVERVIEW.md`), overview, record.id);
+  const readme = requireOverview(files.overview, overview, record.id);
   const artifact = record.artifact;
   const doc = artifact.kind === "npm"
     ? resolveVersion(await client.packument(artifact.package), artifact.version)

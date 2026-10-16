@@ -1,6 +1,6 @@
 import { readArtifactFiles } from "./artifact-files.ts";
 import { resolveMetadata } from "./metadata.ts";
-import { requireOverview, validateOverview } from "./overview.ts";
+import { requireOverview } from "./overview.ts";
 import type { NpmClient } from "./npm.ts";
 import type { PluginRecord } from "./record.ts";
 
@@ -12,8 +12,8 @@ export async function validateArtifact(
 ): Promise<string[]> {
   const problems: string[] = [];
   const files = await readArtifactFiles(client, record.artifact);
-  const author = validateOverview(files.overview, `${record.id}/OVERVIEW.md`);
-  const registry = validateOverview(context.registryOverview ?? null, `${record.id}.md`);
+  const author = files.overview;
+  const registry = context.registryOverview ?? null;
   // Intake can leave the overview for the reviewer; publication always requires it.
   if (context.overviewRequired !== false) requireOverview(author, registry, record.id);
   resolveMetadata(files, record);

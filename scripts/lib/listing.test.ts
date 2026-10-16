@@ -201,10 +201,6 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
       run(process.execPath, ["scripts/validate.ts", "--online", "--changed"], options),
       /1 record\(s\) match/,
     );
-    for (const command of ["paseo plugin add acme/example", "npm install example", "npm i example"]) {
-      writeFileSync(overview, command);
-      assert.throws(() => run(process.execPath, ["scripts/validate.ts"], options), /Command failed/);
-    }
     writeFileSync(overview, "A curated description.");
     run("git", ["tag", "-f", "v1.0.0"], { cwd: repository });
     assert.throws(

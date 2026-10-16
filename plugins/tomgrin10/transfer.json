@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-transfer",
-    "version": "1.1.1",
-    "resolved": "https://registry.npmjs.org/paseo-transfer/-/paseo-transfer-1.1.1.tgz",
-    "integrity": "sha512-nEt79f5YOqbAm0wVuOjDJFIsUzeJGCNqnG3cGvbJ/P00RptcPcTS64fsGpqkc11PTkE2gb4ToGWEBJpmLif+cA=="
+    "version": "1.2.0",
+    "resolved": "https://registry.npmjs.org/paseo-transfer/-/paseo-transfer-1.2.0.tgz",
+    "integrity": "sha512-3+D5Cx4sWg5YN7M6J0gKfikU2dhva9Ovx02eLThRW1AKQpBPLTQmOgznt98wwmBZZrcN1FOfAakDaG95ylN3xA=="
   },
   "repository": {
     "url": "https://github.com/tomgrin10/paseo-transfer",
-    "commit": "7d45ab2aca2810dd96bb1142183e7b100e1ebf1b"
+    "commit": "d7c735f6cdab0cba5fa6f02103d69ad988201ccd"
   },
   "categories": [
     "orchestration"
@@ -20,7 +20,7 @@
   "listing": {
     "name": "Transfer",
     "media": [
-      "https://cdn.jsdelivr.net/npm/paseo-transfer@1.1.1/docs/screenshots/transfer.png"
+      "https://cdn.jsdelivr.net/npm/paseo-transfer@1.2.0/docs/screenshots/transfer.png"
     ]
   }
 }

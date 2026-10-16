@@ -1,0 +1,26 @@
+{
+  "id": "ajma/merge-celebration",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/ajma/paseo-merge-celebration.git",
+    "commit": "85b5039bf43699e4ee831f2c7282569b2f0b373b"
+  },
+  "repository": {
+    "url": "https://github.com/ajma/paseo-merge-celebration",
+    "commit": "85b5039bf43699e4ee831f2c7282569b2f0b373b"
+  },
+  "categories": [
+    "workspaces",
+    "extras"
+  ],
+  "submittedAt": "2026-10-16T06:08:49Z",
+  "submittedBy": "ajma",
+  "publishedAt": "2026-10-16T06:33:20Z",
+  "reviewedAt": "2026-10-16T06:33:20Z",
+  "listing": {
+    "description": "Celebrate archived GitHub workspaces after their pull requests merge, with confetti and linked issue recaps on Paseo desktop and browser clients.",
+    "media": [
+      "https://raw.githubusercontent.com/ajma/paseo-merge-celebration/85b5039bf43699e4ee831f2c7282569b2f0b373b/docs/celebration-preview.png"
+    ]
+  }
+}

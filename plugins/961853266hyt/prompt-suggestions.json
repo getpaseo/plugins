@@ -1,14 +1,14 @@
 {
   "id": "961853266hyt/prompt-suggestions",
   "artifact": {
-    "kind": "git",
-    "remote": "https://github.com/961853266hyt/paseo-plugins.git",
-    "commit": "1aeece479c338247a75c6f7bb01d73b6d1aaefb6",
-    "tag": "prompt-suggestions-v0.1.0",
-    "pluginPath": "plugins/prompt-suggestions"
+    "kind": "npm",
+    "package": "paseo-prompt-suggestions",
+    "version": "0.2.0",
+    "resolved": "https://registry.npmjs.org/paseo-prompt-suggestions/-/paseo-prompt-suggestions-0.2.0.tgz",
+    "integrity": "sha512-9DyJ2j+ymO1WVsEjNn++BK0WvjqmlC0Eo6S56aNew8DPxUDautv0WtN+loaObHP2jtouS5K+31osfX/gsK/JCw=="
   },
   "repository": {
-    "url": "https://github.com/961853266hyt/paseo-plugins"
+    "url": "https://github.com/961853266hyt/paseo-plugins/tree/HEAD/plugins/prompt-suggestions"
   },
   "categories": [
     "utils"
@@ -16,11 +16,5 @@
   "submittedAt": "2026-10-14T10:34:08Z",
   "submittedBy": "961853266hyt",
   "publishedAt": "2026-10-14T10:37:56Z",
-  "reviewedAt": "2026-10-14T10:37:56Z",
-  "listing": {
-    "media": [
-      "https://raw.githubusercontent.com/961853266hyt/paseo-plugins/1aeece479c338247a75c6f7bb01d73b6d1aaefb6/plugins/prompt-suggestions/assets/desktop-placeholder.png",
-      "https://raw.githubusercontent.com/961853266hyt/paseo-plugins/1aeece479c338247a75c6f7bb01d73b6d1aaefb6/plugins/prompt-suggestions/assets/phone-card.png"
-    ]
-  }
+  "reviewedAt": "2026-10-15T20:32:57Z"
 }

@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/zhjiang22/paseo-plugins.git",
-    "commit": "9b829d7dcba3ab75357bf64bc14cc0933dbf1f99",
+    "commit": "a330c04d25831863abab1464dbdd325bafc70a43",
     "pluginPath": "project-notes"
   },
   "repository": {
     "url": "https://github.com/zhjiang22/paseo-plugins",
-    "commit": "9b829d7dcba3ab75357bf64bc14cc0933dbf1f99"
+    "commit": "a330c04d25831863abab1464dbdd325bafc70a43"
   },
   "categories": [
     "workspaces",
@@ -18,5 +18,5 @@
   "submittedAt": "2026-10-10",
   "submittedBy": "zhjiang22",
   "publishedAt": "2026-10-10",
-  "reviewedAt": "2026-10-14T11:06:44Z"
+  "reviewedAt": "2026-10-16T05:40:26Z"
 }

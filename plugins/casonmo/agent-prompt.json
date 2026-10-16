@@ -1,0 +1,20 @@
+{
+  "id": "casonmo/agent-prompt",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/CasonMo/paseo-agent-prompt.git",
+    "commit": "1cff3f329d21e897fb04471dff332fa602c335f8"
+  },
+  "repository": {
+    "url": "https://github.com/CasonMo/paseo-agent-prompt",
+    "commit": "1cff3f329d21e897fb04471dff332fa602c335f8"
+  },
+  "categories": [
+    "utils",
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-16T09:01:06Z",
+  "submittedBy": "CasonMo",
+  "publishedAt": "2026-10-16T09:33:14Z",
+  "reviewedAt": "2026-10-16T09:33:14Z"
+}

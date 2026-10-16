@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-kanban",
-    "version": "0.1.3",
-    "resolved": "https://registry.npmjs.org/paseo-kanban/-/paseo-kanban-0.1.3.tgz",
-    "integrity": "sha512-a0tn31AgLDxhvc4hYBiczPy9DO26yKXvn0YWDzs15MTMDL4tpj/xh6wKBU+ZlxRofiOMbQwzBsBHa9DsIszwHA=="
+    "version": "0.1.4",
+    "resolved": "https://registry.npmjs.org/paseo-kanban/-/paseo-kanban-0.1.4.tgz",
+    "integrity": "sha512-BFPUsTc+P8vr5tjiR8ZuIKT8suowoDJ7vRcSvuZWmsl/yCKbNep4MeTT9Mwq4WuzB6uSLMqSPh/S75jaT6hJOQ=="
   },
   "repository": {
     "url": "https://github.com/breathi3552/paseo-kanban",
-    "commit": "68ebc9278a35b77635d2f4aa6f4c8afe861d4eb1"
+    "commit": "46a1282f5eae9a610e1a4ded7ace7d705963868f"
   },
   "categories": [
     "workspaces",
@@ -18,10 +18,9 @@
   "submittedAt": "2026-10-13T17:21:59Z",
   "submittedBy": "breathi3552",
   "publishedAt": "2026-10-13T17:32:23Z",
-  "reviewedAt": "2026-10-13T17:32:23Z",
+  "reviewedAt": "2026-10-14T21:03:35Z",
   "listing": {
     "name": "Kanban",
-    "description": "Organize tasks in customizable lanes, track subtasks, and link cards to Paseo projects.",
     "icon": "https://raw.githubusercontent.com/breathi3552/paseo-kanban/7346239bb7161d661fd48717b9ddf4a1cadab464/assets/marketplace/icon.png",
     "media": [
       "https://raw.githubusercontent.com/breathi3552/paseo-kanban/7346239bb7161d661fd48717b9ddf4a1cadab464/assets/marketplace/board-0.1.3.png",

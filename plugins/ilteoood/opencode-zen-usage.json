@@ -1,0 +1,25 @@
+{
+  "id": "ilteoood/opencode-zen-usage",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/ilteoood/paseo-opencode-zen-usage.git",
+    "commit": "63328376f979e2e16ddba4bc9b076b70d9a14f3f"
+  },
+  "repository": {
+    "url": "https://github.com/ilteoood/paseo-opencode-zen-usage",
+    "commit": "63328376f979e2e16ddba4bc9b076b70d9a14f3f"
+  },
+  "categories": [
+    "providers",
+    "utils"
+  ],
+  "submittedAt": "2026-10-15T08:04:45Z",
+  "submittedBy": "ilteoood",
+  "publishedAt": "2026-10-15T08:32:53Z",
+  "reviewedAt": "2026-10-15T08:32:53Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/ilteoood/paseo-opencode-zen-usage/63328376f979e2e16ddba4bc9b076b70d9a14f3f/assets/command_center.png"
+    ]
+  }
+}

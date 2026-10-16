@@ -1,0 +1,25 @@
+{
+  "id": "cybershape/schedule-submit",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/cybershape/paseo-schedule-submit.git",
+    "commit": "39e7e121ad15e959af69a47d6433acfb1942e07e"
+  },
+  "repository": {
+    "url": "https://github.com/cybershape/paseo-schedule-submit",
+    "commit": "39e7e121ad15e959af69a47d6433acfb1942e07e"
+  },
+  "categories": [
+    "orchestration",
+    "utils"
+  ],
+  "submittedAt": "2026-10-16T03:35:30Z",
+  "submittedBy": "cybershape",
+  "publishedAt": "2026-10-16T04:32:24Z",
+  "reviewedAt": "2026-10-16T04:32:24Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/cybershape/paseo-schedule-submit/39e7e121ad15e959af69a47d6433acfb1942e07e/assets/schedule-popover.png"
+    ]
+  }
+}

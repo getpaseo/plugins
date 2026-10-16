@@ -1,0 +1,26 @@
+{
+  "id": "xpufx/top",
+  "artifact": {
+    "kind": "npm",
+    "package": "@xpufx/paseo-top",
+    "version": "0.4.7",
+    "resolved": "https://registry.npmjs.org/@xpufx/paseo-top/-/paseo-top-0.4.7.tgz",
+    "integrity": "sha512-k1S0y0Tas1wCAlUL8Y6MdHxtFKGa+9eLumzeosOiiWzGzA2LtAT4XlGep0gQSOGAY68IDL9+coaXAgn6W/o/8w=="
+  },
+  "repository": {
+    "url": "https://github.com/xpufx/paseo"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-14T15:59:13Z",
+  "submittedBy": "xpufx",
+  "publishedAt": "2026-10-15T01:03:50Z",
+  "reviewedAt": "2026-10-15T01:03:50Z",
+  "listing": {
+    "media": [
+      "https://cdn.jsdelivr.net/npm/@xpufx/paseo-top@0.4.5/screenshots/1-paseo-top-modal-system.jpg",
+      "https://cdn.jsdelivr.net/npm/@xpufx/paseo-top@0.4.5/screenshots/paseo-top-dashboard.jpg"
+    ]
+  }
+}

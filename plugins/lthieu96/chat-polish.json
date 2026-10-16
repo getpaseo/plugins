@@ -1,0 +1,31 @@
+{
+  "id": "lthieu96/chat-polish",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/lthieu96/paseo-chat-polish.git",
+    "commit": "585153d9027eee25b1d4c05eeef5c253ec0dbede"
+  },
+  "repository": {
+    "url": "https://github.com/lthieu96/paseo-chat-polish",
+    "commit": "585153d9027eee25b1d4c05eeef5c253ec0dbede"
+  },
+  "categories": [
+    "themes",
+    "extras",
+    "utils",
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-15T09:56:56Z",
+  "submittedBy": "lthieu96",
+  "publishedAt": "2026-10-15T10:09:22Z",
+  "reviewedAt": "2026-10-16T11:36:43Z",
+  "listing": {
+    "description": "Customize Paseo’s chat timeline, rich text, themes and fonts from a dashboard with live previews.",
+    "media": [
+      "https://raw.githubusercontent.com/lthieu96/paseo-chat-polish/585153d9027eee25b1d4c05eeef5c253ec0dbede/images/chat.png",
+      "https://raw.githubusercontent.com/lthieu96/paseo-chat-polish/585153d9027eee25b1d4c05eeef5c253ec0dbede/images/theme.png",
+      "https://raw.githubusercontent.com/lthieu96/paseo-chat-polish/585153d9027eee25b1d4c05eeef5c253ec0dbede/images/rich-text.png",
+      "https://raw.githubusercontent.com/lthieu96/paseo-chat-polish/585153d9027eee25b1d4c05eeef5c253ec0dbede/images/messages.png"
+    ]
+  }
+}

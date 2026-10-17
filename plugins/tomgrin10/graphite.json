@@ -1,23 +1,24 @@
 {
   "id": "tomgrin10/graphite",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-graphite",
+    "version": "0.2.5",
+    "resolved": "https://registry.npmjs.org/paseo-graphite/-/paseo-graphite-0.2.5.tgz",
+    "integrity": "sha512-isDQ3F9f9a91oLUf1vKqJA4MS1dts7BDvQjuOKFuqXC/EPh+0tMTauoVVbv787bX7OL7sKHqfpPajZKtDGKVFw=="
+  },
   "repository": {
-    "url": "https://github.com/tomgrin10/paseo-graphite"
+    "url": "https://github.com/tomgrin10/paseo-graphite",
+    "commit": "7b8ebe6cc2fe73ce5b89c7fc32db1d14216b5188"
   },
   "categories": [
     "git"
   ],
   "submittedAt": "2026-09-22",
   "submittedBy": "tomgrin10",
-  "publishedAt": "2026-09-22",
-  "reviewedAt": "2026-09-22",
-  "artifact": {
-    "kind": "npm",
-    "package": "paseo-graphite",
-    "version": "0.2.4",
-    "resolved": "https://registry.npmjs.org/paseo-graphite/-/paseo-graphite-0.2.4.tgz",
-    "integrity": "sha512-aAFvh+118c5mmSQ3sTsDKO8Is7g1ZU8m2+0fisr8nFrgPMu0m2mokPJnM/LaIqQc3Zaaak1chB6M6k0dWOPeIA=="
-  },
+  "reviewedAt": "2026-10-12T13:37:37Z",
   "listing": {
     "media": []
-  }
+  },
+  "publishedAt": "2026-09-22"
 }

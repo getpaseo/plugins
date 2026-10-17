@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/cybershape/paseo-schedule-submit.git",
-    "commit": "41c39475676ef245c7fa49bbeba7de077e328680"
+    "commit": "601fe4a9d449bb40a304cb5e16a2f9113c68750b"
   },
   "repository": {
     "url": "https://github.com/cybershape/paseo-schedule-submit",
-    "commit": "41c39475676ef245c7fa49bbeba7de077e328680"
+    "commit": "601fe4a9d449bb40a304cb5e16a2f9113c68750b"
   },
   "categories": [
     "orchestration",

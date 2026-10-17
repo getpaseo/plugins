@@ -3,12 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-plugin-account-switcher",
-    "version": "0.2.0",
-    "resolved": "https://registry.npmjs.org/paseo-plugin-account-switcher/-/paseo-plugin-account-switcher-0.2.0.tgz",
-    "integrity": "sha512-jDkaepdOPTV0W1DZX4BiQwStnXmt50A27VGiPsCIpQwRQZhAnYh1GEucBo0npJwGDDnnBofILKMSxWJFfaBMzw=="
+    "version": "0.3.2",
+    "resolved": "https://registry.npmjs.org/paseo-plugin-account-switcher/-/paseo-plugin-account-switcher-0.3.2.tgz",
+    "integrity": "sha512-/Rquu8qjkQnaC+yMzhHeMvSFcd+izvZnY0X80FS4E0NGWHqDcEk45qWa9kF7ixa0JLhijyqz1PuQAc1gzmA9pg=="
   },
   "repository": {
-    "url": "https://github.com/dutchakdev/paseo-plugin-account-switcher"
+    "url": "https://github.com/dutchakdev/paseo-plugin-account-switcher",
+    "commit": "b8d5b57c7c2c68e9686dab6bb18ec9ce4a95f610"
   },
   "categories": [
     "providers"
@@ -16,7 +17,7 @@
   "submittedAt": "2026-10-05",
   "submittedBy": "dutchakdev",
   "publishedAt": "2026-10-05",
-  "reviewedAt": "2026-10-16T05:47:58Z",
+  "reviewedAt": "2026-10-17T19:29:21Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/dutchakdev/paseo-plugin-account-switcher/1ad84192c6d4ffcbbd59a4c3e0d59025b0801c97/docs/assets/accounts.png",

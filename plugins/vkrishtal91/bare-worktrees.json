@@ -1,0 +1,20 @@
+{
+  "id": "vkrishtal91/bare-worktrees",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/vkrishtal91/paseo-bare-worktrees.git",
+    "commit": "9f9f7a689bee694df2af7f2d3a60747fcefbeb2d"
+  },
+  "repository": {
+    "url": "https://github.com/vkrishtal91/paseo-bare-worktrees",
+    "commit": "9f9f7a689bee694df2af7f2d3a60747fcefbeb2d"
+  },
+  "categories": [
+    "git",
+    "workspaces"
+  ],
+  "submittedAt": "2026-10-12T13:24:31Z",
+  "submittedBy": "vkrishtal91",
+  "publishedAt": "2026-10-12T14:07:38Z",
+  "reviewedAt": "2026-10-12T14:07:38Z"
+}

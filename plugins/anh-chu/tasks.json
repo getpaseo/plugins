@@ -1,0 +1,21 @@
+{
+  "id": "anh-chu/tasks",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/anh-chu/paseo-plugin-tasks.git",
+    "commit": "d724710dfcdeb0ca159dbb54fd144cf50b638263"
+  },
+  "repository": {
+    "url": "https://github.com/anh-chu/paseo-plugin-tasks",
+    "commit": "d724710dfcdeb0ca159dbb54fd144cf50b638263"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-17T20:23:08Z",
+  "submittedBy": "anh-chu",
+  "publishedAt": "2026-10-17T21:20:35Z",
+  "reviewedAt": "2026-10-17T21:21:24Z"
+}

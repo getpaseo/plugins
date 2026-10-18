@@ -1,4 +1,4 @@
-Shows Claude’s task list in an expandable conversation card, with the commands and output associated with each task. Expand a task to see its commands, then expand a command to read its output. The active task opens automatically; commands without an active task appear under “Otros comandos”.
+Shows Claude’s task list in an expandable conversation card, with the commands and output associated with each task. Expand a task to see its commands, then expand a command to read its output. The active task opens automatically; commands without an active task appear as a plain “Ejecutó N comandos” line.
 
 Requires Paseo >=0.11.2 and <0.12.0 and a Claude provider. If Claude Code does not expose its task tools, enable `CLAUDE_CODE_ENABLE_TODO_TOOLS=1` in the provider environment. The card depends on those task events.
 

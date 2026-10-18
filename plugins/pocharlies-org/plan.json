@@ -3,7 +3,7 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/pocharlies-org/paseo-plan.git",
-    "commit": "6d4f9cd06708450453e7c8be25e86a238f057261"
+    "commit": "3f36e186c8ae62f3b0abfd49d42ada2733cf9b65"
   },
   "repository": {
     "url": "https://github.com/pocharlies-org/paseo-plan"

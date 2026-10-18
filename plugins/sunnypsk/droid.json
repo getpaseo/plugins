@@ -1,0 +1,18 @@
+{
+  "id": "sunnypsk/droid",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/sunnypsk/paseo-droid-plugin.git",
+    "commit": "6617933963f9c688a86e3341a3aa8e87278a8b2c"
+  },
+  "repository": {
+    "url": "https://github.com/sunnypsk/paseo-droid-plugin"
+  },
+  "categories": [
+    "providers"
+  ],
+  "submittedAt": "2026-10-17T10:10:15Z",
+  "submittedBy": "sunnypsk",
+  "publishedAt": "2026-10-17T12:36:27Z",
+  "reviewedAt": "2026-10-17T17:36:46Z"
+}

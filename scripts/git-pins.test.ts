@@ -46,7 +46,7 @@ function fixture(t: TestContext, path = "") {
   const add = (...args: string[]) => cli("add", "https://github.com/acme/fixture", "--categories", "utils", "--submitted-by", "acme", ...(path ? ["--plugin-path", path] : []), ...args);
   const recordPath = join(registry, "plugins/acme", `${path ? path.split("/").at(-1) : "fixture"}.json`);
   const record = () => JSON.parse(readFileSync(recordPath, "utf8"));
-  return { remote, registry, git, commit, plugin, cli, add, recordPath, record };
+  return { remote, registry, env, git, commit, plugin, cli, add, recordPath, record };
 }
 
 for (const path of ["", "plugins/example"]) {
@@ -208,4 +208,34 @@ test("changed-record review ignores unreachable media on an unchanged listing", 
   const result = f.cli("validate", "--online", "--changed");
   assert.equal(result.status, 0, result.stderr);
   assert.match(result.stdout, /1 record.*match/);
+});
+
+test("build publishes the other plugins when one pinned source cannot be fetched", (t) => {
+  const f = fixture(t);
+  assert.equal(f.add("--commit", f.commit).status, 0);
+  const missing = { ...f.record(), id: "acme/missing" };
+  missing.artifact.remote = "https://github.com/acme/missing.git";
+  missing.repository.url = "https://github.com/acme/missing";
+  writeFileSync(join(f.registry, "plugins/acme/missing.json"), JSON.stringify(missing));
+  const env = {
+    ...f.env,
+    GIT_CONFIG_COUNT: "2",
+    GIT_CONFIG_KEY_1: `url.file://${join(f.remote, "..", "missing")}.insteadOf`,
+    GIT_CONFIG_VALUE_1: "https://github.com/acme/missing.git",
+  };
+  const build = spawnSync(process.execPath, ["scripts/build.ts"], { cwd: f.registry, env, encoding: "utf8" });
+  assert.equal(build.status, 0, build.stderr);
+  assert.match(build.stderr, /Skipped acme\/missing: .*acme\/missing\.git/);
+  assert.match(build.stdout, /1 plugin\(s\), 1 skipped/);
+  assert.equal(existsSync(join(f.registry, "dist/plugins/acme/missing.json")), false);
+  const detail = JSON.parse(readFileSync(join(f.registry, "dist/plugins/acme/fixture.json"), "utf8"));
+  assert.equal(detail.readme, "A fixture plugin.");
+  const index = JSON.parse(readFileSync(join(f.registry, "dist/index.json"), "utf8"));
+  assert.deepEqual(index.plugins.map((plugin: { id: string }) => plugin.id), ["acme/fixture"]);
+
+  // Every record failing is a registry-wide outage, not a plugin problem: never deploy an empty index.
+  rmSync(f.recordPath);
+  const empty = spawnSync(process.execPath, ["scripts/build.ts"], { cwd: f.registry, env, encoding: "utf8" });
+  assert.notEqual(empty.status, 0);
+  assert.match(empty.stderr, /Skipped acme\/missing/);
 });

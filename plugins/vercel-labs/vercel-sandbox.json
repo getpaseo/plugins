@@ -1,0 +1,27 @@
+{
+  "id": "vercel-labs/vercel-sandbox",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/vercel-labs/paseo-vercel-sandbox.git",
+    "commit": "b60cc568bc0e8823d7a9d52f9604575749016432"
+  },
+  "repository": {
+    "url": "https://github.com/vercel-labs/paseo-vercel-sandbox",
+    "commit": "b60cc568bc0e8823d7a9d52f9604575749016432"
+  },
+  "categories": [
+    "daemon-management",
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-12T11:38:00Z",
+  "publishedAt": "2026-10-12T11:38:00Z",
+  "reviewedAt": "2026-10-12T11:38:00Z",
+  "listing": {
+    "name": "Vercel Sandbox",
+    "description": "Create and manage persistent Vercel Sandbox hosts for Codex, Claude Code, OpenCode, and Pi through Vercel AI Gateway.",
+    "icon": "https://raw.githubusercontent.com/getpaseo/plugins/0d7b5c4506db7c94bda0ad8788392b2df01dc27c/assets/vercel-labs/vercel-sandbox/icon.png",
+    "media": [
+      "https://raw.githubusercontent.com/getpaseo/plugins/0d7b5c4506db7c94bda0ad8788392b2df01dc27c/assets/vercel-labs/vercel-sandbox/card.png"
+    ]
+  }
+}

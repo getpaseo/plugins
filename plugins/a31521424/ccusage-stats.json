@@ -1,0 +1,19 @@
+{
+  "id": "a31521424/ccusage-stats",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/a31521424/paseo-kit.git",
+    "commit": "d3a502c33e8842ffc2650418427996bc4bdd5ca5",
+    "pluginPath": "plugins/ccusage-stats"
+  },
+  "repository": {
+    "url": "https://github.com/a31521424/paseo-kit"
+  },
+  "categories": [
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-13T11:23:07Z",
+  "submittedBy": "a31521424",
+  "publishedAt": "2026-10-13T11:46:00Z",
+  "reviewedAt": "2026-10-13T11:46:00Z"
+}

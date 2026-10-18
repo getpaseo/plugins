@@ -15,10 +15,12 @@
   ],
   "submittedAt": "2026-09-18",
   "submittedBy": "pmusaraj",
+  "publishedAt": "2026-09-18",
   "reviewedAt": "2026-09-18",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/pmusaraj/paseo-pr-views/cc66c6fb3d694db2b292397b3486f0eed304c390/images/github-pr-views.png"
-    ]
+    ],
+    "description": "Adds a GitHub PRs sidebar item with saved pull request searches, review actions, and agent hand-off."
   }
 }

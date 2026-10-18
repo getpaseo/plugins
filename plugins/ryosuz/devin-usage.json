@@ -1,0 +1,25 @@
+{
+  "id": "ryosuz/devin-usage",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/ryosuz/paseo-devin-usage.git",
+    "commit": "983e347ac7ebd8997271e5399c0e48b60048e585"
+  },
+  "repository": {
+    "url": "https://github.com/ryosuz/paseo-devin-usage",
+    "commit": "983e347ac7ebd8997271e5399c0e48b60048e585"
+  },
+  "categories": [
+    "providers",
+    "utils"
+  ],
+  "submittedAt": "2026-10-16T09:54:22Z",
+  "submittedBy": "ryosuz",
+  "publishedAt": "2026-10-16T10:02:48Z",
+  "reviewedAt": "2026-10-16T10:32:44Z",
+  "listing": {
+    "media": [
+      "https://gist.githubusercontent.com/ryosuz/ffbaa66ea9b765faab3a544291cd6780/raw/59630789e4be71c2d2320f8e5aec63d3555bf8d6/devin-usage-card.jpg"
+    ]
+  }
+}

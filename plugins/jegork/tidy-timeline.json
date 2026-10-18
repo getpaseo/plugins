@@ -14,8 +14,10 @@
   ],
   "submittedAt": "2026-09-13",
   "submittedBy": "jegork",
+  "publishedAt": "2026-09-13",
   "reviewedAt": "2026-09-13",
   "listing": {
-    "media": []
+    "media": [],
+    "description": "Folds injected skill text, inbox messages, system notices, and long pasted messages into compact cards."
   }
 }

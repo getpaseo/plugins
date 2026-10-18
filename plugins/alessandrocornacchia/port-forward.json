@@ -1,0 +1,21 @@
+{
+  "id": "alessandrocornacchia/port-forward",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/alessandrocornacchia/paseo-port-forward.git",
+    "commit": "32f070d4d2dfe2e0411bbc29146e2a89515140ef"
+  },
+  "repository": {
+    "url": "https://github.com/alessandrocornacchia/paseo-port-forward",
+    "commit": "32f070d4d2dfe2e0411bbc29146e2a89515140ef"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-10-13T14:18:01Z",
+  "submittedBy": "alessandrocornacchia",
+  "publishedAt": "2026-10-13T15:04:44Z",
+  "reviewedAt": "2026-10-13T15:04:44Z"
+}

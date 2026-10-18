@@ -1,0 +1,22 @@
+{
+  "id": "kostilal/claude-accounts",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/kostilal/paseo-claude-accounts.git",
+    "commit": "aef0cb95379fd75d1c90b04162ab0999c14d06d4",
+    "tag": "v0.1.1"
+  },
+  "repository": {
+    "url": "https://github.com/kostilal/paseo-claude-accounts",
+    "commit": "aef0cb95379fd75d1c90b04162ab0999c14d06d4"
+  },
+  "categories": [
+    "providers",
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-10-15T13:07:59Z",
+  "submittedBy": "kostilal",
+  "publishedAt": "2026-10-15T13:38:06Z",
+  "reviewedAt": "2026-10-15T15:33:23Z"
+}

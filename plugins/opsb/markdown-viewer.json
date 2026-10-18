@@ -15,8 +15,10 @@
   ],
   "submittedAt": "2026-09-15",
   "submittedBy": "opsb",
+  "publishedAt": "2026-09-15",
   "reviewedAt": "2026-09-15",
   "listing": {
-    "media": []
+    "media": [],
+    "description": "Adds a Markdown panel to every workspace that opens files in tabs and follows the files agents edit."
   }
 }

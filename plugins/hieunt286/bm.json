@@ -3,20 +3,22 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-bm-plugin",
-    "version": "0.5.5",
-    "resolved": "https://registry.npmjs.org/paseo-bm-plugin/-/paseo-bm-plugin-0.5.5.tgz",
-    "integrity": "sha512-CK33Ha5cI7in+aMIOBjsflrrXPaKrC/DgfZXNpZyEGIpI7bkNWDRFWGvdsK3PO2U8zQweuwAB6HewgBKU6zy0w=="
+    "version": "0.5.6",
+    "resolved": "https://registry.npmjs.org/paseo-bm-plugin/-/paseo-bm-plugin-0.5.6.tgz",
+    "integrity": "sha512-B0sZ/BEGnIlrZoLnxlrlqYoqdcwr6Gs9Qxquu26/UUD7BlI1c6hws/737KwR0FmcnWv4UpdnlPMVPvTNAUEv7w=="
   },
   "repository": {
     "url": "https://github.com/hieunt286/paseo-bm/tree/HEAD/plugin-package",
-    "commit": "5f6dee4f4cec4fa04c105d1e91f1f2174a8de03d"
+    "commit": "7f6abd311b71dee0c7840ca52fa0219ccbd4f5c7"
   },
   "categories": [
+    "orchestration",
     "utils"
   ],
   "submittedAt": "2026-09-25",
   "submittedBy": "hieunt286",
-  "reviewedAt": "2026-09-25",
+  "publishedAt": "2026-09-25",
+  "reviewedAt": "2026-10-15T10:15:56Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/hieunt286/paseo-bm/ab6c56a8561469fd8660780f063d7b03e2bd95b3/plugin-package/images/01-inbox.jpg",
@@ -24,6 +26,8 @@
       "https://raw.githubusercontent.com/hieunt286/paseo-bm/ab6c56a8561469fd8660780f063d7b03e2bd95b3/plugin-package/images/03-project-beads.jpg",
       "https://raw.githubusercontent.com/hieunt286/paseo-bm/ab6c56a8561469fd8660780f063d7b03e2bd95b3/plugin-package/images/04-settings-autonomy.jpg",
       "https://raw.githubusercontent.com/hieunt286/paseo-bm/ab6c56a8561469fd8660780f063d7b03e2bd95b3/plugin-package/images/05-chat-manager.jpg"
-    ]
+    ],
+    "description": "Coordinate missions across repositories with Main, Worker and Reviewer agents, an Inbox for decisions, and a shared project dashboard.",
+    "name": "Beads Management"
   }
 }

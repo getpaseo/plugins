@@ -16,7 +16,7 @@ test("validation rejects unknown or duplicate featured IDs and malformed lists",
     id: "acme/example", categories: ["utils"],
     artifact: { kind: "git", remote: "https://github.com/acme/example.git", commit: "a".repeat(40) },
     repository: { url: "https://github.com/acme/example" },
-    submittedAt: "2026-09-12", reviewedAt: "2026-09-12",
+    submittedAt: "2026-09-12", publishedAt: "2026-09-12", reviewedAt: "2026-09-12",
   }));
   const validate = (featured: unknown) => {
     writeFileSync(join(registry, "featured.json"), JSON.stringify(featured));

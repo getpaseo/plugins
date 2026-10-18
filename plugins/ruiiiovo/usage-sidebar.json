@@ -15,6 +15,7 @@
   ],
   "submittedAt": "2026-09-11",
   "submittedBy": "RUIIIOVO",
+  "publishedAt": "2026-09-11",
   "reviewedAt": "2026-09-11",
   "listing": {
     "media": [
@@ -24,6 +25,7 @@
       "https://raw.githubusercontent.com/RUIIIOVO/paseo-usage-sidebar/a10505da7ffd3f385666f66cfaaa9ba1a2712a14/images/sidebar-meter.png",
       "https://raw.githubusercontent.com/RUIIIOVO/paseo-usage-sidebar/a10505da7ffd3f385666f66cfaaa9ba1a2712a14/images/usage-panel-dark.png",
       "https://raw.githubusercontent.com/RUIIIOVO/paseo-usage-sidebar/a10505da7ffd3f385666f66cfaaa9ba1a2712a14/images/usage-panel.png"
-    ]
+    ],
+    "description": "Shows each provider's plan usage windows and reset times in a sidebar panel with pinnable meters."
   }
 }

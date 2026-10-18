@@ -1,0 +1,25 @@
+{
+  "id": "alexcovizzi/trajectory",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/AlexCovizzi/paseo-trajectory.git",
+    "commit": "8e3356d6acd7ff5260ea84947e41ef239fdb9802"
+  },
+  "repository": {
+    "url": "https://github.com/AlexCovizzi/paseo-trajectory",
+    "commit": "8e3356d6acd7ff5260ea84947e41ef239fdb9802"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-10-15T09:51:22Z",
+  "submittedBy": "AlexCovizzi",
+  "publishedAt": "2026-10-15T10:05:56Z",
+  "reviewedAt": "2026-10-15T10:05:56Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/AlexCovizzi/paseo-trajectory/8e3356d6acd7ff5260ea84947e41ef239fdb9802/docs/screenshot.png"
+    ]
+  }
+}

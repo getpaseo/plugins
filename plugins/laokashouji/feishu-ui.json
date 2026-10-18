@@ -15,11 +15,13 @@
   ],
   "submittedAt": "2026-09-14",
   "submittedBy": "Laokashouji",
+  "publishedAt": "2026-09-14",
   "reviewedAt": "2026-10-08",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/Laokashouji/paseo-feishu-ui/3d960670f661fa169cdbbe1975fb1f7c07a732b7/images/design-reference-dark.png",
       "https://raw.githubusercontent.com/Laokashouji/paseo-feishu-ui/3d960670f661fa169cdbbe1975fb1f7c07a732b7/images/design-reference-light.png"
-    ]
+    ],
+    "description": "Adds Feishu-inspired light and dark themes with restyled navigation, chat bubbles, and tool cards on desktop."
   }
 }

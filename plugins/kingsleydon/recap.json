@@ -1,0 +1,28 @@
+{
+  "id": "kingsleydon/recap",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-recap",
+    "version": "0.2.3",
+    "resolved": "https://registry.npmjs.org/paseo-recap/-/paseo-recap-0.2.3.tgz",
+    "integrity": "sha512-o9fli+0qqsJva4wgfFnpleKQcO4JXEx+9Aty1gQ2oWhNUECiwzfjMGh8UX9s/0KTdGaSHnGbZTGsXeemaRizvw=="
+  },
+  "repository": {
+    "url": "https://github.com/kingsleydon/paseo-recap",
+    "commit": "4c103bca7c4eaa9b86351b185161bf101f54361b"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-12",
+  "submittedBy": "kingsleydon",
+  "publishedAt": "2026-10-12",
+  "reviewedAt": "2026-10-13T00:07:47Z",
+  "listing": {
+    "name": "Recap",
+    "media": [
+      "https://raw.githubusercontent.com/kingsleydon/paseo-recap/cdc3dc31046c2311f29b2a8ee148dbd84e0f8b5e/docs/images/recap.png",
+      "https://raw.githubusercontent.com/kingsleydon/paseo-recap/cdc3dc31046c2311f29b2a8ee148dbd84e0f8b5e/docs/images/recap-card.png"
+    ]
+  }
+}

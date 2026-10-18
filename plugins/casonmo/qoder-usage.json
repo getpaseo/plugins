@@ -1,0 +1,25 @@
+{
+  "id": "casonmo/qoder-usage",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/CasonMo/paseo-qoder-usage.git",
+    "commit": "a1b49ddf8e16467fdfe19e1850fa1c9a62e246d6"
+  },
+  "repository": {
+    "url": "https://github.com/CasonMo/paseo-qoder-usage",
+    "commit": "a1b49ddf8e16467fdfe19e1850fa1c9a62e246d6"
+  },
+  "categories": [
+    "utils",
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-16T03:37:04Z",
+  "submittedBy": "CasonMo",
+  "publishedAt": "2026-10-16T04:04:22Z",
+  "reviewedAt": "2026-10-16T17:16:17Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/CasonMo/paseo-qoder-usage/37ce404210bf4685a7ab5179030cce6aca2d716a/assets/screenshot.png"
+    ]
+  }
+}

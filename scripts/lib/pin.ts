@@ -1,6 +1,6 @@
 import { readArtifactFiles } from "./artifact-files.ts";
 import { AuthorError } from "./problems.ts";
-import { isoDate } from "./dates.ts";
+import { recordTime } from "./dates.ts";
 import { type NpmClient, resolveVersion } from "./npm.ts";
 import type { PluginRecord } from "./record.ts";
 import { browseUrl, githubOwner, parseRepository } from "./repository.ts";
@@ -17,7 +17,7 @@ export interface Submission {
 export async function pinRecord(
   client: NpmClient,
   submission: Submission,
-  options: { version?: string; submittedAt?: string; today?: string } = {},
+  options: { version?: string; submittedAt?: string; publishedAt?: string; now?: string } = {},
 ): Promise<PluginRecord> {
   const packument = await client.packument(submission.package);
   const doc = resolveVersion(packument, options.version);
@@ -39,7 +39,7 @@ export async function pinRecord(
     throw new AuthorError("The package repository differs from npm provenance. Correct package.json repository to match the repository used to publish, then publish a new version.");
   }
   const sourceUrl = provenance?.repositoryUrl ?? source?.url;
-  const today = options.today ?? isoDate();
+  const now = options.now ?? recordTime();
 
   const repository = sourceUrl
     ? {
@@ -60,25 +60,26 @@ export async function pinRecord(
     artifact,
     repository: repository!,
     categories: submission.categories,
-    submittedAt: options.submittedAt ?? today,
+    submittedAt: options.submittedAt ?? now,
     ...(submission.submittedBy ? { submittedBy: submission.submittedBy } : {}),
-    reviewedAt: today,
+    publishedAt: options.publishedAt ?? now,
+    reviewedAt: now,
     ...(submission.listing ? { listing: submission.listing } : {}),
   };
 }
 
-/** The same record pinned to a newer version. Submission facts are kept. */
+/** The same record pinned to a newer version. Submission and first-listing facts are kept. */
 export function repinRecord(
   client: NpmClient,
   record: PluginRecord,
   version: string,
-  today?: string,
+  now?: string,
 ) {
   if (record.artifact.kind !== "npm") throw new Error("Expected npm artifact");
   return pinRecord(
     client,
     { ...record, package: record.artifact.package },
-    { version, submittedAt: record.submittedAt, today },
+    { version, submittedAt: record.submittedAt, publishedAt: record.publishedAt, now },
   );
 }
 

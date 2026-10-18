@@ -1,0 +1,28 @@
+{
+  "id": "drenalol/turn-speed",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-turn-speed",
+    "version": "1.0.1",
+    "resolved": "https://registry.npmjs.org/paseo-turn-speed/-/paseo-turn-speed-1.0.1.tgz",
+    "integrity": "sha512-9eTN/UfGilPqJLc91o9wacBiNiJbgJH0jYUo5QE6SnAx4BfOKGhww9s9Lt5GBqOgAaynJkzJNaQbwowKaJX+3Q=="
+  },
+  "repository": {
+    "url": "https://github.com/Drenalol/paseo-turn-speed"
+  },
+  "categories": [
+    "extras",
+    "utils"
+  ],
+  "submittedAt": "2026-10-15T09:38:49Z",
+  "submittedBy": "Drenalol",
+  "publishedAt": "2026-10-15T09:47:11Z",
+  "reviewedAt": "2026-10-15T20:34:39Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/Drenalol/paseo-turn-speed/f8dae365f6339caa14265d6399d3f30ebec5f26b/images/desktop-popover.png",
+      "https://raw.githubusercontent.com/Drenalol/paseo-turn-speed/f8dae365f6339caa14265d6399d3f30ebec5f26b/images/desktop-pill-live.png",
+      "https://raw.githubusercontent.com/Drenalol/paseo-turn-speed/f8dae365f6339caa14265d6399d3f30ebec5f26b/images/mobile-popover.png"
+    ]
+  }
+}

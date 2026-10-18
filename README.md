@@ -42,9 +42,24 @@ Keep records in `plugins/<owner>/<slug>.json`. The owner is the GitHub repositor
 owner, even when the npm publisher has a different name. `artifact` is the install
 pin; `repository` is the browseable source and optional proven source commit.
 
-Humans edit categories and optional `listing` overrides (`name`, HTTPS PNG `icon`,
-HTTPS `media`). The bot writes artifact pins and review dates. The published
-index combines records with metadata from their pinned manifests. See
+Humans edit categories and optional `listing` overrides (`name`, `description`,
+HTTPS PNG `icon`, HTTPS `media`). The bot writes artifact pins and dates:
+
+| Field | Meaning |
+| --- | --- |
+| `submittedAt` | When the plugin was submitted |
+| `publishedAt` | When the first version was approved and listed. Updates keep it. |
+| `reviewedAt` | When the pinned version was approved. Updates move it. |
+
+The website lists plugins as new by `publishedAt` and as recently updated by
+`reviewedAt`, so a slow review does not push a new plugin down and a version bump
+does not show as new. `npm run add` and `npm run bump` write UTC timestamps to the
+second, such as `2026-10-12T11:42:00Z`, so same-day listings keep their order.
+`validate --changed` rejects a date a change writes without the time, and an update
+that changes `submittedAt` or `publishedAt`. Records written before timestamps carry
+`YYYY-MM-DD` and read as midnight UTC.
+
+The published index combines records with metadata from their pinned manifests. See
 [plugin metadata](#plugin-metadata) for fields and override precedence.
 
 Authors can ship `OVERVIEW.md` beside `paseo-plugin.json` in the submitted artifact.
@@ -59,6 +74,11 @@ reviewer writes the registry overview before approval. Bumps retain that page
 and the reviewer updates it for changed behavior. When a release supplies the
 author's own overview, it takes precedence and the bump removes the registry copy.
 Authors and submitters may propose registry-copy replacements by pull request.
+
+A listing also needs a one-sentence description. When the artifact supplies none
+(no npm package `description`, or no manifest `description` for Git), the reviewer
+writes one as `listing.description` before approval. When a release supplies the
+author's own description, the bump removes the registry one.
 
 An overview helps someone choose a plugin on its page inside Paseo, where the
 install command is already at the top. A README assumes GitHub: it carries
@@ -133,6 +153,7 @@ The existing record's `listing` values override the manifest **per field**:
 | Field | First choice | Otherwise |
 | --- | --- | --- |
 | Name | `listing.name` | Manifest `name`, then a humanized registry id |
+| Description | `listing.description` | npm package `description` for npm artifacts, manifest `description` for Git |
 | Icon | `listing.icon` | Manifest `icon`, or no icon |
 | Media | `listing.media` | Manifest `media`, or an empty array |
 
@@ -195,6 +216,9 @@ No pending versions means no proposed bodies. Inline diffs are capped at 60,000
 characters; workflows retain the full diff artifact.
 
 `dist/index.json` and `dist/plugins/<owner>/<slug>.json` conform to PROTOCOL.md.
+A record whose pinned source cannot be fetched or resolved is left out of that
+publish and logged as `Skipped <id>: <reason>`; the other plugins still deploy.
+The build fails only when no record resolves.
 `REGISTRY_URL` controls the advertised registry base. `INSTALLS_URL` defaults to
 `https://paseo.sh/api/plugins/installs`; an unavailable counter omits `installs`.
 Counts are advisory install requests, including git artifacts. No npm downloads

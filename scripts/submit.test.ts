@@ -36,7 +36,7 @@ function fixture(t: TestContext, source: string) {
     id: "acme/example",
     artifact: { kind: "npm", package: "@acme/paseo-example", version: "1.0.0", resolved: "https://registry.npmjs.org/example.tgz", integrity: "sha512-fixture" },
     repository: { url: "https://github.com/acme/example" },
-    categories: ["utils"], submittedAt: "2026-10-06", reviewedAt: "2026-10-06",
+    categories: ["utils"], submittedAt: "2026-10-06", publishedAt: "2026-10-06", reviewedAt: "2026-10-06",
   };
   mkdirSync(join(registry, "plugins/acme"), { recursive: true });
   const recordFile = join(registry, "plugins/acme/example.json");

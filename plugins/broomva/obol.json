@@ -14,8 +14,10 @@
     "sidebar"
   ],
   "submittedAt": "2026-09-10",
+  "publishedAt": "2026-09-10",
   "reviewedAt": "2026-09-10",
   "listing": {
-    "media": []
+    "media": [],
+    "description": "Switches between several Claude or Codex accounts per agent, workspace, or provider without restarting the daemon."
   }
 }

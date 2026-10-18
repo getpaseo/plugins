@@ -30,7 +30,7 @@ test("import joins by credit slug, preserves other bytes, lists skips, and is re
   const directory = mkdtempSync(join(tmpdir(), "cafe-dates-test-"));
   t.after(() => rmSync(directory, { recursive: true, force: true }));
   mkdirSync(join(directory, "owner"));
-  const original = '{\n  "submittedAt": "2026-10-06",\n  "reviewedAt": "2026-10-06",\n  "updatedAt": "2026-10-06",\n  "other": "keep \\u0061 and whitespace",\n  "listing": {\n    "media": []\n  }\n}\n';
+  const original = '{\n  "submittedAt": "2026-10-06",\n  "publishedAt": "2026-10-06",\n  "reviewedAt": "2026-10-06",\n  "updatedAt": "2026-10-06",\n  "other": "keep \\u0061 and whitespace",\n  "listing": {\n    "media": []\n  }\n}\n';
   for (const slug of ["renamed", "no-credit", "missing", "undated"]) {
     writeFileSync(join(directory, `owner/${slug}.json`), original);
     if (slug !== "no-credit") writeFileSync(join(directory, `owner/${slug}.md`), credit(slug === "renamed" ? "cafe-name" : slug));
@@ -47,6 +47,7 @@ test("import joins by credit slug, preserves other bytes, lists skips, and is re
   ]);
   assert.equal(readFileSync(join(directory, "owner/renamed.json"), "utf8"),
     original.replace('"submittedAt": "2026-10-06"', '"submittedAt": "2026-09-11"')
+      .replace('"publishedAt": "2026-10-06"', '"publishedAt": "2026-09-11"')
       .replace('"reviewedAt": "2026-10-06"', '"reviewedAt": "2026-09-11"'));
   for (const { id } of result.skipped.filter((entry) => entry.id !== "owner/renamed")) assert.equal(readFileSync(join(directory, `${id}.json`), "utf8"), original);
   assert.deepEqual((await importCafe(catalog, directory, acceptMedia)).datesUpdated, []);
@@ -63,7 +64,7 @@ test("media fill absent or empty listings, preserve existing images, and reject 
   const originals = new Map<string, string>();
   for (const [id, listing] of Object.entries({ absent: undefined, empty: { name: "Keep name", media: [] },
     named: { name: "Keep name" }, existing: { media: ["https://example.test/existing.png"] } })) {
-    const record = { id: `owner/${id}`, submittedAt: "2026-09-12", reviewedAt: "2026-09-12", listing };
+    const record = { id: `owner/${id}`, submittedAt: "2026-09-12", publishedAt: "2026-09-12", reviewedAt: "2026-09-12", listing };
     const text = `${JSON.stringify(record, null, 2)}\n`;
     originals.set(id, text);
     writeFileSync(join(directory, `owner/${id}.json`), text);
@@ -90,7 +91,7 @@ test("carry-over drops failed HEAD checks in order and reports records left with
   t.after(() => rmSync(directory, { recursive: true, force: true }));
   mkdirSync(join(directory, "owner"));
   for (const id of ["mixed", "empty"]) {
-    writeFileSync(join(directory, `owner/${id}.json`), '{\n  "submittedAt": "2026-09-12",\n  "reviewedAt": "2026-09-12"\n}\n');
+    writeFileSync(join(directory, `owner/${id}.json`), '{\n  "submittedAt": "2026-09-12",\n  "publishedAt": "2026-09-12",\n  "reviewedAt": "2026-09-12"\n}\n');
     writeFileSync(join(directory, `owner/${id}.md`), credit(id));
   }
   const request: typeof fetch = async (input) => new Response(null, {

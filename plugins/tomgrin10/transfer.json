@@ -16,11 +16,12 @@
   ],
   "submittedAt": "2026-10-12",
   "submittedBy": "tomgrin10",
-  "reviewedAt": "2026-10-12",
+  "reviewedAt": "2026-10-18",
   "listing": {
     "name": "Transfer",
     "media": [
       "https://cdn.jsdelivr.net/npm/paseo-transfer@1.2.0/docs/screenshots/transfer.png"
     ]
-  }
+  },
+  "publishedAt": "2026-10-18"
 }

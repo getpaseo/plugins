@@ -16,11 +16,12 @@
   ],
   "submittedAt": "2026-10-12",
   "submittedBy": "tomgrin10",
-  "reviewedAt": "2026-10-12",
+  "reviewedAt": "2026-10-18",
   "listing": {
     "name": "Session Guard",
     "media": [
       "https://cdn.jsdelivr.net/npm/paseo-session-guard@0.4.5/docs/screenshots/session-guard.png"
     ]
-  }
+  },
+  "publishedAt": "2026-10-18"
 }

@@ -13,8 +13,10 @@
     "utils"
   ],
   "submittedAt": "2026-09-10",
+  "publishedAt": "2026-09-10",
   "reviewedAt": "2026-09-10",
   "listing": {
-    "media": []
+    "media": [],
+    "description": "Adds a Plain English button under assistant answers that shows a plainer rewrite next to the original."
   }
 }

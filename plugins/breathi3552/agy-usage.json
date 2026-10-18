@@ -1,0 +1,19 @@
+{
+  "id": "breathi3552/agy-usage",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/breathi3552/paseo-agy-usage.git",
+    "commit": "ee0744317213c42d6287e3448cb05798b95891fe"
+  },
+  "repository": {
+    "url": "https://github.com/breathi3552/paseo-agy-usage"
+  },
+  "categories": [
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-10-17T17:30:44Z",
+  "submittedBy": "breathi3552",
+  "publishedAt": "2026-10-17T18:04:59Z",
+  "reviewedAt": "2026-10-17T18:04:59Z"
+}

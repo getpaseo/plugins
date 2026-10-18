@@ -1,0 +1,19 @@
+{
+  "id": "ethanl06/linear",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/EthanL06/paseo-linear.git",
+    "commit": "b4d9f14d061136153f7fd02fba24b0d215c11ae8"
+  },
+  "repository": {
+    "url": "https://github.com/EthanL06/paseo-linear",
+    "commit": "b4d9f14d061136153f7fd02fba24b0d215c11ae8"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-16T19:49:49Z",
+  "submittedBy": "EthanL06",
+  "publishedAt": "2026-10-16T20:32:08Z",
+  "reviewedAt": "2026-10-16T20:32:08Z"
+}

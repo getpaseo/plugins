@@ -15,10 +15,12 @@
   ],
   "submittedAt": "2026-10-05",
   "submittedBy": "dutchakdev",
-  "reviewedAt": "2026-10-05",
+  "publishedAt": "2026-10-05",
+  "reviewedAt": "2026-10-16T05:47:58Z",
   "listing": {
     "media": [
-      "https://raw.githubusercontent.com/dutchakdev/paseo-plugin-account-switcher/47cbe84f85477286bf81b52a40fc7e1f741dafe6/docs/assets/account-switcher-overview.png"
+      "https://raw.githubusercontent.com/dutchakdev/paseo-plugin-account-switcher/1ad84192c6d4ffcbbd59a4c3e0d59025b0801c97/docs/assets/accounts.png",
+      "https://raw.githubusercontent.com/dutchakdev/paseo-plugin-account-switcher/1ad84192c6d4ffcbbd59a4c3e0d59025b0801c97/docs/assets/account-dialog.png"
     ]
   }
 }

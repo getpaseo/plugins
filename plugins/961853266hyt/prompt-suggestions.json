@@ -1,0 +1,20 @@
+{
+  "id": "961853266hyt/prompt-suggestions",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-prompt-suggestions",
+    "version": "0.2.0",
+    "resolved": "https://registry.npmjs.org/paseo-prompt-suggestions/-/paseo-prompt-suggestions-0.2.0.tgz",
+    "integrity": "sha512-9DyJ2j+ymO1WVsEjNn++BK0WvjqmlC0Eo6S56aNew8DPxUDautv0WtN+loaObHP2jtouS5K+31osfX/gsK/JCw=="
+  },
+  "repository": {
+    "url": "https://github.com/961853266hyt/paseo-plugins/tree/HEAD/plugins/prompt-suggestions"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-14T10:34:08Z",
+  "submittedBy": "961853266hyt",
+  "publishedAt": "2026-10-14T10:37:56Z",
+  "reviewedAt": "2026-10-15T20:32:57Z"
+}

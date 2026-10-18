@@ -16,11 +16,12 @@
   ],
   "submittedAt": "2026-10-12",
   "submittedBy": "tomgrin10",
-  "reviewedAt": "2026-10-12",
+  "reviewedAt": "2026-10-18",
   "listing": {
     "name": "Transcript Search",
     "media": [
       "https://cdn.jsdelivr.net/npm/paseo-transcript-search@0.2.1/docs/screenshots/transcript-search.png"
     ]
-  }
+  },
+  "publishedAt": "2026-10-18"
 }

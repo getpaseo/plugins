@@ -14,6 +14,7 @@
     "utils"
   ],
   "submittedAt": "2026-09-10",
+  "publishedAt": "2026-09-10",
   "reviewedAt": "2026-09-10",
   "listing": {
     "media": [
@@ -25,6 +26,7 @@
       "https://raw.githubusercontent.com/yannelli/paseo-plugin-concise/78c69ca0b6efc0336adb1085e1cf8d01f3c766e1/docs/images/compact.png",
       "https://raw.githubusercontent.com/yannelli/paseo-plugin-concise/78c69ca0b6efc0336adb1085e1cf8d01f3c766e1/docs/images/composer-off.png",
       "https://raw.githubusercontent.com/yannelli/paseo-plugin-concise/78c69ca0b6efc0336adb1085e1cf8d01f3c766e1/docs/images/activity-filtered.png"
-    ]
+    ],
+    "description": "Shows be-concise hook decisions and edits its configuration from a page, panel, and composer pill."
   }
 }

@@ -53,9 +53,9 @@ export async function importCafe(catalog: unknown, directory = RECORDS_DIR, requ
       if (date < "2026-09-01" || new Date(entry.addedAt).getTime() > Date.now())
         throw new Error(`${id}: addedAt is outside 2026-09-01 through now`);
       let replaced = 0;
-      text = text.replace(/^(  "(?:submittedAt|reviewedAt)"\s*:\s*)"[^"\r\n]*"/gm,
+      text = text.replace(/^(  "(?:submittedAt|publishedAt|reviewedAt)"\s*:\s*)"[^"\r\n]*"/gm,
         (_match, prefix) => { replaced += 1; return `${prefix}"${date}"`; });
-      if (replaced !== 2) throw new Error(`${id}: expected two record date fields`);
+      if (replaced !== 3) throw new Error(`${id}: expected three record date fields`);
       if (text !== original) datesUpdated.push(id);
     } else skipped.push({ id, reason: `no addedAt for ${slug}` });
 

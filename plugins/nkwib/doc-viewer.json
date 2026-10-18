@@ -1,0 +1,21 @@
+{
+  "id": "nkwib/doc-viewer",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/nkwib/paseo-doc-viewer.git",
+    "commit": "1ba6f55c5e34c90dbca5445edfc657d99f0ab715",
+    "tag": "v0.4.0"
+  },
+  "repository": {
+    "url": "https://github.com/nkwib/paseo-doc-viewer"
+  },
+  "categories": [
+    "workspaces",
+    "extras",
+    "utils"
+  ],
+  "submittedAt": "2026-10-16T11:52:38Z",
+  "submittedBy": "nkwib",
+  "publishedAt": "2026-10-16T12:04:40Z",
+  "reviewedAt": "2026-10-17T21:26:16Z"
+}

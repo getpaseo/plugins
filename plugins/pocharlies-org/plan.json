@@ -1,0 +1,19 @@
+{
+  "id": "pocharlies-org/plan",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/pocharlies-org/paseo-plan.git",
+    "commit": "6d4f9cd06708450453e7c8be25e86a238f057261"
+  },
+  "repository": {
+    "url": "https://github.com/pocharlies-org/paseo-plan"
+  },
+  "categories": [
+    "extras",
+    "utils"
+  ],
+  "submittedBy": "pocharlies",
+  "submittedAt": "2026-10-18T01:59:41Z",
+  "publishedAt": "2026-10-18T02:05:02Z",
+  "reviewedAt": "2026-10-18T02:05:02Z"
+}

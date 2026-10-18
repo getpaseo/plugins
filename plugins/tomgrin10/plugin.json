@@ -16,13 +16,12 @@
   ],
   "submittedAt": "2026-09-10",
   "submittedBy": "tomgrin10",
-  "reviewedAt": "2026-10-18",
+  "reviewedAt": "2026-10-18T06:00:53Z",
   "listing": {
     "name": "Send to Paseo",
     "media": [
       "https://raw.githubusercontent.com/tomgrin10/send-to-paseo/324e8fe32ce55659d2ffcf007ea50a5d4774c062/docs/screenshots/hero-github-pr-popover.png"
-    ],
-    "description": "Lets a companion browser extension send a pull request and instruction to a Paseo workspace and agent."
+    ]
   },
   "publishedAt": "2026-09-10"
 }

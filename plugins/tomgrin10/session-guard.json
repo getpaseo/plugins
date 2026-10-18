@@ -14,14 +14,14 @@
   "categories": [
     "daemon-management"
   ],
-  "submittedAt": "2026-10-12",
+  "submittedAt": "2026-10-12T10:24:18Z",
   "submittedBy": "tomgrin10",
-  "reviewedAt": "2026-10-18",
+  "reviewedAt": "2026-10-18T06:00:53Z",
   "listing": {
     "name": "Session Guard",
     "media": [
       "https://cdn.jsdelivr.net/npm/paseo-session-guard@0.4.5/docs/screenshots/session-guard.png"
     ]
   },
-  "publishedAt": "2026-10-18"
+  "publishedAt": "2026-10-18T06:00:53Z"
 }

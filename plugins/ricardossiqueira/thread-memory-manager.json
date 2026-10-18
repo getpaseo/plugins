@@ -1,0 +1,25 @@
+{
+  "id": "ricardossiqueira/thread-memory-manager",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/ricardossiqueira/paseo-thread-memory-manager.git",
+    "commit": "1f41a647ad60f99081f050528f334cccf8b6d537"
+  },
+  "repository": {
+    "url": "https://github.com/ricardossiqueira/paseo-thread-memory-manager",
+    "commit": "1f41a647ad60f99081f050528f334cccf8b6d537"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-14T15:21:48Z",
+  "submittedBy": "ricardosiqueiraa",
+  "publishedAt": "2026-10-14T16:03:58Z",
+  "reviewedAt": "2026-10-14T16:03:58Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/ricardossiqueira/paseo-thread-memory-manager/9d466e3986cc0eca880bf38eab21f458d86d7700/media/done-threads-screen.png"
+    ]
+  }
+}

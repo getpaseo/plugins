@@ -1,0 +1,21 @@
+{
+  "id": "kingsleydon/quick-prompts",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-quick-prompts",
+    "version": "0.1.2",
+    "resolved": "https://registry.npmjs.org/paseo-quick-prompts/-/paseo-quick-prompts-0.1.2.tgz",
+    "integrity": "sha512-bFBeqcBZpd00VF+iWq0hgW5fWoR8VkYvYDrRuSWhAN3AZzBWuNNHoqHlPqA5viZoGn8h4JmUJqwDzOZIJETAxg=="
+  },
+  "repository": {
+    "url": "https://github.com/kingsleydon/paseo-plugins/tree/HEAD/plugins/quick-prompts",
+    "commit": "b793fbd45e45e0c5fdc2a58964b639c7dbbd51b5"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-14T09:46:43Z",
+  "submittedBy": "kingsleydon",
+  "publishedAt": "2026-10-14T10:02:53Z",
+  "reviewedAt": "2026-10-14T10:02:53Z"
+}

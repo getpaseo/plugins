@@ -16,11 +16,13 @@
   ],
   "submittedAt": "2026-09-14",
   "submittedBy": "alysnnix",
+  "publishedAt": "2026-09-14",
   "reviewedAt": "2026-09-14",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/alysnnix/paseo-github-integration/d6f7184a4db16fb1be930700d1e960872caf8c2e/images/board.png",
       "https://raw.githubusercontent.com/alysnnix/paseo-github-integration/d6f7184a4db16fb1be930700d1e960872caf8c2e/images/detail-panel.png"
-    ]
+    ],
+    "description": "Adds a GitHub screen listing your pull requests, issues, discussions, and project boards, with actions and hand-off to agents."
   }
 }

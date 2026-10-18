@@ -15,11 +15,13 @@
   ],
   "submittedAt": "2026-10-08",
   "submittedBy": "supermomonga",
+  "publishedAt": "2026-10-08",
   "reviewedAt": "2026-10-08",
   "listing": {
     "name": "ZCode Provider",
     "media": [
       "https://raw.githubusercontent.com/supermomonga/paseo-plugin-zcode-provider/2372c9f131f981fd151b0b92179f258169f5c048/images/zcode-conversation.png"
-    ]
+    ],
+    "description": "Adds ZCode as an agent provider through the ZCode integrated CLI."
   }
 }

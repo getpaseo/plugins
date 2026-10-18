@@ -1,0 +1,22 @@
+{
+  "id": "duongvm57/slp",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/duongvm57/paseo-slp-plugin.git",
+    "commit": "86a51b2fa68c69cc27e0b3b1c448be86c95b0f62",
+    "tag": "v0.8.5",
+    "pluginPath": "plugin"
+  },
+  "repository": {
+    "url": "https://github.com/duongvm57/paseo-slp-plugin"
+  },
+  "categories": [
+    "orchestration",
+    "sidebar",
+    "workspaces"
+  ],
+  "submittedAt": "2026-10-13T11:10:01Z",
+  "submittedBy": "duongvm57",
+  "publishedAt": "2026-10-13T11:36:33Z",
+  "reviewedAt": "2026-10-13T11:36:33Z"
+}

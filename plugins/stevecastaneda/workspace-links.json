@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "@stevecastaneda/paseo-workspace-links",
-    "version": "0.5.3",
-    "resolved": "https://registry.npmjs.org/@stevecastaneda/paseo-workspace-links/-/paseo-workspace-links-0.5.3.tgz",
-    "integrity": "sha512-ZMR9AXwLbBh7LYph+YDuOeL1BG2Zp0ds6I7xhP56tqQPm+GQOPq7fU6U/cjxOPrrVVmVKoU+XvGjNNk35LXvjQ=="
+    "version": "1.0.0",
+    "resolved": "https://registry.npmjs.org/@stevecastaneda/paseo-workspace-links/-/paseo-workspace-links-1.0.0.tgz",
+    "integrity": "sha512-366vi0vyJKhovJHU3d26mELuWPnEvlDzp9uVRTHB+h06HvJo3Wss/0gQ/tNlDOrYgMIdP55VjvVQzW+vijgpdA=="
   },
   "repository": {
     "url": "https://github.com/stevecastaneda/paseo-plugins/tree/HEAD/workspace-links"
@@ -15,12 +15,12 @@
   ],
   "submittedAt": "2026-09-10",
   "submittedBy": "stevecastaneda",
-  "reviewedAt": "2026-10-10",
+  "publishedAt": "2026-09-10",
+  "reviewedAt": "2026-10-18T06:02:24Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/6997762ece758cb0abe90d34e1671de1f237039a/workspace-links/images/popover.png",
       "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/6997762ece758cb0abe90d34e1671de1f237039a/workspace-links/images/explorer.png"
-    ],
-    "icon": "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/6997762ece758cb0abe90d34e1671de1f237039a/workspace-links/icon.png"
+    ]
   }
 }

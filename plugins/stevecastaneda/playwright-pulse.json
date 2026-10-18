@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "@stevecastaneda/paseo-playwright-pulse",
-    "version": "0.1.1",
-    "resolved": "https://registry.npmjs.org/@stevecastaneda/paseo-playwright-pulse/-/paseo-playwright-pulse-0.1.1.tgz",
-    "integrity": "sha512-9mnZjPwulKsp7CHxoXZoDyYMxYB6jsw4eR2ZxMGZ/8X63qYOx6jBxyNooXpqvvLuupRgqHQi63dS3zWAkmJHRA=="
+    "version": "1.1.1",
+    "resolved": "https://registry.npmjs.org/@stevecastaneda/paseo-playwright-pulse/-/paseo-playwright-pulse-1.1.1.tgz",
+    "integrity": "sha512-IKCQvBgV5WUY4Qj12U17JK/UWbB8F9ChqUlF6c0tz1nrUSvvq1wKtimet5nLv+GF+dPkssBaKGvg0nevhhJONQ=="
   },
   "repository": {
     "url": "https://github.com/stevecastaneda/paseo-plugins/tree/HEAD/playwright-pulse"
@@ -16,9 +16,9 @@
   ],
   "submittedAt": "2026-10-10",
   "submittedBy": "stevecastaneda",
-  "reviewedAt": "2026-10-10",
+  "publishedAt": "2026-10-10",
+  "reviewedAt": "2026-10-18T06:02:24Z",
   "listing": {
-    "icon": "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/e4afb2f47e28f6d10dfd9575ec7763a118763364/playwright-pulse/icon.png",
     "media": [
       "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/6997762ece758cb0abe90d34e1671de1f237039a/playwright-pulse/images/1-panel.png",
       "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/6997762ece758cb0abe90d34e1671de1f237039a/playwright-pulse/images/2-folders.png",

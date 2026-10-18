@@ -13,8 +13,10 @@
     "sidebar"
   ],
   "submittedAt": "2026-09-10",
+  "publishedAt": "2026-09-10",
   "reviewedAt": "2026-09-10",
   "listing": {
-    "media": []
+    "media": [],
+    "description": "Switches the sidebar grouping between Project and Status from keyboard shortcuts and the Command Center."
   }
 }

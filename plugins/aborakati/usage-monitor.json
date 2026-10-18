@@ -16,12 +16,14 @@
   ],
   "submittedAt": "2026-10-08",
   "submittedBy": "ABorakati",
+  "publishedAt": "2026-10-09",
   "reviewedAt": "2026-10-09",
   "listing": {
     "name": "Usage Monitor",
     "media": [
       "https://raw.githubusercontent.com/ABorakati/paseo-usage-monitor/4b9758691237dda40665c6f107b569e7292dccbc/docs/images/usage-limits.png",
       "https://raw.githubusercontent.com/ABorakati/paseo-usage-monitor/4b9758691237dda40665c6f107b569e7292dccbc/docs/images/usage-history.png"
-    ]
+    ],
+    "description": "Shows provider quotas, remaining balances, and token history in usage screens, panels, and composer pills."
   }
 }

@@ -15,9 +15,11 @@
     "providers"
   ],
   "submittedAt": "2026-09-14",
-  "reviewedAt": "2026-09-14",
   "submittedBy": "geoqiao",
+  "publishedAt": "2026-09-14",
+  "reviewedAt": "2026-09-14",
   "listing": {
-    "media": []
+    "media": [],
+    "description": "Adds the MaKa agent as a Paseo provider through the installed MaKa CLI."
   }
 }

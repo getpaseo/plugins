@@ -17,6 +17,7 @@
   ],
   "submittedAt": "2026-10-09",
   "submittedBy": "supermomonga",
+  "publishedAt": "2026-10-09",
   "reviewedAt": "2026-10-09",
   "listing": {
     "name": "Canvas",
@@ -25,6 +26,7 @@
       "https://raw.githubusercontent.com/supermomonga/paseo-plugin-canvas/746aa1b927b656e7e2e9fa870ea2227b7997f979/images/2.png",
       "https://raw.githubusercontent.com/supermomonga/paseo-plugin-canvas/746aa1b927b656e7e2e9fa870ea2227b7997f979/images/3.png",
       "https://raw.githubusercontent.com/supermomonga/paseo-plugin-canvas/746aa1b927b656e7e2e9fa870ea2227b7997f979/images/4.png"
-    ]
+    ],
+    "description": "Lets you write, preview, and review Markdown documents with agents in a shared workspace panel."
   }
 }

@@ -1,0 +1,27 @@
+{
+  "id": "hieppp/workspace-spaces",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/HiepPP/hiep-paseo-plugin.git",
+    "commit": "f660d478ca99f915ab90459007d7f64e540b4124",
+    "pluginPath": "plugins/workspace-spaces"
+  },
+  "repository": {
+    "url": "https://github.com/HiepPP/hiep-paseo-plugin"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-17T18:10:04Z",
+  "submittedBy": "HiepPP",
+  "publishedAt": "2026-10-17T18:14:24Z",
+  "reviewedAt": "2026-10-17T18:14:24Z",
+  "listing": {
+    "name": "Workspace Spaces",
+    "description": "Group projects and their coding sessions into numbered Spaces in Paseo\u2019s sidebar.",
+    "media": [
+      "https://raw.githubusercontent.com/HiepPP/hiep-paseo-plugin/f660d478ca99f915ab90459007d7f64e540b4124/docs/images/spaces.png"
+    ]
+  }
+}

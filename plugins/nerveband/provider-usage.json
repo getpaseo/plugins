@@ -15,10 +15,12 @@
     "providers"
   ],
   "submittedAt": "2026-09-10",
+  "publishedAt": "2026-09-10",
   "reviewedAt": "2026-09-10",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/nerveband/paseo-provider-usage/f135b14f75093cc603b48d6030b27efa885e5963/docs/screenshot.png"
-    ]
+    ],
+    "description": "Shows quota windows, credits, token totals, and estimated cost for your providers in a sidebar Usage page."
   }
 }

@@ -17,7 +17,7 @@ test("offline validation treats Themes as a category, not a plugin type", (t) =>
     id: "acme/example", categories: ["themes", "utils"],
     artifact: { kind: "git", remote: "https://github.com/acme/example.git", commit: "a".repeat(40) },
     repository: { url: "https://github.com/acme/example" },
-    submittedAt: "2026-09-12", reviewedAt: "2026-09-12",
+    submittedAt: "2026-09-12", publishedAt: "2026-09-12", reviewedAt: "2026-09-12",
   };
   const validate = (value: unknown) => {
     writeFileSync(join(registry, "plugins/acme/example.json"), JSON.stringify(value));

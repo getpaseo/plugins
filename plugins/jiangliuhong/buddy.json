@@ -1,0 +1,26 @@
+{
+  "id": "jiangliuhong/buddy",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/jiangliuhong/paseo-buddy.git",
+    "commit": "aa11a4124c358de401de17a4665342557529b6a4"
+  },
+  "repository": {
+    "url": "https://github.com/jiangliuhong/paseo-buddy",
+    "commit": "aa11a4124c358de401de17a4665342557529b6a4"
+  },
+  "categories": [
+    "extras",
+    "utils"
+  ],
+  "submittedAt": "2026-10-10T11:30:29Z",
+  "submittedBy": "jiangliuhong",
+  "reviewedAt": "2026-10-15T13:33:15Z",
+  "publishedAt": "2026-10-12T13:34:09Z",
+  "listing": {
+    "description": "Shows running agents and unread completions in a native macOS floating window.",
+    "media": [
+      "https://raw.githubusercontent.com/jiangliuhong/paseo-buddy/1846c65a3415c44773cb8157c4f72af2e668e7d0/docs/images/paseo-buddy-pill.jpg"
+    ]
+  }
+}

@@ -9,7 +9,7 @@ import type { NpmClient } from "./npm.ts";
 import { type PluginRecord, serializeRecord } from "./record.ts";
 import { run } from "./shell.ts";
 
-for (const scenario of ["present", "absent", "invalid", "network"] as const) {
+for (const scenario of ["present", "absent", "network"] as const) {
   test(`bump review: ${scenario} author overview`, async () => {
     const directory = mkdtempSync(join(tmpdir(), "registry-bump-review-"));
     const repository = join(directory, "repository");
@@ -28,7 +28,6 @@ for (const scenario of ["present", "absent", "invalid", "network"] as const) {
       };
       const oldCommit = pin("v1");
       if (scenario === "present") writeFileSync(join(repository, "OVERVIEW.md"), "Author overview.");
-      else if (scenario === "invalid") writeFileSync(join(repository, "OVERVIEW.md"), "npm install example");
       else writeFileSync(join(repository, "README.md"), "A README cannot satisfy the bump.");
       const nextCommit = pin("v2");
       process.env.GIT_CONFIG_COUNT = "1";
@@ -41,7 +40,7 @@ for (const scenario of ["present", "absent", "invalid", "network"] as const) {
       const recordPath = join(registry, "plugins/acme/example.json");
       const overviewPath = join(registry, "plugins/acme/example.md");
       const previous: PluginRecord = {
-        id: "acme/example", categories: ["utils"], submittedAt: "2026-10-06", reviewedAt: "2026-10-06",
+        id: "acme/example", categories: ["utils"], submittedAt: "2026-10-06", publishedAt: "2026-10-06", reviewedAt: "2026-10-06",
         repository: { url: "https://github.com/acme/bump", commit: oldCommit },
         artifact: { kind: "git", remote, tag: "v1", commit: oldCommit },
       };
@@ -75,8 +74,8 @@ for (const scenario of ["present", "absent", "invalid", "network"] as const) {
           return "Inline validation passed.";
         },
       });
-      if (scenario === "invalid" || scenario === "network") {
-        await assert.rejects(review(), scenario === "invalid" ? /install commands/ : /Source lookup unavailable/);
+      if (scenario === "network") {
+        await assert.rejects(review(), /Source lookup unavailable/);
         assert.equal(run("git", ["rev-parse", "HEAD"], options), base);
         assert.equal(readFileSync(recordPath, "utf8"), serializeRecord(previous));
         assert.equal(readFileSync(overviewPath, "utf8"), "Imported stopgap.");

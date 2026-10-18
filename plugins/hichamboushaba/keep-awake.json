@@ -3,20 +3,21 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-keep-awake",
-    "version": "0.1.2",
-    "resolved": "https://registry.npmjs.org/paseo-keep-awake/-/paseo-keep-awake-0.1.2.tgz",
-    "integrity": "sha512-py6V/KpQR3dmx0CqtFU0+1Fgjn1nxOfRP2U86M+a2sPWlTIgZt758OyLTo97g8bT8wV1ICFU7uN3EyNUEKLoGA=="
+    "version": "0.1.3",
+    "resolved": "https://registry.npmjs.org/paseo-keep-awake/-/paseo-keep-awake-0.1.3.tgz",
+    "integrity": "sha512-7odkH/Eg2rVZWYFThGgfBckkc3ZA71bJpO01C5vArsSJ2nlggtxxgZKJl7ZRo0KHB798Jlh28F9CRghWXKjHFA=="
   },
   "repository": {
     "url": "https://github.com/hichamboushaba/paseo-plugins/tree/HEAD/keep-awake",
-    "commit": "d15242bc107b004e493f2e13cccb057ccd4cc296"
+    "commit": "485e9f466a1f26c888986edd6e6a83a90d08e34f"
   },
   "categories": [
     "daemon-management"
   ],
   "submittedAt": "2026-09-28",
   "submittedBy": "hichamboushaba",
-  "reviewedAt": "2026-09-28",
+  "publishedAt": "2026-09-28",
+  "reviewedAt": "2026-10-14T21:05:51Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/hichamboushaba/paseo-plugins/d15242bc107b004e493f2e13cccb057ccd4cc296/keep-awake/images/settings.png",

@@ -1,0 +1,21 @@
+{
+  "id": "ajma/issues-workspaces",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-issues-workspaces",
+    "version": "0.1.0",
+    "resolved": "https://registry.npmjs.org/paseo-issues-workspaces/-/paseo-issues-workspaces-0.1.0.tgz",
+    "integrity": "sha512-v2d/+Gi2u/9r2u5yJ/mlv4jfH25zMCXhiiBclU/GF6uO4EAxrFIWbEZAngG9s28GPwDaWSSm/pXoWKxbmHsQyw=="
+  },
+  "repository": {
+    "url": "https://github.com/ajma/paseo-issues-workspaces"
+  },
+  "categories": [
+    "git",
+    "workspaces"
+  ],
+  "submittedAt": "2026-10-12",
+  "submittedBy": "ajma",
+  "publishedAt": "2026-10-12",
+  "reviewedAt": "2026-10-12"
+}

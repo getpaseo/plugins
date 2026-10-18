@@ -1,0 +1,7 @@
+Cache clock adds a prompt-cache estimate above the composer for Claude agents. It shows minutes remaining while warm and a red “cold” indicator after expiry, compaction or a model change. Hover over the indicator for details. It requires Paseo 0.11.2 or newer.
+
+Claude session transcripts must be available on the daemon host, under `CLAUDE_CONFIG_DIR/projects` or the default `~/.claude/projects` directory. No account, token or additional software setup is needed. The indicator stays hidden when a session or usable cache state cannot be found.
+
+The plugin reads transcript tails when an agent first appears, its session changes or a turn ends, and follows conversation parent links to estimate the cache lifetime. It reads the session timestamp, model and cache-creation usage fields; only that summary is returned to connected Paseo clients. It does not write transcript files, launch processes, install software or make external service requests. The countdown updates locally between transcript reads.
+
+This is an estimate, not a provider cache-status check. While a turn is running, the indicator shows the known cache lifetime rather than a measured expiry time. After the turn ends, it counts from the preceding request or user-message timestamp, so the estimate can expire early. Provider eviction and thinking-level changes are not tracked. Transcript scans stop at 64 MiB; missing or insufficient transcript data hides the indicator.

@@ -62,7 +62,7 @@ for (const kind of ["npm", "git"] as const) {
         async tarball() { throw new Error("Plugin artifacts must not execute"); },
       };
       const record: PluginRecord = {
-        id: "acme/example", categories: ["utils"], submittedAt: "2026-09-20", reviewedAt: "2026-09-20",
+        id: "acme/example", categories: ["utils"], submittedAt: "2026-09-20T00:00:00Z", publishedAt: "2026-09-20T00:00:00Z", reviewedAt: "2026-09-20T00:00:00Z",
         listing: {
           icon: "https://raw.githubusercontent.com/acme/overview/main/icon.png",
           media: [],
@@ -107,18 +107,8 @@ for (const kind of ["npm", "git"] as const) {
       await assert.rejects(resolvePlugin(client, absent), /overview is required/);
       await assert.rejects(validateArtifact(client, absent), /overview is required/);
       assert.deepEqual(await validateArtifact(client, absent, { registryOverview: "Registry fallback" }), []);
-      await assert.rejects(validateArtifact(client, absent, { registryOverview: "npm install example" }), /install commands/);
-      for (const [index, command] of ["paseo plugin add acme/example", "npm install example", "npm i example"].entries()) {
-        writeFileSync(join(plugin, "OVERVIEW.md"), command);
-        const invalidCommit = pin(`invalid-${index}`);
-        provenanceCommit = invalidCommit;
-        overviews.set("2.0.0", command);
-        const invalid = { ...absent, repository: { ...absent.repository, commit: invalidCommit }, artifact: kind === "git" ? { ...absent.artifact, kind, remote, commit: invalidCommit, tag: `invalid-${index}`, pluginPath } : absent.artifact };
-        await assert.rejects(resolvePlugin(client, invalid, "Registry stopgap"), /OVERVIEW.md.*install commands/);
-        await assert.rejects(validateArtifact(client, invalid, { registryOverview: "Registry stopgap" }), /OVERVIEW.md.*install commands/);
-      }
       if (kind === "git") {
-        rmSync(join(plugin, "OVERVIEW.md"));
+        writeFileSync(join(plugin, "README.md"), "Bumped README without an overview");
         const missingBumpCommit = pin("v3");
         const registry = mkdtempSync(join(tmpdir(), "registry-import-policy-"));
         try {
@@ -143,10 +133,6 @@ for (const kind of ["npm", "git"] as const) {
           writeFileSync(join(registry, "plugins/acme/example.json"), serializeRecord({ ...absent, listing: { name: "Updated name" } }));
           commitRegistry("metadata");
           assert.match(validate(), /1 record\(s\) match/);
-          writeFileSync(join(registry, "plugins/acme/example.json"), serializeRecord({ ...absent, artifact: { ...absent.artifact, tag: "invalid-0", commit: run("git", ["rev-parse", "invalid-0"], { cwd: directory }) } }));
-          // This next commit has an overview, but its install command is invalid.
-          commitRegistry("invalid author overview");
-          assert.throws(() => validate(), /Command failed/);
           writeFileSync(join(registry, "plugins/acme/example.json"), serializeRecord({
             ...absent,
             artifact: { kind: "git", remote, tag: "v3", commit: missingBumpCommit, pluginPath },

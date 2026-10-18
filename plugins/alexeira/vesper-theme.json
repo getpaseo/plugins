@@ -1,0 +1,20 @@
+{
+  "id": "alexeira/vesper-theme",
+  "artifact": {
+    "kind": "npm",
+    "package": "@alexeira/paseo-vesper-theme",
+    "version": "0.1.0",
+    "resolved": "https://registry.npmjs.org/@alexeira/paseo-vesper-theme/-/paseo-vesper-theme-0.1.0.tgz",
+    "integrity": "sha512-sSTfyzAfR6HX8pY9hiUB4THZcAwyCEGD7nMtkOUPTLt8PQh9Vbob25uoUtOy7GceaRwAGeqD9alawozAkhzt/Q=="
+  },
+  "repository": {
+    "url": "https://github.com/alexeira/paseo-vesper-theme"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-10-17T17:56:13Z",
+  "submittedBy": "alexeira",
+  "publishedAt": "2026-10-17T18:11:01Z",
+  "reviewedAt": "2026-10-17T18:11:01Z"
+}

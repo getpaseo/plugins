@@ -1,0 +1,19 @@
+{
+  "id": "devserra/chat-skins",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/devserra/paseo-chat-skins.git",
+    "commit": "1aae3075fd6f9ff3ee4b15ebe71efe5ee04f774b"
+  },
+  "repository": {
+    "url": "https://github.com/devserra/paseo-chat-skins"
+  },
+  "categories": [
+    "themes",
+    "utils"
+  ],
+  "submittedAt": "2026-10-15T04:16:40Z",
+  "submittedBy": "devserra",
+  "publishedAt": "2026-10-15T04:31:56Z",
+  "reviewedAt": "2026-10-15T13:35:48Z"
+}

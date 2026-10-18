@@ -15,6 +15,7 @@
   ],
   "submittedAt": "2026-09-10",
   "submittedBy": "mcowger",
+  "publishedAt": "2026-09-10",
   "reviewedAt": "2026-09-10",
   "listing": {
     "media": [
@@ -25,6 +26,7 @@
       "https://raw.githubusercontent.com/mcowger/paseo-plugins/8deeaea6e07efd50e6eb1698285f14da05b151ea/colorful-agent-activity/images/mobile-diff-view.png",
       "https://raw.githubusercontent.com/mcowger/paseo-plugins/8deeaea6e07efd50e6eb1698285f14da05b151ea/colorful-agent-activity/images/mobile-shell-output.png",
       "https://raw.githubusercontent.com/mcowger/paseo-plugins/8deeaea6e07efd50e6eb1698285f14da05b151ea/colorful-agent-activity/images/paseo-create-agent.png"
-    ]
+    ],
+    "description": "Replaces reasoning and tool-call rows with denser, color-coded activity rows."
   }
 }

@@ -3,20 +3,21 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-cafe",
-    "version": "0.11.0",
-    "resolved": "https://registry.npmjs.org/paseo-cafe/-/paseo-cafe-0.11.0.tgz",
-    "integrity": "sha512-+WEFIQhIctQ9XDxzhqTsfW6VTxloDkhn/HZR4icPieHmXMBHupmTi1hDXMDcxumLBUAHre1LEQgGkWTaT2rCpg=="
+    "version": "1.0.1",
+    "resolved": "https://registry.npmjs.org/paseo-cafe/-/paseo-cafe-1.0.1.tgz",
+    "integrity": "sha512-MYjPZ8KtUXnEQt/xoClRMRwsc9bv3qQpk+n06WXYHV7dwsbrvlO65Q+J8i7yNAobrFUur9OTq7lZLLLRDpagcg=="
   },
   "repository": {
     "url": "https://github.com/paseo-cafe/paseo-cafe/tree/HEAD/plugin",
-    "commit": "266ff26c5fe0240783770ec1efc9799e939c0795"
+    "commit": "1a3faaf53be0cb8618c120f603498d7571e08955"
   },
   "categories": [
     "utils"
   ],
   "submittedAt": "2026-09-09",
   "submittedBy": "omercnet",
-  "reviewedAt": "2026-09-09",
+  "publishedAt": "2026-09-09",
+  "reviewedAt": "2026-10-13T16:33:00Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/paseo-cafe/paseo-cafe/266ff26c5fe0240783770ec1efc9799e939c0795/plugin/images/catalog-browse.webp",

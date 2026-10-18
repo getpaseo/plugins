@@ -16,8 +16,10 @@
   ],
   "submittedAt": "2026-09-14",
   "submittedBy": "maxwell-01",
+  "publishedAt": "2026-09-14",
   "reviewedAt": "2026-09-14",
   "listing": {
-    "media": []
+    "media": [],
+    "description": "Mirrors a workspace's files onto your main checkout so a dev server running there shows its changes."
   }
 }

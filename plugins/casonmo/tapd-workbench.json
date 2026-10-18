@@ -1,0 +1,21 @@
+{
+  "id": "casonmo/tapd-workbench",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/CasonMo/paseo-tapd.git",
+    "commit": "78f0d91f06e9670da8d3fd3618799ce336da908b"
+  },
+  "repository": {
+    "url": "https://github.com/CasonMo/paseo-tapd",
+    "commit": "78f0d91f06e9670da8d3fd3618799ce336da908b"
+  },
+  "categories": [
+    "utils",
+    "sidebar",
+    "orchestration"
+  ],
+  "submittedAt": "2026-10-15T08:50:11Z",
+  "submittedBy": "CasonMo",
+  "publishedAt": "2026-10-15T09:04:21Z",
+  "reviewedAt": "2026-10-16T17:18:14Z"
+}

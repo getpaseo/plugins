@@ -1,0 +1,24 @@
+{
+  "id": "taingchhayse/sidebar-project-filter",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/taingchhayse/sidebar-project-filter.git",
+    "commit": "5834466e0dbaec08433a35e6585a71c24c383a17"
+  },
+  "repository": {
+    "url": "https://github.com/taingchhayse/sidebar-project-filter",
+    "commit": "5834466e0dbaec08433a35e6585a71c24c383a17"
+  },
+  "categories": [
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-15T04:31:08Z",
+  "submittedBy": "taingchhayse",
+  "publishedAt": "2026-10-15T04:34:46Z",
+  "reviewedAt": "2026-10-15T05:01:57Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/taingchhayse/sidebar-project-filter/947c1732410586666982d7ea8bc0fa034a2622ab/assets/sidebar-project-filter.png"
+    ]
+  }
+}

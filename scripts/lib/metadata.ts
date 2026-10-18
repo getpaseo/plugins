@@ -11,17 +11,18 @@ export interface PluginMetadata {
 }
 
 /** Read metadata at the artifact pin and apply the registry's per-field overrides.
+ * npm listings describe themselves with the package description instead of the manifest's.
  * Categories do not determine a plugin's type or its content requirements.
  */
-export function resolveMetadata(files: ArtifactFiles, record: PluginRecord): PluginMetadata {
+export function resolveMetadata(files: ArtifactFiles, record: PluginRecord, packageDescription?: string): PluginMetadata {
   const artifact = record.artifact;
   const base = artifact.kind === "git"
     ? `${artifact.remote.replace(/\.git$/, "")}/raw/${artifact.commit}/${artifact.pluginPath ? `${encodePath(artifact.pluginPath)}/` : ""}`
     : `https://cdn.jsdelivr.net/npm/${artifact.package}@${artifact.version}/`;
-  return readMetadata(files.manifest, record, base);
+  return readMetadata(files.manifest, record, base, packageDescription);
 }
 
-function readMetadata(text: string | null, record: PluginRecord, base: string): PluginMetadata {
+function readMetadata(text: string | null, record: PluginRecord, base: string, packageDescription?: string): PluginMetadata {
   if (text === null) throw new AuthorError("The package does not contain paseo-plugin.json. Include the manifest and publish a new release.");
   let manifest: Record<string, unknown>;
   try {
@@ -55,7 +56,9 @@ function readMetadata(text: string | null, record: PluginRecord, base: string): 
   const selectedMedia = record.listing?.media ?? (media as string[] | undefined) ?? [];
   return {
     name: record.listing?.name ?? (name as string | undefined) ?? humanizeId(record.id),
-    description: typeof manifest.description === "string" ? manifest.description : "",
+    description: record.listing?.description
+      ?? packageDescription
+      ?? (typeof manifest.description === "string" ? manifest.description : ""),
     ...(selectedIcon !== undefined ? { icon: assetUrl(selectedIcon) } : {}),
     media: selectedMedia.map(assetUrl),
   };

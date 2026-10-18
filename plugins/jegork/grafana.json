@@ -16,8 +16,10 @@
   ],
   "submittedAt": "2026-09-13",
   "submittedBy": "jegork",
+  "publishedAt": "2026-09-13",
   "reviewedAt": "2026-09-13",
   "listing": {
-    "media": []
+    "media": [],
+    "description": "Shows Grafana alerts in Paseo and starts an agent to investigate one."
   }
 }

@@ -1,0 +1,22 @@
+{
+  "id": "anh-chu/genui",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/anh-chu/paseo-plugin-genui.git",
+    "commit": "2efa43dbaa528b9858b58edaa339cdd0b4254d73"
+  },
+  "repository": {
+    "url": "https://github.com/anh-chu/paseo-plugin-genui",
+    "commit": "2efa43dbaa528b9858b58edaa339cdd0b4254d73"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar",
+    "extras",
+    "utils"
+  ],
+  "submittedAt": "2026-10-16T15:59:40Z",
+  "submittedBy": "anh-chu",
+  "publishedAt": "2026-10-17T21:08:46Z",
+  "reviewedAt": "2026-10-17T21:08:46Z"
+}

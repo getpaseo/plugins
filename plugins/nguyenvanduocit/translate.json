@@ -1,0 +1,26 @@
+{
+  "id": "nguyenvanduocit/translate",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/nguyenvanduocit/paseo-translate.git",
+    "commit": "3a1014c942aeda7267900f32eb5f883b7dbb7598"
+  },
+  "repository": {
+    "url": "https://github.com/nguyenvanduocit/paseo-translate",
+    "commit": "3a1014c942aeda7267900f32eb5f883b7dbb7598"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-14T04:43:30Z",
+  "submittedBy": "nguyenvanduocit",
+  "publishedAt": "2026-10-14T05:02:19Z",
+  "reviewedAt": "2026-10-14T05:02:19Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/nguyenvanduocit/paseo-translate/3a1014c942aeda7267900f32eb5f883b7dbb7598/assets/screenshot-sentence.png",
+      "https://raw.githubusercontent.com/nguyenvanduocit/paseo-translate/3a1014c942aeda7267900f32eb5f883b7dbb7598/assets/screenshot-word.png",
+      "https://raw.githubusercontent.com/nguyenvanduocit/paseo-translate/3a1014c942aeda7267900f32eb5f883b7dbb7598/assets/screenshot-button.png"
+    ]
+  }
+}

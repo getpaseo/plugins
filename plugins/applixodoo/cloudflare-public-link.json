@@ -1,0 +1,20 @@
+{
+  "id": "applixodoo/cloudflare-public-link",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/applixodoo/paseo-cloudflare-public-link.git",
+    "commit": "ff53c5bb88ab723d729a4f98859507116b7b7f5e"
+  },
+  "repository": {
+    "url": "https://github.com/applixodoo/paseo-cloudflare-public-link",
+    "commit": "ff53c5bb88ab723d729a4f98859507116b7b7f5e"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-10-15T19:57:20Z",
+  "submittedBy": "odoo-mvds",
+  "publishedAt": "2026-10-15T20:03:27Z",
+  "reviewedAt": "2026-10-15T20:03:27Z"
+}

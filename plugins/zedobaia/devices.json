@@ -1,0 +1,21 @@
+{
+  "id": "zedobaia/devices",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/ZedObaia/paseo-plugins.git",
+    "commit": "e3ecb0bb31f83517aa86d3ee89b9223e2b2c34f1",
+    "pluginPath": "plugins/devices"
+  },
+  "repository": {
+    "url": "https://github.com/ZedObaia/paseo-plugins",
+    "commit": "e3ecb0bb31f83517aa86d3ee89b9223e2b2c34f1"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-10-16T22:30:12Z",
+  "submittedBy": "ZedObaia",
+  "publishedAt": "2026-10-17T01:37:59Z",
+  "reviewedAt": "2026-10-17T21:12:15Z"
+}

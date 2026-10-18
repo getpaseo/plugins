@@ -66,7 +66,7 @@ function fixture(t: TestContext, kind: "npm" | "git", manifest: unknown, listing
       ? { kind, package: doc.name, version: doc.version, resolved: doc.dist.tarball, integrity: doc.dist.integrity }
       : { kind, remote, commit, pluginPath },
     repository: { url: "https://github.com/acme/manifest" },
-    submittedAt: "2026-10-07", reviewedAt: "2026-10-07",
+    submittedAt: "2026-10-07", publishedAt: "2026-10-07", reviewedAt: "2026-10-07",
   };
   const base = kind === "npm" ? "https://cdn.jsdelivr.net/npm/@acme/example@1.0.0/"
     : `https://github.com/acme/manifest/raw/${commit}/${pluginPath}/`;
@@ -91,20 +91,22 @@ for (const kind of ["npm", "git"] as const) {
   });
 
   test(`${kind}: registry overrides win per field and unused manifest files need not exist`, async (t) => {
-    const f = fixture(t, kind, { name: "Author name", icon: "missing.png", media: ["missing.png"] }, {
-      name: "Maintainer name", icon: "https://example.test/override.png", media: [],
+    const f = fixture(t, kind, { name: "Author name", description: "Manifest description", icon: "missing.png", media: ["missing.png"] }, {
+      name: "Maintainer name", description: "Maintainer description", icon: "https://example.test/override.png", media: [],
     });
     f.record.categories = ["utils"];
     const detail = await f.detail();
     assert.equal(detail.name, "Maintainer name");
+    assert.equal(detail.description, "Maintainer description");
     assert.equal(detail.icon, "https://example.test/override.png");
     assert.deepEqual(detail.media, []);
   });
 
   test(`${kind}: overriding only the name preserves manifest icon and media`, async (t) => {
-    const f = fixture(t, kind, { name: "Author name", icon: "assets/icon.png", media: ["assets/screen shot.PNG"] }, { name: "Issue title" });
+    const f = fixture(t, kind, { name: "Author name", description: "Manifest description", icon: "assets/icon.png", media: ["assets/screen shot.PNG"] }, { name: "Issue title" });
     const detail = await f.detail();
     assert.equal(detail.name, "Issue title");
+    assert.equal(detail.description, kind === "npm" ? "Package description" : "Manifest description");
     assert.equal(detail.icon, `${f.base}assets/icon.png`);
     assert.deepEqual(detail.media, [`${f.base}assets/screen%20shot.PNG`]);
   });

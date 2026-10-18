@@ -14,11 +14,13 @@
   ],
   "submittedAt": "2026-09-14",
   "submittedBy": "juanlatorre",
+  "publishedAt": "2026-09-14",
   "reviewedAt": "2026-09-14",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/juanlatorre/paseo-gruvbox/4d7d73f89a434db23f9870ff37b8c24d6244b6eb/images/preview-dark.png",
       "https://raw.githubusercontent.com/juanlatorre/paseo-gruvbox/4d7d73f89a434db23f9870ff37b8c24d6244b6eb/images/preview-light.png"
-    ]
+    ],
+    "description": "Adds Gruvbox Dark and Gruvbox Light color themes."
   }
 }

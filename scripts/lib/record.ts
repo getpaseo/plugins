@@ -3,7 +3,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { githubOwner } from "./repository.ts";
 import { parseMedia } from "./media.ts";
-import { isIsoDate } from "./dates.ts";
+import { isRecordDate, isRecordTimestamp, RECORD_DATE_FORMAT, recordTime } from "./dates.ts";
 
 /** One file in plugins/. Humans edit categories and listing; the bot writes the rest. */
 export interface PluginRecord {
@@ -18,7 +18,9 @@ export interface PluginRecord {
   submittedAt: string;
   /** GitHub login of whoever opened the submission issue. */
   submittedBy?: string;
-  /** Date the pinned version was approved. */
+  /** When the first reviewed version was approved and listed. Updates keep it. */
+  publishedAt: string;
+  /** When the pinned version was approved. Updates move it. */
   reviewedAt: string;
   /** Per-field overrides for metadata from the pinned paseo-plugin.json. */
   listing?: PluginListingOverrides;
@@ -26,6 +28,7 @@ export interface PluginRecord {
 
 export interface PluginListingOverrides {
   name?: string;
+  description?: string;
   icon?: string;
   media?: string[];
 }
@@ -43,6 +46,7 @@ const RECORD_KEYS = [
   "categories",
   "submittedAt",
   "submittedBy",
+  "publishedAt",
   "reviewedAt",
   "listing",
 ] as const;
@@ -80,12 +84,13 @@ export function parseRecord(raw: unknown, knownCategories: Set<string>): PluginR
     problems.push(String(error));
   }
   const submittedAt = required("submittedAt");
+  const publishedAt = required("publishedAt");
   const reviewedAt = required("reviewedAt");
   const submittedBy = str("submittedBy");
-  if (value.submittedAt !== undefined && !isIsoDate(value.submittedAt))
-    problems.push("submittedAt must be YYYY-MM-DD");
-  if (value.reviewedAt !== undefined && !isIsoDate(value.reviewedAt))
-    problems.push("reviewedAt must be YYYY-MM-DD");
+  for (const key of ["submittedAt", "publishedAt", "reviewedAt"]) {
+    if (value[key] !== undefined && !isRecordDate(value[key]))
+      problems.push(`${key} must be ${RECORD_DATE_FORMAT}`);
+  }
 
   let repository: PluginRecord["repository"];
   if (value.repository === undefined) problems.push("repository is required");
@@ -135,6 +140,11 @@ export function parseRecord(raw: unknown, knownCategories: Set<string>): PluginR
           problems.push("listing.name must be a non-empty string");
         else listing.name = raw.name;
       }
+      if (raw.description !== undefined) {
+        if (typeof raw.description !== "string" || !raw.description.trim())
+          problems.push("listing.description must be a non-empty string");
+        else listing.description = raw.description;
+      }
       if (raw.icon !== undefined) {
         if (typeof raw.icon !== "string" || !/^https:\/\/\S+\.png$/i.test(raw.icon))
           problems.push("listing.icon must be an https PNG URL");
@@ -145,7 +155,7 @@ export function parseRecord(raw: unknown, knownCategories: Set<string>): PluginR
         catch (error) { problems.push(`listing.${(error as Error).message}`); }
       }
       for (const key of Object.keys(raw)) {
-        if (!["name", "icon", "media"].includes(key))
+        if (!["name", "description", "icon", "media"].includes(key))
           problems.push(`unknown field "listing.${key}"`);
       }
     }
@@ -159,9 +169,29 @@ export function parseRecord(raw: unknown, knownCategories: Set<string>): PluginR
     categories: categories as string[],
     submittedAt,
     ...(submittedBy ? { submittedBy } : {}),
+    publishedAt,
     reviewedAt,
     ...(listing ? { listing } : {}),
   };
+}
+
+const RECORD_DATES = ["submittedAt", "publishedAt", "reviewedAt"] as const;
+
+/**
+ * Date rules across a change, against the record as listed on main (absent for a new record):
+ * submission and first listing times never change, and every date the change writes carries the time.
+ */
+export function recordDateProblems(record: PluginRecord, listed: Record<string, unknown> | undefined): string[] {
+  const problems: string[] = [];
+  for (const key of ["submittedAt", "publishedAt"] as const) {
+    if (listed && listed[key] !== record[key])
+      problems.push(`${key} must stay ${JSON.stringify(listed[key])}; an update moves reviewedAt only`);
+  }
+  for (const key of RECORD_DATES) {
+    if (record[key] !== listed?.[key] && !isRecordTimestamp(record[key]))
+      problems.push(`${key} must be a UTC timestamp, such as ${recordTime()}`);
+  }
+  return problems;
 }
 
 export function recordPath(id: string, dir = RECORDS_DIR): string {

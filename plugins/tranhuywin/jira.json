@@ -1,0 +1,24 @@
+{
+  "id": "tranhuywin/jira",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/tranhuywin/paseo-jira.git",
+    "commit": "ab1e33bff13c1a1b9d7528ffc0a2514ba60955f3"
+  },
+  "repository": {
+    "url": "https://github.com/tranhuywin/paseo-jira"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-17T16:33:28Z",
+  "submittedBy": "tranhuywin",
+  "publishedAt": "2026-10-17T18:02:41Z",
+  "reviewedAt": "2026-10-17T18:02:41Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/tranhuywin/paseo-jira/2e128a3c6c8c51a3afab338b218632096cd6a2c8/assets/ticket-list.png"
+    ]
+  }
+}

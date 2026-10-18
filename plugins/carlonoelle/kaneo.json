@@ -1,0 +1,22 @@
+{
+  "id": "carlonoelle/kaneo",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/carlonoelle/paseo-plugins.git",
+    "commit": "9162e771bcd2ddde2cd4ff68ba38c2f4450a81de",
+    "pluginPath": "kaneo"
+  },
+  "repository": {
+    "url": "https://github.com/carlonoelle/paseo-plugins",
+    "commit": "9162e771bcd2ddde2cd4ff68ba38c2f4450a81de"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-10-16T08:11:32Z",
+  "submittedBy": "carlonoelle",
+  "publishedAt": "2026-10-16T08:32:30Z",
+  "reviewedAt": "2026-10-16T08:32:30Z"
+}

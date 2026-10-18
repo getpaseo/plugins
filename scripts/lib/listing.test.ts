@@ -33,6 +33,7 @@ const record: PluginRecord = {
   },
   categories: ["themes"],
   submittedAt: "2026-09-17",
+  publishedAt: "2026-09-20",
   reviewedAt: "2026-10-03",
 };
 
@@ -48,9 +49,26 @@ test("publication preserves author, overview, and review dates", async () => {
   assert.equal(plugin.description, doc.description);
   assert.deepEqual(plugin.author, { npm: "omercnet", name: "Omer Cohen", github: "omercnet" });
   assert.equal(plugin.readme, "Overview.");
-  assert.equal(plugin.publishedAt, "2026-10-03T00:00:00.000Z");
+  assert.equal(plugin.publishedAt, "2026-09-20T00:00:00.000Z");
   assert.equal(plugin.updatedAt, "2026-10-03T00:00:00.000Z");
   assert.equal(plugin.installs, undefined);
+});
+
+test("publication keeps the first listing time when a later review updates the plugin", async () => {
+  const client: NpmClient = {
+    async packument() { return { name: doc.name, "dist-tags": { latest: doc.version }, versions: { [doc.version]: doc }, time: {} }; },
+    async file(_name, _version, path) { return path === "paseo-plugin.json" ? "{}" : null; },
+    async provenance() { return null; },
+    async tarball() { throw new Error("Not needed"); },
+  };
+  const plugin = await resolvePlugin(client, {
+    ...record, submittedAt: "2026-10-12T09:15:00Z", publishedAt: "2026-10-12T11:42:00Z",
+    reviewedAt: "2026-10-14T13:05:30+02:00",
+  }, "Overview.");
+  assert.equal(plugin.submittedAt, "2026-10-12T09:15:00.000Z");
+  assert.equal(plugin.publishedAt, "2026-10-12T11:42:00.000Z");
+  assert.equal(plugin.reviewedAt, "2026-10-14T11:05:30.000Z");
+  assert.equal(plugin.updatedAt, "2026-10-14T11:05:30.000Z");
 });
 
 test("a tagged monorepo artifact is pinned, validated and built through both submission syntaxes", async () => {
@@ -183,10 +201,6 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
       run(process.execPath, ["scripts/validate.ts", "--online", "--changed"], options),
       /1 record\(s\) match/,
     );
-    for (const command of ["paseo plugin add acme/example", "npm install example", "npm i example"]) {
-      writeFileSync(overview, command);
-      assert.throws(() => run(process.execPath, ["scripts/validate.ts"], options), /Command failed/);
-    }
     writeFileSync(overview, "A curated description.");
     run("git", ["tag", "-f", "v1.0.0"], { cwd: repository });
     assert.throws(

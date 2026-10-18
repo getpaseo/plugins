@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/anh-chu/paseo-plugin-tasks.git",
-    "commit": "d46b5978c55906638e78122f5726fd88b53c928c"
+    "commit": "d7b14377607dec1b0acbf6726ffcddf4604382d2"
   },
   "repository": {
     "url": "https://github.com/anh-chu/paseo-plugin-tasks",
-    "commit": "d46b5978c55906638e78122f5726fd88b53c928c"
+    "commit": "d7b14377607dec1b0acbf6726ffcddf4604382d2"
   },
   "categories": [
     "orchestration",

@@ -1,0 +1,14 @@
+{
+  "issue": 624,
+  "title": "paseo-plan",
+  "submittedBy": "pocharlies",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/pocharlies-org/paseo-plan",
+    "ref": "6d4f9cd06708450453e7c8be25e86a238f057261"
+  },
+  "categories": [
+    "extras",
+    "utils"
+  ]
+}

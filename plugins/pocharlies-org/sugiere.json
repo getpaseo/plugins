@@ -1,0 +1,18 @@
+{
+  "id": "pocharlies-org/sugiere",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/pocharlies-org/paseo-sugiere.git",
+    "commit": "2fca505682289377ffaaea6ac56ae2b7af3dea23"
+  },
+  "repository": {
+    "url": "https://github.com/pocharlies-org/paseo-sugiere"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedBy": "pocharlies",
+  "submittedAt": "2026-10-18T02:00:08Z",
+  "publishedAt": "2026-10-18T02:06:56Z",
+  "reviewedAt": "2026-10-18T02:06:56Z"
+}

@@ -1,0 +1,13 @@
+{
+  "issue": 624,
+  "title": "Suggested next message",
+  "submittedBy": "pocharlies",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/pocharlies-org/paseo-sugiere",
+    "ref": "2fca505682289377ffaaea6ac56ae2b7af3dea23"
+  },
+  "categories": [
+    "utils"
+  ]
+}

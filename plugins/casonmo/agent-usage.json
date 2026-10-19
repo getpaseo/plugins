@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/CasonMo/paseo-agent-usage.git",
-    "commit": "587debc2c4e545e3d61a24e6a1d4c732a24c03c2"
+    "commit": "b97a6a489f98ae1fff4018eb0bdefc741379a0b0"
   },
   "repository": {
     "url": "https://github.com/CasonMo/paseo-agent-usage",
-    "commit": "587debc2c4e545e3d61a24e6a1d4c732a24c03c2"
+    "commit": "b97a6a489f98ae1fff4018eb0bdefc741379a0b0"
   },
   "categories": [
     "utils",
@@ -16,10 +16,10 @@
   "submittedAt": "2026-10-16T03:37:23Z",
   "submittedBy": "CasonMo",
   "publishedAt": "2026-10-16T04:07:01Z",
-  "reviewedAt": "2026-10-16T07:41:00Z",
+  "reviewedAt": "2026-10-17T21:15:37Z",
   "listing": {
     "media": [
-      "https://raw.githubusercontent.com/CasonMo/paseo-agent-usage/a0a19b78bd42503a53164dd14c41c0cf4e71f420/assets/screenshot.png"
+      "https://raw.githubusercontent.com/CasonMo/paseo-agent-usage/b97a6a489f98ae1fff4018eb0bdefc741379a0b0/assets/screenshot.png"
     ]
   }
 }

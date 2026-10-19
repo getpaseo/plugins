@@ -1,0 +1,14 @@
+{
+  "issue": 714,
+  "title": "Secrets",
+  "submittedBy": "yuruiz",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/yuruiz/paseo-secrets",
+    "ref": "v0.3.0"
+  },
+  "categories": [
+    "utils",
+    "daemon-management"
+  ]
+}

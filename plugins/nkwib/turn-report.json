@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/nkwib/paseo-turn-report.git",
-    "commit": "1da5cb42d6928aa6f9849676ae9377e3d96097cb",
-    "tag": "v0.1.1"
+    "commit": "6247ff921a797f106c4e1b6644b230b29f4d6fc2",
+    "tag": "v0.1.2"
   },
   "repository": {
     "url": "https://github.com/nkwib/paseo-turn-report",
-    "commit": "1da5cb42d6928aa6f9849676ae9377e3d96097cb"
+    "commit": "6247ff921a797f106c4e1b6644b230b29f4d6fc2"
   },
   "categories": [
     "orchestration",

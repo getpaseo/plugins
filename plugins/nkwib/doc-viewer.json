@@ -3,8 +3,8 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/nkwib/paseo-doc-viewer.git",
-    "commit": "8cbedcf81a822c139a859cddf7443f342600a650",
-    "tag": "v0.5.0"
+    "commit": "95c627eeb054755bef81fb4eb1443bf632344b8f",
+    "tag": "v0.5.1"
   },
   "repository": {
     "url": "https://github.com/nkwib/paseo-doc-viewer"

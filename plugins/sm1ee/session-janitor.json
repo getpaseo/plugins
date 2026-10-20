@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/sm1ee/paseo-session-janitor.git",
-    "commit": "9ec00d629ce406898c145e5b9579b1f74c4d1c0b",
-    "tag": "v0.1.2"
+    "commit": "b58ac3fef3865039a9b996c588102c5fcb2c430c",
+    "tag": "v0.1.3"
   },
   "repository": {
     "url": "https://github.com/sm1ee/paseo-session-janitor",
-    "commit": "9ec00d629ce406898c145e5b9579b1f74c4d1c0b"
+    "commit": "b58ac3fef3865039a9b996c588102c5fcb2c430c"
   },
   "categories": [
     "daemon-management",
@@ -19,5 +19,5 @@
   "submittedAt": "2026-10-19T23:01:33Z",
   "submittedBy": "sm1ee",
   "publishedAt": "2026-10-19T23:01:33Z",
-  "reviewedAt": "2026-10-20T00:01:29Z"
+  "reviewedAt": "2026-10-20T01:02:15Z"
 }

@@ -1,0 +1,15 @@
+{
+  "issue": 786,
+  "title": "session-janitor",
+  "submittedBy": "sm1ee",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/sm1ee/paseo-session-janitor",
+    "ref": "v0.1.3"
+  },
+  "categories": [
+    "daemon-management",
+    "orchestration",
+    "utils"
+  ]
+}

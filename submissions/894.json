@@ -1,0 +1,15 @@
+{
+  "issue": 894,
+  "title": "[Submission] session-recovery v0.6.1",
+  "submittedBy": "sm1ee",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/sm1ee/paseo-session-recovery",
+    "ref": "v0.6.1"
+  },
+  "categories": [
+    "daemon-management",
+    "orchestration",
+    "utils"
+  ]
+}

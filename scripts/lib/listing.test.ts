@@ -123,7 +123,7 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
       fileURLToPath(new URL("../../categories.json", import.meta.url)),
       join(registry, "categories.json"),
     );
-    writeFileSync(join(registry, "featured.json"), '["acme/url-example", "acme/example"]\n');
+    writeFileSync(join(registry, "featured.json"), '["acme/example"]\n');
     const options = {
       cwd: registry,
       env: {
@@ -134,11 +134,8 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
         GIT_CONFIG_VALUE_0: "https://github.com/acme/plugins.git",
       },
     };
-    run(
-      process.execPath,
-      ["scripts/add.ts", "acme/plugins:packages/example#v1.0.0", "--categories", "utils"],
-      options,
-    );
+    // One plugin directory is listed once, so the URL syntax is pinned, read and removed
+    // before the shorthand syntax pins the record that stays.
     run(
       process.execPath,
       [
@@ -153,6 +150,16 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
       ],
       options,
     );
+    const fromUrl = JSON.parse(readFileSync(join(registry, "plugins/acme/url-example.json"), "utf8"));
+    rmSync(join(registry, "plugins/acme/url-example.json"));
+    run(
+      process.execPath,
+      ["scripts/add.ts", "acme/plugins:packages/example#v1.0.0", "--categories", "utils"],
+      options,
+    );
+    const fromShorthand = JSON.parse(readFileSync(join(registry, "plugins/acme/example.json"), "utf8"));
+    assert.deepEqual(fromShorthand.artifact, fromUrl.artifact);
+    assert.deepEqual(fromShorthand.repository, fromUrl.repository);
     run("git", ["init", "-q"], options);
     run("git", ["add", "plugins"], options);
     run(
@@ -163,12 +170,12 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
     run("git", ["update-ref", "refs/remotes/origin/main", "HEAD"], options);
     assert.match(
       run(process.execPath, ["scripts/validate.ts", "--online"], options),
-      /2 record\(s\) match/,
+      /1 record\(s\) match/,
     );
     run(process.execPath, ["scripts/build.ts"], options);
     const index = JSON.parse(readFileSync(join(registry, "dist/index.json"), "utf8"));
-    assert.deepEqual(index.featured, ["acme/url-example", "acme/example"]);
-    for (const slug of ["example", "url-example"]) {
+    assert.deepEqual(index.featured, ["acme/example"]);
+    for (const slug of ["example"]) {
       const detail = JSON.parse(
         readFileSync(join(registry, `dist/plugins/acme/${slug}.json`), "utf8"),
       );
@@ -191,7 +198,7 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
       JSON.parse(readFileSync(join(registry, "dist/plugins/acme/example.json"), "utf8")).readme,
       "Monorepo example overview.\n",
     );
-    assert.match(run(process.execPath, ["scripts/validate.ts"], options), /2 record\(s\)/);
+    assert.match(run(process.execPath, ["scripts/validate.ts"], options), /1 record\(s\)/);
     writeFileSync(overview, "An updated curated description.");
     run("git", ["add", "plugins/acme/example.md"], options);
     run(

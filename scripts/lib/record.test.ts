@@ -125,6 +125,29 @@ test("an update keeps the submission and first listing times and stamps the new 
     ['publishedAt must stay "2026-09-20"; an update moves reviewedAt only']);
 });
 
+test("rejects a repository listed under two ids", () => {
+  const dir = mkdtempSync(join(tmpdir(), "records-"));
+  const lobby = {
+    ...valid,
+    id: "linhmh8/agent-lobby",
+    artifact: {
+      kind: "git",
+      remote: "https://github.com/linhmh8/agent-lobby.git",
+      commit: "9329e9d83c18eba8b79a564362c7b9eeed9b38f4",
+    },
+    repository: {
+      url: "https://github.com/linhmh8/agent-lobby",
+      commit: "9329e9d83c18eba8b79a564362c7b9eeed9b38f4",
+    },
+  };
+  writeRecord(parseRecord(lobby, known), dir);
+  writeRecord(parseRecord({ ...lobby, id: "linhmh8/lobby" }, known), dir);
+  assert.throws(
+    () => readRecords(known, dir),
+    /repository "https:\/\/github.com\/linhmh8\/agent-lobby" is listed 2 times/,
+  );
+});
+
 test("rejects a directory with duplicate packages or mismatched file names", () => {
   const dir = mkdtempSync(join(tmpdir(), "records-"));
   writeRecord(parseRecord(valid, known), dir);

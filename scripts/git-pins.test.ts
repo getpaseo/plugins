@@ -189,6 +189,8 @@ test("changed-record review ignores unreachable media on an unchanged listing", 
   assert.equal(f.add("--commit", f.commit).status, 0);
   const old = f.record();
   old.id = "acme/old";
+  old.artifact.remote = "https://github.com/acme/old.git";
+  old.repository.url = "https://github.com/acme/old";
   old.listing = { media: ["https://unrelated-plugin.invalid/image.png"] };
   rmSync(f.recordPath);
   writeFileSync(join(f.registry, "plugins/acme/old.json"), JSON.stringify(old));

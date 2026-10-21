@@ -8,7 +8,7 @@ import { categorySlugs, readCategories } from "./lib/categories.ts";
 import { deriveId } from "./lib/id.ts";
 import { createNpmClient } from "./lib/npm.ts";
 import { pinRecord } from "./lib/pin.ts";
-import { parseRecord, readRecords, recordPath, writeRecord } from "./lib/record.ts";
+import { artifactKey, parseRecord, readRecords, recordPath, writeRecord } from "./lib/record.ts";
 
 const { positional, flags } = parseArgs(process.argv.slice(2));
 const pkg = positional[0]?.replace(/^npm:/, "");
@@ -28,17 +28,17 @@ const known = categorySlugs(readCategories());
 const source = parseSubmissionSource(pkg);
 const packageName = source.kind === "npm" ? source.package : pkg;
 const id = flagString(flags, "id") ?? deriveId(packageName);
+const pluginPath = flagString(flags, "plugin-path") ?? (source.kind === "git" ? source.pluginPath : undefined);
+const key = source.kind === "npm"
+  ? artifactKey({ kind: "npm", package: packageName })
+  : artifactKey({ kind: "git", remote: source.source, pluginPath });
 const existing = readRecords(known);
-const duplicate = existing.find(
-  (record) =>
-    (record.artifact.kind === "npm" && record.artifact.package === packageName) || record.id === id,
-);
+const duplicate = existing.find((record) => artifactKey(record.artifact) === key || record.id === id);
 if (duplicate || existsSync(recordPath(id))) {
-  console.error(`${pkg} is already listed as "${duplicate?.id ?? id}"`);
+  console.error(`${pkg} is already listed as "${duplicate?.id ?? id}"; update that record instead of adding one`);
   process.exit(1);
 }
 
-const pluginPath = flagString(flags, "plugin-path");
 if (source.kind === "git" && source.pluginPath && pluginPath && source.pluginPath !== pluginPath)
   throw new Error("Conflicting plugin paths");
 if (flags.has("commit") && (source.kind !== "git" || !flagString(flags, "commit")))

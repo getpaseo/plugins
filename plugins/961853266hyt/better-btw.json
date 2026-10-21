@@ -1,0 +1,20 @@
+{
+  "id": "961853266hyt/better-btw",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-better-btw",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/paseo-better-btw/-/paseo-better-btw-0.1.1.tgz",
+    "integrity": "sha512-JSYc0dWNpZNjf8ZEY2xf8XgvHCoZpdhfsLfedwBGMPVyl1ZFM0UVmfr6Eav8DgXxRKMVlTbeZ6tGe67E9LfrUQ=="
+  },
+  "repository": {
+    "url": "https://github.com/961853266hyt/paseo-plugins/tree/HEAD/plugins/better-btw"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-21T03:01:37Z",
+  "submittedBy": "961853266hyt",
+  "publishedAt": "2026-10-21T03:06:16Z",
+  "reviewedAt": "2026-10-21T03:06:16Z"
+}

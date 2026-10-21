@@ -1,14 +1,14 @@
 {
   "id": "maxwell-01/beam",
   "artifact": {
-    "kind": "git",
-    "remote": "https://github.com/maxwell-01/paseo-beam.git",
-    "commit": "975f8c4c062cb78ca82b203c8952e6c31621a9e6",
-    "pluginPath": "beam"
+    "kind": "npm",
+    "package": "paseo-beam",
+    "version": "0.2.1",
+    "resolved": "https://registry.npmjs.org/paseo-beam/-/paseo-beam-0.2.1.tgz",
+    "integrity": "sha512-nTaXfXBWsV5LAdr5IgJO2GpaMKPOUx53AlaDWIvXI75v+4tgDNUhHz7nhhAOLveIjRb9cCIpbB+V6PvbeM42Sw=="
   },
   "repository": {
-    "url": "https://github.com/maxwell-01/paseo-beam",
-    "commit": "975f8c4c062cb78ca82b203c8952e6c31621a9e6"
+    "url": "https://github.com/maxwell-01/maxs-paseo-plugins/tree/HEAD/beam"
   },
   "categories": [
     "git",

@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/JasprW/paseo-native-polish.git",
-    "commit": "da415e017c39111e2c07f9a68cff4076ae1b34ba",
-    "tag": "v0.4.15"
+    "commit": "da8b52a35d338471108463f1da5f28da8232c8a2",
+    "tag": "v0.4.16"
   },
   "repository": {
     "url": "https://github.com/JasprW/paseo-native-polish",
-    "commit": "da415e017c39111e2c07f9a68cff4076ae1b34ba"
+    "commit": "da8b52a35d338471108463f1da5f28da8232c8a2"
   },
   "categories": [
     "workspaces",
@@ -16,11 +16,11 @@
   ],
   "submittedAt": "2026-10-12T01:57:00Z",
   "submittedBy": "JasprW",
-  "reviewedAt": "2026-10-20T15:31:50Z",
+  "reviewedAt": "2026-10-21T14:32:58Z",
   "listing": {
     "name": "Native Polish",
     "media": [
-      "https://raw.githubusercontent.com/JasprW/paseo-native-polish/da415e017c39111e2c07f9a68cff4076ae1b34ba/docs/media/settings.png"
+      "https://raw.githubusercontent.com/JasprW/paseo-native-polish/da8b52a35d338471108463f1da5f28da8232c8a2/docs/media/settings.png"
     ]
   },
   "publishedAt": "2026-10-12T17:04:01Z"

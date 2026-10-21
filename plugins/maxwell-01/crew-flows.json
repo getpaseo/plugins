@@ -1,0 +1,29 @@
+{
+  "id": "maxwell-01/crew-flows",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-crew-flows",
+    "version": "0.1.0",
+    "resolved": "https://registry.npmjs.org/paseo-crew-flows/-/paseo-crew-flows-0.1.0.tgz",
+    "integrity": "sha512-dY7U6utKNqkRw42RkK1EHsVLVlUR5v3qmLNRUrh/GCm0FApEy8d2IXtaDvAQ1mGVBePIdFWlXwh8NhwZ1Lsa8w=="
+  },
+  "repository": {
+    "url": "https://github.com/maxwell-01/maxs-paseo-plugins/tree/HEAD/crew-flows",
+    "commit": "0d65619bf984d7f550d66174c6ec1ac4bd57d54d"
+  },
+  "categories": [
+    "orchestration",
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-21T13:46:07Z",
+  "submittedBy": "maxwell-01",
+  "publishedAt": "2026-10-21T14:03:48Z",
+  "reviewedAt": "2026-10-21T14:03:48Z",
+  "listing": {
+    "name": "Crew & Flows",
+    "media": [
+      "https://raw.githubusercontent.com/maxwell-01/maxs-paseo-plugins/0d65619bf984d7f550d66174c6ec1ac4bd57d54d/crew-flows/images/workflows.png",
+      "https://raw.githubusercontent.com/maxwell-01/maxs-paseo-plugins/0d65619bf984d7f550d66174c6ec1ac4bd57d54d/crew-flows/images/agents.png"
+    ]
+  }
+}

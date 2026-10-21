@@ -1,0 +1,7 @@
+Adds your personal repository notes to new Claude, Codex and OpenCode agents, without committing the notes to the repository. Requires Paseo 0.9.2 or later and Git on the daemon host. Repositories are identified by their origin remote; clones and worktrees of the same repository share notes.
+
+Create or edit `plugin-data/repo-notes/repos/<host>/<owner>/<repo>/AGENTS.md` inside your Paseo home directory, or ask an agent to update the notes at the path provided in its prompt. Notes are appended to the agent’s system prompt and therefore sent to its configured provider. Existing agents keep the notes they started with; edits affect newly created agents. Notes over 100 KB are skipped, and agents outside a repository with an origin receive no notes.
+
+With the plugin installed on several connected daemons, the open app transfers notes between them on connection and every minute. Only install it on daemons you trust: notes received from another daemon also become agent instructions. The newest modification time wins, using each daemon’s clock and a content-hash tie breaker; concurrent local edits are preserved for a later sync. A replaced file is backed up once as `AGENTS.md.replaced`.
+
+Notes stay outside the repository but travel through connected clients to other daemons and through agent prompts to providers. Deleting a notes file does not delete remote copies, so sync brings it back; empty the file to clear its contents. SSH aliases have separate repository keys. Sync requires the app to remain open, and offline daemons catch up later.

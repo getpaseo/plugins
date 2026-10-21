@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-beam",
-    "version": "0.2.1",
-    "resolved": "https://registry.npmjs.org/paseo-beam/-/paseo-beam-0.2.1.tgz",
-    "integrity": "sha512-nTaXfXBWsV5LAdr5IgJO2GpaMKPOUx53AlaDWIvXI75v+4tgDNUhHz7nhhAOLveIjRb9cCIpbB+V6PvbeM42Sw=="
+    "version": "0.2.2",
+    "resolved": "https://registry.npmjs.org/paseo-beam/-/paseo-beam-0.2.2.tgz",
+    "integrity": "sha512-gHEtdJYvkFXsJ85Snk7SaS448r8uNl5CJQ/xrYnfzmapbue60jxPEqwsxvJaYIuhQ4SPR74x1qwxzck4Bb1pvQ=="
   },
   "repository": {
     "url": "https://github.com/maxwell-01/maxs-paseo-plugins/tree/HEAD/beam",
-    "commit": "0d65619bf984d7f550d66174c6ec1ac4bd57d54d"
+    "commit": "18e65e93b7b075e50d620db65e149a5d56aa112e"
   },
   "categories": [
     "git",
@@ -18,5 +18,10 @@
   "submittedAt": "2026-09-14",
   "submittedBy": "maxwell-01",
   "publishedAt": "2026-09-14",
-  "reviewedAt": "2026-10-21T14:06:57Z"
+  "reviewedAt": "2026-10-21T15:03:21Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/maxwell-01/maxs-paseo-plugins/18e65e93b7b075e50d620db65e149a5d56aa112e/beam/assets/screenshot.png"
+    ]
+  }
 }

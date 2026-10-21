@@ -3,8 +3,8 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/nkwib/paseo-turn-report.git",
-    "commit": "6247ff921a797f106c4e1b6644b230b29f4d6fc2",
-    "tag": "v0.1.2"
+    "commit": "85f598cc5859c129459e3309e8db3a3d3b8c6f8c",
+    "tag": "v0.2.0"
   },
   "repository": {
     "url": "https://github.com/nkwib/paseo-turn-report",

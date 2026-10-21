@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/linhmh8/agent-lobby.git",
-    "commit": "3bb39e70134cc790de8a99fa4602473643912698",
-    "tag": "v0.1.3"
+    "commit": "9329e9d83c18eba8b79a564362c7b9eeed9b38f4",
+    "tag": "v0.1.4"
   },
   "repository": {
     "url": "https://github.com/linhmh8/agent-lobby",
-    "commit": "3bb39e70134cc790de8a99fa4602473643912698"
+    "commit": "9329e9d83c18eba8b79a564362c7b9eeed9b38f4"
   },
   "categories": [
     "orchestration",

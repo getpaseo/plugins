@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/hulkzzhou1/paseo-model-providers.git",
-    "commit": "64548f095dd77c47211f54e48cf43e3f6beb8c8d"
+    "commit": "eee1551bc6c8ee407323b1ee93e07bbde816fab5"
   },
   "repository": {
     "url": "https://github.com/hulkzzhou1/paseo-model-providers",
-    "commit": "64548f095dd77c47211f54e48cf43e3f6beb8c8d"
+    "commit": "eee1551bc6c8ee407323b1ee93e07bbde816fab5"
   },
   "categories": [
     "providers",

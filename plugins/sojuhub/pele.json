@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/sojuhub/paseo-plugin-pele.git",
-    "commit": "6c613ea7c6e4254a4e52c5b2a86a2c780ca90ba5",
-    "tag": "v0.1.0"
+    "commit": "c28ea8281e71305d618d45812a7c1c9fe9ee00e8",
+    "tag": "v0.2.1"
   },
   "repository": {
     "url": "https://github.com/sojuhub/paseo-plugin-pele",
-    "commit": "6c613ea7c6e4254a4e52c5b2a86a2c780ca90ba5"
+    "commit": "c28ea8281e71305d618d45812a7c1c9fe9ee00e8"
   },
   "categories": [
     "workspaces",

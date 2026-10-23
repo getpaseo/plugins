@@ -1,0 +1,22 @@
+{
+  "id": "tomgrin10/follow-up",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/tomgrin10/paseo-follow-up.git",
+    "commit": "247ae8660c70266a65af8bb4cfe2a43c8431596d"
+  },
+  "repository": {
+    "url": "https://github.com/tomgrin10/paseo-follow-up",
+    "commit": "247ae8660c70266a65af8bb4cfe2a43c8431596d"
+  },
+  "categories": [
+    "workspaces",
+    "git",
+    "orchestration",
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-23T12:51:52Z",
+  "submittedBy": "tomgrin10",
+  "publishedAt": "2026-10-23T13:10:16Z",
+  "reviewedAt": "2026-10-23T13:10:16Z"
+}

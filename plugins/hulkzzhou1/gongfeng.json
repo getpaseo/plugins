@@ -3,11 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/hulkzzhou1/paseo-gongfeng.git",
-    "commit": "ae04e40c3ba13e9587e80fafb3c2fd6745fcec29"
+    "commit": "cc1359dcf4b7aef681d2e295ecbb6c78bd8cf73e",
+    "tag": "v0.2.0"
   },
   "repository": {
     "url": "https://github.com/hulkzzhou1/paseo-gongfeng",
-    "commit": "ae04e40c3ba13e9587e80fafb3c2fd6745fcec29"
+    "commit": "cc1359dcf4b7aef681d2e295ecbb6c78bd8cf73e"
   },
   "categories": [
     "git",

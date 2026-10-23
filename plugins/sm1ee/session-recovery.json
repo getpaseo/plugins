@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/sm1ee/paseo-session-recovery.git",
-    "commit": "c92341fa829e3a4e6868a7aae1f1d2627d17a67d",
-    "tag": "v0.6.7"
+    "commit": "a516c13de2788955cc89c09fd8b6128f36926f87",
+    "tag": "v0.6.8"
   },
   "repository": {
     "url": "https://github.com/sm1ee/paseo-session-recovery",
-    "commit": "c92341fa829e3a4e6868a7aae1f1d2627d17a67d"
+    "commit": "a516c13de2788955cc89c09fd8b6128f36926f87"
   },
   "categories": [
     "daemon-management",

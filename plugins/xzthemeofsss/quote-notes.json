@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/xzthemeofsss/paseo-codex-style-annotations.git",
-    "commit": "b408626f744bcd4944301b452ad5c6af104d4cc4"
+    "commit": "41470fd86ba96345fc4cbce2a436a44f0527875a"
   },
   "repository": {
     "url": "https://github.com/xzthemeofsss/paseo-codex-style-annotations",
-    "commit": "b408626f744bcd4944301b452ad5c6af104d4cc4"
+    "commit": "41470fd86ba96345fc4cbce2a436a44f0527875a"
   },
   "categories": [
     "workspaces",

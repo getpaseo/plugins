@@ -1,0 +1,15 @@
+{
+  "issue": 1078,
+  "title": "Follow-up",
+  "submittedBy": "tomgrin10",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/tomgrin10/paseo-follow-up"
+  },
+  "categories": [
+    "workspaces",
+    "git",
+    "orchestration",
+    "sidebar"
+  ]
+}

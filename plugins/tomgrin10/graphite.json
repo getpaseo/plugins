@@ -19,7 +19,9 @@
   "reviewedAt": "2026-10-18T06:00:53Z",
   "listing": {
     "name": "Graphite",
-    "media": []
+    "media": [
+      "https://raw.githubusercontent.com/tomgrin10/paseo-graphite/84952047525a270be397ba7ff2af90e1275e7fed/docs/screenshots/graphite-prs.png"
+    ]
   },
   "publishedAt": "2026-09-22"
 }

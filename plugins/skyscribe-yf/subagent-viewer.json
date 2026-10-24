@@ -1,0 +1,24 @@
+{
+  "id": "skyscribe-yf/subagent-viewer",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/skyscribe-yf/paseo-plugin-subagent-viewer.git",
+    "commit": "8c0eba598e1b70729ddb42f031663f835dc96da9"
+  },
+  "repository": {
+    "url": "https://github.com/skyscribe-yf/paseo-plugin-subagent-viewer",
+    "commit": "8c0eba598e1b70729ddb42f031663f835dc96da9"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces"
+  ],
+  "submittedAt": "2026-10-08T05:45:27Z",
+  "submittedBy": "skyscribe-yf",
+  "publishedAt": "2026-10-12T12:56:30Z",
+  "reviewedAt": "2026-10-12T12:56:30Z",
+  "listing": {
+    "name": "Pi Subagent Viewer",
+    "media": []
+  }
+}

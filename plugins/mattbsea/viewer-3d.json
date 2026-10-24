@@ -1,0 +1,21 @@
+{
+  "id": "mattbsea/viewer-3d",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/mattbsea/paseo-plugins.git",
+    "commit": "895c59b76cadf64d7ba00687758636ed1b9a2182",
+    "pluginPath": "plugins/3d-viewer"
+  },
+  "repository": {
+    "url": "https://github.com/mattbsea/paseo-plugins",
+    "commit": "895c59b76cadf64d7ba00687758636ed1b9a2182"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-10-21T22:31:39Z",
+  "submittedBy": "mattbsea",
+  "publishedAt": "2026-10-21T23:02:35Z",
+  "reviewedAt": "2026-10-21T23:02:35Z"
+}

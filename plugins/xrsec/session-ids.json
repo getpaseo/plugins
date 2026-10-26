@@ -1,0 +1,25 @@
+{
+  "id": "xrsec/session-ids",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/XRSec/paseo-session-ids.git",
+    "commit": "d90b6b9bb91bcbcac816b920532520a00c3568cd"
+  },
+  "repository": {
+    "url": "https://github.com/XRSec/paseo-session-ids",
+    "commit": "d90b6b9bb91bcbcac816b920532520a00c3568cd"
+  },
+  "categories": [
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-10-26T05:00:47Z",
+  "submittedBy": "XRSec",
+  "publishedAt": "2026-10-26T05:00:47Z",
+  "reviewedAt": "2026-10-26T05:00:47Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/XRSec/paseo-session-ids/d90b6b9bb91bcbcac816b920532520a00c3568cd/images/screenshot.png"
+    ]
+  }
+}

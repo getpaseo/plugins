@@ -2,12 +2,12 @@
   "id": "xzthemeofsss/quote-notes",
   "artifact": {
     "kind": "git",
-    "remote": "https://github.com/xzthemeofsss/paseo-codex-style-annotations.git",
-    "commit": "41470fd86ba96345fc4cbce2a436a44f0527875a"
+    "remote": "https://github.com/xzthemeofsss/paseo-plugins.git",
+    "commit": "5ce92527c99a328b28775c7d745f324f2cc84309"
   },
   "repository": {
-    "url": "https://github.com/xzthemeofsss/paseo-codex-style-annotations",
-    "commit": "41470fd86ba96345fc4cbce2a436a44f0527875a"
+    "url": "https://github.com/xzthemeofsss/paseo-plugins",
+    "commit": "5ce92527c99a328b28775c7d745f324f2cc84309"
   },
   "categories": [
     "workspaces",

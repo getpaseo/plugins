@@ -1,0 +1,29 @@
+{
+  "id": "liuxing7954/dsh-paseo",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/liuxing7954/paseo-dsh",
+    "commit": "285a1cf2b05a0277d447d3526fc6c625afa0c5a0",
+    "pluginPath": "paseo-plugin"
+  },
+  "repository": {
+    "url": "https://github.com/liuxing7954/paseo-dsh"
+  },
+  "categories": [
+    "providers"
+  ],
+  "submittedAt": "2026-10-27T06:59:51Z",
+  "submittedBy": "liuxing7954",
+  "publishedAt": "2026-10-27T06:59:51Z",
+  "reviewedAt": "2026-10-27T06:59:51Z",
+  "listing": {
+    "name": "DeepSeek Harness (native)",
+    "description": "DeepSeek Harness as a native Paseo provider, with prompt images, slash commands and skills, plan mode, steering, permissions and presets.",
+    "translations": {
+      "zh-CN": {
+        "name": "DeepSeek Harness（原生）",
+        "description": "把 DeepSeek Harness 接成 Paseo 原生 provider，支持提示词图片、斜杠命令与技能、计划模式、插话、权限和预设。"
+      }
+    }
+  }
+}

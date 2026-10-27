@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/xzthemeofsss/paseo-plugins.git",
-    "commit": "ef46ba62a203c89c0d160551a98008d32fed9d07",
+    "commit": "9d09493e4f29ae803e70d2a8cbf7651b560c84ba",
     "pluginPath": "plugins/link-pilot"
   },
   "repository": {
     "url": "https://github.com/xzthemeofsss/paseo-plugins",
-    "commit": "ef46ba62a203c89c0d160551a98008d32fed9d07"
+    "commit": "9d09493e4f29ae803e70d2a8cbf7651b560c84ba"
   },
   "categories": [
     "utils"

@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "@mousebomb/paseo-gilded-fortune",
-    "version": "0.1.0",
-    "resolved": "https://registry.npmjs.org/@mousebomb/paseo-gilded-fortune/-/paseo-gilded-fortune-0.1.0.tgz",
-    "integrity": "sha512-fDgkCVdwbs+lYyXPEb8769lDpjwBBQSqivj2eaLlCSKEb897SBh2vF8ldoqmxG4aMjWW4ZqwOnPv6IcX8oykTw=="
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@mousebomb/paseo-gilded-fortune/-/paseo-gilded-fortune-0.1.1.tgz",
+    "integrity": "sha512-21wO5PQbw+15B1c7RLXFvE3PiP8F3UC3YfBikAnoHd6xjOF6KHMF+4o/jYO36mPlpl9K8ZiKAo5YFJI16i1zBg=="
   },
   "repository": {
     "url": "https://github.com/mousebomb/paseo-gilded-fortune"
@@ -17,7 +17,6 @@
   "publishedAt": "2026-10-27T10:13:20Z",
   "reviewedAt": "2026-10-27T10:13:20Z",
   "listing": {
-    "icon": "https://raw.githubusercontent.com/mousebomb/paseo-gilded-fortune/8a86c356f0f2a8ca5667c1db26d2491b2f7bdcfb/design/icon.png",
     "media": [
       "https://raw.githubusercontent.com/mousebomb/paseo-gilded-fortune/6812b584778b807604239c2b8608d9dbd5c9d05e/design/preview-dark.png",
       "https://raw.githubusercontent.com/mousebomb/paseo-gilded-fortune/6812b584778b807604239c2b8608d9dbd5c9d05e/design/preview-light.png"

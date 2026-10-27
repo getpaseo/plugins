@@ -3,11 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/gtoxlili/paseo-glm-usage.git",
-    "commit": "73cd344d80ac85245e88a1c0503675c353fcc2bb"
+    "commit": "60235a4b664c354895b08a9879f499e8d3343ad8",
+    "tag": "v0.2.0"
   },
   "repository": {
     "url": "https://github.com/gtoxlili/paseo-glm-usage",
-    "commit": "73cd344d80ac85245e88a1c0503675c353fcc2bb"
+    "commit": "60235a4b664c354895b08a9879f499e8d3343ad8"
   },
   "categories": [
     "utils"

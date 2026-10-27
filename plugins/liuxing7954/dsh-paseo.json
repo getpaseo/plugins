@@ -3,7 +3,7 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/liuxing7954/paseo-dsh",
-    "commit": "285a1cf2b05a0277d447d3526fc6c625afa0c5a0",
+    "commit": "89c53cd183d7b24978e0eefeace2b3202c49c773",
     "pluginPath": "paseo-plugin"
   },
   "repository": {
@@ -15,7 +15,7 @@
   "submittedAt": "2026-10-27T06:59:51Z",
   "submittedBy": "liuxing7954",
   "publishedAt": "2026-10-27T06:59:51Z",
-  "reviewedAt": "2026-10-27T06:59:51Z",
+  "reviewedAt": "2026-10-27T08:39:02Z",
   "listing": {
     "name": "DeepSeek Harness (native)",
     "description": "DeepSeek Harness as a native Paseo provider, with prompt images, slash commands and skills, plan mode, steering, permissions and presets.",

@@ -1,0 +1,19 @@
+{
+  "id": "yuruiz/commands",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/yuruiz/paseo-commands.git",
+    "commit": "b794f35748438d2407903a9c541bdeddfd72fe83"
+  },
+  "repository": {
+    "url": "https://github.com/yuruiz/paseo-commands",
+    "commit": "b794f35748438d2407903a9c541bdeddfd72fe83"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-27T07:56:38Z",
+  "submittedBy": "yuruiz",
+  "publishedAt": "2026-10-27T08:03:27Z",
+  "reviewedAt": "2026-10-27T08:03:27Z"
+}

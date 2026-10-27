@@ -2,12 +2,14 @@
   "id": "yuruiz/commands",
   "artifact": {
     "kind": "git",
-    "remote": "https://github.com/yuruiz/paseo-commands.git",
-    "commit": "b794f35748438d2407903a9c541bdeddfd72fe83"
+    "remote": "https://github.com/yuruiz/paseo-plugins.git",
+    "pluginPath": "commands",
+    "commit": "4c85b40466aad40cfebe30e0a8b3224eaf70b9d7",
+    "tag": "commands/v0.1.0"
   },
   "repository": {
-    "url": "https://github.com/yuruiz/paseo-commands",
-    "commit": "b794f35748438d2407903a9c541bdeddfd72fe83"
+    "url": "https://github.com/yuruiz/paseo-plugins/tree/main/commands",
+    "commit": "4c85b40466aad40cfebe30e0a8b3224eaf70b9d7"
   },
   "categories": [
     "utils"

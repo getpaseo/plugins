@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/hulkzzhou1/paseo-bot.git",
-    "commit": "73b81ff03f36bdd3ae75bf4f871daaa8bd9cf2df"
+    "commit": "2cacdbad6e061f9f510700aca37a6261ebf8717a"
   },
   "repository": {
     "url": "https://github.com/hulkzzhou1/paseo-bot",
-    "commit": "73b81ff03f36bdd3ae75bf4f871daaa8bd9cf2df"
+    "commit": "2cacdbad6e061f9f510700aca37a6261ebf8717a"
   },
   "categories": [
     "daemon-management",

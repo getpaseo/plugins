@@ -1,0 +1,22 @@
+{
+  "id": "hulkzzhou1/paseo-bot",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/hulkzzhou1/paseo-bot.git",
+    "commit": "ffedf6a953ad25dae53f3f5903a2e5fcafb75b72"
+  },
+  "repository": {
+    "url": "https://github.com/hulkzzhou1/paseo-bot",
+    "commit": "ffedf6a953ad25dae53f3f5903a2e5fcafb75b72"
+  },
+  "categories": [
+    "daemon-management",
+    "orchestration",
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-26T22:18:44Z",
+  "submittedBy": "hulkzzhou1",
+  "publishedAt": "2026-10-27T01:53:58Z",
+  "reviewedAt": "2026-10-27T01:53:58Z"
+}

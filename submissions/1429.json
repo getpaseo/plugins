@@ -1,0 +1,12 @@
+{
+  "issue": 1429,
+  "title": "Tab Namer",
+  "submittedBy": "stv1024",
+  "source": {
+    "kind": "npm",
+    "package": "paseo-tab-namer"
+  },
+  "categories": [
+    "workspaces"
+  ]
+}

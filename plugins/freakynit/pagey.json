@@ -1,0 +1,22 @@
+{
+  "id": "freakynit/pagey",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/freakynit/paseo-pagey.git",
+    "commit": "dc0b168bbbebb8238392adb78bf43815f83edb6b",
+    "tag": "v1.0.0"
+  },
+  "repository": {
+    "url": "https://github.com/freakynit/paseo-pagey",
+    "commit": "dc0b168bbbebb8238392adb78bf43815f83edb6b"
+  },
+  "categories": [
+    "workspaces",
+    "utils",
+    "extras"
+  ],
+  "submittedAt": "2026-10-28T09:31:20Z",
+  "submittedBy": "freakynit",
+  "publishedAt": "2026-10-28T09:39:58Z",
+  "reviewedAt": "2026-10-28T09:39:58Z"
+}

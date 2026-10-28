@@ -1,0 +1,19 @@
+{
+  "id": "talongao/host-sync",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/talongao/paseo-plugin-host-sync.git",
+    "commit": "e40346a7c7ac452d423475b1697a99542cf8481f"
+  },
+  "repository": {
+    "url": "https://github.com/talongao/paseo-plugin-host-sync",
+    "commit": "e40346a7c7ac452d423475b1697a99542cf8481f"
+  },
+  "categories": [
+    "daemon-management"
+  ],
+  "submittedAt": "2026-10-28T06:19:59Z",
+  "submittedBy": "talongao",
+  "publishedAt": "2026-10-28T06:31:24Z",
+  "reviewedAt": "2026-10-28T06:31:24Z"
+}

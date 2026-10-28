@@ -3,6 +3,8 @@ name: Submission
 on:
   issues:
     types: [opened, edited, reopened, labeled]
+  issue_comment:
+    types: [created, edited]
   schedule:
     - cron: "7,37 * * * *"
   workflow_dispatch:
@@ -18,7 +20,7 @@ concurrency:
 
 jobs:
   submit:
-    if: github.event_name != 'issues' || (github.event.issue.state == 'open' && contains(github.event.issue.labels.*.name, 'submission'))
+    if: ${{ !github.event.issue || (github.event.issue.state == 'open' && !github.event.issue.pull_request) }}
     runs-on: ubuntu-latest
     permissions:
       contents: write

@@ -1,7 +1,7 @@
 // Intake records a source for review. Artifact checks belong to the reviewer.
 import { AuthorError } from "./lib/problems.ts";
 import { readCategories } from "./lib/categories.ts";
-import { parseSubmissionIssue } from "./lib/issue.ts";
+import { isSubmissionIssue, parseSubmissionIssue } from "./lib/issue.ts";
 import { writeSubmission } from "./lib/submission.ts";
 import { gh, ghJson, git } from "./lib/shell.ts";
 
@@ -21,15 +21,29 @@ try {
     labels: Array<{ name: string }>; comments?: Array<{ body: string }>;
   }>(["issue", "view", issueNumber, "--json", "body,author,title,state,labels,comments"]);
   comments = issue.comments ?? [];
-  if (issue.state !== "OPEN" || !issue.labels.some((label) => label.name === "submission")) process.exit(0);
+  if (issue.state !== "OPEN" || (!issue.labels.some((label) => label.name === "submission") && !isSubmissionIssue(issue.body))) process.exit(0);
+  if (!issue.labels.some((label) => label.name === "submission"))
+    gh(["issue", "edit", issueNumber, "--add-label", "submission"]);
   const branch = `submit/issue-${issueNumber}`;
-  const previous = ghJson<Array<{ number: number; state: string; url: string }>>([
-    "pr", "list", "--head", branch, "--state", "all", "--json", "number,state,url",
-  ])[0];
+  const previous = ghJson<Array<{ number: number; state: string; url: string; closedAt: string | null }>>([
+    "pr", "list", "--head", branch, "--state", "all", "--json", "number,state,url,closedAt",
+  ]).sort((a, b) => b.number - a.number);
+  const active = previous.find(pr => pr.state !== "CLOSED");
+  const latest = previous[0];
   // The reviewer owns the branch once a PR exists. Read later author edits from the issue.
-  if (previous) {
-    console.log(`Already in review: ${previous.url}`);
+  if (active) {
+    console.log(`Already in review: ${active.url}`);
     process.exit(0);
+  }
+  if (latest) {
+    const result = ghJson<{ data: { repository: { issue: {
+      lastEditedAt: string | null;
+      comments: { nodes: Array<{ createdAt: string; author: { __typename: string } | null }> };
+    } } } }>(["api", "graphql", "-F", `number=${issueNumber}`, "-f", `query=query($number:Int!){repository(owner:"getpaseo",name:"plugins"){issue(number:$number){lastEditedAt comments(last:100){nodes{createdAt author{__typename}}}}}}`]);
+    const activity = result.data.repository.issue;
+    const dates = [activity.lastEditedAt, ...activity.comments.nodes
+      .filter(c => c.author?.__typename === "User").map(c => c.createdAt)];
+    if (!latest.closedAt || !dates.some(date => date && date > latest.closedAt!)) process.exit(0);
   }
   const submission = parseSubmissionIssue(issue.body, readCategories());
   git(["checkout", "-B", branch, "origin/main"]);

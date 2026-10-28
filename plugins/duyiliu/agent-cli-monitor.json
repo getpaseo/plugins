@@ -1,0 +1,27 @@
+{
+  "id": "duyiliu/agent-cli-monitor",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/duyiliu/agent-cli-monitor.git",
+    "commit": "af706252706ed3e3feba45920dd560345b7f1b7a",
+    "tag": "v0.1.1"
+  },
+  "repository": {
+    "url": "https://github.com/duyiliu/agent-cli-monitor",
+    "commit": "af706252706ed3e3feba45920dd560345b7f1b7a"
+  },
+  "categories": [
+    "daemon-management",
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-28T01:03:22Z",
+  "submittedBy": "duyiliu",
+  "publishedAt": "2026-10-28T03:32:21Z",
+  "reviewedAt": "2026-10-28T03:32:21Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/duyiliu/agent-cli-monitor/092f07f19be8e11c42b2d41b2e48b06363a8d35a/assets/detail-screen.png"
+    ]
+  }
+}

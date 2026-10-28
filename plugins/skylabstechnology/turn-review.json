@@ -1,0 +1,30 @@
+{
+  "id": "skylabstechnology/turn-review",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/SkylabsTechnology/turn-review.git",
+    "commit": "04aa8265417d20d9d455cfb4e55408f2e4d31ee7",
+    "pluginPath": "plugin"
+  },
+  "repository": {
+    "url": "https://github.com/SkylabsTechnology/turn-review",
+    "commit": "04aa8265417d20d9d455cfb4e55408f2e4d31ee7"
+  },
+  "categories": [
+    "git",
+    "workspaces",
+    "sidebar",
+    "extras",
+    "utils"
+  ],
+  "submittedAt": "2026-10-26T23:02:04Z",
+  "submittedBy": "SkylabsTechnology",
+  "publishedAt": "2026-10-28T00:01:56Z",
+  "reviewedAt": "2026-10-28T00:01:56Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/SkylabsTechnology/turn-review/ccfcfa0c1760f4d7a9c633c4c6d350b3b3cbb93b/plugin/assets/turn-review-main.png",
+      "https://raw.githubusercontent.com/SkylabsTechnology/turn-review/ccfcfa0c1760f4d7a9c633c4c6d350b3b3cbb93b/plugin/assets/full-file-diff-view.png"
+    ]
+  }
+}

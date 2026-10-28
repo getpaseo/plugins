@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "@omercnet/paseo-gas-city",
-    "version": "2.0.2",
-    "resolved": "https://registry.npmjs.org/@omercnet/paseo-gas-city/-/paseo-gas-city-2.0.2.tgz",
-    "integrity": "sha512-Atmn1sJrcmFO8IWJD8UbxDVChykxOQVXSknMcgwOhwxlQd36fy675LWh5ve8qVyoQ1Zfjx9ddPMOOklAkllQaA=="
+    "version": "2.0.3",
+    "resolved": "https://registry.npmjs.org/@omercnet/paseo-gas-city/-/paseo-gas-city-2.0.3.tgz",
+    "integrity": "sha512-8R3vSK4fmUZ/+hE3PmcPVqKn6VvB3VM2JJV7Eu2a6Gukl0vqsNzx6cd+hv7VsbW22ooiGJ173wnJe2rhhezFCQ=="
   },
   "repository": {
     "url": "https://github.com/omercnet/paseo-plugins/tree/HEAD/paseo-gas-city",
-    "commit": "e5ee789cf0a774af972ab37d913950bdb7dfc2a4"
+    "commit": "f1048d3cfa527a2c489fad2d1cdb799af6d8d2d1"
   },
   "categories": [
     "orchestration",
@@ -18,7 +18,7 @@
   "submittedAt": "2026-09-11",
   "submittedBy": "omercnet",
   "publishedAt": "2026-09-11",
-  "reviewedAt": "2026-10-24T19:35:50Z",
+  "reviewedAt": "2026-10-27T21:26:43Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/omercnet/paseo-plugins/10766d8374dd543ba36a66c2028c3ac3316c4633/paseo-gas-city/docs/images/paseo-gas-city-wide-overview.png",

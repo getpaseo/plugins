@@ -3,12 +3,13 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/wilgon456/Paseobility.git",
-    "commit": "2ec7d0385a207ceef42c1ed8982b89f75bf02287",
-    "pluginPath": "plugin"
+    "commit": "30a1b6dab7c5e2301c8d6615adefd0b907d0c936",
+    "pluginPath": "plugin",
+    "tag": "v2.12.10"
   },
   "repository": {
     "url": "https://github.com/wilgon456/Paseobility",
-    "commit": "2ec7d0385a207ceef42c1ed8982b89f75bf02287"
+    "commit": "30a1b6dab7c5e2301c8d6615adefd0b907d0c936"
   },
   "categories": [
     "sidebar",
@@ -17,5 +18,5 @@
   "submittedAt": "2026-10-20T22:31:42Z",
   "submittedBy": "wilgon456",
   "publishedAt": "2026-10-20T22:31:42Z",
-  "reviewedAt": "2026-10-27T13:12:00Z"
+  "reviewedAt": "2026-10-28T13:12:46Z"
 }

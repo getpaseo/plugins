@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "@omercnet/paseo-tell-agent",
-    "version": "1.2.3",
-    "resolved": "https://registry.npmjs.org/@omercnet/paseo-tell-agent/-/paseo-tell-agent-1.2.3.tgz",
-    "integrity": "sha512-6fXngPbrjkPPzoZfHAg6gc9WxgsHcRGaXCtGNTY56PrA7NRPVfgswQp36GdJRfaIEvCoESRuwbRoqCGdkwJoQg=="
+    "version": "1.2.4",
+    "resolved": "https://registry.npmjs.org/@omercnet/paseo-tell-agent/-/paseo-tell-agent-1.2.4.tgz",
+    "integrity": "sha512-KW7MT/p6I2URNPzX0nRjPfD27xqo+nMhZOGKxEjcqh5VhrgOdqBG+ySNxnaMrogMB8Sm99hQE+PhhBcaXGMXVA=="
   },
   "repository": {
     "url": "https://github.com/omercnet/paseo-plugins/tree/HEAD/tell-agent",
-    "commit": "e5ee789cf0a774af972ab37d913950bdb7dfc2a4"
+    "commit": "f1048d3cfa527a2c489fad2d1cdb799af6d8d2d1"
   },
   "categories": [
     "orchestration"
@@ -17,7 +17,7 @@
   "submittedAt": "2026-09-10",
   "submittedBy": "omercnet",
   "publishedAt": "2026-09-10",
-  "reviewedAt": "2026-10-24T19:36:40Z",
+  "reviewedAt": "2026-10-27T21:28:28Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/tell-agent/docs/images/tell-agent-picker.png",

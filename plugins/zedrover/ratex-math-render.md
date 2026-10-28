@@ -1,4 +1,4 @@
-RaTeX renders LaTeX formulas in Paseo conversations. Inline and display math in assistant and user messages is drawn as typeset formulas, and copying a selection gives back the original TeX. The manifest targets Paseo 0.8.0 or newer, with no upper version bound.
+RaTeX renders LaTeX formulas in Paseo conversations. Inline and display math in assistant and user messages is drawn as typeset formulas, and copying a selection gives back the original TeX. The manifest targets Paseo 0.13.0 or newer, with no upper version bound.
 
 Rendering happens on the web client only. The daemon turns each formula into drawing instructions using the plugin's bundled `ratex-wasm` module, and the web client draws them with bundled math fonts, so nothing is fetched from a CDN. Native iOS and Android clients show the TeX source instead. Formulas over 4096 characters are rejected.
 

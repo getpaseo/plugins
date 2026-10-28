@@ -63,13 +63,13 @@ function fixture(t: TestContext, source: string) {
   writeFileSync(join(bin, "gh"), `#!${process.execPath}\nconst fs = require("node:fs");
 const args = process.argv.slice(2);
 fs.appendFileSync(process.env.SUBMIT_CALLS, JSON.stringify(args) + "\\n");
-if (args[0] === "issue" && args[1] === "list") console.log(JSON.stringify([{ number: 42 }]));
+if (args[0] === "issue" && args[1] === "list") console.log(JSON.stringify([{ number: 42, ...JSON.parse(fs.readFileSync(process.env.SUBMIT_ISSUE, "utf8")) }]));
 else if (args[0] === "issue" && args[1] === "view") console.log(fs.readFileSync(process.env.SUBMIT_ISSUE, "utf8"));
 else if (args[0] === "pr" && args[1] === "list") console.log(fs.readFileSync(process.env.SUBMIT_PREVIOUS, "utf8"));
 else if (args[0] === "pr" && args[1] === "create") console.log("https://github.com/acme/registry/pull/1");
 else if (args[0] === "pr" && args[1] === "edit") {}
 else if (args[0] === "api") {
-  const status = Number(fs.readFileSync(process.env.SUBMIT_MEMBERSHIP, "utf8"));
+  if (args[1] === "graphql") { const value = fs.readFileSync(process.env.SUBMIT_MEMBERSHIP, "utf8"); console.log(value === "204" ? JSON.stringify({data:{repository:{issue:{lastEditedAt:null,comments:{nodes:[]}}}}}) : value); process.exit(0); }\n  const status = Number(fs.readFileSync(process.env.SUBMIT_MEMBERSHIP, "utf8"));
   console.log("HTTP/2.0 " + status);
   process.exit(status === 204 ? 0 : 1);
 }
@@ -153,15 +153,14 @@ test("unreviewed submissions cannot be published as approved listings", (t) => {
   assert.match(result.stderr, /review.*submission|submission.*review/i);
 });
 
-for (const scenario of ["closed issue", "missing label", "closed PR", "merged PR"]) {
+for (const scenario of ["closed issue", "closed PR", "merged PR"]) {
   test(`intake leaves a ${scenario} alone`, (t) => {
     const f = fixture(t, "github:acme/example");
     if (scenario === "closed issue") writeFileSync(f.issueFile, JSON.stringify({ ...f.issue, state: "CLOSED" }));
-    if (scenario === "missing label") writeFileSync(f.issueFile, JSON.stringify({ ...f.issue, labels: [] }));
     if (scenario.endsWith("PR")) writeFileSync(f.previousFile, JSON.stringify([{ number: 1, state: scenario === "closed PR" ? "CLOSED" : "MERGED", url: "https://github.com/acme/registry/pull/1" }]));
     const result = f.run();
     assert.equal(result.status, 0, result.stderr);
-    assert.equal(f.calls().every((a) => a[1] === "view" || a[1] === "list"), true);
+    assert.equal(f.calls().every((a) => a[1] === "view" || a[1] === "list" || a[0] === "api"), true);
   });
 }
 
@@ -169,7 +168,7 @@ for (const scenario of ["closed issue", "missing label", "closed PR", "merged PR
 test("recovery opens waiting submissions and skips branches already in review", (t) => {
   const f = fixture(t, "github:acme/example");
   assert.equal(f.run("retry-submissions").status, 0);
-  writeFileSync(f.previousFile, JSON.stringify([{ headRefName: "submit/issue-42" }]));
+  writeFileSync(f.previousFile, JSON.stringify([{ headRefName: "submit/issue-42", state: "OPEN" }]));
   assert.equal(f.run("retry-submissions").status, 0);
   assert.equal(f.calls().filter((a) => a[0] === "pr" && a[1] === "create").length, 1);
 });
@@ -194,4 +193,54 @@ test("repeated invalid input does not repeat the same author request", (t) => {
   writeFileSync(f.issueFile, JSON.stringify({ ...issue, comments: [{ body: message }] }));
   assert.equal(f.run().status, 1);
   assert.equal(f.calls().filter((a) => a[1] === "comment").length, 1);
+});
+
+for (const source of [
+  "https://github.com/acme/example at commit `355eb2af7953163e1d2e54a56193291bade13e94`",
+  "https://github.com/acme/example (commit 355eb2af7953163e1d2e54a56193291bade13e94, branch main)",
+  "https://github.com/acme/example\n\n`355eb2af7953163e1d2e54a56193291bade13e94`",
+]) test(`unlabeled recovery preserves the separately supplied commit: ${source}`, (t) => {
+  const f = fixture(t, source);
+  writeFileSync(f.issueFile, JSON.stringify({ ...f.issue, labels: [] }));
+  assert.equal(f.run("retry-submissions").status, 0);
+  const record = JSON.parse(readFileSync(join(f.registry, "submissions/42.json"), "utf8"));
+  assert.equal(record.source.ref, "355eb2af7953163e1d2e54a56193291bade13e94");
+  assert.ok(f.calls().some(a => a.includes("--add-label") && a.includes("submission")));
+  assert.ok(!f.calls().find(a => a[0] === "issue" && a[1] === "list").includes("--label"));
+});
+
+test("plain Source heading accepts npm followed by repository context", (t) => {
+  const f = fixture(t, "npm:@acme/example");
+  writeFileSync(f.issueFile, JSON.stringify({ ...f.issue, labels: [], body: "Source:\nnpm:@acme/example\nhttps://github.com/acme/example\n\nCategories:\n- [x] Utils" }));
+  assert.equal(f.run().status, 0);
+  assert.equal(JSON.parse(readFileSync(join(f.registry, "submissions/42.json"), "utf8")).source.package, "@acme/example");
+});
+
+for (const activity of ["edit", "reply"]) test(`recovery retries a closed PR after a later ${activity}`, (t) => {
+  const f = fixture(t, "github:acme/example");
+  writeFileSync(f.previousFile, JSON.stringify([{ headRefName: "submit/issue-42", number: 1, state: "CLOSED", closedAt: "2026-01-01T00:00:00Z", url: "https://github.com/acme/registry/pull/1" }]));
+  writeFileSync(f.membershipFile, JSON.stringify({ data: { repository: { issue: {
+    lastEditedAt: activity === "edit" ? "2026-02-01T00:00:00Z" : null,
+    comments: { nodes: activity === "reply" ? [{ createdAt: "2026-02-01T00:00:00Z", author: { __typename: "User" } }] : [] },
+  } } } }));
+  assert.equal(f.run("retry-submissions").status, 0);
+  assert.ok(f.calls().some(a => a[0] === "pr" && a[1] === "create"));
+});
+
+test("ordinary issues are ignored without labels or comments", (t) => {
+  const f = fixture(t, "github:acme/example");
+  writeFileSync(f.issueFile, JSON.stringify({ ...f.issue, labels: [], body: "Something is broken" }));
+  assert.equal(f.run("retry-submissions").status, 0);
+  assert.equal(f.run().status, 0);
+  assert.ok(f.calls().every(a => a[1] === "list" || a[1] === "view"));
+});
+
+test("bot replies after closure do not reopen a stale submission", (t) => {
+  const f = fixture(t, "github:acme/example");
+  writeFileSync(f.previousFile, JSON.stringify([{ number: 1, state: "CLOSED", closedAt: "2026-01-01T00:00:00Z" }]));
+  writeFileSync(f.membershipFile, JSON.stringify({ data: { repository: { issue: {
+    lastEditedAt: "2025-12-01T00:00:00Z", comments: { nodes: [{ createdAt: "2026-02-01T00:00:00Z", author: { __typename: "Bot" } }] },
+  } } } }));
+  assert.equal(f.run().status, 0);
+  assert.ok(!f.calls().some(a => a[0] === "pr" && a[1] === "create"));
 });

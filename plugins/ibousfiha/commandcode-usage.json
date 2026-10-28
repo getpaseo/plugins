@@ -1,0 +1,19 @@
+{
+  "id": "ibousfiha/commandcode-usage",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/ibousfiha/paseo-commandcode-usage.git",
+    "commit": "3fec0f10cb8dc086685e06b74f31bf859e5c49e4"
+  },
+  "repository": {
+    "url": "https://github.com/ibousfiha/paseo-commandcode-usage",
+    "commit": "3fec0f10cb8dc086685e06b74f31bf859e5c49e4"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-28T12:32:30Z",
+  "submittedBy": "ibousfiha",
+  "publishedAt": "2026-10-28T12:32:30Z",
+  "reviewedAt": "2026-10-28T12:32:30Z"
+}

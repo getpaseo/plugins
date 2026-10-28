@@ -1,0 +1,22 @@
+{
+  "id": "yeyan00/team-bots",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/yeyan00/paseo-bots.git",
+    "commit": "1bde7239b3ead62bb4541372dae4b43d91d313c9",
+    "tag": "v0.1.1"
+  },
+  "repository": {
+    "url": "https://github.com/yeyan00/paseo-bots",
+    "commit": "1bde7239b3ead62bb4541372dae4b43d91d313c9"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-28T12:38:39Z",
+  "submittedBy": "yeyan00",
+  "publishedAt": "2026-10-28T12:38:39Z",
+  "reviewedAt": "2026-10-28T12:38:39Z"
+}

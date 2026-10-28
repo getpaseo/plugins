@@ -1,0 +1,13 @@
+{
+  "issue": 1428,
+  "title": "Open With",
+  "submittedBy": "stv1024",
+  "source": {
+    "kind": "npm",
+    "package": "paseo-open-with"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ]
+}

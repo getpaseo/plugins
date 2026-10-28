@@ -1,0 +1,20 @@
+{
+  "id": "thisjrodriguez/clusters",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/thisjrodriguez/paseo-plugin-clusters.git",
+    "commit": "eb219a74b058593b1029a61e277a5436733fa617"
+  },
+  "repository": {
+    "url": "https://github.com/thisjrodriguez/paseo-plugin-clusters",
+    "commit": "eb219a74b058593b1029a61e277a5436733fa617"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-28T12:45:20Z",
+  "submittedBy": "thisjrodriguez",
+  "publishedAt": "2026-10-28T12:45:20Z",
+  "reviewedAt": "2026-10-28T12:45:20Z"
+}

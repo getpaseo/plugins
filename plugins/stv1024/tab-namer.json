@@ -1,0 +1,21 @@
+{
+  "id": "stv1024/tab-namer",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-tab-namer",
+    "version": "0.1.0",
+    "resolved": "https://registry.npmjs.org/paseo-tab-namer/-/paseo-tab-namer-0.1.0.tgz",
+    "integrity": "sha512-2GEyttKfAmUfzJBg7tjAo3qHz1ab6cBLcbTDWxJUGwjkOmn83dcnHfKHKSW79yr178a9KEmdO8fD5qTbWgUWzg=="
+  },
+  "repository": {
+    "url": "https://github.com/stv1024/paseo-tab-namer",
+    "commit": "e28f8ea8166a124583b7c83580ab1a5f7cb0b484"
+  },
+  "categories": [
+    "workspaces"
+  ],
+  "submittedAt": "2026-10-28T13:00:59Z",
+  "submittedBy": "stv1024",
+  "publishedAt": "2026-10-28T13:00:59Z",
+  "reviewedAt": "2026-10-28T13:00:59Z"
+}

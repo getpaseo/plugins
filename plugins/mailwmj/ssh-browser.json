@@ -1,0 +1,21 @@
+{
+  "id": "mailwmj/ssh-browser",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/mailwmj/paseo-ssh-browser.git",
+    "commit": "4378b1a41459b1ce61c79b7e4039fc01474b91a5"
+  },
+  "repository": {
+    "url": "https://github.com/mailwmj/paseo-ssh-browser",
+    "commit": "4378b1a41459b1ce61c79b7e4039fc01474b91a5"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-10-28T13:13:43Z",
+  "submittedBy": "mailwmj",
+  "publishedAt": "2026-10-28T13:13:43Z",
+  "reviewedAt": "2026-10-28T13:13:43Z"
+}

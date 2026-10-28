@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/kevinle128/paseo-computer-use.git",
-    "commit": "084e6980c6889c4b4d0be1596376f1126c423904"
+    "commit": "4cdb84ebf1be9e3a28b3779fd4413a86d92261ac"
   },
   "repository": {
     "url": "https://github.com/kevinle128/paseo-computer-use",
-    "commit": "084e6980c6889c4b4d0be1596376f1126c423904"
+    "commit": "4cdb84ebf1be9e3a28b3779fd4413a86d92261ac"
   },
   "categories": [
     "utils"

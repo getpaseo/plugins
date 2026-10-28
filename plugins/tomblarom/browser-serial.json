@@ -1,0 +1,27 @@
+{
+  "id": "tomblarom/browser-serial",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/Tomblarom/paseo.git",
+    "commit": "422f978594c07642f256fc2a2254a2dc159e3768",
+    "pluginPath": "plugin-examples/browser-serial"
+  },
+  "repository": {
+    "url": "https://github.com/Tomblarom/paseo",
+    "commit": "422f978594c07642f256fc2a2254a2dc159e3768"
+  },
+  "categories": [
+    "utils",
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-28T12:34:33Z",
+  "submittedBy": "Tomblarom",
+  "publishedAt": "2026-10-28T12:34:33Z",
+  "reviewedAt": "2026-10-28T12:34:33Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/Tomblarom/paseo/74f57b6d67a2a1e002695e13577152caa7faabb9/docs/qa-evidence/browser-serial/wide-handoff-connected.png",
+      "https://raw.githubusercontent.com/Tomblarom/paseo/74f57b6d67a2a1e002695e13577152caa7faabb9/docs/qa-evidence/browser-serial/compact-handoff-waiting.png"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "issue": 1427,
+  "title": "File Links",
+  "submittedBy": "stv1024",
+  "source": {
+    "kind": "npm",
+    "package": "paseo-file-links"
+  },
+  "categories": [
+    "utils"
+  ]
+}

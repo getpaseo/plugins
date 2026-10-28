@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/sbhas2k/paseo-plugins.git",
-    "commit": "8adc34770b6593228adece5dcdd7dccbfcb062cf",
+    "commit": "21d77dfb454bc9937ade32dc543bfb5abfaaecf6",
     "pluginPath": "agent-rescue"
   },
   "repository": {
     "url": "https://github.com/sbhas2k/paseo-plugins",
-    "commit": "8adc34770b6593228adece5dcdd7dccbfcb062cf"
+    "commit": "21d77dfb454bc9937ade32dc543bfb5abfaaecf6"
   },
   "categories": [
     "daemon-management",
@@ -18,5 +18,5 @@
   "submittedAt": "2026-10-24T02:05:41Z",
   "submittedBy": "sbhas2k",
   "publishedAt": "2026-10-24T02:05:41Z",
-  "reviewedAt": "2026-10-24T02:05:41Z"
+  "reviewedAt": "2026-10-28T12:41:11Z"
 }

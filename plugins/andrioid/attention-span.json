@@ -1,0 +1,21 @@
+{
+  "id": "andrioid/attention-span",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/andrioid/paseo-attention-span.git",
+    "commit": "f6428dbd31a925d56f91e0f4898bb6208780557c"
+  },
+  "repository": {
+    "url": "https://github.com/andrioid/paseo-attention-span",
+    "commit": "f6428dbd31a925d56f91e0f4898bb6208780557c"
+  },
+  "categories": [
+    "git",
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-10-28T13:07:06Z",
+  "submittedBy": "andrioidApacta",
+  "publishedAt": "2026-10-28T13:31:42Z",
+  "reviewedAt": "2026-10-28T13:31:42Z"
+}

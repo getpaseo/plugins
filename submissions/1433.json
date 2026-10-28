@@ -1,0 +1,14 @@
+{
+  "issue": 1433,
+  "title": "Attention Span",
+  "submittedBy": "andrioidApacta",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/andrioid/paseo-attention-span"
+  },
+  "categories": [
+    "git",
+    "sidebar",
+    "utils"
+  ]
+}

@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "@omercnet/paseo-fresh-worktrees",
-    "version": "3.0.3",
-    "resolved": "https://registry.npmjs.org/@omercnet/paseo-fresh-worktrees/-/paseo-fresh-worktrees-3.0.3.tgz",
-    "integrity": "sha512-d0MVIyfPZtP/Vx4U+Xy/z1R0jnATEGFZtnC6YTMBH4khMPVcydv2ddbuR6Bv9fbdxkEqGPeF6oziW0LMWxz3rg=="
+    "version": "3.1.0",
+    "resolved": "https://registry.npmjs.org/@omercnet/paseo-fresh-worktrees/-/paseo-fresh-worktrees-3.1.0.tgz",
+    "integrity": "sha512-kZiGcr3YgiMN7zpWHpG+FKICY68TS8qt+RNvaVU9zB6ABizglSYLtdbgfIK3YKBEyjCR/snZHsUdEalRfl+bIQ=="
   },
   "repository": {
     "url": "https://github.com/omercnet/paseo-plugins/tree/HEAD/fresh-worktrees",
-    "commit": "f1048d3cfa527a2c489fad2d1cdb799af6d8d2d1"
+    "commit": "2d19c7eeb3c873c83b7782b352183e02d1790ffb"
   },
   "categories": [
     "git"
@@ -17,7 +17,7 @@
   "submittedAt": "2026-09-10",
   "submittedBy": "omercnet",
   "publishedAt": "2026-09-10",
-  "reviewedAt": "2026-10-27T21:26:20Z",
+  "reviewedAt": "2026-10-28T21:47:31Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/omercnet/paseo-plugins/10766d8374dd543ba36a66c2028c3ac3316c4633/fresh-worktrees/docs/images/fresh-worktrees-behind.png",

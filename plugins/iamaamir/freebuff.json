@@ -1,0 +1,20 @@
+{
+  "id": "iamaamir/freebuff",
+  "artifact": {
+    "kind": "npm",
+    "package": "@iamaamir/paseo-freebuff",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@iamaamir/paseo-freebuff/-/paseo-freebuff-0.1.1.tgz",
+    "integrity": "sha512-d3Bktpwq1FQNezgPHT1LxCWZO/0Gd0CvbXv9d+pvtXEHwNdD17hzTrSsA2j5zrDjT+rjq8QlkK7w56dAk5tYmw=="
+  },
+  "repository": {
+    "url": "https://github.com/iamaamir/paseo-freebuff-provider"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-28T12:04:50Z",
+  "submittedBy": "iamaamir",
+  "publishedAt": "2026-10-28T12:04:50Z",
+  "reviewedAt": "2026-10-28T12:04:50Z"
+}

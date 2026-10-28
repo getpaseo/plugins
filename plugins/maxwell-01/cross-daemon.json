@@ -17,8 +17,10 @@
   "submittedAt": "2026-09-27",
   "submittedBy": "maxwell-01",
   "publishedAt": "2026-09-27",
-  "reviewedAt": "2026-10-27T21:23:43Z",
+  "reviewedAt": "2026-10-28T20:32:25Z",
   "listing": {
-    "media": []
+    "media": [
+      "https://raw.githubusercontent.com/maxwell-01/maxs-paseo-plugins/cdf6723c9e3daa15ce3d60830f93a1a0edcd638a/cross-daemon/images/settings.png"
+    ]
   }
 }

@@ -1,8 +1,8 @@
-Sayr adds a task board for [Sayr](https://sayr.io) projects inside Paseo. It lists tasks from every organization your Sayr account belongs to, with search and filters. Done and canceled tasks are not shown on the board. Opening a task shows its description and comments, and you can change its status, priority, assignees and labels, create labels, and add comments, all of which write to Sayr. Send to agent starts a new Paseo agent in a project you choose, seeded with the task's title, status, priority, description and recent comments plus optional instructions, and previews the prompt before it is sent.
+Sayr adds a task board for [Sayr](https://sayr.io) projects inside Paseo. It lists tasks from every organization your Sayr account belongs to, with search and filters. Done and canceled tasks are not shown on the board. Opening a task shows its description and comments, and you can change its status, priority, assignees and labels, create labels, and add comments, all of which write to Sayr. Send to agent starts a new Paseo agent in a project you choose, seeded with the task's title, status, priority, description and recent comments plus optional instructions, and previews the prompt before it is sent. That task content and your instructions are sent to the selected agent model provider.
 
 ## Setup
 
-The plugin runs the Sayr CLI on the machine running the Paseo daemon, so an authenticated Sayr CLI must be available there, signed in with an API key from Sayr.io or a self-hosted Sayr instance. The CLI keeps the login. The plugin never sees or stores the key.
+The plugin runs the Sayr CLI on the machine running the Paseo daemon, so an authenticated Sayr CLI must be available there, signed in with an API key from Sayr.io or a self-hosted Sayr instance. Authentication uses the CLI’s existing login; the plugin does not ask you to enter an API key in its settings.
 
 ## Settings
 

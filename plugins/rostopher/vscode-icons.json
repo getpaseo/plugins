@@ -1,0 +1,19 @@
+{
+  "id": "rostopher/vscode-icons",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/Rostopher/paseo-vscode-icons.git",
+    "commit": "08fd04864df953e13b99e75352d8dfdd3e5fb18e"
+  },
+  "repository": {
+    "url": "https://github.com/Rostopher/paseo-vscode-icons",
+    "commit": "08fd04864df953e13b99e75352d8dfdd3e5fb18e"
+  },
+  "categories": [
+    "extras"
+  ],
+  "submittedAt": "2026-10-28T12:09:09Z",
+  "submittedBy": "Rostopher",
+  "publishedAt": "2026-10-28T12:09:09Z",
+  "reviewedAt": "2026-10-28T12:09:09Z"
+}

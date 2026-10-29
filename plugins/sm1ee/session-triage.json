@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/sm1ee/paseo-session-triage.git",
-    "commit": "282ddd0c1a0fc0d531a4543bcdfe0f2d0e514d90",
-    "tag": "v0.3.0"
+    "commit": "f659d9f48f0c91fb10989364bcb70513106ab460",
+    "tag": "v0.4.0"
   },
   "repository": {
     "url": "https://github.com/sm1ee/paseo-session-triage",
-    "commit": "282ddd0c1a0fc0d531a4543bcdfe0f2d0e514d90"
+    "commit": "f659d9f48f0c91fb10989364bcb70513106ab460"
   },
   "categories": [
     "sidebar",

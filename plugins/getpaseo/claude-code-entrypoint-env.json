@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/getpaseo/claude-code-entrypoint-env.git",
-    "commit": "c4791113380da3cf811685096a427d5ed5c7e94d",
-    "tag": "v1.0.0"
+    "commit": "ad4d5055d2f717408f869f6c18ef5b97b5fdd5b1",
+    "tag": "v1.0.1"
   },
   "repository": {
     "url": "https://github.com/getpaseo/claude-code-entrypoint-env",
-    "commit": "c4791113380da3cf811685096a427d5ed5c7e94d"
+    "commit": "ad4d5055d2f717408f869f6c18ef5b97b5fdd5b1"
   },
   "categories": [
     "utils"
@@ -16,5 +16,5 @@
   "submittedAt": "2026-10-29T04:31:03Z",
   "submittedBy": "boudra",
   "publishedAt": "2026-10-29T04:31:03Z",
-  "reviewedAt": "2026-10-29T04:31:03Z"
+  "reviewedAt": "2026-10-29T05:13:06Z"
 }

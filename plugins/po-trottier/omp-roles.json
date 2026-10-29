@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/po-trottier/paseo-omp-roles.git",
-    "commit": "18e56e10cb854a7b416b364c3bed361b8a57fc06"
+    "commit": "9e1254c07594a4fc3dd6c2fe241b9e0b722be098"
   },
   "repository": {
     "url": "https://github.com/po-trottier/paseo-omp-roles",
-    "commit": "18e56e10cb854a7b416b364c3bed361b8a57fc06"
+    "commit": "9e1254c07594a4fc3dd6c2fe241b9e0b722be098"
   },
   "categories": [
     "providers",

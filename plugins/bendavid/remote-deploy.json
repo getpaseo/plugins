@@ -1,0 +1,20 @@
+{
+  "id": "bendavid/remote-deploy",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/bendavid/paseo-remote-deploy.git",
+    "commit": "d84989a6eb2e75b48125eab43ef26d3a14d4217f",
+    "tag": "v0.1.0"
+  },
+  "repository": {
+    "url": "https://github.com/bendavid/paseo-remote-deploy",
+    "commit": "d84989a6eb2e75b48125eab43ef26d3a14d4217f"
+  },
+  "categories": [
+    "daemon-management"
+  ],
+  "submittedAt": "2026-10-29T08:32:58Z",
+  "submittedBy": "bendavid",
+  "publishedAt": "2026-10-29T09:04:54Z",
+  "reviewedAt": "2026-10-29T09:04:54Z"
+}

@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "@drungrin/paseo-sbx",
-    "version": "0.1.1",
-    "resolved": "https://registry.npmjs.org/@drungrin/paseo-sbx/-/paseo-sbx-0.1.1.tgz",
-    "integrity": "sha512-fyiyneap2k4QVTTCyiButbMWqbB9PNisCKQoCMFOXtgSSvCxblz3kCN9+H0vkd7hgDX2CABL50ogaui9MTVs2w=="
+    "version": "0.2.2",
+    "resolved": "https://registry.npmjs.org/@drungrin/paseo-sbx/-/paseo-sbx-0.2.2.tgz",
+    "integrity": "sha512-nTy8H7wSZcivyk/8HPtf2hudrwjG0A5/LngLq8N5Gxy0b3V2b1IP8pDjSvX2632hT8bBSryX8XPpJNKdDp/cYg=="
   },
   "repository": {
     "url": "https://github.com/drungrin/paseo-sbx"
@@ -18,5 +18,5 @@
   "submittedAt": "2026-10-27T14:45:48Z",
   "submittedBy": "drungrin",
   "publishedAt": "2026-10-27T23:31:30Z",
-  "reviewedAt": "2026-10-27T23:31:30Z"
+  "reviewedAt": "2026-10-29T11:36:38Z"
 }

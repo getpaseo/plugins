@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-tab-namer",
-    "version": "0.1.0",
-    "resolved": "https://registry.npmjs.org/paseo-tab-namer/-/paseo-tab-namer-0.1.0.tgz",
-    "integrity": "sha512-2GEyttKfAmUfzJBg7tjAo3qHz1ab6cBLcbTDWxJUGwjkOmn83dcnHfKHKSW79yr178a9KEmdO8fD5qTbWgUWzg=="
+    "version": "0.2.0",
+    "resolved": "https://registry.npmjs.org/paseo-tab-namer/-/paseo-tab-namer-0.2.0.tgz",
+    "integrity": "sha512-byB7CpN3VVv6qlEtm7p8s7OsQkje5IcdzzFtMyv9Z40ojByAhtWfLuxxgsOGWjZmHTGSJx9Z1WbXtkLRnsVbzQ=="
   },
   "repository": {
     "url": "https://github.com/stv1024/paseo-tab-namer",
-    "commit": "e28f8ea8166a124583b7c83580ab1a5f7cb0b484"
+    "commit": "b19a451200ec8c4a212f8d8ce657ad8609c90593"
   },
   "categories": [
     "workspaces"
@@ -17,5 +17,5 @@
   "submittedAt": "2026-10-28T13:00:59Z",
   "submittedBy": "stv1024",
   "publishedAt": "2026-10-28T13:00:59Z",
-  "reviewedAt": "2026-10-28T13:00:59Z"
+  "reviewedAt": "2026-10-29T11:38:52Z"
 }

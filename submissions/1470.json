@@ -1,0 +1,13 @@
+{
+  "issue": 1470,
+  "title": "OMP Roles",
+  "submittedBy": "po-trottier",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/po-trottier/paseo-omp-roles"
+  },
+  "categories": [
+    "providers",
+    "utils"
+  ]
+}

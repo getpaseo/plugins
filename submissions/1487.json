@@ -1,0 +1,13 @@
+{
+  "issue": 1487,
+  "title": "Remote Deploy",
+  "submittedBy": "bendavid",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/bendavid/paseo-remote-deploy",
+    "ref": "v0.1.0"
+  },
+  "categories": [
+    "daemon-management"
+  ]
+}

@@ -36,6 +36,16 @@ are never scanned for newer tags or commits by the bump workflow.
 
 See [BOTS.md](BOTS.md) for the workflow and reviewer responsibilities.
 
+## Remove your listing
+
+Open a [blank issue](https://github.com/getpaseo/plugins/issues/new) naming your
+plugin ID and why you want it removed, or submit a removal PR. For example:
+“Please remove `owner/plugin`, because it is no longer maintained.” Use a blank
+issue rather than the submission form. The reviewer verifies that the request
+comes from the established author before removing the listing. Unclear ownership
+needs confirmation. Catalog removal leaves npm packages, source repositories and
+installed copies intact.
+
 ## Records
 
 Keep records in `plugins/<owner>/<slug>.json`. The owner is the GitHub repository

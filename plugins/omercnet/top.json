@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "@omercnet/paseo-top",
-    "version": "1.0.2",
-    "resolved": "https://registry.npmjs.org/@omercnet/paseo-top/-/paseo-top-1.0.2.tgz",
-    "integrity": "sha512-RLMJ+nX6PQzZDewihthIwSiFf1bhvta1BHWr/O2NL6RTLeNBue6qMl3Uu3gb/nyHQYLBlYpOYq0d9GiooCg7Fw=="
+    "version": "1.1.0",
+    "resolved": "https://registry.npmjs.org/@omercnet/paseo-top/-/paseo-top-1.1.0.tgz",
+    "integrity": "sha512-OS4XAJIkZxYT6JVQrYIezCGOitK9t3eIuMzJnJsNp+l+jTCqhoOFGfnHFDm6HpETGtsoIwqkYzctCha9cwmGtA=="
   },
   "repository": {
     "url": "https://github.com/omercnet/paseo-plugins/tree/HEAD/top",
-    "commit": "f1048d3cfa527a2c489fad2d1cdb799af6d8d2d1"
+    "commit": "2d19c7eeb3c873c83b7782b352183e02d1790ffb"
   },
   "categories": [
     "sidebar",
@@ -18,5 +18,5 @@
   "submittedAt": "2026-10-18T06:32:51Z",
   "submittedBy": "omercnet",
   "publishedAt": "2026-10-18T06:32:51Z",
-  "reviewedAt": "2026-10-27T21:28:49Z"
+  "reviewedAt": "2026-10-28T21:49:48Z"
 }

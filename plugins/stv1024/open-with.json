@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-open-with",
-    "version": "0.1.0",
-    "resolved": "https://registry.npmjs.org/paseo-open-with/-/paseo-open-with-0.1.0.tgz",
-    "integrity": "sha512-kyTEsIG6CNJx9vPGd9eY3cwuQaBwW9YxRVWDFeKuaPOPpdmwp7LhpnvAbA3DgB19bgBg3Ap9c2I/q/QhwEASKA=="
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/paseo-open-with/-/paseo-open-with-0.1.1.tgz",
+    "integrity": "sha512-naKa6VDdGAJ0YB9JdsAW4/W55eMtFoFiY68NtGVzVMjPQDtPl75kCnlDLsL91x+62iYQxWmVrRKe0ddK7hvUPw=="
   },
   "repository": {
     "url": "https://github.com/stv1024/paseo-open-with",
-    "commit": "f894ea9b0aeaeb8b3559bbdd9074cc42e3f4e1b1"
+    "commit": "4803b0ef9b84dc255fdb57c89919fa79d3b6ef75"
   },
   "categories": [
     "workspaces",
@@ -18,10 +18,5 @@
   "submittedAt": "2026-10-28T13:04:58Z",
   "submittedBy": "stv1024",
   "publishedAt": "2026-10-28T13:04:58Z",
-  "reviewedAt": "2026-10-28T13:04:58Z",
-  "listing": {
-    "media": [
-      "https://raw.githubusercontent.com/stv1024/paseo-open-with/4803b0ef9b84dc255fdb57c89919fa79d3b6ef75/docs/images/menu.png"
-    ]
-  }
+  "reviewedAt": "2026-10-28T21:50:09Z"
 }

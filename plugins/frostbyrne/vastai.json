@@ -1,0 +1,21 @@
+{
+  "id": "frostbyrne/vastai",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/Frostbyrne/paseo-vastai.git",
+    "commit": "b60e48af83c630552f2576cda4bc7d1904e51b70",
+    "tag": "v0.1.0"
+  },
+  "repository": {
+    "url": "https://github.com/Frostbyrne/paseo-vastai",
+    "commit": "b60e48af83c630552f2576cda4bc7d1904e51b70"
+  },
+  "categories": [
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-10-29T16:31:24Z",
+  "submittedBy": "Frostbyrne",
+  "publishedAt": "2026-10-29T16:31:24Z",
+  "reviewedAt": "2026-10-29T16:31:24Z"
+}

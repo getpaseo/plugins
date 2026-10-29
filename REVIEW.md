@@ -200,8 +200,8 @@ the author can act on.
 Reserve `needs-maintainer` for credible malicious behavior, a serious safety concern, or a
 decision about an already published unsafe version that exceeds the reviewer's authority.
 State the evidence and the decision needed. Routine editorial judgments, incomplete work,
-optional improvements and speculative concerns are not maintainer decisions. Never delist
-an existing plugin automatically.
+optional improvements and speculative concerns are not maintainer decisions. Delist only
+on a verified author request under Catalog removal below.
 
 Clearly malicious or deceptive submissions may be closed with the evidence and a concise
 explanation. For a serious unresolved safety concern, hold publication and ask the maintainer
@@ -229,3 +229,22 @@ Mention the human submitter with `@login` in every public review outcome,
 including approval. Use the linked submission issue's author, or the recorded
 `submittedBy` for bumps. An automation account that opened the PR is not the
 human submitter. Read the issue and PR replies before posting an outcome.
+
+## Catalog removal
+
+An author can request removal by PR or a short issue naming the plugin ID and
+reason. Verify the requester's GitHub account ID from the API against the author
+of the accepted original submission issue or PR, or the current author established
+by a maintainer-confirmed transfer. Check this against current registry ownership
+evidence. A matching username, directory name or `submittedBy` alone does not
+establish authorship.
+Missing or conflicting evidence stops automatic removal; request confirmation
+from the established author or a maintainer decision. Another user's request
+cannot authorize removal.
+
+For a verified request, reuse an existing removal PR or create one linked to the
+issue. Remove only that plugin's record, registry overviews (including translations)
+and featured entry if present. Run trusted registry validation and merge only the
+reviewed head after required checks pass. Removal needs no plugin artifact review.
+Confirm publication before reporting the listing removed. This removes the catalog
+listing only, not npm packages, source repositories or installed copies.

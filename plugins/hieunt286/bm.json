@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-bm-plugin",
-    "version": "0.6.0",
-    "resolved": "https://registry.npmjs.org/paseo-bm-plugin/-/paseo-bm-plugin-0.6.0.tgz",
-    "integrity": "sha512-ZVjCnNAkRVltUahR7amBsfaKn8MLoSg52o+vyUDZFl4RDjVLoOwxUX2RsI3A0cWVF4lwHWmCjof6OHygaU4i0g=="
+    "version": "0.7.0",
+    "resolved": "https://registry.npmjs.org/paseo-bm-plugin/-/paseo-bm-plugin-0.7.0.tgz",
+    "integrity": "sha512-+A1BkZbnNJW7IXtkfDcZ4fLi4M2s8b0yOUZbSMMgtXWE44WJQ/aXZCQJQv9YpW/DW5R+euhDR7A3srQY3tFMlA=="
   },
   "repository": {
     "url": "https://github.com/hieunt286/paseo-bm/tree/HEAD/plugin-package",
-    "commit": "b88d57671ecc2975739212706c6070ddd14c4df1"
+    "commit": "b218bf364c568e92b5b583df6e480b610f2de0ba"
   },
   "categories": [
     "orchestration",
@@ -18,7 +18,7 @@
   "submittedAt": "2026-09-25",
   "submittedBy": "hieunt286",
   "publishedAt": "2026-09-25",
-  "reviewedAt": "2026-10-23T20:31:04Z",
+  "reviewedAt": "2026-10-29T11:37:01Z",
   "listing": {
     "name": "Beads Management",
     "media": [

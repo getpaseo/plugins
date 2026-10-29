@@ -3,25 +3,25 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-session-guard",
-    "version": "0.4.5",
-    "resolved": "https://registry.npmjs.org/paseo-session-guard/-/paseo-session-guard-0.4.5.tgz",
-    "integrity": "sha512-4hhjCmQnrz41AMIYR7ab011fhkJH4fd3n1jBfzjUqXGX4TUEJ3SS5ZwZBAgAx3RRIwshwckDWYiUHI6E4D06Mw=="
+    "version": "0.5.1",
+    "resolved": "https://registry.npmjs.org/paseo-session-guard/-/paseo-session-guard-0.5.1.tgz",
+    "integrity": "sha512-cmSF38ecwEWSfFpNH8k84G23k1nQ0SJYAsrUubW5q6GF+xH18RdeIALqpFXGhYmlBOhPjdRvthg0IeyUEZ0MfA=="
   },
   "repository": {
     "url": "https://github.com/tomgrin10/paseo-session-guard",
-    "commit": "87f58a84c6a97829be22055809e681113258dc2b"
+    "commit": "416a6f7fce4fa3d22636cc4ab9b2d6e415fc529b"
   },
   "categories": [
     "daemon-management"
   ],
   "submittedAt": "2026-10-12T10:24:18Z",
   "submittedBy": "tomgrin10",
-  "reviewedAt": "2026-10-23T13:05:02Z",
+  "publishedAt": "2026-10-23T13:05:02Z",
+  "reviewedAt": "2026-10-29T11:40:28Z",
   "listing": {
     "name": "Session Guard",
     "media": [
       "https://cdn.jsdelivr.net/npm/paseo-session-guard@0.4.5/docs/screenshots/session-guard.png"
     ]
-  },
-  "publishedAt": "2026-10-23T13:05:02Z"
+  }
 }

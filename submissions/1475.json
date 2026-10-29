@@ -1,0 +1,13 @@
+{
+  "issue": 1475,
+  "title": "Claude Code entrypoint environment",
+  "submittedBy": "boudra",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/getpaseo/claude-code-entrypoint-env",
+    "ref": "c4791113380da3cf811685096a427d5ed5c7e94d"
+  },
+  "categories": [
+    "utils"
+  ]
+}

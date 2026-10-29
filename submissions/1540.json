@@ -1,0 +1,14 @@
+{
+  "issue": 1540,
+  "title": "Weights & Biases runs",
+  "submittedBy": "Frostbyrne",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/Frostbyrne/paseo-wandb",
+    "ref": "v0.1.0"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ]
+}

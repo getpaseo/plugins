@@ -1,0 +1,26 @@
+{
+  "id": "po-trottier/omp-roles",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/po-trottier/paseo-omp-roles.git",
+    "commit": "18e56e10cb854a7b416b364c3bed361b8a57fc06"
+  },
+  "repository": {
+    "url": "https://github.com/po-trottier/paseo-omp-roles",
+    "commit": "18e56e10cb854a7b416b364c3bed361b8a57fc06"
+  },
+  "categories": [
+    "providers",
+    "utils"
+  ],
+  "submittedAt": "2026-10-29T02:31:26Z",
+  "submittedBy": "po-trottier",
+  "publishedAt": "2026-10-29T02:31:26Z",
+  "reviewedAt": "2026-10-29T04:34:50Z",
+  "listing": {
+    "description": "Switch an OMP agent\u2019s session between configured model roles from a composer picker.",
+    "media": [
+      "https://raw.githubusercontent.com/po-trottier/paseo-omp-roles/6d64073e5228d5267f3070e60183ef3079d97264/assets/role-picker-desktop.png"
+    ]
+  }
+}

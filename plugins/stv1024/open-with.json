@@ -1,0 +1,22 @@
+{
+  "id": "stv1024/open-with",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-open-with",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/paseo-open-with/-/paseo-open-with-0.1.1.tgz",
+    "integrity": "sha512-naKa6VDdGAJ0YB9JdsAW4/W55eMtFoFiY68NtGVzVMjPQDtPl75kCnlDLsL91x+62iYQxWmVrRKe0ddK7hvUPw=="
+  },
+  "repository": {
+    "url": "https://github.com/stv1024/paseo-open-with",
+    "commit": "4803b0ef9b84dc255fdb57c89919fa79d3b6ef75"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-10-28T13:04:58Z",
+  "submittedBy": "stv1024",
+  "publishedAt": "2026-10-28T13:04:58Z",
+  "reviewedAt": "2026-10-28T21:50:09Z"
+}

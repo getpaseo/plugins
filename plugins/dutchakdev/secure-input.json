@@ -3,12 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-plugin-secure-input",
-    "version": "0.2.0",
-    "resolved": "https://registry.npmjs.org/paseo-plugin-secure-input/-/paseo-plugin-secure-input-0.2.0.tgz",
-    "integrity": "sha512-zBtIB31cC8Y6xAXgLCez4r6lSSd1AKIkvbfZ8ly/WF4s1LU/7T1OY1wez11R0h/a70ZGvTnSv+3JE2qoHc3K9A=="
+    "version": "0.2.1",
+    "resolved": "https://registry.npmjs.org/paseo-plugin-secure-input/-/paseo-plugin-secure-input-0.2.1.tgz",
+    "integrity": "sha512-+Sj11RCZAtRoAFp8aVOQQ9p4AqGDYwcrKQ7HwphW4j9Hmg9bOYpco/ct17i6iNY4fDZ/Mo5OGQ7Kz00Bfd5JuA=="
   },
   "repository": {
-    "url": "https://github.com/dutchakdev/paseo-plugin-secure-input"
+    "url": "https://github.com/dutchakdev/paseo-plugin-secure-input",
+    "commit": "7fb1c7965fd653d91498be45dcafc1e167c5acd3"
   },
   "categories": [
     "utils"
@@ -16,7 +17,7 @@
   "submittedAt": "2026-10-28T12:01:16Z",
   "submittedBy": "dutchakdev",
   "publishedAt": "2026-10-28T12:01:16Z",
-  "reviewedAt": "2026-10-28T12:01:16Z",
+  "reviewedAt": "2026-10-28T21:43:51Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/dutchakdev/paseo-plugin-secure-input/c14fba0a86cdee422902009ecae4ae6d0b9b63d5/docs/preview.png"

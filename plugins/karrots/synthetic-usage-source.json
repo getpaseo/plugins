@@ -1,0 +1,20 @@
+{
+  "id": "karrots/synthetic-usage-source",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/karrots/paseo-synthetic-usage-source.git",
+    "commit": "a8274b19f4936759636ee42567cdbdd2116d93a1"
+  },
+  "repository": {
+    "url": "https://github.com/karrots/paseo-synthetic-usage-source",
+    "commit": "a8274b19f4936759636ee42567cdbdd2116d93a1"
+  },
+  "categories": [
+    "providers",
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-28T12:36:24Z",
+  "submittedBy": "karrots",
+  "publishedAt": "2026-10-28T12:36:24Z",
+  "reviewedAt": "2026-10-28T12:36:24Z"
+}

@@ -22,6 +22,7 @@
     "name": "Account Switcher",
     "icon": "https://raw.githubusercontent.com/dutchakdev/paseo-plugin-account-switcher/56583a986d6592fcc53d814b6382839ba8eb8c7e/docs/assets/icon.png",
     "media": [
+      "https://raw.githubusercontent.com/dutchakdev/paseo-plugin-account-switcher/b0f20f7f0a4aceab6d62c95c90b12ad026562532/docs/preview.png",
       "https://raw.githubusercontent.com/dutchakdev/paseo-plugin-account-switcher/1ad84192c6d4ffcbbd59a4c3e0d59025b0801c97/docs/assets/accounts.png",
       "https://raw.githubusercontent.com/dutchakdev/paseo-plugin-account-switcher/1ad84192c6d4ffcbbd59a4c3e0d59025b0801c97/docs/assets/account-dialog.png"
     ]

@@ -1,0 +1,29 @@
+{
+  "id": "hulkzzhou1/tapd-workbench",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/hulkzzhou1/paseo-tapd.git",
+    "commit": "2e233e1fb66a14c1f9ea2baf182c918fdf46a25e"
+  },
+  "repository": {
+    "url": "https://github.com/hulkzzhou1/paseo-tapd",
+    "commit": "2e233e1fb66a14c1f9ea2baf182c918fdf46a25e"
+  },
+  "categories": [
+    "orchestration",
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-10-28T13:06:54Z",
+  "submittedBy": "hulkzzhou1",
+  "publishedAt": "2026-10-28T13:06:54Z",
+  "reviewedAt": "2026-10-28T13:06:54Z",
+  "listing": {
+    "description": "Browse TAPD stories, tasks and bugs, link them to Paseo agents, and submit approved comments, status changes and story field edits.",
+    "translations": {
+      "zh-CN": {
+        "description": "查看 TAPD 需求、任务和缺陷，关联 Paseo Agent，并提交经授权的评论、状态变更和需求字段修改。"
+      }
+    }
+  }
+}

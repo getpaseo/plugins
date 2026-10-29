@@ -1,0 +1,22 @@
+{
+  "id": "ttquoccuong/trail",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/ttquoccuong/paseo-trail.git",
+    "commit": "8e3d25f4270a8e9464559c4eefd2fa3889740a90",
+    "tag": "v0.1.0"
+  },
+  "repository": {
+    "url": "https://github.com/ttquoccuong/paseo-trail",
+    "commit": "8e3d25f4270a8e9464559c4eefd2fa3889740a90"
+  },
+  "categories": [
+    "git",
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-10-28T13:15:38Z",
+  "submittedBy": "ttquoccuong",
+  "publishedAt": "2026-10-28T13:15:38Z",
+  "reviewedAt": "2026-10-28T13:15:38Z"
+}

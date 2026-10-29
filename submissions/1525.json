@@ -1,0 +1,15 @@
+{
+  "issue": 1525,
+  "title": "Paseo Agent Team",
+  "submittedBy": "gyuha",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/gyuha/paseo-agent-team",
+    "ref": "0d256974158893c4af80ca530af42db9d844ce12"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces",
+    "sidebar"
+  ]
+}

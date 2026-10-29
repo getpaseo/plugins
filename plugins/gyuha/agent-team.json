@@ -19,6 +19,9 @@
   "publishedAt": "2026-10-29T07:36:17Z",
   "reviewedAt": "2026-10-29T07:36:17Z",
   "listing": {
-    "description": "Create project teams with a workspace, provider and model for each role, coordinated by an orchestrator agent."
+    "description": "Create project teams with a workspace, provider and model for each role, coordinated by an orchestrator agent.",
+    "media": [
+      "https://raw.githubusercontent.com/gyuha/paseo-agent-team/4107cbb543526b8e60d06ca33a81d52cb940afca/images/create-agent-team.png"
+    ]
   }
 }

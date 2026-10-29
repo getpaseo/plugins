@@ -3,12 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/SeriousM/paseo-sqlite-studio.git",
-    "commit": "762b3fdfa3b4de48a116ec26841b017ad8bc9edf",
-    "tag": "v1.1.2"
+    "commit": "70927b8b170d229d38dadb96a6e5b5906812cded"
   },
   "repository": {
     "url": "https://github.com/SeriousM/paseo-sqlite-studio",
-    "commit": "762b3fdfa3b4de48a116ec26841b017ad8bc9edf"
+    "commit": "70927b8b170d229d38dadb96a6e5b5906812cded"
   },
   "categories": [
     "workspaces",
@@ -18,5 +17,5 @@
   "submittedAt": "2026-10-28T13:46:59Z",
   "submittedBy": "SeriousM",
   "publishedAt": "2026-10-28T14:06:08Z",
-  "reviewedAt": "2026-10-29T17:04:33Z"
+  "reviewedAt": "2026-10-29T22:32:32Z"
 }

@@ -3,25 +3,25 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-transcript-search",
-    "version": "0.2.1",
-    "resolved": "https://registry.npmjs.org/paseo-transcript-search/-/paseo-transcript-search-0.2.1.tgz",
-    "integrity": "sha512-3V1pHnu3O2M/XbnBr1ILDC9fx1pthn9uasEskTPYEIjt2QibgaA2n6JnQNxrW1cErwO+KiFp/JoahTXpAYkOMw=="
+    "version": "0.3.0",
+    "resolved": "https://registry.npmjs.org/paseo-transcript-search/-/paseo-transcript-search-0.3.0.tgz",
+    "integrity": "sha512-KrEAa5u8vvpAb0bn7X3jq0pLneNyhburKLUDVvzOyLxXSaN4nJl1Z5GqkgWD/IgT1xT7dOKijX3vw+MrplGELw=="
   },
   "repository": {
     "url": "https://github.com/tomgrin10/paseo-transcript-search",
-    "commit": "39392e8b9b1f6e640c8b897dd282a976f160fcde"
+    "commit": "9a129c5073364f1b3756daa45cfb97d18cafe8b9"
   },
   "categories": [
     "utils"
   ],
   "submittedAt": "2026-10-12T10:24:18Z",
   "submittedBy": "tomgrin10",
-  "reviewedAt": "2026-10-23T13:05:02Z",
+  "publishedAt": "2026-10-23T13:05:02Z",
+  "reviewedAt": "2026-10-29T11:41:07Z",
   "listing": {
     "name": "Transcript Search",
     "media": [
       "https://cdn.jsdelivr.net/npm/paseo-transcript-search@0.2.1/docs/screenshots/transcript-search.png"
     ]
-  },
-  "publishedAt": "2026-10-23T13:05:02Z"
+  }
 }

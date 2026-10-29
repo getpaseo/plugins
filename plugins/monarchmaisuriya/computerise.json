@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/monarchmaisuriya/computerise.git",
-    "commit": "936f3bf853165de265156969ecc7787c1426708e",
-    "tag": "v0.4.1"
+    "commit": "a9282915c6a4ff06f93d77cca76ea86de8d7b5a5",
+    "tag": "v0.5.0"
   },
   "repository": {
     "url": "https://github.com/monarchmaisuriya/computerise",
-    "commit": "936f3bf853165de265156969ecc7787c1426708e"
+    "commit": "a9282915c6a4ff06f93d77cca76ea86de8d7b5a5"
   },
   "categories": [
     "extras"

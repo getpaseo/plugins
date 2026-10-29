@@ -3,25 +3,25 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-graphite",
-    "version": "0.2.5",
-    "resolved": "https://registry.npmjs.org/paseo-graphite/-/paseo-graphite-0.2.5.tgz",
-    "integrity": "sha512-isDQ3F9f9a91oLUf1vKqJA4MS1dts7BDvQjuOKFuqXC/EPh+0tMTauoVVbv787bX7OL7sKHqfpPajZKtDGKVFw=="
+    "version": "0.3.0",
+    "resolved": "https://registry.npmjs.org/paseo-graphite/-/paseo-graphite-0.3.0.tgz",
+    "integrity": "sha512-4CA9MXCvwudwHDM4cWbZnVMxnczVzNDH9jGobmoX/seY6T0lL8fDZQtjDUy+3vjN2jKKZMfnwjqyANhBtDYhXg=="
   },
   "repository": {
     "url": "https://github.com/tomgrin10/paseo-graphite",
-    "commit": "7b8ebe6cc2fe73ce5b89c7fc32db1d14216b5188"
+    "commit": "b929de460618404ec3b34a7d7e432bb1b349183c"
   },
   "categories": [
     "git"
   ],
   "submittedAt": "2026-09-22",
   "submittedBy": "tomgrin10",
-  "reviewedAt": "2026-10-23T13:05:02Z",
+  "publishedAt": "2026-09-22",
+  "reviewedAt": "2026-10-29T11:39:50Z",
   "listing": {
     "name": "Graphite",
     "media": [
       "https://raw.githubusercontent.com/tomgrin10/paseo-graphite/84952047525a270be397ba7ff2af90e1275e7fed/docs/screenshots/graphite-prs.png"
     ]
-  },
-  "publishedAt": "2026-09-22"
+  }
 }

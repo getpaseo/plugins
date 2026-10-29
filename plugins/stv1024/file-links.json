@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-file-links",
-    "version": "0.2.0",
-    "resolved": "https://registry.npmjs.org/paseo-file-links/-/paseo-file-links-0.2.0.tgz",
-    "integrity": "sha512-f0t4miRJXXP9ESzxurh4/R/cJiEbzcYtPzMkns4F/TCxXKacVN4OdIG+1VXM2/v7o5ol+Mp040yxlcwBQ0HFHQ=="
+    "version": "0.2.1",
+    "resolved": "https://registry.npmjs.org/paseo-file-links/-/paseo-file-links-0.2.1.tgz",
+    "integrity": "sha512-ogqm8Im4Z0XmmXkUpPnhkNQRfFYygcJxv/rWJMam2WBJyMHvIayu/p6JQCkhPAxUWmeb3XTKo3l/C05qZeBxfw=="
   },
   "repository": {
     "url": "https://github.com/stv1024/paseo-file-links",
-    "commit": "1ccdfe36c00c28a030218b4c5c5bc43cd3b21865"
+    "commit": "a2b90eb6e46843ea89c7892bb40ec6c18220de5c"
   },
   "categories": [
     "utils"
@@ -17,5 +17,5 @@
   "submittedAt": "2026-10-28T13:03:36Z",
   "submittedBy": "stv1024",
   "publishedAt": "2026-10-28T13:03:36Z",
-  "reviewedAt": "2026-10-28T13:03:36Z"
+  "reviewedAt": "2026-10-29T11:38:32Z"
 }

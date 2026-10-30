@@ -1,0 +1,14 @@
+{
+  "issue": 1554,
+  "title": "Workspace Sandbox",
+  "submittedBy": "bendavid",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/bendavid/paseo-workspace-sandbox",
+    "ref": "v0.1.0"
+  },
+  "categories": [
+    "providers",
+    "workspaces"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "4fthawaiian/dnd",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/4fthawaiian/paseo-dnd.git",
+    "commit": "9726ee3381a788cdf151a90024066ccaa2e63832"
+  },
+  "repository": {
+    "url": "https://github.com/4fthawaiian/paseo-dnd",
+    "commit": "9726ee3381a788cdf151a90024066ccaa2e63832"
+  },
+  "categories": [
+    "extras"
+  ],
+  "submittedAt": "2026-10-30T09:17:16Z",
+  "submittedBy": "4fthawaiian",
+  "publishedAt": "2026-10-30T09:19:04Z",
+  "reviewedAt": "2026-10-30T09:19:04Z"
+}

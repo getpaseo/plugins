@@ -1,0 +1,24 @@
+{
+  "id": "adrialcaide/nan-usage",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/adrialcaide/paseo-nan-usage.git",
+    "commit": "c266cda3496448f0fdda4442a3acd078c8d8a7af"
+  },
+  "repository": {
+    "url": "https://github.com/adrialcaide/paseo-nan-usage",
+    "commit": "c266cda3496448f0fdda4442a3acd078c8d8a7af"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-30T13:53:32Z",
+  "submittedBy": "adrialcaide",
+  "publishedAt": "2026-10-30T14:01:20Z",
+  "reviewedAt": "2026-10-30T14:01:20Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/adrialcaide/paseo-nan-usage/c266cda3496448f0fdda4442a3acd078c8d8a7af/docs/usage-card.png"
+    ]
+  }
+}

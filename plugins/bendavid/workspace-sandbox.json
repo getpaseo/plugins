@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/bendavid/paseo-workspace-sandbox.git",
-    "commit": "b8cfe16d306efdec067777bbf89181f32eebe9fe",
-    "tag": "v0.1.2"
+    "commit": "895c462b77c607587aeaff0a56532c51bed31aeb",
+    "tag": "v0.2.0"
   },
   "repository": {
     "url": "https://github.com/bendavid/paseo-workspace-sandbox",
-    "commit": "b8cfe16d306efdec067777bbf89181f32eebe9fe"
+    "commit": "895c462b77c607587aeaff0a56532c51bed31aeb"
   },
   "categories": [
     "providers",

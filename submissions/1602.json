@@ -1,0 +1,14 @@
+{
+  "issue": 1602,
+  "title": "Merge celebration",
+  "submittedBy": "ajma",
+  "source": {
+    "kind": "npm",
+    "package": "@ajma/paseo-merge-celebration",
+    "version": "0.1.0"
+  },
+  "categories": [
+    "workspaces",
+    "extras"
+  ]
+}

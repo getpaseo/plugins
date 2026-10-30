@@ -148,9 +148,14 @@ test("reruns preserve reviewer edits on an existing PR", (t) => {
 test("unreviewed submissions cannot be published as approved listings", (t) => {
   const f = fixture(t, "github:acme/example");
   assert.equal(f.run().status, 0);
-  const result = spawnSync(process.execPath, ["scripts/build.ts"], { cwd: f.registry, encoding: "utf8" });
-  assert.notEqual(result.status, 0);
+  // Leave only the proposal; it must never become an approved listing.
+  rmSync(join(f.registry, "plugins/acme/example.json"));
+  const result = spawnSync(process.execPath, ["scripts/build.ts"], {
+    cwd: f.registry, encoding: "utf8", env: { ...process.env, INSTALLS_URL: "data:application/json,{}" },
+  });
+  assert.equal(result.status, 0, result.stderr);
   assert.match(result.stderr, /review.*submission|submission.*review/i);
+  assert.deepEqual(JSON.parse(readFileSync(join(f.registry, "dist/index.json"), "utf8")).plugins, []);
 });
 
 for (const scenario of ["closed issue", "closed PR", "merged PR"]) {

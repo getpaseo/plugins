@@ -217,7 +217,10 @@ export function recordPath(id: string, dir = RECORDS_DIR): string {
   return join(dir, `${id}.json`);
 }
 
-export function readRecords(knownCategories: Set<string>, dir = RECORDS_DIR): PluginRecord[] {
+export function readRecords(
+  knownCategories: Set<string>, dir = RECORDS_DIR,
+  onProblem?: (id: string, error: Error) => void,
+): PluginRecord[] {
   const files = readdirSync(dir, { recursive: true })
     .map(String)
     .filter((name) => name.endsWith(".json"))
@@ -231,10 +234,11 @@ export function readRecords(knownCategories: Set<string>, dir = RECORDS_DIR): Pl
         knownCategories,
       );
       if (`${record.id}.json` !== file)
-        problems.push(`${file}: file name must match id "${record.id}"`);
+        throw new Error(`file name must match id "${record.id}"`);
       records.push(record);
     } catch (error) {
-      problems.push(`${file}: ${(error as Error).message}`);
+      if (onProblem) onProblem(file.slice(0, -5), error as Error);
+      else problems.push(`${file}: ${(error as Error).message}`);
     }
   }
   const ids = new Map<string, number>();
@@ -248,8 +252,16 @@ export function readRecords(knownCategories: Set<string>, dir = RECORDS_DIR): Pl
     if (count > 1) problems.push(`id "${id}" is listed ${count} times`);
   for (const [key, count] of artifacts)
     if (count > 1) problems.push(`${key} is listed ${count} times`);
-  if (problems.length > 0) throw new Error(problems.join("\n"));
-  return records;
+  if (!onProblem && problems.length > 0) throw new Error(problems.join("\n"));
+  if (!onProblem) return records;
+  return records.filter((record) => {
+    const key = artifactKey(record.artifact);
+    if (ids.get(record.id)! > 1 || artifacts.get(key)! > 1) {
+      onProblem(record.id, new Error(`${key} is listed ${artifacts.get(key)} times`));
+      return false;
+    }
+    return true;
+  });
 }
 
 export function serializeRecord(record: PluginRecord): string {

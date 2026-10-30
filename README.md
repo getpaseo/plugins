@@ -255,7 +255,10 @@ by the maintainer add command for GitHub sources. It pins
 that exact reachable commit and records no tag. Without it, the reviewer command resolves the supplied source ref, or `main` when omitted. The manifest and author overview belong at
 the pin, under `--plugin-path` (or the shorthand path) for a monorepo.
 
-Online validation checks records against their pinned artifacts.
+Online validation checks records against their pinned artifacts. Registry-wide online
+validation and publication warn and skip broken plugins, including malformed records
+and unreadable overviews. If every plugin is skipped, the workflow skips upload and deployment,
+preserving the live directory. Shared registry configuration errors still fail the run.
 `--changed` limits online checks to committed record and overview changes since
 the merge base of `origin/main` and `HEAD`; `--base <ref>` selects another base:
 
@@ -266,7 +269,9 @@ node scripts/validate.ts --online --changed
 The same command accepts a registry overview for new submissions and changed
 pins. No import label or validation exception is needed. Submission intake writes `submissions/<issue>.json` rather than an installable
 record. The reviewer replaces it with the pinned record and completes the overview
-before merging. Validation and publication reject unresolved submission files.
+before merging. Changed-record review and offline validation reject unresolved
+submission files. Registry-wide online validation and publication warn about pending
+submissions and continue with approved records; proposals are never published.
 
 When a bump finds the author's overview, its commit removes the registry copy.
 When the file is absent, the bump retains the registry overview for review and
@@ -282,7 +287,8 @@ characters; workflows retain the full diff artifact.
 `dist/index.json` and `dist/plugins/<owner>/<slug>.json` conform to PROTOCOL.md.
 A record whose pinned source cannot be fetched or resolved is left out of that
 publish and logged as `Skipped <id>: <reason>`; the other plugins still deploy.
-The build fails only when no record resolves.
+When no record resolves, the build succeeds and tells the workflow to skip
+upload and deployment, preserving the live directory.
 `REGISTRY_URL` controls the advertised registry base. `INSTALLS_URL` defaults to
 `https://paseo.sh/api/plugins/installs`; an unavailable counter omits `installs`.
 Counts are advisory install requests, including git artifacts. No npm downloads

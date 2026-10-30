@@ -221,12 +221,14 @@ test("build publishes the other plugins when one pinned source cannot be fetched
   writeFileSync(join(f.registry, "plugins/acme/missing.json"), JSON.stringify(missing));
   const env = {
     ...f.env,
+    GITHUB_OUTPUT: join(f.registry, "build-output"),
     GIT_CONFIG_COUNT: "2",
     GIT_CONFIG_KEY_1: `url.file://${join(f.remote, "..", "missing")}.insteadOf`,
     GIT_CONFIG_VALUE_1: "https://github.com/acme/missing.git",
   };
   const build = spawnSync(process.execPath, ["scripts/build.ts"], { cwd: f.registry, env, encoding: "utf8" });
   assert.equal(build.status, 0, build.stderr);
+  assert.equal(readFileSync(env.GITHUB_OUTPUT, "utf8"), "publish=true\n");
   assert.match(build.stderr, /Skipped acme\/missing: .*acme\/missing\.git/);
   assert.match(build.stdout, /1 plugin\(s\), 1 skipped/);
   assert.equal(existsSync(join(f.registry, "dist/plugins/acme/missing.json")), false);
@@ -235,11 +237,13 @@ test("build publishes the other plugins when one pinned source cannot be fetched
   const index = JSON.parse(readFileSync(join(f.registry, "dist/index.json"), "utf8"));
   assert.deepEqual(index.plugins.map((plugin: { id: string }) => plugin.id), ["acme/fixture"]);
 
-  // Every record failing is a registry-wide outage, not a plugin problem: never deploy an empty index.
+  // Even when the last plugin fails, report the skip and produce a valid index.
   rmSync(f.recordPath);
   const empty = spawnSync(process.execPath, ["scripts/build.ts"], { cwd: f.registry, env, encoding: "utf8" });
-  assert.notEqual(empty.status, 0);
+  assert.equal(empty.status, 0, empty.stderr);
+  assert.equal(readFileSync(env.GITHUB_OUTPUT, "utf8"), "publish=true\npublish=false\n");
   assert.match(empty.stderr, /Skipped acme\/missing/);
+  assert.deepEqual(JSON.parse(readFileSync(join(f.registry, "dist/index.json"), "utf8")).plugins, []);
 });
 
 test("localized Git build preserves v1 defaults and selects changes to reviewer translations", (t) => {
@@ -289,3 +293,98 @@ test("localized Git build preserves v1 defaults and selects changes to reviewer 
   const auxiliary = f.cli("validate");
   assert.equal(auxiliary.status, 0, auxiliary.stderr);
 });
+
+
+test("registry-wide validation skips broken pins and media while changed-record review rejects them", (t) => {
+  const f = fixture(t);
+  assert.equal(f.add("--commit", f.commit).status, 0);
+  const missing = structuredClone(f.record());
+  missing.id = "acme/missing";
+  missing.artifact.commit = "0".repeat(40);
+  missing.repository.url = "https://github.com/acme/missing";
+  const media = structuredClone(f.record());
+  media.id = "acme/media";
+  media.repository.url = "https://github.com/acme/media";
+  media.listing = { media: ["https://unreachable.invalid/image.png"] };
+  missing.artifact.remote = "https://github.com/acme/missing.git";
+  media.artifact.remote = "https://github.com/acme/media.git";
+  Object.assign(f.env, {
+    GIT_CONFIG_COUNT: "3",
+    GIT_CONFIG_KEY_1: `url.file://${f.remote}.insteadOf`,
+    GIT_CONFIG_VALUE_1: missing.artifact.remote,
+    GIT_CONFIG_KEY_2: `url.file://${f.remote}.insteadOf`,
+    GIT_CONFIG_VALUE_2: media.artifact.remote,
+  });
+  const git = (...args: string[]) => {
+    const r = spawnSync("git", args, { cwd: f.registry, encoding: "utf8" });
+    assert.equal(r.status, 0, r.stderr);
+  };
+  git("init", "-q");
+  git("config", "user.name", "Test");
+  git("config", "user.email", "test@example.com");
+  git("add", ".");
+  git("commit", "-qm", "healthy registry");
+  git("update-ref", "refs/remotes/origin/main", "HEAD");
+  writeFileSync(join(f.registry, "plugins/acme/missing.json"), JSON.stringify(missing));
+  writeFileSync(join(f.registry, "plugins/acme/media.json"), JSON.stringify(media));
+  git("add", "plugins");
+  git("commit", "-qm", "broken listings");
+
+  const full = f.cli("validate", "--online");
+  assert.equal(full.status, 0, full.stderr);
+  assert.match(full.stderr, /Skipped acme\/missing: .*0000000000000000000000000000000000000000/);
+  assert.match(full.stderr, /Skipped acme\/media: .*media/);
+  assert.match(full.stdout, /1 record\(s\) match their pinned artifacts, 2 skipped/);
+
+  const review = f.cli("validate", "--online", "--changed");
+  assert.notEqual(review.status, 0);
+  assert.match(review.stderr, /acme\/media/);
+  assert.match(review.stderr, /acme\/missing/);
+});
+
+
+for (const failure of ["malformed record", "invalid record", "mismatched id", "unreadable overview", "unreadable translation", "duplicate source", "pending submission"]) {
+  test(`registry-wide validation and publication skip a plugin with ${failure}`, (t) => {
+    const f = fixture(t);
+    assert.equal(f.add("--commit", f.commit).status, 0);
+    const broken = structuredClone(f.record());
+    broken.id = "acme/broken";
+    broken.repository.url = "https://github.com/acme/broken";
+    broken.artifact.remote = "https://github.com/acme/broken.git";
+    Object.assign(f.env, {
+      GIT_CONFIG_COUNT: "2",
+      GIT_CONFIG_KEY_1: `url.file://${f.remote}.insteadOf`,
+      GIT_CONFIG_VALUE_1: broken.artifact.remote,
+    });
+    const path = join(f.registry, "plugins/acme/broken.json");
+    if (failure === "mismatched id") broken.id = "acme/wrong";
+    if (failure === "invalid record") broken.categories = ["unknown-category"];
+    if (failure === "duplicate source") {
+      writeFileSync(join(f.registry, "plugins/acme/duplicate.json"), JSON.stringify({ ...broken, id: "acme/duplicate" }));
+    }
+    if (failure === "pending submission") {
+      mkdirSync(join(f.registry, "submissions"));
+      writeFileSync(join(f.registry, "submissions/123.json"), "{}");
+      broken.artifact.commit = "0".repeat(40);
+    }
+    writeFileSync(path, failure === "malformed record" ? "{" : JSON.stringify(broken));
+    if (failure === "unreadable overview") mkdirSync(path.replace(/\.json$/, ".md"));
+    if (failure === "unreadable translation") mkdirSync(path.replace(/\.json$/, ".fr.md"));
+    const skipped = failure === "duplicate source" ? 2 : 1;
+    const strict = f.cli("validate");
+    assert.notEqual(strict.status, 0, "strict local checks must still reject incomplete or invalid records");
+    // Featuring a failed plugin must not turn its isolation into a registry failure.
+    writeFileSync(join(f.registry, "featured.json"), JSON.stringify(["acme/broken", "acme/fixture"]));
+    const validate = f.cli("validate", "--online");
+    assert.equal(validate.status, 0, validate.stderr);
+    assert.match(validate.stderr, /Skipped acme\/broken:/);
+    assert.ok(validate.stdout.includes(`1 record(s) match their pinned artifacts, ${skipped} skipped`), validate.stdout);
+    const build = f.cli("build");
+    assert.equal(build.status, 0, build.stderr);
+    assert.match(build.stderr, /Skipped acme\/broken:/);
+    assert.ok(build.stdout.includes(`1 plugin(s), ${skipped} skipped`), build.stdout);
+    const index = JSON.parse(readFileSync(join(f.registry, "dist/index.json"), "utf8"));
+    assert.deepEqual(index.plugins.map((plugin: { id: string }) => plugin.id), ["acme/fixture"]);
+    assert.deepEqual(index.featured, ["acme/fixture"]);
+  });
+}

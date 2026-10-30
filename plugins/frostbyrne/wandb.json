@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/Frostbyrne/paseo-wandb.git",
-    "commit": "cd24b86e9018639e68e82a5512f025622c91c458",
-    "tag": "v0.2.1"
+    "commit": "e27c277d99c23d9a6ff5193efaf9f9c9d2c9b72f",
+    "tag": "v0.2.2"
   },
   "repository": {
     "url": "https://github.com/Frostbyrne/paseo-wandb",
-    "commit": "cd24b86e9018639e68e82a5512f025622c91c458"
+    "commit": "e27c277d99c23d9a6ff5193efaf9f9c9d2c9b72f"
   },
   "categories": [
     "workspaces",
@@ -17,5 +17,5 @@
   "submittedAt": "2026-10-29T20:01:52Z",
   "submittedBy": "Frostbyrne",
   "publishedAt": "2026-10-29T20:36:21Z",
-  "reviewedAt": "2026-10-30T03:34:05Z"
+  "reviewedAt": "2026-10-30T14:09:00Z"
 }

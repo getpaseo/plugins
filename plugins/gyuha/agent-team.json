@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/gyuha/paseo-agent-team.git",
-    "commit": "8ee8fec9acba0580e3e4f29c42018eb737c01ba1"
+    "commit": "5e4b815b07a7e06b0aa1f41f016ac4c939e7353a"
   },
   "repository": {
     "url": "https://github.com/gyuha/paseo-agent-team",
-    "commit": "8ee8fec9acba0580e3e4f29c42018eb737c01ba1"
+    "commit": "5e4b815b07a7e06b0aa1f41f016ac4c939e7353a"
   },
   "categories": [
     "orchestration",
@@ -17,10 +17,11 @@
   "submittedAt": "2026-10-29T07:36:17Z",
   "submittedBy": "gyuha",
   "publishedAt": "2026-10-29T07:36:17Z",
-  "reviewedAt": "2026-10-30T01:17:58Z",
+  "reviewedAt": "2026-10-30T02:49:27Z",
   "listing": {
     "description": "Create project teams with a workspace, provider and model for each role, coordinated by an orchestrator agent.",
     "media": [
+      "https://raw.githubusercontent.com/gyuha/paseo-agent-team/5e4b815b07a7e06b0aa1f41f016ac4c939e7353a/images/agent-dashboard.gif",
       "https://raw.githubusercontent.com/gyuha/paseo-agent-team/4107cbb543526b8e60d06ca33a81d52cb940afca/images/create-agent-team.png"
     ]
   }

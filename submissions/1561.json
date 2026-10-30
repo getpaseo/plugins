@@ -1,0 +1,14 @@
+{
+  "issue": 1561,
+  "title": "Update Weights & Biases runs to v0.2.1",
+  "submittedBy": "Frostbyrne",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/Frostbyrne/paseo-wandb",
+    "ref": "v0.2.1"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ]
+}

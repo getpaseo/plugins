@@ -1,0 +1,12 @@
+{
+  "issue": 1590,
+  "title": "Nan.Builders Usage",
+  "submittedBy": "adrialcaide",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/adrialcaide/paseo-nan-usage"
+  },
+  "categories": [
+    "utils"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "bg172/look-at-me",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/bg172/paseo-plugins.git",
+    "commit": "4a7569a562d37b18ba0b8fd029b6ab3d84fcd7d9",
+    "pluginPath": "look-at-me"
+  },
+  "repository": {
+    "url": "https://github.com/bg172/paseo-plugins",
+    "commit": "4a7569a562d37b18ba0b8fd029b6ab3d84fcd7d9"
+  },
+  "categories": [
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-31T14:30:07Z",
+  "submittedBy": "bg172",
+  "publishedAt": "2026-10-31T14:31:26Z",
+  "reviewedAt": "2026-10-31T14:31:26Z",
+  "listing": {
+    "description": "Shows a sidebar attention indicator and opens waiting agent sessions in order of recency."
+  }
+}

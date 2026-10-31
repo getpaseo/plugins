@@ -1,0 +1,21 @@
+{
+  "id": "genodevelop/refined-chat",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/GenoDevelop/paseo-refined-chat.git",
+    "commit": "52b907fe4ba1b4a1975e02ddb3b92d9f0b6479e0"
+  },
+  "repository": {
+    "url": "https://github.com/GenoDevelop/paseo-refined-chat",
+    "commit": "52b907fe4ba1b4a1975e02ddb3b92d9f0b6479e0"
+  },
+  "categories": [
+    "extras",
+    "utils",
+    "themes"
+  ],
+  "submittedAt": "2026-10-31T21:31:08Z",
+  "submittedBy": "GenoDevelop",
+  "publishedAt": "2026-10-31T21:31:08Z",
+  "reviewedAt": "2026-10-31T21:31:08Z"
+}

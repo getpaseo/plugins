@@ -1,0 +1,20 @@
+{
+  "id": "djbclark/questions-please",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/djbclark/paseo-plugin-questions-please.git",
+    "commit": "a98561fe3f15636f9ec9d707b991e6704333c39e"
+  },
+  "repository": {
+    "url": "https://github.com/djbclark/paseo-plugin-questions-please",
+    "commit": "a98561fe3f15636f9ec9d707b991e6704333c39e"
+  },
+  "categories": [
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-10-31T04:02:19Z",
+  "submittedBy": "djbclark",
+  "publishedAt": "2026-10-31T04:30:56Z",
+  "reviewedAt": "2026-10-31T04:30:56Z"
+}

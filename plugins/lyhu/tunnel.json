@@ -19,6 +19,9 @@
   "publishedAt": "2026-10-06",
   "reviewedAt": "2026-10-31T11:00:02Z",
   "listing": {
-    "media": []
+    "media": [
+      "https://raw.githubusercontent.com/lyhu/paseo-plugin-tunnel/b0df77430a93e985eb90b9486f11849456220f3b/images/ingress-list.png",
+      "https://raw.githubusercontent.com/lyhu/paseo-plugin-tunnel/b0df77430a93e985eb90b9486f11849456220f3b/images/egress-list.png"
+    ]
   }
 }

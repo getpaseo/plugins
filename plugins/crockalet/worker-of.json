@@ -1,0 +1,20 @@
+{
+  "id": "crockalet/worker-of",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/crockalet/paseo-plugins.git",
+    "commit": "1c8f8b0e123481bb59e57b14eb1b5537937c5dc2",
+    "pluginPath": "plugins/worker-of"
+  },
+  "repository": {
+    "url": "https://github.com/crockalet/paseo-plugins",
+    "commit": "1c8f8b0e123481bb59e57b14eb1b5537937c5dc2"
+  },
+  "categories": [
+    "orchestration"
+  ],
+  "submittedAt": "2026-10-28T12:31:04Z",
+  "submittedBy": "crockalet",
+  "publishedAt": "2026-10-28T12:31:04Z",
+  "reviewedAt": "2026-10-28T12:31:04Z"
+}

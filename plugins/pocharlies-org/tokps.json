@@ -1,0 +1,28 @@
+{
+  "id": "pocharlies-org/tokps",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/pocharlies-org/paseo-tokps.git",
+    "commit": "57e142719959c4b3803842097a925dc220c16050"
+  },
+  "repository": {
+    "url": "https://github.com/pocharlies-org/paseo-tokps",
+    "commit": "57e142719959c4b3803842097a925dc220c16050"
+  },
+  "categories": [
+    "utils",
+    "extras"
+  ],
+  "submittedAt": "2026-10-18T06:34:19Z",
+  "submittedBy": "pocharlies",
+  "publishedAt": "2026-10-18T06:34:19Z",
+  "reviewedAt": "2026-10-18T06:34:19Z",
+  "listing": {
+    "name": "Tokens per second",
+    "translations": {
+      "es": {
+        "name": "Tokens por segundo"
+      }
+    }
+  }
+}

@@ -3,11 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/djbclark/paseo-plugin-questions-please.git",
-    "commit": "a98561fe3f15636f9ec9d707b991e6704333c39e"
+    "commit": "6b4aa884a338718dbd5bb11bf736749d42d97bb5",
+    "tag": "v0.1.3"
   },
   "repository": {
     "url": "https://github.com/djbclark/paseo-plugin-questions-please",
-    "commit": "a98561fe3f15636f9ec9d707b991e6704333c39e"
+    "commit": "6b4aa884a338718dbd5bb11bf736749d42d97bb5"
   },
   "categories": [
     "sidebar",
@@ -16,5 +17,5 @@
   "submittedAt": "2026-10-31T04:02:19Z",
   "submittedBy": "djbclark",
   "publishedAt": "2026-10-31T04:30:56Z",
-  "reviewedAt": "2026-10-31T04:30:56Z"
+  "reviewedAt": "2026-10-31T22:31:14Z"
 }

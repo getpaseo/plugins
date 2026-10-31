@@ -12,7 +12,7 @@ Changing the default account moves open Claude agents immediately when idle, or 
 
 A Claude conversation moves in place and keeps its history. A Codex thread cannot change accounts, so ZeroSub continues the task in a separate account-bound agent in the same workspace. It creates that tab on the first switch and reuses it on later switches when its account, workspace and permission mode still match. Separate tasks keep separate tabs. Returning to a tab sends the user instructions and progress it has not seen; very long instructions are shortened, keeping the first and most recent ones and noting omissions. The destination agent is told to check current files and the Git diff before continuing.
 
-Automatic switches and resets follow the task’s most recently used tab. Switching waits until the task’s tabs have stopped and have no pending permission request. If a handoff cannot be confirmed, the switch stops and identifies the tab to check. Disabling an account leaves its existing ChatGPT threads on it.
+Automatic switches and resets follow the task’s most recently used tab. Switching is refused while another tab in the task is working or awaiting permission, and the source tab must have stopped. If a handoff cannot be confirmed, the switch stops and identifies the tab to check. Disabling an account leaves its existing ChatGPT threads on it.
 
 Two options are off by default. One spends a provider's banked limit reset automatically, with no per-reset confirmation, when every account of that provider is out. The other continues a stopped chat on the other provider (Claude to ChatGPT or back) in a new agent with no more permissions than the original. You can also use a banked reset by hand, and that always asks for confirmation first.
 

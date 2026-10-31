@@ -1,0 +1,13 @@
+{
+  "issue": 1619,
+  "title": "Next question",
+  "submittedBy": "djbclark",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/djbclark/paseo-plugin-next-question"
+  },
+  "categories": [
+    "sidebar",
+    "utils"
+  ]
+}

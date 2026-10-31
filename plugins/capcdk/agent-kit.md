@@ -1,0 +1,9 @@
+Agent Kit manages a shared catalog of MCP servers and skills across installed coding-agent tools. Import existing configuration, choose global or project scope, and inspect loading status from its dashboard. It supports Cursor, Kiro, Qoder, OpenCode, Oh My Pi, Claude Code, Kimi Code and MiniMax Code, with different capabilities for each tool.
+
+Requires Paseo 0.8 or later and the command-line tools you want to manage. Only detected tools receive configuration. Some loading checks inspect files rather than proving that a running agent loaded them; several integrations have not been tested end to end by the author.
+
+Import and synchronization read and rewrite the tools’ user and project MCP configuration, including configured environment variables and HTTP headers. Writes make backup files. Skills are linked into tools’ scan directories; switching a skill to project scope can relocate its source into Agent Kit’s storage. Removing a skill can delete its source folder after confirmation. MCP removal deletes that named entry from all supported configurations. These operations affect other tools outside Paseo.
+
+Session injection adds selected MCP commands or service URLs to new agents. Those agents can run the configured commands or contact the configured services with supplied credentials; skill content can be read by agents and sent to their model providers. The dashboard exposes project paths, configuration summaries and load-check output to connected Paseo clients.
+
+The skill discovery, installation, update and removal actions invoke the external Vercel Skills CLI through npx. This can download and execute the CLI from npm; discovery also accesses the selected repository, and installation writes skills into the user’s shared skills directory. Inspect the chosen skill and MCP source before enabling it. Cursor sessions ignore project skill configuration, so Agent Kit generates a global index that points agents to project-specific skill files.

@@ -1,0 +1,23 @@
+{
+  "id": "capcdk/agent-kit",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/capcdk/paseo-agent-kit.git",
+    "commit": "492be16dda57f5083122a9ac7b7b6812c714dc54"
+  },
+  "repository": {
+    "url": "https://github.com/capcdk/paseo-agent-kit",
+    "commit": "492be16dda57f5083122a9ac7b7b6812c714dc54"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-10-18T05:58:34Z",
+  "submittedBy": "capcdk",
+  "publishedAt": "2026-10-18T05:58:34Z",
+  "reviewedAt": "2026-10-18T05:58:34Z",
+  "listing": {
+    "description": "Manage MCP servers and skills across your installed coding agents, globally or for individual projects."
+  }
+}

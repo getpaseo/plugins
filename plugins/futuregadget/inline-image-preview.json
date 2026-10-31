@@ -1,0 +1,19 @@
+{
+  "id": "futuregadget/inline-image-preview",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/FutureGadget/paseo-inline-image-preview.git",
+    "commit": "ea9515a52f2e83ebd79b448302de4a68ef655aab"
+  },
+  "repository": {
+    "url": "https://github.com/FutureGadget/paseo-inline-image-preview",
+    "commit": "ea9515a52f2e83ebd79b448302de4a68ef655aab"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-31T08:58:26Z",
+  "submittedBy": "FutureGadget",
+  "publishedAt": "2026-10-31T09:01:05Z",
+  "reviewedAt": "2026-10-31T09:01:05Z"
+}

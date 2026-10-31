@@ -1,0 +1,14 @@
+{
+  "issue": 1638,
+  "title": "OpenRouter usage",
+  "submittedBy": "kiawin",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/kiawin/paseo-openrouter-usage",
+    "ref": "v0.1.1"
+  },
+  "categories": [
+    "providers",
+    "sidebar"
+  ]
+}

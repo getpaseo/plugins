@@ -1,0 +1,13 @@
+{
+  "issue": 1645,
+  "title": "Submit plugin: Refined Chat",
+  "submittedBy": "GenoDevelop",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/GenoDevelop/paseo-refined-chat"
+  },
+  "categories": [
+    "extras",
+    "utils"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "issue": 1651,
+  "title": "ccstatusline for Paseo",
+  "submittedBy": "Laobei2012",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/Laobei2012/paseo-ccstatusline",
+    "ref": "c092af35eba153866c292f8959f5968d426180a9"
+  },
+  "categories": [
+    "utils"
+  ]
+}

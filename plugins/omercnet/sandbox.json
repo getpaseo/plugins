@@ -1,0 +1,23 @@
+{
+  "id": "omercnet/sandbox",
+  "artifact": {
+    "kind": "npm",
+    "package": "@omercnet/paseo-sandbox",
+    "version": "0.2.0",
+    "resolved": "https://registry.npmjs.org/@omercnet/paseo-sandbox/-/paseo-sandbox-0.2.0.tgz",
+    "integrity": "sha512-OEAerQAHlp3MOLckG1uCFR3FRsEn28V/uI6RytRg4gGlju8LlTkYllQhXL0BvIzAlZxtlU910e1Z1APnXsum+Q=="
+  },
+  "repository": {
+    "url": "https://github.com/omercnet/paseo-plugins/tree/HEAD/sandbox",
+    "commit": "8f13ad07d08b2b6d632d9d0d937cf96841178bec"
+  },
+  "categories": [
+    "daemon-management",
+    "orchestration",
+    "utils"
+  ],
+  "submittedAt": "2026-10-24T20:30:46Z",
+  "submittedBy": "omercnet",
+  "publishedAt": "2026-10-24T20:30:46Z",
+  "reviewedAt": "2026-10-24T20:30:46Z"
+}

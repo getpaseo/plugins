@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/RoundRedDot/better-paseo.git",
-    "commit": "9a8fdb323694f7dcaa95fdabbecc96f5d04fad05"
+    "commit": "ef92059efaf06ac54cbf30cfc1e0d2ac4092123f"
   },
   "repository": {
     "url": "https://github.com/RoundRedDot/better-paseo",
-    "commit": "9a8fdb323694f7dcaa95fdabbecc96f5d04fad05"
+    "commit": "ef92059efaf06ac54cbf30cfc1e0d2ac4092123f"
   },
   "categories": [
     "utils"
@@ -15,18 +15,18 @@
   "submittedAt": "2026-10-19T08:37:12Z",
   "submittedBy": "RRD-dev",
   "publishedAt": "2026-10-19T08:39:57Z",
-  "reviewedAt": "2026-11-01T09:35:26Z",
+  "reviewedAt": "2026-11-01T23:46:52Z",
   "listing": {
     "media": [
-      "https://cdn.jsdelivr.net/gh/RoundRedDot/better-paseo-assets@3c57b6ea8f8be3e281ad0410d1ec9c53eb30708b/promo-v14/videos/timeline-web.mp4",
       "https://cdn.jsdelivr.net/gh/RoundRedDot/better-paseo-assets@3c57b6ea8f8be3e281ad0410d1ec9c53eb30708b/promo-v14/videos/tasks-web.mp4",
-      "https://cdn.jsdelivr.net/gh/RoundRedDot/better-paseo-assets@3c57b6ea8f8be3e281ad0410d1ec9c53eb30708b/promo-v14/images/hero-cover.png",
       "https://cdn.jsdelivr.net/gh/RoundRedDot/better-paseo-assets@3c57b6ea8f8be3e281ad0410d1ec9c53eb30708b/promo-v14/images/tasks-board-light.png",
-      "https://cdn.jsdelivr.net/gh/RoundRedDot/better-paseo-assets@3c57b6ea8f8be3e281ad0410d1ec9c53eb30708b/promo-v14/images/timeline-light.png",
       "https://cdn.jsdelivr.net/gh/RoundRedDot/better-paseo-assets@3c57b6ea8f8be3e281ad0410d1ec9c53eb30708b/promo-v14/assets/listing/02-tasks-board.png",
-      "https://cdn.jsdelivr.net/gh/RoundRedDot/better-paseo-assets@3c57b6ea8f8be3e281ad0410d1ec9c53eb30708b/promo-v14/assets/listing/03-timeline.png",
       "https://cdn.jsdelivr.net/gh/RoundRedDot/better-paseo-assets@3c57b6ea8f8be3e281ad0410d1ec9c53eb30708b/promo-v14/assets/listing/04-phone.png",
       "https://cdn.jsdelivr.net/gh/RoundRedDot/better-paseo-assets@3c57b6ea8f8be3e281ad0410d1ec9c53eb30708b/promo-v14/assets/listing/05-ipad.png",
+      "https://cdn.jsdelivr.net/gh/RoundRedDot/better-paseo-assets@3c57b6ea8f8be3e281ad0410d1ec9c53eb30708b/promo-v14/videos/timeline-web.mp4",
+      "https://cdn.jsdelivr.net/gh/RoundRedDot/better-paseo-assets@3c57b6ea8f8be3e281ad0410d1ec9c53eb30708b/promo-v14/images/hero-cover.png",
+      "https://cdn.jsdelivr.net/gh/RoundRedDot/better-paseo-assets@3c57b6ea8f8be3e281ad0410d1ec9c53eb30708b/promo-v14/images/timeline-light.png",
+      "https://cdn.jsdelivr.net/gh/RoundRedDot/better-paseo-assets@3c57b6ea8f8be3e281ad0410d1ec9c53eb30708b/promo-v14/assets/listing/03-timeline.png",
       "https://cdn.jsdelivr.net/gh/RoundRedDot/better-paseo-assets@3c57b6ea8f8be3e281ad0410d1ec9c53eb30708b/promo-v14/assets/listing/06-tool-icons.png",
       "https://cdn.jsdelivr.net/gh/RoundRedDot/better-paseo-assets@3c57b6ea8f8be3e281ad0410d1ec9c53eb30708b/promo-v14/assets/listing/07-hover-preview.png",
       "https://cdn.jsdelivr.net/gh/RoundRedDot/better-paseo-assets@3c57b6ea8f8be3e281ad0410d1ec9c53eb30708b/promo-v14/assets/listing/08-tables.png",

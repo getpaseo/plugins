@@ -1,0 +1,19 @@
+{
+  "id": "ortschun/video-panel",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/ortschun/paseo-video-panel.git",
+    "commit": "fb8206d7f7ee10c6b5e8173e6e33e75fcb070725"
+  },
+  "repository": {
+    "url": "https://github.com/ortschun/paseo-video-panel",
+    "commit": "fb8206d7f7ee10c6b5e8173e6e33e75fcb070725"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-22T18:38:48Z",
+  "submittedBy": "ortschun",
+  "publishedAt": "2026-10-22T19:02:02Z",
+  "reviewedAt": "2026-10-22T19:02:02Z"
+}

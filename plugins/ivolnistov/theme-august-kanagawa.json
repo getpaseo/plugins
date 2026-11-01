@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/ivolnistov/paseo-theme-august-kanagawa.git",
-    "commit": "b16d0ba3730813f47c07e420baf9cab0411b1aad"
+    "commit": "459aafaa80716ef6726efed52ed4d39cd987b5a2"
   },
   "repository": {
     "url": "https://github.com/ivolnistov/paseo-theme-august-kanagawa",
-    "commit": "b16d0ba3730813f47c07e420baf9cab0411b1aad"
+    "commit": "459aafaa80716ef6726efed52ed4d39cd987b5a2"
   },
   "categories": [
     "themes"

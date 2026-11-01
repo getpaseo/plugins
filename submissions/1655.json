@@ -1,0 +1,14 @@
+{
+  "issue": 1655,
+  "title": "Update browser-prompt to 0.10.3",
+  "submittedBy": "midego1",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/midego1/paseo-browser-prompt",
+    "ref": "4e868613086d2b5ae389ce54211bcdb65b64f720"
+  },
+  "categories": [
+    "orchestration",
+    "extras"
+  ]
+}

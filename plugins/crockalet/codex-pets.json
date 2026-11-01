@@ -16,6 +16,11 @@
   ],
   "submittedAt": "2026-10-28T12:16:07Z",
   "submittedBy": "crockalet",
-  "publishedAt": "2026-10-28T12:16:07Z",
-  "reviewedAt": "2026-10-28T12:16:07Z"
+  "publishedAt": "2026-11-01T05:33:45Z",
+  "reviewedAt": "2026-11-01T05:33:45Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/crockalet/paseo-plugins/e3f97e770c760ee3efba172f16fcbbb975d63f40/docs/codex-pets.png"
+    ]
+  }
 }

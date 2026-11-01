@@ -1,10 +1,8 @@
-import { requireCompletedSubmissions } from "./submission.ts";
+import { readRegistry } from "./registry.ts";
 import { validateArtifact } from "./validate-artifact.ts";
-import { categorySlugs, readCategories } from "./categories.ts";
-import { readFeatured } from "./featured.ts";
 import { createNpmClient, type NpmClient } from "./npm.ts";
-import { readOverview, readOverviewTranslations } from "./overview.ts";
-import { readRecords, recordDateProblems } from "./record.ts";
+import { readOverview } from "./overview.ts";
+import { recordDateProblems } from "./record.ts";
 import { checkMediaUrls } from "./media.ts";
 import { git } from "./shell.ts";
 
@@ -26,11 +24,7 @@ export async function validateRegistry(options: {
 } = {}): Promise<void> {
   const { online = false, changedOnly = false, overviewPendingFor,
     base = "origin/main", client = createNpmClient() } = options;
-  requireCompletedSubmissions();
-  const known = categorySlugs(readCategories());
-  const records = readRecords(known);
-  readFeatured(records);
-  for (const record of records) { readOverview(record.id); readOverviewTranslations(record.id); }
+  const { records, problems } = readRegistry(changedOnly || !online);
   console.log(`${records.length} record(s) are well-formed`);
   if (!online) return;
 
@@ -51,15 +45,15 @@ export async function validateRegistry(options: {
   }
 
   const mediaProblems = await checkMediaUrls(selected.flatMap((record) => record.listing?.media ?? []));
+  const malformed = problems.length;
   for (const record of selected) {
-    for (const url of record.listing?.media ?? []) {
-      if (mediaProblems.has(url)) console.error(`${record.id}: media ${url}: ${mediaProblems.get(url)}`);
+    const mediaErrors = (record.listing?.media ?? []).filter((url) => mediaProblems.has(url));
+    if (mediaErrors.length) {
+      for (const url of mediaErrors) {
+        problems.push({ id: record.id, error: new Error(`media ${url}: ${mediaProblems.get(url)}`) });
+      }
+      continue;
     }
-  }
-  if (mediaProblems.size) throw new Error("Registry validation failed; see the diagnostics above.");
-
-  const problems: Array<{ id: string; error: Error }> = [];
-  for (const record of selected) {
     try {
       for (const message of await validateArtifact(client, record, {
         registryOverview: readOverview(record.id),
@@ -70,9 +64,14 @@ export async function validateRegistry(options: {
     }
   }
   if (problems.length > 0) {
-    throw new RegistryValidationError(problems);
+    // A review rejects its proposed records; a registry-wide run isolates plugin failures.
+    if (changedOnly) throw new RegistryValidationError(problems);
+    for (const { id, error } of problems) {
+      console.warn(`${process.env.GITHUB_ACTIONS ? "::warning::" : ""}Skipped ${id}: ${error.message}`);
+    }
   }
-  console.log(`${selected.length} record(s) match their pinned artifacts`);
+  const skipped = new Set(problems.map(({ id }) => id)).size;
+  console.log(`${selected.length + malformed - skipped} record(s) match their pinned artifacts, ${skipped} skipped`);
 }
 
 /** The record as listed at the base commit, or undefined when it is new. */

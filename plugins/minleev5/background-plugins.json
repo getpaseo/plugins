@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/MinLeeV5/paseo-background-plugins.git",
-    "commit": "c0cabc92e494b80c807e9c00053c60a6677eb747",
-    "tag": "v0.1.4"
+    "commit": "77cf7a08d6f9dea5bca013ff70d61e8e5c491d0c",
+    "tag": "v0.1.5"
   },
   "repository": {
     "url": "https://github.com/MinLeeV5/paseo-background-plugins",
-    "commit": "c0cabc92e494b80c807e9c00053c60a6677eb747"
+    "commit": "77cf7a08d6f9dea5bca013ff70d61e8e5c491d0c"
   },
   "categories": [
     "themes"

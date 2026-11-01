@@ -25,17 +25,22 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      publish: ${{ steps.build.outputs.publish }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: node scripts/build.ts
+      - id: build
+        run: node scripts/build.ts
       - uses: actions/upload-pages-artifact@v3
+        if: steps.build.outputs.publish == 'true'
         with:
           path: dist
   deploy:
     needs: build
+    if: needs.build.outputs.publish == 'true'
     runs-on: ubuntu-latest
     environment:
       name: github-pages

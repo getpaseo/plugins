@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-deepseek-harness",
-    "version": "0.1.0-beta.14",
-    "resolved": "https://registry.npmjs.org/paseo-deepseek-harness/-/paseo-deepseek-harness-0.1.0-beta.14.tgz",
-    "integrity": "sha512-ke9svHyYxUWcpTqElX98Dd9pFS3hZuOi5Pcllo/ce5XE3vdP1FzBaS8eD49U7aAYnnXjXJgksT23sAPhs2gJcg=="
+    "version": "0.1.0-beta.18",
+    "resolved": "https://registry.npmjs.org/paseo-deepseek-harness/-/paseo-deepseek-harness-0.1.0-beta.18.tgz",
+    "integrity": "sha512-r/I7gSSdl8ZzBD5EHSpM9BaAWzuFqqak37AV16vFciYZrYwPPA3wt8t3eXbCeVIVGaaSJjpvVlhMmYB9wdcanA=="
   },
   "repository": {
     "url": "https://github.com/geoqiao/paseo-stuff/tree/HEAD/plugins/deepseek-harness",
-    "commit": "e4e05ee635bc7a5824f333b5d5faf43966339e63"
+    "commit": "7047f4bad43207febcedaed115a2376ad9926c67"
   },
   "categories": [
     "providers"
@@ -17,7 +17,7 @@
   "submittedAt": "2026-09-12",
   "submittedBy": "geoqiao",
   "publishedAt": "2026-09-12",
-  "reviewedAt": "2026-10-26T21:41:55Z",
+  "reviewedAt": "2026-10-31T20:29:17Z",
   "listing": {
     "name": "DeepSeek Harness",
     "media": [

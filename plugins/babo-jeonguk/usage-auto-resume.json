@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/babo-jeonguk/paseo-usage-auto-resume.git",
-    "commit": "a1fc60cb31555f2ae98f058240e8d0346e035003",
-    "tag": "v1.3.0"
+    "commit": "b1150985c8d62c335c3e3d682b2062138299a5b7",
+    "tag": "v1.3.1"
   },
   "repository": {
     "url": "https://github.com/babo-jeonguk/paseo-usage-auto-resume",
-    "commit": "a1fc60cb31555f2ae98f058240e8d0346e035003"
+    "commit": "b1150985c8d62c335c3e3d682b2062138299a5b7"
   },
   "categories": [
     "orchestration",

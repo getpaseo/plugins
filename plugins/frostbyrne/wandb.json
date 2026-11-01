@@ -1,0 +1,21 @@
+{
+  "id": "frostbyrne/wandb",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/Frostbyrne/paseo-wandb.git",
+    "commit": "e27c277d99c23d9a6ff5193efaf9f9c9d2c9b72f",
+    "tag": "v0.2.2"
+  },
+  "repository": {
+    "url": "https://github.com/Frostbyrne/paseo-wandb",
+    "commit": "e27c277d99c23d9a6ff5193efaf9f9c9d2c9b72f"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-29T20:01:52Z",
+  "submittedBy": "Frostbyrne",
+  "publishedAt": "2026-10-29T20:36:21Z",
+  "reviewedAt": "2026-10-30T14:09:00Z"
+}

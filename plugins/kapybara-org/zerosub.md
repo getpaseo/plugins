@@ -10,11 +10,15 @@ Each Claude or Codex agent gets an account button in its message box once a prov
 
 Changing the default account moves open Claude agents immediately when idle, or after their current turn. Turn off **Move open agents when the default changes** in Accounts or ZeroSub preferences to keep those agents pinned to their current usable account, including after reopening. New agents use the new default; kept agents still switch if their account reaches a limit. Choose **Follow default** or use `/account default` to return an agent to the default.
 
-A Claude conversation moves in place and keeps its history. A Codex thread cannot change accounts, so ZeroSub starts a continuation agent in the same workspace on the other account, seeded with the conversation so far. Disabling an account likewise leaves existing ChatGPT threads on it.
+A Claude conversation moves in place and keeps its history. A Codex thread cannot change accounts, so ZeroSub continues the task in a separate account-bound agent in the same workspace. It creates that tab on the first switch and reuses it on later switches when its account, workspace and permission mode still match. Separate tasks keep separate tabs. Returning to a tab sends the user instructions and progress it has not seen; very long instructions are shortened, keeping the first and most recent ones and noting omissions. The destination agent is told to check current files and the Git diff before continuing.
+
+Automatic switches and resets follow the task’s most recently used tab. Switching is refused while another tab in the task is working or awaiting permission, and the source tab must have stopped. If a handoff cannot be confirmed, the switch stops and identifies the tab to check. Disabling an account leaves its existing ChatGPT threads on it.
 
 Two options are off by default. One spends a provider's banked limit reset automatically, with no per-reset confirmation, when every account of that provider is out. The other continues a stopped chat on the other provider (Claude to ChatGPT or back) in a new agent with no more permissions than the original. You can also use a banked reset by hand, and that always asks for confirmation first.
 
 ## Access and limits
+
+Handoffs send conversation text and summaries of tool actions to the destination agent’s provider and account. This includes a cross-provider transfer when that option is enabled or you confirm a manual fork. The plugin stores continuation links and timeline positions in its state file; handoff text remains in agent conversation histories rather than a separate plugin transcript. On Paseo 0.13 and later, limit detection reads the finished turn from the agent timeline when the turn hook contains no conversation.
 
 Each added account gets its own credential home inside the daemon's data folder, and sessions on that account run with `CLAUDE_CONFIG_DIR` or `CODEX_HOME` pointed at it. Settings, skills and conversation history are shared with your main CLI home, while credentials and caches stay per account.
 

@@ -212,8 +212,12 @@ test("a tagged monorepo artifact is pinned, validated and built through both sub
     );
     writeFileSync(overview, "A curated description.");
     run("git", ["tag", "-f", "v1.0.0"], { cwd: repository });
+    assert.match(
+      run(process.execPath, ["scripts/validate.ts", "--online"], options),
+      /0 record\(s\) match their pinned artifacts, 1 skipped/,
+    );
     assert.throws(
-      () => run(process.execPath, ["scripts/validate.ts", "--online"], options),
+      () => run(process.execPath, ["scripts/validate.ts", "--online", "--changed"], options),
       /Command failed/,
     );
   } finally {

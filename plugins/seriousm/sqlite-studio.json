@@ -1,0 +1,21 @@
+{
+  "id": "seriousm/sqlite-studio",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/SeriousM/paseo-sqlite-studio.git",
+    "commit": "70927b8b170d229d38dadb96a6e5b5906812cded"
+  },
+  "repository": {
+    "url": "https://github.com/SeriousM/paseo-sqlite-studio",
+    "commit": "70927b8b170d229d38dadb96a6e5b5906812cded"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-10-28T13:46:59Z",
+  "submittedBy": "SeriousM",
+  "publishedAt": "2026-10-28T14:06:08Z",
+  "reviewedAt": "2026-10-29T22:32:32Z"
+}

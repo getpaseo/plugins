@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-smart-session",
-    "version": "1.2.6",
-    "resolved": "https://registry.npmjs.org/paseo-smart-session/-/paseo-smart-session-1.2.6.tgz",
-    "integrity": "sha512-HEYrmu2R58GQHW4NXlNrihr2pKIb+hev+pzP8LBuZqjRw5PdvFSudhPjFKkstvD/8BqYwMCsHXqPy1MNIuxwaw=="
+    "version": "2.0.0",
+    "resolved": "https://registry.npmjs.org/paseo-smart-session/-/paseo-smart-session-2.0.0.tgz",
+    "integrity": "sha512-VXM6eDBokbAgZh9rYqq2dnd4DlHTKNeRMb7O1EudN8k4P1SVIzsPobT34p/UaqP5YnYZnDzcH320tFdKFj/0lw=="
   },
   "repository": {
     "url": "https://github.com/tomgrin10/paseo-smart-session",
-    "commit": "aef02c5fc8d9211cb70e68110ae93911d4012ab7"
+    "commit": "21d6db9d31e904528217c506ca5c5fba2226d039"
   },
   "categories": [
     "utils"
@@ -17,7 +17,7 @@
   "submittedAt": "2026-09-10",
   "submittedBy": "tomgrin10",
   "publishedAt": "2026-09-10",
-  "reviewedAt": "2026-10-23T13:05:02Z",
+  "reviewedAt": "2026-10-29T11:40:48Z",
   "listing": {
     "name": "Smart Session",
     "media": [

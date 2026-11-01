@@ -1,0 +1,19 @@
+{
+  "id": "laobei2012/ccstatusline",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/Laobei2012/paseo-ccstatusline.git",
+    "commit": "c092af35eba153866c292f8959f5968d426180a9"
+  },
+  "repository": {
+    "url": "https://github.com/Laobei2012/paseo-ccstatusline",
+    "commit": "c092af35eba153866c292f8959f5968d426180a9"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-01T02:08:38Z",
+  "submittedBy": "Laobei2012",
+  "publishedAt": "2026-11-01T02:31:11Z",
+  "reviewedAt": "2026-11-01T02:31:11Z"
+}

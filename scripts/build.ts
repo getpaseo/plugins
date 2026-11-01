@@ -1,20 +1,13 @@
-import { requireCompletedSubmissions } from "./lib/submission.ts";
+import { readRegistry } from "./lib/registry.ts";
 // Generates dist/: index.json for the list pages and plugins/<id>.json for the detail pages.
-import { mkdirSync, rmSync, writeFileSync } from "node:fs";
+import { appendFileSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
-import { categorySlugs, readCategories } from "./lib/categories.ts";
-import { readFeatured } from "./lib/featured.ts";
 import { type PublishedIndex, resolvePlugin, summarize } from "./lib/listing.ts";
 import { createNpmClient } from "./lib/npm.ts";
 import { readOverview, readOverviewTranslations } from "./lib/overview.ts";
-import { readRecords } from "./lib/record.ts";
-
-requireCompletedSubmissions();
 
 const DIST = join(process.cwd(), "dist");
-const categories = readCategories();
-const records = readRecords(categorySlugs(categories));
-const featured = readFeatured(records);
+const { categories, records, featured, problems } = readRegistry(false);
 const client = createNpmClient();
 
 rmSync(DIST, { recursive: true, force: true });
@@ -24,7 +17,7 @@ mkdirSync(join(DIST, "plugins"), { recursive: true });
 const CONCURRENCY = 3;
 // One plugin never blocks the registry: a record whose pinned source cannot be fetched or
 // resolved is left out of this publish and reported, and the rest still deploy.
-const skipped: { id: string; reason: string }[] = [];
+const skipped = problems.map(({ id, error }) => ({ id, reason: error.message }));
 const details = (
   await mapLimit(records, CONCURRENCY, async (record) => {
     try {
@@ -39,9 +32,6 @@ const details = (
 for (const { id, reason } of skipped) {
   // On GitHub Actions the annotation surfaces on the run page, where a green run would otherwise hide it.
   console.warn(`${process.env.GITHUB_ACTIONS ? "::warning::" : ""}Skipped ${id}: ${reason}`);
-}
-if (records.length > 0 && details.length === 0) {
-  throw new Error("Every record failed to resolve; refusing to publish an empty registry");
 }
 let installs: Record<string, number> = {};
 try {
@@ -75,6 +65,11 @@ const index: PublishedIndex = {
 writeFileSync(join(DIST, "index.json"), `${JSON.stringify(index, null, 2)}\n`);
 writeFileSync(join(DIST, ".nojekyll"), "");
 console.log(`dist/index.json: ${index.plugins.length} plugin(s), ${skipped.length} skipped`);
+// An empty result is successful isolation, but must not replace the live directory.
+if (process.env.GITHUB_OUTPUT) {
+  appendFileSync(process.env.GITHUB_OUTPUT, `publish=${index.plugins.length > 0}\n`);
+}
+if (!index.plugins.length) console.warn("No plugins resolved; skipping publication and preserving the live registry.");
 
 async function mapLimit<T, R>(
   items: T[],

@@ -1,0 +1,24 @@
+{
+  "id": "4fthawaiian/agent-share",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/4fthawaiian/agent-share.git",
+    "commit": "708bab022c355dda6056ffb05369cd79ccdc3ebf"
+  },
+  "repository": {
+    "url": "https://github.com/4fthawaiian/agent-share",
+    "commit": "708bab022c355dda6056ffb05369cd79ccdc3ebf"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-28T12:12:07Z",
+  "submittedBy": "4fthawaiian",
+  "publishedAt": "2026-10-28T12:12:07Z",
+  "reviewedAt": "2026-10-29T04:36:16Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/4fthawaiian/agent-share/708bab022c355dda6056ffb05369cd79ccdc3ebf/docs/settings-screen.png"
+    ]
+  }
+}

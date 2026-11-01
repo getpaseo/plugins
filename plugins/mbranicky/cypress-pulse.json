@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-cypress-pulse",
-    "version": "1.2.1",
-    "resolved": "https://registry.npmjs.org/paseo-cypress-pulse/-/paseo-cypress-pulse-1.2.1.tgz",
-    "integrity": "sha512-oFhKC9EGroGi6UvouScDHKbPQt/DjEEPIeDvzAjTwTdPwcn74uqU8U95ra1RHu6AXiQMZCBHAWtSfdEQQkClnA=="
+    "version": "1.3.0",
+    "resolved": "https://registry.npmjs.org/paseo-cypress-pulse/-/paseo-cypress-pulse-1.3.0.tgz",
+    "integrity": "sha512-FgLgsO0WoKNeJr45hwStiykD9QWidXiV2DMj55EmDHD3KmV8MdWGWwshyZMb+PKRyWsnUjrorVkYVsRl0jTAvQ=="
   },
   "repository": {
     "url": "https://github.com/mbranicky/cypress-pulse",
-    "commit": "8bcd94c658af9b7d9632ff7bd26994a27d7ca993"
+    "commit": "d6c1d6ddbc7bb4ade53c15b1f736c8554cc16a65"
   },
   "categories": [
     "sidebar",
@@ -18,5 +18,5 @@
   "submittedAt": "2026-10-16T13:58:05Z",
   "submittedBy": "mbranicky-doxee",
   "publishedAt": "2026-10-16T16:17:37Z",
-  "reviewedAt": "2026-10-26T21:42:38Z"
+  "reviewedAt": "2026-10-30T11:29:41Z"
 }

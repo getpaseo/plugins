@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-defer",
-    "version": "2.4.0",
-    "resolved": "https://registry.npmjs.org/paseo-defer/-/paseo-defer-2.4.0.tgz",
-    "integrity": "sha512-V1MpHWTEE+utdayXl9vcXJhVoa7I9P6HFV3JyWUgLU0/1MHkEUvuDcrgy/aTidVJw0YNjm39i6nylgwny76+zg=="
+    "version": "3.0.0",
+    "resolved": "https://registry.npmjs.org/paseo-defer/-/paseo-defer-3.0.0.tgz",
+    "integrity": "sha512-4qgPsbXJD2ahV78WDLcAqYfNo7EBKx4D7pxDhuo77roKM7/kQpfpD9ZcWr/4j+iuCBNHSQKaxfqKUobE7dzaDw=="
   },
   "repository": {
     "url": "https://github.com/tomgrin10/paseo-defer",
-    "commit": "f16e97d2419dcdf51aa6646081c23198ae2975cc"
+    "commit": "b34383da8146a516678bd96e3d127b5b5719a791"
   },
   "categories": [
     "utils"
@@ -17,7 +17,7 @@
   "submittedAt": "2026-09-10",
   "submittedBy": "tomgrin10",
   "publishedAt": "2026-09-10",
-  "reviewedAt": "2026-10-23T13:05:02Z",
+  "reviewedAt": "2026-10-29T11:39:12Z",
   "listing": {
     "name": "Defer",
     "media": [

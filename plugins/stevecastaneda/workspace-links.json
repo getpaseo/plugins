@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "@stevecastaneda/paseo-workspace-links",
-    "version": "1.0.0",
-    "resolved": "https://registry.npmjs.org/@stevecastaneda/paseo-workspace-links/-/paseo-workspace-links-1.0.0.tgz",
-    "integrity": "sha512-366vi0vyJKhovJHU3d26mELuWPnEvlDzp9uVRTHB+h06HvJo3Wss/0gQ/tNlDOrYgMIdP55VjvVQzW+vijgpdA=="
+    "version": "1.1.1",
+    "resolved": "https://registry.npmjs.org/@stevecastaneda/paseo-workspace-links/-/paseo-workspace-links-1.1.1.tgz",
+    "integrity": "sha512-xN1ZZQjElRwYwYvCscfieQhYAWT1ZC7B3R2giAtZ3SUuyKU4AQn55qKU6NT3n65rGhjKBUw7qda1/gir64Pysg=="
   },
   "repository": {
     "url": "https://github.com/stevecastaneda/paseo-plugins/tree/HEAD/workspace-links"
@@ -16,7 +16,7 @@
   "submittedAt": "2026-09-10",
   "submittedBy": "stevecastaneda",
   "publishedAt": "2026-09-10",
-  "reviewedAt": "2026-10-18T06:02:24Z",
+  "reviewedAt": "2026-10-30T21:38:26Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/6997762ece758cb0abe90d34e1671de1f237039a/workspace-links/images/popover.png",

@@ -1,0 +1,23 @@
+{
+  "id": "andrioid/attention-span",
+  "artifact": {
+    "kind": "npm",
+    "package": "@andrioid/paseo-attention-span",
+    "version": "0.2.1",
+    "resolved": "https://registry.npmjs.org/@andrioid/paseo-attention-span/-/paseo-attention-span-0.2.1.tgz",
+    "integrity": "sha512-9TyLBah3n3utAO4ofe0a7yti2MqZcTYiW3+7p96U2AYutHCp2B55KUjt5MdvGbzaMrho6yJmWvoCKVMx0Q2h/w=="
+  },
+  "repository": {
+    "url": "https://github.com/andrioid/paseo-attention-span",
+    "commit": "92420afc36915dec068d789ee93534fd8ceacc13"
+  },
+  "categories": [
+    "git",
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-10-28T13:07:06Z",
+  "submittedBy": "andrioidApacta",
+  "publishedAt": "2026-10-28T13:31:42Z",
+  "reviewedAt": "2026-10-31T10:58:38Z"
+}

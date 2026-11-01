@@ -1,0 +1,20 @@
+{
+  "id": "minleev5/direct",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/MinLeeV5/paseo-direct.git",
+    "commit": "db37dbee439419fbaacd66c1991c900326e26373"
+  },
+  "repository": {
+    "url": "https://github.com/MinLeeV5/paseo-direct",
+    "commit": "db37dbee439419fbaacd66c1991c900326e26373"
+  },
+  "categories": [
+    "daemon-management",
+    "utils"
+  ],
+  "submittedAt": "2026-10-28T16:40:28Z",
+  "submittedBy": "MinLeeV5",
+  "publishedAt": "2026-10-28T17:01:49Z",
+  "reviewedAt": "2026-10-28T17:01:49Z"
+}

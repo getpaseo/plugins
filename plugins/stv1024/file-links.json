@@ -1,0 +1,21 @@
+{
+  "id": "stv1024/file-links",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-file-links",
+    "version": "0.2.1",
+    "resolved": "https://registry.npmjs.org/paseo-file-links/-/paseo-file-links-0.2.1.tgz",
+    "integrity": "sha512-ogqm8Im4Z0XmmXkUpPnhkNQRfFYygcJxv/rWJMam2WBJyMHvIayu/p6JQCkhPAxUWmeb3XTKo3l/C05qZeBxfw=="
+  },
+  "repository": {
+    "url": "https://github.com/stv1024/paseo-file-links",
+    "commit": "a2b90eb6e46843ea89c7892bb40ec6c18220de5c"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-10-28T13:03:36Z",
+  "submittedBy": "stv1024",
+  "publishedAt": "2026-10-28T13:03:36Z",
+  "reviewedAt": "2026-10-29T11:38:32Z"
+}

@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/julien-bloch/paseo-workbench.git",
-    "commit": "3bdefcf4ea477e47631d92134726949b65df35c0"
+    "commit": "315cfc06dd64c77b035c03e81c50082cdb5b8264"
   },
   "repository": {
     "url": "https://github.com/julien-bloch/paseo-workbench",
-    "commit": "3bdefcf4ea477e47631d92134726949b65df35c0"
+    "commit": "315cfc06dd64c77b035c03e81c50082cdb5b8264"
   },
   "categories": [
     "daemon-management",
@@ -17,5 +17,5 @@
   "submittedAt": "2026-10-22T19:24:16Z",
   "submittedBy": "julien-bloch",
   "publishedAt": "2026-10-24T07:04:59Z",
-  "reviewedAt": "2026-10-27T14:31:37Z"
+  "reviewedAt": "2026-10-31T13:01:22Z"
 }

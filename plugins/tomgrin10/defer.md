@@ -4,7 +4,9 @@ Queue messages from the **Defer** composer pill, `/defer 2h <message>`, Command 
 
 A **Deferred message** timeline card shows queued text and timing, with Edit and Delete controls. Editing only the text preserves the original delivery time. Apps with the timeline-footer API keep these cards above the composer; older apps show them inline.
 
-Workspaces with waiting or sending messages get a blue **Deferred** label until their last queued message settles. In **Settings → Plugins → Defer → Display**, you can hide the sidebar entry. Command Center access remains available while viewing a workspace or plugin on that host.
+Workspaces with waiting or sending messages get a blue **Deferred** label until their last queued message settles. In **Settings → Plugins → Defer → Display**, you can hide the sidebar entry and composer button independently. Overview and Display settings link directly to one another. Command Center access remains available while viewing a workspace or plugin on that host.
+
+Interactive Claude and Codex sessions receive tools to list their own active deferred messages and schedule requested follow-up messages for themselves. These tools become available on the next idle session open after installing or reloading; history-only opens receive none. Set the agent label `plugin-tools/enabled` to `"false"` to opt out. A scheduled message uses the same queue and idle-delivery rules as the UI.
 
 Data and access:
 
@@ -13,6 +15,4 @@ Data and access:
 - For a password-protected daemon, the plugin reads its authentication credentials to connect; it does not log or store them.
 - Copying a composer draft reads the app's draft storage on your device only when you ask for Defer.
 
-Requires Paseo 0.10.1 or newer. Delivery uses the daemon's own client library, so hosts that do not expose it cannot read provider usage or deliver messages.
-
-*This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/paseo-defer).*
+Requires Paseo 0.14.0 or newer. Delivery uses the daemon's own client library, so hosts that do not expose it cannot read provider usage or deliver messages.

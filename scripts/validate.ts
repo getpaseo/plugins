@@ -1,4 +1,5 @@
 // Checks every record offline, and with --online checks pinned versions against their artifacts.
+// Registry-wide online checks warn and skip broken plugins; --changed rejects broken proposed records.
 //   node scripts/validate.ts [--online] [--changed] [--base <ref>]
 import { flagString, parseArgs } from "./lib/args.ts";
 import { validateRegistry } from "./lib/validate-registry.ts";

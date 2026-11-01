@@ -1,0 +1,21 @@
+{
+  "id": "kiawin/openrouter-usage",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/kiawin/paseo-openrouter-usage.git",
+    "commit": "8e9a429b30eecdb1fc9b4514c60f983808220eb5",
+    "tag": "v0.1.1"
+  },
+  "repository": {
+    "url": "https://github.com/kiawin/paseo-openrouter-usage",
+    "commit": "8e9a429b30eecdb1fc9b4514c60f983808220eb5"
+  },
+  "categories": [
+    "providers",
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-31T13:26:06Z",
+  "submittedBy": "kiawin",
+  "publishedAt": "2026-10-31T13:31:38Z",
+  "reviewedAt": "2026-10-31T13:31:38Z"
+}

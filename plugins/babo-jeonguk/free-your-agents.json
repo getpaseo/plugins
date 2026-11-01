@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/babo-jeonguk/paseo-free-your-agents.git",
-    "commit": "9be0c0017129dfd82e4df8ce04862591bd3c98b8",
-    "tag": "v1.2.0"
+    "commit": "b5605b9c7f46390837cc035b3b01851b256c7ff9",
+    "tag": "v1.2.1"
   },
   "repository": {
     "url": "https://github.com/babo-jeonguk/paseo-free-your-agents",
-    "commit": "9be0c0017129dfd82e4df8ce04862591bd3c98b8"
+    "commit": "b5605b9c7f46390837cc035b3b01851b256c7ff9"
   },
   "categories": [
     "daemon-management",
@@ -18,5 +18,5 @@
   "submittedAt": "2026-10-16T18:52:26Z",
   "submittedBy": "babo-jeonguk",
   "publishedAt": "2026-10-16T19:02:54Z",
-  "reviewedAt": "2026-10-27T09:05:59Z"
+  "reviewedAt": "2026-10-29T09:32:01Z"
 }

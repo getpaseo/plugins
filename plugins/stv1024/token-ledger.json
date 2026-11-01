@@ -3,12 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-token-ledger",
-    "version": "0.8.1",
-    "resolved": "https://registry.npmjs.org/paseo-token-ledger/-/paseo-token-ledger-0.8.1.tgz",
-    "integrity": "sha512-rkOJ7gZbgYeWVIEaACLkcRpBkJBL2WjtSNMTLT9HyogCd3L2Ql2kXtZf/05pAlpdryudhpHn5eg1MswyQXg3Kg=="
+    "version": "0.8.2",
+    "resolved": "https://registry.npmjs.org/paseo-token-ledger/-/paseo-token-ledger-0.8.2.tgz",
+    "integrity": "sha512-3qtpRKxZ1qz1oBA1oPFiJRGIZ2jtVm/I/UGWvL6fTa5TKTnhxXCZrDWdXQjFtZPgU3zRiYjLvd7jRaua3xKgIQ=="
   },
   "repository": {
-    "url": "https://github.com/stv1024/token-ledger"
+    "url": "https://github.com/stv1024/token-ledger",
+    "commit": "51648da777b1dacc7ba34c4e119a84a83bdb03f0"
   },
   "categories": [
     "sidebar"
@@ -16,5 +17,5 @@
   "submittedAt": "2026-09-29",
   "submittedBy": "stv1024",
   "publishedAt": "2026-09-29",
-  "reviewedAt": "2026-10-23T10:37:30Z"
+  "reviewedAt": "2026-10-28T21:50:28Z"
 }

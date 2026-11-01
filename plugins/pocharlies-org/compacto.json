@@ -1,0 +1,24 @@
+{
+  "id": "pocharlies-org/compacto",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/pocharlies-org/paseo-compacto.git",
+    "commit": "691e765d4d68e662793325eafdd0d8cb7c566c61"
+  },
+  "repository": {
+    "url": "https://github.com/pocharlies-org/paseo-compacto",
+    "commit": "691e765d4d68e662793325eafdd0d8cb7c566c61"
+  },
+  "categories": [
+    "extras",
+    "utils"
+  ],
+  "submittedAt": "2026-10-28T12:06:44Z",
+  "submittedBy": "pocharlies",
+  "publishedAt": "2026-10-28T12:06:44Z",
+  "reviewedAt": "2026-10-28T12:06:44Z",
+  "listing": {
+    "name": "Compact view",
+    "description": "Groups tool calls by hiding completed Thinking rows while leaving streamed reasoning visible."
+  }
+}

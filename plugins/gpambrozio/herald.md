@@ -1,6 +1,6 @@
 Herald speaks one sentence aloud when an agent needs you, and lists everything waiting in the **Herald** screen, opened from the sidebar. It announces questions, plan approvals, tool permission requests, finished turns and errors, and also leaves the sentence as a card in the agent's conversation so you can replay it.
 
-The sidebar badge counts waiting agents. Press the badge for a quick list, then choose an agent to open Herald at its card.
+The sidebar badge counts waiting agents. Finished turns appear only when Herald recorded them; questions, permissions and errors can still appear when Herald did not see the original event. Press the badge for a quick list, then choose an agent to open Herald at its card.
 
 For each event a short-lived helper agent writes the sentence with a model you choose (Claude Haiku 4.5 by default). The helper session is deleted once the sentence is written, which you can turn off.
 

@@ -1,0 +1,15 @@
+{
+  "issue": 1748,
+  "title": "LSP plugin",
+  "submittedBy": "emosenkis",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/emosenkis/paseo-plugins",
+    "ref": "main",
+    "pluginPath": "plugins/lsp"
+  },
+  "categories": [
+    "extras",
+    "utils"
+  ]
+}

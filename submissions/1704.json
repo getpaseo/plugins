@@ -1,0 +1,13 @@
+{
+  "issue": 1704,
+  "title": "File Actions",
+  "submittedBy": "guoguoguilai",
+  "source": {
+    "kind": "npm",
+    "package": "@guoguoguilai/paseo-file-actions",
+    "version": "0.1.0"
+  },
+  "categories": [
+    "utils"
+  ]
+}

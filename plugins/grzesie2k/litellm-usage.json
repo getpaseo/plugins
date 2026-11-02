@@ -1,0 +1,19 @@
+{
+  "id": "grzesie2k/litellm-usage",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/Grzesie2k/paseo-litellm-usage.git",
+    "commit": "feadd112f3e1c06fe7e8f98fe97c2c47bd16f701"
+  },
+  "repository": {
+    "url": "https://github.com/Grzesie2k/paseo-litellm-usage",
+    "commit": "feadd112f3e1c06fe7e8f98fe97c2c47bd16f701"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-02T12:52:28Z",
+  "submittedBy": "Grzesie2k",
+  "publishedAt": "2026-11-02T13:02:01Z",
+  "reviewedAt": "2026-11-02T13:02:01Z"
+}

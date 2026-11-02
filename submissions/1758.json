@@ -1,0 +1,15 @@
+{
+  "issue": 1758,
+  "title": "Submit a plugin: Creator Micro",
+  "submittedBy": "mattt",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/mattt/paseo-creator-micro",
+    "ref": "main",
+    "pluginPath": "Plugin"
+  },
+  "categories": [
+    "workspaces",
+    "extras"
+  ]
+}

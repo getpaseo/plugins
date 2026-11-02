@@ -1,0 +1,12 @@
+{
+  "issue": 1714,
+  "title": "LiteLLM usage",
+  "submittedBy": "Grzesie2k",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/Grzesie2k/paseo-litellm-usage"
+  },
+  "categories": [
+    "utils"
+  ]
+}

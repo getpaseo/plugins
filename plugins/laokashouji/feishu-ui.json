@@ -3,12 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/Laokashouji/paseo-feishu-ui.git",
-    "commit": "4b36dd2391747df2ced54fd361a1093282568c37",
-    "tag": "v0.3.14"
+    "commit": "6f81af42b62f32657ca4ecad7a19048d432b3f8a"
   },
   "repository": {
     "url": "https://github.com/Laokashouji/paseo-feishu-ui",
-    "commit": "4b36dd2391747df2ced54fd361a1093282568c37"
+    "commit": "6f81af42b62f32657ca4ecad7a19048d432b3f8a"
   },
   "categories": [
     "themes"

@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "send-to-paseo",
-    "version": "2.0.0",
-    "resolved": "https://registry.npmjs.org/send-to-paseo/-/send-to-paseo-2.0.0.tgz",
-    "integrity": "sha512-SUXfk3rxv1US165IwtpeTh1TE4FxD3yT99fWPFrXmZGxH0vyB8ahFSml1WsuPM5C3VCakEUAoFfbDLPPQQRE/Q=="
+    "version": "2.1.0",
+    "resolved": "https://registry.npmjs.org/send-to-paseo/-/send-to-paseo-2.1.0.tgz",
+    "integrity": "sha512-21eI7MTCUu2tQ0iTZF3oCC0edFY9M0MsgLhmiNaNe8LmIAK+5GPLGJEsPKZinsgXQ/TsPYyqKIVMw0qkIv/7KA=="
   },
   "repository": {
     "url": "https://github.com/tomgrin10/send-to-paseo/tree/HEAD/plugin",
-    "commit": "90002b91d9975820e45523a8af9448254a05bbda"
+    "commit": "042370332b06f9ba3d6fcce724fd54109c2ea801"
   },
   "categories": [
     "git"
@@ -17,7 +17,7 @@
   "submittedAt": "2026-09-10",
   "submittedBy": "tomgrin10",
   "publishedAt": "2026-09-10",
-  "reviewedAt": "2026-10-29T11:40:09Z",
+  "reviewedAt": "2026-11-02T13:48:16Z",
   "listing": {
     "name": "Send to Paseo",
     "media": [

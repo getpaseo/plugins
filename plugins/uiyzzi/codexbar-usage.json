@@ -1,0 +1,20 @@
+{
+  "id": "uiyzzi/codexbar-usage",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/uiYzzi/paseo-plugins.git",
+    "commit": "b92608829c1e6f0a6e9d30b7beffa3ba5f48ea0d",
+    "pluginPath": "packages/codexbar-usage"
+  },
+  "repository": {
+    "url": "https://github.com/uiYzzi/paseo-plugins",
+    "commit": "b92608829c1e6f0a6e9d30b7beffa3ba5f48ea0d"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-02T14:21:27Z",
+  "submittedBy": "uiYzzi",
+  "publishedAt": "2026-11-02T15:08:01Z",
+  "reviewedAt": "2026-11-02T15:08:01Z"
+}

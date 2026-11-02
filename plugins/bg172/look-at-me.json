@@ -15,9 +15,12 @@
   ],
   "submittedAt": "2026-10-31T14:30:07Z",
   "submittedBy": "bg172",
-  "publishedAt": "2026-10-31T14:31:26Z",
-  "reviewedAt": "2026-10-31T14:31:26Z",
+  "publishedAt": "2026-11-02T10:33:45Z",
+  "reviewedAt": "2026-11-02T10:33:45Z",
   "listing": {
-    "description": "Shows a sidebar attention indicator and opens waiting agent sessions in order of recency."
+    "description": "Shows a sidebar attention indicator and opens waiting agent sessions in order of recency.",
+    "media": [
+      "https://raw.githubusercontent.com/bg172/paseo-plugins/6105217f4f3cc96169d697db749302b391c6d73e/look-at-me/images/screenshot.png"
+    ]
   }
 }

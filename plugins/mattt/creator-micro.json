@@ -1,0 +1,21 @@
+{
+  "id": "mattt/creator-micro",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/mattt/paseo-creator-micro.git",
+    "commit": "a426e5d86dfa085d2762acb67f4fa90f7ea1bc9b",
+    "pluginPath": "Plugin"
+  },
+  "repository": {
+    "url": "https://github.com/mattt/paseo-creator-micro",
+    "commit": "a426e5d86dfa085d2762acb67f4fa90f7ea1bc9b"
+  },
+  "categories": [
+    "workspaces",
+    "extras"
+  ],
+  "submittedAt": "2026-11-02T21:16:36Z",
+  "submittedBy": "mattt",
+  "publishedAt": "2026-11-02T21:31:56Z",
+  "reviewedAt": "2026-11-02T21:31:56Z"
+}

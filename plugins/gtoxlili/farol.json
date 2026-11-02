@@ -16,5 +16,12 @@
   "submittedAt": "2026-11-02T22:53:35Z",
   "submittedBy": "gtoxlili",
   "publishedAt": "2026-11-02T23:02:08Z",
-  "reviewedAt": "2026-11-02T23:02:08Z"
+  "reviewedAt": "2026-11-02T23:02:08Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/gtoxlili/farol/d203d1eb893add1f15191252f944954e0c588c88/plugin/assets/overview.png",
+      "https://raw.githubusercontent.com/gtoxlili/farol/d203d1eb893add1f15191252f944954e0c588c88/plugin/assets/demo.webp",
+      "https://raw.githubusercontent.com/gtoxlili/farol/d203d1eb893add1f15191252f944954e0c588c88/plugin/assets/plugin-settings.png"
+    ]
+  }
 }

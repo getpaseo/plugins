@@ -1,0 +1,25 @@
+{
+  "id": "emosenkis/lsp",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/emosenkis/paseo-plugins.git",
+    "commit": "84d1e7ba743fa6e550620c0053c41ceb5f64fb3a",
+    "pluginPath": "plugins/lsp"
+  },
+  "repository": {
+    "url": "https://github.com/emosenkis/paseo-plugins",
+    "commit": "84d1e7ba743fa6e550620c0053c41ceb5f64fb3a"
+  },
+  "categories": [
+    "extras",
+    "utils"
+  ],
+  "submittedAt": "2026-11-02T16:58:07Z",
+  "submittedBy": "emosenkis",
+  "publishedAt": "2026-11-02T17:01:26Z",
+  "reviewedAt": "2026-11-02T17:01:26Z",
+  "listing": {
+    "name": "LSP",
+    "description": "Adds code navigation, diagnostics, hover information and signature help to Paseo’s desktop and web file editor using configured language servers."
+  }
+}

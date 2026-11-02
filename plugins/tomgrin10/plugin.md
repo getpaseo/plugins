@@ -12,6 +12,12 @@ A send starts a new agent in the workspace, or messages an existing one, dependi
 
 The agent status tool returns bridge state, port, pairing status, dispatch mode, default provider and dependency health to the calling agent and its model provider. It excludes pairing tokens, token previews, connection codes, daemon credentials and recent prompt text. The session label `plugin-tools/enabled: "false"` disables these tools. Overview and Display settings are available from Command-K; hiding the sidebar entry leaves Command-K available.
 
+## Optional Follow-up integration
+
+With Follow-up installed on the same daemon, the composer can route a PR instruction back to its registered agent. The send rechecks that the registration is current and the agent still belongs to the selected workspace. Choosing a fresh agent remains available.
+
+The paired extension can also relay Follow-up's Graphite status and Merge when ready requests. Graphite must be open in Chrome, and the extension needs separate consent for the exact machine and repository. A direct grant allows that machine to change the PR setting, including later pushes; without it, changes require confirmation in Chrome. Pairing alone does not grant Graphite access. These exchanges contain repository/PR identities, head revisions, requested operations and results, and can travel through your configured additional machines.
+
 ## Private address and several machines
 
 One bridge, beside the browser, can forward to other Paseo machines. Each additional machine shares a connection code containing its private bridge URL and token, so treat the code as a secret. The forwarding bridge reaches it over authenticated HTTPS. The private address must be an HTTPS origin, for example from a reverse proxy, and the **Enable private access** button runs `tailscale serve --bg <port>`, which publishes the loopback bridge on your tailnet. Use Tailscale Serve and not Funnel, since Funnel is public.

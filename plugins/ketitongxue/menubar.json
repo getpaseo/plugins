@@ -1,0 +1,20 @@
+{
+  "id": "ketitongxue/menubar",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/ketitongxue/paseo-menubar.git",
+    "commit": "a3d45459798364a3d34dd7b0e614fb56162529e3"
+  },
+  "repository": {
+    "url": "https://github.com/ketitongxue/paseo-menubar",
+    "commit": "a3d45459798364a3d34dd7b0e614fb56162529e3"
+  },
+  "categories": [
+    "utils",
+    "daemon-management"
+  ],
+  "submittedAt": "2026-11-02T16:12:26Z",
+  "submittedBy": "ketitongxue",
+  "publishedAt": "2026-11-02T16:31:51Z",
+  "reviewedAt": "2026-11-02T16:31:51Z"
+}

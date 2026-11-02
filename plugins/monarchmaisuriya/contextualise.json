@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/monarchmaisuriya/contextualise.git",
-    "commit": "a5411e7f88044968bf781d252d7a410abfd18eef",
-    "tag": "v0.22.1"
+    "commit": "f22a2b6f7398ada6fda16d4f0b027b1de811d473",
+    "tag": "v0.25.0"
   },
   "repository": {
     "url": "https://github.com/monarchmaisuriya/contextualise",
-    "commit": "a5411e7f88044968bf781d252d7a410abfd18eef"
+    "commit": "f22a2b6f7398ada6fda16d4f0b027b1de811d473"
   },
   "categories": [
     "extras",
@@ -17,5 +17,5 @@
   "submittedAt": "2026-10-27T19:31:16Z",
   "submittedBy": "monarchmaisuriya",
   "publishedAt": "2026-10-27T19:31:16Z",
-  "reviewedAt": "2026-11-02T08:33:24Z"
+  "reviewedAt": "2026-11-02T19:02:09Z"
 }

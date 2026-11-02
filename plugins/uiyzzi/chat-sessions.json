@@ -1,0 +1,27 @@
+{
+  "id": "uiyzzi/chat-sessions",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/uiYzzi/paseo-plugins.git",
+    "commit": "b92608829c1e6f0a6e9d30b7beffa3ba5f48ea0d",
+    "pluginPath": "packages/chat-sessions"
+  },
+  "repository": {
+    "url": "https://github.com/uiYzzi/paseo-plugins",
+    "commit": "b92608829c1e6f0a6e9d30b7beffa3ba5f48ea0d"
+  },
+  "categories": [
+    "workspaces",
+    "extras"
+  ],
+  "submittedAt": "2026-11-02T13:08:05Z",
+  "submittedBy": "uiYzzi",
+  "publishedAt": "2026-11-02T13:32:21Z",
+  "reviewedAt": "2026-11-02T15:31:42Z",
+  "listing": {
+    "description": "Start scratch chat sessions in separate directories under a configurable Paseo project.",
+    "media": [
+      "https://raw.githubusercontent.com/uiYzzi/paseo-plugins/b92608829c1e6f0a6e9d30b7beffa3ba5f48ea0d/packages/chat-sessions/docs/settings-screen.png"
+    ]
+  }
+}

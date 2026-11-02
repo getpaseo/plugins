@@ -1,0 +1,14 @@
+{
+  "issue": 1760,
+  "title": "Farol",
+  "submittedBy": "gtoxlili",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/gtoxlili/farol",
+    "ref": "d203d1eb893add1f15191252f944954e0c588c88",
+    "pluginPath": "plugin"
+  },
+  "categories": [
+    "extras"
+  ]
+}

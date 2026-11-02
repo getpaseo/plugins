@@ -17,9 +17,9 @@
   "submittedAt": "2026-10-29T07:36:17Z",
   "submittedBy": "gyuha",
   "publishedAt": "2026-10-29T07:36:17Z",
-  "reviewedAt": "2026-11-02T08:55:47Z",
+  "reviewedAt": "2026-11-02T09:03:01Z",
   "listing": {
-    "description": "Create teams of coding agents with chosen providers and models, coordinated by an orchestrator in shared or separate workspaces.",
+    "description": "Create teams of coding agents with chosen providers and models, coordinated by an orchestrator in one shared workspace.",
     "media": [
       "https://raw.githubusercontent.com/gyuha/paseo-agent-team/de38d315e25f3e17374426f46080c7b5ef3789ed/images/agent-dashboard.gif",
       "https://raw.githubusercontent.com/gyuha/paseo-agent-team/de38d315e25f3e17374426f46080c7b5ef3789ed/images/create-agent-team.png"

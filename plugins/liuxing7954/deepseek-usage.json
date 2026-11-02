@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-plugin-deepseek-usage",
-    "version": "0.1.1",
-    "resolved": "https://registry.npmjs.org/paseo-plugin-deepseek-usage/-/paseo-plugin-deepseek-usage-0.1.1.tgz",
-    "integrity": "sha512-uKDtEtssZigQVIu075dog+LJQJf1iQaAfk2zXXWp1dr2yVCVX4KCgNiNiW0F3iRPWGql6FT+gl9P2F1eI0qYAA=="
+    "version": "0.2.0",
+    "resolved": "https://registry.npmjs.org/paseo-plugin-deepseek-usage/-/paseo-plugin-deepseek-usage-0.2.0.tgz",
+    "integrity": "sha512-8dIu7FsPGko+pxH+REfsiOuRuBjnstWcw6LKQqBEH2ql19pKsHrfxLnTEs7FWFA/7mENEYcF6hh9oHGSsJyFLQ=="
   },
   "repository": {
     "url": "https://github.com/liuxing7954/paseo-deepseek-usage"
@@ -16,7 +16,7 @@
   "submittedAt": "2026-10-15T09:09:34Z",
   "submittedBy": "liuxing7954",
   "publishedAt": "2026-10-15T10:02:14Z",
-  "reviewedAt": "2026-10-15T10:02:14Z",
+  "reviewedAt": "2026-11-02T13:39:41Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/liuxing7954/paseo-deepseek-usage/b9ce4cf8fcfbd76ad1e6fafea70af89c553fa18b/assets/screenshot-usage.png",

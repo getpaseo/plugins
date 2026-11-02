@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "@omercnet/paseo-agent-crew",
-    "version": "4.1.0",
-    "resolved": "https://registry.npmjs.org/@omercnet/paseo-agent-crew/-/paseo-agent-crew-4.1.0.tgz",
-    "integrity": "sha512-lfvF3/8u4lSQbJtHa9N1v6t9syWdIPdvBpYkgy9IU4etOh1Qil/9gd2SioWlz+IVsOs+4sSHj3NBN4fmsP4ZuQ=="
+    "version": "4.1.1",
+    "resolved": "https://registry.npmjs.org/@omercnet/paseo-agent-crew/-/paseo-agent-crew-4.1.1.tgz",
+    "integrity": "sha512-CD+PuE8y7xW/D9lyTjFlfW+U75vOf9H7Gi25jmaaZVpU+vSizHj0RPFs1wdE3gKZz4AD5a21QDXe97T+H+oRWQ=="
   },
   "repository": {
     "url": "https://github.com/omercnet/paseo-plugins/tree/HEAD/agent-crew",
-    "commit": "2d19c7eeb3c873c83b7782b352183e02d1790ffb"
+    "commit": "55f572c7a9b3805ded1e9e820d5724e70fb9dda5"
   },
   "categories": [
     "orchestration",
@@ -19,7 +19,7 @@
   "submittedAt": "2026-09-08",
   "submittedBy": "omercnet",
   "publishedAt": "2026-09-08",
-  "reviewedAt": "2026-10-28T21:45:37Z",
+  "reviewedAt": "2026-11-02T13:40:13Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/omercnet/paseo-plugins/10766d8374dd543ba36a66c2028c3ac3316c4633/agent-crew/docs/images/agent-crew-overview.png",

@@ -17,9 +17,12 @@
   "submittedAt": "2026-11-02T16:58:07Z",
   "submittedBy": "emosenkis",
   "publishedAt": "2026-11-02T17:01:26Z",
-  "reviewedAt": "2026-11-02T17:01:26Z",
+  "reviewedAt": "2026-11-02T19:05:09Z",
   "listing": {
     "name": "LSP",
-    "description": "Adds code navigation, diagnostics, hover information and signature help to Paseo’s desktop and web file editor using configured language servers."
+    "description": "Adds code navigation, diagnostics, hover information and signature help to Paseo’s desktop and web file editor using configured language servers.",
+    "media": [
+      "https://raw.githubusercontent.com/emosenkis/paseo-plugins/722689b9c697dab4c4c186dcf471c5fe927d70c2/Screenshot.png"
+    ]
   }
 }

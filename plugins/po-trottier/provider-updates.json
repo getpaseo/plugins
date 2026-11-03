@@ -1,0 +1,24 @@
+{
+  "id": "po-trottier/provider-updates",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/po-trottier/paseo-provider-updates.git",
+    "commit": "76bee0cf897be3e54d16a1250d2979d20a104d10"
+  },
+  "repository": {
+    "url": "https://github.com/po-trottier/paseo-provider-updates",
+    "commit": "76bee0cf897be3e54d16a1250d2979d20a104d10"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-03T01:25:44Z",
+  "submittedBy": "po-trottier",
+  "publishedAt": "2026-11-03T01:31:49Z",
+  "reviewedAt": "2026-11-03T01:31:49Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/po-trottier/paseo-provider-updates/76bee0cf897be3e54d16a1250d2979d20a104d10/assets/update-pill.png"
+    ]
+  }
+}

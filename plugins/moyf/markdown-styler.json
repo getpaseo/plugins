@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/Moyf/paseo-markdown-styler.git",
-    "commit": "f6a6e658cdefe749a99711971df8e564bf299d0b"
+    "commit": "aac9402ad9e6ff99d2adf6efd43bfd2972ba7234"
   },
   "repository": {
     "url": "https://github.com/Moyf/paseo-markdown-styler",
-    "commit": "f6a6e658cdefe749a99711971df8e564bf299d0b"
+    "commit": "aac9402ad9e6ff99d2adf6efd43bfd2972ba7234"
   },
   "categories": [
     "themes",
@@ -16,10 +16,5 @@
   "submittedAt": "2026-11-03T04:23:28Z",
   "submittedBy": "Moyf",
   "publishedAt": "2026-11-03T04:31:20Z",
-  "reviewedAt": "2026-11-03T04:31:20Z",
-  "listing": {
-    "media": [
-      "https://raw.githubusercontent.com/Moyf/paseo-markdown-styler/42248276053b9216ae775cc1765f0753b2763bc1/assets/screenshot.webp"
-    ]
-  }
+  "reviewedAt": "2026-11-03T10:10:49Z"
 }

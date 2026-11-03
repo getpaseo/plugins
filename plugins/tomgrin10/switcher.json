@@ -20,6 +20,7 @@
   "publishedAt": "2026-11-03T16:31:19Z",
   "reviewedAt": "2026-11-03T16:31:19Z",
   "listing": {
+    "icon": "https://raw.githubusercontent.com/tomgrin10/paseo-switcher/609e0dede824bd661dd72ee616d1dbb5029f4974/assets/icon.png",
     "media": [
       "https://raw.githubusercontent.com/tomgrin10/paseo-switcher/9186015052a1b47976012e61ef6e25e0d565bdec/docs/images/switcher-light.png",
       "https://raw.githubusercontent.com/tomgrin10/paseo-switcher/9186015052a1b47976012e61ef6e25e0d565bdec/docs/images/switcher-dark.png",

@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/epistex-dev/paseo-subagent-notifications.git",
-    "commit": "4318bc168e7f366bf690a2c25f815c3c70b34205",
+    "commit": "7a4d46a92be4bcae93a69ad384caf33c185e66e2",
     "tag": "v0.3.0"
   },
   "repository": {
     "url": "https://github.com/epistex-dev/paseo-subagent-notifications",
-    "commit": "4318bc168e7f366bf690a2c25f815c3c70b34205"
+    "commit": "7a4d46a92be4bcae93a69ad384caf33c185e66e2"
   },
   "categories": [
     "orchestration"

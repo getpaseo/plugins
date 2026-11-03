@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/mbranicky/unit-test-pulse.git",
-    "commit": "fff899b51c50df4471a75416fd0ab6bf8cec5ff9"
+    "commit": "e8c86750a73ef70804254fdbaef20bf7e99c5799"
   },
   "repository": {
     "url": "https://github.com/mbranicky/unit-test-pulse",
-    "commit": "fff899b51c50df4471a75416fd0ab6bf8cec5ff9"
+    "commit": "e8c86750a73ef70804254fdbaef20bf7e99c5799"
   },
   "categories": [
     "sidebar",

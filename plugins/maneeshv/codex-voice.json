@@ -1,0 +1,21 @@
+{
+  "id": "maneeshv/codex-voice",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/maneeshv/paseo-codex-voice.git",
+    "commit": "478ef762b518a7c28b3a523ad935bb9bc25bb48b"
+  },
+  "repository": {
+    "url": "https://github.com/maneeshv/paseo-codex-voice",
+    "commit": "478ef762b518a7c28b3a523ad935bb9bc25bb48b"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-03T03:01:48Z",
+  "submittedBy": "maneeshv",
+  "publishedAt": "2026-11-03T03:06:27Z",
+  "reviewedAt": "2026-11-03T03:06:27Z"
+}

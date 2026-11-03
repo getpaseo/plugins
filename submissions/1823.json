@@ -1,0 +1,16 @@
+{
+  "issue": 1823,
+  "title": "AutoWonder Workbench",
+  "submittedBy": "CasonMo",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/CasonMo/paseo-autowonder",
+    "ref": "17f419fb18d866b3947f5a3620edbfd86dbc05bc"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces",
+    "sidebar",
+    "utils"
+  ]
+}

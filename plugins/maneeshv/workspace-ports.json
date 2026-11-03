@@ -1,0 +1,20 @@
+{
+  "id": "maneeshv/workspace-ports",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/maneeshv/paseo-workspace-ports.git",
+    "commit": "8e4c93cce3d4309d082c6140447b5ea1ffa1d03f"
+  },
+  "repository": {
+    "url": "https://github.com/maneeshv/paseo-workspace-ports",
+    "commit": "8e4c93cce3d4309d082c6140447b5ea1ffa1d03f"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-11-03T18:31:28Z",
+  "submittedBy": "maneeshv",
+  "publishedAt": "2026-11-03T18:35:05Z",
+  "reviewedAt": "2026-11-03T18:35:05Z"
+}

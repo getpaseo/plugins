@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "@andrioid/paseo-attention-span",
-    "version": "0.3.2",
-    "resolved": "https://registry.npmjs.org/@andrioid/paseo-attention-span/-/paseo-attention-span-0.3.2.tgz",
-    "integrity": "sha512-2BVzfitEWGSOAbxlh4Iyh5pWzpPN8E6rFTb2YyEeepjfo4qe5yX2Az1GPGvQBnBv3sfBj6g5O0C6TUhV6tqDKg=="
+    "version": "0.3.4",
+    "resolved": "https://registry.npmjs.org/@andrioid/paseo-attention-span/-/paseo-attention-span-0.3.4.tgz",
+    "integrity": "sha512-iQi3Ys0wJuQWqLqOtLl5rhOci+rIjXQSvndWL8Z6N4bTWXBn1OWtsZkFhdqxgLv9VVxNpiuBcOCNbbhuC2NYNw=="
   },
   "repository": {
     "url": "https://github.com/andrioid/paseo-attention-span",
-    "commit": "6cdce8158f674847bf80602e2941dd535c5c21bb"
+    "commit": "07f2c2108d8d82906756b9cb6e599a4d15ca6726"
   },
   "categories": [
     "git",
@@ -19,5 +19,5 @@
   "submittedAt": "2026-10-28T13:07:06Z",
   "submittedBy": "andrioidApacta",
   "publishedAt": "2026-10-28T13:31:42Z",
-  "reviewedAt": "2026-11-01T21:15:39Z"
+  "reviewedAt": "2026-11-02T23:55:49Z"
 }

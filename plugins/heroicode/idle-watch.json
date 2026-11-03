@@ -1,0 +1,21 @@
+{
+  "id": "heroicode/idle-watch",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/heroicode/paseo-idle-watch.git",
+    "commit": "f2e6b6fa4ac5d283d65bf72c380fe6487ae8c076",
+    "tag": "v0.3.1"
+  },
+  "repository": {
+    "url": "https://github.com/heroicode/paseo-idle-watch",
+    "commit": "f2e6b6fa4ac5d283d65bf72c380fe6487ae8c076"
+  },
+  "categories": [
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-11-03T21:31:20Z",
+  "submittedBy": "nathansgreen",
+  "publishedAt": "2026-11-03T21:31:20Z",
+  "reviewedAt": "2026-11-03T21:31:20Z"
+}

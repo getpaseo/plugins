@@ -1,0 +1,13 @@
+{
+  "issue": 1783,
+  "title": "Markdown Styler",
+  "submittedBy": "Moyf",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/Moyf/paseo-markdown-styler"
+  },
+  "categories": [
+    "themes",
+    "utils"
+  ]
+}

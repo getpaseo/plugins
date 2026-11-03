@@ -1,13 +1,15 @@
 {
   "id": "custyhs/advanced-markdown",
   "artifact": {
-    "kind": "git",
-    "remote": "https://github.com/custyhs/paseo-advanced-markdown.git",
-    "commit": "91dbc297f5ed01b7854749c8ecdab2bcc2261925"
+    "kind": "npm",
+    "package": "paseo-advanced-markdown",
+    "version": "0.4.1",
+    "resolved": "https://registry.npmjs.org/paseo-advanced-markdown/-/paseo-advanced-markdown-0.4.1.tgz",
+    "integrity": "sha512-0RW5BRv+W6N6uuGrEUmZMrFJ2woVAPE4PwwagVpbaQQ5xYfyWb9rnUYKRtL/ozp3muoyV8hiunuph/UoQFrkCQ=="
   },
   "repository": {
     "url": "https://github.com/custyhs/paseo-advanced-markdown",
-    "commit": "91dbc297f5ed01b7854749c8ecdab2bcc2261925"
+    "commit": "39a01bb091715230a56837d08b497c59f311d3ec"
   },
   "categories": [
     "utils"
@@ -15,5 +17,5 @@
   "submittedAt": "2026-11-03T04:35:33Z",
   "submittedBy": "custyhs",
   "publishedAt": "2026-11-03T04:40:17Z",
-  "reviewedAt": "2026-11-03T04:40:17Z"
+  "reviewedAt": "2026-11-03T06:20:58Z"
 }

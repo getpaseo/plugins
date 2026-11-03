@@ -1,0 +1,15 @@
+{
+  "issue": 1815,
+  "title": "Usage Auto Resume",
+  "submittedBy": "jeongukkim",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/babo-jeonguk/paseo-usage-auto-resume",
+    "ref": "v1.3.2"
+  },
+  "categories": [
+    "orchestration",
+    "sidebar",
+    "utils"
+  ]
+}

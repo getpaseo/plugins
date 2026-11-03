@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/52216108/paseo-plugins.git",
-    "commit": "613720343a212cd4babeaada2f04c08aafed897b",
+    "commit": "8671cb64dbc4db6080e6caec2f92274e32066189",
     "pluginPath": "next-input"
   },
   "repository": {
     "url": "https://github.com/52216108/paseo-plugins",
-    "commit": "613720343a212cd4babeaada2f04c08aafed897b"
+    "commit": "8671cb64dbc4db6080e6caec2f92274e32066189"
   },
   "categories": [
     "utils"
@@ -16,5 +16,13 @@
   "submittedAt": "2026-10-25T06:17:06Z",
   "submittedBy": "52216108",
   "publishedAt": "2026-10-25T06:37:36Z",
-  "reviewedAt": "2026-10-25T06:37:36Z"
+  "reviewedAt": "2026-11-03T10:15:51Z",
+  "listing": {
+    "description": "Predicts one editable next message from the recent conversation using Claude or Codex.",
+    "translations": {
+      "zh-CN": {
+        "description": "\u4f7f\u7528 Claude \u6216 Codex\uff0c\u6839\u636e\u6700\u8fd1\u5bf9\u8bdd\u751f\u6210\u4e00\u6761\u53ef\u7f16\u8f91\u7684\u4e0b\u4e00\u53e5\u5efa\u8bae\u3002"
+      }
+    }
+  }
 }

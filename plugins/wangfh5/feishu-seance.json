@@ -1,0 +1,19 @@
+{
+  "id": "wangfh5/feishu-seance",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/wangfh5/paseo-feishu-seance.git",
+    "commit": "06343a0487ab5a093da0902866109567821dbf1c"
+  },
+  "repository": {
+    "url": "https://github.com/wangfh5/paseo-feishu-seance",
+    "commit": "06343a0487ab5a093da0902866109567821dbf1c"
+  },
+  "categories": [
+    "extras"
+  ],
+  "submittedAt": "2026-11-03T10:08:13Z",
+  "submittedBy": "wangfh5",
+  "publishedAt": "2026-11-03T10:08:13Z",
+  "reviewedAt": "2026-11-03T10:08:13Z"
+}

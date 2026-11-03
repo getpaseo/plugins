@@ -1,0 +1,26 @@
+{
+  "id": "jasonhnd/clear-chat",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/jasonhnd/paseo-clear-chat.git",
+    "commit": "1c947082c6acd67da449a7ab98dd66c22a48383b"
+  },
+  "repository": {
+    "url": "https://github.com/jasonhnd/paseo-clear-chat",
+    "commit": "1c947082c6acd67da449a7ab98dd66c22a48383b"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-03T13:36:07Z",
+  "submittedBy": "jasonhnd",
+  "publishedAt": "2026-11-03T14:02:47Z",
+  "reviewedAt": "2026-11-03T14:02:47Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/1c947082c6acd67da449a7ab98dd66c22a48383b/docs/images/ipad-side-light.png",
+      "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/1c947082c6acd67da449a7ab98dd66c22a48383b/docs/images/phone-timeline-light.png",
+      "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/1c947082c6acd67da449a7ab98dd66c22a48383b/docs/images/phone-details-light.png"
+    ]
+  }
+}

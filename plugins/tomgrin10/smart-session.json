@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-smart-session",
-    "version": "2.0.0",
-    "resolved": "https://registry.npmjs.org/paseo-smart-session/-/paseo-smart-session-2.0.0.tgz",
-    "integrity": "sha512-VXM6eDBokbAgZh9rYqq2dnd4DlHTKNeRMb7O1EudN8k4P1SVIzsPobT34p/UaqP5YnYZnDzcH320tFdKFj/0lw=="
+    "version": "2.1.0",
+    "resolved": "https://registry.npmjs.org/paseo-smart-session/-/paseo-smart-session-2.1.0.tgz",
+    "integrity": "sha512-wKbLTyzjxsqVHqN9egpdsaonbze8uqPzbNc/ZkphzgfKq5p+3aeOMm3ZxShEVhFxCHqnZOsksEUK7h/rzVAdHQ=="
   },
   "repository": {
     "url": "https://github.com/tomgrin10/paseo-smart-session",
-    "commit": "21d6db9d31e904528217c506ca5c5fba2226d039"
+    "commit": "b04cd3c3e153218e5c62f41b1e13c654fc828135"
   },
   "categories": [
     "utils"
@@ -17,12 +17,12 @@
   "submittedAt": "2026-09-10",
   "submittedBy": "tomgrin10",
   "publishedAt": "2026-09-10",
-  "reviewedAt": "2026-10-29T11:40:48Z",
+  "reviewedAt": "2026-11-03T22:27:01Z",
   "listing": {
     "name": "Smart Session",
+    "icon": "https://raw.githubusercontent.com/tomgrin10/plugins/accb0d7d67c793fa05b71b49078bdcb07d766a3b/assets/tomgrin10/smart-session/icon.png",
     "media": [
       "https://cdn.jsdelivr.net/npm/paseo-smart-session@1.2.6/docs/screenshots/smart-compact-handoff.png"
-    ],
-    "icon": "https://raw.githubusercontent.com/tomgrin10/plugins/accb0d7d67c793fa05b71b49078bdcb07d766a3b/assets/tomgrin10/smart-session/icon.png"
+    ]
   }
 }

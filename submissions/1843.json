@@ -1,0 +1,13 @@
+{
+  "issue": 1843,
+  "title": "Workspace Ports",
+  "submittedBy": "maneeshv",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/maneeshv/paseo-workspace-ports"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ]
+}

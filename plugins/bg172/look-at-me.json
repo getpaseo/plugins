@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/bg172/paseo-plugins.git",
-    "commit": "cbfd981072f01da94cf2964db9d712ff537c181e",
+    "commit": "2250ceeedea1ff746468a3a952682ebdea8c92d8",
     "pluginPath": "look-at-me"
   },
   "repository": {
     "url": "https://github.com/bg172/paseo-plugins",
-    "commit": "cbfd981072f01da94cf2964db9d712ff537c181e"
+    "commit": "2250ceeedea1ff746468a3a952682ebdea8c92d8"
   },
   "categories": [
     "sidebar"
@@ -16,7 +16,7 @@
   "submittedAt": "2026-10-31T14:30:07Z",
   "submittedBy": "bg172",
   "publishedAt": "2026-11-02T10:33:45Z",
-  "reviewedAt": "2026-11-03T21:02:56Z",
+  "reviewedAt": "2026-11-03T23:32:16Z",
   "listing": {
     "description": "Shows a sidebar attention indicator and opens waiting agent sessions in order of recency."
   }

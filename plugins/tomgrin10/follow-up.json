@@ -20,5 +20,8 @@
   "submittedAt": "2026-10-23T12:51:52Z",
   "submittedBy": "tomgrin10",
   "publishedAt": "2026-10-23T13:10:16Z",
-  "reviewedAt": "2026-11-02T23:57:32Z"
+  "reviewedAt": "2026-11-02T23:57:32Z",
+  "listing": {
+    "icon": "https://raw.githubusercontent.com/tomgrin10/plugins/accb0d7d67c793fa05b71b49078bdcb07d766a3b/assets/tomgrin10/follow-up/icon.png"
+  }
 }

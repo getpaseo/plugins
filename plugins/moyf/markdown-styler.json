@@ -1,0 +1,25 @@
+{
+  "id": "moyf/markdown-styler",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/Moyf/paseo-markdown-styler.git",
+    "commit": "f6a6e658cdefe749a99711971df8e564bf299d0b"
+  },
+  "repository": {
+    "url": "https://github.com/Moyf/paseo-markdown-styler",
+    "commit": "f6a6e658cdefe749a99711971df8e564bf299d0b"
+  },
+  "categories": [
+    "themes",
+    "utils"
+  ],
+  "submittedAt": "2026-11-03T04:23:28Z",
+  "submittedBy": "Moyf",
+  "publishedAt": "2026-11-03T04:31:20Z",
+  "reviewedAt": "2026-11-03T04:31:20Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/Moyf/paseo-markdown-styler/42248276053b9216ae775cc1765f0753b2763bc1/assets/screenshot.webp"
+    ]
+  }
+}

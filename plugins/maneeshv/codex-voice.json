@@ -16,6 +16,12 @@
   ],
   "submittedAt": "2026-11-03T03:01:48Z",
   "submittedBy": "maneeshv",
-  "publishedAt": "2026-11-03T03:06:27Z",
-  "reviewedAt": "2026-11-03T03:06:27Z"
+  "publishedAt": "2026-11-03T05:32:08Z",
+  "reviewedAt": "2026-11-03T05:32:08Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/maneeshv/paseo-codex-voice/refs/heads/main/docs/screenshots/ready-to-start.png",
+      "https://raw.githubusercontent.com/maneeshv/paseo-codex-voice/refs/heads/main/docs/screenshots/live-sidebar-indicator.png"
+    ]
+  }
 }

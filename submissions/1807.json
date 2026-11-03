@@ -1,0 +1,12 @@
+{
+  "issue": 1807,
+  "title": "DeepSeek Harness (WS + ACP)",
+  "submittedBy": "AksuRedapple",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/AksuRedapple/dsh-paseo-provider"
+  },
+  "categories": [
+    "providers"
+  ]
+}

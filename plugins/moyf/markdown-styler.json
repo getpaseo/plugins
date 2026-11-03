@@ -16,5 +16,10 @@
   "submittedAt": "2026-11-03T04:23:28Z",
   "submittedBy": "Moyf",
   "publishedAt": "2026-11-03T04:31:20Z",
-  "reviewedAt": "2026-11-03T04:31:20Z"
+  "reviewedAt": "2026-11-03T04:31:20Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/Moyf/paseo-markdown-styler/42248276053b9216ae775cc1765f0753b2763bc1/assets/screenshot.webp"
+    ]
+  }
 }

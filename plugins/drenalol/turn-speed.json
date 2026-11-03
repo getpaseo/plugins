@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-turn-speed",
-    "version": "1.2.1",
-    "resolved": "https://registry.npmjs.org/paseo-turn-speed/-/paseo-turn-speed-1.2.1.tgz",
-    "integrity": "sha512-xkOmf7hISOV++iwr9lzujn+NwronEUg14lHdX4f9Vf3nBR3Ka6aZSjrT/VoEXxLLa6xAmMap2eHket3TF28f0w=="
+    "version": "1.3.0",
+    "resolved": "https://registry.npmjs.org/paseo-turn-speed/-/paseo-turn-speed-1.3.0.tgz",
+    "integrity": "sha512-Q0w53JmrUstN6jU2fhCJlnSoKeVbpqGKujk3yTeFiyKb1dLOUNitrdBTxOikKKVGJL4xy4HK8mgBhqPZjXZsuw=="
   },
   "repository": {
     "url": "https://github.com/Drenalol/paseo-turn-speed"
@@ -17,7 +17,7 @@
   "submittedAt": "2026-10-15T09:38:49Z",
   "submittedBy": "Drenalol",
   "publishedAt": "2026-10-15T09:47:11Z",
-  "reviewedAt": "2026-10-25T19:45:38Z",
+  "reviewedAt": "2026-11-02T23:56:19Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/Drenalol/paseo-turn-speed/f8dae365f6339caa14265d6399d3f30ebec5f26b/images/desktop-popover.png",

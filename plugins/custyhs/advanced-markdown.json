@@ -1,0 +1,19 @@
+{
+  "id": "custyhs/advanced-markdown",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/custyhs/paseo-advanced-markdown.git",
+    "commit": "91dbc297f5ed01b7854749c8ecdab2bcc2261925"
+  },
+  "repository": {
+    "url": "https://github.com/custyhs/paseo-advanced-markdown",
+    "commit": "91dbc297f5ed01b7854749c8ecdab2bcc2261925"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-03T04:35:33Z",
+  "submittedBy": "custyhs",
+  "publishedAt": "2026-11-03T04:40:17Z",
+  "reviewedAt": "2026-11-03T04:40:17Z"
+}

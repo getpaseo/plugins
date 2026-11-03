@@ -1,0 +1,12 @@
+{
+  "issue": 1796,
+  "title": "Feishu séance",
+  "submittedBy": "wangfh5",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/wangfh5/paseo-feishu-seance"
+  },
+  "categories": [
+    "extras"
+  ]
+}

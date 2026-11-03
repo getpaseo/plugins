@@ -1,0 +1,16 @@
+{
+  "issue": 1811,
+  "title": "Paseo Side Chat",
+  "submittedBy": "Moyf",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/Moyf/paseo-sidechat",
+    "ref": "e1ce6025d864a4f7768ca45e40110971b1f65e57"
+  },
+  "categories": [
+    "daemon-management",
+    "orchestration",
+    "sidebar",
+    "utils"
+  ]
+}

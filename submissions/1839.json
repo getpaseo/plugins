@@ -1,0 +1,13 @@
+{
+  "issue": 1839,
+  "title": "Agent inbox",
+  "submittedBy": "wangfh5",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/wangfh5/paseo-agent-inbox"
+  },
+  "categories": [
+    "orchestration",
+    "sidebar"
+  ]
+}

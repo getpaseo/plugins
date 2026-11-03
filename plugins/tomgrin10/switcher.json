@@ -1,0 +1,29 @@
+{
+  "id": "tomgrin10/switcher",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-switcher",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/paseo-switcher/-/paseo-switcher-0.1.1.tgz",
+    "integrity": "sha512-PsilJTeFvGvEknfkklHHxcu4hXklerhjx/Ms2+qF/Z/wN7zxjQ577Ifnbw8WtSZwD+1pnoAW+ddsQEcZRhVdjg=="
+  },
+  "repository": {
+    "url": "https://github.com/tomgrin10/paseo-switcher",
+    "commit": "9186015052a1b47976012e61ef6e25e0d565bdec"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-11-03T16:01:16Z",
+  "submittedBy": "tomgrin10",
+  "publishedAt": "2026-11-03T16:31:19Z",
+  "reviewedAt": "2026-11-03T16:31:19Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/tomgrin10/paseo-switcher/9186015052a1b47976012e61ef6e25e0d565bdec/docs/images/switcher-light.png",
+      "https://raw.githubusercontent.com/tomgrin10/paseo-switcher/9186015052a1b47976012e61ef6e25e0d565bdec/docs/images/switcher-dark.png",
+      "https://raw.githubusercontent.com/tomgrin10/paseo-switcher/9186015052a1b47976012e61ef6e25e0d565bdec/docs/images/switcher-demo.gif"
+    ]
+  }
+}

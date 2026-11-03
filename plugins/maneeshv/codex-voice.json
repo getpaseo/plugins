@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/maneeshv/paseo-codex-voice.git",
-    "commit": "478ef762b518a7c28b3a523ad935bb9bc25bb48b"
+    "commit": "fc355f988941fa5e9f0f515d1eb412e4413caf9f"
   },
   "repository": {
     "url": "https://github.com/maneeshv/paseo-codex-voice",
-    "commit": "478ef762b518a7c28b3a523ad935bb9bc25bb48b"
+    "commit": "fc355f988941fa5e9f0f515d1eb412e4413caf9f"
   },
   "categories": [
     "orchestration",
@@ -17,11 +17,11 @@
   "submittedAt": "2026-11-03T03:01:48Z",
   "submittedBy": "maneeshv",
   "publishedAt": "2026-11-03T05:32:08Z",
-  "reviewedAt": "2026-11-03T05:32:08Z",
+  "reviewedAt": "2026-11-03T20:01:29Z",
   "listing": {
     "media": [
-      "https://raw.githubusercontent.com/maneeshv/paseo-codex-voice/refs/heads/main/docs/screenshots/ready-to-start.png",
-      "https://raw.githubusercontent.com/maneeshv/paseo-codex-voice/refs/heads/main/docs/screenshots/live-sidebar-indicator.png"
+      "https://raw.githubusercontent.com/maneeshv/paseo-codex-voice/fc355f988941fa5e9f0f515d1eb412e4413caf9f/docs/screenshots/ready-to-start.png",
+      "https://raw.githubusercontent.com/maneeshv/paseo-codex-voice/fc355f988941fa5e9f0f515d1eb412e4413caf9f/docs/screenshots/live-sidebar-indicator.png"
     ]
   }
 }

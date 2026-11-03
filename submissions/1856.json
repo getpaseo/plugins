@@ -1,0 +1,13 @@
+{
+  "issue": 1856,
+  "title": "Window restore",
+  "submittedBy": "nathansgreen",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/heroicode/paseo-window-restore"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ]
+}

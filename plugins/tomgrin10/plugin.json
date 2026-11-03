@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "send-to-paseo",
-    "version": "2.1.0",
-    "resolved": "https://registry.npmjs.org/send-to-paseo/-/send-to-paseo-2.1.0.tgz",
-    "integrity": "sha512-21eI7MTCUu2tQ0iTZF3oCC0edFY9M0MsgLhmiNaNe8LmIAK+5GPLGJEsPKZinsgXQ/TsPYyqKIVMw0qkIv/7KA=="
+    "version": "2.2.0",
+    "resolved": "https://registry.npmjs.org/send-to-paseo/-/send-to-paseo-2.2.0.tgz",
+    "integrity": "sha512-QrZGZATE9Qm2p5b1E4cMfTL8WIeCgVmGo2ECyqee3Vjp9DRLJwp1v7xOo6VWt5ngFjTn+DxNpm64aQ5YJm2DKw=="
   },
   "repository": {
     "url": "https://github.com/tomgrin10/send-to-paseo/tree/HEAD/plugin",
-    "commit": "042370332b06f9ba3d6fcce724fd54109c2ea801"
+    "commit": "8b7474d6adcdced88556b7a5644ecabaf9561f20"
   },
   "categories": [
     "git"
@@ -17,12 +17,12 @@
   "submittedAt": "2026-09-10",
   "submittedBy": "tomgrin10",
   "publishedAt": "2026-09-10",
-  "reviewedAt": "2026-11-02T13:48:16Z",
+  "reviewedAt": "2026-11-03T22:26:41Z",
   "listing": {
     "name": "Send to Paseo",
+    "icon": "https://raw.githubusercontent.com/tomgrin10/plugins/accb0d7d67c793fa05b71b49078bdcb07d766a3b/assets/tomgrin10/plugin/icon.png",
     "media": [
       "https://raw.githubusercontent.com/tomgrin10/send-to-paseo/324e8fe32ce55659d2ffcf007ea50a5d4774c062/docs/screenshots/hero-github-pr-popover.png"
-    ],
-    "icon": "https://raw.githubusercontent.com/tomgrin10/plugins/accb0d7d67c793fa05b71b49078bdcb07d766a3b/assets/tomgrin10/plugin/icon.png"
+    ]
   }
 }

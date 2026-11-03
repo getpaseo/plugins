@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/po-trottier/paseo-find-in-files.git",
-    "commit": "41b7a0b9c2dd1fb426bc9007e3295301a53e5495"
+    "commit": "e92eb82f19c353fd88e8b652edca9c888686e504"
   },
   "repository": {
     "url": "https://github.com/po-trottier/paseo-find-in-files",
-    "commit": "41b7a0b9c2dd1fb426bc9007e3295301a53e5495"
+    "commit": "e92eb82f19c353fd88e8b652edca9c888686e504"
   },
   "categories": [
     "workspaces",
@@ -19,7 +19,7 @@
   "reviewedAt": "2026-11-02T23:31:31Z",
   "listing": {
     "media": [
-      "https://raw.githubusercontent.com/po-trottier/paseo-find-in-files/41b7a0b9c2dd1fb426bc9007e3295301a53e5495/assets/search-and-preview.png"
+      "https://raw.githubusercontent.com/po-trottier/paseo-find-in-files/e92eb82f19c353fd88e8b652edca9c888686e504/assets/search-and-preview.png"
     ]
   }
 }

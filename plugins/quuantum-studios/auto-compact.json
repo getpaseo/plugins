@@ -1,0 +1,19 @@
+{
+  "id": "quuantum-studios/auto-compact",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/Quuantum-Studios/paseo-plugin-auto-compact.git",
+    "commit": "d2f56c91c1d36da823802af90a5e2c64833a6373"
+  },
+  "repository": {
+    "url": "https://github.com/Quuantum-Studios/paseo-plugin-auto-compact",
+    "commit": "d2f56c91c1d36da823802af90a5e2c64833a6373"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-03T19:44:39Z",
+  "submittedBy": "Quuantum-Studios",
+  "publishedAt": "2026-11-03T20:03:19Z",
+  "reviewedAt": "2026-11-03T20:03:19Z"
+}

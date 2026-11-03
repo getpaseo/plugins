@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-switcher",
-    "version": "0.1.1",
-    "resolved": "https://registry.npmjs.org/paseo-switcher/-/paseo-switcher-0.1.1.tgz",
-    "integrity": "sha512-PsilJTeFvGvEknfkklHHxcu4hXklerhjx/Ms2+qF/Z/wN7zxjQ577Ifnbw8WtSZwD+1pnoAW+ddsQEcZRhVdjg=="
+    "version": "1.0.0",
+    "resolved": "https://registry.npmjs.org/paseo-switcher/-/paseo-switcher-1.0.0.tgz",
+    "integrity": "sha512-F0Y7xnD+KRZNNiUzpJFQCNqE29KrANzX9PjmfxCLNHmMIKsPF84v1N1vulg6eMQpXANBW3Y8lqERoaOrIXmlyA=="
   },
   "repository": {
     "url": "https://github.com/tomgrin10/paseo-switcher",
-    "commit": "9186015052a1b47976012e61ef6e25e0d565bdec"
+    "commit": "e4a085ccfbbabdbfdd8d9026ceaf71d422aad254"
   },
   "categories": [
     "workspaces",
@@ -18,13 +18,13 @@
   "submittedAt": "2026-11-03T16:01:16Z",
   "submittedBy": "tomgrin10",
   "publishedAt": "2026-11-03T16:31:19Z",
-  "reviewedAt": "2026-11-03T16:31:19Z",
+  "reviewedAt": "2026-11-03T22:27:22Z",
   "listing": {
-    "icon": "https://raw.githubusercontent.com/tomgrin10/paseo-switcher/609e0dede824bd661dd72ee616d1dbb5029f4974/assets/icon.png",
     "media": [
       "https://raw.githubusercontent.com/tomgrin10/paseo-switcher/9186015052a1b47976012e61ef6e25e0d565bdec/docs/images/switcher-light.png",
       "https://raw.githubusercontent.com/tomgrin10/paseo-switcher/9186015052a1b47976012e61ef6e25e0d565bdec/docs/images/switcher-dark.png",
-      "https://raw.githubusercontent.com/tomgrin10/paseo-switcher/9186015052a1b47976012e61ef6e25e0d565bdec/docs/images/switcher-demo.gif"
+      "https://raw.githubusercontent.com/tomgrin10/paseo-switcher/e4a085ccfbbabdbfdd8d9026ceaf71d422aad254/docs/images/switcher-list.gif",
+      "https://raw.githubusercontent.com/tomgrin10/paseo-switcher/e4a085ccfbbabdbfdd8d9026ceaf71d422aad254/docs/images/switcher-thumbnails.gif"
     ]
   }
 }

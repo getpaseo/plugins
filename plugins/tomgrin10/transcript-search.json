@@ -22,6 +22,7 @@
     "name": "Transcript Search",
     "media": [
       "https://cdn.jsdelivr.net/npm/paseo-transcript-search@0.2.1/docs/screenshots/transcript-search.png"
-    ]
+    ],
+    "icon": "https://raw.githubusercontent.com/tomgrin10/plugins/accb0d7d67c793fa05b71b49078bdcb07d766a3b/assets/tomgrin10/transcript-search/icon.png"
   }
 }

@@ -22,6 +22,7 @@
     "name": "Graphite",
     "media": [
       "https://raw.githubusercontent.com/tomgrin10/paseo-graphite/84952047525a270be397ba7ff2af90e1275e7fed/docs/screenshots/graphite-prs.png"
-    ]
+    ],
+    "icon": "https://raw.githubusercontent.com/tomgrin10/plugins/accb0d7d67c793fa05b71b49078bdcb07d766a3b/assets/tomgrin10/graphite/icon.png"
   }
 }

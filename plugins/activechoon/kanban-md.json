@@ -1,0 +1,20 @@
+{
+  "id": "activechoon/kanban-md",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/ActiveChooN/kanban-md-paseo.git",
+    "commit": "1b80b3bf8dc8e42d07ed45a843b03a7a77ed5d22"
+  },
+  "repository": {
+    "url": "https://github.com/ActiveChooN/kanban-md-paseo",
+    "commit": "1b80b3bf8dc8e42d07ed45a843b03a7a77ed5d22"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces"
+  ],
+  "submittedAt": "2026-11-03T21:50:13Z",
+  "submittedBy": "ActiveChooN",
+  "publishedAt": "2026-11-03T23:10:58Z",
+  "reviewedAt": "2026-11-03T23:10:58Z"
+}

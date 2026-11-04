@@ -1,0 +1,13 @@
+{
+  "issue": 1957,
+  "title": "VS Code",
+  "submittedBy": "BrandonGillis",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/BrandonGillis/paseo-vscode"
+  },
+  "categories": [
+    "workspaces",
+    "extras"
+  ]
+}

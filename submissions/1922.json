@@ -1,0 +1,13 @@
+{
+  "issue": 1922,
+  "title": "Design canvas",
+  "submittedBy": "961853266hyt",
+  "source": {
+    "kind": "npm",
+    "package": "paseo-design-canvas"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ]
+}

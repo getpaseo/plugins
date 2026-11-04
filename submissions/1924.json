@@ -1,0 +1,12 @@
+{
+  "issue": 1924,
+  "title": "Tmux Manager",
+  "submittedBy": "TivonJJ",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/TivonJJ/paseo-plugin-tmux-manager"
+  },
+  "categories": [
+    "sidebar"
+  ]
+}

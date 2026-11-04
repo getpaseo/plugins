@@ -1,0 +1,12 @@
+{
+  "issue": 1951,
+  "title": "Paseo Sync",
+  "submittedBy": "HybridRbt",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/HybridRbt/paseo-sync"
+  },
+  "categories": [
+    "daemon-management"
+  ]
+}

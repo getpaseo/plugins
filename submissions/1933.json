@@ -1,0 +1,14 @@
+{
+  "issue": 1933,
+  "title": "Draft for review: CC Desk Tunnel provider (Windows)",
+  "submittedBy": "xiaobaifly7",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/xiaobaifly7/paseo",
+    "ref": "cd64af36e0f4c602dd1eb0d8593715f4a64286f5",
+    "pluginPath": "community-plugins/ccdesk-provider"
+  },
+  "categories": [
+    "providers"
+  ]
+}

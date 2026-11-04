@@ -1,0 +1,16 @@
+{
+  "issue": 1940,
+  "title": "TRAE queue status",
+  "submittedBy": "tenlee2012",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/tenlee2012/paseo-trae-queue-status",
+    "ref": "aee3451328b0a5b75ed1541b3d6ae2dab3fa9082"
+  },
+  "categories": [
+    "providers",
+    "workspaces",
+    "sidebar",
+    "utils"
+  ]
+}

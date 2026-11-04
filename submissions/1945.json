@@ -1,0 +1,14 @@
+{
+  "issue": 1945,
+  "title": "Chat-Share",
+  "submittedBy": "mailwmj",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/mailwmj/Chat-Share",
+    "ref": "ff247df"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ]
+}

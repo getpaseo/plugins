@@ -1,0 +1,14 @@
+{
+  "issue": 1937,
+  "title": "Agent processes",
+  "submittedBy": "nguyenvanduocit",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/nguyenvanduocit/paseo-agent-processes",
+    "ref": "6cf0b60529af3ac965e4e96746286eb2813f8568"
+  },
+  "categories": [
+    "daemon-management",
+    "utils"
+  ]
+}

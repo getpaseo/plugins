@@ -1,0 +1,20 @@
+{
+  "id": "rearpoem/tieba-reader",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/Rearpoem/paseo-tieba-reader.git",
+    "commit": "c90fbde1a2257e9b76a0e3780e428c8a743b3fc9"
+  },
+  "repository": {
+    "url": "https://github.com/Rearpoem/paseo-tieba-reader",
+    "commit": "c90fbde1a2257e9b76a0e3780e428c8a743b3fc9"
+  },
+  "categories": [
+    "sidebar",
+    "extras"
+  ],
+  "submittedAt": "2026-11-04T03:11:57Z",
+  "submittedBy": "Rearpoem",
+  "publishedAt": "2026-11-04T03:35:20Z",
+  "reviewedAt": "2026-11-04T03:35:20Z"
+}

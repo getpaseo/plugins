@@ -16,5 +16,11 @@
   "submittedAt": "2026-11-02T14:21:16Z",
   "submittedBy": "uiYzzi",
   "publishedAt": "2026-11-02T15:08:01Z",
-  "reviewedAt": "2026-11-02T15:08:01Z"
+  "reviewedAt": "2026-11-04T11:03:00Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/uiYzzi/paseo-plugins/8a04b8a63890299ee0180d9c1c4454b67c760746/packages/codexbar-usage/docs/usage-cards.png",
+      "https://raw.githubusercontent.com/uiYzzi/paseo-plugins/f8c87140d459fe9509135051fc1484c8102d5977/packages/codexbar-usage/docs/settings-screen.png"
+    ]
+  }
 }

@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/gyuha/paseo-agent-team.git",
-    "commit": "bcc805f6888f7c2fea97e23ad3bc4498cdcf42d9"
+    "commit": "452852bf5dfe7624b39bba2051d8ee156b4909ec"
   },
   "repository": {
     "url": "https://github.com/gyuha/paseo-agent-team",
-    "commit": "bcc805f6888f7c2fea97e23ad3bc4498cdcf42d9"
+    "commit": "452852bf5dfe7624b39bba2051d8ee156b4909ec"
   },
   "categories": [
     "orchestration",
@@ -17,7 +17,7 @@
   "submittedAt": "2026-10-29T07:36:17Z",
   "submittedBy": "gyuha",
   "publishedAt": "2026-10-29T07:36:17Z",
-  "reviewedAt": "2026-11-02T16:14:40Z",
+  "reviewedAt": "2026-11-04T07:30:36Z",
   "listing": {
     "description": "Create teams of coding agents with chosen providers and models, coordinated by an orchestrator in one shared workspace.",
     "media": [

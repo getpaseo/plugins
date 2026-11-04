@@ -1,0 +1,26 @@
+{
+  "id": "tivonjj/tmux-manager",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/TivonJJ/paseo-plugin-tmux-manager.git",
+    "commit": "24fb2bb24d19f5fce08c7d162b4f1ef874c0aae8"
+  },
+  "repository": {
+    "url": "https://github.com/TivonJJ/paseo-plugin-tmux-manager",
+    "commit": "24fb2bb24d19f5fce08c7d162b4f1ef874c0aae8"
+  },
+  "categories": [
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-04T09:13:39Z",
+  "submittedBy": "TivonJJ",
+  "publishedAt": "2026-11-04T09:15:40Z",
+  "reviewedAt": "2026-11-04T09:15:40Z",
+  "listing": {
+    "name": "Tmux manager",
+    "description": "List tmux sessions on your Paseo host, attach through a terminal, and close sessions after confirmation.",
+    "media": [
+      "https://raw.githubusercontent.com/TivonJJ/paseo-plugin-tmux-manager/24fb2bb24d19f5fce08c7d162b4f1ef874c0aae8/showcase/sc1.JPG"
+    ]
+  }
+}

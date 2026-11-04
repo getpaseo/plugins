@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/CasonMo/paseo-autowonder.git",
-    "commit": "e605c78fde3207d1fb4fdb2c84686471c1076dcf"
+    "commit": "128adcabd763bd13607bdbe13400f326bdbb0a43"
   },
   "repository": {
     "url": "https://github.com/CasonMo/paseo-autowonder",
-    "commit": "e605c78fde3207d1fb4fdb2c84686471c1076dcf"
+    "commit": "128adcabd763bd13607bdbe13400f326bdbb0a43"
   },
   "categories": [
     "orchestration",
@@ -18,11 +18,11 @@
   "submittedAt": "2026-11-03T14:29:07Z",
   "submittedBy": "CasonMo",
   "publishedAt": "2026-11-03T14:32:19Z",
-  "reviewedAt": "2026-11-04T04:32:14Z",
+  "reviewedAt": "2026-11-04T06:03:21Z",
   "listing": {
     "media": [
-      "https://raw.githubusercontent.com/CasonMo/paseo-autowonder/e605c78fde3207d1fb4fdb2c84686471c1076dcf/assets/screenshot-board.png",
-      "https://raw.githubusercontent.com/CasonMo/paseo-autowonder/e605c78fde3207d1fb4fdb2c84686471c1076dcf/assets/screenshot-executions.png"
+      "https://raw.githubusercontent.com/CasonMo/paseo-autowonder/128adcabd763bd13607bdbe13400f326bdbb0a43/assets/screenshot-board.png",
+      "https://raw.githubusercontent.com/CasonMo/paseo-autowonder/128adcabd763bd13607bdbe13400f326bdbb0a43/assets/screenshot-executions.png"
     ]
   }
 }

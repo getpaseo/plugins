@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/sm1ee/paseo-codex-lb.git",
-    "commit": "39b95a8940a6576384b345fe9f1f4772c1564fdd",
-    "tag": "v0.1.0"
+    "commit": "f777f61568cc440c6ae9c4c071b190aa5f960dff",
+    "tag": "v0.1.1"
   },
   "repository": {
     "url": "https://github.com/sm1ee/paseo-codex-lb",
-    "commit": "39b95a8940a6576384b345fe9f1f4772c1564fdd"
+    "commit": "f777f61568cc440c6ae9c4c071b190aa5f960dff"
   },
   "categories": [
     "sidebar",

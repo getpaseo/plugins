@@ -1,0 +1,14 @@
+{
+  "issue": 1927,
+  "title": "Next message suggestion",
+  "submittedBy": "52216108",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/52216108/paseo-plugins",
+    "ref": "880e2b1fe91eb2aade64c46c0659e1d9a7ff535b",
+    "pluginPath": "next-input"
+  },
+  "categories": [
+    "utils"
+  ]
+}

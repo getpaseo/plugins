@@ -1,0 +1,19 @@
+{
+  "id": "kiawin/chat-trace",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/kiawin/paseo-chat-trace.git",
+    "commit": "22a85948cfe8139709482bc285eee6d9c9f76dac"
+  },
+  "repository": {
+    "url": "https://github.com/kiawin/paseo-chat-trace",
+    "commit": "22a85948cfe8139709482bc285eee6d9c9f76dac"
+  },
+  "categories": [
+    "extras"
+  ],
+  "submittedAt": "2026-11-05T06:58:25Z",
+  "submittedBy": "kiawin",
+  "publishedAt": "2026-11-05T08:33:47Z",
+  "reviewedAt": "2026-11-05T08:33:47Z"
+}

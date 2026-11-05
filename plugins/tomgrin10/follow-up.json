@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-follow-up",
-    "version": "0.3.6",
-    "resolved": "https://registry.npmjs.org/paseo-follow-up/-/paseo-follow-up-0.3.6.tgz",
-    "integrity": "sha512-b0VVD6RaqPeJ6VemxRxO0C4RAUeUYG0IrC2w0EyRBTDVd8mWOIUOd503+XZl/WNCS/jfy/PEK2hHFIMMrWMpBw=="
+    "version": "1.0.0",
+    "resolved": "https://registry.npmjs.org/paseo-follow-up/-/paseo-follow-up-1.0.0.tgz",
+    "integrity": "sha512-g+kbE2NybpTBz23iSUPN+5P+0cdOhNpmxEWMTElxHh9mTCnHEHvxtqYuxRKlBcIkzWDUI0by+xQYCv+YW4KmZg=="
   },
   "repository": {
     "url": "https://github.com/tomgrin10/paseo-follow-up",
-    "commit": "54140594672ff8d9b95d183e0ac3b1deaaa3ec49"
+    "commit": "ab8436325e2a7713f149de7ca0971156653e6087"
   },
   "categories": [
     "workspaces",
@@ -20,7 +20,7 @@
   "submittedAt": "2026-10-23T12:51:52Z",
   "submittedBy": "tomgrin10",
   "publishedAt": "2026-10-23T13:10:16Z",
-  "reviewedAt": "2026-11-03T22:26:20Z",
+  "reviewedAt": "2026-11-05T13:23:05Z",
   "listing": {
     "icon": "https://raw.githubusercontent.com/tomgrin10/plugins/accb0d7d67c793fa05b71b49078bdcb07d766a3b/assets/tomgrin10/follow-up/icon.png"
   }

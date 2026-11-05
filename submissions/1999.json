@@ -1,0 +1,13 @@
+{
+  "issue": 1999,
+  "title": "draw.io",
+  "submittedBy": "ivolnistov",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/ivolnistov/paseo-plugin-drawio"
+  },
+  "categories": [
+    "extras",
+    "utils"
+  ]
+}

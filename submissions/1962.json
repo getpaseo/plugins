@@ -1,0 +1,12 @@
+{
+  "issue": 1962,
+  "title": "Chat trace",
+  "submittedBy": "kiawin",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/kiawin/paseo-chat-trace"
+  },
+  "categories": [
+    "extras"
+  ]
+}

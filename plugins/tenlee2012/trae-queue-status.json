@@ -1,0 +1,22 @@
+{
+  "id": "tenlee2012/trae-queue-status",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/tenlee2012/paseo-trae-queue-status.git",
+    "commit": "aee3451328b0a5b75ed1541b3d6ae2dab3fa9082"
+  },
+  "repository": {
+    "url": "https://github.com/tenlee2012/paseo-trae-queue-status",
+    "commit": "aee3451328b0a5b75ed1541b3d6ae2dab3fa9082"
+  },
+  "categories": [
+    "providers",
+    "workspaces",
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-11-04T13:43:54Z",
+  "submittedBy": "tenlee2012",
+  "publishedAt": "2026-11-05T10:09:53Z",
+  "reviewedAt": "2026-11-05T10:09:53Z"
+}

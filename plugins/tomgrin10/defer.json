@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-defer",
-    "version": "3.0.0",
-    "resolved": "https://registry.npmjs.org/paseo-defer/-/paseo-defer-3.0.0.tgz",
-    "integrity": "sha512-4qgPsbXJD2ahV78WDLcAqYfNo7EBKx4D7pxDhuo77roKM7/kQpfpD9ZcWr/4j+iuCBNHSQKaxfqKUobE7dzaDw=="
+    "version": "4.0.0",
+    "resolved": "https://registry.npmjs.org/paseo-defer/-/paseo-defer-4.0.0.tgz",
+    "integrity": "sha512-DMPvrBTfm/9qOchmo8kLSfQuATWhGeEaY2+sf8SIYzhtQJUTeRE4ZG02Iiv3qrVN7yNcuWJpOOjL3exc8TCW3Q=="
   },
   "repository": {
     "url": "https://github.com/tomgrin10/paseo-defer",
-    "commit": "b34383da8146a516678bd96e3d127b5b5719a791"
+    "commit": "7003fd0263aaf0c84a3eeb07f545b5b241fbda38"
   },
   "categories": [
     "utils"
@@ -17,12 +17,12 @@
   "submittedAt": "2026-09-10",
   "submittedBy": "tomgrin10",
   "publishedAt": "2026-09-10",
-  "reviewedAt": "2026-10-29T11:39:12Z",
+  "reviewedAt": "2026-11-05T13:22:38Z",
   "listing": {
     "name": "Defer",
+    "icon": "https://raw.githubusercontent.com/tomgrin10/plugins/accb0d7d67c793fa05b71b49078bdcb07d766a3b/assets/tomgrin10/defer/icon.png",
     "media": [
       "https://cdn.jsdelivr.net/npm/paseo-defer@2.4.0/docs/defer-popover.png"
-    ],
-    "icon": "https://raw.githubusercontent.com/tomgrin10/plugins/accb0d7d67c793fa05b71b49078bdcb07d766a3b/assets/tomgrin10/defer/icon.png"
+    ]
   }
 }

@@ -1,0 +1,21 @@
+{
+  "id": "multiplehats/spaces",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/multiplehats/paseo-spaces.git",
+    "commit": "1a2d48129bf5d872584f70776ba75f36864d7003"
+  },
+  "repository": {
+    "url": "https://github.com/multiplehats/paseo-spaces",
+    "commit": "1a2d48129bf5d872584f70776ba75f36864d7003"
+  },
+  "categories": [
+    "daemon-management",
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-04T16:11:46Z",
+  "submittedBy": "multiplehats",
+  "publishedAt": "2026-11-05T09:27:44Z",
+  "reviewedAt": "2026-11-05T09:27:44Z"
+}

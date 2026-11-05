@@ -1,0 +1,19 @@
+{
+  "id": "shaikowannasleep/pink-white-theme",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/shaikowannasleep/paseo-pink-white-theme.git",
+    "commit": "82fe4d1fbc499124aeedc124dbc28f5b6715b00c"
+  },
+  "repository": {
+    "url": "https://github.com/shaikowannasleep/paseo-pink-white-theme",
+    "commit": "82fe4d1fbc499124aeedc124dbc28f5b6715b00c"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-11-05T07:44:08Z",
+  "submittedBy": "shaikowannasleep",
+  "publishedAt": "2026-11-05T08:31:38Z",
+  "reviewedAt": "2026-11-05T08:31:38Z"
+}

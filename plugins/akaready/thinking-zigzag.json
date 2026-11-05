@@ -1,0 +1,19 @@
+{
+  "id": "akaready/thinking-zigzag",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/akaready/paseo-thinking-zigzag.git",
+    "commit": "d127cb971e8bede2b689e778439342efed73f314"
+  },
+  "repository": {
+    "url": "https://github.com/akaready/paseo-thinking-zigzag",
+    "commit": "d127cb971e8bede2b689e778439342efed73f314"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-05T23:43:24Z",
+  "submittedBy": "akaready",
+  "publishedAt": "2026-11-05T23:43:24Z",
+  "reviewedAt": "2026-11-05T23:43:24Z"
+}

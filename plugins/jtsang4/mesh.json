@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-mesh",
-    "version": "0.2.0",
-    "resolved": "https://registry.npmjs.org/paseo-mesh/-/paseo-mesh-0.2.0.tgz",
-    "integrity": "sha512-msi7PzmqCX89WieC+yZPxLq6enfIuOd2wmkswXdnrqasySna3rifx13dTPlO3q5htgwS1t/bDRFDZtJ7SYkcTw=="
+    "version": "0.2.1",
+    "resolved": "https://registry.npmjs.org/paseo-mesh/-/paseo-mesh-0.2.1.tgz",
+    "integrity": "sha512-RlRIviuxf3EEJQhoROfD5C+U2PdFBkOpoy10QWwxKEDsXLA+C/neVGG2Mspf01j4RoPNJRsn5ZYPhzm5lPIuaQ=="
   },
   "repository": {
     "url": "https://github.com/jtsang4/paseo-mesh",
-    "commit": "ef93207cdbe7525e07283d4a11dd97c1155ea7c1"
+    "commit": "3be744f0a7429c177c990d77182b790a7d2a2e20"
   },
   "categories": [
     "daemon-management",
@@ -19,7 +19,7 @@
   "submittedAt": "2026-10-15T06:24:22Z",
   "submittedBy": "jtsang4",
   "publishedAt": "2026-10-15T06:32:55Z",
-  "reviewedAt": "2026-10-19T10:55:09Z",
+  "reviewedAt": "2026-11-03T22:24:19Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/jtsang4/paseo-mesh/f66e5cfa34356a7c3103e746969d0e171a7390e9/docs/images/mesh-screen.png",

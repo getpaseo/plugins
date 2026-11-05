@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/Laokashouji/paseo-turn-changes.git",
-    "commit": "681c268945b77c12e73c660ebf217599d7b5b36a",
-    "tag": "v0.1.9"
+    "commit": "2333468753f94de710de18d8990ff94bf551e4cd",
+    "tag": "v0.1.10"
   },
   "repository": {
     "url": "https://github.com/Laokashouji/paseo-turn-changes",
-    "commit": "681c268945b77c12e73c660ebf217599d7b5b36a"
+    "commit": "2333468753f94de710de18d8990ff94bf551e4cd"
   },
   "categories": [
     "git",

@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "@drungrin/paseo-gsd-observer",
-    "version": "1.2.0",
-    "resolved": "https://registry.npmjs.org/@drungrin/paseo-gsd-observer/-/paseo-gsd-observer-1.2.0.tgz",
-    "integrity": "sha512-jNWU/sUndiHippicfxx/voGa+AEks0pGUM2YKiyYlu6TSc5f5yVScYm0JXAkTFQV3HuNRC/ab/gheuiC/fzXIw=="
+    "version": "1.2.1",
+    "resolved": "https://registry.npmjs.org/@drungrin/paseo-gsd-observer/-/paseo-gsd-observer-1.2.1.tgz",
+    "integrity": "sha512-86p/4jSSTU5nSC4l0reHWSNDtAAv5x4J6ZmUKAIT2d9Wbpa9kdcM7jDT1q5UESk1sLpi+II6QdG+tQ6nkygUOA=="
   },
   "repository": {
     "url": "https://github.com/drungrin/paseo-gsd-observer"
@@ -16,5 +16,5 @@
   "submittedAt": "2026-10-30T01:48:52Z",
   "submittedBy": "drungrin",
   "publishedAt": "2026-10-30T02:02:22Z",
-  "reviewedAt": "2026-10-30T02:02:22Z"
+  "reviewedAt": "2026-11-03T22:23:30Z"
 }

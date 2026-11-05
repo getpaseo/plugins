@@ -1,0 +1,24 @@
+{
+  "id": "tivonjj/kiro-usage",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/TivonJJ/paseo-plugin-kiro-usage.git",
+    "commit": "c4ce1f67bc81174d222750aefbf81a557f12f214"
+  },
+  "repository": {
+    "url": "https://github.com/TivonJJ/paseo-plugin-kiro-usage",
+    "commit": "c4ce1f67bc81174d222750aefbf81a557f12f214"
+  },
+  "categories": [
+    "providers"
+  ],
+  "submittedAt": "2026-11-04T08:13:00Z",
+  "submittedBy": "TivonJJ",
+  "publishedAt": "2026-11-04T08:32:03Z",
+  "reviewedAt": "2026-11-04T08:32:03Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/TivonJJ/paseo-plugin-kiro-usage/c4ce1f67bc81174d222750aefbf81a557f12f214/showcase/kiro-01.jpg"
+    ]
+  }
+}

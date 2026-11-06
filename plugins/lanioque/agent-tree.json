@@ -1,0 +1,21 @@
+{
+  "id": "lanioque/agent-tree",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/Lanioque/paseo-agent-tree.git",
+    "commit": "85aee7c4690daeacea4e6eb40cf7ddf8077c34fc"
+  },
+  "repository": {
+    "url": "https://github.com/Lanioque/paseo-agent-tree",
+    "commit": "85aee7c4690daeacea4e6eb40cf7ddf8077c34fc"
+  },
+  "categories": [
+    "orchestration",
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-11-06T10:31:23Z",
+  "submittedBy": "Lanioque",
+  "publishedAt": "2026-11-06T10:31:23Z",
+  "reviewedAt": "2026-11-06T10:31:23Z"
+}

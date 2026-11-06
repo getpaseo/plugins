@@ -17,12 +17,5 @@
   "submittedAt": "2026-09-10",
   "submittedBy": "tomgrin10",
   "publishedAt": "2026-09-10",
-  "reviewedAt": "2026-11-05T13:22:38Z",
-  "listing": {
-    "name": "Defer",
-    "icon": "https://raw.githubusercontent.com/tomgrin10/plugins/accb0d7d67c793fa05b71b49078bdcb07d766a3b/assets/tomgrin10/defer/icon.png",
-    "media": [
-      "https://cdn.jsdelivr.net/npm/paseo-defer@2.4.0/docs/defer-popover.png"
-    ]
-  }
+  "reviewedAt": "2026-11-06T03:02:16Z"
 }

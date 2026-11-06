@@ -1,5 +1,7 @@
 Limits shows the usage limits of the provider behind the agent you are talking to, as a pill above the composer. Press it for the full breakdown of each limit window, its reset time and your plan.
 
+It is a deliberately simple tool: one pill per agent, one popover, and no settings. For more control, Usage Monitor (`aborakati/usage-monitor`) adds usage dashboards, token history, configurable providers and per-provider pills. Usage Auto Resume (`babo-jeonguk/usage-auto-resume`) continues agents automatically after a limit resets.
+
 ## How it works
 
 The plugin runs only in the app and gets its numbers from Paseo's own provider usage service. It has no credentials, files or network access of its own. Providers that Paseo's usage service does not report show "No limits". A custom provider that extends a built-in one shows that built-in provider's limits.

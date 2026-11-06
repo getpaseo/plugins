@@ -1,0 +1,20 @@
+{
+  "id": "yoava333/background-work",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/yoava333/paseo-background-work.git",
+    "commit": "a0424e2d92551823614a3fd4b424f13acfd01815"
+  },
+  "repository": {
+    "url": "https://github.com/yoava333/paseo-background-work",
+    "commit": "a0424e2d92551823614a3fd4b424f13acfd01815"
+  },
+  "categories": [
+    "orchestration",
+    "utils"
+  ],
+  "submittedAt": "2026-11-06T02:03:12Z",
+  "submittedBy": "yoava333",
+  "publishedAt": "2026-11-06T02:03:12Z",
+  "reviewedAt": "2026-11-06T02:03:12Z"
+}

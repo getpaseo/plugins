@@ -18,13 +18,5 @@
   "submittedAt": "2026-11-03T16:01:16Z",
   "submittedBy": "tomgrin10",
   "publishedAt": "2026-11-03T16:31:19Z",
-  "reviewedAt": "2026-11-05T13:23:59Z",
-  "listing": {
-    "media": [
-      "https://raw.githubusercontent.com/tomgrin10/paseo-switcher/9186015052a1b47976012e61ef6e25e0d565bdec/docs/images/switcher-light.png",
-      "https://raw.githubusercontent.com/tomgrin10/paseo-switcher/9186015052a1b47976012e61ef6e25e0d565bdec/docs/images/switcher-dark.png",
-      "https://raw.githubusercontent.com/tomgrin10/paseo-switcher/e4a085ccfbbabdbfdd8d9026ceaf71d422aad254/docs/images/switcher-list.gif",
-      "https://raw.githubusercontent.com/tomgrin10/paseo-switcher/e4a085ccfbbabdbfdd8d9026ceaf71d422aad254/docs/images/switcher-thumbnails.gif"
-    ]
-  }
+  "reviewedAt": "2026-11-05T13:23:59Z"
 }

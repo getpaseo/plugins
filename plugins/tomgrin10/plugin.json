@@ -17,12 +17,5 @@
   "submittedAt": "2026-09-10",
   "submittedBy": "tomgrin10",
   "publishedAt": "2026-09-10",
-  "reviewedAt": "2026-11-05T22:44:22Z",
-  "listing": {
-    "name": "Send to Paseo",
-    "icon": "https://raw.githubusercontent.com/tomgrin10/plugins/accb0d7d67c793fa05b71b49078bdcb07d766a3b/assets/tomgrin10/plugin/icon.png",
-    "media": [
-      "https://raw.githubusercontent.com/tomgrin10/send-to-paseo/324e8fe32ce55659d2ffcf007ea50a5d4774c062/docs/screenshots/hero-github-pr-popover.png"
-    ]
-  }
+  "reviewedAt": "2026-11-06T02:45:00Z"
 }

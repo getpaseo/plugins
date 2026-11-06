@@ -16,5 +16,11 @@
   "submittedAt": "2026-11-04T15:19:17Z",
   "submittedBy": "mailwmj",
   "publishedAt": "2026-11-05T10:04:36Z",
-  "reviewedAt": "2026-11-05T10:04:36Z"
+  "reviewedAt": "2026-11-05T10:04:36Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/mailwmj/Chat-Share/2ae98bb7f0f64ec8f15726e8f452154cf3f5007c/images/marketplace-share.png",
+      "https://raw.githubusercontent.com/mailwmj/Chat-Share/2ae98bb7f0f64ec8f15726e8f452154cf3f5007c/images/marketplace-viewer.png"
+    ]
+  }
 }

@@ -1,0 +1,15 @@
+{
+  "issue": 2014,
+  "title": "Datawise",
+  "submittedBy": "monarchmaisuriya",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/monarchmaisuriya/datawise",
+    "ref": "v0.1.1"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar",
+    "utils"
+  ]
+}

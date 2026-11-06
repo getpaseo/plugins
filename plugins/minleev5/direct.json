@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/MinLeeV5/paseo-direct.git",
-    "commit": "db37dbee439419fbaacd66c1991c900326e26373"
+    "commit": "4cc4e8554778da68ec28ce4dda2df551af3461da"
   },
   "repository": {
     "url": "https://github.com/MinLeeV5/paseo-direct",
-    "commit": "db37dbee439419fbaacd66c1991c900326e26373"
+    "commit": "4cc4e8554778da68ec28ce4dda2df551af3461da"
   },
   "categories": [
     "daemon-management",

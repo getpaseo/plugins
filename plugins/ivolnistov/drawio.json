@@ -1,0 +1,20 @@
+{
+  "id": "ivolnistov/drawio",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/ivolnistov/paseo-plugin-drawio.git",
+    "commit": "931c23552b055ebfd3d2f4103511ba63702ec17e"
+  },
+  "repository": {
+    "url": "https://github.com/ivolnistov/paseo-plugin-drawio",
+    "commit": "931c23552b055ebfd3d2f4103511ba63702ec17e"
+  },
+  "categories": [
+    "extras",
+    "utils"
+  ],
+  "submittedAt": "2026-11-05T18:22:11Z",
+  "submittedBy": "ivolnistov",
+  "publishedAt": "2026-11-06T02:04:13Z",
+  "reviewedAt": "2026-11-06T02:04:13Z"
+}

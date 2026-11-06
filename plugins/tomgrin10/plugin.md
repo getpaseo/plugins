@@ -1,4 +1,4 @@
-Send to Paseo lets a companion browser extension send a pull request, with an instruction, to a Paseo workspace and agent, creating a worktree checked out to the pull request when no workspace fits. It requires Paseo 0.14.0 or later and uses a separately installed browser extension to send pull requests. Interactive Claude and Codex sessions can also ask its bridge-status tool for connection state and executable health; that tool does not send work or change pairing.
+Send to Paseo lets a companion browser extension send a pull request, with an instruction, to a Paseo workspace and agent, creating a worktree checked out to the pull request when no workspace fits. It requires Paseo 0.14.0 or later and uses a separately installed browser extension to send pull requests. After a send, the agent's chat shows a card with the pull request, your instruction and why it landed in that workspace, and the sidebar header has a Send to Paseo item showing bridge status. Interactive Claude and Codex sessions can also ask its bridge-status tool for connection state and executable health; that tool does not send work or change pairing.
 
 ## Setup
 

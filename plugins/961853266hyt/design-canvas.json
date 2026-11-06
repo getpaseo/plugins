@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-design-canvas",
-    "version": "0.2.0",
-    "resolved": "https://registry.npmjs.org/paseo-design-canvas/-/paseo-design-canvas-0.2.0.tgz",
-    "integrity": "sha512-sJ01YREeYdceVJwxsfDZZGSaUiyPrEVfX3idm+6wjY41LJaSOnRsfA//OEcbAvUuJbVjzLAPTYTYS0Uu0VSn0A=="
+    "version": "0.3.0",
+    "resolved": "https://registry.npmjs.org/paseo-design-canvas/-/paseo-design-canvas-0.3.0.tgz",
+    "integrity": "sha512-UkXY2cchkpBkkXEKHGAcgXxVgnkSI/XShkE3YwHkcY6MWxop5Bd8AwFMQquKNYEWFoE9uS1TQTqyHQhZ0Gksng=="
   },
   "repository": {
     "url": "https://github.com/961853266hyt/paseo-plugins/tree/HEAD/plugins/design-canvas"
@@ -17,5 +17,5 @@
   "submittedAt": "2026-11-04T09:01:43Z",
   "submittedBy": "961853266hyt",
   "publishedAt": "2026-11-04T09:10:52Z",
-  "reviewedAt": "2026-11-04T22:40:24Z"
+  "reviewedAt": "2026-11-05T22:42:02Z"
 }

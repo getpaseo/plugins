@@ -1,0 +1,21 @@
+{
+  "id": "mbranicky/jira-dashboard",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/mbranicky/jira-dashboard.git",
+    "commit": "643c1298f12505d3c13d7b3ad7c5bd698fc4a5c0"
+  },
+  "repository": {
+    "url": "https://github.com/mbranicky/jira-dashboard",
+    "commit": "643c1298f12505d3c13d7b3ad7c5bd698fc4a5c0"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-06T21:43:59Z",
+  "submittedBy": "mbranicky",
+  "publishedAt": "2026-11-06T22:01:47Z",
+  "reviewedAt": "2026-11-06T22:01:47Z"
+}

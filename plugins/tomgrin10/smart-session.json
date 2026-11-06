@@ -20,9 +20,6 @@
   "reviewedAt": "2026-11-05T22:44:51Z",
   "listing": {
     "name": "Smart Session",
-    "icon": "https://raw.githubusercontent.com/tomgrin10/plugins/accb0d7d67c793fa05b71b49078bdcb07d766a3b/assets/tomgrin10/smart-session/icon.png",
-    "media": [
-      "https://cdn.jsdelivr.net/npm/paseo-smart-session@1.2.6/docs/screenshots/smart-compact-handoff.png"
-    ]
+    "icon": "https://raw.githubusercontent.com/tomgrin10/plugins/accb0d7d67c793fa05b71b49078bdcb07d766a3b/assets/tomgrin10/smart-session/icon.png"
   }
 }

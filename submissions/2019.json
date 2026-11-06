@@ -1,0 +1,14 @@
+{
+  "issue": 2019,
+  "title": "Git Diff with Submodules",
+  "submittedBy": "MinLeeV5",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/MinLeeV5/paseo-git-diff-with-submodule",
+    "ref": "7cb64760ce6871dde6e71732717f55958aa2f831"
+  },
+  "categories": [
+    "git",
+    "workspaces"
+  ]
+}

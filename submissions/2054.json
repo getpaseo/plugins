@@ -1,0 +1,14 @@
+{
+  "issue": 2054,
+  "title": "Jira Sprint Workspace",
+  "submittedBy": "mbranicky",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/mbranicky/jira-dashboard"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces",
+    "sidebar"
+  ]
+}

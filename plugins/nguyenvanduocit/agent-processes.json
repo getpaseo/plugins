@@ -1,0 +1,21 @@
+{
+  "id": "nguyenvanduocit/agent-processes",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/nguyenvanduocit/paseo-agent-processes.git",
+    "commit": "5a1c84f4b4ebba69d4d226bc0a3bfdf4a8c08f0f",
+    "tag": "v0.1.0"
+  },
+  "repository": {
+    "url": "https://github.com/nguyenvanduocit/paseo-agent-processes",
+    "commit": "5a1c84f4b4ebba69d4d226bc0a3bfdf4a8c08f0f"
+  },
+  "categories": [
+    "daemon-management",
+    "utils"
+  ],
+  "submittedAt": "2026-11-04T13:35:18Z",
+  "submittedBy": "nguyenvanduocit",
+  "publishedAt": "2026-11-05T10:14:10Z",
+  "reviewedAt": "2026-11-05T10:14:10Z"
+}

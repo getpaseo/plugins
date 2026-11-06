@@ -1,0 +1,26 @@
+{
+  "id": "mailwmj/chat-share",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/mailwmj/Chat-Share.git",
+    "commit": "ff247dfe9e5fdae982989eade8c23d9e69c47c4a"
+  },
+  "repository": {
+    "url": "https://github.com/mailwmj/Chat-Share",
+    "commit": "ff247dfe9e5fdae982989eade8c23d9e69c47c4a"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-11-04T15:19:17Z",
+  "submittedBy": "mailwmj",
+  "publishedAt": "2026-11-05T10:04:36Z",
+  "reviewedAt": "2026-11-05T10:04:36Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/mailwmj/Chat-Share/2ae98bb7f0f64ec8f15726e8f452154cf3f5007c/images/marketplace-share.png",
+      "https://raw.githubusercontent.com/mailwmj/Chat-Share/2ae98bb7f0f64ec8f15726e8f452154cf3f5007c/images/marketplace-viewer.png"
+    ]
+  }
+}

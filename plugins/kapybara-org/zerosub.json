@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "@kapybara/zerosub",
-    "version": "1.5.0",
-    "resolved": "https://registry.npmjs.org/@kapybara/zerosub/-/zerosub-1.5.0.tgz",
-    "integrity": "sha512-1MO2FXx2+fjMnB/kXf55XoL4Uba9nSukE9+aedYEyrA2EUHSZT+TXg9aFkmwPb76A93uiuXVIrmZAfwj1iBFPg=="
+    "version": "1.5.1",
+    "resolved": "https://registry.npmjs.org/@kapybara/zerosub/-/zerosub-1.5.1.tgz",
+    "integrity": "sha512-TW+9Wj9zf8VVsivLEyfXv0VB8vz3OnqGbqdmhDhtvMxD9SIyEn14usKfiYa5ZFqZNo+aMPR/LGCRj3r4UzzAPg=="
   },
   "repository": {
     "url": "https://github.com/kapybara-org/zerosub"
@@ -16,7 +16,7 @@
   "submittedAt": "2026-09-24",
   "submittedBy": "sanjaydotpro",
   "publishedAt": "2026-09-24",
-  "reviewedAt": "2026-11-01T11:55:35Z",
+  "reviewedAt": "2026-11-06T13:02:53Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/kapybara-org/zerosub/2354700ad8749bebc3cff142190c37e1a7bd8999/images/1.png",

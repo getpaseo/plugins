@@ -1,4 +1,4 @@
-Activity shows how you use Paseo across all workspaces (sessions, prompts, providers, models, projects, and the skills and MCP tools you use most) and adds a panel for managing the agents and terminals in the current workspace. It adds a sidebar page, an Explorer panel, an agent panel, and two composer pills.
+Activity shows how you use Paseo across all workspaces (sessions, prompts, providers, models, projects, and the skills and MCP tools you use most) and adds a panel for managing the agents and terminals in the current workspace. It adds a sidebar row that opens the global Activity screen, an Explorer panel (also reachable from a workspace header button), an agent panel, and two composer pills.
 
 ## What it reads and stores
 
@@ -15,6 +15,6 @@ Archive in the Explorer panel archives the agent in Paseo, and closing a termina
 - Data is per daemon. Nothing is combined across hosts.
 - A tool call that does not report a model or skill cannot be attributed for that dimension, and skill matching is heuristic.
 
-Requires Paseo 0.9.0 or later.
+Requires Paseo 0.15.0 or later.
 
 *This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/activity).*

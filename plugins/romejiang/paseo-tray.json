@@ -1,0 +1,21 @@
+{
+  "id": "romejiang/paseo-tray",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/romejiang/paseo-tray.git",
+    "commit": "e110cb7b5581ee01ddcf767df7f3f07764e5f36a",
+    "pluginPath": "plugin"
+  },
+  "repository": {
+    "url": "https://github.com/romejiang/paseo-tray",
+    "commit": "e110cb7b5581ee01ddcf767df7f3f07764e5f36a"
+  },
+  "categories": [
+    "sidebar",
+    "extras"
+  ],
+  "submittedAt": "2026-11-06T02:03:22Z",
+  "submittedBy": "romejiang",
+  "publishedAt": "2026-11-06T02:03:22Z",
+  "reviewedAt": "2026-11-06T02:03:22Z"
+}

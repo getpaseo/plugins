@@ -19,10 +19,6 @@
   "publishedAt": "2026-09-22",
   "reviewedAt": "2026-11-05T13:25:23Z",
   "listing": {
-    "name": "Vitals",
-    "icon": "https://raw.githubusercontent.com/tomgrin10/plugins/accb0d7d67c793fa05b71b49078bdcb07d766a3b/assets/tomgrin10/vitals/icon.png",
-    "media": [
-      "https://raw.githubusercontent.com/tomgrin10/paseo-vitals/24f78e9550d6a1232d0eee52a44e3da4a82abe83/docs/images/host-vitals.png"
-    ]
+    "name": "Vitals"
   }
 }

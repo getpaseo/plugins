@@ -1,0 +1,13 @@
+{
+  "issue": 2052,
+  "title": "SSHut - a ssh agent",
+  "submittedBy": "LadysKillr",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/LadysKillr/paseo-ssh-manager",
+    "ref": "main?tab=MIT-1-ov-file"
+  },
+  "categories": [
+    "utils"
+  ]
+}

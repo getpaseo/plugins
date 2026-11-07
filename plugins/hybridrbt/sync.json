@@ -1,0 +1,19 @@
+{
+  "id": "hybridrbt/sync",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/HybridRbt/paseo-sync.git",
+    "commit": "1c3a8180840ee8f64fe88037e8c10402092bf1bf"
+  },
+  "repository": {
+    "url": "https://github.com/HybridRbt/paseo-sync",
+    "commit": "1c3a8180840ee8f64fe88037e8c10402092bf1bf"
+  },
+  "categories": [
+    "daemon-management"
+  ],
+  "submittedAt": "2026-11-04T21:06:55Z",
+  "submittedBy": "HybridRbt",
+  "publishedAt": "2026-11-05T09:23:05Z",
+  "reviewedAt": "2026-11-06T03:02:18Z"
+}

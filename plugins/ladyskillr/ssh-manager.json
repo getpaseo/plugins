@@ -1,0 +1,32 @@
+{
+  "id": "ladyskillr/ssh-manager",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/LadysKillr/paseo-ssh-manager.git",
+    "commit": "b46909ba5b605558360066b005dc51ae45c45d63"
+  },
+  "repository": {
+    "url": "https://github.com/LadysKillr/paseo-ssh-manager",
+    "commit": "b46909ba5b605558360066b005dc51ae45c45d63"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-06T21:15:25Z",
+  "submittedBy": "LadysKillr",
+  "publishedAt": "2026-11-06T21:31:39Z",
+  "reviewedAt": "2026-11-06T21:31:39Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/LadysKillr/paseo-ssh-manager/b46909ba5b605558360066b005dc51ae45c45d63/screenshots/1-terminal-sftp.jpg",
+      "https://raw.githubusercontent.com/LadysKillr/paseo-ssh-manager/b46909ba5b605558360066b005dc51ae45c45d63/screenshots/2-sessions.jpg",
+      "https://raw.githubusercontent.com/LadysKillr/paseo-ssh-manager/b46909ba5b605558360066b005dc51ae45c45d63/screenshots/3-multiexec.jpg",
+      "https://raw.githubusercontent.com/LadysKillr/paseo-ssh-manager/b46909ba5b605558360066b005dc51ae45c45d63/screenshots/4-htop.jpg",
+      "https://raw.githubusercontent.com/LadysKillr/paseo-ssh-manager/b46909ba5b605558360066b005dc51ae45c45d63/screenshots/5-monitoring.jpg",
+      "https://raw.githubusercontent.com/LadysKillr/paseo-ssh-manager/b46909ba5b605558360066b005dc51ae45c45d63/screenshots/mobile-1-sessions.jpg",
+      "https://raw.githubusercontent.com/LadysKillr/paseo-ssh-manager/b46909ba5b605558360066b005dc51ae45c45d63/screenshots/mobile-2-terminal.jpg",
+      "https://raw.githubusercontent.com/LadysKillr/paseo-ssh-manager/b46909ba5b605558360066b005dc51ae45c45d63/screenshots/mobile-3-files.jpg",
+      "https://raw.githubusercontent.com/LadysKillr/paseo-ssh-manager/b46909ba5b605558360066b005dc51ae45c45d63/screenshots/mobile-4-monitoring.jpg"
+    ]
+  }
+}

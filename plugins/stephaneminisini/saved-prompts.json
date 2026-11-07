@@ -1,0 +1,21 @@
+{
+  "id": "stephaneminisini/saved-prompts",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/stephaneminisini/paseo-saved-prompts.git",
+    "commit": "24e24c4416ef781231053fbd3cbfb7973669fff6"
+  },
+  "repository": {
+    "url": "https://github.com/stephaneminisini/paseo-saved-prompts",
+    "commit": "24e24c4416ef781231053fbd3cbfb7973669fff6"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-11-06T22:07:08Z",
+  "submittedBy": "stephaneminisini",
+  "publishedAt": "2026-11-06T22:31:03Z",
+  "reviewedAt": "2026-11-06T22:31:03Z"
+}

@@ -11,7 +11,7 @@ Two actions write directly to GitHub:
 
 Setup:
 
-- Paseo 0.11 or newer on the daemon and the app.
+- Paseo 0.13 or newer on the daemon and the app (version 0.10.2 of the plugin supports Paseo 0.11 and 0.12).
 - `gh` installed and authenticated on the daemon machine. Label and branch updates need a login with write access to the repository.
 - The board follows the login set in its header, otherwise the account `gh` is signed in as.
 

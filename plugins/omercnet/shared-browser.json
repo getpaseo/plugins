@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "@omercnet/paseo-shared-browser",
-    "version": "4.1.6",
-    "resolved": "https://registry.npmjs.org/@omercnet/paseo-shared-browser/-/paseo-shared-browser-4.1.6.tgz",
-    "integrity": "sha512-1vs23jAjzOPGtSs0Vm9dVuT2U59NeS4EE6TD90nj8fzU36v4RFc7Dor9+eNwoesCEQ70KP14KONpqBhemIDuqQ=="
+    "version": "4.1.7",
+    "resolved": "https://registry.npmjs.org/@omercnet/paseo-shared-browser/-/paseo-shared-browser-4.1.7.tgz",
+    "integrity": "sha512-FaCkuzhHzEEtRHeAwuWfKb2q+6w0hOkHFZViBZx76rh73G+702aX0yw/hKvXAZrhWqJPD1xItA2S0R6dvY0Qgg=="
   },
   "repository": {
     "url": "https://github.com/omercnet/paseo-plugins/tree/HEAD/paseo-shared-browser",
-    "commit": "eaa702b582a60e0f052ba727782b0beebb001898"
+    "commit": "15dc2f78d312984b113459d59b69ff516b91491e"
   },
   "categories": [
     "workspaces"
@@ -17,7 +17,7 @@
   "submittedAt": "2026-09-08",
   "submittedBy": "omercnet",
   "publishedAt": "2026-09-08",
-  "reviewedAt": "2026-11-03T22:25:32Z",
+  "reviewedAt": "2026-11-07T11:48:58Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/omercnet/paseo-plugins/10766d8374dd543ba36a66c2028c3ac3316c4633/paseo-shared-browser/docs/images/shared-browser-wide.png",

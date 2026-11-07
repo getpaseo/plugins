@@ -1,0 +1,28 @@
+{
+  "id": "casonmo/autowonder-workbench",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/CasonMo/paseo-autowonder.git",
+    "commit": "128adcabd763bd13607bdbe13400f326bdbb0a43"
+  },
+  "repository": {
+    "url": "https://github.com/CasonMo/paseo-autowonder",
+    "commit": "128adcabd763bd13607bdbe13400f326bdbb0a43"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces",
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-11-03T14:29:07Z",
+  "submittedBy": "CasonMo",
+  "publishedAt": "2026-11-03T14:32:19Z",
+  "reviewedAt": "2026-11-04T06:03:21Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/CasonMo/paseo-autowonder/128adcabd763bd13607bdbe13400f326bdbb0a43/assets/screenshot-board.png",
+      "https://raw.githubusercontent.com/CasonMo/paseo-autowonder/128adcabd763bd13607bdbe13400f326bdbb0a43/assets/screenshot-executions.png"
+    ]
+  }
+}

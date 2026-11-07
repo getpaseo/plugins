@@ -1,4 +1,4 @@
-Send to Paseo lets a companion browser extension send a pull request, with an instruction, to a Paseo workspace and agent, creating a worktree checked out to the pull request when no workspace fits. It requires Paseo 0.14.0 or later and uses a separately installed browser extension to send pull requests. Interactive Claude and Codex sessions can also ask its bridge-status tool for connection state and executable health; that tool does not send work or change pairing.
+Send to Paseo lets a companion browser extension send a pull request, with an instruction, to a Paseo workspace and agent, creating a worktree checked out to the pull request when no workspace fits. It requires Paseo 0.14.0 or later and uses a separately installed browser extension to send pull requests. After a send, the agent's chat shows a card with the pull request, your instruction and why it landed in that workspace, and the sidebar header has a Send to Paseo item showing bridge status. Interactive Claude and Codex sessions can also ask its bridge-status tool for connection state and executable health; that tool does not send work or change pairing.
 
 ## Setup
 
@@ -16,7 +16,7 @@ The agent status tool returns bridge state, port, pairing status, dispatch mode,
 
 With Follow-up installed on the same daemon, the composer can route a PR instruction back to its registered agent. The send rechecks that the registration is current and the agent still belongs to the selected workspace. Choosing a fresh agent remains available.
 
-The paired extension can also relay Follow-up's Graphite status and Merge when ready requests. Graphite must be open in Chrome, and the extension needs separate consent for the exact machine and repository. A direct grant allows that machine to change the PR setting, including later pushes; without it, changes require confirmation in Chrome. Pairing alone does not grant Graphite access. These exchanges contain repository/PR identities, head revisions, requested operations and results, and can travel through your configured additional machines.
+The paired extension can also relay Follow-up's Graphite status and Merge when ready requests. With Follow-up 0.3.4+ and the 2.2+ browser companion, the existing pairing advertises repositories with active tracked PRs. Graphite must be open and signed in in Chrome. Toggle changes require confirmation in Chrome unless you remember permission for that machine and repository; revoke that permission or disable browser access in the extension's Follow Up settings. The permission covers later pushes too. These exchanges contain repository/PR identities, head revisions, requested operations and results, and can travel through your configured additional machines.
 
 ## Private address and several machines
 

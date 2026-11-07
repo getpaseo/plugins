@@ -1,0 +1,20 @@
+{
+  "id": "minleev5/git-diff-with-submodule",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/MinLeeV5/paseo-git-diff-with-submodule.git",
+    "commit": "c8055d6703bd27244d231849bb54186942856197"
+  },
+  "repository": {
+    "url": "https://github.com/MinLeeV5/paseo-git-diff-with-submodule",
+    "commit": "c8055d6703bd27244d231849bb54186942856197"
+  },
+  "categories": [
+    "git",
+    "workspaces"
+  ],
+  "submittedAt": "2026-11-04T15:46:55Z",
+  "submittedBy": "MinLeeV5",
+  "publishedAt": "2026-11-05T09:30:54Z",
+  "reviewedAt": "2026-11-05T09:30:54Z"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "bendavid/collab",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/bendavid/paseo-collab.git",
+    "commit": "bc58ca1bdde63676dee8d8fc78435b8695c54053",
+    "tag": "v0.6.0"
+  },
+  "repository": {
+    "url": "https://github.com/bendavid/paseo-collab",
+    "commit": "bc58ca1bdde63676dee8d8fc78435b8695c54053"
+  },
+  "categories": [
+    "orchestration",
+    "extras",
+    "utils"
+  ],
+  "submittedAt": "2026-11-06T17:18:35Z",
+  "submittedBy": "bendavid",
+  "publishedAt": "2026-11-06T17:31:29Z",
+  "reviewedAt": "2026-11-06T17:31:29Z"
+}

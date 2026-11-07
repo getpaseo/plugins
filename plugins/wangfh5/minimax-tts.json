@@ -1,0 +1,19 @@
+{
+  "id": "wangfh5/minimax-tts",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/wangfh5/paseo-minimax-tts.git",
+    "commit": "f216101c8732645469c3db3ec86450074ba682ff"
+  },
+  "repository": {
+    "url": "https://github.com/wangfh5/paseo-minimax-tts",
+    "commit": "f216101c8732645469c3db3ec86450074ba682ff"
+  },
+  "categories": [
+    "extras"
+  ],
+  "submittedAt": "2026-11-03T08:42:02Z",
+  "submittedBy": "wangfh5",
+  "publishedAt": "2026-11-03T09:01:38Z",
+  "reviewedAt": "2026-11-03T10:02:00Z"
+}

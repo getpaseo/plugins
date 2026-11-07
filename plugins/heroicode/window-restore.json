@@ -1,0 +1,20 @@
+{
+  "id": "heroicode/window-restore",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/heroicode/paseo-window-restore.git",
+    "commit": "23e3c5d66176cf2d17edb4d19a0daf9bbdb900b0"
+  },
+  "repository": {
+    "url": "https://github.com/heroicode/paseo-window-restore",
+    "commit": "23e3c5d66176cf2d17edb4d19a0daf9bbdb900b0"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-03T21:35:18Z",
+  "submittedBy": "nathansgreen",
+  "publishedAt": "2026-11-03T22:04:29Z",
+  "reviewedAt": "2026-11-04T09:01:54Z"
+}

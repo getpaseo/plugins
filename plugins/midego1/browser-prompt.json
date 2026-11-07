@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/midego1/paseo-browser-prompt.git",
-    "commit": "f471cbc16dfda661e8081bdda973fd76c46dca5a"
+    "commit": "5cbc06c228a876b9ba8dec07bc4989ffb6ed5efd"
   },
   "repository": {
     "url": "https://github.com/midego1/paseo-browser-prompt",
-    "commit": "f471cbc16dfda661e8081bdda973fd76c46dca5a"
+    "commit": "5cbc06c228a876b9ba8dec07bc4989ffb6ed5efd"
   },
   "categories": [
     "orchestration",
@@ -16,5 +16,5 @@
   "submittedAt": "2026-10-31T06:43:22Z",
   "submittedBy": "midego1",
   "publishedAt": "2026-11-01T02:33:40Z",
-  "reviewedAt": "2026-11-02T00:31:54Z"
+  "reviewedAt": "2026-11-06T02:34:06Z"
 }

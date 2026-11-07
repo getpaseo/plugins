@@ -1,0 +1,20 @@
+{
+  "id": "brandongillis/vscode",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/BrandonGillis/paseo-vscode.git",
+    "commit": "a990604bfad15e187c804d89c20912ccc8c13b21"
+  },
+  "repository": {
+    "url": "https://github.com/BrandonGillis/paseo-vscode",
+    "commit": "a990604bfad15e187c804d89c20912ccc8c13b21"
+  },
+  "categories": [
+    "workspaces",
+    "extras"
+  ],
+  "submittedAt": "2026-11-04T23:47:19Z",
+  "submittedBy": "BrandonGillis",
+  "publishedAt": "2026-11-05T09:08:33Z",
+  "reviewedAt": "2026-11-05T09:08:33Z"
+}

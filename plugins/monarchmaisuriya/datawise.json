@@ -1,0 +1,22 @@
+{
+  "id": "monarchmaisuriya/datawise",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/monarchmaisuriya/datawise.git",
+    "commit": "0462c7ffc337b3ad26c5ec9a89fb6732e66aa8f1",
+    "tag": "v0.5.0"
+  },
+  "repository": {
+    "url": "https://github.com/monarchmaisuriya/datawise",
+    "commit": "0462c7ffc337b3ad26c5ec9a89fb6732e66aa8f1"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-11-06T09:01:59Z",
+  "submittedBy": "monarchmaisuriya",
+  "publishedAt": "2026-11-06T09:01:59Z",
+  "reviewedAt": "2026-11-07T13:32:15Z"
+}

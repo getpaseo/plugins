@@ -1,0 +1,30 @@
+{
+  "id": "gyuha/agent-office",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/gyuha/agent-office.git",
+    "commit": "c29d93315ad5b8d7dcf88eeab86e891c805c2c7a"
+  },
+  "repository": {
+    "url": "https://github.com/gyuha/agent-office",
+    "commit": "c29d93315ad5b8d7dcf88eeab86e891c805c2c7a"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar",
+    "extras"
+  ],
+  "submittedAt": "2026-11-07T13:41:37Z",
+  "submittedBy": "gyuha",
+  "publishedAt": "2026-11-07T14:03:04Z",
+  "reviewedAt": "2026-11-07T14:03:04Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/gyuha/agent-office/c29d93315ad5b8d7dcf88eeab86e891c805c2c7a/docs/screenshots/panel-mixed.webp",
+      "https://raw.githubusercontent.com/gyuha/agent-office/c29d93315ad5b8d7dcf88eeab86e891c805c2c7a/docs/screenshots/all-offices.webp",
+      "https://raw.githubusercontent.com/gyuha/agent-office/c29d93315ad5b8d7dcf88eeab86e891c805c2c7a/docs/screenshots/state-working.webp",
+      "https://raw.githubusercontent.com/gyuha/agent-office/c29d93315ad5b8d7dcf88eeab86e891c805c2c7a/docs/screenshots/state-away.webp",
+      "https://raw.githubusercontent.com/gyuha/agent-office/c29d93315ad5b8d7dcf88eeab86e891c805c2c7a/docs/screenshots/state-attention.webp"
+    ]
+  }
+}

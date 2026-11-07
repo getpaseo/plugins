@@ -1,0 +1,15 @@
+{
+  "issue": 2063,
+  "title": "Trail",
+  "submittedBy": "ttquoccuong",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/ttquoccuong/paseo-trail",
+    "ref": "v0.2.0"
+  },
+  "categories": [
+    "git",
+    "workspaces",
+    "utils"
+  ]
+}

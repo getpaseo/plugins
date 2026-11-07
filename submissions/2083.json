@@ -1,0 +1,13 @@
+{
+  "issue": 2083,
+  "title": "Add Agent Office",
+  "submittedBy": "gyuha",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/gyuha/agent-office"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ]
+}

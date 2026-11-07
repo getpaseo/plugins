@@ -17,5 +17,10 @@
   "submittedAt": "2026-11-02T21:16:36Z",
   "submittedBy": "mattt",
   "publishedAt": "2026-11-02T21:31:56Z",
-  "reviewedAt": "2026-11-02T21:31:56Z"
+  "reviewedAt": "2026-11-02T21:31:56Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/mattt/paseo-creator-micro/c745e8181c61bcab56248ef93c763d0cad6afcf8/.github/listing-settings.png"
+    ]
+  }
 }

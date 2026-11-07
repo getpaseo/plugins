@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/monarchmaisuriya/datawise.git",
-    "commit": "5083a8d9080837133fdd2e8b2347721ae2b0e2a2",
-    "tag": "v0.4.0"
+    "commit": "0462c7ffc337b3ad26c5ec9a89fb6732e66aa8f1",
+    "tag": "v0.5.0"
   },
   "repository": {
     "url": "https://github.com/monarchmaisuriya/datawise",
-    "commit": "5083a8d9080837133fdd2e8b2347721ae2b0e2a2"
+    "commit": "0462c7ffc337b3ad26c5ec9a89fb6732e66aa8f1"
   },
   "categories": [
     "workspaces",

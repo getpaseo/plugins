@@ -1,0 +1,20 @@
+{
+  "id": "pax-d/git-ignore-fade",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/pax-d/paseo-git-ignore-fade.git",
+    "commit": "69073926aeaedadb9c7d8cf72f3230b2c16db770"
+  },
+  "repository": {
+    "url": "https://github.com/pax-d/paseo-git-ignore-fade",
+    "commit": "69073926aeaedadb9c7d8cf72f3230b2c16db770"
+  },
+  "categories": [
+    "git",
+    "utils"
+  ],
+  "submittedAt": "2026-11-07T14:28:46Z",
+  "submittedBy": "pax-d",
+  "publishedAt": "2026-11-07T14:31:08Z",
+  "reviewedAt": "2026-11-07T14:31:08Z"
+}

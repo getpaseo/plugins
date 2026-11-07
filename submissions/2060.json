@@ -1,0 +1,13 @@
+{
+  "issue": 2060,
+  "title": "Clear Chat for Paseo (update to v0.15.3.1)",
+  "submittedBy": "jasonhnd",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/jasonhnd/paseo-clear-chat",
+    "ref": "f78676c7f14794c1571fb566a74e79bd096bd61e"
+  },
+  "categories": [
+    "utils"
+  ]
+}

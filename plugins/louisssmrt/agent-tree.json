@@ -1,0 +1,20 @@
+{
+  "id": "louisssmrt/agent-tree",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/louisssmrt/paseo-agent-tree.git",
+    "commit": "03acd2b71114b53dba6962dfe472e7d910e4b9f8"
+  },
+  "repository": {
+    "url": "https://github.com/louisssmrt/paseo-agent-tree",
+    "commit": "03acd2b71114b53dba6962dfe472e7d910e4b9f8"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-07T08:55:33Z",
+  "submittedBy": "louisssmrt",
+  "publishedAt": "2026-11-07T09:00:55Z",
+  "reviewedAt": "2026-11-07T09:00:55Z"
+}

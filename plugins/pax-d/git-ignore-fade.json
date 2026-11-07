@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/pax-d/paseo-git-ignore-fade.git",
-    "commit": "69073926aeaedadb9c7d8cf72f3230b2c16db770"
+    "commit": "497f5651eef04219f6860ca9ed8328a9442d6919"
   },
   "repository": {
     "url": "https://github.com/pax-d/paseo-git-ignore-fade",
-    "commit": "69073926aeaedadb9c7d8cf72f3230b2c16db770"
+    "commit": "497f5651eef04219f6860ca9ed8328a9442d6919"
   },
   "categories": [
     "git",
@@ -16,5 +16,5 @@
   "submittedAt": "2026-11-07T14:28:46Z",
   "submittedBy": "pax-d",
   "publishedAt": "2026-11-07T14:31:08Z",
-  "reviewedAt": "2026-11-07T14:31:08Z"
+  "reviewedAt": "2026-11-07T15:01:31Z"
 }

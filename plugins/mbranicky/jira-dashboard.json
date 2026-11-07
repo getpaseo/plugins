@@ -1,13 +1,15 @@
 {
   "id": "mbranicky/jira-dashboard",
   "artifact": {
-    "kind": "git",
-    "remote": "https://github.com/mbranicky/jira-dashboard.git",
-    "commit": "643c1298f12505d3c13d7b3ad7c5bd698fc4a5c0"
+    "kind": "npm",
+    "package": "paseo-jira-sprint-workspace",
+    "version": "1.1.0",
+    "resolved": "https://registry.npmjs.org/paseo-jira-sprint-workspace/-/paseo-jira-sprint-workspace-1.1.0.tgz",
+    "integrity": "sha512-AsLHkM6OQ6Ln/SqSj0fciRwur1cYefonucQP3hN14cXmCFSYainHLS0/SYK+H2EwTyaPMU+54bX4l2e8FZH56w=="
   },
   "repository": {
     "url": "https://github.com/mbranicky/jira-dashboard",
-    "commit": "643c1298f12505d3c13d7b3ad7c5bd698fc4a5c0"
+    "commit": "5c738db438238222198927ff7fec6659efa7dd1b"
   },
   "categories": [
     "orchestration",
@@ -17,5 +19,5 @@
   "submittedAt": "2026-11-06T21:43:59Z",
   "submittedBy": "mbranicky",
   "publishedAt": "2026-11-06T22:01:47Z",
-  "reviewedAt": "2026-11-06T22:01:47Z"
+  "reviewedAt": "2026-11-07T20:01:07Z"
 }

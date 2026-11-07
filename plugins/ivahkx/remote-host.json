@@ -1,0 +1,20 @@
+{
+  "id": "ivahkx/remote-host",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/ivahkx/paseo-remote-host.git",
+    "commit": "355eb2af7953163e1d2e54a56193291bade13e94"
+  },
+  "repository": {
+    "url": "https://github.com/ivahkx/paseo-remote-host",
+    "commit": "355eb2af7953163e1d2e54a56193291bade13e94"
+  },
+  "categories": [
+    "daemon-management",
+    "sidebar"
+  ],
+  "submittedAt": "2026-10-27T14:44:01Z",
+  "submittedBy": "ivahkx",
+  "publishedAt": "2026-10-28T13:35:30Z",
+  "reviewedAt": "2026-10-28T13:35:30Z"
+}

@@ -1,0 +1,14 @@
+{
+  "issue": 2087,
+  "title": "Git Ignore Fade",
+  "submittedBy": "pax-d",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/pax-d/paseo-git-ignore-fade",
+    "ref": "497f5651eef04219f6860ca9ed8328a9442d6919"
+  },
+  "categories": [
+    "git",
+    "utils"
+  ]
+}

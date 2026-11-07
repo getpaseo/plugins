@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/tenlee2012/paseo-trae-queue-status.git",
-    "commit": "aee3451328b0a5b75ed1541b3d6ae2dab3fa9082"
+    "commit": "2231cf4326f5c671de31b8a6a404ff42867222f1"
   },
   "repository": {
     "url": "https://github.com/tenlee2012/paseo-trae-queue-status",
-    "commit": "aee3451328b0a5b75ed1541b3d6ae2dab3fa9082"
+    "commit": "2231cf4326f5c671de31b8a6a404ff42867222f1"
   },
   "categories": [
     "providers",
@@ -17,6 +17,6 @@
   ],
   "submittedAt": "2026-11-04T13:43:54Z",
   "submittedBy": "tenlee2012",
-  "publishedAt": "2026-11-05T10:09:53Z",
-  "reviewedAt": "2026-11-05T10:09:53Z"
+  "publishedAt": "2026-11-07T11:33:48Z",
+  "reviewedAt": "2026-11-07T11:33:48Z"
 }

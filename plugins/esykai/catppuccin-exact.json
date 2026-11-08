@@ -1,0 +1,19 @@
+{
+  "id": "esykai/catppuccin-exact",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/esykai/paseo-catppuccin-exact.git",
+    "commit": "c926e655e977632d59d1db91b0130572a8add208"
+  },
+  "repository": {
+    "url": "https://github.com/esykai/paseo-catppuccin-exact",
+    "commit": "c926e655e977632d59d1db91b0130572a8add208"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-11-08T12:11:38Z",
+  "submittedBy": "esykai",
+  "publishedAt": "2026-11-08T12:30:59Z",
+  "reviewedAt": "2026-11-08T12:30:59Z"
+}

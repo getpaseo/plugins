@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/jasonhnd/paseo-clear-chat.git",
-    "commit": "ec17abd5a5e11b69f58f22aecd5386de85160471",
-    "tag": "v0.15.3.4"
+    "commit": "a101a900d59a16420bd83256dcf1c6ba7f42db64",
+    "tag": "v0.15.3.5"
   },
   "repository": {
     "url": "https://github.com/jasonhnd/paseo-clear-chat",
-    "commit": "ec17abd5a5e11b69f58f22aecd5386de85160471"
+    "commit": "a101a900d59a16420bd83256dcf1c6ba7f42db64"
   },
   "categories": [
     "utils"
@@ -16,12 +16,22 @@
   "submittedAt": "2026-11-03T13:36:07Z",
   "submittedBy": "jasonhnd",
   "publishedAt": "2026-11-03T14:02:47Z",
-  "reviewedAt": "2026-11-08T10:31:06Z",
+  "reviewedAt": "2026-11-08T16:01:37Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/1c947082c6acd67da449a7ab98dd66c22a48383b/docs/images/ipad-side-light.png",
       "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/1c947082c6acd67da449a7ab98dd66c22a48383b/docs/images/phone-timeline-light.png",
       "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/1c947082c6acd67da449a7ab98dd66c22a48383b/docs/images/phone-details-light.png"
-    ]
+    ],
+    "translations": {
+      "zh-CN": {
+        "name": "Clear Chat",
+        "description": "让 Agent 对话一眼看懂：步骤收成一行，每种工具都有卡片，点开看详情。"
+      },
+      "ja": {
+        "name": "Clear Chat",
+        "description": "エージェントとの会話を読みやすくします。ステップは 1 行にまとまり、ツールごとにカードが出て、開くと詳細が見えます。"
+      }
+    }
   }
 }

@@ -1,0 +1,12 @@
+{
+  "issue": 2119,
+  "title": "Catppuccin Exact",
+  "submittedBy": "esykai",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/esykai/paseo-catppuccin-exact"
+  },
+  "categories": [
+    "themes"
+  ]
+}

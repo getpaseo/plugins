@@ -1,0 +1,14 @@
+{
+  "issue": 2154,
+  "title": "Overseer",
+  "submittedBy": "anh-chu",
+  "source": {
+    "kind": "npm",
+    "package": "paseo-plugin-overseer"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces",
+    "sidebar"
+  ]
+}

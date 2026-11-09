@@ -1,0 +1,13 @@
+{
+  "issue": 2147,
+  "title": "Device (update)",
+  "submittedBy": "replex-me",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/replex-me/paseo-device",
+    "ref": "818796a978b6186620cff5436d2385261e682643"
+  },
+  "categories": [
+    "workspaces"
+  ]
+}

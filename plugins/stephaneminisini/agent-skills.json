@@ -1,0 +1,21 @@
+{
+  "id": "stephaneminisini/agent-skills",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/stephaneminisini/paseo-agent-skills.git",
+    "commit": "a7487f356e8044018631f650c384fc3a3f1f698c"
+  },
+  "repository": {
+    "url": "https://github.com/stephaneminisini/paseo-agent-skills",
+    "commit": "a7487f356e8044018631f650c384fc3a3f1f698c"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-11-09T21:20:42Z",
+  "submittedBy": "stephaneminisini",
+  "publishedAt": "2026-11-09T21:31:01Z",
+  "reviewedAt": "2026-11-09T21:31:01Z"
+}

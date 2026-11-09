@@ -15,5 +15,13 @@
   "submittedAt": "2026-11-09T08:00:15Z",
   "submittedBy": "replex-me",
   "publishedAt": "2026-11-09T08:05:01Z",
-  "reviewedAt": "2026-11-09T10:01:29Z"
+  "reviewedAt": "2026-11-09T10:01:29Z",
+  "listing": {
+    "media": [
+      "https://cdn.jsdelivr.net/gh/replex-me/paseo-device@818796a978b6186620cff5436d2385261e682643/assets/screenshot-ios.png",
+      "https://cdn.jsdelivr.net/gh/replex-me/paseo-device@818796a978b6186620cff5436d2385261e682643/assets/demo.mp4",
+      "https://cdn.jsdelivr.net/gh/replex-me/paseo-device@818796a978b6186620cff5436d2385261e682643/assets/screenshot-android.png",
+      "https://cdn.jsdelivr.net/gh/replex-me/paseo-device@818796a978b6186620cff5436d2385261e682643/assets/screenshot-ios-tools.png"
+    ]
+  }
 }

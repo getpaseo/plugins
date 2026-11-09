@@ -3,11 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/Areb-AL/paseo-app-wallpaper.git",
-    "commit": "61d741782f66491955b28210949c9f7810104e43"
+    "commit": "69a42e95f7f8c4906d53c37b314ce8e19926327d",
+    "tag": "v0.2.0"
   },
   "repository": {
     "url": "https://github.com/Areb-AL/paseo-app-wallpaper",
-    "commit": "61d741782f66491955b28210949c9f7810104e43"
+    "commit": "69a42e95f7f8c4906d53c37b314ce8e19926327d"
   },
   "categories": [
     "themes"
@@ -15,5 +16,5 @@
   "submittedAt": "2026-11-06T20:39:12Z",
   "submittedBy": "Areb-AL",
   "publishedAt": "2026-11-06T21:01:05Z",
-  "reviewedAt": "2026-11-06T21:01:05Z"
+  "reviewedAt": "2026-11-09T09:01:28Z"
 }

@@ -1,0 +1,15 @@
+{
+  "issue": 2135,
+  "title": "Add plugin: paseo-monitoring",
+  "submittedBy": "Davnn1",
+  "source": {
+    "kind": "npm",
+    "package": "paseo-monitoring"
+  },
+  "categories": [
+    "daemon-management",
+    "sidebar",
+    "extras",
+    "utils"
+  ]
+}

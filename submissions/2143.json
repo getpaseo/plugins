@@ -1,0 +1,12 @@
+{
+  "issue": 2143,
+  "title": "Device",
+  "submittedBy": "replex-me",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/replex-me/paseo-device"
+  },
+  "categories": [
+    "workspaces"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "davnn1/opencode-mcp-toggle",
+  "artifact": {
+    "kind": "npm",
+    "package": "opencode-mcp-toggle",
+    "version": "1.0.5",
+    "resolved": "https://registry.npmjs.org/opencode-mcp-toggle/-/opencode-mcp-toggle-1.0.5.tgz",
+    "integrity": "sha512-ysPl0FngXU6/dn4IDVy9ttb5t24sS1UIXsGIjQOL3OZ93GAeknLfOibVljlcQksLeoOZSv80sxBQzFOY3bVIJg=="
+  },
+  "repository": {
+    "url": "https://github.com/Davnn1/opencode-mcp-toggle"
+  },
+  "categories": [
+    "daemon-management"
+  ],
+  "submittedAt": "2026-11-09T03:01:38Z",
+  "submittedBy": "Davnn1",
+  "publishedAt": "2026-11-09T03:01:38Z",
+  "reviewedAt": "2026-11-09T03:01:38Z",
+  "listing": {
+    "description": "Turn OpenCode MCP servers on and off from the Paseo composer to save context tokens.",
+    "media": [
+      "https://raw.githubusercontent.com/Davnn1/opencode-mcp-toggle/v1.0.5/images/mcp-manager.png",
+      "https://raw.githubusercontent.com/Davnn1/opencode-mcp-toggle/v1.0.5/images/composer-pill.png",
+      "https://raw.githubusercontent.com/Davnn1/opencode-mcp-toggle/v1.0.5/images/mobile-sheet.jpeg"
+    ]
+  }
+}

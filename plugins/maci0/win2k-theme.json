@@ -1,0 +1,19 @@
+{
+  "id": "maci0/win2k-theme",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/maci0/paseo-win2k-theme.git",
+    "commit": "cee2726d5b1660af517bad7d938cb8fcae17661b"
+  },
+  "repository": {
+    "url": "https://github.com/maci0/paseo-win2k-theme",
+    "commit": "cee2726d5b1660af517bad7d938cb8fcae17661b"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-11-09T05:17:31Z",
+  "submittedBy": "maci0",
+  "publishedAt": "2026-11-09T05:30:54Z",
+  "reviewedAt": "2026-11-09T06:31:12Z"
+}

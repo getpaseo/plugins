@@ -1,0 +1,15 @@
+{
+  "issue": 2164,
+  "title": "Update Agent Office to v0.2.0: awaiting-question pose",
+  "submittedBy": "gyuha",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/gyuha/agent-office",
+    "ref": "47b99a0d8a619a97af2443dede661e3b9b45b1bc"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar",
+    "extras"
+  ]
+}

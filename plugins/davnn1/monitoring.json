@@ -8,8 +8,7 @@
     "integrity": "sha512-C47asWwwxNV3P6KYlQj7SpE77fV/OjWqQTTE65wXMtWmZcQSyVR7AJfCKi3gKV6kH1il7zxdYXrBrOl5timZfw=="
   },
   "repository": {
-    "url": "https://github.com/Davnn1/paseo-usage-plugin",
-    "commit": "6bd7a5d785671bb6fdbe46445cc9ac5a0a29f03f"
+    "url": "https://github.com/Davnn1/paseo-usage-plugin"
   },
   "categories": [
     "daemon-management",

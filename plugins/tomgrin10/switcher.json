@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-switcher",
-    "version": "1.1.0",
-    "resolved": "https://registry.npmjs.org/paseo-switcher/-/paseo-switcher-1.1.0.tgz",
-    "integrity": "sha512-jr8jkP2SgzrhOO3zFkXb7PNBsKSTDIpDPx6evz4ZiEvF/iXwZ2phOyz/CmW04cTP8TaSH+ukkDC5arKvBrBXbg=="
+    "version": "1.2.1",
+    "resolved": "https://registry.npmjs.org/paseo-switcher/-/paseo-switcher-1.2.1.tgz",
+    "integrity": "sha512-fymc8aM0jH+IZJv/rWkCauBgvjDi8THBogLxKo58S06+X74a+u0Xq0TWuLV37qWM+1yfKao4qBWUtkhlV80bGQ=="
   },
   "repository": {
     "url": "https://github.com/tomgrin10/paseo-switcher",
-    "commit": "f5f7d50057e13423ee2d140580e6c291320e7c50"
+    "commit": "08dd411b5124e8b8dda3b9c884b123f8a8a0ef31"
   },
   "categories": [
     "workspaces",
@@ -18,5 +18,5 @@
   "submittedAt": "2026-11-03T16:01:16Z",
   "submittedBy": "tomgrin10",
   "publishedAt": "2026-11-03T16:31:19Z",
-  "reviewedAt": "2026-11-05T13:23:59Z"
+  "reviewedAt": "2026-11-09T14:03:12Z"
 }

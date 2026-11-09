@@ -3,11 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/gyuha/agent-office.git",
-    "commit": "c29d93315ad5b8d7dcf88eeab86e891c805c2c7a"
+    "commit": "47b99a0d8a619a97af2443dede661e3b9b45b1bc",
+    "tag": "v0.2.0"
   },
   "repository": {
     "url": "https://github.com/gyuha/agent-office",
-    "commit": "c29d93315ad5b8d7dcf88eeab86e891c805c2c7a"
+    "commit": "47b99a0d8a619a97af2443dede661e3b9b45b1bc"
   },
   "categories": [
     "workspaces",
@@ -17,14 +18,14 @@
   "submittedAt": "2026-11-07T13:41:37Z",
   "submittedBy": "gyuha",
   "publishedAt": "2026-11-07T14:03:04Z",
-  "reviewedAt": "2026-11-07T14:03:04Z",
+  "reviewedAt": "2026-11-09T15:32:37Z",
   "listing": {
     "media": [
-      "https://raw.githubusercontent.com/gyuha/agent-office/c29d93315ad5b8d7dcf88eeab86e891c805c2c7a/docs/screenshots/panel-mixed.webp",
-      "https://raw.githubusercontent.com/gyuha/agent-office/c29d93315ad5b8d7dcf88eeab86e891c805c2c7a/docs/screenshots/all-offices.webp",
-      "https://raw.githubusercontent.com/gyuha/agent-office/c29d93315ad5b8d7dcf88eeab86e891c805c2c7a/docs/screenshots/state-working.webp",
-      "https://raw.githubusercontent.com/gyuha/agent-office/c29d93315ad5b8d7dcf88eeab86e891c805c2c7a/docs/screenshots/state-away.webp",
-      "https://raw.githubusercontent.com/gyuha/agent-office/c29d93315ad5b8d7dcf88eeab86e891c805c2c7a/docs/screenshots/state-attention.webp"
+      "https://raw.githubusercontent.com/gyuha/agent-office/47b99a0d8a619a97af2443dede661e3b9b45b1bc/docs/screenshots/panel-mixed.webp",
+      "https://raw.githubusercontent.com/gyuha/agent-office/47b99a0d8a619a97af2443dede661e3b9b45b1bc/docs/screenshots/all-offices.webp",
+      "https://raw.githubusercontent.com/gyuha/agent-office/47b99a0d8a619a97af2443dede661e3b9b45b1bc/docs/screenshots/state-working.webp",
+      "https://raw.githubusercontent.com/gyuha/agent-office/47b99a0d8a619a97af2443dede661e3b9b45b1bc/docs/screenshots/state-away.webp",
+      "https://raw.githubusercontent.com/gyuha/agent-office/47b99a0d8a619a97af2443dede661e3b9b45b1bc/docs/screenshots/state-attention.webp"
     ]
   }
 }

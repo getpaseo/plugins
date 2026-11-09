@@ -1,0 +1,27 @@
+{
+  "id": "davnn1/monitoring",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-monitoring",
+    "version": "1.0.0",
+    "resolved": "https://registry.npmjs.org/paseo-monitoring/-/paseo-monitoring-1.0.0.tgz",
+    "integrity": "sha512-C47asWwwxNV3P6KYlQj7SpE77fV/OjWqQTTE65wXMtWmZcQSyVR7AJfCKi3gKV6kH1il7zxdYXrBrOl5timZfw=="
+  },
+  "repository": {
+    "url": "https://github.com/Davnn1/paseo-usage-plugin",
+    "commit": "6bd7a5d785671bb6fdbe46445cc9ac5a0a29f03f"
+  },
+  "categories": [
+    "daemon-management",
+    "sidebar",
+    "extras",
+    "utils"
+  ],
+  "submittedAt": "2026-11-09T03:40:59Z",
+  "submittedBy": "Davnn1",
+  "publishedAt": "2026-11-09T03:39:55Z",
+  "reviewedAt": "2026-11-09T04:25:00Z",
+  "listing": {
+    "description": "Shows token, cost and speed usage for your OpenCode, Codex and Antigravity sessions over the last day, week, month or all time."
+  }
+}

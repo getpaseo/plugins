@@ -1,0 +1,19 @@
+{
+  "id": "replex-me/device",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/replex-me/paseo-device.git",
+    "commit": "d5511e0b6310625a73d54cc9ee87b071887a80cc"
+  },
+  "repository": {
+    "url": "https://github.com/replex-me/paseo-device",
+    "commit": "d5511e0b6310625a73d54cc9ee87b071887a80cc"
+  },
+  "categories": [
+    "workspaces"
+  ],
+  "submittedAt": "2026-11-09T08:00:15Z",
+  "submittedBy": "replex-me",
+  "publishedAt": "2026-11-09T08:05:01Z",
+  "reviewedAt": "2026-11-09T08:05:01Z"
+}

@@ -1,0 +1,13 @@
+{
+  "issue": 2145,
+  "title": "app-wallpaper",
+  "submittedBy": "Areb-AL",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/Areb-AL/paseo-app-wallpaper",
+    "ref": "v0.2.0"
+  },
+  "categories": [
+    "themes"
+  ]
+}

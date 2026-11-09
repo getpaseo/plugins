@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/lerenn/paseo-playbooks.git",
-    "commit": "1480de9c8f1af83d3fd8e23b07066f4dc0d53ca1",
-    "tag": "v0.23.1"
+    "commit": "5faf5eebf360335abaa1c60d3183e49c80e0f55b",
+    "tag": "v0.41.1"
   },
   "repository": {
     "url": "https://github.com/lerenn/paseo-playbooks",
-    "commit": "1480de9c8f1af83d3fd8e23b07066f4dc0d53ca1"
+    "commit": "5faf5eebf360335abaa1c60d3183e49c80e0f55b"
   },
   "categories": [
     "orchestration",
@@ -17,5 +17,5 @@
   "submittedAt": "2026-11-02T17:05:43Z",
   "submittedBy": "lerenn",
   "publishedAt": "2026-11-02T17:32:32Z",
-  "reviewedAt": "2026-11-06T02:03:27Z"
+  "reviewedAt": "2026-11-09T10:04:52Z"
 }

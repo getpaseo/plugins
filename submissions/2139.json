@@ -1,0 +1,13 @@
+{
+  "issue": 2139,
+  "title": "Windows 2000 (update to 0.2.0)",
+  "submittedBy": "maci0",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/maci0/paseo-win2k-theme",
+    "ref": "cee2726d5b1660af517bad7d938cb8fcae17661b"
+  },
+  "categories": [
+    "themes"
+  ]
+}

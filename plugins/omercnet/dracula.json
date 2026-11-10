@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "@omercnet/paseo-dracula",
-    "version": "2.0.1",
-    "resolved": "https://registry.npmjs.org/@omercnet/paseo-dracula/-/paseo-dracula-2.0.1.tgz",
-    "integrity": "sha512-pnBE9LzNIOIfbIM3qEU39u4l9QOQ8sRSRdKwcT7wxJsHRg9wp1RCNEtiUa7I2k7a/mFwTWMLdoWGfLI5JrQVHA=="
+    "version": "2.0.2",
+    "resolved": "https://registry.npmjs.org/@omercnet/paseo-dracula/-/paseo-dracula-2.0.2.tgz",
+    "integrity": "sha512-OXhJaVmKe3IVtzs/QeZNeBRDje6aS1dcfUH9QhvqdyshWhM1KwLtL8nE/LSW2PItwatZ+fP0e9oc2N8GU1Ikaw=="
   },
   "repository": {
     "url": "https://github.com/omercnet/paseo-plugins/tree/HEAD/paseo-dracula",
-    "commit": "55f572c7a9b3805ded1e9e820d5724e70fb9dda5"
+    "commit": "8d44c2de3f8ce734736f90c542c828bbc53dd739"
   },
   "categories": [
     "themes"
@@ -17,7 +17,7 @@
   "submittedAt": "2026-09-08",
   "submittedBy": "omercnet",
   "publishedAt": "2026-09-08",
-  "reviewedAt": "2026-11-02T13:42:33Z",
+  "reviewedAt": "2026-11-10T22:27:17Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/omercnet/paseo-plugins/main/paseo-dracula/screenshot.png",

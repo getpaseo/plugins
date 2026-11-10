@@ -1,0 +1,20 @@
+{
+  "id": "maci0/nested-workspaces",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/maci0/paseo-nested-workspaces.git",
+    "commit": "aeb0adc96fe870634e31e407ee59b6d659fc8ebe"
+  },
+  "repository": {
+    "url": "https://github.com/maci0/paseo-nested-workspaces",
+    "commit": "aeb0adc96fe870634e31e407ee59b6d659fc8ebe"
+  },
+  "categories": [
+    "sidebar",
+    "workspaces"
+  ],
+  "submittedAt": "2026-11-10T12:49:25Z",
+  "submittedBy": "maci0",
+  "publishedAt": "2026-11-10T13:01:39Z",
+  "reviewedAt": "2026-11-10T13:01:39Z"
+}

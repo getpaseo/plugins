@@ -1,0 +1,20 @@
+{
+  "id": "pjhoberman/next-unread",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/pjhoberman/paseo-plugins.git",
+    "commit": "df41656eb29e62aa71c81ec5fe0907258ba602df",
+    "pluginPath": "next-unread"
+  },
+  "repository": {
+    "url": "https://github.com/pjhoberman/paseo-plugins",
+    "commit": "df41656eb29e62aa71c81ec5fe0907258ba602df"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-10T18:31:04Z",
+  "submittedBy": "pjhoberman",
+  "publishedAt": "2026-11-10T18:31:04Z",
+  "reviewedAt": "2026-11-10T18:31:04Z"
+}

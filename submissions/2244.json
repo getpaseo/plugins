@@ -1,0 +1,12 @@
+{
+  "issue": 2244,
+  "title": "TTL de LiteLLM",
+  "submittedBy": "pocharlies",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/pocharlies-org/paseo-ttl"
+  },
+  "categories": [
+    "utils"
+  ]
+}

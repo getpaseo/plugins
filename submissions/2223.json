@@ -1,0 +1,15 @@
+{
+  "issue": 2223,
+  "title": "PR assist",
+  "submittedBy": "pjhoberman",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/pjhoberman/paseo-plugins",
+    "ref": "765f80c",
+    "pluginPath": "pr-assist"
+  },
+  "categories": [
+    "orchestration",
+    "git"
+  ]
+}

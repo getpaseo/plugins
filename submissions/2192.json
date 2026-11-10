@@ -1,0 +1,15 @@
+{
+  "issue": 2192,
+  "title": "Update Spaces to 8d3b356",
+  "submittedBy": "multiplehats",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/multiplehats/paseo-spaces",
+    "ref": "8d3b356ba42bb0762977d9a62ae0b77942a176c4"
+  },
+  "categories": [
+    "daemon-management",
+    "workspaces",
+    "sidebar"
+  ]
+}

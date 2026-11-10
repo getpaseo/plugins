@@ -1,0 +1,20 @@
+{
+  "id": "js2me/browser",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/js2me/paseo-browser.git",
+    "commit": "8045d11f802b0a58bc648520adafe1f2dd8430a7"
+  },
+  "repository": {
+    "url": "https://github.com/js2me/paseo-browser",
+    "commit": "8045d11f802b0a58bc648520adafe1f2dd8430a7"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-11-10T09:11:02Z",
+  "submittedBy": "js2me",
+  "publishedAt": "2026-11-10T09:11:02Z",
+  "reviewedAt": "2026-11-10T09:11:02Z"
+}

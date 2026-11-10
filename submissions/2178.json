@@ -1,0 +1,15 @@
+{
+  "issue": 2178,
+  "title": "Update Flowly to v1.8.0",
+  "submittedBy": "JasprW",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/JasprW/flowly",
+    "ref": "v1.8.0"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces",
+    "utils"
+  ]
+}

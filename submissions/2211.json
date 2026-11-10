@@ -1,0 +1,14 @@
+{
+  "issue": 2211,
+  "title": "Paseo Browser",
+  "submittedBy": "js2me",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/js2me/paseo-browser",
+    "ref": "73c5b945f0c657c15b8ec414c4af51f29e845274"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ]
+}

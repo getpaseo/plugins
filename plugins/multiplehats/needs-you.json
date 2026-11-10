@@ -1,0 +1,20 @@
+{
+  "id": "multiplehats/needs-you",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/multiplehats/paseo-needs-you.git",
+    "commit": "7f4f9255216235263d3021c7767dce621b7e55f9"
+  },
+  "repository": {
+    "url": "https://github.com/multiplehats/paseo-needs-you",
+    "commit": "7f4f9255216235263d3021c7767dce621b7e55f9"
+  },
+  "categories": [
+    "sidebar",
+    "orchestration"
+  ],
+  "submittedAt": "2026-11-10T09:31:42Z",
+  "submittedBy": "multiplehats",
+  "publishedAt": "2026-11-10T09:31:42Z",
+  "reviewedAt": "2026-11-10T09:31:42Z"
+}

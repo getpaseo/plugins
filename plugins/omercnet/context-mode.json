@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "@omercnet/paseo-context-mode",
-    "version": "4.0.1",
-    "resolved": "https://registry.npmjs.org/@omercnet/paseo-context-mode/-/paseo-context-mode-4.0.1.tgz",
-    "integrity": "sha512-vrnjkGHyViP6XozM+wJVU637CKoXev35TyQdZ4iTr+2g0jb9Qv00gFds3qWph+1cjACh88yuf/6sTZ0jqKQAgw=="
+    "version": "4.0.3",
+    "resolved": "https://registry.npmjs.org/@omercnet/paseo-context-mode/-/paseo-context-mode-4.0.3.tgz",
+    "integrity": "sha512-hOgx8S23j/EPQZM8Ih5tBc9mXuemgA+QwiyvOctAUJhzrPGBPHCXzm2aJKL/sFEJEuWgIohhmm0AD0hvvpuSsQ=="
   },
   "repository": {
     "url": "https://github.com/omercnet/paseo-plugins/tree/HEAD/context-mode",
-    "commit": "4c6987e4c51314032866c723d97d30d571c72344"
+    "commit": "8d44c2de3f8ce734736f90c542c828bbc53dd739"
   },
   "categories": [
     "providers",
@@ -18,7 +18,7 @@
   "submittedAt": "2026-09-26",
   "submittedBy": "omercnet",
   "publishedAt": "2026-09-26",
-  "reviewedAt": "2026-11-07T21:00:14Z",
+  "reviewedAt": "2026-11-10T22:26:53Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/omercnet/paseo-plugins/10766d8374dd543ba36a66c2028c3ac3316c4633/context-mode/screenshot.png",

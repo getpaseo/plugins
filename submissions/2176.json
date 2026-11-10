@@ -1,0 +1,12 @@
+{
+  "issue": 2176,
+  "title": "paseo-im",
+  "submittedBy": "ClarePhang",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/ClarePhang/paseo-im"
+  },
+  "categories": [
+    "extras"
+  ]
+}

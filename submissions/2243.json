@@ -1,0 +1,12 @@
+{
+  "issue": 2243,
+  "title": "Estado del despliegue en ArgoCD",
+  "submittedBy": "pocharlies",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/pocharlies-org/paseo-argocd"
+  },
+  "categories": [
+    "utils"
+  ]
+}

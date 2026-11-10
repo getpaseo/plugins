@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/sylviaxiang424/paseo-bookmarks.git",
-    "commit": "2d1d1c3c6c6a233dc6306d10a9e988ada3f73106"
+    "commit": "66f981285888d74f6e834cc4d6c6002206c09740"
   },
   "repository": {
     "url": "https://github.com/sylviaxiang424/paseo-bookmarks",
-    "commit": "2d1d1c3c6c6a233dc6306d10a9e988ada3f73106"
+    "commit": "66f981285888d74f6e834cc4d6c6002206c09740"
   },
   "categories": [
     "sidebar",
@@ -16,7 +16,7 @@
   "submittedAt": "2026-11-09T09:55:05Z",
   "submittedBy": "sylviaxiang424",
   "publishedAt": "2026-11-09T10:08:40Z",
-  "reviewedAt": "2026-11-09T10:08:40Z",
+  "reviewedAt": "2026-11-10T02:31:41Z",
   "listing": {
     "media": [
       "https://cdn.jsdelivr.net/gh/sylviaxiang424/paseo-bookmarks@6ee23acfa65d9fb5fb6e3659513c3caf274e1d2a/assets/bookmarks-panel.zh-CN.png"

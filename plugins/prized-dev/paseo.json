@@ -1,0 +1,21 @@
+{
+  "id": "prized-dev/paseo",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/prized-dev/integrations.git",
+    "commit": "9d0160e46a90b3e9a10d1fd8c102f5575d25c9d5",
+    "pluginPath": "paseo"
+  },
+  "repository": {
+    "url": "https://github.com/prized-dev/integrations",
+    "commit": "9d0160e46a90b3e9a10d1fd8c102f5575d25c9d5"
+  },
+  "categories": [
+    "daemon-management",
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-10T02:33:38Z",
+  "submittedBy": "HudsonGri",
+  "publishedAt": "2026-11-10T02:33:38Z",
+  "reviewedAt": "2026-11-10T02:33:38Z"
+}

@@ -1,0 +1,12 @@
+{
+  "issue": 2180,
+  "title": "DeepSeek Harness (desktop) — update to v2.8.2",
+  "submittedBy": "AksuRedapple",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/AksuRedapple/dsh-paseo-provider"
+  },
+  "categories": [
+    "providers"
+  ]
+}

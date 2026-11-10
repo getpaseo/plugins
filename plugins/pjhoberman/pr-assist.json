@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/pjhoberman/paseo-plugins.git",
-    "commit": "df41656eb29e62aa71c81ec5fe0907258ba602df",
+    "commit": "765f80c72a29e5dc7e7a113b09b2d9e510f0554c",
     "pluginPath": "pr-assist"
   },
   "repository": {
     "url": "https://github.com/pjhoberman/paseo-plugins",
-    "commit": "df41656eb29e62aa71c81ec5fe0907258ba602df"
+    "commit": "765f80c72a29e5dc7e7a113b09b2d9e510f0554c"
   },
   "categories": [
     "orchestration",

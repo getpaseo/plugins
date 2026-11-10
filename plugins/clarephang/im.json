@@ -1,0 +1,26 @@
+{
+  "id": "clarephang/im",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/ClarePhang/paseo-im.git",
+    "commit": "8f61326f3e84f3217b5d471bc4d71f0b64b2b680"
+  },
+  "repository": {
+    "url": "https://github.com/ClarePhang/paseo-im",
+    "commit": "8f61326f3e84f3217b5d471bc4d71f0b64b2b680"
+  },
+  "categories": [
+    "orchestration",
+    "extras",
+    "utils"
+  ],
+  "submittedAt": "2026-11-10T04:00:40Z",
+  "submittedBy": "ClarePhang",
+  "publishedAt": "2026-11-10T04:33:40Z",
+  "reviewedAt": "2026-11-10T04:33:40Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/ClarePhang/paseo-im/8f61326f3e84f3217b5d471bc4d71f0b64b2b680/docs/webui-acceptance/shots/02-im-screen.png"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "issue": 2204,
+  "title": "Nested workspaces",
+  "submittedBy": "maci0",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/maci0/paseo-nested-workspaces",
+    "ref": "aeb0adc96fe870634e31e407ee59b6d659fc8ebe"
+  },
+  "categories": [
+    "sidebar",
+    "workspaces"
+  ]
+}

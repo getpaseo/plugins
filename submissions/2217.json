@@ -1,0 +1,15 @@
+{
+  "issue": 2217,
+  "title": "Workspace actions",
+  "submittedBy": "pjhoberman",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/pjhoberman/paseo-plugins",
+    "ref": "df41656",
+    "pluginPath": "workspace-actions"
+  },
+  "categories": [
+    "git",
+    "workspaces"
+  ]
+}

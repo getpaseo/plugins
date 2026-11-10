@@ -1,0 +1,21 @@
+{
+  "id": "pjhoberman/pr-assist",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/pjhoberman/paseo-plugins.git",
+    "commit": "df41656eb29e62aa71c81ec5fe0907258ba602df",
+    "pluginPath": "pr-assist"
+  },
+  "repository": {
+    "url": "https://github.com/pjhoberman/paseo-plugins",
+    "commit": "df41656eb29e62aa71c81ec5fe0907258ba602df"
+  },
+  "categories": [
+    "orchestration",
+    "git"
+  ],
+  "submittedAt": "2026-11-10T18:31:41Z",
+  "submittedBy": "pjhoberman",
+  "publishedAt": "2026-11-10T18:31:41Z",
+  "reviewedAt": "2026-11-10T18:31:41Z"
+}

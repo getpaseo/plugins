@@ -1,0 +1,29 @@
+{
+  "id": "sleeyax/task-runner",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/sleeyax/paseo-plugins.git",
+    "commit": "64091203e5f27678370c9605c365e6fc3714b426",
+    "tag": "task-runner-v1.0.0",
+    "pluginPath": "plugins/task-runner"
+  },
+  "repository": {
+    "url": "https://github.com/sleeyax/paseo-plugins",
+    "commit": "64091203e5f27678370c9605c365e6fc3714b426"
+  },
+  "categories": [
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-11-10T19:55:09Z",
+  "submittedBy": "sleeyax",
+  "publishedAt": "2026-11-10T20:01:32Z",
+  "reviewedAt": "2026-11-10T20:01:32Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/sleeyax/paseo-plugins/64091203e5f27678370c9605c365e6fc3714b426/plugins/task-runner/docs/screenshots/panel.png",
+      "https://raw.githubusercontent.com/sleeyax/paseo-plugins/64091203e5f27678370c9605c365e6fc3714b426/plugins/task-runner/docs/screenshots/running.png",
+      "https://raw.githubusercontent.com/sleeyax/paseo-plugins/64091203e5f27678370c9605c365e6fc3714b426/plugins/task-runner/docs/screenshots/output.png"
+    ]
+  }
+}

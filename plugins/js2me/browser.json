@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/js2me/paseo-browser.git",
-    "commit": "df1739f469f27a5825513049731ab87f21a992fb"
+    "commit": "73c5b945f0c657c15b8ec414c4af51f29e845274"
   },
   "repository": {
     "url": "https://github.com/js2me/paseo-browser",
-    "commit": "df1739f469f27a5825513049731ab87f21a992fb"
+    "commit": "73c5b945f0c657c15b8ec414c4af51f29e845274"
   },
   "categories": [
     "workspaces",
@@ -16,5 +16,5 @@
   "submittedAt": "2026-11-10T09:11:02Z",
   "submittedBy": "js2me",
   "publishedAt": "2026-11-10T09:11:02Z",
-  "reviewedAt": "2026-11-10T10:03:39Z"
+  "reviewedAt": "2026-11-10T15:01:10Z"
 }

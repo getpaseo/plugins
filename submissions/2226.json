@@ -1,0 +1,15 @@
+{
+  "issue": 2226,
+  "title": "Task Runner",
+  "submittedBy": "sleeyax",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/sleeyax/paseo-plugins",
+    "ref": "task-runner-v1.0.0",
+    "pluginPath": "plugins/task-runner"
+  },
+  "categories": [
+    "sidebar",
+    "utils"
+  ]
+}

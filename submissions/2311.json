@@ -1,0 +1,14 @@
+{
+  "issue": 2311,
+  "title": "GitLens",
+  "submittedBy": "MinLeeV5",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/MinLeeV5/paseo-git-diff-with-submodule",
+    "ref": "1bfa21671e2cadeea2bf4b9ca1200aed4b1ae64f"
+  },
+  "categories": [
+    "git",
+    "workspaces"
+  ]
+}

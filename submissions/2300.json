@@ -1,0 +1,15 @@
+{
+  "issue": 2300,
+  "title": "SQLite Studio",
+  "submittedBy": "SeriousM",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/SeriousM/paseo-sqlite-studio",
+    "ref": "76daba4276c17ece8bb484562db678c4ac65de6a"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar",
+    "utils"
+  ]
+}

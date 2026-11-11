@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/pjhoberman/paseo-plugins.git",
-    "commit": "df41656eb29e62aa71c81ec5fe0907258ba602df",
+    "commit": "8cae28779683ce9c6ac3b0c1a098824ea6491c3e",
     "pluginPath": "next-unread"
   },
   "repository": {
     "url": "https://github.com/pjhoberman/paseo-plugins",
-    "commit": "df41656eb29e62aa71c81ec5fe0907258ba602df"
+    "commit": "8cae28779683ce9c6ac3b0c1a098824ea6491c3e"
   },
   "categories": [
     "utils"

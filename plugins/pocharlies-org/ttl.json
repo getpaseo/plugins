@@ -1,0 +1,29 @@
+{
+  "id": "pocharlies-org/ttl",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/pocharlies-org/paseo-ttl.git",
+    "commit": "f5e470f97092fc4c88f977afc77aad9dbd841c9f"
+  },
+  "repository": {
+    "url": "https://github.com/pocharlies-org/paseo-ttl",
+    "commit": "f5e470f97092fc4c88f977afc77aad9dbd841c9f"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-10T23:43:29Z",
+  "submittedBy": "pocharlies",
+  "publishedAt": "2026-11-11T00:05:21Z",
+  "reviewedAt": "2026-11-11T00:05:21Z",
+  "listing": {
+    "name": "LiteLLM TTL",
+    "description": "A composer pill on Claude agents that counts down the prompt-cache time left on the agent's LiteLLM route, colored by cache state.",
+    "translations": {
+      "es": {
+        "name": "TTL de LiteLLM",
+        "description": "Píldora en el composer: visible en escritorio (en el móvil, solo con la caché a punto de caducar), el tiempo que queda de caché de la ruta LiteLLM como número; verde hay caché, amarillo ≤5 min, rojo sin caché, lila local."
+      }
+    }
+  }
+}

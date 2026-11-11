@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/ZedObaia/paseo-plugins.git",
-    "commit": "fb4ffb82afb368a38e55bd0773a6007e7bf0c1a9",
+    "commit": "bbb7ca1069e86ea83bb2a4b3148bc2710f79a37a",
     "pluginPath": "plugins/devices"
   },
   "repository": {
     "url": "https://github.com/ZedObaia/paseo-plugins",
-    "commit": "fb4ffb82afb368a38e55bd0773a6007e7bf0c1a9"
+    "commit": "bbb7ca1069e86ea83bb2a4b3148bc2710f79a37a"
   },
   "categories": [
     "workspaces",
@@ -17,5 +17,5 @@
   "submittedAt": "2026-10-16T22:30:12Z",
   "submittedBy": "ZedObaia",
   "publishedAt": "2026-10-17T01:37:59Z",
-  "reviewedAt": "2026-10-24T13:02:39Z"
+  "reviewedAt": "2026-11-11T08:02:06Z"
 }

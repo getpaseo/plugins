@@ -1,0 +1,15 @@
+{
+  "issue": 2263,
+  "title": "Memory Sharing & Fusion",
+  "submittedBy": "vincent4j",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/vincent4j/mem-sharing",
+    "ref": "v0.2.0",
+    "pluginPath": "plugins/paseo"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ]
+}

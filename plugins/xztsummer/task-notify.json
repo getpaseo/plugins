@@ -1,0 +1,29 @@
+{
+  "id": "xztsummer/task-notify",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/xztsummer/paseo-task-notify.git",
+    "commit": "3a3c6a11636a91480935d953457cbf30da8a2e7d"
+  },
+  "repository": {
+    "url": "https://github.com/xztsummer/paseo-task-notify",
+    "commit": "3a3c6a11636a91480935d953457cbf30da8a2e7d"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-11T03:01:28Z",
+  "submittedBy": "xztsummer",
+  "publishedAt": "2026-11-11T03:01:28Z",
+  "reviewedAt": "2026-11-11T03:01:28Z",
+  "listing": {
+    "name": "Task Notify",
+    "description": "Sends a Feishu or Telegram message when an agent's main task finishes, fails or waits for permission.",
+    "translations": {
+      "zh-CN": {
+        "name": "任务完成通知",
+        "description": "主任务完成、失败或等待授权时，通过飞书或 Telegram 发送通知。"
+      }
+    }
+  }
+}

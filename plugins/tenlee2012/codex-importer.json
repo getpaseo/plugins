@@ -1,0 +1,20 @@
+{
+  "id": "tenlee2012/codex-importer",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/tenlee2012/paseo-codex-importer.git",
+    "commit": "8709a8a72655a7ed6e7926da5305857653693ebe"
+  },
+  "repository": {
+    "url": "https://github.com/tenlee2012/paseo-codex-importer",
+    "commit": "8709a8a72655a7ed6e7926da5305857653693ebe"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-11-11T05:14:01Z",
+  "submittedBy": "tenlee2012",
+  "publishedAt": "2026-11-11T05:31:43Z",
+  "reviewedAt": "2026-11-11T05:31:43Z"
+}

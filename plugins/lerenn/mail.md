@@ -1,0 +1,7 @@
+Gives every agent a mailbox so agents can message each other without interrupting a turn in progress. Agents get six tools: `mail_register` to claim a unique name and optional roles, `mail_directory` to list who is reachable, `mail_send` to write to a name, `role:<role>` or `agent:<id>`, and `mail_list`, `mail_read` and `mail_reply` to handle their own mail. An agent must register a name before it can read its mail. It requires Paseo 0.15.0 or newer.
+
+When the recipient is idle, the plugin sends it one short "you have N unread mails" prompt, once per mail and never during a turn. If a recipient is archived before reading, the mail goes back to the sender. A Mail row in the sidebar opens a read-only screen for following the mailboxes, mails and threads. Opening a mail there only marks it seen for humans; it does not count as the agent having read it.
+
+Installing the plugin appends a short rule to the system prompt of every new agent: register a name, use mail for non-urgent communication, and send a direct prompt to another agent only when something is urgent. Only the prompt enforces this; the plugin cannot block direct prompts. Agents created before the install keep the tools and the nudge but not the rule.
+
+Mail and the name registry are stored as local JSON files under `$PASEO_HOME/plugin-data/paseo-mail/` (by default `~/.paseo/plugin-data/paseo-mail/`). The plugin makes no network requests and starts no processes. It talks to Paseo only through the plugin SDK. Mail text is visible to the agents that receive it and on the Mail screen.

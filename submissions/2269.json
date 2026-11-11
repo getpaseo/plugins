@@ -1,0 +1,13 @@
+{
+  "issue": 2269,
+  "title": "Agent Safehouse: Sandbox paseo agents on macOS",
+  "submittedBy": "clkao",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/spacedock-dev/paseo-safehouse"
+  },
+  "categories": [
+    "providers",
+    "workspaces"
+  ]
+}

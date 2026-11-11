@@ -1,0 +1,12 @@
+{
+  "issue": 2305,
+  "title": "Next unread",
+  "submittedBy": "pjhoberman",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/pjhoberman/paseo-plugins",
+    "ref": "8cae287",
+    "pluginPath": "next-unread"
+  },
+  "categories": []
+}

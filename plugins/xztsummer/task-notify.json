@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/xztsummer/paseo-task-notify.git",
-    "commit": "3a3c6a11636a91480935d953457cbf30da8a2e7d"
+    "commit": "ada7335e80eaa55406ae761266eb88ad923b6a84"
   },
   "repository": {
     "url": "https://github.com/xztsummer/paseo-task-notify",
-    "commit": "3a3c6a11636a91480935d953457cbf30da8a2e7d"
+    "commit": "ada7335e80eaa55406ae761266eb88ad923b6a84"
   },
   "categories": [
     "utils"

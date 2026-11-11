@@ -1,0 +1,21 @@
+{
+  "id": "js2me/pulse",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/js2me/paseo-pulse.git",
+    "commit": "db52f615ffaed38caf86bcba6c0894a32c0f3f28"
+  },
+  "repository": {
+    "url": "https://github.com/js2me/paseo-pulse",
+    "commit": "db52f615ffaed38caf86bcba6c0894a32c0f3f28"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-11-11T21:19:58Z",
+  "submittedBy": "js2me",
+  "publishedAt": "2026-11-11T21:30:41Z",
+  "reviewedAt": "2026-11-11T21:30:41Z"
+}

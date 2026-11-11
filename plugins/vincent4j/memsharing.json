@@ -1,0 +1,29 @@
+{
+  "id": "vincent4j/memsharing",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/vincent4j/mem-sharing.git",
+    "commit": "8090053abc4306822ab6217245cb85358b89a87c",
+    "tag": "v0.2.0",
+    "pluginPath": "plugins/paseo"
+  },
+  "repository": {
+    "url": "https://github.com/vincent4j/mem-sharing",
+    "commit": "8090053abc4306822ab6217245cb85358b89a87c"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-11-11T06:31:55Z",
+  "submittedBy": "vincent4j",
+  "publishedAt": "2026-11-11T06:31:55Z",
+  "reviewedAt": "2026-11-11T06:31:55Z",
+  "listing": {
+    "media": [
+      "https://pic.imgdd.cc/i/034vbEoSTCaAAO2T40c9ho.png",
+      "https://pic.imgdd.cc/i/034vbEo5rDvHk7cFNdNpBg.png",
+      "https://pic.imgdd.cc/i/034vbEuBz6klGNFBk9ZQ1b.png"
+    ]
+  }
+}

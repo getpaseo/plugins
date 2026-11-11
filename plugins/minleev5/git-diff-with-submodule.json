@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/MinLeeV5/paseo-git-diff-with-submodule.git",
-    "commit": "ba848dc5fef282dcef032efdd636e2d2443d35be",
-    "tag": "v0.5.0"
+    "commit": "1bfa21671e2cadeea2bf4b9ca1200aed4b1ae64f",
+    "tag": "v0.6.1"
   },
   "repository": {
     "url": "https://github.com/MinLeeV5/paseo-git-diff-with-submodule",
-    "commit": "ba848dc5fef282dcef032efdd636e2d2443d35be"
+    "commit": "1bfa21671e2cadeea2bf4b9ca1200aed4b1ae64f"
   },
   "categories": [
     "git",
@@ -17,5 +17,5 @@
   "submittedAt": "2026-11-04T15:46:55Z",
   "submittedBy": "MinLeeV5",
   "publishedAt": "2026-11-05T09:30:54Z",
-  "reviewedAt": "2026-11-11T13:11:43Z"
+  "reviewedAt": "2026-11-11T18:20:00Z"
 }

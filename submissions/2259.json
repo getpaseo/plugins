@@ -1,0 +1,14 @@
+{
+  "issue": 2259,
+  "title": "Codex session importer",
+  "submittedBy": "tenlee2012",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/tenlee2012/paseo-codex-importer",
+    "ref": "v0.2.2"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ]
+}

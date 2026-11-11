@@ -1,0 +1,13 @@
+{
+  "issue": 2284,
+  "title": "Paseo Mail",
+  "submittedBy": "lerenn",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/lerenn/paseo-mail",
+    "ref": "v0.2.7"
+  },
+  "categories": [
+    "orchestration"
+  ]
+}

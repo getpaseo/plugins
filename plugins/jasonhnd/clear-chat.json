@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/jasonhnd/paseo-clear-chat.git",
-    "commit": "10ca14217c06847568fde6fed0bdb03adb68cc20",
-    "tag": "v0.15.4.1"
+    "commit": "b25f785dfe80d8c7f03c05f82896caf317aa97d0",
+    "tag": "v0.15.4.2"
   },
   "repository": {
     "url": "https://github.com/jasonhnd/paseo-clear-chat",
-    "commit": "10ca14217c06847568fde6fed0bdb03adb68cc20"
+    "commit": "b25f785dfe80d8c7f03c05f82896caf317aa97d0"
   },
   "categories": [
     "utils"
@@ -16,18 +16,18 @@
   "submittedAt": "2026-11-03T13:36:07Z",
   "submittedBy": "jasonhnd",
   "publishedAt": "2026-11-03T14:02:47Z",
-  "reviewedAt": "2026-11-11T00:31:48Z",
+  "reviewedAt": "2026-11-11T06:02:13Z",
   "listing": {
     "media": [
-      "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/10ca14217c06847568fde6fed0bdb03adb68cc20/docs/images/ipad-side-light-0154.png",
-      "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/10ca14217c06847568fde6fed0bdb03adb68cc20/docs/images/phone-timeline-light-0154.png",
-      "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/10ca14217c06847568fde6fed0bdb03adb68cc20/docs/images/phone-details-light-0154.png",
-      "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/10ca14217c06847568fde6fed0bdb03adb68cc20/docs/images/answer-card-dark-typed-0154.png"
+      "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/b25f785dfe80d8c7f03c05f82896caf317aa97d0/docs/images/ipad-side-light-0154.png",
+      "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/b25f785dfe80d8c7f03c05f82896caf317aa97d0/docs/images/phone-timeline-light-0154.png",
+      "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/b25f785dfe80d8c7f03c05f82896caf317aa97d0/docs/images/phone-details-light-0154.png",
+      "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/b25f785dfe80d8c7f03c05f82896caf317aa97d0/docs/images/answer-card-dark-typed-0154-2.png"
     ],
     "translations": {
       "zh-CN": {
         "name": "Clear Chat",
-        "description": "让 Agent 对话一眼看懂：步骤收成一行，每种工具都有卡片，点开看详情。"
+        "description": "让 Paseo 里的对话更好读：每一步占一行、每个工具一张卡，答题卡还能自己写字作答。"
       },
       "ja": {
         "name": "Clear Chat",

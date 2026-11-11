@@ -1,0 +1,35 @@
+{
+  "id": "pocharlies-org/rutador",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/pocharlies-org/paseo-rutador.git",
+    "commit": "8ce295a725a9fbca7602a133d584e06df05e3773"
+  },
+  "repository": {
+    "url": "https://github.com/pocharlies-org/paseo-rutador",
+    "commit": "8ce295a725a9fbca7602a133d584e06df05e3773"
+  },
+  "categories": [
+    "orchestration",
+    "utils"
+  ],
+  "submittedAt": "2026-11-10T23:43:35Z",
+  "submittedBy": "pocharlies",
+  "publishedAt": "2026-11-11T00:02:47Z",
+  "reviewedAt": "2026-11-11T00:02:47Z",
+  "listing": {
+    "name": "New sessions",
+    "description": "Lets a Claude agent offer to move a task into a new session in the same workspace, shown as a card in the chat, and propose follow-up tasks you start with one click.",
+    "media": [
+      "https://raw.githubusercontent.com/pocharlies-org/paseo-rutador/8ce295a725a9fbca7602a133d584e06df05e3773/docs/media/1-oferta.png",
+      "https://raw.githubusercontent.com/pocharlies-org/paseo-rutador/8ce295a725a9fbca7602a133d584e06df05e3773/docs/media/2-nueva-sesion.png",
+      "https://raw.githubusercontent.com/pocharlies-org/paseo-rutador/8ce295a725a9fbca7602a133d584e06df05e3773/docs/media/3-hazlo-aqui.png"
+    ],
+    "translations": {
+      "es": {
+        "name": "Sesiones nuevas",
+        "description": "Como Claude Desktop: el agente ofrece abrir una tarea en una sesión nueva del mismo workspace con una tarjeta «Nueva sesión» / «Hazlo aquí», y propone las siguientes tareas como tarjetas que se empiezan con un clic."
+      }
+    }
+  }
+}

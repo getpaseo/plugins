@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/ketitongxue/paseo-menubar.git",
-    "commit": "a3d45459798364a3d34dd7b0e614fb56162529e3"
+    "commit": "0b0a6c508a2b53fcdfb7ffbc18025c859dac3801"
   },
   "repository": {
     "url": "https://github.com/ketitongxue/paseo-menubar",
-    "commit": "a3d45459798364a3d34dd7b0e614fb56162529e3"
+    "commit": "0b0a6c508a2b53fcdfb7ffbc18025c859dac3801"
   },
   "categories": [
     "utils",
@@ -16,5 +16,5 @@
   "submittedAt": "2026-11-02T16:12:26Z",
   "submittedBy": "ketitongxue",
   "publishedAt": "2026-11-02T16:31:51Z",
-  "reviewedAt": "2026-11-02T16:31:51Z"
+  "reviewedAt": "2026-11-12T14:01:33Z"
 }

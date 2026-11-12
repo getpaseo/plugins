@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/whiteCcinn/paseo-claude-interaction-translator.git",
-    "commit": "488ad26a23b2bdbbe68b3387b0a782c9b812e3bc"
+    "commit": "9b7b7e938feb8c74fce0fe6d62c74277eb6e10b3"
   },
   "repository": {
     "url": "https://github.com/whiteCcinn/paseo-claude-interaction-translator",
-    "commit": "488ad26a23b2bdbbe68b3387b0a782c9b812e3bc"
+    "commit": "9b7b7e938feb8c74fce0fe6d62c74277eb6e10b3"
   },
   "categories": [
     "sidebar"

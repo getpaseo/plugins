@@ -1,0 +1,19 @@
+{
+  "id": "themattvision/drop-path",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/themattvision/paseo-drop-path.git",
+    "commit": "24978bfe9084efcb4c107f4dcc260374ba997e82"
+  },
+  "repository": {
+    "url": "https://github.com/themattvision/paseo-drop-path",
+    "commit": "24978bfe9084efcb4c107f4dcc260374ba997e82"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-12T01:31:04Z",
+  "submittedBy": "themattvision",
+  "publishedAt": "2026-11-12T01:31:04Z",
+  "reviewedAt": "2026-11-12T01:31:04Z"
+}

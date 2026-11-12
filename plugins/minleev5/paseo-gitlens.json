@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/MinLeeV5/paseo-gitlens.git",
-    "commit": "1bfa21671e2cadeea2bf4b9ca1200aed4b1ae64f",
-    "tag": "v0.6.1"
+    "commit": "97af097cf8c7a37cc23fec408ee75fb90c677121",
+    "tag": "v0.6.2"
   },
   "repository": {
     "url": "https://github.com/MinLeeV5/paseo-gitlens",
-    "commit": "1bfa21671e2cadeea2bf4b9ca1200aed4b1ae64f"
+    "commit": "97af097cf8c7a37cc23fec408ee75fb90c677121"
   },
   "categories": [
     "git",
@@ -17,5 +17,5 @@
   "submittedAt": "2026-11-04T15:46:55Z",
   "submittedBy": "MinLeeV5",
   "publishedAt": "2026-11-05T09:30:54Z",
-  "reviewedAt": "2026-11-11T18:20:00Z"
+  "reviewedAt": "2026-11-12T05:02:17Z"
 }

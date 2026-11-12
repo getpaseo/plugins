@@ -1,0 +1,14 @@
+{
+  "issue": 2359,
+  "title": "GitLens",
+  "submittedBy": "MinLeeV5",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/MinLeeV5/paseo-gitlens",
+    "ref": "83b7724be8a246fc133a72f0e1b7a83515ee2f44"
+  },
+  "categories": [
+    "git",
+    "workspaces"
+  ]
+}

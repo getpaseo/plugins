@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/monarchmaisuriya/morphise.git",
-    "commit": "5f6c0c8dc7ff48ce9420b61ce2622196ce79b971",
-    "tag": "v0.21.0"
+    "commit": "286632b25ffcd59f8208e6669527d9da85198e64",
+    "tag": "v0.21.2"
   },
   "repository": {
     "url": "https://github.com/monarchmaisuriya/morphise",
-    "commit": "5f6c0c8dc7ff48ce9420b61ce2622196ce79b971"
+    "commit": "286632b25ffcd59f8208e6669527d9da85198e64"
   },
   "categories": [
     "sidebar",

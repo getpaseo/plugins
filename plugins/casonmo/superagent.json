@@ -1,0 +1,27 @@
+{
+  "id": "casonmo/superagent",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/CasonMo/paseo-superagent.git",
+    "commit": "ed6965be62c39e63f448f35706ccbd3cd6bc9f2a"
+  },
+  "repository": {
+    "url": "https://github.com/CasonMo/paseo-superagent",
+    "commit": "ed6965be62c39e63f448f35706ccbd3cd6bc9f2a"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces",
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-11-12T04:01:41Z",
+  "submittedBy": "CasonMo",
+  "publishedAt": "2026-11-12T04:31:28Z",
+  "reviewedAt": "2026-11-12T04:31:28Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/CasonMo/paseo-superagent/1014079394712f3793c8fc17d73f099b9bcc8eec/docs/screenshot.png"
+    ]
+  }
+}

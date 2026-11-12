@@ -1,0 +1,13 @@
+{
+  "issue": 2387,
+  "title": "Antigravity ACP",
+  "submittedBy": "fdkevin0",
+  "source": {
+    "kind": "npm",
+    "package": "@fdkevin/paseo-agy-acp",
+    "version": "0.1.1"
+  },
+  "categories": [
+    "providers"
+  ]
+}

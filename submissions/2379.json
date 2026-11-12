@@ -1,0 +1,15 @@
+{
+  "issue": 2379,
+  "title": "Paseo Deck",
+  "submittedBy": "MinLeeV5",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/MinLeeV5/paseo-deck",
+    "ref": "ccfde8b7bc0ceb580de600e9ebce4cd2d15fe5c8",
+    "pluginPath": "plugin"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ]
+}

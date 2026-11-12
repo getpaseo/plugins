@@ -1,0 +1,14 @@
+{
+  "issue": 2362,
+  "title": "Update Conversation bookmarks to 0.1.5",
+  "submittedBy": "sylviaxiang424",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/sylviaxiang424/paseo-bookmarks",
+    "ref": "db7e22b5c53ccf47f36647126cb76b51abe26c01"
+  },
+  "categories": [
+    "sidebar",
+    "utils"
+  ]
+}

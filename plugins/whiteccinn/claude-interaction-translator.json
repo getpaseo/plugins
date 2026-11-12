@@ -1,0 +1,29 @@
+{
+  "id": "whiteccinn/claude-interaction-translator",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/whiteCcinn/paseo-claude-interaction-translator.git",
+    "commit": "9b7b7e938feb8c74fce0fe6d62c74277eb6e10b3"
+  },
+  "repository": {
+    "url": "https://github.com/whiteCcinn/paseo-claude-interaction-translator",
+    "commit": "9b7b7e938feb8c74fce0fe6d62c74277eb6e10b3"
+  },
+  "categories": [
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-11T04:01:05Z",
+  "submittedBy": "whiteCcinn",
+  "publishedAt": "2026-11-11T04:01:05Z",
+  "reviewedAt": "2026-11-11T04:01:05Z",
+  "listing": {
+    "name": "Claude Interaction Translator",
+    "description": "Translates your drafts before you send them and shows each finished agent reply in your language, with the original one tap away.",
+    "translations": {
+      "zh-CN": {
+        "name": "Claude 交互翻译",
+        "description": "点击翻译输入，本轮结束后自动翻译最终答复；模型历史保持原文。"
+      }
+    }
+  }
+}

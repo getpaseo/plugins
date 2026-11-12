@@ -1,0 +1,21 @@
+{
+  "id": "kasparsj/impeccable-live",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/kasparsj/paseo-impeccable-live.git",
+    "commit": "7b78d685dd624565f02a129c21ce159a6e29dad0"
+  },
+  "repository": {
+    "url": "https://github.com/kasparsj/paseo-impeccable-live",
+    "commit": "7b78d685dd624565f02a129c21ce159a6e29dad0"
+  },
+  "categories": [
+    "workspaces",
+    "orchestration",
+    "utils"
+  ],
+  "submittedAt": "2026-11-12T08:35:04Z",
+  "submittedBy": "kasparsj",
+  "publishedAt": "2026-11-12T08:35:04Z",
+  "reviewedAt": "2026-11-12T08:35:04Z"
+}

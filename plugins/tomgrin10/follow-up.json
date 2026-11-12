@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-follow-up",
-    "version": "1.0.1",
-    "resolved": "https://registry.npmjs.org/paseo-follow-up/-/paseo-follow-up-1.0.1.tgz",
-    "integrity": "sha512-yUY8lIfdUJqvbW0dqy4nwTv3bKSJmLCjh9IB3wkoj0vCCf5s6UF7xWaRRZboSv+xq1x8+vWPxyUEsaLVTdhYhQ=="
+    "version": "2.0.0",
+    "resolved": "https://registry.npmjs.org/paseo-follow-up/-/paseo-follow-up-2.0.0.tgz",
+    "integrity": "sha512-lI3O6edjsjDmdvIEx+XOFjMD2gbNxb9VPtme4zhfNlcGHWXutVHc8OjJFtunxjGtZNmQMY7wby9w8jdrwreywA=="
   },
   "repository": {
     "url": "https://github.com/tomgrin10/paseo-follow-up",
-    "commit": "6e5805ca67d586b2c9f17041e6aa1f47d0e9de00"
+    "commit": "f91345b8805e07708f4ca9a149fcf0d9ac6ac79d"
   },
   "categories": [
     "workspaces",

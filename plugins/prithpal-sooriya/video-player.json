@@ -1,0 +1,20 @@
+{
+  "id": "prithpal-sooriya/video-player",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/Prithpal-Sooriya/paseo-plugin-video-player.git",
+    "commit": "d069c6440b42f5334b91ed971fa47f75d3147bfd",
+    "tag": "v0.1.1"
+  },
+  "repository": {
+    "url": "https://github.com/Prithpal-Sooriya/paseo-plugin-video-player",
+    "commit": "d069c6440b42f5334b91ed971fa47f75d3147bfd"
+  },
+  "categories": [
+    "workspaces"
+  ],
+  "submittedAt": "2026-11-11T21:50:35Z",
+  "submittedBy": "Prithpal-Sooriya",
+  "publishedAt": "2026-11-11T22:02:22Z",
+  "reviewedAt": "2026-11-11T22:02:22Z"
+}

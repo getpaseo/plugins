@@ -1,0 +1,21 @@
+{
+  "id": "geongyu09/agent-dashboard",
+  "artifact": {
+    "kind": "npm",
+    "package": "@geongyu09/paseo-agent-dashboard",
+    "version": "1.1.0",
+    "resolved": "https://registry.npmjs.org/@geongyu09/paseo-agent-dashboard/-/paseo-agent-dashboard-1.1.0.tgz",
+    "integrity": "sha512-SjqjwVWlcr/C4cMKNxokR4FdBYRkjBmwMt0xLB70NTZSCOQ50T6OArbOUSGLWG8NNUz2R2xIViVKVxbwUPbN8A=="
+  },
+  "repository": {
+    "url": "https://github.com/geongyu09/paseo-agent-dashboard"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces"
+  ],
+  "submittedAt": "2026-11-12T04:36:36Z",
+  "submittedBy": "geongyu09",
+  "publishedAt": "2026-11-12T05:02:59Z",
+  "reviewedAt": "2026-11-12T05:02:59Z"
+}

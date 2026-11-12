@@ -1,0 +1,21 @@
+{
+  "id": "fdkevin0/agy-acp",
+  "artifact": {
+    "kind": "npm",
+    "package": "@fdkevin/paseo-agy-acp",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@fdkevin/paseo-agy-acp/-/paseo-agy-acp-0.1.1.tgz",
+    "integrity": "sha512-Dh+FQdJeSksctavbYfuuCQLC1gtit1ErApRP8c6sjt1R8XD42oqktjiIiZUZ9MTa1UZ04YD3usZ+GZ6k6rwBxw=="
+  },
+  "repository": {
+    "url": "https://github.com/fdkevin0/paseo-agy-acp",
+    "commit": "92605daf8d8285caaff19e53d90b5a709752bb43"
+  },
+  "categories": [
+    "providers"
+  ],
+  "submittedAt": "2026-11-12T23:01:26Z",
+  "submittedBy": "fdkevin0",
+  "publishedAt": "2026-11-12T23:01:26Z",
+  "reviewedAt": "2026-11-12T23:01:26Z"
+}

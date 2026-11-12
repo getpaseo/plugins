@@ -1,0 +1,15 @@
+{
+  "issue": 2371,
+  "title": "Update Codex multi-account to v0.1.2 — current Paseo 0.16 support",
+  "submittedBy": "ketitongxue",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/ketitongxue/paseo-codex-multi-account",
+    "ref": "7915c6a037c33f7b89ddceae76cf70924dc8d2b5"
+  },
+  "categories": [
+    "providers",
+    "sidebar",
+    "utils"
+  ]
+}

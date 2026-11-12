@@ -3,11 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/spacedock-dev/paseo-safehouse.git",
-    "commit": "d2fa5920b2aceabe8df032d347116ced156d595c"
+    "commit": "98b3d56231073fc0ab61c49a20ae488dc97f85db",
+    "tag": "v0.2.2"
   },
   "repository": {
     "url": "https://github.com/spacedock-dev/paseo-safehouse",
-    "commit": "d2fa5920b2aceabe8df032d347116ced156d595c"
+    "commit": "98b3d56231073fc0ab61c49a20ae488dc97f85db"
   },
   "categories": [
     "providers",
@@ -15,5 +16,5 @@
   ],
   "submittedAt": "2026-11-11T08:01:35Z",
   "publishedAt": "2026-11-11T08:01:35Z",
-  "reviewedAt": "2026-11-11T08:01:35Z"
+  "reviewedAt": "2026-11-12T19:31:31Z"
 }

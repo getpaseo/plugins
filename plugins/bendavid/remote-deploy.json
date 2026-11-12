@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/bendavid/paseo-remote-deploy.git",
-    "commit": "96d16065e013ff94aee971931eb621be5597d6d4",
-    "tag": "v0.3.1"
+    "commit": "3b3d3b7de9087431a612930986ed9cc98e5e5f4e",
+    "tag": "v0.4.0"
   },
   "repository": {
     "url": "https://github.com/bendavid/paseo-remote-deploy",
-    "commit": "96d16065e013ff94aee971931eb621be5597d6d4"
+    "commit": "3b3d3b7de9087431a612930986ed9cc98e5e5f4e"
   },
   "categories": [
     "daemon-management"

@@ -1,0 +1,15 @@
+{
+  "issue": 2353,
+  "title": "Update Paseo Pulse to 0.13.4: MobX MVVM refactor",
+  "submittedBy": "js2me",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/js2me/paseo-pulse",
+    "ref": "e3a962dd47ec0cf81be55bcc9b989c5bfe0d4f9b"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar",
+    "utils"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "issue": 2356,
+  "title": "Impeccable Live",
+  "submittedBy": "kasparsj",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/kasparsj/paseo-impeccable-live",
+    "ref": "7b78d685dd624565f02a129c21ce159a6e29dad0"
+  },
+  "categories": [
+    "workspaces",
+    "orchestration",
+    "utils"
+  ]
+}

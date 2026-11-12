@@ -1,0 +1,14 @@
+{
+  "issue": 2337,
+  "title": "Agent board",
+  "submittedBy": "geongyu09",
+  "source": {
+    "kind": "npm",
+    "package": "@geongyu09/paseo-agent-dashboard",
+    "version": "1.1.0"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces"
+  ]
+}

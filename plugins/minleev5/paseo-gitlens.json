@@ -1,13 +1,13 @@
 {
-  "id": "minleev5/git-diff-with-submodule",
+  "id": "minleev5/paseo-gitlens",
   "artifact": {
     "kind": "git",
-    "remote": "https://github.com/MinLeeV5/paseo-git-diff-with-submodule.git",
+    "remote": "https://github.com/MinLeeV5/paseo-gitlens.git",
     "commit": "1bfa21671e2cadeea2bf4b9ca1200aed4b1ae64f",
     "tag": "v0.6.1"
   },
   "repository": {
-    "url": "https://github.com/MinLeeV5/paseo-git-diff-with-submodule",
+    "url": "https://github.com/MinLeeV5/paseo-gitlens",
     "commit": "1bfa21671e2cadeea2bf4b9ca1200aed4b1ae64f"
   },
   "categories": [

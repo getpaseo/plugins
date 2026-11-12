@@ -1,0 +1,14 @@
+{
+  "issue": 2366,
+  "title": "Paseo Menu Bar",
+  "submittedBy": "ketitongxue",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/ketitongxue/paseo-menubar",
+    "ref": "0b0a6c508a2b53fcdfb7ffbc18025c859dac3801"
+  },
+  "categories": [
+    "utils",
+    "daemon-management"
+  ]
+}

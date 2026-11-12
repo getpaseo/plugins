@@ -18,5 +18,10 @@
   "submittedAt": "2026-11-12T04:01:41Z",
   "submittedBy": "CasonMo",
   "publishedAt": "2026-11-12T04:31:28Z",
-  "reviewedAt": "2026-11-12T04:31:28Z"
+  "reviewedAt": "2026-11-12T04:31:28Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/CasonMo/paseo-superagent/1014079394712f3793c8fc17d73f099b9bcc8eec/docs/screenshot.png"
+    ]
+  }
 }

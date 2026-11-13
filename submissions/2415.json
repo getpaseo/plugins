@@ -1,0 +1,14 @@
+{
+  "issue": 2415,
+  "title": "Project environment",
+  "submittedBy": "michaelmwu",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/508-dev/paseo-project-environment",
+    "ref": "ceefd8213ca87dce6cfc0b9f35c9158ed1c16bff"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ]
+}

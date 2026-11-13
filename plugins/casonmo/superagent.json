@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/CasonMo/paseo-superagent.git",
-    "commit": "ed6965be62c39e63f448f35706ccbd3cd6bc9f2a"
+    "commit": "7215acdbf44fd8cb2b04cee1515e9e62ff59a1f5"
   },
   "repository": {
     "url": "https://github.com/CasonMo/paseo-superagent",
-    "commit": "ed6965be62c39e63f448f35706ccbd3cd6bc9f2a"
+    "commit": "7215acdbf44fd8cb2b04cee1515e9e62ff59a1f5"
   },
   "categories": [
     "orchestration",

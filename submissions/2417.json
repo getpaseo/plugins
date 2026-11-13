@@ -1,0 +1,13 @@
+{
+  "issue": 2417,
+  "title": "Conversation folders",
+  "submittedBy": "Cocean001",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/Cocean001/paseo-conversation-folders",
+    "ref": "b008eb7eaf98c0a8c10f046b1cf3d182a877a1db"
+  },
+  "categories": [
+    "sidebar"
+  ]
+}

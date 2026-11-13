@@ -1,0 +1,15 @@
+{
+  "issue": 2395,
+  "title": "Ferry",
+  "submittedBy": "zhjiang22",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/zhjiang22/paseo-plugins",
+    "ref": "ebd8eba57c9c9c6e205dbf2b195d3c1d1efe53c9",
+    "pluginPath": "ferry"
+  },
+  "categories": [
+    "providers",
+    "utils"
+  ]
+}

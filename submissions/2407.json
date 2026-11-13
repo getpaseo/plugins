@@ -1,0 +1,15 @@
+{
+  "issue": 2407,
+  "title": "Update Paseo Pulse to 0.13.7: progress and completion badges, native draft actions",
+  "submittedBy": "js2me",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/js2me/paseo-pulse",
+    "ref": "cd30cef19698911aaad20d5514a53d0ef87f81c8"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar",
+    "utils"
+  ]
+}

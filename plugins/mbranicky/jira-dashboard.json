@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-jira-sprint-workspace",
-    "version": "1.2.2",
-    "resolved": "https://registry.npmjs.org/paseo-jira-sprint-workspace/-/paseo-jira-sprint-workspace-1.2.2.tgz",
-    "integrity": "sha512-DEPVi8UPlFmnCmYsge6990En8qiyro+0v3yQOMb/sumahyKPmDE8ft06AaYFNNoa/eBzCM+oJgFlEJX4w0RHMg=="
+    "version": "1.3.1",
+    "resolved": "https://registry.npmjs.org/paseo-jira-sprint-workspace/-/paseo-jira-sprint-workspace-1.3.1.tgz",
+    "integrity": "sha512-BVfcwze325hB/454tWgznKL7vxVmv1YpFrEneN4G6UQzF2UMBqcS71ZyrSKKFJbYeRV0rZCNyKV08lJuN8R/Dg=="
   },
   "repository": {
     "url": "https://github.com/mbranicky/jira-dashboard",
-    "commit": "7186a5c4fff6e292236bbeac9bb23c4c3bf1823d"
+    "commit": "48d092a9f1e80007bf2b0061080de62c70c2e21f"
   },
   "categories": [
     "orchestration",
@@ -19,5 +19,5 @@
   "submittedAt": "2026-11-06T21:43:59Z",
   "submittedBy": "mbranicky",
   "publishedAt": "2026-11-06T22:01:47Z",
-  "reviewedAt": "2026-11-12T13:52:35Z"
+  "reviewedAt": "2026-11-13T13:14:06Z"
 }

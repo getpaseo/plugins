@@ -1,0 +1,14 @@
+{
+  "issue": 2401,
+  "title": "Claude Auth Switch",
+  "submittedBy": "ywy50",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/ywy50/paseo-claude-auth-switch",
+    "ref": "v1.1.0"
+  },
+  "categories": [
+    "providers",
+    "utils"
+  ]
+}

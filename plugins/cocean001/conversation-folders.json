@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/Cocean001/paseo-conversation-folders.git",
-    "commit": "28bdcc41dad9b53f5d77bb7e00a502bfe514a1eb"
+    "commit": "c6b2f0e4443e7e47990caf97f2d0f355b9d2d240"
   },
   "repository": {
     "url": "https://github.com/Cocean001/paseo-conversation-folders",
-    "commit": "28bdcc41dad9b53f5d77bb7e00a502bfe514a1eb"
+    "commit": "c6b2f0e4443e7e47990caf97f2d0f355b9d2d240"
   },
   "categories": [
     "sidebar"
@@ -15,14 +15,5 @@
   "submittedAt": "2026-11-14T07:04:55Z",
   "submittedBy": "Cocean001",
   "publishedAt": "2026-11-14T07:04:55Z",
-  "reviewedAt": "2026-11-14T07:04:55Z",
-  "listing": {
-    "media": [
-      "https://raw.githubusercontent.com/Cocean001/paseo-conversation-folders/28bdcc41dad9b53f5d77bb7e00a502bfe514a1eb/assets/screenshots/sidebar-overview.png",
-      "https://raw.githubusercontent.com/Cocean001/paseo-conversation-folders/28bdcc41dad9b53f5d77bb7e00a502bfe514a1eb/assets/screenshots/new-folder-menu.png",
-      "https://raw.githubusercontent.com/Cocean001/paseo-conversation-folders/28bdcc41dad9b53f5d77bb7e00a502bfe514a1eb/assets/screenshots/picker-current-layout.png",
-      "https://raw.githubusercontent.com/Cocean001/paseo-conversation-folders/28bdcc41dad9b53f5d77bb7e00a502bfe514a1eb/assets/screenshots/project-appearance.png",
-      "https://raw.githubusercontent.com/Cocean001/paseo-conversation-folders/28bdcc41dad9b53f5d77bb7e00a502bfe514a1eb/assets/screenshots/drag-conversation.png"
-    ]
-  }
+  "reviewedAt": "2026-11-14T13:03:17Z"
 }

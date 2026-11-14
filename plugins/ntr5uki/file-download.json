@@ -1,0 +1,22 @@
+{
+  "id": "ntr5uki/file-download",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/ntr5uki/paseo-file-download.git",
+    "commit": "787c8689a746fa287efddaa48d85be95bb7419de",
+    "tag": "v0.2.1"
+  },
+  "repository": {
+    "url": "https://github.com/ntr5uki/paseo-file-download",
+    "commit": "787c8689a746fa287efddaa48d85be95bb7419de"
+  },
+  "categories": [
+    "utils",
+    "workspaces",
+    "extras"
+  ],
+  "submittedAt": "2026-11-14T09:02:32Z",
+  "submittedBy": "ntr5uki",
+  "publishedAt": "2026-11-14T09:02:32Z",
+  "reviewedAt": "2026-11-14T09:02:32Z"
+}

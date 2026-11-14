@@ -1,4 +1,4 @@
-HTTP Tunnel lets an HTTP or HTTPS service reachable from one Paseo host be used from another Paseo host you manage, through the Paseo Relay. It forwards HTTP only, including streaming and server-sent events, and does not support TCP, UDP, `CONNECT` or WebSocket upgrade. It requires Paseo 0.8.0 or newer on both hosts.
+HTTP Tunnel lets an HTTP or HTTPS service reachable from one Paseo host be used from another Paseo host you manage, through the Paseo Relay. It forwards HTTP only, including streaming and server-sent events, and does not support TCP, UDP, `CONNECT` or WebSocket upgrade. It requires Paseo 0.10.3 or newer on both hosts.
 
 **Setup.** On the host that can reach the service, you add an Ingress for that origin and copy its Route Offer. On the other host, you add an Egress and paste the offer. The offer contains the relay address, the host's public key and a route secret, so anyone holding it can open that route. Rotating the Ingress secret invalidates every offer already shared.
 

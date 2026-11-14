@@ -1,0 +1,22 @@
+{
+  "id": "pocharlies-org/sugiere",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/pocharlies-org/paseo-sugiere.git",
+    "commit": "2cb22635cfa216cd9acba3c488f0760258cf43e0"
+  },
+  "repository": {
+    "url": "https://github.com/pocharlies-org/paseo-sugiere",
+    "commit": "2cb22635cfa216cd9acba3c488f0760258cf43e0"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-10T23:43:31Z",
+  "submittedBy": "pocharlies",
+  "publishedAt": "2026-11-11T00:06:42Z",
+  "reviewedAt": "2026-11-11T00:06:42Z",
+  "listing": {
+    "name": "Suggested next message"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "508-dev/issue-workflow",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/508-dev/paseo-issue-workflow.git",
+    "commit": "c0531834646c0f1907b106e087fc97f94faebb8f"
+  },
+  "repository": {
+    "url": "https://github.com/508-dev/paseo-issue-workflow",
+    "commit": "c0531834646c0f1907b106e087fc97f94faebb8f"
+  },
+  "categories": [
+    "git",
+    "workspaces"
+  ],
+  "submittedAt": "2026-11-14T08:10:01Z",
+  "submittedBy": "michaelmwu",
+  "publishedAt": "2026-11-14T08:10:01Z",
+  "reviewedAt": "2026-11-14T08:10:01Z",
+  "listing": {
+    "name": "GitHub Issue Workflow",
+    "media": [
+      "https://raw.githubusercontent.com/508-dev/paseo-issue-workflow/c0531834646c0f1907b106e087fc97f94faebb8f/docs/screenshots/issue-preview.png"
+    ]
+  }
+}

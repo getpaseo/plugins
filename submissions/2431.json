@@ -1,0 +1,13 @@
+{
+  "issue": 2431,
+  "title": "Conversation folders: expand gallery to 15 screenshots",
+  "submittedBy": "Cocean001",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/Cocean001/paseo-conversation-folders",
+    "ref": "c6b2f0e4443e7e47990caf97f2d0f355b9d2d240"
+  },
+  "categories": [
+    "sidebar"
+  ]
+}

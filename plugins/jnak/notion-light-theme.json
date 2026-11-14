@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/jnak/paseo-notion-light-theme.git",
-    "commit": "36ddc33a3280d573d387855b596dddfb3211491d",
-    "tag": "v0.1.1"
+    "commit": "64ae412e138efce702701d9a176a5600f4018870",
+    "tag": "v0.1.2"
   },
   "repository": {
     "url": "https://github.com/jnak/paseo-notion-light-theme",
-    "commit": "36ddc33a3280d573d387855b596dddfb3211491d"
+    "commit": "64ae412e138efce702701d9a176a5600f4018870"
   },
   "categories": [
     "themes"

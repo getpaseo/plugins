@@ -1,0 +1,14 @@
+{
+  "issue": 2422,
+  "title": "Safehouse",
+  "submittedBy": "clkao",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/spacedock-dev/paseo-safehouse",
+    "ref": "v0.3.0"
+  },
+  "categories": [
+    "providers",
+    "workspaces"
+  ]
+}

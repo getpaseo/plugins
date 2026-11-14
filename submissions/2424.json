@@ -1,0 +1,13 @@
+{
+  "issue": 2424,
+  "title": "Prompt Enhancer",
+  "submittedBy": "ivolnistov",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/ivolnistov/paseo-prompt-enhancer",
+    "ref": "cc8c9efb5c52b6df1f8eb27099dd76745333bce6"
+  },
+  "categories": [
+    "utils"
+  ]
+}

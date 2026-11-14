@@ -1,0 +1,27 @@
+{
+  "id": "pocharlies-org/argocd",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/pocharlies-org/paseo-argocd.git",
+    "commit": "d52db03a6ec0ffb7787bf2abce4db3ac2c17b297"
+  },
+  "repository": {
+    "url": "https://github.com/pocharlies-org/paseo-argocd",
+    "commit": "d52db03a6ec0ffb7787bf2abce4db3ac2c17b297"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-10T23:43:28Z",
+  "submittedBy": "pocharlies",
+  "publishedAt": "2026-11-11T00:05:52Z",
+  "reviewedAt": "2026-11-11T00:05:52Z",
+  "listing": {
+    "name": "ArgoCD deployment status",
+    "translations": {
+      "es": {
+        "name": "Estado del despliegue en ArgoCD"
+      }
+    }
+  }
+}

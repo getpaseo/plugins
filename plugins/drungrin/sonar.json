@@ -1,0 +1,21 @@
+{
+  "id": "drungrin/sonar",
+  "artifact": {
+    "kind": "npm",
+    "package": "@drungrin/paseo-sonar",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/@drungrin/paseo-sonar/-/paseo-sonar-0.1.1.tgz",
+    "integrity": "sha512-sh7vwT87oXZBykLO4ZfANoPb3NjSlicApa+7bY9leZiNENkH7N+0F6ub5+hUAsmsNF1BoEj7tPf0LAeFbPhhbw=="
+  },
+  "repository": {
+    "url": "https://github.com/drungrin/paseo-sonar"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-11-14T13:02:53Z",
+  "submittedBy": "drungrin",
+  "publishedAt": "2026-11-14T16:01:59Z",
+  "reviewedAt": "2026-11-14T16:01:59Z"
+}

@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-plugin-tasks",
-    "version": "0.5.0",
-    "resolved": "https://registry.npmjs.org/paseo-plugin-tasks/-/paseo-plugin-tasks-0.5.0.tgz",
-    "integrity": "sha512-saYH88Z+HeEAO8bUfnXyiHGwHJ9Hu9hFOvpGTUAtra7qlm++TpVhjnzpUTGC2PmjXhj8iRZ6phdrEfF6D213Pg=="
+    "version": "0.5.1",
+    "resolved": "https://registry.npmjs.org/paseo-plugin-tasks/-/paseo-plugin-tasks-0.5.1.tgz",
+    "integrity": "sha512-Jr8qZs8wHDGDLNC0YeJlyzHRGOnDNtwYm5LViWPxq93lEbOwCWrRbxuCBuvN47GTiKtAaXJKKxEkCCM20PShyg=="
   },
   "repository": {
     "url": "https://github.com/anh-chu/paseo-plugin-tasks"
@@ -18,5 +18,5 @@
   "submittedAt": "2026-10-17T20:23:08Z",
   "submittedBy": "anh-chu",
   "publishedAt": "2026-10-18T09:03:41Z",
-  "reviewedAt": "2026-11-09T14:01:29Z"
+  "reviewedAt": "2026-11-14T08:04:51Z"
 }

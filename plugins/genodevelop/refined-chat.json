@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/GenoDevelop/paseo-refined-chat.git",
-    "commit": "088d860fecb5154ba5973816f528a6781028d7f9"
+    "commit": "1bf7465a9f394d91c1c73bab33d5e7dbb229d6d3"
   },
   "repository": {
     "url": "https://github.com/GenoDevelop/paseo-refined-chat",
-    "commit": "088d860fecb5154ba5973816f528a6781028d7f9"
+    "commit": "1bf7465a9f394d91c1c73bab33d5e7dbb229d6d3"
   },
   "categories": [
     "extras",

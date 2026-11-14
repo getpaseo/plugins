@@ -1,0 +1,29 @@
+{
+  "id": "pocharlies-org/descuento",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/pocharlies-org/paseo-descuento.git",
+    "commit": "a857fc51513d2ff9941c2412ea08801b861379d8"
+  },
+  "repository": {
+    "url": "https://github.com/pocharlies-org/paseo-descuento",
+    "commit": "a857fc51513d2ff9941c2412ea08801b861379d8"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-10T23:43:32Z",
+  "submittedBy": "pocharlies",
+  "publishedAt": "2026-11-11T00:06:16Z",
+  "reviewedAt": "2026-11-11T00:06:16Z",
+  "listing": {
+    "name": "Alibaba discount",
+    "description": "A composer pill for agents running an Alibaba model that shows whether the night discount is active now and how long it lasts.",
+    "translations": {
+      "es": {
+        "name": "Descuento Alibaba",
+        "description": "Píldora en el composer: con un modelo de Alibaba, dice si el descuento nocturno está activo ahora y cuánto queda."
+      }
+    }
+  }
+}

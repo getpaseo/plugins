@@ -1,0 +1,13 @@
+{
+  "issue": 2436,
+  "title": "Sonar",
+  "submittedBy": "drungrin",
+  "source": {
+    "kind": "npm",
+    "package": "@drungrin/paseo-sonar"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ]
+}

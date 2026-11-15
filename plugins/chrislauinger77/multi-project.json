@@ -1,0 +1,22 @@
+{
+  "id": "chrislauinger77/multi-project",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/ChrisLauinger77/paseo-multi-project.git",
+    "commit": "699ed92693e9b21f3132f46f76f6a1b7e5daa92a",
+    "tag": "v0.1.4"
+  },
+  "repository": {
+    "url": "https://github.com/ChrisLauinger77/paseo-multi-project",
+    "commit": "699ed92693e9b21f3132f46f76f6a1b7e5daa92a"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-15T14:47:57Z",
+  "submittedBy": "ChrisLauinger77",
+  "publishedAt": "2026-11-15T15:01:31Z",
+  "reviewedAt": "2026-11-15T15:01:31Z"
+}

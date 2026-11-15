@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "@drungrin/paseo-sonar",
-    "version": "0.1.1",
-    "resolved": "https://registry.npmjs.org/@drungrin/paseo-sonar/-/paseo-sonar-0.1.1.tgz",
-    "integrity": "sha512-sh7vwT87oXZBykLO4ZfANoPb3NjSlicApa+7bY9leZiNENkH7N+0F6ub5+hUAsmsNF1BoEj7tPf0LAeFbPhhbw=="
+    "version": "0.2.0",
+    "resolved": "https://registry.npmjs.org/@drungrin/paseo-sonar/-/paseo-sonar-0.2.0.tgz",
+    "integrity": "sha512-H7F562m9nZ6PyPuu8/sPUcPFaKmjd+PURu3RrvIPEuNfypH81xFCZIQKr5vTDgluOrvhi3U5blTNPRj1Npaa2Q=="
   },
   "repository": {
     "url": "https://github.com/drungrin/paseo-sonar"
@@ -17,5 +17,5 @@
   "submittedAt": "2026-11-14T13:02:53Z",
   "submittedBy": "drungrin",
   "publishedAt": "2026-11-14T16:01:59Z",
-  "reviewedAt": "2026-11-14T16:01:59Z"
+  "reviewedAt": "2026-11-14T21:34:59Z"
 }

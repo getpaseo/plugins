@@ -1,0 +1,13 @@
+{
+  "issue": 2476,
+  "title": "Local decider",
+  "submittedBy": "SkeLLLa",
+  "source": {
+    "kind": "npm",
+    "package": "@ziptie-soft/paseo-plugin-local-decider"
+  },
+  "categories": [
+    "orchestration",
+    "utils"
+  ]
+}

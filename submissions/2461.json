@@ -1,0 +1,12 @@
+{
+  "issue": 2461,
+  "title": "Read Aloud",
+  "submittedBy": "average-crumb",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/average-crumb/paseo-read-aloud"
+  },
+  "categories": [
+    "extras"
+  ]
+}

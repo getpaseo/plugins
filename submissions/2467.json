@@ -1,0 +1,12 @@
+{
+  "issue": 2467,
+  "title": "Project groups",
+  "submittedBy": "topar12",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/topar12/paseo-project-groups"
+  },
+  "categories": [
+    "sidebar"
+  ]
+}

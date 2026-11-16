@@ -1,0 +1,20 @@
+{
+  "id": "kosmoche/vibe-board",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/KosmoCHE/vibe-board.git",
+    "commit": "8ba91a2231256e8e5bbd1b7435c5a0863f3bfc5b",
+    "pluginPath": "ui"
+  },
+  "repository": {
+    "url": "https://github.com/KosmoCHE/vibe-board",
+    "commit": "8ba91a2231256e8e5bbd1b7435c5a0863f3bfc5b"
+  },
+  "categories": [
+    "workspaces"
+  ],
+  "submittedAt": "2026-11-16T03:59:12Z",
+  "submittedBy": "KosmoCHE",
+  "publishedAt": "2026-11-16T04:09:13Z",
+  "reviewedAt": "2026-11-16T04:09:13Z"
+}

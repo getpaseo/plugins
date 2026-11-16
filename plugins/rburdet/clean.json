@@ -15,6 +15,11 @@
   ],
   "submittedAt": "2026-11-16T01:55:36Z",
   "submittedBy": "rburdet",
-  "publishedAt": "2026-11-16T04:08:30Z",
-  "reviewedAt": "2026-11-16T04:08:30Z"
+  "publishedAt": "2026-11-16T20:01:34Z",
+  "reviewedAt": "2026-11-16T20:01:34Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/rburdet/clean-paseo/196f0e3f51d7c632ed1b8b21317ed47b139ffed2/assets/screenshot.png"
+    ]
+  }
 }

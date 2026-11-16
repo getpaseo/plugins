@@ -1,0 +1,20 @@
+{
+  "id": "kosmoche/source-control",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/KosmoCHE/paseo-source-control.git",
+    "commit": "443b475c0a82000aa3242e653fdb2c307538e1e7"
+  },
+  "repository": {
+    "url": "https://github.com/KosmoCHE/paseo-source-control",
+    "commit": "443b475c0a82000aa3242e653fdb2c307538e1e7"
+  },
+  "categories": [
+    "git",
+    "workspaces"
+  ],
+  "submittedAt": "2026-11-16T03:38:30Z",
+  "submittedBy": "KosmoCHE",
+  "publishedAt": "2026-11-16T06:02:02Z",
+  "reviewedAt": "2026-11-16T06:02:02Z"
+}

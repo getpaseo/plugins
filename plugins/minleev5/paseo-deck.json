@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/MinLeeV5/paseo-deck.git",
-    "commit": "ccfde8b7bc0ceb580de600e9ebce4cd2d15fe5c8",
+    "commit": "f9d93ec7f6fd832b738cc99828117993f691ac1f",
     "pluginPath": "plugin"
   },
   "repository": {
     "url": "https://github.com/MinLeeV5/paseo-deck",
-    "commit": "ccfde8b7bc0ceb580de600e9ebce4cd2d15fe5c8"
+    "commit": "f9d93ec7f6fd832b738cc99828117993f691ac1f"
   },
   "categories": [
     "workspaces",

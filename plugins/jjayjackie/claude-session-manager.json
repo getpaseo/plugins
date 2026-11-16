@@ -1,0 +1,19 @@
+{
+  "id": "jjayjackie/claude-session-manager",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/jjayjackie/paseo-claude-session-manager.git",
+    "commit": "23061e858228f3d0afa888b8b36f242b227723ea"
+  },
+  "repository": {
+    "url": "https://github.com/jjayjackie/paseo-claude-session-manager",
+    "commit": "23061e858228f3d0afa888b8b36f242b227723ea"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-16T16:01:27Z",
+  "submittedBy": "jjayjackie",
+  "publishedAt": "2026-11-16T16:01:27Z",
+  "reviewedAt": "2026-11-16T16:01:27Z"
+}

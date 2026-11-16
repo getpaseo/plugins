@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/apple-ouyang/paseo-office-preview.git",
-    "commit": "ce667e7e8931c40d9117f33ab2468128968d834a"
+    "commit": "3eb3ee82646606217f57985f05eac80466a9335d"
   },
   "repository": {
     "url": "https://github.com/apple-ouyang/paseo-office-preview",
-    "commit": "ce667e7e8931c40d9117f33ab2468128968d834a"
+    "commit": "3eb3ee82646606217f57985f05eac80466a9335d"
   },
   "categories": [
     "workspaces"
@@ -23,5 +23,5 @@
     ]
   },
   "publishedAt": "2026-10-25T14:33:54Z",
-  "reviewedAt": "2026-10-25T14:33:54Z"
+  "reviewedAt": "2026-11-16T09:03:21Z"
 }

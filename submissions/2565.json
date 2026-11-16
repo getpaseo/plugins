@@ -1,0 +1,14 @@
+{
+  "issue": 2565,
+  "title": "Kanban-md",
+  "submittedBy": "ActiveChooN",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/ActiveChooN/kanban-md-paseo",
+    "ref": "v0.2.0"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "issue": 2544,
+  "title": "Agent Controls Chinese v0.2.3 — tablet toolbar labels",
+  "submittedBy": "kogekiplay",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/kogekiplay/paseo-agent-controls-zh",
+    "ref": "d9e1f8de2c00d6c699d8b46167b4d798bb0f0d04"
+  },
+  "categories": [
+    "utils"
+  ]
+}

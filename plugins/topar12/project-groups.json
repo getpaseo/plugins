@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/topar12/paseo-project-groups.git",
-    "commit": "119f9df5b0f8c0ab29c5081163f233d3790af74c",
-    "tag": "v1.0.1"
+    "commit": "dabc132f57b7bd8620633780e36511f4080fde0b",
+    "tag": "v1.0.2"
   },
   "repository": {
     "url": "https://github.com/topar12/paseo-project-groups",
-    "commit": "119f9df5b0f8c0ab29c5081163f233d3790af74c"
+    "commit": "dabc132f57b7bd8620633780e36511f4080fde0b"
   },
   "categories": [
     "sidebar"
@@ -16,5 +16,5 @@
   "submittedAt": "2026-11-15T15:27:14Z",
   "submittedBy": "topar12",
   "publishedAt": "2026-11-15T16:02:32Z",
-  "reviewedAt": "2026-11-16T12:10:00Z"
+  "reviewedAt": "2026-11-16T23:01:11Z"
 }

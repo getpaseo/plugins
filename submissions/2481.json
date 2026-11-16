@@ -1,0 +1,13 @@
+{
+  "issue": 2481,
+  "title": "Clean Paseo",
+  "submittedBy": "rburdet",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/rburdet/clean-paseo"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ]
+}

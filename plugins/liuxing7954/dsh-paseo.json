@@ -18,11 +18,9 @@
   "reviewedAt": "2026-10-30T09:33:30Z",
   "listing": {
     "name": "DeepSeek Harness (native)",
-    "description": "DeepSeek Harness as a native Paseo provider, with prompt images, slash commands and skills, plan mode, steering, permissions and presets.",
     "translations": {
       "zh-CN": {
-        "name": "DeepSeek Harness（原生）",
-        "description": "把 DeepSeek Harness 接成 Paseo 原生 provider，支持提示词图片、斜杠命令与技能、计划模式、插话、权限和预设。"
+        "name": "DeepSeek Harness（原生）"
       }
     },
     "media": [

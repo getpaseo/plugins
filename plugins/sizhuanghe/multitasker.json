@@ -1,0 +1,21 @@
+{
+  "id": "sizhuanghe/multitasker",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/SizhuangHe/paseo-multitasker.git",
+    "commit": "726b163ab728244b970ea6bf0cdb0c8b7e855ae1",
+    "pluginPath": "paseo-plugin"
+  },
+  "repository": {
+    "url": "https://github.com/SizhuangHe/paseo-multitasker",
+    "commit": "726b163ab728244b970ea6bf0cdb0c8b7e855ae1"
+  },
+  "categories": [
+    "orchestration",
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-16T19:01:23Z",
+  "submittedBy": "SizhuangHe",
+  "publishedAt": "2026-11-16T19:01:23Z",
+  "reviewedAt": "2026-11-16T19:01:23Z"
+}

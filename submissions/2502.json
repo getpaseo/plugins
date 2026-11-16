@@ -1,0 +1,13 @@
+{
+  "issue": 2502,
+  "title": "Antigravity Usage Source",
+  "submittedBy": "apple-ouyang",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/apple-ouyang/paseo-antigravity-usage-source"
+  },
+  "categories": [
+    "sidebar",
+    "providers"
+  ]
+}

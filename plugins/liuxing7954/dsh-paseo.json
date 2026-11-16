@@ -3,7 +3,7 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/liuxing7954/paseo-dsh",
-    "commit": "f1830b644102e184b0e43065de912ce1fefaca86",
+    "commit": "ab9deca315ecf3f9939f31479cbcc27538bac8be",
     "pluginPath": "paseo-plugin"
   },
   "repository": {
@@ -26,6 +26,7 @@
       }
     },
     "media": [
+      "https://raw.githubusercontent.com/liuxing7954/paseo-dsh/af460f9af293131e07ebe357c41aa9e652ccf153/docs/assets/paseo-dsh-overview.png",
       "https://raw.githubusercontent.com/liuxing7954/paseo-dsh/c642c604aeb5b409a6237ca3ef54fdb82801677d/docs/assets/dsh-paseo-stats-row.png"
     ]
   }

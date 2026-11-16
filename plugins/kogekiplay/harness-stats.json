@@ -1,0 +1,22 @@
+{
+  "id": "kogekiplay/harness-stats",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/kogekiplay/paseo-harness-stats.git",
+    "commit": "e469b8dc0b71c1413a31439087ed65d87cb22b3d"
+  },
+  "repository": {
+    "url": "https://github.com/kogekiplay/paseo-harness-stats",
+    "commit": "e469b8dc0b71c1413a31439087ed65d87cb22b3d"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-16T07:31:47Z",
+  "submittedBy": "kogekiplay",
+  "publishedAt": "2026-11-16T08:03:27Z",
+  "reviewedAt": "2026-11-16T08:03:27Z",
+  "listing": {
+    "description": "Shows turns, model steps, output speed, token totals and cache hit for the current Codex or Claude Code session beside the Paseo composer."
+  }
+}

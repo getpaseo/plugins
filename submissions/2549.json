@@ -1,0 +1,12 @@
+{
+  "issue": 2549,
+  "title": "session manager",
+  "submittedBy": "jjayjackie",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/jjayjackie/paseo-claude-session-manager"
+  },
+  "categories": [
+    "utils"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "rburdet/clean",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/rburdet/clean-paseo.git",
+    "commit": "373231ccd8ff50cb976735b20bcaa7447b2b40ec"
+  },
+  "repository": {
+    "url": "https://github.com/rburdet/clean-paseo",
+    "commit": "373231ccd8ff50cb976735b20bcaa7447b2b40ec"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-16T04:08:30Z",
+  "submittedBy": "rburdet",
+  "publishedAt": "2026-11-16T04:08:30Z",
+  "reviewedAt": "2026-11-16T04:08:30Z"
+}

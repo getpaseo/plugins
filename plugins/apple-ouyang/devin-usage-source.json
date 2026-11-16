@@ -1,0 +1,20 @@
+{
+  "id": "apple-ouyang/devin-usage-source",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/apple-ouyang/paseo-devin-usage-source.git",
+    "commit": "36995e462e6f313669908ff3490139cce4e007da"
+  },
+  "repository": {
+    "url": "https://github.com/apple-ouyang/paseo-devin-usage-source",
+    "commit": "36995e462e6f313669908ff3490139cce4e007da"
+  },
+  "categories": [
+    "sidebar",
+    "providers"
+  ],
+  "submittedAt": "2026-11-16T08:46:28Z",
+  "submittedBy": "apple-ouyang",
+  "publishedAt": "2026-11-16T09:06:11Z",
+  "reviewedAt": "2026-11-16T09:06:11Z"
+}

@@ -1,17 +1,19 @@
 {
   "id": "activechoon/kanban-md",
   "artifact": {
-    "kind": "git",
-    "remote": "https://github.com/ActiveChooN/kanban-md-paseo.git",
-    "commit": "1b80b3bf8dc8e42d07ed45a843b03a7a77ed5d22"
+    "kind": "npm",
+    "package": "@activechoon/kanban-md-paseo",
+    "version": "0.2.0",
+    "resolved": "https://registry.npmjs.org/@activechoon/kanban-md-paseo/-/kanban-md-paseo-0.2.0.tgz",
+    "integrity": "sha512-G8R2I/WErDqi3Tm9e7QuWu17HWD+lP+Zi6StdDZrnQXlSRHQHrGyO/m9XFIlnhYqMMeSSCTzVO0PzH9NTKqkyQ=="
   },
   "repository": {
     "url": "https://github.com/ActiveChooN/kanban-md-paseo",
-    "commit": "1b80b3bf8dc8e42d07ed45a843b03a7a77ed5d22"
+    "commit": "cb2395015ca1141bd42f877b574c0f0fcabf99c4"
   },
   "categories": [
-    "orchestration",
-    "workspaces"
+    "workspaces",
+    "orchestration"
   ],
   "submittedAt": "2026-11-03T21:50:13Z",
   "submittedBy": "ActiveChooN",

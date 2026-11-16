@@ -1,0 +1,20 @@
+{
+  "id": "apple-ouyang/antigravity-usage-source",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/apple-ouyang/paseo-antigravity-usage-source.git",
+    "commit": "6dc5183a8c127b27ab7639f0db083497934f95a2"
+  },
+  "repository": {
+    "url": "https://github.com/apple-ouyang/paseo-antigravity-usage-source",
+    "commit": "6dc5183a8c127b27ab7639f0db083497934f95a2"
+  },
+  "categories": [
+    "sidebar",
+    "providers"
+  ],
+  "submittedAt": "2026-11-16T08:46:26Z",
+  "submittedBy": "apple-ouyang",
+  "publishedAt": "2026-11-16T09:06:08Z",
+  "reviewedAt": "2026-11-16T09:06:08Z"
+}

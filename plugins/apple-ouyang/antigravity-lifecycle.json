@@ -1,0 +1,20 @@
+{
+  "id": "apple-ouyang/antigravity-lifecycle",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/apple-ouyang/paseo-antigravity-lifecycle.git",
+    "commit": "2c8421b0ae04e2450755715817959e8e1fb5a344"
+  },
+  "repository": {
+    "url": "https://github.com/apple-ouyang/paseo-antigravity-lifecycle",
+    "commit": "2c8421b0ae04e2450755715817959e8e1fb5a344"
+  },
+  "categories": [
+    "providers",
+    "daemon-management"
+  ],
+  "submittedAt": "2026-11-16T08:46:23Z",
+  "submittedBy": "apple-ouyang",
+  "publishedAt": "2026-11-16T09:06:06Z",
+  "reviewedAt": "2026-11-16T09:06:06Z"
+}

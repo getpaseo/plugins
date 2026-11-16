@@ -1,0 +1,25 @@
+{
+  "id": "pyriand3r/theme-switcher",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/pyriand3r/paseo-theme-switcher.git",
+    "commit": "2137cfe44f548dceb6ee609319e661e8ad9315c4",
+    "tag": "1.0.0"
+  },
+  "repository": {
+    "url": "https://github.com/pyriand3r/paseo-theme-switcher",
+    "commit": "2137cfe44f548dceb6ee609319e661e8ad9315c4"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-11-16T09:02:03Z",
+  "submittedBy": "pyriand3r",
+  "publishedAt": "2026-11-16T09:02:03Z",
+  "reviewedAt": "2026-11-16T09:02:03Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/pyriand3r/paseo-theme-switcher/2137cfe44f548dceb6ee609319e661e8ad9315c4/assets/screenshot.jpg"
+    ]
+  }
+}

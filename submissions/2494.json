@@ -1,0 +1,13 @@
+{
+  "issue": 2494,
+  "title": "Recent projects",
+  "submittedBy": "gengjiawen",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/gengjiawen/paseo-recent-projects",
+    "ref": "50fefcb1672206a1ebae118d277c75473650ad43"
+  },
+  "categories": [
+    "sidebar"
+  ]
+}

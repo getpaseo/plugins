@@ -1,0 +1,20 @@
+{
+  "id": "versun/todo",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/versun/paseo-todo.git",
+    "commit": "169ed20990d95490efdb7e9adbab5273ba0fd18c"
+  },
+  "repository": {
+    "url": "https://github.com/versun/paseo-todo",
+    "commit": "169ed20990d95490efdb7e9adbab5273ba0fd18c"
+  },
+  "categories": [
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-11-16T12:56:20Z",
+  "submittedBy": "versun",
+  "publishedAt": "2026-11-16T13:01:30Z",
+  "reviewedAt": "2026-11-16T13:01:30Z"
+}

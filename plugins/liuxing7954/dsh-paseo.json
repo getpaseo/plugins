@@ -3,7 +3,7 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/liuxing7954/paseo-dsh",
-    "commit": "60754bb944110dc590ba7a950b0b5ec4855bfd44",
+    "commit": "ab9deca315ecf3f9939f31479cbcc27538bac8be",
     "pluginPath": "paseo-plugin"
   },
   "repository": {

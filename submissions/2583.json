@@ -1,0 +1,15 @@
+{
+  "issue": 2583,
+  "title": "Voice Kit",
+  "submittedBy": "swordfeng",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/swordfeng/paseo-voice-kit",
+    "ref": "82023555b87b70587b3cca6b2f864393b43176e4",
+    "pluginPath": "plugin"
+  },
+  "categories": [
+    "extras",
+    "utils"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "zhjiang22/ferry",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/zhjiang22/paseo-plugins.git",
+    "commit": "ebd8eba57c9c9c6e205dbf2b195d3c1d1efe53c9",
+    "pluginPath": "ferry"
+  },
+  "repository": {
+    "url": "https://github.com/zhjiang22/paseo-plugins",
+    "commit": "ebd8eba57c9c9c6e205dbf2b195d3c1d1efe53c9"
+  },
+  "categories": [
+    "providers",
+    "utils"
+  ],
+  "submittedAt": "2026-11-14T07:06:42Z",
+  "submittedBy": "zhjiang22",
+  "publishedAt": "2026-11-14T07:06:42Z",
+  "reviewedAt": "2026-11-14T07:06:42Z"
+}

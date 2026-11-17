@@ -1,0 +1,20 @@
+{
+  "id": "aishihzong/autodos",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/AIshihzong/autodos-paseo.git",
+    "commit": "321d9fef91688c278c6baa35222fc8b3f2264adf"
+  },
+  "repository": {
+    "url": "https://github.com/AIshihzong/autodos-paseo",
+    "commit": "321d9fef91688c278c6baa35222fc8b3f2264adf"
+  },
+  "categories": [
+    "orchestration",
+    "git"
+  ],
+  "submittedAt": "2026-11-17T03:17:21Z",
+  "submittedBy": "AIshihzong",
+  "publishedAt": "2026-11-17T04:02:20Z",
+  "reviewedAt": "2026-11-17T04:02:20Z"
+}

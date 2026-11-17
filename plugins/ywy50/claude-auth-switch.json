@@ -1,0 +1,21 @@
+{
+  "id": "ywy50/claude-auth-switch",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/ywy50/paseo-claude-auth-switch.git",
+    "commit": "00ba67da84b318d795406fd4e9b2466d89df0617",
+    "tag": "v1.1.1"
+  },
+  "repository": {
+    "url": "https://github.com/ywy50/paseo-claude-auth-switch",
+    "commit": "00ba67da84b318d795406fd4e9b2466d89df0617"
+  },
+  "categories": [
+    "providers",
+    "utils"
+  ],
+  "submittedAt": "2026-11-14T07:08:04Z",
+  "submittedBy": "ywy50",
+  "publishedAt": "2026-11-14T07:08:04Z",
+  "reviewedAt": "2026-11-14T08:01:35Z"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "508-dev/action-inbox",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/508-dev/paseo-action-inbox.git",
+    "commit": "ea9d65b2d2522e075fe5ce78af9acad1aa254366"
+  },
+  "repository": {
+    "url": "https://github.com/508-dev/paseo-action-inbox",
+    "commit": "ea9d65b2d2522e075fe5ce78af9acad1aa254366"
+  },
+  "categories": [
+    "orchestration",
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-11-14T08:10:41Z",
+  "submittedBy": "michaelmwu",
+  "publishedAt": "2026-11-14T08:10:41Z",
+  "reviewedAt": "2026-11-14T08:10:41Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/508-dev/paseo-action-inbox/ea9d65b2d2522e075fe5ce78af9acad1aa254366/docs/screenshots/inbox-desktop.png",
+      "https://raw.githubusercontent.com/508-dev/paseo-action-inbox/ea9d65b2d2522e075fe5ce78af9acad1aa254366/docs/screenshots/inbox-compact.png"
+    ]
+  }
+}

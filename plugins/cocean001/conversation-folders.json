@@ -1,0 +1,19 @@
+{
+  "id": "cocean001/conversation-folders",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/Cocean001/paseo-conversation-folders.git",
+    "commit": "c6b2f0e4443e7e47990caf97f2d0f355b9d2d240"
+  },
+  "repository": {
+    "url": "https://github.com/Cocean001/paseo-conversation-folders",
+    "commit": "c6b2f0e4443e7e47990caf97f2d0f355b9d2d240"
+  },
+  "categories": [
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-14T07:04:55Z",
+  "submittedBy": "Cocean001",
+  "publishedAt": "2026-11-14T07:04:55Z",
+  "reviewedAt": "2026-11-14T13:03:17Z"
+}

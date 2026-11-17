@@ -1,0 +1,20 @@
+{
+  "id": "508-dev/agent-context",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/508-dev/paseo-agent-context.git",
+    "commit": "f5fae145ad028671b658b6c2a5addafdd89e86e3"
+  },
+  "repository": {
+    "url": "https://github.com/508-dev/paseo-agent-context",
+    "commit": "f5fae145ad028671b658b6c2a5addafdd89e86e3"
+  },
+  "categories": [
+    "orchestration",
+    "utils"
+  ],
+  "submittedAt": "2026-11-14T08:07:27Z",
+  "submittedBy": "michaelmwu",
+  "publishedAt": "2026-11-14T08:07:27Z",
+  "reviewedAt": "2026-11-14T08:07:27Z"
+}

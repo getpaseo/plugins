@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "@oliexe/paseo-bots",
-    "version": "0.2.0",
-    "resolved": "https://registry.npmjs.org/@oliexe/paseo-bots/-/paseo-bots-0.2.0.tgz",
-    "integrity": "sha512-ClK2r+tzpKSTOHwdyGR+0sXJlM/JFi+kepi6Vbmm9VyaUSdsFegIwXJSJevTaO2Btt9wR4PVN7QcJ+LR1ZcROg=="
+    "version": "0.3.1",
+    "resolved": "https://registry.npmjs.org/@oliexe/paseo-bots/-/paseo-bots-0.3.1.tgz",
+    "integrity": "sha512-2V4eJ0sje2cJ8Bbog+5QBxikEb5P9nCUMD3RnrcrOq7SN3q3T+Y7T7T9Gu99aXlKE4maJS03850uM0wUDDw5Pg=="
   },
   "repository": {
     "url": "https://github.com/oliexe/paseo-bots"
@@ -17,7 +17,7 @@
   "submittedAt": "2026-09-29",
   "submittedBy": "oliexe",
   "publishedAt": "2026-09-29",
-  "reviewedAt": "2026-09-29",
+  "reviewedAt": "2026-11-17T00:52:01Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/oliexe/paseo-bots/main/docs/splash.png",

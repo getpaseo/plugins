@@ -1,0 +1,20 @@
+{
+  "id": "apple-ouyang/live-usage",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/apple-ouyang/paseo-live-usage.git",
+    "commit": "0e9bd6015216f15a295ca020011976d0798733eb"
+  },
+  "repository": {
+    "url": "https://github.com/apple-ouyang/paseo-live-usage",
+    "commit": "0e9bd6015216f15a295ca020011976d0798733eb"
+  },
+  "categories": [
+    "utils",
+    "providers"
+  ],
+  "submittedAt": "2026-11-16T08:46:21Z",
+  "submittedBy": "apple-ouyang",
+  "publishedAt": "2026-11-16T13:02:06Z",
+  "reviewedAt": "2026-11-16T13:02:06Z"
+}

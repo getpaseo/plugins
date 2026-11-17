@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/jasonhnd/paseo-clear-chat.git",
-    "commit": "b25f785dfe80d8c7f03c05f82896caf317aa97d0",
-    "tag": "v0.15.4.2"
+    "commit": "931c875f9e5a428e834adac489f1ba6babe3d646",
+    "tag": "v0.16.1.1"
   },
   "repository": {
     "url": "https://github.com/jasonhnd/paseo-clear-chat",
-    "commit": "b25f785dfe80d8c7f03c05f82896caf317aa97d0"
+    "commit": "931c875f9e5a428e834adac489f1ba6babe3d646"
   },
   "categories": [
     "utils"
@@ -16,7 +16,7 @@
   "submittedAt": "2026-11-03T13:36:07Z",
   "submittedBy": "jasonhnd",
   "publishedAt": "2026-11-03T14:02:47Z",
-  "reviewedAt": "2026-11-11T06:02:13Z",
+  "reviewedAt": "2026-11-17T16:01:39Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/b25f785dfe80d8c7f03c05f82896caf317aa97d0/docs/images/ipad-side-light-0154.png",
@@ -27,7 +27,7 @@
     "translations": {
       "zh-CN": {
         "name": "Clear Chat",
-        "description": "让 Paseo 里的对话更好读：每一步占一行、每个工具一张卡，答题卡还能自己写字作答。"
+        "description": "让 Paseo 里的对话更好读：步骤折成单行，工具各有卡片，答题卡支持自写答案，侧边栏可搜索对话、归组错误并显示完成时间。"
       },
       "ja": {
         "name": "Clear Chat",

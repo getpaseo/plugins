@@ -1,0 +1,14 @@
+{
+  "issue": 2643,
+  "title": "jj-companion",
+  "submittedBy": "wuzzeb",
+  "source": {
+    "kind": "npm",
+    "package": "paseo-jj-companion"
+  },
+  "categories": [
+    "workspaces",
+    "extras",
+    "utils"
+  ]
+}

@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/agaman/paseo-pins.git",
-    "commit": "c42eb1b919d65d7947c47d17874c8c9895940a59",
-    "tag": "v0.1.1"
+    "commit": "84d6756f0c6211141482f9240de33eea9c5ec44c",
+    "tag": "v0.1.2"
   },
   "repository": {
     "url": "https://github.com/agaman/paseo-pins",
-    "commit": "c42eb1b919d65d7947c47d17874c8c9895940a59"
+    "commit": "84d6756f0c6211141482f9240de33eea9c5ec44c"
   },
   "categories": [
     "workspaces",
@@ -17,5 +17,5 @@
   "submittedAt": "2026-11-17T19:48:11Z",
   "submittedBy": "agaman",
   "publishedAt": "2026-11-17T20:00:38Z",
-  "reviewedAt": "2026-11-17T20:00:38Z"
+  "reviewedAt": "2026-11-17T21:01:37Z"
 }

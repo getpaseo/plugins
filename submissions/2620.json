@@ -1,0 +1,14 @@
+{
+  "issue": 2620,
+  "title": "Update Antigravity Usage to v0.1.3",
+  "submittedBy": "breathi3552",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/breathi3552/paseo-agy-usage",
+    "ref": "v0.1.3"
+  },
+  "categories": [
+    "sidebar",
+    "utils"
+  ]
+}

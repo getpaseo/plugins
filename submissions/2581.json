@@ -1,0 +1,13 @@
+{
+  "issue": 2581,
+  "title": "Reasoning Translator",
+  "submittedBy": "breathi3552",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/breathi3552/paseo-think-what"
+  },
+  "categories": [
+    "utils",
+    "sidebar"
+  ]
+}

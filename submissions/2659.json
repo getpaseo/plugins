@@ -1,0 +1,14 @@
+{
+  "issue": 2659,
+  "title": "Pins",
+  "submittedBy": "agaman",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/agaman/paseo-pins",
+    "ref": "v0.1.3"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ]
+}

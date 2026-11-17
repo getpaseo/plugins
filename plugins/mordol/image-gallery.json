@@ -1,0 +1,20 @@
+{
+  "id": "mordol/image-gallery",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/mordol/paseo-image-gallery.git",
+    "commit": "a561632e7d04811fddfb83fae36695461781d202"
+  },
+  "repository": {
+    "url": "https://github.com/mordol/paseo-image-gallery",
+    "commit": "a561632e7d04811fddfb83fae36695461781d202"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-11-17T04:46:42Z",
+  "submittedBy": "mordol",
+  "publishedAt": "2026-11-17T05:01:28Z",
+  "reviewedAt": "2026-11-17T07:01:56Z"
+}

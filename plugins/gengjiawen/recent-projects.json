@@ -1,0 +1,20 @@
+{
+  "id": "gengjiawen/recent-projects",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/gengjiawen/paseo-recent-projects.git",
+    "commit": "50fefcb1672206a1ebae118d277c75473650ad43",
+    "tag": "v1.0.0"
+  },
+  "repository": {
+    "url": "https://github.com/gengjiawen/paseo-recent-projects",
+    "commit": "50fefcb1672206a1ebae118d277c75473650ad43"
+  },
+  "categories": [
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-16T07:52:24Z",
+  "submittedBy": "gengjiawen",
+  "publishedAt": "2026-11-16T08:02:25Z",
+  "reviewedAt": "2026-11-16T08:02:25Z"
+}

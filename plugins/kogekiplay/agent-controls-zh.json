@@ -1,0 +1,20 @@
+{
+  "id": "kogekiplay/agent-controls-zh",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/kogekiplay/paseo-agent-controls-zh.git",
+    "commit": "5b8dc818a263083f7fd280314254c726e3136ba3",
+    "tag": "v0.2.5"
+  },
+  "repository": {
+    "url": "https://github.com/kogekiplay/paseo-agent-controls-zh",
+    "commit": "5b8dc818a263083f7fd280314254c726e3136ba3"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-16T08:58:24Z",
+  "submittedBy": "kogekiplay",
+  "publishedAt": "2026-11-16T09:05:44Z",
+  "reviewedAt": "2026-11-17T06:01:58Z"
+}

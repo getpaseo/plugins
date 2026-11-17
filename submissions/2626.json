@@ -1,0 +1,13 @@
+{
+  "issue": 2626,
+  "title": "Pi Cache Hit",
+  "submittedBy": "hspacesi34",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/hspacesi34/paseo-pi-cache-hit"
+  },
+  "categories": [
+    "extras",
+    "utils"
+  ]
+}

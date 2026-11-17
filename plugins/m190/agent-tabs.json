@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/m190/paseo-agent-tabs.git",
-    "commit": "aed5fd83318c6565053a6fa511e6c5e97555afca",
-    "tag": "v0.2.3"
+    "commit": "b7d6da96dd0935254e3823b44d9445ee9a34a809",
+    "tag": "v0.2.4"
   },
   "repository": {
     "url": "https://github.com/m190/paseo-agent-tabs",
-    "commit": "aed5fd83318c6565053a6fa511e6c5e97555afca"
+    "commit": "b7d6da96dd0935254e3823b44d9445ee9a34a809"
   },
   "categories": [
     "orchestration",
@@ -17,5 +17,5 @@
   "submittedAt": "2026-11-11T10:33:40Z",
   "submittedBy": "m190",
   "publishedAt": "2026-11-11T10:33:40Z",
-  "reviewedAt": "2026-11-16T17:02:21Z"
+  "reviewedAt": "2026-11-17T09:02:13Z"
 }

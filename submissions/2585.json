@@ -1,0 +1,14 @@
+{
+  "issue": 2585,
+  "title": "Image gallery",
+  "submittedBy": "mordol",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/mordol/paseo-image-gallery",
+    "ref": "a561632e7d04811fddfb83fae36695461781d202"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ]
+}

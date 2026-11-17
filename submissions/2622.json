@@ -1,0 +1,15 @@
+{
+  "issue": 2622,
+  "title": "Update Paseo Pulse to 0.13.8: load without local development dependencies",
+  "submittedBy": "js2me",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/js2me/paseo-pulse",
+    "ref": "8ea913e46b5a5523634d999d34328ad994c03f62"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar",
+    "utils"
+  ]
+}

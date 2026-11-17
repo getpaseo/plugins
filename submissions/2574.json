@@ -1,0 +1,13 @@
+{
+  "issue": 2574,
+  "title": "Agent Controls Chinese v0.2.5: native model label truncation",
+  "submittedBy": "kogekiplay",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/kogekiplay/paseo-agent-controls-zh",
+    "ref": "5b8dc818a263083f7fd280314254c726e3136ba3"
+  },
+  "categories": [
+    "utils"
+  ]
+}

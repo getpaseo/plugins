@@ -8,8 +8,7 @@
     "integrity": "sha512-G8R2I/WErDqi3Tm9e7QuWu17HWD+lP+Zi6StdDZrnQXlSRHQHrGyO/m9XFIlnhYqMMeSSCTzVO0PzH9NTKqkyQ=="
   },
   "repository": {
-    "url": "https://github.com/ActiveChooN/kanban-md-paseo",
-    "commit": "cb2395015ca1141bd42f877b574c0f0fcabf99c4"
+    "url": "https://github.com/ActiveChooN/kanban-md-paseo"
   },
   "categories": [
     "workspaces",
@@ -18,5 +17,5 @@
   "submittedAt": "2026-11-03T21:50:13Z",
   "submittedBy": "ActiveChooN",
   "publishedAt": "2026-11-03T23:10:58Z",
-  "reviewedAt": "2026-11-03T23:10:58Z"
+  "reviewedAt": "2026-11-17T00:03:24Z"
 }

@@ -1,0 +1,20 @@
+{
+  "id": "breathi3552/reasoning-translator",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/breathi3552/paseo-reasoning-translator.git",
+    "commit": "3fd01437df3285145270797875a0949d38495c18"
+  },
+  "repository": {
+    "url": "https://github.com/breathi3552/paseo-reasoning-translator",
+    "commit": "3fd01437df3285145270797875a0949d38495c18"
+  },
+  "categories": [
+    "utils",
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-17T05:20:14Z",
+  "submittedBy": "breathi3552",
+  "publishedAt": "2026-11-17T06:02:01Z",
+  "reviewedAt": "2026-11-17T06:02:01Z"
+}

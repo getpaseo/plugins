@@ -1,0 +1,12 @@
+{
+  "issue": 2650,
+  "title": "advanced git",
+  "submittedBy": "jjayjackie",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/jjayjackie/paseo-advanced-git-plugin"
+  },
+  "categories": [
+    "git"
+  ]
+}

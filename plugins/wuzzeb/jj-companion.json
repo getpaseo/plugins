@@ -1,0 +1,23 @@
+{
+  "id": "wuzzeb/jj-companion",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-jj-companion",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/paseo-jj-companion/-/paseo-jj-companion-0.1.1.tgz",
+    "integrity": "sha512-qK2gubyWZIjYqO7KMI2EG62d+OUpHdchgksw53rEYTSY++xjRa2UIkSjranQnmGxqiLFJOn1nCYgpDL3umyYcQ=="
+  },
+  "repository": {
+    "url": "https://github.com/wuzzeb/jj-companion-paseo",
+    "commit": "8e49647db1f16cd9b8f9b49253ce247447ec7b03"
+  },
+  "categories": [
+    "workspaces",
+    "extras",
+    "utils"
+  ],
+  "submittedAt": "2026-11-17T17:04:26Z",
+  "submittedBy": "wuzzeb",
+  "publishedAt": "2026-11-17T18:01:53Z",
+  "reviewedAt": "2026-11-17T18:01:53Z"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "iosx/aura-iris",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/iosx/paseo-themes.git",
+    "commit": "b6739ab0546ff25819de6253c294c7df944ffb4a",
+    "pluginPath": "aura-iris"
+  },
+  "repository": {
+    "url": "https://github.com/iosx/paseo-themes",
+    "commit": "b6739ab0546ff25819de6253c294c7df944ffb4a"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-11-17T12:45:35Z",
+  "submittedBy": "iosx",
+  "publishedAt": "2026-11-17T13:02:27Z",
+  "reviewedAt": "2026-11-17T13:02:27Z",
+  "listing": {
+    "description": "A light theme with a cool near-white canvas, a pale periwinkle sidebar and a vivid indigo accent.",
+    "media": [
+      "https://raw.githubusercontent.com/iosx/paseo-themes/b6739ab0546ff25819de6253c294c7df944ffb4a/previews/aura-iris.png"
+    ]
+  }
+}

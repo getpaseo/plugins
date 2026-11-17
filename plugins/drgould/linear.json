@@ -1,0 +1,29 @@
+{
+  "id": "drgould/linear",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-linear-plugin",
+    "version": "0.2.0",
+    "resolved": "https://registry.npmjs.org/paseo-linear-plugin/-/paseo-linear-plugin-0.2.0.tgz",
+    "integrity": "sha512-qt11F9mMD0rkEAYhkp4pYCZ1xAJvAJUHEuAMNkbpB68haJIor9WQqn/+oEwzQJstgdvMdqs9Pe3c4GhQJxNoFw=="
+  },
+  "repository": {
+    "url": "https://github.com/drgould/paseo-linear-plugin"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-17T18:25:13Z",
+  "submittedBy": "drgould",
+  "publishedAt": "2026-11-17T19:02:31Z",
+  "reviewedAt": "2026-11-17T19:02:31Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/drgould/paseo-linear-plugin/paseo-linear-plugin-v0.2.0/.github/listing/1-board.png",
+      "https://raw.githubusercontent.com/drgould/paseo-linear-plugin/paseo-linear-plugin-v0.2.0/.github/listing/2-issue-detail.png",
+      "https://raw.githubusercontent.com/drgould/paseo-linear-plugin/paseo-linear-plugin-v0.2.0/.github/listing/3-list.png",
+      "https://raw.githubusercontent.com/drgould/paseo-linear-plugin/paseo-linear-plugin-v0.2.0/.github/listing/4-create-workspace.png"
+    ]
+  }
+}

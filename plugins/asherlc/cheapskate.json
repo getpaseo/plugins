@@ -1,0 +1,20 @@
+{
+  "id": "asherlc/cheapskate",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/Asherlc/cheapskate.git",
+    "commit": "ee9e273e40619b02d876a04def6326a5e362ba44",
+    "tag": "v0.1.6"
+  },
+  "repository": {
+    "url": "https://github.com/Asherlc/cheapskate",
+    "commit": "ee9e273e40619b02d876a04def6326a5e362ba44"
+  },
+  "categories": [
+    "providers"
+  ],
+  "submittedAt": "2026-11-18T00:31:02Z",
+  "submittedBy": "Asherlc",
+  "publishedAt": "2026-11-18T01:00:49Z",
+  "reviewedAt": "2026-11-18T06:02:04Z"
+}

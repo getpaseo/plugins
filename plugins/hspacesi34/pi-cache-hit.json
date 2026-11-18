@@ -1,0 +1,25 @@
+{
+  "id": "hspacesi34/pi-cache-hit",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/hspacesi34/paseo-pi-cache-hit.git",
+    "commit": "d520767ad0041c8af753a3329a158231d3086af3"
+  },
+  "repository": {
+    "url": "https://github.com/hspacesi34/paseo-pi-cache-hit",
+    "commit": "d520767ad0041c8af753a3329a158231d3086af3"
+  },
+  "categories": [
+    "extras",
+    "utils"
+  ],
+  "submittedAt": "2026-11-17T13:34:41Z",
+  "submittedBy": "hspacesi34",
+  "publishedAt": "2026-11-17T14:01:00Z",
+  "reviewedAt": "2026-11-17T14:01:00Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/getpaseo/plugins/8698f9ba86a0d1450f30a1e4185876d1c27223b0/assets/hspacesi34/pi-cache-hit/screenshot.png"
+    ]
+  }
+}

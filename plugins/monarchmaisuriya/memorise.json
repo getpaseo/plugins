@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/monarchmaisuriya/memorise.git",
-    "commit": "630eace4f2932537706dd33421c891e132f0c010",
-    "tag": "v0.13.2"
+    "commit": "e11266fb3f04899a7ce17f4841bfc034d9cc9d84",
+    "tag": "v0.14.2"
   },
   "repository": {
     "url": "https://github.com/monarchmaisuriya/memorise",
-    "commit": "630eace4f2932537706dd33421c891e132f0c010"
+    "commit": "e11266fb3f04899a7ce17f4841bfc034d9cc9d84"
   },
   "categories": [
     "extras"

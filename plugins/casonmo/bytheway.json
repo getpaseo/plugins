@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/CasonMo/paseo-bytheway.git",
-    "commit": "ebbcd9a85ea97ec4383c82edd0fb393301463420"
+    "commit": "80afedb5d457085ae8696e50ecc4179c0fa3f40f"
   },
   "repository": {
     "url": "https://github.com/CasonMo/paseo-bytheway",
-    "commit": "ebbcd9a85ea97ec4383c82edd0fb393301463420"
+    "commit": "80afedb5d457085ae8696e50ecc4179c0fa3f40f"
   },
   "categories": [
     "sidebar",
@@ -17,7 +17,7 @@
   "submittedAt": "2026-10-21T11:20:57Z",
   "submittedBy": "CasonMo",
   "publishedAt": "2026-10-21T12:32:23Z",
-  "reviewedAt": "2026-10-26T06:11:04Z",
+  "reviewedAt": "2026-11-17T11:03:34Z",
   "listing": {
     "name": "ByTheWay",
     "description": "ByTheWay (btw) \u2014 use /btw to ask beside your main Paseo session, with provider-native model, thinking, mode and feature controls, live tool activity, subagent management and per-model settings memory.",
@@ -28,7 +28,9 @@
       }
     },
     "media": [
-      "https://raw.githubusercontent.com/CasonMo/paseo-bytheway/508d9de629b3039be6f23e16a7e9a39591353647/assets/screenshot-commands.png"
+      "https://raw.githubusercontent.com/CasonMo/paseo-bytheway/80afedb5d457085ae8696e50ecc4179c0fa3f40f/assets/screenshot.png",
+      "https://raw.githubusercontent.com/CasonMo/paseo-bytheway/80afedb5d457085ae8696e50ecc4179c0fa3f40f/assets/screenshot-commands.png",
+      "https://raw.githubusercontent.com/CasonMo/paseo-bytheway/80afedb5d457085ae8696e50ecc4179c0fa3f40f/assets/screenshot-settings.png"
     ]
   }
 }

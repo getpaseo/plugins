@@ -1,13 +1,15 @@
 {
   "id": "mbranicky/unit-test-pulse",
   "artifact": {
-    "kind": "git",
-    "remote": "https://github.com/mbranicky/unit-test-pulse.git",
-    "commit": "7c1eee7a807ce6fc61b585f8d12c0cb20c6ec050"
+    "kind": "npm",
+    "package": "paseo-unit-test-pulse",
+    "version": "1.1.0",
+    "resolved": "https://registry.npmjs.org/paseo-unit-test-pulse/-/paseo-unit-test-pulse-1.1.0.tgz",
+    "integrity": "sha512-DttfqLrtFvSCouGrMa8N0xogyF0j1GFCvk3W/LW9aimHtCBrUTEhjQ8LRMKRE7t/UuZTh21NSt3QPvPPxXxZvw=="
   },
   "repository": {
     "url": "https://github.com/mbranicky/unit-test-pulse",
-    "commit": "7c1eee7a807ce6fc61b585f8d12c0cb20c6ec050"
+    "commit": "49c85d804aa17fbd895f45cbb5defffb5ea906a0"
   },
   "categories": [
     "sidebar",
@@ -16,5 +18,5 @@
   "submittedAt": "2026-10-20T09:33:21Z",
   "submittedBy": "mbranicky",
   "publishedAt": "2026-10-20T09:40:04Z",
-  "reviewedAt": "2026-11-03T13:01:59Z"
+  "reviewedAt": "2026-11-16T16:35:01Z"
 }

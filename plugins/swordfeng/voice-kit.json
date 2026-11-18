@@ -1,0 +1,21 @@
+{
+  "id": "swordfeng/voice-kit",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/swordfeng/paseo-voice-kit.git",
+    "commit": "82023555b87b70587b3cca6b2f864393b43176e4",
+    "pluginPath": "plugin"
+  },
+  "repository": {
+    "url": "https://github.com/swordfeng/paseo-voice-kit",
+    "commit": "82023555b87b70587b3cca6b2f864393b43176e4"
+  },
+  "categories": [
+    "extras",
+    "utils"
+  ],
+  "submittedAt": "2026-11-17T05:36:48Z",
+  "submittedBy": "swordfeng",
+  "publishedAt": "2026-11-17T06:02:31Z",
+  "reviewedAt": "2026-11-17T06:02:31Z"
+}

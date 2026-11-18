@@ -3,7 +3,7 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/liuxing7954/paseo-dsh",
-    "commit": "6f5f1ae0be5251e3d75802fae463df329a50014d",
+    "commit": "ebc3e562d79c6d04a8c82c41695ed1a6e762c863",
     "pluginPath": "paseo-plugin"
   },
   "repository": {
@@ -15,7 +15,7 @@
   "submittedAt": "2026-10-27T06:59:51Z",
   "submittedBy": "liuxing7954",
   "publishedAt": "2026-10-27T06:59:51Z",
-  "reviewedAt": "2026-10-30T09:33:30Z",
+  "reviewedAt": "2026-11-17T23:01:10Z",
   "listing": {
     "name": "DeepSeek Harness (native)",
     "translations": {

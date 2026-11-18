@@ -1,0 +1,20 @@
+{
+  "id": "krunch-64/model-filter",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/krunch-64/paseo-model-filter.git",
+    "commit": "1e014bfb7c90e4e1585c359bf1f820c528fedc35"
+  },
+  "repository": {
+    "url": "https://github.com/krunch-64/paseo-model-filter",
+    "commit": "1e014bfb7c90e4e1585c359bf1f820c528fedc35"
+  },
+  "categories": [
+    "providers",
+    "utils"
+  ],
+  "submittedAt": "2026-11-17T11:05:12Z",
+  "submittedBy": "krunch-64",
+  "publishedAt": "2026-11-17T11:06:10Z",
+  "reviewedAt": "2026-11-17T11:06:10Z"
+}

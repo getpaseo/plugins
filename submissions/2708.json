@@ -1,0 +1,12 @@
+{
+  "issue": 2708,
+  "title": "Replies",
+  "submittedBy": "cleiter",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/cleiter/paseo-replies"
+  },
+  "categories": [
+    "utils"
+  ]
+}

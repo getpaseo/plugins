@@ -1,0 +1,13 @@
+{
+  "issue": 2712,
+  "title": "Agent environment",
+  "submittedBy": "cleiter",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/cleiter/paseo-agent-env"
+  },
+  "categories": [
+    "daemon-management",
+    "utils"
+  ]
+}

@@ -1,14 +1,14 @@
 {
-  "id": "jjayjackie/advanced-git",
+  "id": "jjayjackie/gitflux",
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/jjayjackie/GitFlux.git",
-    "commit": "75e0c314a84d981e60b57de1fc24399cad9a45da",
-    "tag": "v0.3.0"
+    "commit": "efafeb19d2e6be349022c87ff57eb03cf9d12722",
+    "tag": "v0.3.1"
   },
   "repository": {
     "url": "https://github.com/jjayjackie/GitFlux",
-    "commit": "75e0c314a84d981e60b57de1fc24399cad9a45da"
+    "commit": "efafeb19d2e6be349022c87ff57eb03cf9d12722"
   },
   "categories": [
     "git"
@@ -16,5 +16,5 @@
   "submittedAt": "2026-11-17T19:36:32Z",
   "submittedBy": "jjayjackie",
   "publishedAt": "2026-11-17T20:02:53Z",
-  "reviewedAt": "2026-11-18T08:02:37Z"
+  "reviewedAt": "2026-11-18T09:01:46Z"
 }

@@ -1,0 +1,19 @@
+{
+  "id": "cleiter/replies",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/cleiter/paseo-replies.git",
+    "commit": "1cb1044b5ddcbb63360c9fdd0c5e46fec394a326"
+  },
+  "repository": {
+    "url": "https://github.com/cleiter/paseo-replies",
+    "commit": "1cb1044b5ddcbb63360c9fdd0c5e46fec394a326"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-18T09:09:12Z",
+  "submittedBy": "cleiter",
+  "publishedAt": "2026-11-18T10:04:57Z",
+  "reviewedAt": "2026-11-18T10:04:57Z"
+}

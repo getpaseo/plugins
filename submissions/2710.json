@@ -1,0 +1,14 @@
+{
+  "issue": 2710,
+  "title": "Update Conversation bookmarks to 0.1.7 — support Paseo 0.13 and later",
+  "submittedBy": "sylviaxiang424",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/sylviaxiang424/paseo-bookmarks",
+    "ref": "5964364f60c1e6872cdbcff189f1b967cf63abf5"
+  },
+  "categories": [
+    "sidebar",
+    "utils"
+  ]
+}

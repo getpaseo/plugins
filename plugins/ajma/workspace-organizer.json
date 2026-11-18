@@ -1,0 +1,21 @@
+{
+  "id": "ajma/workspace-organizer",
+  "artifact": {
+    "kind": "npm",
+    "package": "@ajma/paseo-workspace-organizer",
+    "version": "0.1.0",
+    "resolved": "https://registry.npmjs.org/@ajma/paseo-workspace-organizer/-/paseo-workspace-organizer-0.1.0.tgz",
+    "integrity": "sha512-zeAu62WKP577tf9jOY5iroDsaoDxOThG36m9WKXqJryF/HmKMhTPn0PDHSSjkJOcvFqIe4xY4mp9aCktbEXY8w=="
+  },
+  "repository": {
+    "url": "https://github.com/ajma/paseo-workspace-organizer"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-18T20:13:30Z",
+  "submittedBy": "ajma",
+  "publishedAt": "2026-11-18T21:00:58Z",
+  "reviewedAt": "2026-11-18T21:00:58Z"
+}

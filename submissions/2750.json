@@ -1,0 +1,14 @@
+{
+  "issue": 2750,
+  "title": "Agent Tabs",
+  "submittedBy": "m190",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/m190/paseo-agent-tabs",
+    "ref": "v0.2.5"
+  },
+  "categories": [
+    "orchestration",
+    "sidebar"
+  ]
+}

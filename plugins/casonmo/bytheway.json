@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/CasonMo/paseo-bytheway.git",
-    "commit": "10e91667b80c46b3a0dc8bdc95a3ed31234f32f7"
+    "commit": "8d2eb0ebd7c0322784b3da0a4d181eaffb1d90d5"
   },
   "repository": {
     "url": "https://github.com/CasonMo/paseo-bytheway",
-    "commit": "10e91667b80c46b3a0dc8bdc95a3ed31234f32f7"
+    "commit": "8d2eb0ebd7c0322784b3da0a4d181eaffb1d90d5"
   },
   "categories": [
     "sidebar",

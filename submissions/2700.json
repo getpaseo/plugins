@@ -1,0 +1,12 @@
+{
+  "issue": 2700,
+  "title": "Rename registry ID from jjayjackie/advanced-git to jjayjackie/gitflux",
+  "submittedBy": "jjayjackie",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/jjayjackie/GitFlux"
+  },
+  "categories": [
+    "git"
+  ]
+}

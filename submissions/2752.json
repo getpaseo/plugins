@@ -1,0 +1,14 @@
+{
+  "issue": 2752,
+  "title": "Workspace Organizer - Managing your workspace sidebar",
+  "submittedBy": "ajma",
+  "source": {
+    "kind": "npm",
+    "package": "@ajma/paseo-workspace-organizer",
+    "version": "0.1.0"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ]
+}

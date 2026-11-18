@@ -1,0 +1,14 @@
+{
+  "issue": 2729,
+  "title": "Antigravity+",
+  "submittedBy": "jule-x",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/jule-x/antigravity-plus",
+    "ref": "a274cc8d070a7af695f59d2da9ba5f5da3d141cb"
+  },
+  "categories": [
+    "providers",
+    "orchestration"
+  ]
+}

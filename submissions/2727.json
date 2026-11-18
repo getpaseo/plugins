@@ -1,0 +1,12 @@
+{
+  "issue": 2727,
+  "title": "Heartbeats",
+  "submittedBy": "supermomonga",
+  "source": {
+    "kind": "npm",
+    "package": "paseo-heartbeats"
+  },
+  "categories": [
+    "orchestration"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "issue": 2720,
+  "title": "Update TODO to 0.3.0",
+  "submittedBy": "versun",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/versun/paseo-todo",
+    "ref": "725369f1433c7112c17a1c663581f4426ede3aea"
+  },
+  "categories": [
+    "sidebar",
+    "utils"
+  ]
+}

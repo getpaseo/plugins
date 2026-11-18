@@ -1,0 +1,13 @@
+{
+  "issue": 2714,
+  "title": "Agent Controls Chinese v0.2.6: Codex speed menu width",
+  "submittedBy": "kogekiplay",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/kogekiplay/paseo-agent-controls-zh",
+    "ref": "5c7769385b1e185ad0060cc1c5eb88db81da9a07"
+  },
+  "categories": [
+    "utils"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "issue": 2741,
+  "title": "Project manager",
+  "submittedBy": "dr-coton",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/dr-coton/paseo-project-manager"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ]
+}

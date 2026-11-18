@@ -1,0 +1,13 @@
+{
+  "issue": 2678,
+  "title": "Cheapskate v0.1.4 marketplace update",
+  "submittedBy": "Asherlc",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/Asherlc/cheapskate",
+    "ref": "e4797cc04a6ce195b4a37999baaf4b19dfb08bdf"
+  },
+  "categories": [
+    "providers"
+  ]
+}

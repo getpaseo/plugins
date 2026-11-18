@@ -1,0 +1,20 @@
+{
+  "id": "dr-coton/project-manager",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/dr-coton/paseo-project-manager.git",
+    "commit": "df03537a47eca63e0c4a311762a50c60d918fef8"
+  },
+  "repository": {
+    "url": "https://github.com/dr-coton/paseo-project-manager",
+    "commit": "df03537a47eca63e0c4a311762a50c60d918fef8"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-18T16:10:54Z",
+  "submittedBy": "dr-coton",
+  "publishedAt": "2026-11-18T17:02:19Z",
+  "reviewedAt": "2026-11-18T17:02:19Z"
+}

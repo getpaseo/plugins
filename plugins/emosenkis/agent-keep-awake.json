@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/emosenkis/paseo-plugins.git",
-    "commit": "d257187ea39d692ff4cffda1cf74468dd6b3e6c7",
+    "commit": "876fc26b4114daed9f6d0e861a8b6b7b7f00bc5b",
     "pluginPath": "plugins/agent-keep-awake"
   },
   "repository": {
     "url": "https://github.com/emosenkis/paseo-plugins",
-    "commit": "d257187ea39d692ff4cffda1cf74468dd6b3e6c7"
+    "commit": "876fc26b4114daed9f6d0e861a8b6b7b7f00bc5b"
   },
   "categories": [
     "utils"
@@ -19,6 +19,9 @@
   "reviewedAt": "2026-11-17T08:06:30Z",
   "listing": {
     "name": "Keep Awake",
-    "description": "Prevents the daemon host from sleeping while Paseo agent turns are running."
+    "description": "Prevents sleep during agent turns or whenever the Keep awake sidebar switch is on, while allowing screen locking and display power-off.",
+    "media": [
+      "https://raw.githubusercontent.com/emosenkis/paseo-plugins/876fc26b4114daed9f6d0e861a8b6b7b7f00bc5b/plugins/agent-keep-awake/assets/keep-awake.png"
+    ]
   }
 }

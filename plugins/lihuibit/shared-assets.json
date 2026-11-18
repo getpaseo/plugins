@@ -1,0 +1,21 @@
+{
+  "id": "lihuibit/shared-assets",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/lihuibit/paseo-plugins.git",
+    "commit": "839a093d8ae803a2bd921af1f0a7b6d735c24817",
+    "pluginPath": "plugins/shared-assets"
+  },
+  "repository": {
+    "url": "https://github.com/lihuibit/paseo-plugins",
+    "commit": "839a093d8ae803a2bd921af1f0a7b6d735c24817"
+  },
+  "categories": [
+    "git",
+    "workspaces"
+  ],
+  "submittedAt": "2026-11-18T07:31:21Z",
+  "submittedBy": "lihuibit",
+  "publishedAt": "2026-11-18T08:06:29Z",
+  "reviewedAt": "2026-11-18T08:06:29Z"
+}

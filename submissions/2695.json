@@ -1,0 +1,12 @@
+{
+  "issue": 2695,
+  "title": "ClaudeSession",
+  "submittedBy": "jjayjackie",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/jjayjackie/ClaudeSession"
+  },
+  "categories": [
+    "utils"
+  ]
+}

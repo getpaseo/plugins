@@ -1,0 +1,13 @@
+{
+  "issue": 2754,
+  "title": "Omarchy Theme",
+  "submittedBy": "r3b1s",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/r3b1s/paseo-omarchy-theme",
+    "ref": "v0.1.1"
+  },
+  "categories": [
+    "themes"
+  ]
+}

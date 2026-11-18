@@ -3,17 +3,17 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/akaready/paseo-link-tabs.git",
-    "commit": "ca85e55705d5cac37a455a6ed0fafdc22f13874f"
+    "commit": "c4c1f63ff3cf302b2bcfeddbcf5483545d983b07"
   },
   "repository": {
     "url": "https://github.com/akaready/paseo-link-tabs",
-    "commit": "ca85e55705d5cac37a455a6ed0fafdc22f13874f"
+    "commit": "c4c1f63ff3cf302b2bcfeddbcf5483545d983b07"
   },
   "categories": [
     "utils"
   ],
-  "submittedAt": "2026-11-15T23:39:36Z",
+  "submittedAt": "2026-11-18T04:59:02Z",
   "submittedBy": "akaready",
-  "publishedAt": "2026-11-15T23:39:36Z",
-  "reviewedAt": "2026-11-15T23:39:36Z"
+  "publishedAt": "2026-11-18T04:59:02Z",
+  "reviewedAt": "2026-11-18T04:59:02Z"
 }

@@ -1,0 +1,20 @@
+{
+  "id": "jule-x/antigravity-plus",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/jule-x/antigravity-plus.git",
+    "commit": "b0e8a06e210271bb6edb121656036460abdd7ab0"
+  },
+  "repository": {
+    "url": "https://github.com/jule-x/antigravity-plus",
+    "commit": "b0e8a06e210271bb6edb121656036460abdd7ab0"
+  },
+  "categories": [
+    "providers",
+    "orchestration"
+  ],
+  "submittedAt": "2026-11-18T14:04:08Z",
+  "submittedBy": "jule-x",
+  "publishedAt": "2026-11-18T14:04:08Z",
+  "reviewedAt": "2026-11-18T14:04:08Z"
+}

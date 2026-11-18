@@ -1,0 +1,12 @@
+{
+  "issue": 2698,
+  "title": "Update GitFlux to 0.3.0",
+  "submittedBy": "jjayjackie",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/jjayjackie/GitFlux"
+  },
+  "categories": [
+    "git"
+  ]
+}

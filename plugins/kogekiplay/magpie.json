@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/kogekiplay/paseo-magpie.git",
-    "commit": "488883c4a312dc9d23b704c59ef5124f200d9584"
+    "commit": "c914267a89f94c4ce0970c5db0afab9cfa762c0d"
   },
   "repository": {
     "url": "https://github.com/kogekiplay/paseo-magpie",
-    "commit": "488883c4a312dc9d23b704c59ef5124f200d9584"
+    "commit": "c914267a89f94c4ce0970c5db0afab9cfa762c0d"
   },
   "categories": [
     "extras",
@@ -16,5 +16,5 @@
   "submittedAt": "2026-11-18T01:36:14Z",
   "submittedBy": "kogekiplay",
   "publishedAt": "2026-11-18T02:00:57Z",
-  "reviewedAt": "2026-11-18T02:00:57Z"
+  "reviewedAt": "2026-11-18T06:03:39Z"
 }

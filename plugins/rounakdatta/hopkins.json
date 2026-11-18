@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/rounakdatta/hopkins.git",
-    "commit": "c5fb8dc9a827b9be2c29125a5b1ecb8402f12b74"
+    "commit": "214b7a9ae4953330ae29dcf562d6a330252f7c2d"
   },
   "repository": {
     "url": "https://github.com/rounakdatta/hopkins",
-    "commit": "c5fb8dc9a827b9be2c29125a5b1ecb8402f12b74"
+    "commit": "214b7a9ae4953330ae29dcf562d6a330252f7c2d"
   },
   "categories": [
     "utils",
@@ -17,5 +17,5 @@
   "submittedAt": "2026-11-17T21:01:08Z",
   "submittedBy": "rounakdatta",
   "publishedAt": "2026-11-17T21:01:08Z",
-  "reviewedAt": "2026-11-17T21:01:08Z"
+  "reviewedAt": "2026-11-18T04:01:25Z"
 }

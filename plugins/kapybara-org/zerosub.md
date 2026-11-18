@@ -1,8 +1,8 @@
-ZeroSub lets Paseo agents use several Claude and ChatGPT (Codex) subscriptions on one host. You choose an account per agent, and when an account hits its usage limit the agent can move to another one. Your existing `claude` and `codex` CLI logins appear automatically as the default accounts.
+ZeroSub lets Paseo agents use several Claude and ChatGPT (Codex) subscriptions on one host. You choose an account per agent, and when an account hits its usage limit the agent can move to another one. Your existing `claude` and `codex` CLI logins appear automatically as the default accounts. It also manages several Grok and Cursor sign-ins, Anthropic API keys for Pi agents, and paid Azure OpenAI and AWS Bedrock accounts.
 
 ## Setup
 
-The `claude` and/or `codex` CLI must be installed where the daemon runs. Add accounts under **Accounts (ZeroSub)** in the sidebar, which runs the official CLI sign-in. A browser sign-in only completes when a browser can reach the daemon's computer, so on servers, containers or SSH-started daemons, or from another device, use the code option. Each host keeps its own accounts and settings, and sign-ins are never copied between hosts, so sign in again on each host that should use an account.
+The `claude` and/or `codex` CLI must be installed where the daemon runs. Grok, Cursor and Pi sections show up only when their CLI (`grok`, `cursor-agent`, `pi`) runs where the daemon runs and Paseo has a provider for it. Add accounts under **Accounts (ZeroSub)** in the sidebar, which runs the official CLI sign-in. A browser sign-in only completes when a browser can reach the daemon's computer, so on servers, containers or SSH-started daemons, or from another device, use the code option. Each host keeps its own accounts and settings, and sign-ins are never copied between hosts, so sign in again on each host that should use an account.
 
 ChatGPT Team or Business members can be added separately when Codex returns their email; an unknown member cannot replace an existing managed member or add a duplicate workspace account.
 
@@ -22,6 +22,13 @@ With **Spread new agents across accounts** enabled, new ChatGPT agents prefer a 
 
 Two other options are off by default. One spends a provider's banked limit reset automatically, with no per-reset confirmation, when every account of that provider is out. The other continues a stopped chat on the other provider (Claude to ChatGPT or back) in a new agent with no more permissions than the original. You can also use a banked reset by hand, and that always asks for confirmation first.
 
+## Other providers and paid accounts
+
+- **Grok and Cursor.** Add several Grok or Cursor sign-ins and pick the account each new agent starts on. A conversation stays on the account it started on. ZeroSub does not switch these agents on a limit and does not read Grok or Cursor usage. Cursor accounts work on Linux only.
+- **Pi.** Add Anthropic API keys for Pi agents, each with an optional base URL and an optional proxy. Pi accounts have no usage bars and never switch automatically. Each added Pi account also gets a launcher script, and each added Claude account gets one too, in `~/.pi-config` and `~/.claude-config` (or the folder named by `ZEROSUB_LAUNCHER_DIR` or `ZEROSUB_PI_DIR`), so you can start the CLI on that account in a terminal.
+- **Azure OpenAI and AWS Bedrock.** An Azure OpenAI resource with its API key can be a ChatGPT (Codex) account, and Claude Code on Bedrock can be a Claude account. Bedrock can use the host's AWS credentials, a named profile, or an access key. You are billed per use by Azure or AWS. ZeroSub never moves work onto these accounts by itself unless you turn on **Use paid API accounts when every subscription is out**. ZeroSub keeps monthly token counts for them and uses a price table you can edit.
+- **Proxies.** Claude, Pi and API accounts can have their own proxy. To set one for your own CLI login, ZeroSub can edit `~/.claude/settings.json` or Pi's `settings.json`, `auth.json` and `models.json`. It keeps copies of the old files in its backups folder first.
+
 ## Access and limits
 
 Handoffs send conversation text and summaries of tool actions to the destination agent’s provider and account. This includes a cross-provider transfer when that option is enabled or you confirm a manual fork. The plugin stores continuation links and timeline positions in its state file; handoff text remains in agent conversation histories rather than a separate plugin transcript. On Paseo 0.13 and later, limit detection reads the finished turn from the agent timeline when the turn hook contains no conversation.
@@ -29,6 +36,8 @@ Handoffs send conversation text and summaries of tool actions to the destination
 Each added account gets its own credential home inside the daemon's data folder, and sessions on that account run with `CLAUDE_CONFIG_DIR` or `CODEX_HOME` pointed at it. Settings, skills and conversation history are shared with your main CLI home, while credentials and caches stay per account.
 
 To show Claude usage and use resets, the plugin reads each account's OAuth token from the macOS keychain or a `.credentials.json` file and sends it to `api.anthropic.com`. It does not store the token. An explicit usage refresh or a reset may run `claude -p /usage` so Claude Code renews an expired sign-in. Background readings can also run it at most every 30 minutes per enabled account when a saved window has passed its reset time, or a window-limited account has no live reading. Codex usage and resets go through `codex app-server`. Removing an account signs it out and deletes its credential home.
+
+API keys and AWS access keys that you enter are stored in the account's own folder, readable only by you, and are sent only to the endpoint you gave: `api.anthropic.com` or your base URL for Anthropic keys, and your Azure endpoint, which must be `https://`, for Azure. When you add or change an Azure key, ZeroSub sends it once to list the endpoint's models. A Pi account's proxy check requests `api.anthropic.com/cdn-cgi/trace` through the proxy about every half hour to show the address Anthropic sees. To tell whether a folder is in use, ZeroSub reads the environment of your own processes for a matching home path. It does not store or send that text. The Bedrock form can ask an EC2 instance's metadata service for its region when the form opens.
 
 - If your shared Claude settings set an `apiKeyHelper` or an API-key environment, every account uses that key instead of its subscription.
 - Switching restarts the agent's session through `paseo agent reload`, which cannot authenticate on a password-protected daemon. There the switch takes effect the next time the session starts.

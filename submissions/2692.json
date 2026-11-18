@@ -1,0 +1,15 @@
+{
+  "issue": 2692,
+  "title": "Shared Assets",
+  "submittedBy": "lihuibit",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/lihuibit/paseo-plugins",
+    "ref": "839a093",
+    "pluginPath": "plugins/shared-assets"
+  },
+  "categories": [
+    "git",
+    "workspaces"
+  ]
+}

@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/BenKlingner/notification-sounds.git",
-    "commit": "0ed779e88c86a347fab5313200b996c6f6a6e0c6"
+    "commit": "56c6059be8ee570bb946f1788326f1e59c1e72bc"
   },
   "repository": {
     "url": "https://github.com/BenKlingner/notification-sounds",
-    "commit": "0ed779e88c86a347fab5313200b996c6f6a6e0c6"
+    "commit": "56c6059be8ee570bb946f1788326f1e59c1e72bc"
   },
   "categories": [
     "extras",
@@ -16,5 +16,5 @@
   "submittedAt": "2026-10-25T05:41:56Z",
   "submittedBy": "BenKlingner",
   "publishedAt": "2026-10-25T06:02:00Z",
-  "reviewedAt": "2026-10-25T06:02:00Z"
+  "reviewedAt": "2026-11-19T03:02:00Z"
 }

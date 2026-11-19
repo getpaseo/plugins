@@ -1,0 +1,15 @@
+{
+  "issue": 2818,
+  "title": "Multi-project tasks v0.1.7 (update chrislauinger77/multi-project)",
+  "submittedBy": "ChrisLauinger77",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/ChrisLauinger77/paseo-multi-project",
+    "ref": "v0.1.7"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces",
+    "sidebar"
+  ]
+}

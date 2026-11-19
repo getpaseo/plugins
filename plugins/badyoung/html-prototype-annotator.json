@@ -1,0 +1,21 @@
+{
+  "id": "badyoung/html-prototype-annotator",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/badyoung/html-prototype-annotator.git",
+    "commit": "5d9e0ceb448c812fb6d957bc995b227088444477",
+    "tag": "v1.0.0"
+  },
+  "repository": {
+    "url": "https://github.com/badyoung/html-prototype-annotator",
+    "commit": "5d9e0ceb448c812fb6d957bc995b227088444477"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-11-19T09:01:20Z",
+  "submittedBy": "badyoung",
+  "publishedAt": "2026-11-19T09:01:20Z",
+  "reviewedAt": "2026-11-19T09:01:20Z"
+}

@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/js2me/paseo-pulse.git",
-    "commit": "8ea913e46b5a5523634d999d34328ad994c03f62"
+    "commit": "066a717458620f59d990e7f4bf091f8d88663fa7"
   },
   "repository": {
     "url": "https://github.com/js2me/paseo-pulse",
-    "commit": "8ea913e46b5a5523634d999d34328ad994c03f62"
+    "commit": "066a717458620f59d990e7f4bf091f8d88663fa7"
   },
   "categories": [
     "workspaces",

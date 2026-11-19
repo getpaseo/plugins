@@ -1,0 +1,24 @@
+{
+  "id": "allrested/office",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/allrested/paseo-office.git",
+    "commit": "9f9671b633aa239339a9fc0eff4abae54a561e06"
+  },
+  "repository": {
+    "url": "https://github.com/allrested/paseo-office",
+    "commit": "9f9671b633aa239339a9fc0eff4abae54a561e06"
+  },
+  "categories": [
+    "extras"
+  ],
+  "submittedAt": "2026-11-19T02:04:22Z",
+  "submittedBy": "allrested",
+  "publishedAt": "2026-11-19T03:05:07Z",
+  "reviewedAt": "2026-11-19T11:01:15Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/allrested/paseo-office/3473785f097e3b5d655b346155d66fa6eca6aa41/docs/office-3d.png"
+    ]
+  }
+}

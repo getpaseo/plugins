@@ -1,0 +1,15 @@
+{
+  "issue": 2807,
+  "title": "Ensemble",
+  "submittedBy": "DueGin",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/DueGin/paseo-ensemble",
+    "ref": "v0.6.1"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces",
+    "sidebar"
+  ]
+}

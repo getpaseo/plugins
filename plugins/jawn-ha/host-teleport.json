@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/jawn-ha/paseo-host-teleport.git",
-    "commit": "abe9abbd5aaed2910968e851a56b43a76b46ef52"
+    "commit": "37a43b655bc5a108407206bebeb907d346017f69"
   },
   "repository": {
     "url": "https://github.com/jawn-ha/paseo-host-teleport",
-    "commit": "abe9abbd5aaed2910968e851a56b43a76b46ef52"
+    "commit": "37a43b655bc5a108407206bebeb907d346017f69"
   },
   "categories": [
     "daemon-management",
@@ -17,5 +17,5 @@
   "submittedAt": "2026-11-19T05:28:48Z",
   "submittedBy": "jawn-ha",
   "publishedAt": "2026-11-19T06:01:03Z",
-  "reviewedAt": "2026-11-19T06:01:03Z"
+  "reviewedAt": "2026-11-19T08:05:00Z"
 }

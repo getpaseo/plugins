@@ -3,11 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/r3b1s/paseo-omarchy-theme.git",
-    "commit": "e25643144330437b96b79cd3b9b26b9b8123ce8f"
+    "commit": "433cd75792fdba16e110eb071ade224bb5e11ac5",
+    "tag": "v0.1.1"
   },
   "repository": {
     "url": "https://github.com/r3b1s/paseo-omarchy-theme",
-    "commit": "e25643144330437b96b79cd3b9b26b9b8123ce8f"
+    "commit": "433cd75792fdba16e110eb071ade224bb5e11ac5"
   },
   "categories": [
     "themes"
@@ -15,5 +16,5 @@
   "submittedAt": "2026-11-18T19:29:58Z",
   "submittedBy": "r3b1s",
   "publishedAt": "2026-11-18T19:29:58Z",
-  "reviewedAt": "2026-11-18T20:03:24Z"
+  "reviewedAt": "2026-11-19T02:06:47Z"
 }

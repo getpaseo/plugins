@@ -1,0 +1,19 @@
+{
+  "id": "opennavo/phone-notify",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/opennavo/paseo-phone-notify.git",
+    "commit": "316cf990ace20bd5f87b67835e67b0a163a8eba7"
+  },
+  "repository": {
+    "url": "https://github.com/opennavo/paseo-phone-notify",
+    "commit": "316cf990ace20bd5f87b67835e67b0a163a8eba7"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-19T09:33:15Z",
+  "submittedBy": "opennavo",
+  "publishedAt": "2026-11-19T10:02:19Z",
+  "reviewedAt": "2026-11-19T10:02:19Z"
+}

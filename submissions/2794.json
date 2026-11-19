@@ -1,0 +1,13 @@
+{
+  "issue": 2794,
+  "title": "Agent Controls Chinese v0.2.8: Ultrafast label",
+  "submittedBy": "kogekiplay",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/kogekiplay/paseo-agent-controls-zh",
+    "ref": "9c72f02935a3bc691fe8403520c0622f458cd9a9"
+  },
+  "categories": [
+    "utils"
+  ]
+}

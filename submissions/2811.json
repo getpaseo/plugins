@@ -1,0 +1,12 @@
+{
+  "issue": 2811,
+  "title": "Submit plugin: Role Orchestrator",
+  "submittedBy": "papag00se",
+  "source": {
+    "kind": "npm",
+    "package": "@papagoose/role-orchestrator"
+  },
+  "categories": [
+    "orchestration"
+  ]
+}

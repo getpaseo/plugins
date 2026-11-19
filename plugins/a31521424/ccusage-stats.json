@@ -3,11 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/a31521424/paseo-kit.git",
-    "commit": "d3a502c33e8842ffc2650418427996bc4bdd5ca5",
+    "commit": "c1e9e5bef734a4aa83e082c448e66f7aaf14af03",
     "pluginPath": "plugins/ccusage-stats"
   },
   "repository": {
-    "url": "https://github.com/a31521424/paseo-kit"
+    "url": "https://github.com/a31521424/paseo-kit",
+    "commit": "c1e9e5bef734a4aa83e082c448e66f7aaf14af03"
   },
   "categories": [
     "sidebar"
@@ -15,5 +16,5 @@
   "submittedAt": "2026-10-13T11:23:07Z",
   "submittedBy": "a31521424",
   "publishedAt": "2026-10-13T11:46:00Z",
-  "reviewedAt": "2026-10-13T11:46:00Z"
+  "reviewedAt": "2026-11-19T12:02:07Z"
 }

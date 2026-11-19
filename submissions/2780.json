@@ -1,0 +1,13 @@
+{
+  "issue": 2780,
+  "title": "Phone notify",
+  "submittedBy": "opennavo",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/opennavo/paseo-phone-notify",
+    "ref": "316cf990ace20bd5f87b67835e67b0a163a8eba7"
+  },
+  "categories": [
+    "utils"
+  ]
+}

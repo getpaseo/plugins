@@ -1,0 +1,13 @@
+{
+  "issue": 2823,
+  "title": "Office 3D",
+  "submittedBy": "allrested",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/allrested/paseo-office",
+    "ref": "90f945c757c55dac24a7bc42e657505d8ded8a9e"
+  },
+  "categories": [
+    "extras"
+  ]
+}

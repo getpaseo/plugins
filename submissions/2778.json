@@ -1,0 +1,13 @@
+{
+  "issue": 2778,
+  "title": "Update Paseo Magpie to v0.6.0",
+  "submittedBy": "kogekiplay",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/kogekiplay/paseo-magpie"
+  },
+  "categories": [
+    "extras",
+    "utils"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "issue": 2833,
+  "title": "Agent Controls Chinese v0.2.12: Overlapping Ultrafast bolts",
+  "submittedBy": "kogekiplay",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/kogekiplay/paseo-agent-controls-zh",
+    "ref": "82b5e231b863949a438ec4363c113ba68c786a1f"
+  },
+  "categories": [
+    "utils"
+  ]
+}

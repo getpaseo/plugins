@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/badyoung/html-prototype-annotator.git",
-    "commit": "7b0c9444e93b2bb01c9b8be8c5af18a5c79ee23b",
-    "tag": "v1.0.1"
+    "commit": "355b70dff8efec7c40cd1cfb5034c2fa51e4ff6f",
+    "tag": "v1.0.2"
   },
   "repository": {
     "url": "https://github.com/badyoung/html-prototype-annotator",
-    "commit": "7b0c9444e93b2bb01c9b8be8c5af18a5c79ee23b"
+    "commit": "355b70dff8efec7c40cd1cfb5034c2fa51e4ff6f"
   },
   "categories": [
     "workspaces",
@@ -17,5 +17,5 @@
   "submittedAt": "2026-11-19T09:01:20Z",
   "submittedBy": "badyoung",
   "publishedAt": "2026-11-19T09:01:20Z",
-  "reviewedAt": "2026-11-19T11:01:29Z"
+  "reviewedAt": "2026-11-20T16:06:49Z"
 }

@@ -3,11 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/sylviaxiang424/paseo-bookmarks.git",
-    "commit": "090cb8e3d98fd71819842d89dd3d07338c046049"
+    "commit": "75b738d968608b2f1856d473f8e02999cc0f4c1f",
+    "tag": "v0.1.9"
   },
   "repository": {
     "url": "https://github.com/sylviaxiang424/paseo-bookmarks",
-    "commit": "090cb8e3d98fd71819842d89dd3d07338c046049"
+    "commit": "75b738d968608b2f1856d473f8e02999cc0f4c1f"
   },
   "categories": [
     "sidebar",

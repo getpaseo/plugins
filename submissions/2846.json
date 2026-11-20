@@ -1,0 +1,15 @@
+{
+  "issue": 2846,
+  "title": "Devices d5796713ef689d424172a39d2ac9342e11a795ae marketplace update",
+  "submittedBy": "Asherlc",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/Asherlc/paseo-plugins",
+    "ref": "d5796713ef689d424172a39d2ac9342e11a795ae",
+    "pluginPath": "plugins/devices"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ]
+}

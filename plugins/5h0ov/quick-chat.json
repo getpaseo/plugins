@@ -1,0 +1,22 @@
+{
+  "id": "5h0ov/quick-chat",
+  "artifact": {
+    "kind": "npm",
+    "package": "@5h0ov/paseo-quick-chat",
+    "version": "0.2.0",
+    "resolved": "https://registry.npmjs.org/@5h0ov/paseo-quick-chat/-/paseo-quick-chat-0.2.0.tgz",
+    "integrity": "sha512-9LPz9hF4qzfKpsUdSmw2bHAB/WkMSuA7PzlGzU/Xal9ZHNFPrZXw0tWOI0YykdPJHJlfUrtOuK7aX5eUu6r8cQ=="
+  },
+  "repository": {
+    "url": "https://github.com/5h0ov/paseo-quick-chat",
+    "commit": "430e9241634f6f5751b942700a911887329f4938"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-20T16:06:07Z",
+  "submittedBy": "5h0ov",
+  "publishedAt": "2026-11-20T16:06:07Z",
+  "reviewedAt": "2026-11-20T16:06:07Z"
+}

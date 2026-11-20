@@ -1,0 +1,14 @@
+{
+  "issue": 2828,
+  "title": "Update bookmarks to 0.1.9 — fix duplicate image bookmark controls",
+  "submittedBy": "sylviaxiang424",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/sylviaxiang424/paseo-bookmarks",
+    "ref": "75b738d968608b2f1856d473f8e02999cc0f4c1f"
+  },
+  "categories": [
+    "sidebar",
+    "utils"
+  ]
+}

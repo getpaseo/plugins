@@ -1,0 +1,13 @@
+{
+  "issue": 2839,
+  "title": "Next Prompts",
+  "submittedBy": "jawn-ha",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/jawn-ha/paseo-next-prompts"
+  },
+  "categories": [
+    "extras",
+    "utils"
+  ]
+}

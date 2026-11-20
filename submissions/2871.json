@@ -1,0 +1,17 @@
+{
+  "issue": 2871,
+  "title": "Update Atrium to v0.2.0",
+  "submittedBy": "Mr-DooSun",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/Mr-DooSun/atrium",
+    "ref": "7c2272eddf3d07c1c9b16c1bfc46b3b62ec07be2"
+  },
+  "categories": [
+    "sidebar",
+    "workspaces",
+    "orchestration",
+    "git",
+    "utils"
+  ]
+}

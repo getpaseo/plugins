@@ -1,0 +1,13 @@
+{
+  "issue": 2857,
+  "title": "Antigravity auto-compact",
+  "submittedBy": "boudra",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/getpaseo/agy-auto-compact",
+    "ref": "2c14f499a54f9fa035299230b7fe166ffe927f1f"
+  },
+  "categories": [
+    "utils"
+  ]
+}

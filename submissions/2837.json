@@ -1,0 +1,13 @@
+{
+  "issue": 2837,
+  "title": "Waseo",
+  "submittedBy": "MikeYates",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/MikeYates/waseo"
+  },
+  "categories": [
+    "sidebar",
+    "extras"
+  ]
+}

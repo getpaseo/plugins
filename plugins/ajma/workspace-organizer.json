@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "@ajma/paseo-workspace-organizer",
-    "version": "0.1.1",
-    "resolved": "https://registry.npmjs.org/@ajma/paseo-workspace-organizer/-/paseo-workspace-organizer-0.1.1.tgz",
-    "integrity": "sha512-rsGybsO2tuZWo/vBFeE2qYeldXauLp52W8Xlgz10YgSpJKpzXGjv4778vd7/UrgJtA7OpiUTP9sQ72pWY+KEyw=="
+    "version": "0.1.2",
+    "resolved": "https://registry.npmjs.org/@ajma/paseo-workspace-organizer/-/paseo-workspace-organizer-0.1.2.tgz",
+    "integrity": "sha512-slteWUJG6uTfJquyS/9SlFMykKoS/hNH1xg/wcXjXeS8lMq7nO+pdQeeSdM3dU1z33acPG/o//uQNn0ZOXCdVg=="
   },
   "repository": {
     "url": "https://github.com/ajma/paseo-workspace-organizer"
@@ -17,5 +17,5 @@
   "submittedAt": "2026-11-18T20:13:30Z",
   "submittedBy": "ajma",
   "publishedAt": "2026-11-18T21:00:58Z",
-  "reviewedAt": "2026-11-19T14:30:07Z"
+  "reviewedAt": "2026-11-20T23:10:03Z"
 }

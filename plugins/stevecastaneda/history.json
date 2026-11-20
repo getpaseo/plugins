@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "@stevecastaneda/paseo-history",
-    "version": "1.2.1",
-    "resolved": "https://registry.npmjs.org/@stevecastaneda/paseo-history/-/paseo-history-1.2.1.tgz",
-    "integrity": "sha512-iXSZCkXLPzsldqdhY4cgV3Ejq2QuTpc3Fa7Ttp45YL7JaMDuzSiaNZifPHsoPGaDT8Yrib1AGnPkQX4S4RZGnA=="
+    "version": "1.3.0",
+    "resolved": "https://registry.npmjs.org/@stevecastaneda/paseo-history/-/paseo-history-1.3.0.tgz",
+    "integrity": "sha512-WEfs+JOAtCuIENw8/8vGW5z8lXsGMHFXT8Dh/zKwgbOdOZwRrgfIHpCXlb7DbFMKy3ADcEAV7blEQ2GZ/IBmPg=="
   },
   "repository": {
     "url": "https://github.com/stevecastaneda/paseo-plugins/tree/HEAD/history"
@@ -16,5 +16,5 @@
   "submittedAt": "2026-10-01",
   "submittedBy": "stevecastaneda",
   "publishedAt": "2026-10-01",
-  "reviewedAt": "2026-11-07T21:02:48Z"
+  "reviewedAt": "2026-11-20T23:18:31Z"
 }

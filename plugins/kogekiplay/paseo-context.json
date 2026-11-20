@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/kogekiplay/paseo-context.git",
-    "commit": "9911f869127309dc85d1342f3d8ae796cb3a0733",
-    "tag": "v0.2.7"
+    "commit": "f93dbe7d815d3c84bd00472ebffbe7d23b9be468",
+    "tag": "v0.2.8"
   },
   "repository": {
     "url": "https://github.com/kogekiplay/paseo-context",
-    "commit": "9911f869127309dc85d1342f3d8ae796cb3a0733"
+    "commit": "f93dbe7d815d3c84bd00472ebffbe7d23b9be468"
   },
   "categories": [
     "orchestration",

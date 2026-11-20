@@ -1,0 +1,23 @@
+{
+  "id": "getpaseo/agy-auto-compact",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/getpaseo/agy-auto-compact.git",
+    "commit": "2c14f499a54f9fa035299230b7fe166ffe927f1f"
+  },
+  "repository": {
+    "url": "https://github.com/getpaseo/agy-auto-compact",
+    "commit": "2c14f499a54f9fa035299230b7fe166ffe927f1f"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-20T10:04:28Z",
+  "submittedBy": "boudra",
+  "publishedAt": "2026-11-20T10:04:28Z",
+  "reviewedAt": "2026-11-20T10:04:28Z",
+  "listing": {
+    "name": "Antigravity auto-compact",
+    "description": "Summarizes long Antigravity conversations automatically to free up context."
+  }
+}

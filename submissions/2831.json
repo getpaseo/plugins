@@ -1,0 +1,13 @@
+{
+  "issue": 2831,
+  "title": "Agent Controls Chinese v0.2.10: Full-size Ultrafast bolts",
+  "submittedBy": "kogekiplay",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/kogekiplay/paseo-agent-controls-zh",
+    "ref": "2169debdd40a587f212ccad77d2aea1ba8e5782f"
+  },
+  "categories": [
+    "utils"
+  ]
+}

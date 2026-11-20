@@ -1,0 +1,13 @@
+{
+  "issue": 2860,
+  "title": "Agent Controls Chinese v0.2.13: Keep tooltips translated while fading out",
+  "submittedBy": "kogekiplay",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/kogekiplay/paseo-agent-controls-zh",
+    "ref": "fdbe1d16d1706475983e93c6f4fe2728b5a07332"
+  },
+  "categories": [
+    "utils"
+  ]
+}

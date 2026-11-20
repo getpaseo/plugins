@@ -1,0 +1,21 @@
+{
+  "id": "asherlc/devices",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/Asherlc/paseo-plugins.git",
+    "commit": "5212e96d5c1fa258ab87715754332a25b9554feb",
+    "pluginPath": "plugins/devices"
+  },
+  "repository": {
+    "url": "https://github.com/Asherlc/paseo-plugins",
+    "commit": "5212e96d5c1fa258ab87715754332a25b9554feb"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-11-20T10:12:35Z",
+  "submittedBy": "Asherlc",
+  "publishedAt": "2026-11-20T10:12:35Z",
+  "reviewedAt": "2026-11-20T10:12:35Z"
+}

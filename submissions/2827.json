@@ -1,0 +1,13 @@
+{
+  "issue": 2827,
+  "title": "Agent Controls Chinese v0.2.9: Double lightning for Ultrafast",
+  "submittedBy": "kogekiplay",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/kogekiplay/paseo-agent-controls-zh",
+    "ref": "3fcaf10716a0d7e31e32227691ac495d5094f5e7"
+  },
+  "categories": [
+    "utils"
+  ]
+}

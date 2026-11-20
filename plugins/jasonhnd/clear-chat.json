@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/jasonhnd/paseo-clear-chat.git",
-    "commit": "931c875f9e5a428e834adac489f1ba6babe3d646",
-    "tag": "v0.16.1.1"
+    "commit": "81e89957464923a5ee28bc4effc030d0e6129651",
+    "tag": "v0.16.2.1"
   },
   "repository": {
     "url": "https://github.com/jasonhnd/paseo-clear-chat",
-    "commit": "931c875f9e5a428e834adac489f1ba6babe3d646"
+    "commit": "81e89957464923a5ee28bc4effc030d0e6129651"
   },
   "categories": [
     "utils"
@@ -16,7 +16,7 @@
   "submittedAt": "2026-11-03T13:36:07Z",
   "submittedBy": "jasonhnd",
   "publishedAt": "2026-11-03T14:02:47Z",
-  "reviewedAt": "2026-11-17T16:01:39Z",
+  "reviewedAt": "2026-11-20T14:06:00Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/b25f785dfe80d8c7f03c05f82896caf317aa97d0/docs/images/ipad-side-light-0154.png",

@@ -3,7 +3,8 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/Mr-DooSun/atrium.git",
-    "commit": "d4a1cc373cf91f35c40cdd24dab37f9ea276dfac"
+    "commit": "d4a1cc373cf91f35c40cdd24dab37f9ea276dfac",
+    "tag": "v0.1.0"
   },
   "repository": {
     "url": "https://github.com/Mr-DooSun/atrium",
@@ -15,7 +16,7 @@
     "orchestration",
     "utils"
   ],
-  "submittedAt": "2026-11-20T12:03:22Z",
+  "submittedAt": "2026-11-20T11:12:21Z",
   "submittedBy": "Mr-DooSun",
   "publishedAt": "2026-11-20T12:03:22Z",
   "reviewedAt": "2026-11-20T12:03:22Z"

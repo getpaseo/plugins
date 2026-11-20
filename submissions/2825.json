@@ -1,0 +1,14 @@
+{
+  "issue": 2825,
+  "title": "Update Prototype Annotator to v1.0.2",
+  "submittedBy": "badyoung",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/badyoung/html-prototype-annotator",
+    "ref": "v1.0.2"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ]
+}

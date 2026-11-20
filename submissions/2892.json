@@ -1,0 +1,13 @@
+{
+  "issue": 2892,
+  "title": "Better Diff",
+  "submittedBy": "jozuas",
+  "source": {
+    "kind": "npm",
+    "package": "@jozuas/better-diff",
+    "version": "1.0.0"
+  },
+  "categories": [
+    "git"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "mr-doosun/atrium",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/Mr-DooSun/atrium.git",
+    "commit": "d4a1cc373cf91f35c40cdd24dab37f9ea276dfac"
+  },
+  "repository": {
+    "url": "https://github.com/Mr-DooSun/atrium",
+    "commit": "d4a1cc373cf91f35c40cdd24dab37f9ea276dfac"
+  },
+  "categories": [
+    "sidebar",
+    "workspaces",
+    "orchestration",
+    "utils"
+  ],
+  "submittedAt": "2026-11-20T12:03:22Z",
+  "submittedBy": "Mr-DooSun",
+  "publishedAt": "2026-11-20T12:03:22Z",
+  "reviewedAt": "2026-11-20T12:03:22Z"
+}

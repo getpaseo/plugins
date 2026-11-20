@@ -1,0 +1,13 @@
+{
+  "issue": 2885,
+  "title": "Math Renderer Plus",
+  "submittedBy": "EviterLesRoses2",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/EviterLesRoses2/paseo-math-renderer-plus",
+    "ref": "v0.1.0"
+  },
+  "categories": [
+    "utils"
+  ]
+}

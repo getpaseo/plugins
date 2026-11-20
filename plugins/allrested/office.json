@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/allrested/paseo-office.git",
-    "commit": "9f9671b633aa239339a9fc0eff4abae54a561e06"
+    "commit": "619d41a5100589efdec55ab373fed93fb7825d1d"
   },
   "repository": {
     "url": "https://github.com/allrested/paseo-office",
-    "commit": "9f9671b633aa239339a9fc0eff4abae54a561e06"
+    "commit": "619d41a5100589efdec55ab373fed93fb7825d1d"
   },
   "categories": [
     "extras"
@@ -15,10 +15,10 @@
   "submittedAt": "2026-11-19T02:04:22Z",
   "submittedBy": "allrested",
   "publishedAt": "2026-11-19T03:05:07Z",
-  "reviewedAt": "2026-11-19T11:01:15Z",
+  "reviewedAt": "2026-11-20T20:11:45Z",
   "listing": {
     "media": [
-      "https://raw.githubusercontent.com/allrested/paseo-office/3473785f097e3b5d655b346155d66fa6eca6aa41/docs/office-3d.png"
+      "https://raw.githubusercontent.com/allrested/paseo-office/619d41a5100589efdec55ab373fed93fb7825d1d/docs/fullscreen-office.png"
     ]
   }
 }

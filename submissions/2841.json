@@ -1,0 +1,14 @@
+{
+  "issue": 2841,
+  "title": "alias",
+  "submittedBy": "HMDRAMS-DEV",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/HMDRAMS-DEV/paseo-plugin-alias",
+    "ref": "f6e992dee6f3353183097a472ea9d653022e5104"
+  },
+  "categories": [
+    "utils",
+    "sidebar"
+  ]
+}

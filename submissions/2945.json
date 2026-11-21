@@ -1,0 +1,14 @@
+{
+  "issue": 2945,
+  "title": "Files & Notes",
+  "submittedBy": "kevguy",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/kevguy/paseo-files",
+    "ref": "a69b45e020816c67c64622eab2692b9a322e92ce"
+  },
+  "categories": [
+    "sidebar",
+    "utils"
+  ]
+}

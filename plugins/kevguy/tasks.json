@@ -1,22 +1,22 @@
 {
   "id": "kevguy/tasks",
   "artifact": {
-    "kind": "git",
-    "remote": "https://github.com/kevguy/paseo-tasks.git",
-    "commit": "fffe63cff02fd751a42ed95ff937da4748abb89a"
+    "kind": "npm",
+    "package": "@kevlai22/paseo-tasks",
+    "version": "0.1.5",
+    "resolved": "https://registry.npmjs.org/@kevlai22/paseo-tasks/-/paseo-tasks-0.1.5.tgz",
+    "integrity": "sha512-Fl2j7vANjps5DuYwaCXB4Jq2NW1yuCUIFZooPESQ3BSaC+SgVYLgR39wAscabQSOqOOj1sVF43RkQH1TEVfkJQ=="
   },
   "repository": {
-    "url": "https://github.com/kevguy/paseo-tasks",
-    "commit": "fffe63cff02fd751a42ed95ff937da4748abb89a"
+    "url": "https://github.com/kevguy/paseo-tasks"
   },
   "categories": [
-    "sidebar",
-    "utils"
+    "orchestration"
   ],
   "submittedAt": "2026-11-21T14:07:40Z",
   "submittedBy": "kevguy",
   "publishedAt": "2026-11-21T14:07:40Z",
-  "reviewedAt": "2026-11-21T14:07:40Z",
+  "reviewedAt": "2026-11-21T16:09:30Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/kevguy/paseo-tasks/5be4fa02edb73888144a2a70548b31b4968bd9a4/docs/screenshots/tasks-list-desktop.png"

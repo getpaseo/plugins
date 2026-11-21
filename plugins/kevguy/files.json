@@ -1,22 +1,22 @@
 {
   "id": "kevguy/files",
   "artifact": {
-    "kind": "git",
-    "remote": "https://github.com/kevguy/paseo-files.git",
-    "commit": "a69b45e020816c67c64622eab2692b9a322e92ce"
+    "kind": "npm",
+    "package": "@kevlai22/paseo-files",
+    "version": "0.1.2",
+    "resolved": "https://registry.npmjs.org/@kevlai22/paseo-files/-/paseo-files-0.1.2.tgz",
+    "integrity": "sha512-0FdUxe6JAMjB7bEb5EWoXbrimL3/y/0gJHzij5vt8KzamnO9gdM3rGpSR5axjrZEA0PoJ11z6/elJStS99vMtg=="
   },
   "repository": {
-    "url": "https://github.com/kevguy/paseo-files",
-    "commit": "a69b45e020816c67c64622eab2692b9a322e92ce"
+    "url": "https://github.com/kevguy/paseo-files"
   },
   "categories": [
-    "sidebar",
-    "utils"
+    "workspaces"
   ],
   "submittedAt": "2026-11-21T14:08:52Z",
   "submittedBy": "kevguy",
   "publishedAt": "2026-11-21T14:08:52Z",
-  "reviewedAt": "2026-11-21T14:08:52Z",
+  "reviewedAt": "2026-11-21T16:10:16Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/kevguy/paseo-files/a69b45e020816c67c64622eab2692b9a322e92ce/docs/screenshots/desktop-split-vim-normal.png"

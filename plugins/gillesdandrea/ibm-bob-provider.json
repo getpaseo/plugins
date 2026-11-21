@@ -1,0 +1,20 @@
+{
+  "id": "gillesdandrea/ibm-bob-provider",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/gillesdandrea/paseo-plugins.git",
+    "commit": "b9555e38ab867090a94d7153a85777633788fb6d",
+    "pluginPath": "plugins/ibm-bob-provider"
+  },
+  "repository": {
+    "url": "https://github.com/gillesdandrea/paseo-plugins",
+    "commit": "b9555e38ab867090a94d7153a85777633788fb6d"
+  },
+  "categories": [
+    "providers"
+  ],
+  "submittedAt": "2026-11-21T20:01:16Z",
+  "submittedBy": "gillesdandrea",
+  "publishedAt": "2026-11-21T20:01:16Z",
+  "reviewedAt": "2026-11-21T20:01:16Z"
+}

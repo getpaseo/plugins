@@ -1,0 +1,13 @@
+{
+  "issue": 2925,
+  "title": "Inbox",
+  "submittedBy": "githubbzxs",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/githubbzxs/paseo-plugin-inbox"
+  },
+  "categories": [
+    "sidebar",
+    "workspaces"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "issue": 2929,
+  "title": "Notion",
+  "submittedBy": "geongyu09",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/geongyu09/paseo-notion",
+    "ref": "v1.0.0"
+  },
+  "categories": [
+    "workspaces"
+  ]
+}

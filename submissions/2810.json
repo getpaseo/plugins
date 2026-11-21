@@ -1,0 +1,13 @@
+{
+  "issue": 2810,
+  "title": "Submit plugin: Juke",
+  "submittedBy": "papag00se",
+  "source": {
+    "kind": "npm",
+    "package": "@papagoose/juke"
+  },
+  "categories": [
+    "orchestration",
+    "utils"
+  ]
+}

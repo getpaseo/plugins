@@ -1,0 +1,19 @@
+{
+  "id": "norman-else/devspace-sidecar",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/Norman-else/paseo-devspace-sidecar.git",
+    "commit": "e2f9c2b8de5438debaa690537bb7aac1c19b9098"
+  },
+  "repository": {
+    "url": "https://github.com/Norman-else/paseo-devspace-sidecar",
+    "commit": "e2f9c2b8de5438debaa690537bb7aac1c19b9098"
+  },
+  "categories": [
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-21T08:04:27Z",
+  "submittedBy": "Norman-else",
+  "publishedAt": "2026-11-21T08:04:27Z",
+  "reviewedAt": "2026-11-21T08:04:27Z"
+}

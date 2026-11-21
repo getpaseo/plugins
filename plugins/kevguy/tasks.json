@@ -1,0 +1,25 @@
+{
+  "id": "kevguy/tasks",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/kevguy/paseo-tasks.git",
+    "commit": "fffe63cff02fd751a42ed95ff937da4748abb89a"
+  },
+  "repository": {
+    "url": "https://github.com/kevguy/paseo-tasks",
+    "commit": "fffe63cff02fd751a42ed95ff937da4748abb89a"
+  },
+  "categories": [
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-11-21T14:07:40Z",
+  "submittedBy": "kevguy",
+  "publishedAt": "2026-11-21T14:07:40Z",
+  "reviewedAt": "2026-11-21T14:07:40Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/kevguy/paseo-tasks/5be4fa02edb73888144a2a70548b31b4968bd9a4/docs/screenshots/tasks-list-desktop.png"
+    ]
+  }
+}

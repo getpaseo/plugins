@@ -1,0 +1,20 @@
+{
+  "id": "mikeyates/waseo",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/MikeYates/waseo.git",
+    "commit": "fd071082c6820036ff6d033a4c42b950f701cbd0"
+  },
+  "repository": {
+    "url": "https://github.com/MikeYates/waseo",
+    "commit": "fd071082c6820036ff6d033a4c42b950f701cbd0"
+  },
+  "categories": [
+    "sidebar",
+    "extras"
+  ],
+  "submittedAt": "2026-11-21T04:14:56Z",
+  "submittedBy": "MikeYates",
+  "publishedAt": "2026-11-21T04:14:56Z",
+  "reviewedAt": "2026-11-21T04:14:56Z"
+}

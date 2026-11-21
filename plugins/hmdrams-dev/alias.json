@@ -1,0 +1,20 @@
+{
+  "id": "hmdrams-dev/alias",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/HMDRAMS-DEV/paseo-plugin-alias.git",
+    "commit": "bb8e560f96e8e6fd924b2984f65387e6716d4402"
+  },
+  "repository": {
+    "url": "https://github.com/HMDRAMS-DEV/paseo-plugin-alias",
+    "commit": "bb8e560f96e8e6fd924b2984f65387e6716d4402"
+  },
+  "categories": [
+    "utils",
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-20T22:04:58Z",
+  "submittedBy": "HMDRAMS-DEV",
+  "publishedAt": "2026-11-20T22:04:58Z",
+  "reviewedAt": "2026-11-20T22:04:58Z"
+}

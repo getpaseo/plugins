@@ -1,10 +1,12 @@
 Cross-daemon lets agents on one Paseo daemon list agents and workspaces, read agent activity, send messages, and start and archive agents on other participating daemons. Every participating daemon needs this plugin and Paseo 0.9.2 or newer.
 
-Open **Settings → Plugins → cross-daemon → Settings**. Switch on each daemon you want to connect, under **This daemon** or **All daemons**. Switches are off by default. Each switched-on daemon shares its pairing link with the other switched-on daemons, giving their agents access to its workspaces, agents and conversations. Only connect daemons you trust with that access.
+Open **Settings → Plugins → cross-daemon → Settings**. Enable the daemons you want to connect. Under **Per-daemon access**, choose separately which peers this daemon can reach and which peers can reach it. Only connect daemons you trust with access to workspaces, agents and conversations.
 
-For a password-protected daemon, enter its password under **This daemon's password** and choose **Save** to give it to the other enabled daemons. The plugin stores the password and peer links with owner-only permissions under `plugin-data/cross-daemon/` in the Paseo home directory. Agents running as the same operating-system user can still read those files. Each remote CLI call receives only its destination's password through an environment variable. **Forget** stops sharing the saved password; peers drop it at their next successful sync.
+For a password-protected daemon, save its password under **This daemon's password** to share it with permitted peers. If a peer does not share its own password, enter it using **Password for** on the calling daemon. Each remote CLI call receives only its destination's password through an environment variable.
 
-The app syncs peers on connection, after a switch change and every minute while open. A daemon keeps its last peer list when the app closes, and an unresponsive peer stays listed until it answers a later sync. Switching a daemon off clears its own peers. Peer lists and shared passwords can therefore remain stale while clients or daemons are offline.
+The plugin encrypts passwords on disk using a key derived from the daemon's relay key. Access to both the stored passwords and the daemon key allows decryption. If Paseo replaces the key, re-enter saved passwords or let peers share them again on sync.
+
+The app syncs peers on connection, after a settings change and every minute while open. Unresponsive peers can remain listed while offline. Turning off access stops future sharing. Rotate the daemon password to revoke access from a peer that saved it.
 
 Every new Claude, Codex or OpenCode agent gets the cross-daemon MCP tools. Earlier agents do not get them, and a switched-off daemon has no peers to reach. Claude and Codex tools are pre-approved, including remote creation and archiving; OpenCode tools are not pre-approved. Prompts and returned activity or finish messages pass between the selected daemons and their agent providers.
 

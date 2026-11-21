@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/jasonhnd/paseo-clear-chat.git",
-    "commit": "931c875f9e5a428e834adac489f1ba6babe3d646",
-    "tag": "v0.16.1.1"
+    "commit": "35c4889852e96575df848362f4492127f43c2b02",
+    "tag": "v0.16.2.2"
   },
   "repository": {
     "url": "https://github.com/jasonhnd/paseo-clear-chat",
-    "commit": "931c875f9e5a428e834adac489f1ba6babe3d646"
+    "commit": "35c4889852e96575df848362f4492127f43c2b02"
   },
   "categories": [
     "utils"
@@ -16,23 +16,23 @@
   "submittedAt": "2026-11-03T13:36:07Z",
   "submittedBy": "jasonhnd",
   "publishedAt": "2026-11-03T14:02:47Z",
-  "reviewedAt": "2026-11-17T16:01:39Z",
+  "reviewedAt": "2026-11-21T04:09:56Z",
   "listing": {
     "media": [
-      "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/b25f785dfe80d8c7f03c05f82896caf317aa97d0/docs/images/ipad-side-light-0154.png",
-      "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/b25f785dfe80d8c7f03c05f82896caf317aa97d0/docs/images/phone-timeline-light-0154.png",
-      "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/b25f785dfe80d8c7f03c05f82896caf317aa97d0/docs/images/phone-details-light-0154.png",
-      "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/b25f785dfe80d8c7f03c05f82896caf317aa97d0/docs/images/answer-card-dark-typed-0154-2.png"
+      "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/35c4889852e96575df848362f4492127f43c2b02/docs/images/answer-card.png",
+      "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/35c4889852e96575df848362f4492127f43c2b02/docs/images/answer-pill.png",
+      "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/35c4889852e96575df848362f4492127f43c2b02/docs/images/answer-sheet-narrow.png"
     ],
     "translations": {
       "zh-CN": {
         "name": "Clear Chat",
-        "description": "让 Paseo 里的对话更好读：步骤折成单行，工具各有卡片，答题卡支持自写答案，侧边栏可搜索对话、归组错误并显示完成时间。"
+        "description": "只做回答卡片：回复里有字母选项题时，用卡片选题或自己写答案，预览后发送。不绘制对话。"
       },
       "ja": {
         "name": "Clear Chat",
-        "description": "エージェントとの会話を読みやすくします。ステップは 1 行にまとまり、ツールごとにカードが出て、開くと詳細が見えます。"
+        "description": "回答カードだけのプラグインです。返信にアルファベットの選択肢があるとき、カードで選ぶか自分で書き、プレビューして送信します。会話は描きません。"
       }
-    }
+    },
+    "description": "Answer an agent's lettered questions with a card: pick an option or write your own, preview, and send."
   }
 }

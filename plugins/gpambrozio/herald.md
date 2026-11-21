@@ -8,7 +8,7 @@ What is sent: for a finished turn, the helper receives your last message and wha
 
 Setup and limits:
 
-- Paseo 0.11.0 or newer on the daemon and the device running the app.
+- Paseo 0.16.0 or newer on the daemon and the device running the app.
 - The `paseo` command on the daemon's `PATH`. Herald uses it only to delete helper sessions, and without it they accumulate.
 - Speech plays on the device running the app. The desktop app speaks on its own, and a browser tab speaks after you press **Test voice** once. Phones cannot speak from a plugin, but Herald can vibrate. The default voice comes from the `say` command on a Mac daemon, and a non-Mac daemon uses the browser's voice.
 

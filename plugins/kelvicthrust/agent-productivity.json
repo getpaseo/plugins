@@ -1,0 +1,21 @@
+{
+  "id": "kelvicthrust/agent-productivity",
+  "artifact": {
+    "kind": "npm",
+    "package": "@kelvicthrust/paseo-agent-productivity-hq",
+    "version": "1.0.2",
+    "resolved": "https://registry.npmjs.org/@kelvicthrust/paseo-agent-productivity-hq/-/paseo-agent-productivity-hq-1.0.2.tgz",
+    "integrity": "sha512-ZZb6UE/oOX7VjUufkX16aALk+Rt2eEKIpaJ6bx85VzHQJK+C11T4FQ5Xl9BI+Qoy/N2XjzzbJU2UNQZn5AyoQQ=="
+  },
+  "repository": {
+    "url": "https://github.com/kelvicthrust/agent-productivity-hq",
+    "commit": "87523774f3c4ffffce2228ae84c61cc4b8653302"
+  },
+  "categories": [
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-20T08:44:57Z",
+  "submittedBy": "kelvicthrust",
+  "publishedAt": "2026-11-20T10:06:47Z",
+  "reviewedAt": "2026-11-20T14:10:31Z"
+}

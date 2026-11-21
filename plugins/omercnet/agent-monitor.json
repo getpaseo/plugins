@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "@omercnet/paseo-agent-monitor",
-    "version": "4.4.5",
-    "resolved": "https://registry.npmjs.org/@omercnet/paseo-agent-monitor/-/paseo-agent-monitor-4.4.5.tgz",
-    "integrity": "sha512-AiUhwkAhINWzztVqTxsdhw3Qp0UqvjOTqfz7voVHBYICCPN7UlMwW06NEkNO7BxRucvR2mAUTqWpH1xoyLjzFQ=="
+    "version": "4.4.6",
+    "resolved": "https://registry.npmjs.org/@omercnet/paseo-agent-monitor/-/paseo-agent-monitor-4.4.6.tgz",
+    "integrity": "sha512-iCUuOCYW78MTQxuQpV/bGDZ5iGmE40TSy+KPP1oG06uPcwVLvznLBepeUrrFQhghgqtlL6ElsMSzHF890T9whQ=="
   },
   "repository": {
     "url": "https://github.com/omercnet/paseo-plugins/tree/HEAD/agent-monitor",
-    "commit": "8a52b3e50382636dd6a82e0e120620530e4e57f9"
+    "commit": "1ee1ca1892baf2c332fecbc5fcb98fa69e14e707"
   },
   "categories": [
     "orchestration"
@@ -17,7 +17,7 @@
   "submittedAt": "2026-09-08",
   "submittedBy": "omercnet",
   "publishedAt": "2026-09-08",
-  "reviewedAt": "2026-11-14T21:35:50Z",
+  "reviewedAt": "2026-11-20T23:13:03Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/omercnet/paseo-plugins/10766d8374dd543ba36a66c2028c3ac3316c4633/agent-monitor/docs/images/agent-monitor-roster.png",

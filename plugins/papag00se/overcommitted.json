@@ -1,0 +1,26 @@
+{
+  "id": "papag00se/overcommitted",
+  "artifact": {
+    "kind": "npm",
+    "package": "@papagoose/overcommitted",
+    "version": "0.3.1",
+    "resolved": "https://registry.npmjs.org/@papagoose/overcommitted/-/overcommitted-0.3.1.tgz",
+    "integrity": "sha512-RCD8EOAjatiLGLOveG0LHIfwcVhQX4Nu4PW61YwGatECFw//Sq3x9fzZw+SXrsqtttH3Jv9S4iibGNSZS16jow=="
+  },
+  "repository": {
+    "url": "https://github.com/papag00se/paseo-overcommitted"
+  },
+  "categories": [
+    "git",
+    "workspaces"
+  ],
+  "submittedAt": "2026-11-19T16:41:09Z",
+  "submittedBy": "papag00se",
+  "publishedAt": "2026-11-20T18:09:42Z",
+  "reviewedAt": "2026-11-20T18:09:42Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/papag00se/paseo-overcommitted/d2764c1fca5894d97657a4f3e94356cf68aa7fe5/docs/media/settings.png"
+    ]
+  }
+}

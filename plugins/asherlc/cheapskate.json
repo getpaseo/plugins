@@ -2,13 +2,14 @@
   "id": "asherlc/cheapskate",
   "artifact": {
     "kind": "git",
-    "remote": "https://github.com/Asherlc/cheapskate.git",
-    "commit": "95bff7c64626b9b7a3f6e803b09eb86a35d58612",
-    "tag": "v0.1.7"
+    "remote": "https://github.com/Asherlc/paseo-plugins.git",
+    "commit": "b189a5c1152f05f86c675cd1ad23d8554b8d9908",
+    "tag": "v0.1.8",
+    "pluginPath": "plugins/cheapskate"
   },
   "repository": {
-    "url": "https://github.com/Asherlc/cheapskate",
-    "commit": "95bff7c64626b9b7a3f6e803b09eb86a35d58612"
+    "url": "https://github.com/Asherlc/paseo-plugins",
+    "commit": "b189a5c1152f05f86c675cd1ad23d8554b8d9908"
   },
   "categories": [
     "providers"

@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/Norman-else/paseo-jira.git",
-    "commit": "33e864d32ed737be097829c8f26709bc0e65a775"
+    "commit": "686513ab7c18105207645d0f94e86381643095c8"
   },
   "repository": {
     "url": "https://github.com/Norman-else/paseo-jira",
-    "commit": "33e864d32ed737be097829c8f26709bc0e65a775"
+    "commit": "686513ab7c18105207645d0f94e86381643095c8"
   },
   "categories": [
     "extras",
@@ -16,7 +16,7 @@
   "submittedAt": "2026-11-21T08:03:55Z",
   "submittedBy": "Norman-else",
   "publishedAt": "2026-11-21T08:03:55Z",
-  "reviewedAt": "2026-11-21T08:03:55Z",
+  "reviewedAt": "2026-11-21T10:05:34Z",
   "listing": {
     "description": "Browse Jira tickets and start Paseo agents from them."
   }

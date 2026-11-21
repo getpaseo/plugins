@@ -4,4 +4,4 @@ Use Paseo 0.13.2 or later. In Settings → Plugins → Jira, enter your Jira sit
 
 The daemon sends your Jira credentials and Jira requests to the configured site. The plugin can update issues and sprints with the permissions of that Jira account. The default agent prompt includes the ticket URL and branch name. The agent needs its own way to read the ticket, such as a Jira MCP server.
 
-The Jira settings also offer a plugin update action. The host update API or Paseo CLI fetches and installs the update from the configured plugin source.
+In Jira settings, Check updates previews the available update and shows its source. Choose Download and install to let the Paseo daemon install it, or Cancel to keep the installed version.

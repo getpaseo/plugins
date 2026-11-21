@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/EviterLesRoses2/paseo-math-renderer-plus.git",
-    "commit": "4f71771543e6b9116f1a74439335210a7938f51a",
-    "tag": "v0.1.2"
+    "commit": "60b3e60a19bf5e2ed2d1ebf79c3ff2a393eccd5f",
+    "tag": "v1.3"
   },
   "repository": {
     "url": "https://github.com/EviterLesRoses2/paseo-math-renderer-plus",
-    "commit": "4f71771543e6b9116f1a74439335210a7938f51a"
+    "commit": "60b3e60a19bf5e2ed2d1ebf79c3ff2a393eccd5f"
   },
   "categories": [
     "utils"
@@ -16,5 +16,5 @@
   "submittedAt": "2026-11-20T15:56:44Z",
   "submittedBy": "EviterLesRoses2",
   "publishedAt": "2026-11-20T18:06:49Z",
-  "reviewedAt": "2026-11-20T18:06:49Z"
+  "reviewedAt": "2026-11-21T02:01:13Z"
 }

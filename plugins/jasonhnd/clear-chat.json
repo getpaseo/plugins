@@ -32,6 +32,7 @@
         "name": "Clear Chat",
         "description": "回答カードだけのプラグインです。返信にアルファベットの選択肢があるとき、カードで選ぶか自分で書き、プレビューして送信します。会話は描きません。"
       }
-    }
+    },
+    "description": "Answer an agent's lettered questions with a card: pick an option or write your own, preview, and send."
   }
 }

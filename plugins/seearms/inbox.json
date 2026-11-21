@@ -1,0 +1,22 @@
+{
+  "id": "seearms/inbox",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/seeARMS/paseo-inbox.git",
+    "commit": "ee48cdb36a2481957e5088fda1e1fa129bdd70e9",
+    "tag": "v0.1.2"
+  },
+  "repository": {
+    "url": "https://github.com/seeARMS/paseo-inbox",
+    "commit": "ee48cdb36a2481957e5088fda1e1fa129bdd70e9"
+  },
+  "categories": [
+    "orchestration",
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-11-21T18:04:56Z",
+  "submittedBy": "seeARMS",
+  "publishedAt": "2026-11-21T18:04:56Z",
+  "reviewedAt": "2026-11-21T18:04:56Z"
+}

@@ -1,0 +1,13 @@
+{
+  "issue": 2866,
+  "title": "SuperAgent",
+  "submittedBy": "lekai63",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/lekai63/paseo-plugin-superagent"
+  },
+  "categories": [
+    "orchestration",
+    "sidebar"
+  ]
+}

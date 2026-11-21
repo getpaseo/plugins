@@ -1,0 +1,13 @@
+{
+  "issue": 2940,
+  "title": "Smart Tables",
+  "submittedBy": "apple-ouyang",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/apple-ouyang/paseo-smart-tables"
+  },
+  "categories": [
+    "extras",
+    "workspaces"
+  ]
+}

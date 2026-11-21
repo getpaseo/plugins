@@ -18,6 +18,9 @@
   "publishedAt": "2026-11-21T08:03:55Z",
   "reviewedAt": "2026-11-21T10:05:34Z",
   "listing": {
-    "description": "Browse Jira tickets and start Paseo agents from them."
+    "description": "Browse Jira tickets and start Paseo agents from them.",
+    "media": [
+      "https://raw.githubusercontent.com/Norman-else/paseo-jira/078aee85f0e39a9a0d65bbdc4dd814d1add0372e/assets/jira-sprint-view.png"
+    ]
   }
 }

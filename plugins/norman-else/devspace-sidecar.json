@@ -15,5 +15,10 @@
   "submittedAt": "2026-11-21T08:04:27Z",
   "submittedBy": "Norman-else",
   "publishedAt": "2026-11-21T08:04:27Z",
-  "reviewedAt": "2026-11-21T08:04:27Z"
+  "reviewedAt": "2026-11-21T12:05:25Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/Norman-else/paseo-devspace-sidecar/c29af5bf3c9de6513bc1a5d910fc1294160022ff/assets/devspace-desk-demo.png"
+    ]
+  }
 }

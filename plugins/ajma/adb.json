@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-adb",
-    "version": "0.1.0",
-    "resolved": "https://registry.npmjs.org/paseo-adb/-/paseo-adb-0.1.0.tgz",
-    "integrity": "sha512-9n7bwTl6hklJ1Qnl+HXxhgvlxzn76tYsMC1cwE1QI9dldU0JwI+pq6Z98FqGaIA/TG5YiqHEIi/yoyEPO1IqPQ=="
+    "version": "0.2.0",
+    "resolved": "https://registry.npmjs.org/paseo-adb/-/paseo-adb-0.2.0.tgz",
+    "integrity": "sha512-2vnPURFimbbz+63yU/9dAixGPdldvooV6ICwZzMRVYC6oWl4mrFEsIvoIDw6RQHlwmefqi3AXAY/gJqv6IILow=="
   },
   "repository": {
     "url": "https://github.com/ajma/paseo-adb"
@@ -17,7 +17,7 @@
   "submittedAt": "2026-10-21T04:30:41Z",
   "submittedBy": "ajma",
   "publishedAt": "2026-10-21T04:36:27Z",
-  "reviewedAt": "2026-10-21T04:36:27Z",
+  "reviewedAt": "2026-11-20T23:09:37Z",
   "listing": {
     "name": "Paseo ADB"
   }

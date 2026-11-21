@@ -1,0 +1,13 @@
+{
+  "issue": 2971,
+  "title": "Files & Notes",
+  "submittedBy": "kevguy",
+  "source": {
+    "kind": "npm",
+    "package": "@kevlai22/paseo-files",
+    "version": "0.1.2"
+  },
+  "categories": [
+    "workspaces"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "xiao1-0126/git-changelists",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/xiao1-0126/paseo-git-changelists.git",
+    "commit": "7cd9b2d9d3c497dd2abcd03f428ace0a60db2115",
+    "tag": "v0.3.0-rc.2"
+  },
+  "repository": {
+    "url": "https://github.com/xiao1-0126/paseo-git-changelists",
+    "commit": "7cd9b2d9d3c497dd2abcd03f428ace0a60db2115"
+  },
+  "categories": [
+    "git",
+    "workspaces"
+  ],
+  "submittedAt": "2026-11-16T11:35:09Z",
+  "submittedBy": "xiao1-0126",
+  "publishedAt": "2026-11-16T12:02:25Z",
+  "reviewedAt": "2026-11-16T12:02:25Z"
+}

@@ -1,0 +1,12 @@
+{
+  "issue": 2932,
+  "title": "Add a better sidechat plugin for paseo.",
+  "submittedBy": "Norman-else",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/Norman-else/paseo-better-sidechat"
+  },
+  "categories": [
+    "sidebar"
+  ]
+}

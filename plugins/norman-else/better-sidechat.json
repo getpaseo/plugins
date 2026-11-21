@@ -1,0 +1,24 @@
+{
+  "id": "norman-else/better-sidechat",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/Norman-else/paseo-better-sidechat.git",
+    "commit": "3ca947f34c98eda81ea6d2908a341fa8695add3e"
+  },
+  "repository": {
+    "url": "https://github.com/Norman-else/paseo-better-sidechat",
+    "commit": "3ca947f34c98eda81ea6d2908a341fa8695add3e"
+  },
+  "categories": [
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-21T08:03:13Z",
+  "submittedBy": "Norman-else",
+  "publishedAt": "2026-11-21T08:03:13Z",
+  "reviewedAt": "2026-11-21T12:05:21Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/Norman-else/paseo-better-sidechat/3ca947f34c98eda81ea6d2908a341fa8695add3e/assets/sidechat-new-thread.png"
+    ]
+  }
+}

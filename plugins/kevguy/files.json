@@ -1,0 +1,25 @@
+{
+  "id": "kevguy/files",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/kevguy/paseo-files.git",
+    "commit": "a69b45e020816c67c64622eab2692b9a322e92ce"
+  },
+  "repository": {
+    "url": "https://github.com/kevguy/paseo-files",
+    "commit": "a69b45e020816c67c64622eab2692b9a322e92ce"
+  },
+  "categories": [
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-11-21T14:08:52Z",
+  "submittedBy": "kevguy",
+  "publishedAt": "2026-11-21T14:08:52Z",
+  "reviewedAt": "2026-11-21T14:08:52Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/kevguy/paseo-files/a69b45e020816c67c64622eab2692b9a322e92ce/docs/screenshots/desktop-split-vim-normal.png"
+    ]
+  }
+}

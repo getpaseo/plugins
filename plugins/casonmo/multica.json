@@ -1,0 +1,22 @@
+{
+  "id": "casonmo/multica",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/CasonMo/paseo-multica.git",
+    "commit": "b273fc4755598a47347cb1c4cb6cfa0fb3138f59"
+  },
+  "repository": {
+    "url": "https://github.com/CasonMo/paseo-multica",
+    "commit": "b273fc4755598a47347cb1c4cb6cfa0fb3138f59"
+  },
+  "categories": [
+    "workspaces",
+    "orchestration",
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-11-20T13:03:24Z",
+  "submittedBy": "CasonMo",
+  "publishedAt": "2026-11-21T10:03:06Z",
+  "reviewedAt": "2026-11-21T16:04:11Z"
+}

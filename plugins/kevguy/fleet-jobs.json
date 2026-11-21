@@ -1,0 +1,21 @@
+{
+  "id": "kevguy/fleet-jobs",
+  "artifact": {
+    "kind": "npm",
+    "package": "@kevlai22/paseo-fleet-jobs",
+    "version": "0.2.1",
+    "resolved": "https://registry.npmjs.org/@kevlai22/paseo-fleet-jobs/-/paseo-fleet-jobs-0.2.1.tgz",
+    "integrity": "sha512-GMe0DBKtRrcGVQZzyYKW1h6bD0u6/qyEXvRhys7iiWXETv4nLZ3pQp5jaju/9F6NPZpS9jZgAuTX7u+wN6b0qw=="
+  },
+  "repository": {
+    "url": "https://github.com/kevguy/paseo-fleet-jobs"
+  },
+  "categories": [
+    "daemon-management",
+    "orchestration"
+  ],
+  "submittedAt": "2026-11-21T14:09:50Z",
+  "submittedBy": "kevguy",
+  "publishedAt": "2026-11-21T14:09:50Z",
+  "reviewedAt": "2026-11-21T16:08:37Z"
+}

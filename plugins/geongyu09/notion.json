@@ -1,0 +1,19 @@
+{
+  "id": "geongyu09/notion",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/geongyu09/paseo-notion.git",
+    "commit": "468f161779e48918c8967b4e9891fff344397cb2"
+  },
+  "repository": {
+    "url": "https://github.com/geongyu09/paseo-notion",
+    "commit": "468f161779e48918c8967b4e9891fff344397cb2"
+  },
+  "categories": [
+    "workspaces"
+  ],
+  "submittedAt": "2026-11-21T08:02:28Z",
+  "submittedBy": "geongyu09",
+  "publishedAt": "2026-11-21T08:02:28Z",
+  "reviewedAt": "2026-11-21T08:02:28Z"
+}

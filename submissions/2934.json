@@ -1,0 +1,13 @@
+{
+  "issue": 2934,
+  "title": "Add a jira plugin for Paseo.",
+  "submittedBy": "Norman-else",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/Norman-else/paseo-jira"
+  },
+  "categories": [
+    "extras",
+    "utils"
+  ]
+}

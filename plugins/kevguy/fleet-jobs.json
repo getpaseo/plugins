@@ -1,0 +1,20 @@
+{
+  "id": "kevguy/fleet-jobs",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/kevguy/paseo-fleet-jobs.git",
+    "commit": "6f1584f6e207834c97b09dc08505769107d0072c"
+  },
+  "repository": {
+    "url": "https://github.com/kevguy/paseo-fleet-jobs",
+    "commit": "6f1584f6e207834c97b09dc08505769107d0072c"
+  },
+  "categories": [
+    "sidebar",
+    "extras"
+  ],
+  "submittedAt": "2026-11-21T14:09:50Z",
+  "submittedBy": "kevguy",
+  "publishedAt": "2026-11-21T14:09:50Z",
+  "reviewedAt": "2026-11-21T14:09:50Z"
+}

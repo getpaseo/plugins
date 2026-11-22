@@ -1,0 +1,13 @@
+{
+  "issue": 3024,
+  "title": "steno spec",
+  "submittedBy": "rizanw",
+  "source": {
+    "kind": "npm",
+    "package": "steno-paseo"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces"
+  ]
+}

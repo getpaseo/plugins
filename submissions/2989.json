@@ -1,0 +1,13 @@
+{
+  "issue": 2989,
+  "title": "Scripted Provider",
+  "submittedBy": "quickwind",
+  "source": {
+    "kind": "npm",
+    "package": "paseo-scripted-provider"
+  },
+  "categories": [
+    "providers",
+    "utils"
+  ]
+}

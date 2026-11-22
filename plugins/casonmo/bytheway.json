@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/CasonMo/paseo-bytheway.git",
-    "commit": "80afedb5d457085ae8696e50ecc4179c0fa3f40f"
+    "commit": "10721818420ffdda32c88d1168100e6107c374b2"
   },
   "repository": {
     "url": "https://github.com/CasonMo/paseo-bytheway",
-    "commit": "80afedb5d457085ae8696e50ecc4179c0fa3f40f"
+    "commit": "10721818420ffdda32c88d1168100e6107c374b2"
   },
   "categories": [
     "sidebar",
@@ -28,9 +28,9 @@
       }
     },
     "media": [
-      "https://raw.githubusercontent.com/CasonMo/paseo-bytheway/80afedb5d457085ae8696e50ecc4179c0fa3f40f/assets/screenshot.png",
-      "https://raw.githubusercontent.com/CasonMo/paseo-bytheway/80afedb5d457085ae8696e50ecc4179c0fa3f40f/assets/screenshot-commands.png",
-      "https://raw.githubusercontent.com/CasonMo/paseo-bytheway/80afedb5d457085ae8696e50ecc4179c0fa3f40f/assets/screenshot-settings.png"
+      "https://raw.githubusercontent.com/CasonMo/paseo-bytheway/10721818420ffdda32c88d1168100e6107c374b2/assets/screenshot.png",
+      "https://raw.githubusercontent.com/CasonMo/paseo-bytheway/10721818420ffdda32c88d1168100e6107c374b2/assets/screenshot-commands.png",
+      "https://raw.githubusercontent.com/CasonMo/paseo-bytheway/10721818420ffdda32c88d1168100e6107c374b2/assets/screenshot-settings.png"
     ]
   }
 }

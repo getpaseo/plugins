@@ -1,0 +1,20 @@
+{
+  "id": "lekai63/superagent",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/lekai63/paseo-plugin-superagent.git",
+    "commit": "479d2f13e212802321034fcfb4a44721e2303487"
+  },
+  "repository": {
+    "url": "https://github.com/lekai63/paseo-plugin-superagent",
+    "commit": "479d2f13e212802321034fcfb4a44721e2303487"
+  },
+  "categories": [
+    "orchestration",
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-20T11:39:31Z",
+  "submittedBy": "lekai63",
+  "publishedAt": "2026-11-22T04:02:53Z",
+  "reviewedAt": "2026-11-22T04:02:53Z"
+}

@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "@omercnet/paseo-queens",
-    "version": "4.1.5",
-    "resolved": "https://registry.npmjs.org/@omercnet/paseo-queens/-/paseo-queens-4.1.5.tgz",
-    "integrity": "sha512-kjs1Ktuc1cR3xlYk9nMZGZc/kE6DT4s63LTja1OC95OW8l80qUn5rZf9IbRrtnG9zV2Xj272O8TF+fwHs/sN6w=="
+    "version": "5.0.0",
+    "resolved": "https://registry.npmjs.org/@omercnet/paseo-queens/-/paseo-queens-5.0.0.tgz",
+    "integrity": "sha512-lI1CF2ua4RSX5U/p4/FhUDg9ZPgWnaL4IAjrd3YK7vKwZMZmzESP7CCkS4Edj9hoHm3/ZV2cpJdplPMkTJx5uQ=="
   },
   "repository": {
     "url": "https://github.com/omercnet/paseo-plugins/tree/HEAD/queens",
-    "commit": "1ee1ca1892baf2c332fecbc5fcb98fa69e14e707"
+    "commit": "daddcfc1fa3a46a9789d0d5131b1b8df29c26c22"
   },
   "categories": [
     "extras",
@@ -18,7 +18,7 @@
   "submittedAt": "2026-09-20",
   "submittedBy": "omercnet",
   "publishedAt": "2026-09-20",
-  "reviewedAt": "2026-11-20T23:16:46Z",
+  "reviewedAt": "2026-11-22T13:32:06Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/omercnet/paseo-plugins/10766d8374dd543ba36a66c2028c3ac3316c4633/queens/docs/images/queens-wide.png",

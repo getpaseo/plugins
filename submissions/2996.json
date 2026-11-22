@@ -1,0 +1,14 @@
+{
+  "issue": 2996,
+  "title": "Auto Session Title",
+  "submittedBy": "pharder56k",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/pharder56k/paseo-auto-session-title"
+  },
+  "categories": [
+    "utils",
+    "workspaces",
+    "sidebar"
+  ]
+}

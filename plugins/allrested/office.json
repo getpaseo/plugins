@@ -1,13 +1,14 @@
 {
   "id": "allrested/office",
   "artifact": {
-    "kind": "git",
-    "remote": "https://github.com/allrested/paseo-office.git",
-    "commit": "ed5e7044787b28508545e8c49092fdd4eb5d4394"
+    "kind": "npm",
+    "package": "paseo-office",
+    "version": "0.2.1",
+    "resolved": "https://registry.npmjs.org/paseo-office/-/paseo-office-0.2.1.tgz",
+    "integrity": "sha512-WmcFOgNxmEFQjyiPEg2qHTqUsl5UIHEOj6ltljOpvVmgpqdXNtIpppC0115QbMn6rf5TpoQ7m2Bv3Qm7W//Qcg=="
   },
   "repository": {
-    "url": "https://github.com/allrested/paseo-office",
-    "commit": "ed5e7044787b28508545e8c49092fdd4eb5d4394"
+    "url": "https://github.com/allrested/paseo-office"
   },
   "categories": [
     "extras"
@@ -15,7 +16,7 @@
   "submittedAt": "2026-11-19T02:04:22Z",
   "submittedBy": "allrested",
   "publishedAt": "2026-11-19T03:05:07Z",
-  "reviewedAt": "2026-11-22T12:01:28Z",
+  "reviewedAt": "2026-11-22T14:02:22Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/allrested/paseo-office/619d41a5100589efdec55ab373fed93fb7825d1d/docs/fullscreen-office.png"

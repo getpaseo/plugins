@@ -1,0 +1,14 @@
+{
+  "issue": 3052,
+  "title": "Claude Code models",
+  "submittedBy": "opennavo",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/opennavo/paseo-claude-code-models",
+    "ref": "7f82b6fa2a6bfadaeed488713afa455c3dab26ee"
+  },
+  "categories": [
+    "providers",
+    "utils"
+  ]
+}

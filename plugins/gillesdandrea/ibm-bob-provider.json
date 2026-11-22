@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/gillesdandrea/paseo-plugins.git",
-    "commit": "9c81e9785304bf9d153bf8b16a7e66b1b0d7f39e",
+    "commit": "bdba5c1990f6756c5f4771a869c7b95b3d542fa5",
     "pluginPath": "plugins/ibm-bob-provider"
   },
   "repository": {
     "url": "https://github.com/gillesdandrea/paseo-plugins",
-    "commit": "9c81e9785304bf9d153bf8b16a7e66b1b0d7f39e"
+    "commit": "bdba5c1990f6756c5f4771a869c7b95b3d542fa5"
   },
   "categories": [
     "providers"

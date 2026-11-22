@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "@fdkevin/paseo-agy-acp",
-    "version": "0.1.6",
-    "resolved": "https://registry.npmjs.org/@fdkevin/paseo-agy-acp/-/paseo-agy-acp-0.1.6.tgz",
-    "integrity": "sha512-W8J620n5W5CW1cynhb6o77VU3aaRHbAKyr7KcZ5NYL17z8A9W5nOsjEIdp5AW+punvt+62dHqX+WqNTNfokyKQ=="
+    "version": "0.1.7",
+    "resolved": "https://registry.npmjs.org/@fdkevin/paseo-agy-acp/-/paseo-agy-acp-0.1.7.tgz",
+    "integrity": "sha512-lM25G8HPizEjPERQAI0W/lPwM5tp0q/TI6GoySX0inMeomf+vau4vZZxPtz9G6fPE2wH1s42khx+J79sKlnyUQ=="
   },
   "repository": {
     "url": "https://github.com/fdkevin0/paseo-agy-acp",
-    "commit": "01c71eb52ee56fc788cde6656f46ec459e049092"
+    "commit": "f68df54db062255c08d8f829be74ad456defb71e"
   },
   "categories": [
     "providers"
@@ -17,5 +17,5 @@
   "submittedAt": "2026-11-12T23:01:26Z",
   "submittedBy": "fdkevin0",
   "publishedAt": "2026-11-12T23:01:26Z",
-  "reviewedAt": "2026-11-21T13:34:47Z"
+  "reviewedAt": "2026-11-22T13:26:58Z"
 }

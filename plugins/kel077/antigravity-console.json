@@ -3,11 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/Kel077/paseo-antigravity-console.git",
-    "commit": "3fea5718966a748c8a452cb6f7ab4bf039bc2304"
+    "commit": "4896f4246da17eead0333200aca46798e85de7d5",
+    "tag": "v0.1.1"
   },
   "repository": {
     "url": "https://github.com/Kel077/paseo-antigravity-console",
-    "commit": "3fea5718966a748c8a452cb6f7ab4bf039bc2304"
+    "commit": "4896f4246da17eead0333200aca46798e85de7d5"
   },
   "categories": [
     "providers",

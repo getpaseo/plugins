@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "@omercnet/paseo-pr-radar",
-    "version": "3.3.0",
-    "resolved": "https://registry.npmjs.org/@omercnet/paseo-pr-radar/-/paseo-pr-radar-3.3.0.tgz",
-    "integrity": "sha512-KqRLr0+MtcQsXbNmkHIKPlhip5CaL6prvyRg+XRDl7CzskCaMRtYIjdjIUWtMuI8UyZlWjdn6ZKAd0hVgvamfQ=="
+    "version": "3.4.0",
+    "resolved": "https://registry.npmjs.org/@omercnet/paseo-pr-radar/-/paseo-pr-radar-3.4.0.tgz",
+    "integrity": "sha512-dj9OYy2/9d/DjUyXWBodv/pGQipRSoFr6KuEQI5kdE+fkKYy/CETA8RmZ1iFFTr7JKpC6Th6HEZh+11+Gf0wxA=="
   },
   "repository": {
     "url": "https://github.com/omercnet/paseo-plugins/tree/HEAD/pr-radar",
-    "commit": "1ee1ca1892baf2c332fecbc5fcb98fa69e14e707"
+    "commit": "daddcfc1fa3a46a9789d0d5131b1b8df29c26c22"
   },
   "categories": [
     "git"
@@ -17,7 +17,7 @@
   "submittedAt": "2026-09-08",
   "submittedBy": "omercnet",
   "publishedAt": "2026-09-08",
-  "reviewedAt": "2026-11-20T23:16:19Z",
+  "reviewedAt": "2026-11-22T13:31:41Z",
   "listing": {
     "name": "PR Radar",
     "media": [

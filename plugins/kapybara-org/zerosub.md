@@ -22,6 +22,8 @@ With **Spread new agents across accounts** enabled, new ChatGPT agents prefer a 
 
 Two other options are off by default. One spends a provider's banked limit reset automatically, with no per-reset confirmation, when every account of that provider is out. The other continues a stopped chat on the other provider (Claude to ChatGPT or back) in a new agent with no more permissions than the original. You can also use a banked reset by hand, and that always asks for confirmation first.
 
+When Claude reports how many Fable-only resets you have, the Accounts card shows the count. Use those resets in Claude under **Settings → Usage**. ZeroSub will also point you there if Claude says a reset is available only in Claude.
+
 ## Other providers and paid accounts
 
 - **Grok and Cursor.** Add several Grok or Cursor sign-ins and pick the account each new agent starts on. A conversation stays on the account it started on. ZeroSub does not switch these agents on a limit and does not read Grok or Cursor usage. Cursor accounts work on Linux only.

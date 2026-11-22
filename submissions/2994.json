@@ -1,0 +1,16 @@
+{
+  "issue": 2994,
+  "title": "Coordinator Board",
+  "submittedBy": "devbrother2024",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/devbrother2024/paseo-coordinator-board",
+    "ref": "70ae2a1e1c618bf16b9931d72c11a60dd31f1379"
+  },
+  "categories": [
+    "orchestration",
+    "git",
+    "workspaces",
+    "sidebar"
+  ]
+}

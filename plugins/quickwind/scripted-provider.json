@@ -1,0 +1,22 @@
+{
+  "id": "quickwind/scripted-provider",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-scripted-provider",
+    "version": "0.4.1",
+    "resolved": "https://registry.npmjs.org/paseo-scripted-provider/-/paseo-scripted-provider-0.4.1.tgz",
+    "integrity": "sha512-ASozEqVyl7Igo8QYWZ8FknrQHVwGGeTJUH6c43ObiJv1gOhdWOwnv+u0M2h1bQEWblCvFGuuvluQghm30qEVhA=="
+  },
+  "repository": {
+    "url": "https://github.com/quickwind/paseo-scripted-provider",
+    "commit": "058ba6591d7a8ce6dd28f7afe7de8804a5c8d26c"
+  },
+  "categories": [
+    "providers",
+    "utils"
+  ],
+  "submittedAt": "2026-11-22T04:39:20Z",
+  "submittedBy": "quickwind",
+  "publishedAt": "2026-11-22T06:02:40Z",
+  "reviewedAt": "2026-11-22T06:02:40Z"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "kevguy/files",
+  "artifact": {
+    "kind": "npm",
+    "package": "@kevlai22/paseo-files",
+    "version": "0.1.3",
+    "resolved": "https://registry.npmjs.org/@kevlai22/paseo-files/-/paseo-files-0.1.3.tgz",
+    "integrity": "sha512-oFRg789ijNwl5SQgm2ZKMwA3ZwbPVShEasMCgwYNHMt027Nt+yeSEzCcmLp9HZQLSNAbz9HFwSBDm0NIpQ56iw=="
+  },
+  "repository": {
+    "url": "https://github.com/kevguy/paseo-files"
+  },
+  "categories": [
+    "workspaces"
+  ],
+  "submittedAt": "2026-11-21T14:08:52Z",
+  "submittedBy": "kevguy",
+  "publishedAt": "2026-11-21T14:08:52Z",
+  "reviewedAt": "2026-11-21T22:14:27Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/kevguy/paseo-files/d89493671fab16201c58c0c487fa34d405bff677/docs/screenshots/desktop-split-vim-normal.png",
+      "https://raw.githubusercontent.com/kevguy/paseo-files/d89493671fab16201c58c0c487fa34d405bff677/docs/screenshots/files-phone.gif",
+      "https://raw.githubusercontent.com/kevguy/paseo-files/d89493671fab16201c58c0c487fa34d405bff677/docs/screenshots/mobile-markdown.png"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "kevguy/notes",
+  "artifact": {
+    "kind": "npm",
+    "package": "@kevlai22/paseo-notes",
+    "version": "0.1.0",
+    "resolved": "https://registry.npmjs.org/@kevlai22/paseo-notes/-/paseo-notes-0.1.0.tgz",
+    "integrity": "sha512-Y1kF5OJijqOgZCNTqDNSJoIeL+xmTjobaf5sE1uUKKMdsxdJbC5zUATjwyjm1k2SgGWDxO42QCCQ70KEV2G9OQ=="
+  },
+  "repository": {
+    "url": "https://github.com/kevguy/paseo-notes"
+  },
+  "categories": [
+    "workspaces"
+  ],
+  "submittedAt": "2026-11-21T15:04:18Z",
+  "submittedBy": "kevguy",
+  "publishedAt": "2026-11-21T16:07:05Z",
+  "reviewedAt": "2026-11-21T16:07:05Z"
+}

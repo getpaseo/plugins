@@ -1,0 +1,20 @@
+{
+  "id": "jozuas/better-diff",
+  "artifact": {
+    "kind": "npm",
+    "package": "@jozuas/better-diff",
+    "version": "1.0.1",
+    "resolved": "https://registry.npmjs.org/@jozuas/better-diff/-/better-diff-1.0.1.tgz",
+    "integrity": "sha512-DrYvkJ4ibElNny1ojvD+EegDSIvngRJZK5T5KMoGiY94W5ci+toUvMPn08e6vNXy4K50k4uMSu64Ct2pLz3EiQ=="
+  },
+  "repository": {
+    "url": "https://github.com/jozuas/better-diff"
+  },
+  "categories": [
+    "git"
+  ],
+  "submittedAt": "2026-11-20T20:37:38Z",
+  "submittedBy": "jozuas",
+  "publishedAt": "2026-11-21T12:02:41Z",
+  "reviewedAt": "2026-11-21T12:02:41Z"
+}

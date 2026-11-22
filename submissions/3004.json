@@ -1,0 +1,12 @@
+{
+  "issue": 3004,
+  "title": "Clear Chat",
+  "submittedBy": "jasonhnd",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/jasonhnd/paseo-clear-chat"
+  },
+  "categories": [
+    "utils"
+  ]
+}

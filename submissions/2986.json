@@ -1,0 +1,15 @@
+{
+  "issue": 2986,
+  "title": "Antigravity Console",
+  "submittedBy": "Kel077",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/Kel077/paseo-antigravity-console",
+    "ref": "v0.1.0"
+  },
+  "categories": [
+    "providers",
+    "sidebar",
+    "utils"
+  ]
+}

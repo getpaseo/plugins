@@ -1,0 +1,12 @@
+{
+  "issue": 3014,
+  "title": "open-agents",
+  "submittedBy": "mredaelli",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/mredaelli/paseo-open-agents"
+  },
+  "categories": [
+    "sidebar"
+  ]
+}

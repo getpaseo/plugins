@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "@kevlai22/paseo-tasks",
-    "version": "0.1.5",
-    "resolved": "https://registry.npmjs.org/@kevlai22/paseo-tasks/-/paseo-tasks-0.1.5.tgz",
-    "integrity": "sha512-Fl2j7vANjps5DuYwaCXB4Jq2NW1yuCUIFZooPESQ3BSaC+SgVYLgR39wAscabQSOqOOj1sVF43RkQH1TEVfkJQ=="
+    "version": "0.1.6",
+    "resolved": "https://registry.npmjs.org/@kevlai22/paseo-tasks/-/paseo-tasks-0.1.6.tgz",
+    "integrity": "sha512-Z2m4rRyNz3pgXju2f0o01Crk8qS9hyQhEtI5JWWfklugfPpWU0B+nFpFudn31XIZeaPQDriYbr32rf9r2ayJCQ=="
   },
   "repository": {
     "url": "https://github.com/kevguy/paseo-tasks"
@@ -16,7 +16,7 @@
   "submittedAt": "2026-11-21T14:07:40Z",
   "submittedBy": "kevguy",
   "publishedAt": "2026-11-21T14:07:40Z",
-  "reviewedAt": "2026-11-21T16:09:30Z",
+  "reviewedAt": "2026-11-22T13:29:07Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/kevguy/paseo-tasks/7841db659f34f9071622ed26a2feed54c95ac8e1/docs/screenshots/tasks-list-desktop.png",

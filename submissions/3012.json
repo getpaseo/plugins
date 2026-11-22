@@ -1,0 +1,13 @@
+{
+  "issue": 3012,
+  "title": "Agent Controls Chinese v0.2.14: Support Paseo 0.17 and localize Antigravity controls",
+  "submittedBy": "kogekiplay",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/kogekiplay/paseo-agent-controls-zh",
+    "ref": "83b9a38056efba63f87f30db1523d3e8cdd8b950"
+  },
+  "categories": [
+    "utils"
+  ]
+}

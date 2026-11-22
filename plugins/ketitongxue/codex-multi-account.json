@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/ketitongxue/paseo-codex-multi-account.git",
-    "commit": "7915c6a037c33f7b89ddceae76cf70924dc8d2b5"
+    "commit": "349f55106e084f06747e8526db64e6cce8400fb5"
   },
   "repository": {
     "url": "https://github.com/ketitongxue/paseo-codex-multi-account",
-    "commit": "7915c6a037c33f7b89ddceae76cf70924dc8d2b5"
+    "commit": "349f55106e084f06747e8526db64e6cce8400fb5"
   },
   "categories": [
     "providers",
@@ -17,5 +17,5 @@
   "submittedAt": "2026-10-28T13:19:43Z",
   "submittedBy": "ketitongxue",
   "publishedAt": "2026-10-28T13:19:43Z",
-  "reviewedAt": "2026-11-12T14:02:36Z"
+  "reviewedAt": "2026-11-22T12:04:31Z"
 }

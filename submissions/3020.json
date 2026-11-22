@@ -1,0 +1,15 @@
+{
+  "issue": 3020,
+  "title": "Update Codex multi-account to v0.2.0 — quota failover and Paseo 0.17 support",
+  "submittedBy": "ketitongxue",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/ketitongxue/paseo-codex-multi-account",
+    "ref": "349f55106e084f06747e8526db64e6cce8400fb5"
+  },
+  "categories": [
+    "providers",
+    "sidebar",
+    "utils"
+  ]
+}

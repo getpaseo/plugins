@@ -1,0 +1,19 @@
+{
+  "id": "mredaelli/open-agents",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/mredaelli/paseo-open-agents.git",
+    "commit": "540cc0cb03d546f6205d1e3ca6f242b95b720ede"
+  },
+  "repository": {
+    "url": "https://github.com/mredaelli/paseo-open-agents",
+    "commit": "540cc0cb03d546f6205d1e3ca6f242b95b720ede"
+  },
+  "categories": [
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-22T10:02:25Z",
+  "submittedBy": "mredaelli",
+  "publishedAt": "2026-11-22T10:02:25Z",
+  "reviewedAt": "2026-11-22T10:02:25Z"
+}

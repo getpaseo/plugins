@@ -24,6 +24,8 @@ Two other options are off by default. One spends a provider's banked limit reset
 
 When Claude reports how many Fable-only resets you have, the Accounts card shows the count. Use those resets in Claude under **Settings → Usage**. ZeroSub will also point you there if Claude says a reset is available only in Claude.
 
+In **Accounts**, set a quota maximum for individual usage windows on an account. When a recent reading reaches that maximum, ZeroSub treats that window as exhausted for routing. Adding a separately signed-in folder for the same Claude subscription pauses the matching CLI entry in ZeroSub. Enabling either entry pauses the other. Removing the added account restores the CLI entry if ZeroSub paused it and it is still signed in to the same subscription. On file-backed systems, ZeroSub checks whether the imported folder shares the CLI login by comparing local credential files in memory.
+
 ## Other providers and paid accounts
 
 - **Grok and Cursor.** Add several Grok or Cursor sign-ins and pick the account each new agent starts on. A conversation stays on the account it started on. ZeroSub does not switch these agents on a limit and does not read Grok or Cursor usage. Cursor accounts work on Linux only.

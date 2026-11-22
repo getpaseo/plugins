@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/DueGin/paseo-ensemble.git",
-    "commit": "ba76bc078d3f590d1412f2616b52aec0302275fe",
-    "tag": "v0.6.4"
+    "commit": "8b3e4af57fa36ca4f7d1050571d3157179cd6840",
+    "tag": "v0.6.5"
   },
   "repository": {
     "url": "https://github.com/DueGin/paseo-ensemble",
-    "commit": "ba76bc078d3f590d1412f2616b52aec0302275fe"
+    "commit": "8b3e4af57fa36ca4f7d1050571d3157179cd6840"
   },
   "categories": [
     "orchestration",
@@ -18,5 +18,5 @@
   "submittedAt": "2026-11-19T16:11:08Z",
   "submittedBy": "DueGin",
   "publishedAt": "2026-11-21T10:06:57Z",
-  "reviewedAt": "2026-11-21T10:06:57Z"
+  "reviewedAt": "2026-11-22T08:02:58Z"
 }

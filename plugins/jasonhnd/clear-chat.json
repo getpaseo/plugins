@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/jasonhnd/paseo-clear-chat.git",
-    "commit": "35c4889852e96575df848362f4492127f43c2b02",
-    "tag": "v0.16.2.2"
+    "commit": "cfd51a7396b00852f638ad801a4acdb9a16c1054",
+    "tag": "v0.17.2.1"
   },
   "repository": {
     "url": "https://github.com/jasonhnd/paseo-clear-chat",
-    "commit": "35c4889852e96575df848362f4492127f43c2b02"
+    "commit": "cfd51a7396b00852f638ad801a4acdb9a16c1054"
   },
   "categories": [
     "utils"
@@ -32,7 +32,6 @@
         "name": "Clear Chat",
         "description": "回答カードだけのプラグインです。返信にアルファベットの選択肢があるとき、カードで選ぶか自分で書き、プレビューして送信します。会話は描きません。"
       }
-    },
-    "description": "Answer an agent's lettered questions with a card: pick an option or write your own, preview, and send."
+    }
   }
 }

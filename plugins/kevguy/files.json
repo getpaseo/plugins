@@ -19,7 +19,9 @@
   "reviewedAt": "2026-11-21T22:14:27Z",
   "listing": {
     "media": [
-      "https://raw.githubusercontent.com/kevguy/paseo-files/a69b45e020816c67c64622eab2692b9a322e92ce/docs/screenshots/desktop-split-vim-normal.png"
+      "https://raw.githubusercontent.com/kevguy/paseo-files/d89493671fab16201c58c0c487fa34d405bff677/docs/screenshots/desktop-split-vim-normal.png",
+      "https://raw.githubusercontent.com/kevguy/paseo-files/d89493671fab16201c58c0c487fa34d405bff677/docs/screenshots/files-phone.gif",
+      "https://raw.githubusercontent.com/kevguy/paseo-files/d89493671fab16201c58c0c487fa34d405bff677/docs/screenshots/mobile-markdown.png"
     ]
   }
 }

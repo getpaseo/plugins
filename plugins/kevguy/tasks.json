@@ -16,12 +16,5 @@
   "submittedAt": "2026-11-21T14:07:40Z",
   "submittedBy": "kevguy",
   "publishedAt": "2026-11-21T14:07:40Z",
-  "reviewedAt": "2026-11-22T13:29:07Z",
-  "listing": {
-    "media": [
-      "https://raw.githubusercontent.com/kevguy/paseo-tasks/7841db659f34f9071622ed26a2feed54c95ac8e1/docs/screenshots/tasks-list-desktop.png",
-      "https://raw.githubusercontent.com/kevguy/paseo-tasks/7841db659f34f9071622ed26a2feed54c95ac8e1/docs/screenshots/tasks-list-mobile.png",
-      "https://raw.githubusercontent.com/kevguy/paseo-tasks/7841db659f34f9071622ed26a2feed54c95ac8e1/docs/screenshots/tasks-detail-desktop.png"
-    ]
-  }
+  "reviewedAt": "2026-11-22T13:29:07Z"
 }

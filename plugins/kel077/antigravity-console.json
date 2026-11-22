@@ -1,0 +1,21 @@
+{
+  "id": "kel077/antigravity-console",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/Kel077/paseo-antigravity-console.git",
+    "commit": "3fea5718966a748c8a452cb6f7ab4bf039bc2304"
+  },
+  "repository": {
+    "url": "https://github.com/Kel077/paseo-antigravity-console",
+    "commit": "3fea5718966a748c8a452cb6f7ab4bf039bc2304"
+  },
+  "categories": [
+    "providers",
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-11-22T03:02:13Z",
+  "submittedBy": "Kel077",
+  "publishedAt": "2026-11-22T04:01:24Z",
+  "reviewedAt": "2026-11-22T04:01:24Z"
+}

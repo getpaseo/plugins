@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-scripted-provider",
-    "version": "0.4.1",
-    "resolved": "https://registry.npmjs.org/paseo-scripted-provider/-/paseo-scripted-provider-0.4.1.tgz",
-    "integrity": "sha512-ASozEqVyl7Igo8QYWZ8FknrQHVwGGeTJUH6c43ObiJv1gOhdWOwnv+u0M2h1bQEWblCvFGuuvluQghm30qEVhA=="
+    "version": "0.5.0",
+    "resolved": "https://registry.npmjs.org/paseo-scripted-provider/-/paseo-scripted-provider-0.5.0.tgz",
+    "integrity": "sha512-9gQduVQTxLsiYXYoKm3jaVxbMK4yNWESpcXMe1mV0iU8IoTMHouYGHLt1HgKIWSbnkdbdRM7wjJ3UNXOQsM5zQ=="
   },
   "repository": {
     "url": "https://github.com/quickwind/paseo-scripted-provider",
-    "commit": "058ba6591d7a8ce6dd28f7afe7de8804a5c8d26c"
+    "commit": "fe723474921d4133ad04e208a6aa6c642af621fb"
   },
   "categories": [
     "providers",
@@ -18,5 +18,5 @@
   "submittedAt": "2026-11-22T04:39:20Z",
   "submittedBy": "quickwind",
   "publishedAt": "2026-11-22T06:02:40Z",
-  "reviewedAt": "2026-11-22T06:02:40Z"
+  "reviewedAt": "2026-11-22T22:33:23Z"
 }

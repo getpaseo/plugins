@@ -1,0 +1,21 @@
+{
+  "id": "pharder56k/auto-session-title",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/pharder56k/paseo-auto-session-title.git",
+    "commit": "f5f6649149ee75bed4488fc489de19d8b2a3eee6"
+  },
+  "repository": {
+    "url": "https://github.com/pharder56k/paseo-auto-session-title",
+    "commit": "f5f6649149ee75bed4488fc489de19d8b2a3eee6"
+  },
+  "categories": [
+    "utils",
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-22T10:05:30Z",
+  "submittedBy": "pharder56k",
+  "publishedAt": "2026-11-22T10:05:30Z",
+  "reviewedAt": "2026-11-22T10:05:30Z"
+}

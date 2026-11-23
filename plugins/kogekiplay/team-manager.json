@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/kogekiplay/paseo-team-manager.git",
-    "commit": "801175e46e73d67a00a2223a808b8a3561fb6877",
-    "tag": "v0.1.0"
+    "commit": "aa7a0c36dd2e70cf6549a8fdb29a74ab3332cd19",
+    "tag": "v0.1.1"
   },
   "repository": {
     "url": "https://github.com/kogekiplay/paseo-team-manager",
-    "commit": "801175e46e73d67a00a2223a808b8a3561fb6877"
+    "commit": "aa7a0c36dd2e70cf6549a8fdb29a74ab3332cd19"
   },
   "categories": [
     "orchestration",
@@ -19,5 +19,5 @@
   "submittedAt": "2026-11-23T04:01:17Z",
   "submittedBy": "kogekiplay",
   "publishedAt": "2026-11-23T04:01:17Z",
-  "reviewedAt": "2026-11-23T04:01:17Z"
+  "reviewedAt": "2026-11-23T06:04:46Z"
 }

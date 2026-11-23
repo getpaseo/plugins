@@ -1,0 +1,14 @@
+{
+  "issue": 3141,
+  "title": "Cheapskate v0.1.11 marketplace update",
+  "submittedBy": "Asherlc",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/Asherlc/paseo-plugins",
+    "ref": "83043fc6da12ff0684645f43c0083d133ac42d7a",
+    "pluginPath": "plugins/cheapskate"
+  },
+  "categories": [
+    "providers"
+  ]
+}

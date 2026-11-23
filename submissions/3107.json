@@ -1,0 +1,15 @@
+{
+  "issue": 3107,
+  "title": "Obsidian Notes",
+  "submittedBy": "CasonMo",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/CasonMo/paseo-obsidian",
+    "ref": "f0fc3f3e17ef61d0f5ab394c6e09158c2f6f0781"
+  },
+  "categories": [
+    "sidebar",
+    "extras",
+    "utils"
+  ]
+}

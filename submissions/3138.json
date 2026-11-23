@@ -1,0 +1,13 @@
+{
+  "issue": 3138,
+  "title": "Antigravity Plus",
+  "submittedBy": "robbin",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/robbin/paseo-antigravity",
+    "ref": "v0.2.2"
+  },
+  "categories": [
+    "providers"
+  ]
+}

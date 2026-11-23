@@ -1,0 +1,15 @@
+{
+  "issue": 3085,
+  "title": "Multica",
+  "submittedBy": "CasonMo",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/CasonMo/paseo-multica"
+  },
+  "categories": [
+    "workspaces",
+    "orchestration",
+    "sidebar",
+    "utils"
+  ]
+}

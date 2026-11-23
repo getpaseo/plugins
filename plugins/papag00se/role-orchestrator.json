@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "@papagoose/role-orchestrator",
-    "version": "0.5.3",
-    "resolved": "https://registry.npmjs.org/@papagoose/role-orchestrator/-/role-orchestrator-0.5.3.tgz",
-    "integrity": "sha512-xB6MC2BLuUykkBYBfbq+g9PdVYmtGs4RwPbCVcFkUrgwkr6g4n9NqCHZjzkse6wbdDIFbESbo2hKSbR7RAQ5Pw=="
+    "version": "0.6.1",
+    "resolved": "https://registry.npmjs.org/@papagoose/role-orchestrator/-/role-orchestrator-0.6.1.tgz",
+    "integrity": "sha512-x/bMbjAQJ1UoS6FeD1ThXays7jPbXX0RQk8NE75xcIjDNrzd9CTYymZhrLGb4SY0lZNhAoLatOzlJJAoUtOtLg=="
   },
   "repository": {
     "url": "https://github.com/papag00se/paseo-role-orchestrator"
@@ -16,7 +16,7 @@
   "submittedAt": "2026-11-19T16:41:06Z",
   "submittedBy": "papag00se",
   "publishedAt": "2026-11-20T22:05:53Z",
-  "reviewedAt": "2026-11-20T22:05:53Z",
+  "reviewedAt": "2026-11-23T06:12:30Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/papag00se/paseo-role-orchestrator/483325563f74e29ad0a6adabad19508c096f552b/docs/media/role-setup.png"

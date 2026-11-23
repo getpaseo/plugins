@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/jasonhnd/paseo-clear-chat.git",
-    "commit": "cfd51a7396b00852f638ad801a4acdb9a16c1054",
-    "tag": "v0.17.2.1"
+    "commit": "0ec80289a33fb9486879b35322f038bf03414940",
+    "tag": "v0.17.3.1"
   },
   "repository": {
     "url": "https://github.com/jasonhnd/paseo-clear-chat",
-    "commit": "cfd51a7396b00852f638ad801a4acdb9a16c1054"
+    "commit": "0ec80289a33fb9486879b35322f038bf03414940"
   },
   "categories": [
     "utils"

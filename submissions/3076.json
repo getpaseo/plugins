@@ -1,0 +1,13 @@
+{
+  "issue": 3076,
+  "title": "Paseo Chinese Localization v0.3.1: Localize subagent and agent pane subtitles",
+  "submittedBy": "kogekiplay",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/kogekiplay/paseo-agent-controls-zh",
+    "ref": "4c68fa47948b4d94dc06dfde42cfdd29327b10c8"
+  },
+  "categories": [
+    "utils"
+  ]
+}

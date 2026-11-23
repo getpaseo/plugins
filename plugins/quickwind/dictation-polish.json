@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-dictation-polish",
-    "version": "0.1.2",
-    "resolved": "https://registry.npmjs.org/paseo-dictation-polish/-/paseo-dictation-polish-0.1.2.tgz",
-    "integrity": "sha512-/m3O0TI8bCgIvdoWNLg5/sV0PgKIFPtLssYbQyMKT5TYL6zPNmCRfE0eHM8maGcug9HCUZinD0CdFzd5mKjxnw=="
+    "version": "0.1.4",
+    "resolved": "https://registry.npmjs.org/paseo-dictation-polish/-/paseo-dictation-polish-0.1.4.tgz",
+    "integrity": "sha512-2ZPsk/5bsnkWOt83BQGLh0OSRjlLJaFhIXSfQ3pQM6LLR1JhbmH0bXyiUOICrspvk3EokUVRNzKnixCvFdKpMA=="
   },
   "repository": {
     "url": "https://github.com/quickwind/paseo-dictation-polish"
@@ -17,5 +17,5 @@
   "submittedAt": "2026-11-23T00:06:17Z",
   "submittedBy": "quickwind",
   "publishedAt": "2026-11-23T00:07:59Z",
-  "reviewedAt": "2026-11-23T04:05:13Z"
+  "reviewedAt": "2026-11-23T16:10:18Z"
 }

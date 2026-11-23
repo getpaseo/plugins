@@ -1,0 +1,21 @@
+{
+  "id": "quickwind/dictation-polish",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-dictation-polish",
+    "version": "0.1.2",
+    "resolved": "https://registry.npmjs.org/paseo-dictation-polish/-/paseo-dictation-polish-0.1.2.tgz",
+    "integrity": "sha512-/m3O0TI8bCgIvdoWNLg5/sV0PgKIFPtLssYbQyMKT5TYL6zPNmCRfE0eHM8maGcug9HCUZinD0CdFzd5mKjxnw=="
+  },
+  "repository": {
+    "url": "https://github.com/quickwind/paseo-dictation-polish"
+  },
+  "categories": [
+    "extras",
+    "utils"
+  ],
+  "submittedAt": "2026-11-23T00:06:17Z",
+  "submittedBy": "quickwind",
+  "publishedAt": "2026-11-23T00:07:59Z",
+  "reviewedAt": "2026-11-23T04:05:13Z"
+}

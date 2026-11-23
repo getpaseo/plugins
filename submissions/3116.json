@@ -1,0 +1,13 @@
+{
+  "issue": 3116,
+  "title": "paseo",
+  "submittedBy": "quynhhtnhust",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/Moyf/paseo-sidechat"
+  },
+  "categories": [
+    "daemon-management",
+    "themes"
+  ]
+}

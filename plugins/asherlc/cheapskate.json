@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/Asherlc/paseo-plugins.git",
-    "commit": "4979f45e3dea90dc1ffe7521abd5beca45e5edae",
-    "tag": "v0.1.9",
+    "commit": "4a089ae0f084dc02c1bcac3072f0597c0f266ba9",
+    "tag": "v0.1.10",
     "pluginPath": "plugins/cheapskate"
   },
   "repository": {
     "url": "https://github.com/Asherlc/paseo-plugins",
-    "commit": "4979f45e3dea90dc1ffe7521abd5beca45e5edae"
+    "commit": "4a089ae0f084dc02c1bcac3072f0597c0f266ba9"
   },
   "categories": [
     "providers"
@@ -17,5 +17,5 @@
   "submittedAt": "2026-11-18T00:31:02Z",
   "submittedBy": "Asherlc",
   "publishedAt": "2026-11-18T01:00:49Z",
-  "reviewedAt": "2026-11-21T18:01:10Z"
+  "reviewedAt": "2026-11-23T02:01:28Z"
 }

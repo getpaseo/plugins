@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/CasonMo/paseo-multica.git",
-    "commit": "3788ca60bedcf11f77927151f1a5bb5863f3a5dd"
+    "commit": "49578ee785ad2da3356bc2ca148aa2a7f1fbb6fe"
   },
   "repository": {
     "url": "https://github.com/CasonMo/paseo-multica",
-    "commit": "3788ca60bedcf11f77927151f1a5bb5863f3a5dd"
+    "commit": "49578ee785ad2da3356bc2ca148aa2a7f1fbb6fe"
   },
   "categories": [
     "workspaces",

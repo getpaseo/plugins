@@ -1,0 +1,14 @@
+{
+  "issue": 3063,
+  "title": "Dictation Polish",
+  "submittedBy": "quickwind",
+  "source": {
+    "kind": "npm",
+    "package": "paseo-dictation-polish",
+    "version": "0.1.0"
+  },
+  "categories": [
+    "extras",
+    "utils"
+  ]
+}

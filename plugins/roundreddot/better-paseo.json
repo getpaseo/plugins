@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/RoundRedDot/better-paseo.git",
-    "commit": "6a273d9957e04c5eecc9de92eac83686a202623c"
+    "commit": "e92f2cffe1e8e20d282dd6851d3224aea1f4db25"
   },
   "repository": {
     "url": "https://github.com/RoundRedDot/better-paseo",
-    "commit": "6a273d9957e04c5eecc9de92eac83686a202623c"
+    "commit": "e92f2cffe1e8e20d282dd6851d3224aea1f4db25"
   },
   "categories": [
     "utils"
@@ -15,7 +15,7 @@
   "submittedAt": "2026-10-19T08:37:12Z",
   "submittedBy": "RRD-dev",
   "publishedAt": "2026-10-19T08:39:57Z",
-  "reviewedAt": "2026-11-21T10:16:20Z",
+  "reviewedAt": "2026-11-24T00:37:51Z",
   "listing": {
     "media": [
       "https://cdn.jsdelivr.net/gh/RoundRedDot/better-paseo-assets@3c57b6ea8f8be3e281ad0410d1ec9c53eb30708b/promo-v14/videos/tasks-web.mp4",

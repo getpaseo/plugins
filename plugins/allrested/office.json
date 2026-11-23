@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-office",
-    "version": "0.2.1",
-    "resolved": "https://registry.npmjs.org/paseo-office/-/paseo-office-0.2.1.tgz",
-    "integrity": "sha512-WmcFOgNxmEFQjyiPEg2qHTqUsl5UIHEOj6ltljOpvVmgpqdXNtIpppC0115QbMn6rf5TpoQ7m2Bv3Qm7W//Qcg=="
+    "version": "0.2.10",
+    "resolved": "https://registry.npmjs.org/paseo-office/-/paseo-office-0.2.10.tgz",
+    "integrity": "sha512-JRsmn723XJHTvz/p8GHOVrl1InMr7NR6HqMDtpg94w1L0wnQH3TVGN19gzkdM/333PSIgndUtAug0cjZKdg03w=="
   },
   "repository": {
     "url": "https://github.com/allrested/paseo-office"
@@ -16,7 +16,7 @@
   "submittedAt": "2026-11-19T02:04:22Z",
   "submittedBy": "allrested",
   "publishedAt": "2026-11-19T03:05:07Z",
-  "reviewedAt": "2026-11-22T14:02:22Z",
+  "reviewedAt": "2026-11-23T16:08:16Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/allrested/paseo-office/619d41a5100589efdec55ab373fed93fb7825d1d/docs/fullscreen-office.png"

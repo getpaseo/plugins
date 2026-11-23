@@ -1,0 +1,21 @@
+{
+  "id": "casonmo/obsidian",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/CasonMo/paseo-obsidian.git",
+    "commit": "d4f691db7f7736fc9e7cbb626abeef51b64d090f"
+  },
+  "repository": {
+    "url": "https://github.com/CasonMo/paseo-obsidian",
+    "commit": "d4f691db7f7736fc9e7cbb626abeef51b64d090f"
+  },
+  "categories": [
+    "sidebar",
+    "extras",
+    "utils"
+  ],
+  "submittedAt": "2026-11-23T14:03:35Z",
+  "submittedBy": "CasonMo",
+  "publishedAt": "2026-11-23T14:03:35Z",
+  "reviewedAt": "2026-11-23T14:03:35Z"
+}

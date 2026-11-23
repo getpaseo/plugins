@@ -1,0 +1,20 @@
+{
+  "id": "kogekiplay/thinking-translate",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/kogekiplay/paseo-thinking-translate.git",
+    "commit": "afe4b698183fe7f219f92364c4daddbb7578ecc3",
+    "tag": "v0.1.0"
+  },
+  "repository": {
+    "url": "https://github.com/kogekiplay/paseo-thinking-translate",
+    "commit": "afe4b698183fe7f219f92364c4daddbb7578ecc3"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-23T04:03:16Z",
+  "submittedBy": "kogekiplay",
+  "publishedAt": "2026-11-23T04:03:16Z",
+  "reviewedAt": "2026-11-23T04:03:16Z"
+}

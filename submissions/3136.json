@@ -1,0 +1,13 @@
+{
+  "issue": 3136,
+  "title": "Conversation folders Plus",
+  "submittedBy": "xiaobaifly7",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/xiaobaifly7/paseo-conversation-folders",
+    "ref": "de596171ce59896dd16b086f875101b2fd848b66"
+  },
+  "categories": [
+    "sidebar"
+  ]
+}

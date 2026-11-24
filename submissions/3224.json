@@ -1,0 +1,15 @@
+{
+  "issue": 3224,
+  "title": "Paseo Delegate",
+  "submittedBy": "dmatora",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/dmatora/paseo-delegate",
+    "ref": "89145ead4f8a888689ec0369b548fe53d6b617b2"
+  },
+  "categories": [
+    "orchestration",
+    "providers",
+    "utils"
+  ]
+}

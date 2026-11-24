@@ -1,0 +1,14 @@
+{
+  "issue": 3207,
+  "title": "FanFrame",
+  "submittedBy": "AngleNaris",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/AngleNaris/paseo-fanframe"
+  },
+  "categories": [
+    "themes",
+    "sidebar",
+    "utils"
+  ]
+}

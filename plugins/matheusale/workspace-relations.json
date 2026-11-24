@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/matheusAle/paseo-workspace-relations.git",
-    "commit": "9c016aaf6c7b6f23f9f9bf79c47556174b608b15"
+    "commit": "3d6258b4a2e4d382d1b63a6f5f7297eb450d0120"
   },
   "repository": {
     "url": "https://github.com/matheusAle/paseo-workspace-relations",
-    "commit": "9c016aaf6c7b6f23f9f9bf79c47556174b608b15"
+    "commit": "3d6258b4a2e4d382d1b63a6f5f7297eb450d0120"
   },
   "categories": [
     "sidebar"
@@ -15,5 +15,5 @@
   "submittedAt": "2026-11-23T16:15:14Z",
   "submittedBy": "matheusAle",
   "publishedAt": "2026-11-23T18:02:48Z",
-  "reviewedAt": "2026-11-23T18:02:48Z"
+  "reviewedAt": "2026-11-24T16:06:29Z"
 }

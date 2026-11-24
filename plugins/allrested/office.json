@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-office",
-    "version": "0.2.11",
-    "resolved": "https://registry.npmjs.org/paseo-office/-/paseo-office-0.2.11.tgz",
-    "integrity": "sha512-3j9oCMFvYm8m3lLIZXVjC2lalBBoaYELmTF+gLg7JBwLL755xlNWPBZbbe09sAWFIvieP8eK59mBCUdF3YqeVA=="
+    "version": "0.2.12",
+    "resolved": "https://registry.npmjs.org/paseo-office/-/paseo-office-0.2.12.tgz",
+    "integrity": "sha512-ZHPulhW1ISFwHUHY5yd6k/ac2+YBA560MVpOb+JzjjCY+1/B0W7lDgfGwXTO9Za5dtIS7TYJlRCUZ/E2YNy86Q=="
   },
   "repository": {
     "url": "https://github.com/allrested/paseo-office"

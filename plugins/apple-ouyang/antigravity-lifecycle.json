@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/apple-ouyang/paseo-antigravity-lifecycle.git",
-    "commit": "1c0e03e99d390cec2c06b93f0f067ac27877b2ad"
+    "commit": "9d1a0906c4c102aaeb8db9897f9bdaafa0aa0d0f"
   },
   "repository": {
     "url": "https://github.com/apple-ouyang/paseo-antigravity-lifecycle",
-    "commit": "1c0e03e99d390cec2c06b93f0f067ac27877b2ad"
+    "commit": "9d1a0906c4c102aaeb8db9897f9bdaafa0aa0d0f"
   },
   "categories": [
     "providers",

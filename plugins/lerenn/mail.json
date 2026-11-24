@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/lerenn/paseo-mail.git",
-    "commit": "705863cba7b0ff6e72e571cb0a0d2499f308a605",
-    "tag": "v0.2.12"
+    "commit": "2a4bc0fdad03b9db137e24e928ea93c8061933b3",
+    "tag": "v0.2.17"
   },
   "repository": {
     "url": "https://github.com/lerenn/paseo-mail",
-    "commit": "705863cba7b0ff6e72e571cb0a0d2499f308a605"
+    "commit": "2a4bc0fdad03b9db137e24e928ea93c8061933b3"
   },
   "categories": [
     "orchestration"
@@ -16,5 +16,5 @@
   "submittedAt": "2026-11-11T12:02:19Z",
   "submittedBy": "lerenn",
   "publishedAt": "2026-11-11T12:02:19Z",
-  "reviewedAt": "2026-11-24T14:06:21Z"
+  "reviewedAt": "2026-11-24T20:03:15Z"
 }

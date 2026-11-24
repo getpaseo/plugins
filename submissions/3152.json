@@ -1,0 +1,13 @@
+{
+  "issue": 3152,
+  "title": "Codex Daybreak",
+  "submittedBy": "maci0",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/maci0/paseo-daybreak",
+    "ref": "221f9a423821eb3534beaa3c6422794793d1e48c"
+  },
+  "categories": [
+    "extras"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "jjayjackie/session-manager",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/jjayjackie/SessionManager.git",
+    "commit": "cc9e4aaf5942d41b40d6794655595ac400a722c1"
+  },
+  "repository": {
+    "url": "https://github.com/jjayjackie/SessionManager",
+    "commit": "cc9e4aaf5942d41b40d6794655595ac400a722c1"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-16T16:01:27Z",
+  "submittedBy": "jjayjackie",
+  "publishedAt": "2026-11-18T08:04:32Z",
+  "reviewedAt": "2026-11-24T20:05:51Z"
+}

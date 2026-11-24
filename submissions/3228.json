@@ -1,0 +1,14 @@
+{
+  "issue": 3228,
+  "title": "GitHub Proxy",
+  "submittedBy": "lerenn",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/lerenn/paseo-github-proxy",
+    "ref": "v0.11.3"
+  },
+  "categories": [
+    "git",
+    "utils"
+  ]
+}

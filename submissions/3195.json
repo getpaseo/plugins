@@ -1,0 +1,14 @@
+{
+  "issue": 3195,
+  "title": "Excalidraw",
+  "submittedBy": "lerenn",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/lerenn/paseo-excalidraw",
+    "ref": "v0.2.0"
+  },
+  "categories": [
+    "workspaces",
+    "extras"
+  ]
+}

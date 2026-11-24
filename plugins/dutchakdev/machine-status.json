@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-plugin-machine-status",
-    "version": "0.4.0",
-    "resolved": "https://registry.npmjs.org/paseo-plugin-machine-status/-/paseo-plugin-machine-status-0.4.0.tgz",
-    "integrity": "sha512-k2QdHqbSCLsnEr+kqWTjqSqV9UssDUopu1sD5k8XXvYtJZz2Yi917+BP1mtq+jbpgjgXPVMkMvSSHzZXYFZ6Hg=="
+    "version": "0.4.1",
+    "resolved": "https://registry.npmjs.org/paseo-plugin-machine-status/-/paseo-plugin-machine-status-0.4.1.tgz",
+    "integrity": "sha512-DCm2ehYH+v5qQq40ZEOZ9CFP5zefHJJC7boM6VhfHnAommO4v2DVD+KwnBz4pCgAnUWmdts9kRDQXzJhjG6CKw=="
   },
   "repository": {
     "url": "https://github.com/dutchakdev/paseo-plugin-machine-status",
-    "commit": "623eff7da45763537742bd7f7ea749213f85b05f"
+    "commit": "e11e9720b82476d66ffe4f9dc5cfaf6f06c600a3"
   },
   "categories": [
     "daemon-management",
@@ -18,7 +18,7 @@
   "submittedAt": "2026-10-15T18:15:32Z",
   "submittedBy": "dutchakdev",
   "publishedAt": "2026-10-22T14:02:57Z",
-  "reviewedAt": "2026-11-08T21:52:09Z",
+  "reviewedAt": "2026-11-24T13:35:56Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/dutchakdev/paseo-plugin-machine-status/623eff7da45763537742bd7f7ea749213f85b05f/docs/banner.png",

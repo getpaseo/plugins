@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "steno-paseo",
-    "version": "0.1.4",
-    "resolved": "https://registry.npmjs.org/steno-paseo/-/steno-paseo-0.1.4.tgz",
-    "integrity": "sha512-GwmtbawofXNdimbcUMofbCEYD0/ZHqDysOGFAX07gGWp3XfzLR/urEael50eF9Yd/Nx22dOWA0N2Pv6a98qkgg=="
+    "version": "0.1.6",
+    "resolved": "https://registry.npmjs.org/steno-paseo/-/steno-paseo-0.1.6.tgz",
+    "integrity": "sha512-4q4pyMn7fExnKQOEizp6L0/d0gIuGdpbv7m1pk7eghIEGxKBhhBf1WxCdMd5vHjc2wDY3+NX8UpMTWsi1cAcrg=="
   },
   "repository": {
     "url": "https://github.com/rizanw/steno-spec/tree/HEAD/packages/paseo",
-    "commit": "e458cc6dd0fcf9c8fd10d15e3f28ad3780c39d7a"
+    "commit": "2c6e23ef8fb6ab8d3f560513f3b1f4659b119c9c"
   },
   "categories": [
     "orchestration",
@@ -18,5 +18,5 @@
   "submittedAt": "2026-11-22T11:30:14Z",
   "submittedBy": "rizanw",
   "publishedAt": "2026-11-22T18:06:06Z",
-  "reviewedAt": "2026-11-22T18:06:06Z"
+  "reviewedAt": "2026-11-23T16:11:02Z"
 }

@@ -1,0 +1,23 @@
+{
+  "id": "yannelli/linear",
+  "artifact": {
+    "kind": "npm",
+    "package": "@yannelli/paseo-linear-plugin",
+    "version": "2.1.2",
+    "resolved": "https://registry.npmjs.org/@yannelli/paseo-linear-plugin/-/paseo-linear-plugin-2.1.2.tgz",
+    "integrity": "sha512-ikymoG9a7LwVa8KFZS9fbGNMaLkaI7bO4SWvg86vHfEyrhwfTToAUQ4ZQvhp2Qo9WVj1Jb5DV7wsGiPePYqYgA=="
+  },
+  "repository": {
+    "url": "https://github.com/yannelli/paseo-linear-plugin",
+    "commit": "e4fb2b13bebdbd5ae3c5b64b3fc3504365e0cbda"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-24T03:44:51Z",
+  "submittedBy": "yannelli",
+  "publishedAt": "2026-11-24T08:04:47Z",
+  "reviewedAt": "2026-11-24T08:04:47Z"
+}

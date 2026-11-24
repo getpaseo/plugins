@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/zhjiang22/paseo-plugins.git",
-    "commit": "fab1e1f50996ba83664e1212f306274c1b87440c",
+    "commit": "3b7b524ff8a11c0bedbd09670f602c9e47cd0fcd",
     "pluginPath": "agent-observatory"
   },
   "repository": {
     "url": "https://github.com/zhjiang22/paseo-plugins",
-    "commit": "fab1e1f50996ba83664e1212f306274c1b87440c"
+    "commit": "3b7b524ff8a11c0bedbd09670f602c9e47cd0fcd"
   },
   "categories": [
     "sidebar",
@@ -17,5 +17,5 @@
   "submittedAt": "2026-10-10",
   "submittedBy": "zhjiang22",
   "publishedAt": "2026-10-10",
-  "reviewedAt": "2026-11-16T13:05:57Z"
+  "reviewedAt": "2026-11-23T10:07:11Z"
 }

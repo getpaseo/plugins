@@ -1,0 +1,12 @@
+{
+  "issue": 3183,
+  "title": "OpenCode Copilot usage",
+  "submittedBy": "Grzesie2k",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/Grzesie2k/paseo-opencode-copilot-usage"
+  },
+  "categories": [
+    "utils"
+  ]
+}

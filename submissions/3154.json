@@ -1,0 +1,14 @@
+{
+  "issue": 3154,
+  "title": "Alias",
+  "submittedBy": "maci0",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/maci0/paseo-alias",
+    "ref": "684dc2d7838c663a0dcedaebdbd01ac3f693ed9d"
+  },
+  "categories": [
+    "utils",
+    "extras"
+  ]
+}

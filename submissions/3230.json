@@ -1,0 +1,13 @@
+{
+  "issue": 3230,
+  "title": "Mail",
+  "submittedBy": "app/louis-agents",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/lerenn/paseo-mail",
+    "ref": "v0.2.17"
+  },
+  "categories": [
+    "orchestration"
+  ]
+}

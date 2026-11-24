@@ -1,0 +1,20 @@
+{
+  "id": "versun/turnline",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/versun/paseo-turnline.git",
+    "commit": "a45e75400b0a77a22298ca9edd19d933277a015d"
+  },
+  "repository": {
+    "url": "https://github.com/versun/paseo-turnline",
+    "commit": "a45e75400b0a77a22298ca9edd19d933277a015d"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-11-24T22:04:50Z",
+  "submittedBy": "versun",
+  "publishedAt": "2026-11-24T22:04:50Z",
+  "reviewedAt": "2026-11-24T22:04:50Z"
+}

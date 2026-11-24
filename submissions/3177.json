@@ -1,0 +1,14 @@
+{
+  "issue": 3177,
+  "title": "Update browser-prompt to 0.25.0",
+  "submittedBy": "app/midego-paseo-agent",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/midego1/paseo-browser-prompt",
+    "ref": "da2de1bb8bf1f3a6a86fc4050c77dc55522b9fe1"
+  },
+  "categories": [
+    "orchestration",
+    "extras"
+  ]
+}

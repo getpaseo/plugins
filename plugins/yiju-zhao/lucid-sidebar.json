@@ -1,0 +1,19 @@
+{
+  "id": "yiju-zhao/lucid-sidebar",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/yiju-zhao/paseo-lucid-sidebar.git",
+    "commit": "e039f0269e9f3c8a8ed36dbac5fb387a9dee3942"
+  },
+  "repository": {
+    "url": "https://github.com/yiju-zhao/paseo-lucid-sidebar",
+    "commit": "e039f0269e9f3c8a8ed36dbac5fb387a9dee3942"
+  },
+  "categories": [
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-24T00:02:33Z",
+  "submittedBy": "yiju-zhao",
+  "publishedAt": "2026-11-24T00:02:33Z",
+  "reviewedAt": "2026-11-24T00:02:33Z"
+}

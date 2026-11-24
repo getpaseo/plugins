@@ -1,0 +1,14 @@
+{
+  "issue": 3243,
+  "title": "Host screen",
+  "submittedBy": "crazydumbbell",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/crazydumbbell/paseo-screen"
+  },
+  "categories": [
+    "workspaces",
+    "extras",
+    "utils"
+  ]
+}

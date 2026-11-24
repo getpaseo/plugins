@@ -1,0 +1,20 @@
+{
+  "id": "lmgarret/keybindings",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/lmgarret/paseo-keybindings.git",
+    "commit": "ac4f024d804577c27dff2decb20ff484f73a7e0c"
+  },
+  "repository": {
+    "url": "https://github.com/lmgarret/paseo-keybindings",
+    "commit": "ac4f024d804577c27dff2decb20ff484f73a7e0c"
+  },
+  "categories": [
+    "extras",
+    "utils"
+  ],
+  "submittedAt": "2026-11-24T12:01:09Z",
+  "submittedBy": "lmgarret",
+  "publishedAt": "2026-11-24T12:01:09Z",
+  "reviewedAt": "2026-11-24T12:01:09Z"
+}

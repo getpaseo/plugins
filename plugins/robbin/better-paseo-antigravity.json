@@ -3,11 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/robbin/paseo-antigravity.git",
-    "commit": "3e13dadbacc7417fd7aa24b8ccdca41062bb5e46"
+    "commit": "273438a35f62aaca815a0a100ee627e7ac6ceb43",
+    "tag": "v0.3.1"
   },
   "repository": {
     "url": "https://github.com/robbin/paseo-antigravity",
-    "commit": "3e13dadbacc7417fd7aa24b8ccdca41062bb5e46"
+    "commit": "273438a35f62aaca815a0a100ee627e7ac6ceb43"
   },
   "categories": [
     "providers"
@@ -15,5 +16,5 @@
   "submittedAt": "2026-11-24T04:07:40Z",
   "submittedBy": "robbin",
   "publishedAt": "2026-11-24T04:07:40Z",
-  "reviewedAt": "2026-11-24T04:07:40Z"
+  "reviewedAt": "2026-11-24T14:07:38Z"
 }

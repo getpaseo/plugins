@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/sbhas2k/paseo-plugins.git",
-    "commit": "21d77dfb454bc9937ade32dc543bfb5abfaaecf6",
+    "commit": "2c692ccc47eb5db49b36b25683d17ec5bc1fcff1",
     "pluginPath": "context-compact"
   },
   "repository": {
     "url": "https://github.com/sbhas2k/paseo-plugins",
-    "commit": "21d77dfb454bc9937ade32dc543bfb5abfaaecf6"
+    "commit": "2c692ccc47eb5db49b36b25683d17ec5bc1fcff1"
   },
   "categories": [
     "providers",

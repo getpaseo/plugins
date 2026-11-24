@@ -1,0 +1,15 @@
+{
+  "issue": 3160,
+  "title": "Linear",
+  "submittedBy": "yannelli",
+  "source": {
+    "kind": "npm",
+    "package": "@yannelli/paseo-linear-plugin",
+    "version": "2.1.0"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces",
+    "sidebar"
+  ]
+}

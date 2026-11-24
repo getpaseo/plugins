@@ -1,0 +1,19 @@
+{
+  "id": "grzesie2k/opencode-copilot-usage",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/Grzesie2k/paseo-opencode-copilot-usage.git",
+    "commit": "62c2609b3520e0d0b6703151a49670168d9d9408"
+  },
+  "repository": {
+    "url": "https://github.com/Grzesie2k/paseo-opencode-copilot-usage",
+    "commit": "62c2609b3520e0d0b6703151a49670168d9d9408"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-24T14:04:35Z",
+  "submittedBy": "Grzesie2k",
+  "publishedAt": "2026-11-24T14:04:35Z",
+  "reviewedAt": "2026-11-24T14:04:35Z"
+}

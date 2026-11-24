@@ -1,0 +1,12 @@
+{
+  "issue": 3240,
+  "title": "Update session-manager to 0.2.2",
+  "submittedBy": "jjayjackie",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/jjayjackie/SessionManager"
+  },
+  "categories": [
+    "utils"
+  ]
+}

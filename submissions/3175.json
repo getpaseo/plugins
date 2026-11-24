@@ -1,0 +1,14 @@
+{
+  "issue": 3175,
+  "title": "Update IBM Bob to 9598b92",
+  "submittedBy": "gillesdandrea",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/gillesdandrea/paseo-plugins",
+    "ref": "9598b92e50f9c04ff3fcfedf3a1b5d85422a0056",
+    "pluginPath": "plugins/ibm-bob-provider"
+  },
+  "categories": [
+    "providers"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "issue": 3173,
+  "title": "Task Inbox",
+  "submittedBy": "kelvicthrust",
+  "source": {
+    "kind": "npm",
+    "package": "@kelvicthrust/paseo-task-inbox"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ]
+}

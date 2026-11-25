@@ -20,6 +20,8 @@ Memory and briefs distinguish mission context from lasting project rules, use bo
 
 Request-size thresholds can ask a Worker to finish and report remaining work, then create a continuation Worker with the prior report, open questions and links. Structural waits hold routine nudges until their dependency resolves. Review budgets use an owner decision when their cap is reached. Settings control these automation limits.
 
+By default, Beads Management archives finished Workers and Reviewers after three days without activity. It checks for pending permissions and unfinished requests before archiving. Archived conversations stay in Paseo. Turn this off or change the idle period in **Settings → Coordination**.
+
 Setup on Tools & skills shows each operation and asks for confirmation before installing:
 
 - Beads tools `br` and `bv`: Homebrew packages from `dicklesworthstone/tap`, or GitHub-hosted install scripts for `Dicklesworthstone/beads_rust` and `Dicklesworthstone/beads_viewer` when Homebrew is unavailable.

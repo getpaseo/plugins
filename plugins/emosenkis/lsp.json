@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/emosenkis/paseo-plugins.git",
-    "commit": "d257187ea39d692ff4cffda1cf74468dd6b3e6c7",
+    "commit": "1377d905e3603a783b68099b49d5a97a41516f00",
     "pluginPath": "plugins/lsp"
   },
   "repository": {
     "url": "https://github.com/emosenkis/paseo-plugins",
-    "commit": "d257187ea39d692ff4cffda1cf74468dd6b3e6c7"
+    "commit": "1377d905e3603a783b68099b49d5a97a41516f00"
   },
   "categories": [
     "extras",

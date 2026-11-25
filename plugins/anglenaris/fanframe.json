@@ -1,0 +1,21 @@
+{
+  "id": "anglenaris/fanframe",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/AngleNaris/paseo-fanframe.git",
+    "commit": "7c24c9164eba63238e7b15ce655691ffe7d5d693"
+  },
+  "repository": {
+    "url": "https://github.com/AngleNaris/paseo-fanframe",
+    "commit": "7c24c9164eba63238e7b15ce655691ffe7d5d693"
+  },
+  "categories": [
+    "themes",
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-11-25T02:25:51Z",
+  "submittedBy": "AngleNaris",
+  "publishedAt": "2026-11-25T02:25:51Z",
+  "reviewedAt": "2026-11-25T02:25:51Z"
+}

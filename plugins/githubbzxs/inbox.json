@@ -1,0 +1,25 @@
+{
+  "id": "githubbzxs/inbox",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/githubbzxs/paseo-plugin-inbox.git",
+    "commit": "5ab4e737d63977dfae92735323be43349ed934c4"
+  },
+  "repository": {
+    "url": "https://github.com/githubbzxs/paseo-plugin-inbox",
+    "commit": "5ab4e737d63977dfae92735323be43349ed934c4"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-21T08:01:29Z",
+  "submittedBy": "githubbzxs",
+  "publishedAt": "2026-11-21T08:01:29Z",
+  "reviewedAt": "2026-11-22T04:03:42Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/githubbzxs/paseo-plugin-inbox/c588a4786cbea2d3b2dd0b49f03f329d16d2aae3/docs/screenshot.png"
+    ]
+  }
+}

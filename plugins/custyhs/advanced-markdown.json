@@ -17,5 +17,16 @@
   "submittedAt": "2026-11-03T04:35:33Z",
   "submittedBy": "custyhs",
   "publishedAt": "2026-11-03T04:40:17Z",
-  "reviewedAt": "2026-11-20T14:08:16Z"
+  "reviewedAt": "2026-11-20T14:08:16Z",
+  "listing": {
+    "icon": "https://raw.githubusercontent.com/custyhs/paseo-advanced-markdown/9d3867f7c8d7e61ca389b3f8a7761cfec3b1f2ed/images/icon.png",
+    "media": [
+      "https://raw.githubusercontent.com/custyhs/paseo-advanced-markdown/efa9e8abf6c2f6e015e7581857ea10ad20dee60c/images/01-formulas.png",
+      "https://raw.githubusercontent.com/custyhs/paseo-advanced-markdown/efa9e8abf6c2f6e015e7581857ea10ad20dee60c/images/02-formula-viewer.png",
+      "https://raw.githubusercontent.com/custyhs/paseo-advanced-markdown/efa9e8abf6c2f6e015e7581857ea10ad20dee60c/images/03-show-original-fork.png",
+      "https://raw.githubusercontent.com/custyhs/paseo-advanced-markdown/efa9e8abf6c2f6e015e7581857ea10ad20dee60c/images/04-tables.png",
+      "https://raw.githubusercontent.com/custyhs/paseo-advanced-markdown/efa9e8abf6c2f6e015e7581857ea10ad20dee60c/images/05-math-and-mermaid.png",
+      "https://raw.githubusercontent.com/custyhs/paseo-advanced-markdown/efa9e8abf6c2f6e015e7581857ea10ad20dee60c/images/06-module-settings.png"
+    ]
+  }
 }

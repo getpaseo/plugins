@@ -1,0 +1,22 @@
+{
+  "id": "devbrother2024/coordinator-board",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/devbrother2024/paseo-coordinator-board.git",
+    "commit": "2e2ac9416d8626917fdb8a8a59abb9e029b1857a"
+  },
+  "repository": {
+    "url": "https://github.com/devbrother2024/paseo-coordinator-board",
+    "commit": "2e2ac9416d8626917fdb8a8a59abb9e029b1857a"
+  },
+  "categories": [
+    "orchestration",
+    "git",
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-22T08:07:44Z",
+  "submittedBy": "devbrother2024",
+  "publishedAt": "2026-11-22T08:07:44Z",
+  "reviewedAt": "2026-11-22T14:04:06Z"
+}

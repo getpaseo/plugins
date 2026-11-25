@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/zwmmm/git-workspace.git",
-    "commit": "863d05ee3bc766d007200a70c97ad7b7310e0073",
-    "tag": "v1.2.4"
+    "commit": "8281260e7dd4bbadb52d4023d1a64655eaf9502d",
+    "tag": "v1.3.2"
   },
   "repository": {
     "url": "https://github.com/zwmmm/git-workspace",
-    "commit": "863d05ee3bc766d007200a70c97ad7b7310e0073"
+    "commit": "8281260e7dd4bbadb52d4023d1a64655eaf9502d"
   },
   "categories": [
     "git",
@@ -18,7 +18,7 @@
   "submittedAt": "2026-10-10",
   "submittedBy": "zwmmm",
   "publishedAt": "2026-10-10",
-  "reviewedAt": "2026-11-25T08:03:05Z",
+  "reviewedAt": "2026-11-25T16:02:25Z",
   "listing": {
     "name": "Git workspace"
   }

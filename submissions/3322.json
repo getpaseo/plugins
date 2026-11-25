@@ -1,0 +1,14 @@
+{
+  "issue": 3322,
+  "title": "Walkthrough",
+  "submittedBy": "T-Zahil",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/T-Zahil/paseo-walkthrough",
+    "ref": "v1.0.0"
+  },
+  "categories": [
+    "git",
+    "workspaces"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "issue": 3277,
+  "title": "Copy on Select",
+  "submittedBy": "koh-murakami-ai",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/koh-murakami-ai/paseo-copy-on-select"
+  },
+  "categories": [
+    "utils"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "kogekiplay/team-manager",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/kogekiplay/paseo-team-manager.git",
+    "commit": "4c1ad35500e5187c15b5f66235257e75353129a3",
+    "tag": "v0.2.2"
+  },
+  "repository": {
+    "url": "https://github.com/kogekiplay/paseo-team-manager",
+    "commit": "4c1ad35500e5187c15b5f66235257e75353129a3"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces",
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-11-23T04:01:17Z",
+  "submittedBy": "kogekiplay",
+  "publishedAt": "2026-11-23T04:01:17Z",
+  "reviewedAt": "2026-11-23T06:04:46Z"
+}

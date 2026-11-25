@@ -1,32 +1,23 @@
 {
   "id": "supermomonga/canvas",
   "artifact": {
-    "kind": "git",
-    "remote": "https://github.com/supermomonga/paseo-plugin-canvas.git",
-    "commit": "746aa1b927b656e7e2e9fa870ea2227b7997f979",
-    "tag": "v0.1.0"
+    "kind": "npm",
+    "package": "paseo-canvas",
+    "version": "0.3.1",
+    "resolved": "https://registry.npmjs.org/paseo-canvas/-/paseo-canvas-0.3.1.tgz",
+    "integrity": "sha512-cw9N0sa1hxwV/IUYd4V/kPsbk0FLg69QeEV0MgRy+IW9LXjY8BljbgBSKfRN36w4YhbeOY+3FPgHPrnCB/R/sA=="
   },
   "repository": {
-    "url": "https://github.com/supermomonga/paseo-plugin-canvas",
-    "commit": "746aa1b927b656e7e2e9fa870ea2227b7997f979"
+    "url": "https://github.com/supermomonga/paseo-plugin-canvas"
   },
   "categories": [
     "orchestration",
+    "workspaces",
     "extras",
     "utils"
   ],
   "submittedAt": "2026-10-09",
   "submittedBy": "supermomonga",
   "publishedAt": "2026-10-09",
-  "reviewedAt": "2026-10-09",
-  "listing": {
-    "name": "Canvas",
-    "media": [
-      "https://raw.githubusercontent.com/supermomonga/paseo-plugin-canvas/746aa1b927b656e7e2e9fa870ea2227b7997f979/images/1.png",
-      "https://raw.githubusercontent.com/supermomonga/paseo-plugin-canvas/746aa1b927b656e7e2e9fa870ea2227b7997f979/images/2.png",
-      "https://raw.githubusercontent.com/supermomonga/paseo-plugin-canvas/746aa1b927b656e7e2e9fa870ea2227b7997f979/images/3.png",
-      "https://raw.githubusercontent.com/supermomonga/paseo-plugin-canvas/746aa1b927b656e7e2e9fa870ea2227b7997f979/images/4.png"
-    ],
-    "description": "Lets you write, preview, and review Markdown documents with agents in a shared workspace panel."
-  }
+  "reviewedAt": "2026-11-24T18:08:54Z"
 }

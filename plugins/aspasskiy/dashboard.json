@@ -1,0 +1,20 @@
+{
+  "id": "aspasskiy/dashboard",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/aspasskiy/paseo-dashboard.git",
+    "commit": "a86f48d9ae3d446025371e56985c5936f910a27b"
+  },
+  "repository": {
+    "url": "https://github.com/aspasskiy/paseo-dashboard",
+    "commit": "a86f48d9ae3d446025371e56985c5936f910a27b"
+  },
+  "categories": [
+    "extras",
+    "utils"
+  ],
+  "submittedAt": "2026-11-24T10:04:40Z",
+  "submittedBy": "aspasskiy",
+  "publishedAt": "2026-11-24T10:04:40Z",
+  "reviewedAt": "2026-11-24T10:04:40Z"
+}

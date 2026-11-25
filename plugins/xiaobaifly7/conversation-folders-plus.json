@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/xiaobaifly7/paseo-conversation-folders.git",
-    "commit": "f9190bfd2a449193325bbb5fb3611f6e93eed780"
+    "commit": "c63242aac557bbc519a9cbeebde36efa501f036f"
   },
   "repository": {
     "url": "https://github.com/xiaobaifly7/paseo-conversation-folders",
-    "commit": "f9190bfd2a449193325bbb5fb3611f6e93eed780"
+    "commit": "c63242aac557bbc519a9cbeebde36efa501f036f"
   },
   "categories": [
     "sidebar"
@@ -15,25 +15,5 @@
   "submittedAt": "2026-11-23T17:11:37Z",
   "submittedBy": "xiaobaifly7",
   "publishedAt": "2026-11-23T18:01:31Z",
-  "reviewedAt": "2026-11-24T20:02:56Z",
-  "listing": {
-    "media": [
-      "https://raw.githubusercontent.com/xiaobaifly7/paseo-conversation-folders/f9190bfd2a449193325bbb5fb3611f6e93eed780/assets/screenshots/sidebar-desktop.png",
-      "https://raw.githubusercontent.com/xiaobaifly7/paseo-conversation-folders/f9190bfd2a449193325bbb5fb3611f6e93eed780/assets/screenshots/sidebar-dark.png",
-      "https://raw.githubusercontent.com/xiaobaifly7/paseo-conversation-folders/f9190bfd2a449193325bbb5fb3611f6e93eed780/assets/screenshots/sidebar-zh-cn.png",
-      "https://raw.githubusercontent.com/xiaobaifly7/paseo-conversation-folders/f9190bfd2a449193325bbb5fb3611f6e93eed780/assets/screenshots/sidebar-phone.png",
-      "https://raw.githubusercontent.com/xiaobaifly7/paseo-conversation-folders/f9190bfd2a449193325bbb5fb3611f6e93eed780/assets/screenshots/new-folder-menu.png",
-      "https://raw.githubusercontent.com/xiaobaifly7/paseo-conversation-folders/f9190bfd2a449193325bbb5fb3611f6e93eed780/assets/screenshots/new-folder-input.png",
-      "https://raw.githubusercontent.com/xiaobaifly7/paseo-conversation-folders/f9190bfd2a449193325bbb5fb3611f6e93eed780/assets/screenshots/picker-current-layout.png",
-      "https://raw.githubusercontent.com/xiaobaifly7/paseo-conversation-folders/f9190bfd2a449193325bbb5fb3611f6e93eed780/assets/screenshots/picker-original-sources.png",
-      "https://raw.githubusercontent.com/xiaobaifly7/paseo-conversation-folders/f9190bfd2a449193325bbb5fb3611f6e93eed780/assets/screenshots/independent-work-tab.png",
-      "https://raw.githubusercontent.com/xiaobaifly7/paseo-conversation-folders/f9190bfd2a449193325bbb5fb3611f6e93eed780/assets/screenshots/independent-design-tab.png",
-      "https://raw.githubusercontent.com/xiaobaifly7/paseo-conversation-folders/f9190bfd2a449193325bbb5fb3611f6e93eed780/assets/screenshots/project-appearance.png",
-      "https://raw.githubusercontent.com/xiaobaifly7/paseo-conversation-folders/f9190bfd2a449193325bbb5fb3611f6e93eed780/assets/screenshots/icon-picker.png",
-      "https://raw.githubusercontent.com/xiaobaifly7/paseo-conversation-folders/f9190bfd2a449193325bbb5fb3611f6e93eed780/assets/screenshots/display-and-loading.png",
-      "https://raw.githubusercontent.com/xiaobaifly7/paseo-conversation-folders/f9190bfd2a449193325bbb5fb3611f6e93eed780/assets/screenshots/conversation-actions.png",
-      "https://raw.githubusercontent.com/xiaobaifly7/paseo-conversation-folders/f9190bfd2a449193325bbb5fb3611f6e93eed780/assets/screenshots/collapse-all.png",
-      "https://raw.githubusercontent.com/xiaobaifly7/paseo-conversation-folders/f9190bfd2a449193325bbb5fb3611f6e93eed780/assets/screenshots/drag-conversation.png"
-    ]
-  }
+  "reviewedAt": "2026-11-25T08:07:38Z"
 }

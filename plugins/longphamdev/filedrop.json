@@ -1,0 +1,20 @@
+{
+  "id": "longphamdev/filedrop",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/longphamdev/filedrop-plugin.git",
+    "commit": "57b9185435518ccd9b54710fc5e0097766456b75"
+  },
+  "repository": {
+    "url": "https://github.com/longphamdev/filedrop-plugin",
+    "commit": "57b9185435518ccd9b54710fc5e0097766456b75"
+  },
+  "categories": [
+    "utils",
+    "workspaces"
+  ],
+  "submittedAt": "2026-11-25T10:03:28Z",
+  "submittedBy": "longphamdev",
+  "publishedAt": "2026-11-25T10:03:28Z",
+  "reviewedAt": "2026-11-25T10:03:28Z"
+}

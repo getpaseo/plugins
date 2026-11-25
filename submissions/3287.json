@@ -1,0 +1,13 @@
+{
+  "issue": 3287,
+  "title": "Remote hand",
+  "submittedBy": "DomenCai",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/DomenCai/paseo-remote-hand"
+  },
+  "categories": [
+    "providers",
+    "orchestration"
+  ]
+}

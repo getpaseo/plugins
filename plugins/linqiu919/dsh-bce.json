@@ -1,0 +1,20 @@
+{
+  "id": "linqiu919/dsh-bce",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/linqiu919/dsh-bce.git",
+    "commit": "feacc6f71cf99bd935ee56e4774e0f5d967239c1",
+    "pluginPath": "paseo"
+  },
+  "repository": {
+    "url": "https://github.com/linqiu919/dsh-bce",
+    "commit": "feacc6f71cf99bd935ee56e4774e0f5d967239c1"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-25T13:48:41Z",
+  "submittedBy": "linqiu919",
+  "publishedAt": "2026-11-25T14:02:56Z",
+  "reviewedAt": "2026-11-25T14:02:56Z"
+}

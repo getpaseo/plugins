@@ -1,0 +1,15 @@
+{
+  "issue": 3274,
+  "title": "Git workspace",
+  "submittedBy": "zwmmm",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/zwmmm/git-workspace",
+    "ref": "v1.2.4"
+  },
+  "categories": [
+    "git",
+    "workspaces",
+    "sidebar"
+  ]
+}

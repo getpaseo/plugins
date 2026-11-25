@@ -1,0 +1,14 @@
+{
+  "issue": 3256,
+  "title": "Ryugi Monitor",
+  "submittedBy": "zwmmm",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/zwmmm/ryugi-paseo-plugin",
+    "ref": "3882ab96344e33eac2d80bc953032322e67c4c2b"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces"
+  ]
+}

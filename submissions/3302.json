@@ -1,0 +1,13 @@
+{
+  "issue": 3302,
+  "title": "Codex Goal",
+  "submittedBy": "Fu021",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/Fu021/paseo-codex-goal-ui",
+    "ref": "24d9c8e4f2ef74ab68d4c0d31e44ae09356ab588"
+  },
+  "categories": [
+    "utils"
+  ]
+}

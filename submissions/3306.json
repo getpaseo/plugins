@@ -1,0 +1,14 @@
+{
+  "issue": 3306,
+  "title": "BCE Prompt Enhance",
+  "submittedBy": "linqiu919",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/linqiu919/dsh-bce",
+    "ref": "d467a8a5a5901034913c45454462d801951e3a9f",
+    "pluginPath": "paseo"
+  },
+  "categories": [
+    "utils"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "dmatora/paseo-delegate",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/dmatora/paseo-delegate.git",
+    "commit": "89145ead4f8a888689ec0369b548fe53d6b617b2"
+  },
+  "repository": {
+    "url": "https://github.com/dmatora/paseo-delegate",
+    "commit": "89145ead4f8a888689ec0369b548fe53d6b617b2"
+  },
+  "categories": [
+    "orchestration",
+    "providers",
+    "utils"
+  ],
+  "submittedAt": "2026-11-24T20:01:54Z",
+  "submittedBy": "dmatora",
+  "publishedAt": "2026-11-24T20:01:54Z",
+  "reviewedAt": "2026-11-24T20:01:54Z"
+}

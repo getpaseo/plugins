@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/zminds/paseo-plugin-graph-tables.git",
-    "commit": "1a2d1e12989ccf901a98a365e8e7d2d6cd9c76a5"
+    "commit": "b8d7f84bc0c10f3a0e8067be5476ff176b8483b6"
   },
   "repository": {
     "url": "https://github.com/zminds/paseo-plugin-graph-tables",
-    "commit": "1a2d1e12989ccf901a98a365e8e7d2d6cd9c76a5"
+    "commit": "b8d7f84bc0c10f3a0e8067be5476ff176b8483b6"
   },
   "categories": [
     "extras"

@@ -1,0 +1,20 @@
+{
+  "id": "d0zingcat/voice",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/d0zingcat/paseo-voice.git",
+    "commit": "8af7fb2c93561f323dbb582895592f0a16b83bd5"
+  },
+  "repository": {
+    "url": "https://github.com/d0zingcat/paseo-voice",
+    "commit": "8af7fb2c93561f323dbb582895592f0a16b83bd5"
+  },
+  "categories": [
+    "providers",
+    "utils"
+  ],
+  "submittedAt": "2026-11-25T14:02:52Z",
+  "submittedBy": "d0zingcat",
+  "publishedAt": "2026-11-25T14:02:52Z",
+  "reviewedAt": "2026-11-25T14:02:52Z"
+}

@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/CasonMo/paseo-github-workbench.git",
-    "commit": "f2b513ff9bb0699cce8b4da2de893fe86c0f625a"
+    "commit": "fd965a2be957e5e0abc34851c0ce1436dade9deb"
   },
   "repository": {
     "url": "https://github.com/CasonMo/paseo-github-workbench",
-    "commit": "f2b513ff9bb0699cce8b4da2de893fe86c0f625a"
+    "commit": "fd965a2be957e5e0abc34851c0ce1436dade9deb"
   },
   "categories": [
     "orchestration",

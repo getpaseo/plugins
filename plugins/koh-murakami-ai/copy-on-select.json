@@ -1,0 +1,19 @@
+{
+  "id": "koh-murakami-ai/copy-on-select",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/koh-murakami-ai/paseo-copy-on-select.git",
+    "commit": "456bfb0d366c0dcf6b2b37f53cae6daac327ecf1"
+  },
+  "repository": {
+    "url": "https://github.com/koh-murakami-ai/paseo-copy-on-select",
+    "commit": "456bfb0d366c0dcf6b2b37f53cae6daac327ecf1"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-25T08:01:02Z",
+  "submittedBy": "koh-murakami-ai",
+  "publishedAt": "2026-11-25T08:01:02Z",
+  "reviewedAt": "2026-11-25T08:01:02Z"
+}

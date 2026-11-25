@@ -1,0 +1,13 @@
+{
+  "issue": 3273,
+  "title": "Side",
+  "submittedBy": "KosmoCHE",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/KosmoCHE/paseo-side",
+    "ref": "2912f130c980465b5521ebd2d145f68bfe45e4b8"
+  },
+  "categories": [
+    "orchestration"
+  ]
+}

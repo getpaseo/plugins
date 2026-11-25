@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-lucid-sidebar",
-    "version": "0.3.0",
-    "resolved": "https://registry.npmjs.org/paseo-lucid-sidebar/-/paseo-lucid-sidebar-0.3.0.tgz",
-    "integrity": "sha512-2AnHpyYmzqXVxzw72zh4B6vWwpuWHaAAmFqJO2uKqL5PLDqmRhoWCeX25rb6sNTbRBFRApzOEfjOilGTylj4Zw=="
+    "version": "0.4.0",
+    "resolved": "https://registry.npmjs.org/paseo-lucid-sidebar/-/paseo-lucid-sidebar-0.4.0.tgz",
+    "integrity": "sha512-6tQUv+neYjzlSt+S+Zb/4azeOTGxAfTdI/HRTzP8aMiYOribo3TL/z6YOM3xU4cgojhEBwzr4tEd2skJr0va7A=="
   },
   "repository": {
     "url": "https://github.com/yiju-zhao/paseo-lucid-sidebar"
@@ -16,5 +16,5 @@
   "submittedAt": "2026-11-24T00:02:33Z",
   "submittedBy": "yiju-zhao",
   "publishedAt": "2026-11-24T00:02:33Z",
-  "reviewedAt": "2026-11-24T04:01:27Z"
+  "reviewedAt": "2026-11-25T01:29:18Z"
 }

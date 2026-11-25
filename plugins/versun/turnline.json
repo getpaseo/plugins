@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/versun/paseo-turnline.git",
-    "commit": "a45e75400b0a77a22298ca9edd19d933277a015d"
+    "commit": "a0aada37f1be28f2592c6bb04628efc1930fdf0f"
   },
   "repository": {
     "url": "https://github.com/versun/paseo-turnline",
-    "commit": "a45e75400b0a77a22298ca9edd19d933277a015d"
+    "commit": "a0aada37f1be28f2592c6bb04628efc1930fdf0f"
   },
   "categories": [
     "workspaces",

@@ -1,0 +1,13 @@
+{
+  "issue": 3300,
+  "title": "Paseo Voice",
+  "submittedBy": "d0zingcat",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/d0zingcat/paseo-voice"
+  },
+  "categories": [
+    "providers",
+    "utils"
+  ]
+}

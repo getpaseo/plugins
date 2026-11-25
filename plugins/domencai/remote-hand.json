@@ -1,0 +1,28 @@
+{
+  "id": "domencai/remote-hand",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/DomenCai/paseo-remote-hand.git",
+    "commit": "40096ea002d6558026974731f7f3c1c9a16705d0"
+  },
+  "repository": {
+    "url": "https://github.com/DomenCai/paseo-remote-hand",
+    "commit": "40096ea002d6558026974731f7f3c1c9a16705d0"
+  },
+  "categories": [
+    "providers",
+    "orchestration"
+  ],
+  "submittedAt": "2026-11-25T14:03:16Z",
+  "submittedBy": "DomenCai",
+  "publishedAt": "2026-11-25T14:03:16Z",
+  "reviewedAt": "2026-11-25T14:03:16Z",
+  "listing": {
+    "description": "Runs an agent session on another machine running Paseo, while reads, writes and commands for your project run on this machine through an end-to-end encrypted relay.",
+    "media": [
+      "https://raw.githubusercontent.com/DomenCai/paseo-remote-hand/40096ea002d6558026974731f7f3c1c9a16705d0/docs/images/install/15-first-session.png",
+      "https://raw.githubusercontent.com/DomenCai/paseo-remote-hand/40096ea002d6558026974731f7f3c1c9a16705d0/docs/images/install/13-remote-machine-connected.png",
+      "https://raw.githubusercontent.com/DomenCai/paseo-remote-hand/40096ea002d6558026974731f7f3c1c9a16705d0/docs/images/install/07-connected-devices-tab.png"
+    ]
+  }
+}

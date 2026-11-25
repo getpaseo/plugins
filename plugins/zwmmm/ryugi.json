@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/zwmmm/ryugi-paseo-plugin.git",
-    "commit": "3f4ae83638dc608ad082fa73bf9fe83e769be655"
+    "commit": "d8ad30ae3e9ef103911c835d68ee4c5057a5305d"
   },
   "repository": {
     "url": "https://github.com/zwmmm/ryugi-paseo-plugin",
-    "commit": "3f4ae83638dc608ad082fa73bf9fe83e769be655"
+    "commit": "d8ad30ae3e9ef103911c835d68ee4c5057a5305d"
   },
   "categories": [
     "orchestration",

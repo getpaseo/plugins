@@ -1,0 +1,20 @@
+{
+  "id": "joehutchinson/a2ui",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/JoeHutchinson/paseo-a2ui.git",
+    "commit": "ec49e3dbc2af240fa33d787e2dbd844f447737b2"
+  },
+  "repository": {
+    "url": "https://github.com/JoeHutchinson/paseo-a2ui",
+    "commit": "ec49e3dbc2af240fa33d787e2dbd844f447737b2"
+  },
+  "categories": [
+    "extras",
+    "utils"
+  ],
+  "submittedAt": "2026-11-25T12:01:14Z",
+  "submittedBy": "JoeHutchinson",
+  "publishedAt": "2026-11-25T12:01:14Z",
+  "reviewedAt": "2026-11-25T12:01:14Z"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "t-zahil/walkthrough",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/T-Zahil/paseo-walkthrough.git",
+    "commit": "b22ab1986cf5aef86fc8849a26e8278601de2591",
+    "tag": "v1.0.0"
+  },
+  "repository": {
+    "url": "https://github.com/T-Zahil/paseo-walkthrough",
+    "commit": "b22ab1986cf5aef86fc8849a26e8278601de2591"
+  },
+  "categories": [
+    "git",
+    "workspaces"
+  ],
+  "submittedAt": "2026-11-25T17:46:03Z",
+  "submittedBy": "T-Zahil",
+  "publishedAt": "2026-11-25T18:02:44Z",
+  "reviewedAt": "2026-11-25T18:02:44Z"
+}

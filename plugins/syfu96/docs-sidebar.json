@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/SyFu96/paseo-docs-sidebar.git",
-    "commit": "e72419879e3f3910586ded61930cbfcd677bf87f",
-    "tag": "v1.3.0"
+    "commit": "a289f13f7c06b6c0e1a4e4c1e9f8f5b8b0e1c3a5",
+    "tag": "v1.3.1"
   },
   "repository": {
     "url": "https://github.com/SyFu96/paseo-docs-sidebar",
-    "commit": "e72419879e3f3910586ded61930cbfcd677bf87f"
+    "commit": "a289f13f7c06b6c0e1a4e4c1e9f8f5b8b0e1c3a5"
   },
   "categories": [
     "sidebar",

@@ -1,21 +1,21 @@
 {
-  "id": "syfu96/docs-sidebar",
-  "artifact": {
-    "kind": "git",
-    "remote": "https://github.com/SyFu96/paseo-docs-sidebar.git",
-    "commit": "2aa5cb7e2bf38424738c4635887c4e5531817c3e",
-    "tag": "v1.2.2"
-  },
-  "repository": {
-    "url": "https://github.com/SyFu96/paseo-docs-sidebar",
-    "commit": "2aa5cb7e2bf38424738c4635887c4e5531817c3e"
-  },
-  "categories": [
-    "sidebar",
-    "workspaces"
-  ],
-  "submittedAt": "2026-11-25T09:25:34Z",
-  "submittedBy": "SyFu96",
-  "publishedAt": "2026-11-25T16:02:32Z",
-  "reviewedAt": "2026-11-25T16:02:32Z"
+    "id":  "syfu96/docs-sidebar",
+    "artifact":  {
+                     "kind":  "git",
+                     "remote":  "https://github.com/SyFu96/paseo-docs-sidebar.git",
+                     "commit":  "e72419879e3f3910586ded61930cbfcd677bf87f",
+                     "tag":  "v1.3.0"
+                 },
+    "repository":  {
+                       "url":  "https://github.com/SyFu96/paseo-docs-sidebar",
+                       "commit":  "e72419879e3f3910586ded61930cbfcd677bf87f"
+                   },
+    "categories":  [
+                       "sidebar",
+                       "workspaces"
+                   ],
+    "submittedAt":  "2026-11-25T09:25:34Z",
+    "submittedBy":  "SyFu96",
+    "publishedAt":  "2026-11-25T16:02:32Z",
+    "reviewedAt":  "2026-11-25T16:02:32Z"
 }

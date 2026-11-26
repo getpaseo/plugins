@@ -1,0 +1,19 @@
+{
+  "id": "yy3350008-lgtm/zaynetheme",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/yy3350008-lgtm/zaynetheme.git",
+    "commit": "2eed4957d8f1d2b9e057398afb2f1af0232784ed"
+  },
+  "repository": {
+    "url": "https://github.com/yy3350008-lgtm/zaynetheme",
+    "commit": "2eed4957d8f1d2b9e057398afb2f1af0232784ed"
+  },
+  "categories": [
+    "themes"
+  ],
+  "submittedAt": "2026-11-26T05:19:30Z",
+  "submittedBy": "yy3350008-lgtm",
+  "publishedAt": "2026-11-26T08:02:50Z",
+  "reviewedAt": "2026-11-26T08:02:50Z"
+}

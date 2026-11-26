@@ -1,0 +1,21 @@
+{
+  "id": "lerenn/github-proxy",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/lerenn/paseo-github-proxy.git",
+    "commit": "2bfde5ff3ff7e0de2d164a0343fac27b06d96b24",
+    "tag": "v0.12.2"
+  },
+  "repository": {
+    "url": "https://github.com/lerenn/paseo-github-proxy",
+    "commit": "2bfde5ff3ff7e0de2d164a0343fac27b06d96b24"
+  },
+  "categories": [
+    "git",
+    "utils"
+  ],
+  "submittedAt": "2026-11-24T18:40:04Z",
+  "submittedBy": "lerenn",
+  "publishedAt": "2026-11-26T18:02:30Z",
+  "reviewedAt": "2026-11-26T18:02:30Z"
+}

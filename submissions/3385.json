@@ -1,0 +1,12 @@
+{
+  "issue": 3385,
+  "title": "Blind Secrets",
+  "submittedBy": "grigoreo-fox",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/grigoreo-fox/paseo-blind-secrets"
+  },
+  "categories": [
+    "utils"
+  ]
+}

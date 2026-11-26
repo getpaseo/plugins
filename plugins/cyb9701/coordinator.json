@@ -1,0 +1,21 @@
+{
+  "id": "cyb9701/coordinator",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/cyb9701/paseo-coordinator.git",
+    "commit": "0baf1d98d66d583255365802f4c7ad2fdcd5404a"
+  },
+  "repository": {
+    "url": "https://github.com/cyb9701/paseo-coordinator",
+    "commit": "0baf1d98d66d583255365802f4c7ad2fdcd5404a"
+  },
+  "categories": [
+    "orchestration",
+    "git",
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-26T01:47:45Z",
+  "submittedBy": "cyb9701",
+  "publishedAt": "2026-11-26T06:01:51Z",
+  "reviewedAt": "2026-11-26T06:01:51Z"
+}

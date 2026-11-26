@@ -1,0 +1,14 @@
+{
+  "issue": 3404,
+  "title": "Custom Title",
+  "submittedBy": "NightWatcher314",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/NightWatcher314/paseo-custom-title",
+    "ref": "v0.1.0"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ]
+}

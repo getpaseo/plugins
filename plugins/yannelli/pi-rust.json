@@ -1,0 +1,23 @@
+{
+  "id": "yannelli/pi-rust",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/yannelli/pi-rust-paseo.git",
+    "commit": "e403227535d9cb916272385f97a29fccf0125e56",
+    "tag": "v0.5.0"
+  },
+  "repository": {
+    "url": "https://github.com/yannelli/pi-rust-paseo",
+    "commit": "e403227535d9cb916272385f97a29fccf0125e56"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces",
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-11-26T03:58:15Z",
+  "submittedBy": "yannelli",
+  "publishedAt": "2026-11-26T08:03:27Z",
+  "reviewedAt": "2026-11-26T08:03:27Z"
+}

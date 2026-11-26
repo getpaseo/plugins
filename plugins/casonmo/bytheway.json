@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/CasonMo/paseo-bytheway.git",
-    "commit": "80afedb5d457085ae8696e50ecc4179c0fa3f40f"
+    "commit": "e6b82fceb40e64cd98faf951e2d45e345a21c089"
   },
   "repository": {
     "url": "https://github.com/CasonMo/paseo-bytheway",
-    "commit": "80afedb5d457085ae8696e50ecc4179c0fa3f40f"
+    "commit": "e6b82fceb40e64cd98faf951e2d45e345a21c089"
   },
   "categories": [
     "sidebar",
@@ -20,17 +20,17 @@
   "reviewedAt": "2026-11-17T11:03:34Z",
   "listing": {
     "name": "ByTheWay",
-    "description": "ByTheWay (btw) \u2014 use /btw to ask beside your main Paseo session, with provider-native model, thinking, mode and feature controls, live tool activity, subagent management and per-model settings memory.",
+    "description": "ByTheWay (btw) — use /btw to ask beside your main Paseo session, with provider-native model, thinking, mode and feature controls, live tool activity, subagent management and per-model settings memory.",
     "translations": {
       "zh-CN": {
-        "name": "ByTheWay \u4fa7\u804a",
-        "description": "ByTheWay\uff08btw\uff09\u65c1\u8def\u4fa7\u804a\uff1a\u7528 /btw \u5728\u4e3b Paseo \u4f1a\u8bdd\u65c1\u63d0\u95ee\uff0c\u52a8\u6001\u63a7\u5236\u6a21\u578b\u3001\u601d\u8003\u3001Mode \u548c provider Features\uff0c\u5b9e\u65f6\u663e\u793a\u5de5\u5177\u6d3b\u52a8\uff0c\u7ba1\u7406 Subagent\uff0c\u5e76\u6309\u6a21\u578b\u8bb0\u4f4f\u914d\u7f6e\u3002"
+        "name": "ByTheWay 侧聊",
+        "description": "ByTheWay（btw）旁路侧聊：用 /btw 在主 Paseo 会话旁提问，动态控制模型、思考、Mode 和 provider Features，实时显示工具活动，管理 Subagent，并按模型记住配置。"
       }
     },
     "media": [
-      "https://raw.githubusercontent.com/CasonMo/paseo-bytheway/80afedb5d457085ae8696e50ecc4179c0fa3f40f/assets/screenshot.png",
-      "https://raw.githubusercontent.com/CasonMo/paseo-bytheway/80afedb5d457085ae8696e50ecc4179c0fa3f40f/assets/screenshot-commands.png",
-      "https://raw.githubusercontent.com/CasonMo/paseo-bytheway/80afedb5d457085ae8696e50ecc4179c0fa3f40f/assets/screenshot-settings.png"
+      "https://raw.githubusercontent.com/CasonMo/paseo-bytheway/e6b82fceb40e64cd98faf951e2d45e345a21c089/assets/screenshot.png",
+      "https://raw.githubusercontent.com/CasonMo/paseo-bytheway/e6b82fceb40e64cd98faf951e2d45e345a21c089/assets/screenshot-commands.png",
+      "https://raw.githubusercontent.com/CasonMo/paseo-bytheway/e6b82fceb40e64cd98faf951e2d45e345a21c089/assets/screenshot-settings.png"
     ]
   }
 }

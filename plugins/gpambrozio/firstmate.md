@@ -4,7 +4,7 @@ The plugin does not dispatch workers itself. It creates a home directory for the
 
 The charter's rules, such as never merging without your word and never writing to a project, are instructions in the agent's prompt and are not enforced by the plugin. The first mate runs in the permission mode you launched it with, and workers run in the crew mode you set in the plugin settings, or the one the first mate picks.
 
-Setup needs Paseo 0.11.0 or newer, the `paseo` command on the daemon machine, and Paseo's agent tools turned on, which are off by default. The plugin offers to turn them on, which changes a daemon-wide setting (`mcp.injectIntoAgents`), so every agent session started afterwards on that daemon gets the tools, not only the crew's sessions. Sessions already running do not. The built-in pull request watch also needs `gh` logged in and Node.js.
+Setup needs Paseo 0.16.0 or newer, the `paseo` command on the daemon machine, and Paseo's agent tools turned on, which are off by default. The plugin offers to turn them on, which changes a daemon-wide setting (`mcp.injectIntoAgents`), so every agent session started afterwards on that daemon gets the tools, not only the crew's sessions. Sessions already running do not. The built-in pull request watch also needs `gh` logged in and Node.js.
 
 The first mate's home is editable from the screen and defaults to a folder under the Paseo home directory, where the plugin also keeps its config. Files you attach in the chat are written under `uploads/` in the Paseo home directory.
 

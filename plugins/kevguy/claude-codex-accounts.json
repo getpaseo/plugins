@@ -1,0 +1,21 @@
+{
+  "id": "kevguy/claude-codex-accounts",
+  "artifact": {
+    "kind": "npm",
+    "package": "@kevlai22/paseo-claude-codex-accounts",
+    "version": "1.0.2",
+    "resolved": "https://registry.npmjs.org/@kevlai22/paseo-claude-codex-accounts/-/paseo-claude-codex-accounts-1.0.2.tgz",
+    "integrity": "sha512-1jZVCZcwj0EtuNYMmMB3ZK3kF1Ot8uVZEgl9u3CyOOY0TO1fPclU35uhkkU4zxRnDik6R7Olj9eQwF2SY2+Smw=="
+  },
+  "repository": {
+    "url": "https://github.com/kevguy/paseo-claude-codex-accounts",
+    "commit": "b7ec57354518395276ad23527249814005e2cc4e"
+  },
+  "categories": [
+    "providers"
+  ],
+  "submittedAt": "2026-11-22T08:01:13Z",
+  "submittedBy": "kevguy",
+  "publishedAt": "2026-11-22T18:04:28Z",
+  "reviewedAt": "2026-11-22T18:04:28Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "nguyenvanduocit/relayline",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/nguyenvanduocit/paseo-relayline.git",
+    "commit": "e523cf9510cae57e53de0a934d084a6dba8f2af4"
+  },
+  "repository": {
+    "url": "https://github.com/nguyenvanduocit/paseo-relayline",
+    "commit": "e523cf9510cae57e53de0a934d084a6dba8f2af4"
+  },
+  "categories": [
+    "orchestration"
+  ],
+  "submittedAt": "2026-11-24T18:06:32Z",
+  "submittedBy": "nguyenvanduocit",
+  "publishedAt": "2026-11-24T18:06:32Z",
+  "reviewedAt": "2026-11-24T18:06:32Z"
+}

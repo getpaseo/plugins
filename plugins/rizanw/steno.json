@@ -1,0 +1,22 @@
+{
+  "id": "rizanw/steno",
+  "artifact": {
+    "kind": "npm",
+    "package": "steno-paseo",
+    "version": "0.1.6",
+    "resolved": "https://registry.npmjs.org/steno-paseo/-/steno-paseo-0.1.6.tgz",
+    "integrity": "sha512-4q4pyMn7fExnKQOEizp6L0/d0gIuGdpbv7m1pk7eghIEGxKBhhBf1WxCdMd5vHjc2wDY3+NX8UpMTWsi1cAcrg=="
+  },
+  "repository": {
+    "url": "https://github.com/rizanw/steno-spec/tree/HEAD/packages/paseo",
+    "commit": "2c6e23ef8fb6ab8d3f560513f3b1f4659b119c9c"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces"
+  ],
+  "submittedAt": "2026-11-22T11:30:14Z",
+  "submittedBy": "rizanw",
+  "publishedAt": "2026-11-22T18:06:06Z",
+  "reviewedAt": "2026-11-23T16:11:02Z"
+}

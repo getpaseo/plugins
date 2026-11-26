@@ -1,0 +1,19 @@
+{
+  "id": "kosmoche/side",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/KosmoCHE/paseo-side.git",
+    "commit": "bcd9f9e7a37396e27cf467a16d4155e4079f1b34"
+  },
+  "repository": {
+    "url": "https://github.com/KosmoCHE/paseo-side",
+    "commit": "bcd9f9e7a37396e27cf467a16d4155e4079f1b34"
+  },
+  "categories": [
+    "orchestration"
+  ],
+  "submittedAt": "2026-11-25T07:41:32Z",
+  "submittedBy": "KosmoCHE",
+  "publishedAt": "2026-11-25T14:03:00Z",
+  "reviewedAt": "2026-11-25T14:03:00Z"
+}

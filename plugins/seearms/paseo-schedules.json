@@ -1,0 +1,21 @@
+{
+  "id": "seearms/paseo-schedules",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/seeARMS/paseo-schedules.git",
+    "commit": "d51249c69d34fd555167eedae95907345d62d4bf"
+  },
+  "repository": {
+    "url": "https://github.com/seeARMS/paseo-schedules",
+    "commit": "d51249c69d34fd555167eedae95907345d62d4bf"
+  },
+  "categories": [
+    "orchestration",
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-11-20T18:05:51Z",
+  "submittedBy": "seeARMS",
+  "publishedAt": "2026-11-20T18:05:51Z",
+  "reviewedAt": "2026-11-20T18:05:51Z"
+}

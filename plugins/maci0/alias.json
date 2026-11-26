@@ -1,0 +1,20 @@
+{
+  "id": "maci0/alias",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/maci0/paseo-alias.git",
+    "commit": "684dc2d7838c663a0dcedaebdbd01ac3f693ed9d"
+  },
+  "repository": {
+    "url": "https://github.com/maci0/paseo-alias",
+    "commit": "684dc2d7838c663a0dcedaebdbd01ac3f693ed9d"
+  },
+  "categories": [
+    "utils",
+    "extras"
+  ],
+  "submittedAt": "2026-11-24T04:02:41Z",
+  "submittedBy": "maci0",
+  "publishedAt": "2026-11-24T04:02:41Z",
+  "reviewedAt": "2026-11-24T04:02:41Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "zminds/graph-tables",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/zminds/paseo-plugin-graph-tables.git",
+    "commit": "ec28bcd2b0b3a7b3347ed17909b1519d438b4e20"
+  },
+  "repository": {
+    "url": "https://github.com/zminds/paseo-plugin-graph-tables",
+    "commit": "ec28bcd2b0b3a7b3347ed17909b1519d438b4e20"
+  },
+  "categories": [
+    "extras"
+  ],
+  "submittedAt": "2026-11-24T12:02:35Z",
+  "submittedBy": "zminds",
+  "publishedAt": "2026-11-24T12:02:35Z",
+  "reviewedAt": "2026-11-25T05:01:09Z"
+}

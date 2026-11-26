@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "@stevecastaneda/paseo-shell-yeah",
-    "version": "1.4.1",
-    "resolved": "https://registry.npmjs.org/@stevecastaneda/paseo-shell-yeah/-/paseo-shell-yeah-1.4.1.tgz",
-    "integrity": "sha512-RACAz0n65vsGqQY53nY+tFafF/8B86EGKzwGVrKl0KG0OtP6x4uN8rju0tOVXw5hGcz9XRzbJdS8G3dRohYPtA=="
+    "version": "1.5.0",
+    "resolved": "https://registry.npmjs.org/@stevecastaneda/paseo-shell-yeah/-/paseo-shell-yeah-1.5.0.tgz",
+    "integrity": "sha512-5fqNSbQmt90AOzpH81NNo4BHx25iZQ7bvO7w8LuVE6a46suo1QvZEXghihhSzeKXEyFHF+Hr8jlzRmss+BNlJw=="
   },
   "repository": {
     "url": "https://github.com/stevecastaneda/paseo-plugins/tree/HEAD/shell-yeah"
@@ -16,5 +16,5 @@
   "submittedAt": "2026-10-19T13:18:48Z",
   "submittedBy": "stevecastaneda",
   "publishedAt": "2026-10-19T13:33:47Z",
-  "reviewedAt": "2026-11-07T21:04:04Z"
+  "reviewedAt": "2026-11-26T01:05:38Z"
 }

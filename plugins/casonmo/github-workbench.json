@@ -1,0 +1,20 @@
+{
+  "id": "casonmo/github-workbench",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/CasonMo/paseo-github-workbench.git",
+    "commit": "fd965a2be957e5e0abc34851c0ce1436dade9deb"
+  },
+  "repository": {
+    "url": "https://github.com/CasonMo/paseo-github-workbench",
+    "commit": "fd965a2be957e5e0abc34851c0ce1436dade9deb"
+  },
+  "categories": [
+    "orchestration",
+    "git"
+  ],
+  "submittedAt": "2026-11-25T07:12:18Z",
+  "submittedBy": "CasonMo",
+  "publishedAt": "2026-11-25T14:03:40Z",
+  "reviewedAt": "2026-11-25T14:03:40Z"
+}

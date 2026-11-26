@@ -1,0 +1,21 @@
+{
+  "id": "meron-labs/model-routing",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/Meron-Labs/paseo-model-routing.git",
+    "commit": "a7932b3f0c0920e59c8fab788a19ab144f9b63fe",
+    "tag": "v0.2.0"
+  },
+  "repository": {
+    "url": "https://github.com/Meron-Labs/paseo-model-routing",
+    "commit": "a7932b3f0c0920e59c8fab788a19ab144f9b63fe"
+  },
+  "categories": [
+    "orchestration",
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-26T03:41:41Z",
+  "submittedBy": "LegisLong",
+  "publishedAt": "2026-11-26T08:03:20Z",
+  "reviewedAt": "2026-11-26T08:03:20Z"
+}

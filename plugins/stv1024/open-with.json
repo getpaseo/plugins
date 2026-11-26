@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-open-with",
-    "version": "0.2.3",
-    "resolved": "https://registry.npmjs.org/paseo-open-with/-/paseo-open-with-0.2.3.tgz",
-    "integrity": "sha512-MTDuwCz9ODniO4jLdZjiIERvP3Fn9NHJiYb/K/ZlEIrPmkMbMsqM9VHpkspNudv4koQayklIXgOETIrfk8ALpw=="
+    "version": "0.2.4",
+    "resolved": "https://registry.npmjs.org/paseo-open-with/-/paseo-open-with-0.2.4.tgz",
+    "integrity": "sha512-3yac4yrZYcynIUKDdYWKNcLmTdRsI+WcnW/AHv9mhQ7DVo19wZfMxvJL8z8OIMwO7qyaNZp/NY3x58zkwVQVJQ=="
   },
   "repository": {
     "url": "https://github.com/stv1024/paseo-open-with",
-    "commit": "f99d8040b570840b859562b423c8267f84f6fceb"
+    "commit": "1fd8aeee52a4b10d5001f45bc24650c4204c1486"
   },
   "categories": [
     "workspaces",
@@ -18,5 +18,5 @@
   "submittedAt": "2026-10-28T13:04:58Z",
   "submittedBy": "stv1024",
   "publishedAt": "2026-10-28T13:04:58Z",
-  "reviewedAt": "2026-11-18T14:15:55Z"
+  "reviewedAt": "2026-11-26T01:06:35Z"
 }

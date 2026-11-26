@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "@koinzhang/paseo-plugin-inbox",
-    "version": "0.2.0",
-    "resolved": "https://registry.npmjs.org/@koinzhang/paseo-plugin-inbox/-/paseo-plugin-inbox-0.2.0.tgz",
-    "integrity": "sha512-W1+nYU4OZjMETtdlWPXVuhMMV/mS6qgQWMhYz0GP6HhOpTswONqfPyEIqf0t/BhYzW5H+AQEl/pwAYC7HmwlXg=="
+    "version": "0.3.0",
+    "resolved": "https://registry.npmjs.org/@koinzhang/paseo-plugin-inbox/-/paseo-plugin-inbox-0.3.0.tgz",
+    "integrity": "sha512-KELtfKLpFfLpcdvWbRuvbZJgsW5kH0DedFmuK8ua/QOq15xv+7w9KlpdCFSOO7uW7GhHjP/jINm9MzOnm8t9sQ=="
   },
   "repository": {
     "url": "https://github.com/koinzhang/paseo-plugins/tree/HEAD/inbox",
-    "commit": "fdf5fadc7018c2e3cda3570ce870d0fe0d0dc6d3"
+    "commit": "5d9fc2dcbca6b63249e3825f47de32491a54bdd8"
   },
   "categories": [
     "utils",
@@ -18,7 +18,7 @@
   "submittedAt": "2026-09-30",
   "submittedBy": "koinzhang",
   "publishedAt": "2026-09-30",
-  "reviewedAt": "2026-11-05T13:21:06Z",
+  "reviewedAt": "2026-11-26T15:29:52Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/koinzhang/paseo-plugins/b852d42e5acdfc643091f65d2c1564c0e78f22df/inbox/images/inbox-1.png",

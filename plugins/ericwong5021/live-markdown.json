@@ -1,0 +1,20 @@
+{
+  "id": "ericwong5021/live-markdown",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/Ericwong5021/paseo-live-markdown.git",
+    "commit": "0c8db1b0bec4e9adb4a6fe2d349e6839ec39daa5"
+  },
+  "repository": {
+    "url": "https://github.com/Ericwong5021/paseo-live-markdown",
+    "commit": "0c8db1b0bec4e9adb4a6fe2d349e6839ec39daa5"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-11-26T03:41:28Z",
+  "submittedBy": "Ericwong5021",
+  "publishedAt": "2026-11-26T08:02:46Z",
+  "reviewedAt": "2026-11-26T08:02:46Z"
+}

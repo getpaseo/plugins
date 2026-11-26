@@ -15,6 +15,6 @@ Archive in the Explorer panel archives the agent in Paseo, and closing a termina
 - Data is per daemon. Nothing is combined across hosts.
 - A tool call that does not report a model or skill cannot be attributed for that dimension, and skill matching is heuristic.
 
-Requires Paseo 0.15.0 or later.
+Requires Paseo 0.17.4 or later.
 
 *This plugin entry was imported from [paseo.cafe](https://paseo.cafe/plugins/activity).*

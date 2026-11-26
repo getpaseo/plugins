@@ -1,0 +1,13 @@
+{
+  "issue": 3369,
+  "title": "Update Better Paseo Math to v1.1.0",
+  "submittedBy": "EviterLesRoses2",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/EviterLesRoses2/better-paseo-math",
+    "ref": "v1.1.0"
+  },
+  "categories": [
+    "utils"
+  ]
+}

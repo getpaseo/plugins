@@ -1,0 +1,14 @@
+{
+  "issue": 3372,
+  "title": "OMP Forms",
+  "submittedBy": "kentwelcome",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/kentwelcome/paseo-omp-forms",
+    "ref": "0dafa1901b43cbd81fa92e1b6adf86b673224241",
+    "pluginPath": "plugin"
+  },
+  "categories": [
+    "providers"
+  ]
+}

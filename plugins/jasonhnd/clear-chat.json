@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/jasonhnd/paseo-clear-chat.git",
-    "commit": "dc73218c080ffddd3bd7916eddb0e0e8f3cd42bd",
-    "tag": "v0.17.4.1"
+    "commit": "1181c86e4fbfae98f4f023b61937d07e48cc4cfb",
+    "tag": "v0.17.4.2"
   },
   "repository": {
     "url": "https://github.com/jasonhnd/paseo-clear-chat",
-    "commit": "dc73218c080ffddd3bd7916eddb0e0e8f3cd42bd"
+    "commit": "1181c86e4fbfae98f4f023b61937d07e48cc4cfb"
   },
   "categories": [
     "utils"
@@ -16,7 +16,7 @@
   "submittedAt": "2026-11-03T13:36:07Z",
   "submittedBy": "jasonhnd",
   "publishedAt": "2026-11-03T14:02:47Z",
-  "reviewedAt": "2026-11-24T06:03:34Z",
+  "reviewedAt": "2026-11-26T10:04:04Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/35c4889852e96575df848362f4492127f43c2b02/docs/images/answer-card.png",
@@ -26,11 +26,11 @@
     "translations": {
       "zh-CN": {
         "name": "Clear Chat",
-        "description": "只做回答卡片：回复里有字母选项题时，用卡片选题或自己写答案，预览后发送。不绘制对话。"
+        "description": "回答卡片：回复里有字母选项题时，用卡片选题或自己写答案，预览后发送；另有「我说的话」面板，列出你今天发的消息，点一下就复制。不绘制对话。"
       },
       "ja": {
         "name": "Clear Chat",
-        "description": "回答カードだけのプラグインです。返信にアルファベットの選択肢があるとき、カードで選ぶか自分で書き、プレビューして送信します。会話は描きません。"
+        "description": "回答カード：返信にアルファベットの選択肢があるとき、カードで選ぶか自分で書き、プレビューして送信します。「自分の発言」パネルで今日送ったメッセージを一覧し、押すとコピーできます。会話は描きません。"
       }
     }
   }

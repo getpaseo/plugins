@@ -1,0 +1,19 @@
+{
+  "id": "daxiong123/better-paseo-cnb",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/daxiong123/paseo-cnb.git",
+    "commit": "3d5e18444e875fa78eb6a064f28bd5761e627313"
+  },
+  "repository": {
+    "url": "https://github.com/daxiong123/paseo-cnb",
+    "commit": "3d5e18444e875fa78eb6a064f28bd5761e627313"
+  },
+  "categories": [
+    "git"
+  ],
+  "submittedAt": "2026-11-26T03:35:53Z",
+  "submittedBy": "daxiong123",
+  "publishedAt": "2026-11-26T18:02:56Z",
+  "reviewedAt": "2026-11-26T18:02:56Z"
+}

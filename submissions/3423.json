@@ -1,0 +1,15 @@
+{
+  "issue": 3423,
+  "title": "Live View",
+  "submittedBy": "nadirdeveloper",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/nadirdeveloper/paseo-live-view",
+    "ref": "v0.1.0"
+  },
+  "categories": [
+    "orchestration",
+    "git",
+    "workspaces"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "issue": 3425,
+  "title": "Paseo . PR Reviewers",
+  "submittedBy": "Eros-H",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/Eros-H/PR-Reviewers",
+    "ref": "fbbf6cb55b2487b8a3284a2b022cb967cff17b26"
+  },
+  "categories": [
+    "git",
+    "workspaces"
+  ]
+}

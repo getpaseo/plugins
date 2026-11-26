@@ -1,0 +1,13 @@
+{
+  "issue": 3398,
+  "title": "Paseo Loader",
+  "submittedBy": "NightWatcher314",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/NightWatcher314/paseo-loader",
+    "ref": "v0.1.0"
+  },
+  "categories": [
+    "extras"
+  ]
+}

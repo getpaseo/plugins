@@ -1,0 +1,14 @@
+{
+  "issue": 3346,
+  "title": "Paseo Artifact Viewer",
+  "submittedBy": "shotgun1107",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/shotgun1107/paseo-artifact-viewer",
+    "ref": "v0.9.3"
+  },
+  "categories": [
+    "sidebar",
+    "workspaces"
+  ]
+}

@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "@geongyu09/paseo-agent-dashboard",
-    "version": "1.1.4",
-    "resolved": "https://registry.npmjs.org/@geongyu09/paseo-agent-dashboard/-/paseo-agent-dashboard-1.1.4.tgz",
-    "integrity": "sha512-Ro0N1qDXS9O2uSWmncSzIX9AmxxU6TEIg6Cz0qRrXq1ONkB17CCczEikQ2ZDmYEAQZQB7Mxo9IhcZSLbPe6TiQ=="
+    "version": "1.1.5",
+    "resolved": "https://registry.npmjs.org/@geongyu09/paseo-agent-dashboard/-/paseo-agent-dashboard-1.1.5.tgz",
+    "integrity": "sha512-xxdR6QpXNCDDvi7b2ZqTvtrcvXgGfxFqQJyR3Pnh1fBUE8BK3tfpkyIF6XPsMNiFyorl2JK5Q8EOhK1dlFibvA=="
   },
   "repository": {
     "url": "https://github.com/geongyu09/paseo-agent-dashboard"
@@ -17,5 +17,5 @@
   "submittedAt": "2026-11-12T04:36:36Z",
   "submittedBy": "geongyu09",
   "publishedAt": "2026-11-12T05:02:59Z",
-  "reviewedAt": "2026-11-22T13:27:24Z"
+  "reviewedAt": "2026-11-26T08:02:31Z"
 }

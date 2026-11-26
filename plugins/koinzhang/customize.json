@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "@koinzhang/paseo-plugin-customize",
-    "version": "0.4.0",
-    "resolved": "https://registry.npmjs.org/@koinzhang/paseo-plugin-customize/-/paseo-plugin-customize-0.4.0.tgz",
-    "integrity": "sha512-bfntqk+EvDnaA2oW+wYHHV+RYnC7AsNpL69jUqrhmNeKJuDI7kb2x92HWnhuB+VLm82ep2LBuKzOqyxfWoMxiA=="
+    "version": "0.4.1",
+    "resolved": "https://registry.npmjs.org/@koinzhang/paseo-plugin-customize/-/paseo-plugin-customize-0.4.1.tgz",
+    "integrity": "sha512-izskJyRA+r7BeHCdScLVOzHvqRss1O4xePZLMwhb0Lja27A+Mgc1jfeSHj/PlRjKgU5Nx7Si895vyxH1RLkYFg=="
   },
   "repository": {
     "url": "https://github.com/koinzhang/paseo-plugins/tree/HEAD/customize",
-    "commit": "fdf5fadc7018c2e3cda3570ce870d0fe0d0dc6d3"
+    "commit": "5d9fc2dcbca6b63249e3825f47de32491a54bdd8"
   },
   "categories": [
     "utils"
@@ -17,7 +17,7 @@
   "submittedAt": "2026-09-25",
   "submittedBy": "koinzhang",
   "publishedAt": "2026-09-25",
-  "reviewedAt": "2026-11-05T13:20:39Z",
+  "reviewedAt": "2026-11-26T15:29:28Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/koinzhang/paseo-plugins/9033318495a6c0d1fccc96cc9caaa421eb25402f/customize/images/customize-1.png",

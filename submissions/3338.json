@@ -1,0 +1,13 @@
+{
+  "issue": 3338,
+  "title": "Docs sidebar",
+  "submittedBy": "SyFu96",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/SyFu96/paseo-docs-sidebar"
+  },
+  "categories": [
+    "sidebar",
+    "workspaces"
+  ]
+}

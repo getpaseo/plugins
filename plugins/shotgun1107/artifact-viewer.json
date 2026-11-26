@@ -1,0 +1,21 @@
+{
+  "id": "shotgun1107/artifact-viewer",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-artifact-viewer",
+    "version": "0.9.3",
+    "resolved": "https://registry.npmjs.org/paseo-artifact-viewer/-/paseo-artifact-viewer-0.9.3.tgz",
+    "integrity": "sha512-0hfberf/o7baRJn+vj4Ptcc++HQ81re6thm9/STYu8w5rpHC13DwoU9k3/t7ui6fpEURh6O/iT8LcvFd3nOhVg=="
+  },
+  "repository": {
+    "url": "https://github.com/shotgun1107/paseo-artifact-viewer"
+  },
+  "categories": [
+    "sidebar",
+    "workspaces"
+  ],
+  "submittedAt": "2026-11-26T03:13:11Z",
+  "submittedBy": "shotgun1107",
+  "publishedAt": "2026-11-26T06:02:05Z",
+  "reviewedAt": "2026-11-26T06:02:05Z"
+}

@@ -1,0 +1,16 @@
+{
+  "issue": 3367,
+  "title": "Update Paseo Context to v0.2.16",
+  "submittedBy": "kogekiplay",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/kogekiplay/paseo-context",
+    "ref": "v0.2.16"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces",
+    "sidebar",
+    "extras"
+  ]
+}

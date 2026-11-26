@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/multiplehats/paseo-spaces.git",
-    "commit": "88877294f574de74138c322c0c7131491cf12988"
+    "commit": "0306ac2ce15b1aa0d6b46447c4d0c5de183f39fa"
   },
   "repository": {
     "url": "https://github.com/multiplehats/paseo-spaces",
-    "commit": "88877294f574de74138c322c0c7131491cf12988"
+    "commit": "0306ac2ce15b1aa0d6b46447c4d0c5de183f39fa"
   },
   "categories": [
     "daemon-management",
@@ -17,5 +17,5 @@
   "submittedAt": "2026-11-04T16:11:46Z",
   "submittedBy": "multiplehats",
   "publishedAt": "2026-11-05T09:27:44Z",
-  "reviewedAt": "2026-11-10T11:02:47Z"
+  "reviewedAt": "2026-11-26T14:02:59Z"
 }

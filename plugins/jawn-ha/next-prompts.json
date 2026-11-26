@@ -1,0 +1,20 @@
+{
+  "id": "jawn-ha/next-prompts",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/jawn-ha/paseo-next-prompts.git",
+    "commit": "4dfb5f5f58d5a7c5bec286e56b964e8a9ae723c3"
+  },
+  "repository": {
+    "url": "https://github.com/jawn-ha/paseo-next-prompts",
+    "commit": "4dfb5f5f58d5a7c5bec286e56b964e8a9ae723c3"
+  },
+  "categories": [
+    "extras",
+    "utils"
+  ],
+  "submittedAt": "2026-11-20T03:48:18Z",
+  "submittedBy": "jawn-ha",
+  "publishedAt": "2026-11-26T18:03:31Z",
+  "reviewedAt": "2026-11-26T18:03:31Z"
+}

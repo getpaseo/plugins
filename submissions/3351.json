@@ -1,0 +1,12 @@
+{
+  "issue": 3351,
+  "title": "Better Paseo CNB",
+  "submittedBy": "daxiong123",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/daxiong123/paseo-cnb"
+  },
+  "categories": [
+    "git"
+  ]
+}

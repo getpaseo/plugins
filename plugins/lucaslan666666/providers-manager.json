@@ -1,0 +1,20 @@
+{
+  "id": "lucaslan666666/providers-manager",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/LucasLan666666/paseo-providers-manager.git",
+    "commit": "521df49f438cc2d59a206dd8417bb127af9f1330",
+    "tag": "v0.1.0"
+  },
+  "repository": {
+    "url": "https://github.com/LucasLan666666/paseo-providers-manager",
+    "commit": "521df49f438cc2d59a206dd8417bb127af9f1330"
+  },
+  "categories": [
+    "providers"
+  ],
+  "submittedAt": "2026-11-26T04:36:13Z",
+  "submittedBy": "LucasLan666666",
+  "publishedAt": "2026-11-26T08:03:42Z",
+  "reviewedAt": "2026-11-26T08:03:42Z"
+}

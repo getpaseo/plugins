@@ -3,7 +3,8 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/daxiong123/paseo-cnb.git",
-    "commit": "3d5e18444e875fa78eb6a064f28bd5761e627313"
+    "commit": "3d5e18444e875fa78eb6a064f28bd5761e627313",
+    "tag": "v0.1.1"
   },
   "repository": {
     "url": "https://github.com/daxiong123/paseo-cnb",

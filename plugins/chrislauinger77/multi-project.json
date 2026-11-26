@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/ChrisLauinger77/paseo-multi-project.git",
-    "commit": "fe85abe0816ae5c0aac7315063bf0fefb72da8f0",
-    "tag": "v0.1.7"
+    "commit": "a66029640e15a0f45d2feb4b4a08a4c88e283839",
+    "tag": "v0.1.8"
   },
   "repository": {
     "url": "https://github.com/ChrisLauinger77/paseo-multi-project",
-    "commit": "fe85abe0816ae5c0aac7315063bf0fefb72da8f0"
+    "commit": "a66029640e15a0f45d2feb4b4a08a4c88e283839"
   },
   "categories": [
     "orchestration",
@@ -18,5 +18,5 @@
   "submittedAt": "2026-11-15T14:47:57Z",
   "submittedBy": "ChrisLauinger77",
   "publishedAt": "2026-11-15T15:01:31Z",
-  "reviewedAt": "2026-11-20T16:01:21Z"
+  "reviewedAt": "2026-11-26T22:01:03Z"
 }

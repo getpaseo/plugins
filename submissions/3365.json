@@ -1,0 +1,12 @@
+{
+  "issue": 3365,
+  "title": "Add plugin paseo applied market",
+  "submittedBy": "wenbo-chen-ai",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/Applied-Shared/paseo-applied-marketplace"
+  },
+  "categories": [
+    "utils"
+  ]
+}

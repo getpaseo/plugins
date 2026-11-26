@@ -1,0 +1,13 @@
+{
+  "issue": 3359,
+  "title": "Providers Manager",
+  "submittedBy": "LucasLan666666",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/LucasLan666666/paseo-providers-manager",
+    "ref": "v0.1.0"
+  },
+  "categories": [
+    "providers"
+  ]
+}

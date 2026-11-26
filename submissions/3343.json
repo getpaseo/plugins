@@ -1,0 +1,14 @@
+{
+  "issue": 3343,
+  "title": "Skill Hub",
+  "submittedBy": "LucasLan666666",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/LucasLan666666/paseo-skill-hub",
+    "ref": "85c8679424c9dbdf334ddb411fe327e4f78429a5"
+  },
+  "categories": [
+    "utils",
+    "sidebar"
+  ]
+}

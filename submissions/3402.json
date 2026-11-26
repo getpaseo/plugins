@@ -1,0 +1,13 @@
+{
+  "issue": 3402,
+  "title": "Sidebar+",
+  "submittedBy": "finly",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/finly/paseo-sidebar-plus",
+    "ref": "v0.1.2"
+  },
+  "categories": [
+    "sidebar"
+  ]
+}

@@ -20,6 +20,8 @@ The paired extension can also relay Follow-up's Graphite status and Merge when r
 
 When the extension has Follow-up browser access on, opening a pull request's popover also asks Follow-up on this daemon which Paseo workspaces own that pull request. The answer lists up to three workspaces with their titles, agent status and Follow-up's one-line state, plus links that open each agent in the Paseo desktop app or at app.paseo.sh. Nothing is sent to app.paseo.sh by the plugin; the links only open when you click them, and the web link works only in a browser already paired with that server.
 
+With Follow-up 2.3.1 or later, the bridge also passes along the color for each workspace status.
+
 ## Private address and several machines
 
 One bridge, beside the browser, can forward to other Paseo machines. Each additional machine shares a connection code containing its private bridge URL and token, so treat the code as a secret. The forwarding bridge reaches it over authenticated HTTPS. The private address must be an HTTPS origin, for example from a reverse proxy, and the **Enable private access** button runs `tailscale serve --bg <port>`, which publishes the loopback bridge on your tailnet. Use Tailscale Serve and not Funnel, since Funnel is public.

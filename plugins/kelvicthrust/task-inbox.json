@@ -1,0 +1,22 @@
+{
+  "id": "kelvicthrust/task-inbox",
+  "artifact": {
+    "kind": "npm",
+    "package": "@kelvicthrust/paseo-task-inbox",
+    "version": "1.0.0",
+    "resolved": "https://registry.npmjs.org/@kelvicthrust/paseo-task-inbox/-/paseo-task-inbox-1.0.0.tgz",
+    "integrity": "sha512-v8AuEyRplNZoyMR7TZ2KWKYxKJKhfQf1D6ASbLfB4nLnLKVSOkwSSgCUJegj7SGmhPGAddFwIfBBlKTqVocABg=="
+  },
+  "repository": {
+    "url": "https://github.com/kelvicthrust/paseo-task-inbox",
+    "commit": "0a3e12a3ef4e8ca8ef9f7a3115c58cd29ff6686f"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-24T08:59:08Z",
+  "submittedBy": "kelvicthrust",
+  "publishedAt": "2026-11-24T10:01:48Z",
+  "reviewedAt": "2026-11-26T01:04:00Z"
+}

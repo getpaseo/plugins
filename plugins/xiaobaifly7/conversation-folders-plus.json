@@ -1,0 +1,19 @@
+{
+  "id": "xiaobaifly7/conversation-folders-plus",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/xiaobaifly7/paseo-conversation-folders.git",
+    "commit": "c63242aac557bbc519a9cbeebde36efa501f036f"
+  },
+  "repository": {
+    "url": "https://github.com/xiaobaifly7/paseo-conversation-folders",
+    "commit": "c63242aac557bbc519a9cbeebde36efa501f036f"
+  },
+  "categories": [
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-23T17:11:37Z",
+  "submittedBy": "xiaobaifly7",
+  "publishedAt": "2026-11-23T18:01:31Z",
+  "reviewedAt": "2026-11-25T08:07:38Z"
+}

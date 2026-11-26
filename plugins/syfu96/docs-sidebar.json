@@ -1,0 +1,21 @@
+{
+  "id": "syfu96/docs-sidebar",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/SyFu96/paseo-docs-sidebar.git",
+    "commit": "6daa10dd15fddbbb036cf9573783f85ae8a64a65",
+    "tag": "v1.5.0"
+  },
+  "repository": {
+    "url": "https://github.com/SyFu96/paseo-docs-sidebar",
+    "commit": "6daa10dd15fddbbb036cf9573783f85ae8a64a65"
+  },
+  "categories": [
+    "sidebar",
+    "workspaces"
+  ],
+  "submittedAt": "2026-11-25T09:25:34Z",
+  "submittedBy": "SyFu96",
+  "publishedAt": "2026-11-25T16:02:32Z",
+  "reviewedAt": "2026-11-26T06:01:55Z"
+}

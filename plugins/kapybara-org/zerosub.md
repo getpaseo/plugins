@@ -24,7 +24,11 @@ Two other options are off by default. One spends a provider's banked limit reset
 
 When Claude reports how many Fable-only resets you have, the Accounts card shows the count. Use those resets in Claude under **Settings → Usage**. ZeroSub will also point you there if Claude says a reset is available only in Claude.
 
+In **Accounts**, set a quota maximum for individual usage windows on an account. When a recent reading reaches that maximum, ZeroSub treats that window as exhausted for routing. Adding a separately signed-in folder for the same Claude subscription pauses the matching CLI entry in ZeroSub. Enabling either entry pauses the other. Removing the added account restores the CLI entry if ZeroSub paused it and it is still signed in to the same subscription. On file-backed systems, ZeroSub checks whether the imported folder shares the CLI login by comparing local credential files in memory.
+
 ## Other providers and paid accounts
+
+- **Antigravity.** On Linux, install Antigravity CLI 1.5 or newer on the daemon host. Add a sign-in in Accounts through Google's authorization page. Each added account uses a separate home directory and a file-backed sign-in. Tools launched by the agent inherit that home, and existing conversations stay with their original account. ZeroSub reads your personal Google email from the CLI's local sign-in to detect duplicate accounts. For the desktop CLI sign-in, this lookup uses Linux Secret Service via `secret-tool`. Usage is shown for reference and does not switch accounts.
 
 - **Grok and Cursor.** Add several Grok or Cursor sign-ins and pick the account each new agent starts on. A conversation stays on the account it started on. ZeroSub does not switch these agents on a limit and does not read Grok or Cursor usage. Cursor accounts work on Linux only.
 - **Pi.** Add Anthropic API keys for Pi agents, each with an optional base URL and an optional proxy. Pi accounts have no usage bars and never switch automatically. Each added Pi account also gets a launcher script, and each added Claude account gets one too, in `~/.pi-config` and `~/.claude-config` (or the folder named by `ZEROSUB_LAUNCHER_DIR` or `ZEROSUB_PI_DIR`), so you can start the CLI on that account in a terminal.
@@ -32,6 +36,8 @@ When Claude reports how many Fable-only resets you have, the Accounts card shows
 - **Proxies.** Claude, Pi and API accounts can have their own proxy. To set one for your own CLI login, ZeroSub can edit `~/.claude/settings.json` or Pi's `settings.json`, `auth.json` and `models.json`. It keeps copies of the old files in its backups folder first. A proxy set on Pi's own login is also given to Pi agents as proxy environment variables, and to added Pi accounts that have no proxy of their own, unless a key would cross it over plain `http://`.
 
 ## Access and limits
+
+When the CLI and an added Codex account have the same workspace and member email, ZeroSub keeps one enabled for new agents. Existing threads keep their original sign-in.
 
 Handoffs send conversation text and summaries of tool actions to the destination agent’s provider and account. This includes a cross-provider transfer when that option is enabled or you confirm a manual fork. The plugin stores continuation links and timeline positions in its state file; handoff text remains in agent conversation histories rather than a separate plugin transcript. On Paseo 0.13 and later, limit detection reads the finished turn from the agent timeline when the turn hook contains no conversation.
 

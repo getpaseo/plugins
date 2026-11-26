@@ -1,0 +1,19 @@
+{
+  "id": "1099271/markdown-outline",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/1099271/paseo-markdown-outline.git",
+    "commit": "e82f1bb352a602a197218e1127a10bc7438d5b10"
+  },
+  "repository": {
+    "url": "https://github.com/1099271/paseo-markdown-outline",
+    "commit": "e82f1bb352a602a197218e1127a10bc7438d5b10"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-25T14:02:41Z",
+  "submittedBy": "1099271",
+  "publishedAt": "2026-11-25T14:02:41Z",
+  "reviewedAt": "2026-11-25T14:02:41Z"
+}

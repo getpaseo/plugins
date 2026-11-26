@@ -1,0 +1,21 @@
+{
+  "id": "xenowei/schedule-keep-latest-workspace",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/xenowei/paseo-schedule-keep-latest-workspace.git",
+    "commit": "d69802885bd0b40fda35872bbc7c8cd025543036",
+    "tag": "v0.1.0"
+  },
+  "repository": {
+    "url": "https://github.com/xenowei/paseo-schedule-keep-latest-workspace",
+    "commit": "d69802885bd0b40fda35872bbc7c8cd025543036"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-11-26T11:45:03Z",
+  "submittedBy": "xenowei",
+  "publishedAt": "2026-11-26T14:02:03Z",
+  "reviewedAt": "2026-11-26T14:02:03Z"
+}

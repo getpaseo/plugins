@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "@kelvicthrust/paseo-task-inbox",
-    "version": "0.2.0",
-    "resolved": "https://registry.npmjs.org/@kelvicthrust/paseo-task-inbox/-/paseo-task-inbox-0.2.0.tgz",
-    "integrity": "sha512-JSB3D7Ip8CWEGdIXRPpU25/UWU5TX7PlXZtbsg5x7h+aUYqZ3PLQsRY9UWakPYAb9tLZaQEqyIEf7LAlnlN9cg=="
+    "version": "1.0.1",
+    "resolved": "https://registry.npmjs.org/@kelvicthrust/paseo-task-inbox/-/paseo-task-inbox-1.0.1.tgz",
+    "integrity": "sha512-oDNl1V1exEHgsP0a8jj8Jn0iWPOhxCN+2kS+ZqsZgJT/TpBU0KehDBZ4IjjaXf1lDApXfb6pmyPDffZ9gm78Ng=="
   },
   "repository": {
     "url": "https://github.com/kelvicthrust/paseo-task-inbox",
-    "commit": "578ff0242a34970ac0dbaf0c1a39ff3ee9b8cfa8"
+    "commit": "cf5253c5d6f9fa01b40c9f1c399775f10b6ceffd"
   },
   "categories": [
     "workspaces",
@@ -18,5 +18,5 @@
   "submittedAt": "2026-11-24T08:59:08Z",
   "submittedBy": "kelvicthrust",
   "publishedAt": "2026-11-24T10:01:48Z",
-  "reviewedAt": "2026-11-24T10:01:48Z"
+  "reviewedAt": "2026-11-26T15:28:13Z"
 }

@@ -1,0 +1,20 @@
+{
+  "id": "eviterlesroses2/better-paseo-math",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/EviterLesRoses2/better-paseo-math.git",
+    "commit": "e3fd792bdb3a230f3768e0b46d226fd78564db80",
+    "tag": "v1.1.2"
+  },
+  "repository": {
+    "url": "https://github.com/EviterLesRoses2/better-paseo-math",
+    "commit": "e3fd792bdb3a230f3768e0b46d226fd78564db80"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-25T14:15:41Z",
+  "submittedBy": "EviterLesRoses2",
+  "publishedAt": "2026-11-25T16:02:54Z",
+  "reviewedAt": "2026-11-26T14:02:19Z"
+}

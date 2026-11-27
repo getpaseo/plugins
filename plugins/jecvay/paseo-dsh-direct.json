@@ -1,0 +1,21 @@
+{
+  "id": "jecvay/paseo-dsh-direct",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-dsh-direct",
+    "version": "0.2.26",
+    "resolved": "https://registry.npmjs.org/paseo-dsh-direct/-/paseo-dsh-direct-0.2.26.tgz",
+    "integrity": "sha512-zQ96d1oFRvbQKvTVOODeQI/e+8Y3d0Y+4IYTk+7ywcWCnih/CW970sCQcxnWOiJyhDqMHvY8YkNnJoQOXgg7/Q=="
+  },
+  "repository": {
+    "url": "https://github.com/Jecvay/paseo-dsh-direct",
+    "commit": "47741415f99bbd686a3921f35cc35c69130e4f6f"
+  },
+  "categories": [
+    "providers"
+  ],
+  "submittedAt": "2026-11-27T16:10:11Z",
+  "submittedBy": "Jecvay",
+  "publishedAt": "2026-11-27T20:02:04Z",
+  "reviewedAt": "2026-11-27T20:02:04Z"
+}

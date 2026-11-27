@@ -1,0 +1,26 @@
+{
+  "id": "eros-h/paseo-pr-reviewers",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/Eros-H/PR-Reviewers.git",
+    "commit": "fbbf6cb55b2487b8a3284a2b022cb967cff17b26",
+    "tag": "v0.1.0"
+  },
+  "repository": {
+    "url": "https://github.com/Eros-H/PR-Reviewers",
+    "commit": "fbbf6cb55b2487b8a3284a2b022cb967cff17b26"
+  },
+  "categories": [
+    "git",
+    "workspaces"
+  ],
+  "submittedAt": "2026-11-26T18:27:27Z",
+  "submittedBy": "Eros-H",
+  "publishedAt": "2026-11-26T20:01:48Z",
+  "reviewedAt": "2026-11-26T20:01:48Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/getpaseo/plugins/07e50509430bb3264c6adbe15a4f0b3c2aad8a72/assets/eros-h/paseo-pr-reviewers/screenshot.png"
+    ]
+  }
+}

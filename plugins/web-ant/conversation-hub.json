@@ -1,0 +1,20 @@
+{
+  "id": "web-ant/conversation-hub",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/web-ant/Conversation-Hub-Paseo.git",
+    "commit": "9c3c0732eeb9db101ca9dc8fa5ec22d14a311cbb",
+    "tag": "v0.3.1"
+  },
+  "repository": {
+    "url": "https://github.com/web-ant/Conversation-Hub-Paseo",
+    "commit": "9c3c0732eeb9db101ca9dc8fa5ec22d14a311cbb"
+  },
+  "categories": [
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-27T00:22:34Z",
+  "submittedBy": "vladimirDaron",
+  "publishedAt": "2026-11-27T02:03:52Z",
+  "reviewedAt": "2026-11-27T02:03:52Z"
+}

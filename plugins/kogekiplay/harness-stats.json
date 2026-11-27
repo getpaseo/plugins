@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/kogekiplay/paseo-harness-stats.git",
-    "commit": "552133791474174bdeaa78672ab665436fd857b3"
+    "commit": "8f73358315937fb7a99bf57b337d6ab316ded187"
   },
   "repository": {
     "url": "https://github.com/kogekiplay/paseo-harness-stats",
-    "commit": "552133791474174bdeaa78672ab665436fd857b3"
+    "commit": "8f73358315937fb7a99bf57b337d6ab316ded187"
   },
   "categories": [
     "utils"

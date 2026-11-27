@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/DomenCai/paseo-remote-hand.git",
-    "commit": "d33f7805c26788c1a7d7b0228fc75c8ebfa0f348",
-    "tag": "v0.1.0"
+    "commit": "77f41ba3e852268273fd36b953ccf10daf4216f6",
+    "tag": "v0.1.2"
   },
   "repository": {
     "url": "https://github.com/DomenCai/paseo-remote-hand",
-    "commit": "d33f7805c26788c1a7d7b0228fc75c8ebfa0f348"
+    "commit": "77f41ba3e852268273fd36b953ccf10daf4216f6"
   },
   "categories": [
     "providers",
@@ -17,5 +17,5 @@
   "submittedAt": "2026-11-25T14:03:16Z",
   "submittedBy": "DomenCai",
   "publishedAt": "2026-11-25T14:03:16Z",
-  "reviewedAt": "2026-11-27T10:03:48Z"
+  "reviewedAt": "2026-11-27T12:03:53Z"
 }

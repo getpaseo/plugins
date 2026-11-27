@@ -1,0 +1,12 @@
+{
+  "issue": 3518,
+  "title": "Sidebar Plus",
+  "submittedBy": "sawyerfeng",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/sawyerfeng/paseo-sidebar-plus"
+  },
+  "categories": [
+    "sidebar"
+  ]
+}

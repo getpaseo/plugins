@@ -1,0 +1,13 @@
+{
+  "issue": 3522,
+  "title": "Plugin submit: Popup Copy",
+  "submittedBy": "wlecki",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/wlecki/paseo-popup-copy"
+  },
+  "categories": [
+    "extras",
+    "utils"
+  ]
+}

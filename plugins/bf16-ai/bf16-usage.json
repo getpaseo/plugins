@@ -1,0 +1,20 @@
+{
+  "id": "bf16-ai/bf16-usage",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/BF16-AI/bf16-paseo-plugin.git",
+    "commit": "2f890993f3695389d31a1b6d0526a8f463db9947"
+  },
+  "repository": {
+    "url": "https://github.com/BF16-AI/bf16-paseo-plugin",
+    "commit": "2f890993f3695389d31a1b6d0526a8f463db9947"
+  },
+  "categories": [
+    "providers",
+    "utils"
+  ],
+  "submittedAt": "2026-11-27T15:52:51Z",
+  "submittedBy": "FiendSaws",
+  "publishedAt": "2026-11-27T20:02:24Z",
+  "reviewedAt": "2026-11-27T20:02:24Z"
+}

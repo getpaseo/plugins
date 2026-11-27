@@ -1,0 +1,14 @@
+{
+  "issue": 3511,
+  "title": "Update Skill Hub to v0.2.1",
+  "submittedBy": "LucasLan666666",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/LucasLan666666/paseo-skill-hub",
+    "ref": "e27db1b36db6f5f9cf2247aa721c72037ed41866"
+  },
+  "categories": [
+    "utils",
+    "sidebar"
+  ]
+}

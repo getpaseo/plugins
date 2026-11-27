@@ -1,0 +1,21 @@
+{
+  "id": "fu021/omni-reader",
+  "artifact": {
+    "kind": "npm",
+    "package": "paseo-omni-reader",
+    "version": "0.1.1",
+    "resolved": "https://registry.npmjs.org/paseo-omni-reader/-/paseo-omni-reader-0.1.1.tgz",
+    "integrity": "sha512-dGZlPBJMvurPXA/F01yEseIWypK67XiNFE+179FyVSBfgLUFOGGQ7g0+NxCdFyV0bkaxEUC7bcQnBpNz6LCwlw=="
+  },
+  "repository": {
+    "url": "https://github.com/Fu021/paseo-omni-reader"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-11-27T11:03:13Z",
+  "submittedBy": "Fu021",
+  "publishedAt": "2026-11-27T12:04:40Z",
+  "reviewedAt": "2026-11-27T12:04:40Z"
+}

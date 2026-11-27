@@ -1,0 +1,13 @@
+{
+  "issue": 3432,
+  "title": "Conversation Hub",
+  "submittedBy": "vladimirDaron",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/web-ant/Conversation-Hub-Paseo",
+    "ref": "v0.3.0"
+  },
+  "categories": [
+    "sidebar"
+  ]
+}

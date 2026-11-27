@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "codex-goal",
-    "version": "0.1.4",
-    "resolved": "https://registry.npmjs.org/codex-goal/-/codex-goal-0.1.4.tgz",
-    "integrity": "sha512-VRUuAKzY0jCjRni+IX78AnHfYp4ThE/A+Y9KU6xrIiNJyRFA9A7OzFFDfuiklpuNmDBG+H0KnismwqON0Tcbdg=="
+    "version": "0.1.5",
+    "resolved": "https://registry.npmjs.org/codex-goal/-/codex-goal-0.1.5.tgz",
+    "integrity": "sha512-eYc3yQuWJ5hn4exSStWhgHwllGItYQOG47VA+50wH8PQHAm9ValGdvlDBvVQOsNPpnd5fbovF15eomg/+Oi8lg=="
   },
   "repository": {
     "url": "https://github.com/Fu021/paseo-codex-goal"
@@ -16,5 +16,5 @@
   "submittedAt": "2026-11-25T14:05:07Z",
   "submittedBy": "Fu021",
   "publishedAt": "2026-11-25T16:02:43Z",
-  "reviewedAt": "2026-11-27T10:04:07Z"
+  "reviewedAt": "2026-11-27T12:55:58Z"
 }

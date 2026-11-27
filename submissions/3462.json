@@ -1,0 +1,13 @@
+{
+  "issue": 3462,
+  "title": "Update Codex Goal to v0.1.2",
+  "submittedBy": "Fu021",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/Fu021/paseo-codex-goal-ui",
+    "ref": "1faa1e28500e70fc23e253647bae196546b897d9"
+  },
+  "categories": [
+    "utils"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "issue": 3480,
+  "title": "Update Usage Sidebar to v0.2.1",
+  "submittedBy": "atricfox",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/atricfox/paseo-usage-sidebar",
+    "ref": "v0.2.1"
+  },
+  "categories": [
+    "sidebar",
+    "utils"
+  ]
+}

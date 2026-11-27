@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/atricfox/paseo-usage-sidebar.git",
-    "commit": "7f69f149fd34a1f5b326d894fafb93a65b62b584",
-    "tag": "v0.2.0"
+    "commit": "1b3a0800def21aff723ea04b146078b14afbd539",
+    "tag": "v0.2.1"
   },
   "repository": {
     "url": "https://github.com/atricfox/paseo-usage-sidebar",
-    "commit": "7f69f149fd34a1f5b326d894fafb93a65b62b584"
+    "commit": "1b3a0800def21aff723ea04b146078b14afbd539"
   },
   "categories": [
     "sidebar",
@@ -17,5 +17,5 @@
   "submittedAt": "2026-11-26T05:28:19Z",
   "submittedBy": "atricfox",
   "publishedAt": "2026-11-26T08:03:14Z",
-  "reviewedAt": "2026-11-26T08:03:14Z"
+  "reviewedAt": "2026-11-27T12:03:49Z"
 }

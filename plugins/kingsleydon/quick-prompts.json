@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-quick-prompts",
-    "version": "0.2.0",
-    "resolved": "https://registry.npmjs.org/paseo-quick-prompts/-/paseo-quick-prompts-0.2.0.tgz",
-    "integrity": "sha512-D0PEKf/EHqBL/8i68j+Sd9sg3BasmKbQ/XZY07Eg5kPHaFxWdprgRQet2MijYoMI0aZbOuL5mCYM40LZMAGfaQ=="
+    "version": "0.3.0",
+    "resolved": "https://registry.npmjs.org/paseo-quick-prompts/-/paseo-quick-prompts-0.3.0.tgz",
+    "integrity": "sha512-3uHVYLzzz2QnikKkfIXT4UDkzxiehYx6lTKLMCrLPkSA48k+lUz2ZO4qqlBvdLeEkBzZlQD/ytYEYgRjtD6rGg=="
   },
   "repository": {
     "url": "https://github.com/kingsleydon/paseo-plugins/tree/HEAD/plugins/quick-prompts",
-    "commit": "ceb91bef9d9a978d083cbc373bb192f98b794581"
+    "commit": "7285189c21980e012ea879f7d8071973a57369e2"
   },
   "categories": [
     "utils"
@@ -17,5 +17,5 @@
   "submittedAt": "2026-10-14T09:46:43Z",
   "submittedBy": "kingsleydon",
   "publishedAt": "2026-10-14T10:02:53Z",
-  "reviewedAt": "2026-10-29T11:37:22Z"
+  "reviewedAt": "2026-11-27T01:03:07Z"
 }

@@ -3,11 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/Fu021/paseo-codex-goal-ui.git",
-    "commit": "c63df310c75c1e483128844d3e37612d9223189e"
+    "commit": "4b94bd089796061f8cede13e462c04ae3b999872",
+    "tag": "v0.1.0"
   },
   "repository": {
     "url": "https://github.com/Fu021/paseo-codex-goal-ui",
-    "commit": "c63df310c75c1e483128844d3e37612d9223189e"
+    "commit": "4b94bd089796061f8cede13e462c04ae3b999872"
   },
   "categories": [
     "utils"
@@ -15,5 +16,5 @@
   "submittedAt": "2026-11-25T14:05:07Z",
   "submittedBy": "Fu021",
   "publishedAt": "2026-11-25T16:02:43Z",
-  "reviewedAt": "2026-11-26T14:02:12Z"
+  "reviewedAt": "2026-11-27T02:04:39Z"
 }

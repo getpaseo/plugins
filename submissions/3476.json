@@ -1,0 +1,13 @@
+{
+  "issue": 3476,
+  "title": "Update Better Paseo Antigravity to v0.4.3 (fix Paseo 0.18.0 loading)",
+  "submittedBy": "robbin",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/robbin/paseo-antigravity",
+    "ref": "v0.4.3"
+  },
+  "categories": [
+    "providers"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "issue": 3530,
+  "title": "DeepSeek peak pricing",
+  "submittedBy": "marcelhenneke",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/openso-de/paseo-deepseek-peak",
+    "ref": "v0.1.3"
+  },
+  "categories": [
+    "utils"
+  ]
+}

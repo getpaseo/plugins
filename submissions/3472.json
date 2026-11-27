@@ -1,0 +1,14 @@
+{
+  "issue": 3472,
+  "title": "Usage Bridge",
+  "submittedBy": "NightWatcher314",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/NightWatcher314/paseo-usage-bridge",
+    "ref": "v0.1.0"
+  },
+  "categories": [
+    "providers",
+    "utils"
+  ]
+}

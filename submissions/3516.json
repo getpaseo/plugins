@@ -1,0 +1,13 @@
+{
+  "issue": 3516,
+  "title": "DeepSeek Harness (paseo-dsh-direct@0.2.26)",
+  "submittedBy": "Jecvay",
+  "source": {
+    "kind": "npm",
+    "package": "paseo-dsh-direct",
+    "version": "0.2.26"
+  },
+  "categories": [
+    "providers"
+  ]
+}

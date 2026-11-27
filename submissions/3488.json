@@ -1,0 +1,13 @@
+{
+  "issue": 3488,
+  "title": "DSH Superagent",
+  "submittedBy": "muzhi1991",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/muzhi1991/paseo-dsh-superagent"
+  },
+  "categories": [
+    "orchestration",
+    "sidebar"
+  ]
+}

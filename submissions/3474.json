@@ -1,0 +1,14 @@
+{
+  "issue": 3474,
+  "title": "Update Remote hand (domencai/remote-hand) to v0.1.2",
+  "submittedBy": "DomenCai",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/DomenCai/paseo-remote-hand",
+    "ref": "v0.1.2"
+  },
+  "categories": [
+    "providers",
+    "orchestration"
+  ]
+}

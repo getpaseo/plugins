@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-unit-test-pulse",
-    "version": "1.1.1",
-    "resolved": "https://registry.npmjs.org/paseo-unit-test-pulse/-/paseo-unit-test-pulse-1.1.1.tgz",
-    "integrity": "sha512-IamrBIYaZTEb265NgWsPbKQ/fTy/x+QHgYRCzLdGxk/RJLZgIvGeXFKCMcsNGaLtFKs/xNR5xi3XUA+OMDonew=="
+    "version": "1.1.2",
+    "resolved": "https://registry.npmjs.org/paseo-unit-test-pulse/-/paseo-unit-test-pulse-1.1.2.tgz",
+    "integrity": "sha512-uXH0yGqcEUZRLEMotY60NuEOqcKr8oCVzc/tdUfsfS9YBpvVw1FIrcOFYRTynnejw0nfHNEsTX/h9aBqARQcvA=="
   },
   "repository": {
     "url": "https://github.com/mbranicky/unit-test-pulse",
-    "commit": "18e0ab63cb0dc2bada251ca61b8d9411786c2620"
+    "commit": "35b7ed12e8f5bfabc9525f8cdeba88379a987d2d"
   },
   "categories": [
     "sidebar",

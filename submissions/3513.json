@@ -1,0 +1,14 @@
+{
+  "issue": 3513,
+  "title": "bf16.ai Usage",
+  "submittedBy": "FiendSaws",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/BF16-AI/bf16-paseo-plugin",
+    "ref": "v1.0.0"
+  },
+  "categories": [
+    "providers",
+    "utils"
+  ]
+}

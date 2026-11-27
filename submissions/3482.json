@@ -1,0 +1,14 @@
+{
+  "issue": 3482,
+  "title": "Cursor SDK",
+  "submittedBy": "fidelix",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/fidelix/fidelix-paseo-plugins",
+    "ref": "3f07c5065b071d5e79623664664b766a3052d24a",
+    "pluginPath": "plugins/cursor-sdk"
+  },
+  "categories": [
+    "providers"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "issue": 2992,
+  "title": "Safehouse 0.5.0: Refresh providers fixes and plugin-supplied providers",
+  "submittedBy": "clkao",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/spacedock-dev/paseo-safehouse",
+    "ref": "v0.5.0"
+  },
+  "categories": [
+    "providers",
+    "workspaces"
+  ]
+}

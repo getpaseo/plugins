@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/average-crumb/paseo-read-aloud.git",
-    "commit": "ea8bef1c0a38e61e25c7cba0ac7566cc6fd8af69"
+    "commit": "afb59f951d077e84f52e341184c53737859c42de"
   },
   "repository": {
     "url": "https://github.com/average-crumb/paseo-read-aloud",
-    "commit": "ea8bef1c0a38e61e25c7cba0ac7566cc6fd8af69"
+    "commit": "afb59f951d077e84f52e341184c53737859c42de"
   },
   "categories": [
     "extras"

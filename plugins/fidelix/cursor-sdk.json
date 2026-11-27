@@ -1,0 +1,20 @@
+{
+  "id": "fidelix/cursor-sdk",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/fidelix/fidelix-paseo-plugins.git",
+    "commit": "9fb82129ea25e0cc24a4c7932e8c88d78a76d542",
+    "pluginPath": "plugins/cursor-sdk"
+  },
+  "repository": {
+    "url": "https://github.com/fidelix/fidelix-paseo-plugins",
+    "commit": "9fb82129ea25e0cc24a4c7932e8c88d78a76d542"
+  },
+  "categories": [
+    "providers"
+  ],
+  "submittedAt": "2026-11-27T12:01:22Z",
+  "submittedBy": "fidelix",
+  "publishedAt": "2026-11-27T14:01:42Z",
+  "reviewedAt": "2026-11-27T14:01:42Z"
+}

@@ -1,0 +1,13 @@
+{
+  "issue": 3441,
+  "title": "Update Better Paseo Antigravity to v0.4.2",
+  "submittedBy": "robbin",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/robbin/paseo-antigravity",
+    "ref": "v0.4.2"
+  },
+  "categories": [
+    "providers"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "athul/commit-diff",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/athul/paseo-commit-diff.git",
+    "commit": "a028eb200ee7d58a69b68e959b115fdac5da7ea4"
+  },
+  "repository": {
+    "url": "https://github.com/athul/paseo-commit-diff",
+    "commit": "a028eb200ee7d58a69b68e959b115fdac5da7ea4"
+  },
+  "categories": [
+    "git",
+    "workspaces"
+  ],
+  "submittedAt": "2026-11-27T05:56:16Z",
+  "submittedBy": "athul",
+  "publishedAt": "2026-11-27T06:02:44Z",
+  "reviewedAt": "2026-11-27T06:02:44Z"
+}

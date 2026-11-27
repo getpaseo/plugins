@@ -1,0 +1,14 @@
+{
+  "issue": 3478,
+  "title": "Paseo Omni Reader",
+  "submittedBy": "Fu021",
+  "source": {
+    "kind": "npm",
+    "package": "paseo-omni-reader",
+    "version": "0.1.1"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ]
+}

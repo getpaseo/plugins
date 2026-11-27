@@ -1,0 +1,20 @@
+{
+  "id": "afeding/reset-credits",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/afeding/paseo-reset-credits.git",
+    "commit": "16e67aff95eee3c131f7ae1508eaef4c52b2657c"
+  },
+  "repository": {
+    "url": "https://github.com/afeding/paseo-reset-credits",
+    "commit": "16e67aff95eee3c131f7ae1508eaef4c52b2657c"
+  },
+  "categories": [
+    "sidebar",
+    "utils"
+  ],
+  "submittedAt": "2026-11-27T14:05:04Z",
+  "submittedBy": "afeding",
+  "publishedAt": "2026-11-27T16:02:02Z",
+  "reviewedAt": "2026-11-27T16:02:02Z"
+}

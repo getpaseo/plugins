@@ -1,0 +1,20 @@
+{
+  "id": "fu021/codex-goal",
+  "artifact": {
+    "kind": "npm",
+    "package": "codex-goal",
+    "version": "0.1.4",
+    "resolved": "https://registry.npmjs.org/codex-goal/-/codex-goal-0.1.4.tgz",
+    "integrity": "sha512-VRUuAKzY0jCjRni+IX78AnHfYp4ThE/A+Y9KU6xrIiNJyRFA9A7OzFFDfuiklpuNmDBG+H0KnismwqON0Tcbdg=="
+  },
+  "repository": {
+    "url": "https://github.com/Fu021/paseo-codex-goal"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-25T14:05:07Z",
+  "submittedBy": "Fu021",
+  "publishedAt": "2026-11-25T16:02:43Z",
+  "reviewedAt": "2026-11-27T10:04:07Z"
+}

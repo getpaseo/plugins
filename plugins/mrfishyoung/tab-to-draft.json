@@ -1,0 +1,19 @@
+{
+  "id": "mrfishyoung/tab-to-draft",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/mrfishyoung/paseo-tab-to-draft.git",
+    "commit": "7157082f47e35a10ece512deb2c1ce7b6ebfb7b2"
+  },
+  "repository": {
+    "url": "https://github.com/mrfishyoung/paseo-tab-to-draft",
+    "commit": "7157082f47e35a10ece512deb2c1ce7b6ebfb7b2"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-27T06:58:14Z",
+  "submittedBy": "mrfishyoung",
+  "publishedAt": "2026-11-27T08:02:13Z",
+  "reviewedAt": "2026-11-27T08:02:13Z"
+}

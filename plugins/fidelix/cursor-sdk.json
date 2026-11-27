@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/fidelix/fidelix-paseo-plugins.git",
-    "commit": "9fb82129ea25e0cc24a4c7932e8c88d78a76d542",
+    "commit": "1dab22b659b32997fbb09a1cafae4d6f7a694fe1",
     "pluginPath": "plugins/cursor-sdk"
   },
   "repository": {
     "url": "https://github.com/fidelix/fidelix-paseo-plugins",
-    "commit": "9fb82129ea25e0cc24a4c7932e8c88d78a76d542"
+    "commit": "1dab22b659b32997fbb09a1cafae4d6f7a694fe1"
   },
   "categories": [
     "providers"

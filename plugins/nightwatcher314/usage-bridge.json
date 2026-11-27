@@ -1,0 +1,21 @@
+{
+  "id": "nightwatcher314/usage-bridge",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/NightWatcher314/paseo-usage-bridge.git",
+    "commit": "44448a465eb10b4d3320068c926b65e2f6888209",
+    "tag": "v0.1.0"
+  },
+  "repository": {
+    "url": "https://github.com/NightWatcher314/paseo-usage-bridge",
+    "commit": "44448a465eb10b4d3320068c926b65e2f6888209"
+  },
+  "categories": [
+    "providers",
+    "utils"
+  ],
+  "submittedAt": "2026-11-27T10:41:20Z",
+  "submittedBy": "NightWatcher314",
+  "publishedAt": "2026-11-27T12:04:25Z",
+  "reviewedAt": "2026-11-27T12:04:25Z"
+}

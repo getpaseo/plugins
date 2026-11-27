@@ -1,0 +1,20 @@
+{
+  "id": "muzhi1991/dsh-superagent",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/muzhi1991/paseo-dsh-superagent.git",
+    "commit": "192669057deea02ae14ab48c010175f20f263dd9"
+  },
+  "repository": {
+    "url": "https://github.com/muzhi1991/paseo-dsh-superagent",
+    "commit": "192669057deea02ae14ab48c010175f20f263dd9"
+  },
+  "categories": [
+    "orchestration",
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-27T13:18:08Z",
+  "submittedBy": "muzhi1991",
+  "publishedAt": "2026-11-27T14:01:37Z",
+  "reviewedAt": "2026-11-27T14:01:37Z"
+}

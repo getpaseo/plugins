@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/versun/paseo-todo.git",
-    "commit": "43864e12d549338b1ae6e2a3b28bc0dc26bd7ce6"
+    "commit": "e41dde505d3b06e3488838c948ae36b55713cbd3"
   },
   "repository": {
     "url": "https://github.com/versun/paseo-todo",
-    "commit": "43864e12d549338b1ae6e2a3b28bc0dc26bd7ce6"
+    "commit": "e41dde505d3b06e3488838c948ae36b55713cbd3"
   },
   "categories": [
     "sidebar",

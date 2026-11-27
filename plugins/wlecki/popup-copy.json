@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/wlecki/paseo-popup-copy.git",
-    "commit": "b27c97d1268c50bfac0accdb64a0eeecc4068bbc",
-    "tag": "v1.0.1"
+    "commit": "59a2457023c2366ec2cbee10625a8f1d90d882e3",
+    "tag": "v1.0.2"
   },
   "repository": {
     "url": "https://github.com/wlecki/paseo-popup-copy",
-    "commit": "b27c97d1268c50bfac0accdb64a0eeecc4068bbc"
+    "commit": "59a2457023c2366ec2cbee10625a8f1d90d882e3"
   },
   "categories": [
     "extras",
@@ -17,10 +17,5 @@
   "submittedAt": "2026-11-27T18:32:50Z",
   "submittedBy": "wlecki",
   "publishedAt": "2026-11-27T20:01:56Z",
-  "reviewedAt": "2026-11-27T20:01:56Z",
-  "listing": {
-    "media": [
-      "https://raw.githubusercontent.com/wlecki/paseo-popup-copy/b27c97d1268c50bfac0accdb64a0eeecc4068bbc/images/popup.png"
-    ]
-  }
+  "reviewedAt": "2026-11-27T22:01:34Z"
 }

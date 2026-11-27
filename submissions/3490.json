@@ -1,0 +1,14 @@
+{
+  "issue": 3490,
+  "title": "Reset credits",
+  "submittedBy": "afeding",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/afeding/paseo-reset-credits",
+    "ref": "16e67aff95eee3c131f7ae1508eaef4c52b2657c"
+  },
+  "categories": [
+    "sidebar",
+    "utils"
+  ]
+}

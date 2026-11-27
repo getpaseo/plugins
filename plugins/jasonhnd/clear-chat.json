@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/jasonhnd/paseo-clear-chat.git",
-    "commit": "1181c86e4fbfae98f4f023b61937d07e48cc4cfb",
-    "tag": "v0.17.4.2"
+    "commit": "770f518e6bdb0ae77d4a20e3fe7747a67c6e9083",
+    "tag": "v0.17.5.1"
   },
   "repository": {
     "url": "https://github.com/jasonhnd/paseo-clear-chat",
-    "commit": "1181c86e4fbfae98f4f023b61937d07e48cc4cfb"
+    "commit": "770f518e6bdb0ae77d4a20e3fe7747a67c6e9083"
   },
   "categories": [
     "utils"
@@ -16,21 +16,22 @@
   "submittedAt": "2026-11-03T13:36:07Z",
   "submittedBy": "jasonhnd",
   "publishedAt": "2026-11-03T14:02:47Z",
-  "reviewedAt": "2026-11-26T10:04:04Z",
+  "reviewedAt": "2026-11-27T00:01:13Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/35c4889852e96575df848362f4492127f43c2b02/docs/images/answer-card.png",
       "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/35c4889852e96575df848362f4492127f43c2b02/docs/images/answer-pill.png",
-      "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/35c4889852e96575df848362f4492127f43c2b02/docs/images/answer-sheet-narrow.png"
+      "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/35c4889852e96575df848362f4492127f43c2b02/docs/images/answer-sheet-narrow.png",
+      "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/770f518e6bdb0ae77d4a20e3fe7747a67c6e9083/docs/images/what-i-said.png"
     ],
     "translations": {
       "zh-CN": {
         "name": "Clear Chat",
-        "description": "回答卡片：回复里有字母选项题时，用卡片选题或自己写答案，预览后发送；另有「我说的话」面板，列出你今天发的消息，点一下就复制。不绘制对话。"
+        "description": "回答卡片：回复里有字母选项题时，用卡片选题或自己写答案，预览后发送；另有「我说的话」：对话旁边的面板列出你今天发的消息，左边栏的整页把本机各对话里今天的发言收在一起，点一下就复制。不绘制对话。"
       },
       "ja": {
         "name": "Clear Chat",
-        "description": "回答カード：返信にアルファベットの選択肢があるとき、カードで選ぶか自分で書き、プレビューして送信します。「自分の発言」パネルで今日送ったメッセージを一覧し、押すとコピーできます。会話は描きません。"
+        "description": "回答カード：返信にアルファベットの選択肢があるとき、カードで選ぶか自分で書き、プレビューして送信します。「自分の発言」は、会話の横のパネルとサイドバーの画面で今日送ったメッセージを一覧し、押すとコピーできます。会話は描きません。"
       }
     }
   }

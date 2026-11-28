@@ -1,0 +1,14 @@
+{
+  "issue": 3554,
+  "title": "Multi profile",
+  "submittedBy": "bearyjd",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/bearyjd/paseo-multi-profile",
+    "ref": "v0.1.1"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ]
+}

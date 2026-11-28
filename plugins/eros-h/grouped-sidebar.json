@@ -1,0 +1,21 @@
+{
+  "id": "eros-h/grouped-sidebar",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/Eros-H/Grouped-Sidebar.git",
+    "commit": "f86aa54afc7d5cef127e1d6044bf4284ef2d7ebe",
+    "tag": "v0.9.0"
+  },
+  "repository": {
+    "url": "https://github.com/Eros-H/Grouped-Sidebar",
+    "commit": "f86aa54afc7d5cef127e1d6044bf4284ef2d7ebe"
+  },
+  "categories": [
+    "sidebar",
+    "workspaces"
+  ],
+  "submittedAt": "2026-11-28T08:40:13Z",
+  "submittedBy": "Eros-H",
+  "publishedAt": "2026-11-28T12:07:50Z",
+  "reviewedAt": "2026-11-28T12:07:50Z"
+}

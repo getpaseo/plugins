@@ -1,0 +1,15 @@
+{
+  "issue": 3589,
+  "title": "Session navigation",
+  "submittedBy": "pureliture",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/pureliture/session-navigation",
+    "ref": "353ea920f588848f3a8866a250539fcc03716a88",
+    "pluginPath": "paseo-plugin"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ]
+}

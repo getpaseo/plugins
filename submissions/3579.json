@@ -1,0 +1,13 @@
+{
+  "issue": 3579,
+  "title": "Sidebar Plus v1.1.0",
+  "submittedBy": "sawyerfeng",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/sawyerfeng/paseo-sidebar-plus",
+    "ref": "v1.1.0"
+  },
+  "categories": [
+    "sidebar"
+  ]
+}

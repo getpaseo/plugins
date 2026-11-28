@@ -1,0 +1,13 @@
+{
+  "issue": 3624,
+  "title": "Update Native table tools pin to v0.1.1",
+  "submittedBy": "chaojiman",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/chaojiman/paseo-native-table-tools",
+    "ref": "v0.1.1"
+  },
+  "categories": [
+    "utils"
+  ]
+}

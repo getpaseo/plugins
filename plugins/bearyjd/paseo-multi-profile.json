@@ -1,0 +1,28 @@
+{
+  "id": "bearyjd/paseo-multi-profile",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/bearyjd/paseo-multi-profile.git",
+    "commit": "588a8c1d63b8a829c13ff6699ff131189d83efc5",
+    "tag": "v0.1.1"
+  },
+  "repository": {
+    "url": "https://github.com/bearyjd/paseo-multi-profile",
+    "commit": "588a8c1d63b8a829c13ff6699ff131189d83efc5"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-28T02:08:48Z",
+  "submittedBy": "bearyjd",
+  "publishedAt": "2026-11-28T02:09:01Z",
+  "reviewedAt": "2026-11-28T04:02:18Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/bearyjd/paseo-multi-profile/3a7be9c23565ce4d8d6211439a7a82285586c67d/docs/screenshots/sidebar-tree.png",
+      "https://raw.githubusercontent.com/bearyjd/paseo-multi-profile/3a7be9c23565ce4d8d6211439a7a82285586c67d/docs/screenshots/workspace-menu.png",
+      "https://raw.githubusercontent.com/bearyjd/paseo-multi-profile/3a7be9c23565ce4d8d6211439a7a82285586c67d/docs/screenshots/profiles-screen.png"
+    ]
+  }
+}

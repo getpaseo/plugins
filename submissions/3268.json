@@ -1,0 +1,12 @@
+{
+  "issue": 3268,
+  "title": "Session Auto Title",
+  "submittedBy": "mrgolftech",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/mrgolftech/paseo-session-auto-title"
+  },
+  "categories": [
+    "utils"
+  ]
+}

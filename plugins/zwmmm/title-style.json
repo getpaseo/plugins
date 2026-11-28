@@ -3,11 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/zwmmm/title-style.git",
-    "commit": "1bb9e78c54c54b01d2dea101c2d092a9f251a9cd"
+    "tag": "v1.3.4",
+    "commit": "8fd11e8367a153c7c2c42efb35aea3a2cbabbf51"
   },
   "repository": {
     "url": "https://github.com/zwmmm/title-style",
-    "commit": "1bb9e78c54c54b01d2dea101c2d092a9f251a9cd"
+    "commit": "8fd11e8367a153c7c2c42efb35aea3a2cbabbf51"
   },
   "categories": [
     "workspaces",
@@ -16,12 +17,12 @@
   "submittedAt": "2026-10-10",
   "submittedBy": "zwmmm",
   "publishedAt": "2026-10-10",
-  "reviewedAt": "2026-10-10",
+  "reviewedAt": "2026-11-28T02:02:10Z",
   "listing": {
     "name": "Title style",
     "media": [
-      "https://raw.githubusercontent.com/zwmmm/title-style/1bb9e78c54c54b01d2dea101c2d092a9f251a9cd/assets/title-style-settings.png",
-      "https://raw.githubusercontent.com/zwmmm/title-style/1bb9e78c54c54b01d2dea101c2d092a9f251a9cd/assets/title-style-sidebar.png"
+      "https://raw.githubusercontent.com/zwmmm/title-style/8fd11e8367a153c7c2c42efb35aea3a2cbabbf51/assets/title-style-settings.png",
+      "https://raw.githubusercontent.com/zwmmm/title-style/8fd11e8367a153c7c2c42efb35aea3a2cbabbf51/assets/title-style-sidebar.png"
     ]
   }
 }

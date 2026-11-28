@@ -1,0 +1,19 @@
+{
+  "id": "chaojiman/native-table-tools",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/chaojiman/paseo-native-table-tools.git",
+    "commit": "7d1f903acbfb1baa467ea310699582806e626aac"
+  },
+  "repository": {
+    "url": "https://github.com/chaojiman/paseo-native-table-tools",
+    "commit": "7d1f903acbfb1baa467ea310699582806e626aac"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-25T08:12:09Z",
+  "submittedBy": "chaojiman",
+  "publishedAt": "2026-11-25T08:12:09Z",
+  "reviewedAt": "2026-11-25T08:12:09Z"
+}

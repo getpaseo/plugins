@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "@stevecastaneda/paseo-time-since",
-    "version": "1.1.1",
-    "resolved": "https://registry.npmjs.org/@stevecastaneda/paseo-time-since/-/paseo-time-since-1.1.1.tgz",
-    "integrity": "sha512-AV0oYNnatcMCLbzVxdE5vdMpl0NU+FuuN0UaGVqvIC4jeXVbm8IBan1a+mpDqb5P6mUlc0hjj4tA02z0e/lB+A=="
+    "version": "1.2.0",
+    "resolved": "https://registry.npmjs.org/@stevecastaneda/paseo-time-since/-/paseo-time-since-1.2.0.tgz",
+    "integrity": "sha512-zNMuWWvmBW6ODxjoL/ApPFeTYIgEr0+MYdZjbOF9ubhhsoxT23KH5AphGJnaN88+PR9z0IhYD5ZWXBxUiK6+ww=="
   },
   "repository": {
     "url": "https://github.com/stevecastaneda/paseo-plugins/tree/HEAD/time-since"
@@ -16,7 +16,7 @@
   "submittedAt": "2026-09-10",
   "submittedBy": "stevecastaneda",
   "publishedAt": "2026-09-10",
-  "reviewedAt": "2026-10-30T21:37:59Z",
+  "reviewedAt": "2026-11-26T01:06:06Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/stevecastaneda/paseo-plugins/6997762ece758cb0abe90d34e1671de1f237039a/time-since/images/composer-pill.png",

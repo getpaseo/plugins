@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "@ziptie-soft/paseo-plugin-local-decider",
-    "version": "2.3.0",
-    "resolved": "https://registry.npmjs.org/@ziptie-soft/paseo-plugin-local-decider/-/paseo-plugin-local-decider-2.3.0.tgz",
-    "integrity": "sha512-GQni1eolkRfCRTNCv5clEnQHquh6MM3qtYXcaGeVpsuSG8ILa+KwyzTvOsY77JxLLLwIGsDzJEzB27/csdV1Jw=="
+    "version": "3.2.0",
+    "resolved": "https://registry.npmjs.org/@ziptie-soft/paseo-plugin-local-decider/-/paseo-plugin-local-decider-3.2.0.tgz",
+    "integrity": "sha512-V2JsUEPeYyceeS0pqyqENF+UAOeZUfBwSa6fcyAphUVIeR9LPnmaNYc3g5sOcwt1eImpxJT2Cw92W1OUZ6MAOw=="
   },
   "repository": {
     "url": "https://github.com/ziptie-soft/local-decider/tree/HEAD/packages/paseo-plugin",
-    "commit": "b9df2bba6e6ff3efe983be85899f585b0cd1b98b"
+    "commit": "49c701d0eefd87987b5d4ab92fb99b05c4e86edb"
   },
   "categories": [
     "orchestration",
@@ -18,5 +18,5 @@
   "submittedAt": "2026-11-15T23:02:56Z",
   "submittedBy": "SkeLLLa",
   "publishedAt": "2026-11-16T04:06:51Z",
-  "reviewedAt": "2026-11-16T04:06:51Z"
+  "reviewedAt": "2026-11-27T15:18:27Z"
 }

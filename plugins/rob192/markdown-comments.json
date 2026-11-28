@@ -1,0 +1,19 @@
+{
+  "id": "rob192/markdown-comments",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/Rob192/paseo-markdown-comments.git",
+    "commit": "bf4dbc5fdb15f871ba8a175e7d18d8bf75d11992"
+  },
+  "repository": {
+    "url": "https://github.com/Rob192/paseo-markdown-comments",
+    "commit": "bf4dbc5fdb15f871ba8a175e7d18d8bf75d11992"
+  },
+  "categories": [
+    "workspaces"
+  ],
+  "submittedAt": "2026-11-27T15:01:34Z",
+  "submittedBy": "Rob192",
+  "publishedAt": "2026-11-27T16:02:09Z",
+  "reviewedAt": "2026-11-27T16:02:09Z"
+}

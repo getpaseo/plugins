@@ -1,0 +1,20 @@
+{
+  "id": "nightwatcher314/loader",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/NightWatcher314/paseo-loader.git",
+    "commit": "d35caf997518fbb20c0931dc7700abf485288cca",
+    "tag": "v0.1.0"
+  },
+  "repository": {
+    "url": "https://github.com/NightWatcher314/paseo-loader",
+    "commit": "d35caf997518fbb20c0931dc7700abf485288cca"
+  },
+  "categories": [
+    "extras"
+  ],
+  "submittedAt": "2026-11-26T11:35:57Z",
+  "submittedBy": "NightWatcher314",
+  "publishedAt": "2026-11-26T14:02:04Z",
+  "reviewedAt": "2026-11-26T14:02:04Z"
+}

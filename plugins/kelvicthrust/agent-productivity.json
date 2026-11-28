@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "@kelvicthrust/paseo-agent-productivity-hq",
-    "version": "1.0.3",
-    "resolved": "https://registry.npmjs.org/@kelvicthrust/paseo-agent-productivity-hq/-/paseo-agent-productivity-hq-1.0.3.tgz",
-    "integrity": "sha512-wAEW7gMZ/n1uym1MGgBJ0OzUozlFkPSXV1tIi8dmvHdD/Ehv1/iDiUyMV2AM/YCpewn63krqX7krgPxbnV0z4A=="
+    "version": "1.2.3",
+    "resolved": "https://registry.npmjs.org/@kelvicthrust/paseo-agent-productivity-hq/-/paseo-agent-productivity-hq-1.2.3.tgz",
+    "integrity": "sha512-4/ZKrkNB3OL8lLJC3E5Bi2c3ahZ92y04grnyeMFltQenTJUaxHj6v51g/IZjdtOMkW1IA7VWH9Igb2G094DJIw=="
   },
   "repository": {
     "url": "https://github.com/kelvicthrust/agent-productivity-hq",
-    "commit": "45f095d50ef1f56317e5c307961ddfec3e42d908"
+    "commit": "4ecbe9f9d8ad08f6fd7964f59e52aa4ba9c55f84"
   },
   "categories": [
     "sidebar"
@@ -17,5 +17,5 @@
   "submittedAt": "2026-11-20T08:44:57Z",
   "submittedBy": "kelvicthrust",
   "publishedAt": "2026-11-20T10:06:47Z",
-  "reviewedAt": "2026-11-21T13:35:13Z"
+  "reviewedAt": "2026-11-27T15:17:16Z"
 }

@@ -1,0 +1,20 @@
+{
+  "id": "zwmmm/ryugi",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/zwmmm/ryugi-paseo-plugin.git",
+    "commit": "d8ad30ae3e9ef103911c835d68ee4c5057a5305d"
+  },
+  "repository": {
+    "url": "https://github.com/zwmmm/ryugi-paseo-plugin",
+    "commit": "d8ad30ae3e9ef103911c835d68ee4c5057a5305d"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces"
+  ],
+  "submittedAt": "2026-11-25T14:04:28Z",
+  "submittedBy": "zwmmm",
+  "publishedAt": "2026-11-25T14:04:28Z",
+  "reviewedAt": "2026-11-25T14:04:28Z"
+}

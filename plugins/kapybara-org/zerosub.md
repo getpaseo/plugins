@@ -24,7 +24,13 @@ Two other options are off by default. One spends a provider's banked limit reset
 
 When Claude reports how many Fable-only resets you have, the Accounts card shows the count. Use those resets in Claude under **Settings → Usage**. ZeroSub will also point you there if Claude says a reset is available only in Claude.
 
+In **Accounts**, set a quota maximum for individual usage windows on an account. When a recent reading reaches that maximum, ZeroSub treats that window as exhausted for routing. Adding a separately signed-in folder for the same Claude subscription pauses the matching CLI entry in ZeroSub. Enabling either entry pauses the other. Removing the added account restores the CLI entry if ZeroSub paused it and it is still signed in to the same subscription. On file-backed systems, ZeroSub checks whether the imported folder shares the CLI login by comparing local credential files in memory.
+
+**Fast mode** for a ChatGPT subscription account is set in that account's actions in **Accounts**. You give an end date (`YYYY-MM-DD`, UTC), and until that date ZeroSub turns on Codex Fast for agents on that account whose model offers it. Fast pauses at 90% weekly usage, when another usage window is full, at a quota maximum, or when no current usage reading is available. When the date passes or you clear it, ZeroSub sets those agents back to Standard. Fast usually uses more of the included allowance per turn. Requires Paseo 0.16 or later.
+
 ## Other providers and paid accounts
+
+- **Antigravity.** On Linux, install Antigravity CLI 1.5 or newer on the daemon host. Add a sign-in in Accounts through Google's authorization page. Each added account uses a separate home directory and a file-backed sign-in. Tools launched by the agent inherit that home, and existing conversations stay with their original account. ZeroSub reads your personal Google email from the CLI's local sign-in to detect duplicate accounts. For the desktop CLI sign-in, this lookup uses Linux Secret Service via `secret-tool`. Usage is shown for reference and does not switch accounts.
 
 - **Grok and Cursor.** Add several Grok or Cursor sign-ins and pick the account each new agent starts on. A conversation stays on the account it started on. ZeroSub does not switch these agents on a limit and does not read Grok or Cursor usage. Cursor accounts work on Linux only.
 - **Pi.** Add Anthropic API keys for Pi agents, each with an optional base URL and an optional proxy. Pi accounts have no usage bars and never switch automatically. Each added Pi account also gets a launcher script, and each added Claude account gets one too, in `~/.pi-config` and `~/.claude-config` (or the folder named by `ZEROSUB_LAUNCHER_DIR` or `ZEROSUB_PI_DIR`), so you can start the CLI on that account in a terminal.
@@ -33,9 +39,13 @@ When Claude reports how many Fable-only resets you have, the Accounts card shows
 
 ## Access and limits
 
+When the CLI and an added Codex account have the same workspace and member email, ZeroSub keeps one enabled for new agents. Existing threads keep their original sign-in.
+
 Handoffs send conversation text and summaries of tool actions to the destination agent’s provider and account. This includes a cross-provider transfer when that option is enabled or you confirm a manual fork. The plugin stores continuation links and timeline positions in its state file; handoff text remains in agent conversation histories rather than a separate plugin transcript. On Paseo 0.13 and later, limit detection reads the finished turn from the agent timeline when the turn hook contains no conversation.
 
 Each added account gets its own credential home inside the daemon's data folder, and sessions on that account run with `CLAUDE_CONFIG_DIR` or `CODEX_HOME` pointed at it. Settings, skills and conversation history are shared with your main CLI home, while credentials and caches stay per account. Managed Claude accounts can share the CLI’s sessions directory if you turn on **Use the default sessions folder**. The switch copies session entries without replacing existing files and keeps a backup of the original directory.
+
+**Share MCP sign-ins between Claude accounts** is off by default. When you turn it on, ZeroSub checks every 30 seconds and copies MCP servers' OAuth sign-ins (the `mcpOAuth` entries in `.credentials.json`) between your CLI login and each added Claude account, keeping the newer one. It never copies an account's own Claude sign-in. Signing out of a server on one account signs all accounts out of it. Leave this off if your accounts sign in to the same server as different people. It works only where Claude Code uses a `.credentials.json` file, so not on macOS or Windows.
 
 On macOS, an added Claude account stays in its current folder if its Keychain entry is too large to move without exposing it on the command line. The account remains available.
 

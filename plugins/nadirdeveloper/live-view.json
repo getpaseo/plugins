@@ -1,0 +1,22 @@
+{
+  "id": "nadirdeveloper/live-view",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/nadirdeveloper/paseo-live-view.git",
+    "commit": "ced13d6934110989f85217759e3c546bac1e4aea",
+    "tag": "v0.1.1"
+  },
+  "repository": {
+    "url": "https://github.com/nadirdeveloper/paseo-live-view",
+    "commit": "ced13d6934110989f85217759e3c546bac1e4aea"
+  },
+  "categories": [
+    "orchestration",
+    "git",
+    "workspaces"
+  ],
+  "submittedAt": "2026-11-26T17:22:30Z",
+  "submittedBy": "nadirdeveloper",
+  "publishedAt": "2026-11-26T18:01:59Z",
+  "reviewedAt": "2026-11-27T22:01:39Z"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "afeding/media-preview",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/afeding/paseo-media-preview.git",
+    "commit": "46cf120b5405c242e757b84346b721438ab84946"
+  },
+  "repository": {
+    "url": "https://github.com/afeding/paseo-media-preview",
+    "commit": "46cf120b5405c242e757b84346b721438ab84946"
+  },
+  "categories": [
+    "extras",
+    "utils"
+  ],
+  "submittedAt": "2026-11-27T15:34:22Z",
+  "submittedBy": "afeding",
+  "publishedAt": "2026-11-27T20:01:34Z",
+  "reviewedAt": "2026-11-27T20:01:34Z"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "pertical/quota-relay",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/Pertical/quota-relay.git",
+    "commit": "e6eda8b238d84ccd797efd2d4fad622ed7d6143a",
+    "tag": "v0.1.0"
+  },
+  "repository": {
+    "url": "https://github.com/Pertical/quota-relay",
+    "commit": "e6eda8b238d84ccd797efd2d4fad622ed7d6143a"
+  },
+  "categories": [
+    "providers",
+    "orchestration"
+  ],
+  "submittedAt": "2026-11-25T06:02:46Z",
+  "submittedBy": "Pertical",
+  "publishedAt": "2026-11-25T06:02:46Z",
+  "reviewedAt": "2026-11-25T06:02:46Z"
+}

@@ -3,9 +3,9 @@
   "artifact": {
     "kind": "npm",
     "package": "@stevecastaneda/paseo-progress",
-    "version": "1.14.7",
-    "resolved": "https://registry.npmjs.org/@stevecastaneda/paseo-progress/-/paseo-progress-1.14.7.tgz",
-    "integrity": "sha512-EqeHjmLVJ5zqlZxH3Q+V8DHk0EioDDz4/5OSvH9cr+uTVZ7GoBPODhY86cPu5uzhYnPnhawdjNqySOP4YqaOeg=="
+    "version": "1.17.1",
+    "resolved": "https://registry.npmjs.org/@stevecastaneda/paseo-progress/-/paseo-progress-1.17.1.tgz",
+    "integrity": "sha512-lRrjS8nrCg4u+Xh9IDm5ESI4LPZpl6fUJ/Lqv0fv6S/0o6VHKNSFZsy240H57rCjA0pWfJtoUDDDcX3bwI/3yw=="
   },
   "repository": {
     "url": "https://github.com/stevecastaneda/paseo-plugins/tree/HEAD/progress"
@@ -16,5 +16,5 @@
   "submittedAt": "2026-09-29",
   "submittedBy": "stevecastaneda",
   "publishedAt": "2026-09-29",
-  "reviewedAt": "2026-11-14T08:03:42Z"
+  "reviewedAt": "2026-11-28T00:36:04Z"
 }

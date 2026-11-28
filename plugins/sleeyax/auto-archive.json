@@ -1,0 +1,22 @@
+{
+  "id": "sleeyax/auto-archive",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/sleeyax/paseo-plugins.git",
+    "commit": "f71d9d17e701edef08f235c54d9c3a0b4b152914",
+    "tag": "auto-archive-v0.1.1",
+    "pluginPath": "plugins/auto-archive"
+  },
+  "repository": {
+    "url": "https://github.com/sleeyax/paseo-plugins",
+    "commit": "f71d9d17e701edef08f235c54d9c3a0b4b152914"
+  },
+  "categories": [
+    "workspaces",
+    "sidebar"
+  ],
+  "submittedAt": "2026-11-28T15:57:09Z",
+  "submittedBy": "sleeyax",
+  "publishedAt": "2026-11-28T16:05:31Z",
+  "reviewedAt": "2026-11-28T16:05:31Z"
+}

@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/NightWatcher314/paseo-custom-title.git",
-    "commit": "fd2da5128c0c5dc294f20008638be7975e1735d5",
-    "tag": "v0.1.0"
+    "commit": "ea6a92ca80c429649a9cca33d148c6fb047b37cd",
+    "tag": "v0.2.0"
   },
   "repository": {
     "url": "https://github.com/NightWatcher314/paseo-custom-title",
-    "commit": "fd2da5128c0c5dc294f20008638be7975e1735d5"
+    "commit": "ea6a92ca80c429649a9cca33d148c6fb047b37cd"
   },
   "categories": [
     "workspaces",
@@ -17,5 +17,5 @@
   "submittedAt": "2026-11-26T12:00:34Z",
   "submittedBy": "NightWatcher314",
   "publishedAt": "2026-11-26T14:02:13Z",
-  "reviewedAt": "2026-11-26T14:02:13Z"
+  "reviewedAt": "2026-11-28T18:02:05Z"
 }

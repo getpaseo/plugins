@@ -1,0 +1,13 @@
+{
+  "issue": 3611,
+  "title": "Better Paseo Antigravity",
+  "submittedBy": "robbin",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/robbin/paseo-antigravity",
+    "ref": "58576e0c3bc116c50a86f468ba981b1782641a83"
+  },
+  "categories": [
+    "providers"
+  ]
+}

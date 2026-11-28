@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/robbin/paseo-antigravity.git",
-    "commit": "da7e33394b9a9b6e7da992d1482a698f563d6296",
-    "tag": "v0.5.2"
+    "commit": "58576e0c3bc116c50a86f468ba981b1782641a83",
+    "tag": "v0.6.0"
   },
   "repository": {
     "url": "https://github.com/robbin/paseo-antigravity",
-    "commit": "da7e33394b9a9b6e7da992d1482a698f563d6296"
+    "commit": "58576e0c3bc116c50a86f468ba981b1782641a83"
   },
   "categories": [
     "providers"
@@ -16,10 +16,5 @@
   "submittedAt": "2026-11-24T04:07:40Z",
   "submittedBy": "robbin",
   "publishedAt": "2026-11-24T04:07:40Z",
-  "reviewedAt": "2026-11-28T10:03:56Z",
-  "listing": {
-    "media": [
-      "https://raw.githubusercontent.com/robbin/paseo-antigravity/da7e33394b9a9b6e7da992d1482a698f563d6296/assets/sse-stall-recovery.png"
-    ]
-  }
+  "reviewedAt": "2026-11-28T14:20:00Z"
 }

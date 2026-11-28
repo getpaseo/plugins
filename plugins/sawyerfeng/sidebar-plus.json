@@ -3,11 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/sawyerfeng/paseo-sidebar-plus.git",
-    "commit": "a879f49046eb0c09eb3f69bba53fe32c6418fb43"
+    "tag": "v1.1.0",
+    "commit": "295704766d01a7002d246f18a55aeb4b3bd79b59"
   },
   "repository": {
     "url": "https://github.com/sawyerfeng/paseo-sidebar-plus",
-    "commit": "a879f49046eb0c09eb3f69bba53fe32c6418fb43"
+    "commit": "295704766d01a7002d246f18a55aeb4b3bd79b59"
   },
   "categories": [
     "sidebar"
@@ -15,5 +16,5 @@
   "submittedAt": "2026-11-27T16:45:03Z",
   "submittedBy": "sawyerfeng",
   "publishedAt": "2026-11-27T20:01:58Z",
-  "reviewedAt": "2026-11-27T20:01:58Z"
+  "reviewedAt": "2026-11-28T10:02:28Z"
 }

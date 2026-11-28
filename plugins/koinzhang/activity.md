@@ -1,4 +1,4 @@
-Activity shows how you use Paseo across all workspaces (sessions, prompts, providers, models, projects, and the skills and MCP tools you use most) and adds a panel for managing the agents and terminals in the current workspace. It adds a sidebar row that opens the global Activity screen, an Explorer panel (also reachable from a workspace header button), an agent panel, and two composer pills.
+Activity shows how you use Paseo across all workspaces (sessions, prompts, providers, models, projects, and the skills and MCP tools you use most) and adds a panel for managing the agents and terminals in the current workspace. It adds a sidebar row that opens the global Activity screen, an Explorer panel (also reachable from a workspace header button), an agent panel, and two composer pills: a usage summary for the current agent and a needs-attention pill for other agents in the workspace. Either pill can be hidden in the plugin's settings.
 
 ## What it reads and stores
 

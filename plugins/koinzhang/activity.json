@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "@koinzhang/paseo-plugin-activity",
-    "version": "0.8.1",
-    "resolved": "https://registry.npmjs.org/@koinzhang/paseo-plugin-activity/-/paseo-plugin-activity-0.8.1.tgz",
-    "integrity": "sha512-9vQ39THhwQ+ix1kNl3iaPQ27IOfbZVJrycOK8i3Vctqr428BFJDA70iLEzOG4QsNSxSkNA3rYV2aa2UZQEK/SA=="
+    "version": "0.8.2",
+    "resolved": "https://registry.npmjs.org/@koinzhang/paseo-plugin-activity/-/paseo-plugin-activity-0.8.2.tgz",
+    "integrity": "sha512-R6Lrc0S1O9xMvRFcp4Wm1SNPfCE5zKH19UrnpuPSQmgEzxr4z9rKJkIsCyhOGSTo2EGaK+slGtNMZIgzap2a3Q=="
   },
   "repository": {
     "url": "https://github.com/koinzhang/paseo-plugins/tree/HEAD/activity",
-    "commit": "5d9fc2dcbca6b63249e3825f47de32491a54bdd8"
+    "commit": "dff8f90ac66dd2ae432623c8a1269258b2dc97f7"
   },
   "categories": [
     "sidebar",
@@ -19,7 +19,7 @@
   "submittedAt": "2026-09-19",
   "submittedBy": "koinzhang",
   "publishedAt": "2026-09-19",
-  "reviewedAt": "2026-11-26T15:28:40Z",
+  "reviewedAt": "2026-11-28T14:20:50Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/koinzhang/paseo-plugins/05964539e56528df3438f4d32818b08b8578136b/activity/images/activity-1.png",

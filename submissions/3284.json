@@ -1,0 +1,14 @@
+{
+  "issue": 3284,
+  "title": "Multi-repo worktrees",
+  "submittedBy": "jappyjan",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/jappyjan/paseo-multi-repo-worktrees",
+    "ref": "98bca2cbbc77073e6d256a574700ace7b8cb4dfa"
+  },
+  "categories": [
+    "git",
+    "workspaces"
+  ]
+}

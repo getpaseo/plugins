@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/finly/paseo-sidebar-plus.git",
-    "commit": "5e98db4a8c833259c31d15d801b639277cc28612",
-    "tag": "v0.2.0"
+    "commit": "5c95921928eb4e3e7a01f23114a7fa3281bdcba6",
+    "tag": "v0.3.0"
   },
   "repository": {
     "url": "https://github.com/finly/paseo-sidebar-plus",
-    "commit": "5e98db4a8c833259c31d15d801b639277cc28612"
+    "commit": "5c95921928eb4e3e7a01f23114a7fa3281bdcba6"
   },
   "categories": [
     "sidebar"
@@ -16,5 +16,5 @@
   "submittedAt": "2026-11-26T08:35:53Z",
   "submittedBy": "finly",
   "publishedAt": "2026-11-26T10:04:20Z",
-  "reviewedAt": "2026-11-28T10:22:00Z"
+  "reviewedAt": "2026-11-28T16:06:03Z"
 }

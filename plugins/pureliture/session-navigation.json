@@ -1,0 +1,27 @@
+{
+  "id": "pureliture/session-navigation",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/pureliture/session-navigation.git",
+    "commit": "353ea920f588848f3a8866a250539fcc03716a88",
+    "pluginPath": "paseo-plugin"
+  },
+  "repository": {
+    "url": "https://github.com/pureliture/session-navigation",
+    "commit": "353ea920f588848f3a8866a250539fcc03716a88"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-11-28T09:25:01Z",
+  "submittedBy": "pureliture",
+  "publishedAt": "2026-11-28T12:07:00Z",
+  "reviewedAt": "2026-11-28T12:07:00Z",
+  "listing": {
+    "media": [
+      "https://raw.githubusercontent.com/pureliture/session-navigation/353ea920f588848f3a8866a250539fcc03716a88/docs/media/01-outline-hero.png",
+      "https://raw.githubusercontent.com/pureliture/session-navigation/353ea920f588848f3a8866a250539fcc03716a88/docs/media/04-preview-original.png"
+    ]
+  }
+}

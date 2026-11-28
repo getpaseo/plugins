@@ -1,0 +1,14 @@
+{
+  "issue": 3551,
+  "title": "Paseo Bots 0.1.0",
+  "submittedBy": "zwmmm",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/zwmmm/paseo-bots-plugin",
+    "ref": "v0.1.0"
+  },
+  "categories": [
+    "sidebar",
+    "orchestration"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "openso-de/paseo-deepseek-peak",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/openso-de/paseo-deepseek-peak.git",
+    "commit": "b8bb9da01e8e0ce980758c5e7ce5de227babfa24",
+    "tag": "v0.1.3"
+  },
+  "repository": {
+    "url": "https://github.com/openso-de/paseo-deepseek-peak",
+    "commit": "b8bb9da01e8e0ce980758c5e7ce5de227babfa24"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-27T21:16:43Z",
+  "submittedBy": "marcelhenneke",
+  "publishedAt": "2026-11-27T22:01:45Z",
+  "reviewedAt": "2026-11-27T22:01:45Z"
+}

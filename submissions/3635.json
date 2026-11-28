@@ -1,0 +1,13 @@
+{
+  "issue": 3635,
+  "title": "Team Forge",
+  "submittedBy": "breezjin",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/breezjin/paseo-team-forge"
+  },
+  "categories": [
+    "orchestration",
+    "workspaces"
+  ]
+}

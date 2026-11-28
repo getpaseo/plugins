@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/Mr-DooSun/atrium.git",
-    "commit": "eb3baddd76e3277c5b05de42dfd7992e7f1a401c",
-    "tag": "v0.5.0"
+    "commit": "da62c00e2a181aa29316414cec6100bcfcd71528",
+    "tag": "v0.7.0"
   },
   "repository": {
     "url": "https://github.com/Mr-DooSun/atrium",
-    "commit": "eb3baddd76e3277c5b05de42dfd7992e7f1a401c"
+    "commit": "da62c00e2a181aa29316414cec6100bcfcd71528"
   },
   "categories": [
     "sidebar",
@@ -19,5 +19,5 @@
   "submittedAt": "2026-11-20T11:12:21Z",
   "submittedBy": "Mr-DooSun",
   "publishedAt": "2026-11-20T12:03:22Z",
-  "reviewedAt": "2026-11-21T16:05:49Z"
+  "reviewedAt": "2026-11-28T04:02:17Z"
 }

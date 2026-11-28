@@ -1,0 +1,20 @@
+{
+  "id": "sebaram/workspace-notepad",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/sebaram/workspace-notepad.git",
+    "commit": "471c885c0ff754141d7f20946e6b1aceca7080fa"
+  },
+  "repository": {
+    "url": "https://github.com/sebaram/workspace-notepad",
+    "commit": "471c885c0ff754141d7f20946e6b1aceca7080fa"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-11-28T13:05:20Z",
+  "submittedBy": "sebaram",
+  "publishedAt": "2026-11-28T14:03:05Z",
+  "reviewedAt": "2026-11-28T14:03:05Z"
+}

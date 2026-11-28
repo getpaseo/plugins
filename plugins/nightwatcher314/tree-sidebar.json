@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/NightWatcher314/paseo-tree-sidebar.git",
-    "commit": "b1e04bbfb53e7b11fb3cb05d52d78e746b873ad5",
-    "tag": "v0.8.2"
+    "commit": "9d9c1bbf9bf037f92c7e22f86aea989ad95d25f9",
+    "tag": "v0.9.0"
   },
   "repository": {
     "url": "https://github.com/NightWatcher314/paseo-tree-sidebar",
-    "commit": "b1e04bbfb53e7b11fb3cb05d52d78e746b873ad5"
+    "commit": "9d9c1bbf9bf037f92c7e22f86aea989ad95d25f9"
   },
   "categories": [
     "sidebar",
@@ -19,5 +19,5 @@
   "submittedAt": "2026-11-27T19:22:34Z",
   "submittedBy": "NightWatcher314",
   "publishedAt": "2026-11-28T00:01:18Z",
-  "reviewedAt": "2026-11-28T12:02:12Z"
+  "reviewedAt": "2026-11-28T14:10:00Z"
 }

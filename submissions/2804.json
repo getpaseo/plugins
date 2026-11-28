@@ -1,0 +1,13 @@
+{
+  "issue": 2804,
+  "title": "Curator",
+  "submittedBy": "vicpon",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/vicpon/paseo-curator"
+  },
+  "categories": [
+    "orchestration",
+    "utils"
+  ]
+}

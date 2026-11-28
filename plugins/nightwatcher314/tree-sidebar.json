@@ -1,0 +1,23 @@
+{
+  "id": "nightwatcher314/tree-sidebar",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/NightWatcher314/paseo-tree-sidebar.git",
+    "commit": "0101ec796ae0b1ce437f7345610221e888021a0b",
+    "tag": "v0.7.2"
+  },
+  "repository": {
+    "url": "https://github.com/NightWatcher314/paseo-tree-sidebar",
+    "commit": "0101ec796ae0b1ce437f7345610221e888021a0b"
+  },
+  "categories": [
+    "sidebar",
+    "workspaces",
+    "orchestration",
+    "utils"
+  ],
+  "submittedAt": "2026-11-27T19:22:34Z",
+  "submittedBy": "NightWatcher314",
+  "publishedAt": "2026-11-28T00:01:18Z",
+  "reviewedAt": "2026-11-28T00:01:18Z"
+}

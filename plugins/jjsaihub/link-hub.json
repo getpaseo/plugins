@@ -1,0 +1,21 @@
+{
+  "id": "jjsaihub/link-hub",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/JJsAIhub/paseo-link-hub.git",
+    "commit": "c5e9e819c2ef7d43d3164323b8ef03c0579eb308",
+    "tag": "v1.2.0"
+  },
+  "repository": {
+    "url": "https://github.com/JJsAIhub/paseo-link-hub",
+    "commit": "c5e9e819c2ef7d43d3164323b8ef03c0579eb308"
+  },
+  "categories": [
+    "utils",
+    "workspaces"
+  ],
+  "submittedAt": "2026-11-28T13:26:20Z",
+  "submittedBy": "JJsAIhub",
+  "publishedAt": "2026-11-28T14:04:06Z",
+  "reviewedAt": "2026-11-28T14:04:06Z"
+}

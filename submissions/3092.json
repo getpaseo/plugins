@@ -1,0 +1,14 @@
+{
+  "issue": 3092,
+  "title": "Vivid Activity",
+  "submittedBy": "zhjiang22",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/zhjiang22/paseo-plugins",
+    "ref": "3b7b524ff8a11c0bedbd09670f602c9e47cd0fcd",
+    "pluginPath": "vivid-activity"
+  },
+  "categories": [
+    "utils"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "issue": 3630,
+  "title": "Update Usage Bridge to v0.1.2",
+  "submittedBy": "NightWatcher314",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/NightWatcher314/paseo-usage-bridge",
+    "ref": "80f6172cfa7369de04180de08cd658c996a79f2c"
+  },
+  "categories": [
+    "providers",
+    "utils"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "issue": 3583,
+  "title": "Update Better Paseo Antigravity to v0.5.1 (guarded SSE stall recovery and English runtime messages)",
+  "submittedBy": "robbin",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/robbin/paseo-antigravity",
+    "ref": "v0.5.1"
+  },
+  "categories": [
+    "providers"
+  ]
+}

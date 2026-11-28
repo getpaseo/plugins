@@ -31,12 +31,7 @@ export async function validateRegistry(options: {
   let selected = records;
   if (changedOnly) {
     const baseCommit = git(["merge-base", base, "HEAD"]);
-    const changed = new Set(
-      git(["diff", "--name-only", `${baseCommit}...HEAD`, "--", "plugins/"])
-        .split("\n")
-        .filter(Boolean)
-        .map((path) => path.replace(/^plugins\//, "").replace(/\.(?:json|md)$/, "").replace(/\.[^.]+$/, "")),
-    );
+    const changed = changedRecordIds(baseCommit);
     selected = records.filter((record) => changed.has(record.id));
     const dateProblems = selected.flatMap((record) =>
       recordDateProblems(record, listedRecord(baseCommit, record.id))
@@ -72,6 +67,22 @@ export async function validateRegistry(options: {
   }
   const skipped = new Set(problems.map(({ id }) => id)).size;
   console.log(`${selected.length + malformed - skipped} record(s) match their pinned artifacts, ${skipped} skipped`);
+}
+
+/** Record IDs touched in branch commits since baseCommit, the index, or the working tree. */
+function changedRecordIds(baseCommit: string): Set<string> {
+  const outputs = [
+    git(["diff", "--name-only", `${baseCommit}...HEAD`, "--", "plugins/"]),
+    git(["diff", "--cached", "--name-only", "--", "plugins/"]),
+    git(["diff", "--name-only", "--", "plugins/"]),
+    git(["ls-files", "--others", "--exclude-standard", "--", "plugins/"]),
+  ];
+  return new Set(
+    outputs
+      .flatMap((output) => output.split("\n"))
+      .filter(Boolean)
+      .map((path) => path.replace(/^plugins\//, "").replace(/\.(?:json|md)$/, "").replace(/\.[^.]+$/, "")),
+  );
 }
 
 /** The record as listed at the base commit, or undefined when it is new. */

@@ -259,8 +259,9 @@ Online validation checks records against their pinned artifacts. Registry-wide o
 validation and publication warn and skip broken plugins, including malformed records
 and unreadable overviews. If every plugin is skipped, the workflow skips upload and deployment,
 preserving the live directory. Shared registry configuration errors still fail the run.
-`--changed` limits online checks to committed record and overview changes since
-the merge base of `origin/main` and `HEAD`; `--base <ref>` selects another base:
+`--changed` limits online checks to record and overview changes since the merge
+base of `origin/main` and `HEAD`, including staged, unstaged, and untracked
+working-tree changes; `--base <ref>` selects another base:
 
 ```sh
 node scripts/validate.ts --online --changed

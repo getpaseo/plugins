@@ -1,0 +1,13 @@
+{
+  "issue": 3595,
+  "title": "Update Better Paseo Antigravity to v0.5.2 (progress-gated SSE stall recovery, zero-progress circuit break, and English runtime messages)",
+  "submittedBy": "robbin",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/robbin/paseo-antigravity",
+    "ref": "v0.5.2"
+  },
+  "categories": [
+    "providers"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "summerriversound/plan-flow",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/SummerRiversound/plan-flow.git",
+    "commit": "4748659f2bf203174931c8899e99a5238e4d205e",
+    "pluginPath": "paseo",
+    "tag": "paseo-v0.1.0"
+  },
+  "repository": {
+    "url": "https://github.com/SummerRiversound/plan-flow",
+    "commit": "4748659f2bf203174931c8899e99a5238e4d205e"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-11-28T08:35:44Z",
+  "submittedBy": "SummerRiversound",
+  "publishedAt": "2026-11-28T08:36:07Z",
+  "reviewedAt": "2026-11-28T10:03:02Z"
+}

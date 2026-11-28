@@ -47,7 +47,8 @@ function withCheckout<T>(
     const path = resolve(directory, artifact.pluginPath ?? ".");
     if (!existsSync(path)) throw new AuthorError(`The release has no plugin directory at ${artifact.pluginPath}. Correct the folder in Source or publish a release containing it.`);
     const plugin = realpathSync(path);
-    if (relative(directory, plugin).startsWith(".."))
+    // Compare real paths: on macOS the temp folder is itself a symlink (/var -> /private/var).
+    if (relative(realpathSync(directory), plugin).startsWith(".."))
       throw new AuthorError("The plugin directory points outside the repository. Replace the directory link with the plugin files and publish a new release.");
     const manifest = readOptional(plugin, "paseo-plugin.json");
     if (manifest === null) throw new AuthorError("The release does not contain paseo-plugin.json in the plugin directory. Add the manifest and publish a new release, or correct the folder in Source.");

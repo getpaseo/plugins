@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { cpSync, existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { cpSync, existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, symlinkSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -69,6 +69,20 @@ for (const path of ["", "plugins/example"]) {
     assert.equal(detail.readme, "A fixture plugin.");
   });
 }
+
+test("add accepts a plugin when the temp folder is reached through a symlink, as on macOS", (t) => {
+  const f = fixture(t);
+  // macOS: TMPDIR is under /var, a symlink to /private/var. The checkout's real path then differs.
+  const real = mkdtempSync(join(tmpdir(), "registry-real-tmp-"));
+  const linked = `${real}-link`;
+  symlinkSync(real, linked);
+  t.after(() => { rmSync(linked, { force: true }); rmSync(real, { recursive: true, force: true }); });
+  const result = spawnSync(process.execPath, ["scripts/add.ts", "https://github.com/acme/fixture", "--categories", "utils", "--commit", f.commit], {
+    cwd: f.registry, env: { ...f.env, TMPDIR: linked }, encoding: "utf8",
+  });
+  assert.equal(result.status, 0, result.stderr);
+  assert.equal(f.record().artifact.commit, f.commit);
+});
 
 test("reviewer resolves main without tags and honors a supplied Git ref", (t) => {
   const f = fixture(t);

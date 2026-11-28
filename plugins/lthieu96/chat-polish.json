@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/lthieu96/paseo-chat-polish.git",
-    "commit": "f57fe5490f91212b1a3ee58ff5eb77e38b11b61b",
-    "tag": "v0.16.2"
+    "commit": "e4a0b37f60d1f20a8cc9571f81e7093ab95624a7",
+    "tag": "v0.16.4"
   },
   "repository": {
     "url": "https://github.com/lthieu96/paseo-chat-polish",
-    "commit": "f57fe5490f91212b1a3ee58ff5eb77e38b11b61b"
+    "commit": "e4a0b37f60d1f20a8cc9571f81e7093ab95624a7"
   },
   "categories": [
     "themes",
@@ -19,7 +19,7 @@
   "submittedAt": "2026-10-15T09:56:56Z",
   "submittedBy": "lthieu96",
   "publishedAt": "2026-10-15T10:09:22Z",
-  "reviewedAt": "2026-11-27T08:10:00Z",
+  "reviewedAt": "2026-11-28T12:04:20Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/lthieu96/paseo-chat-polish/6b52cc2528426812c78ec8d2b547ffb8d158e542/images/chat.png",

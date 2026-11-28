@@ -1,0 +1,21 @@
+{
+  "id": "younesbenallal/ctrl-tab",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/younesbenallal/paseo-ctrl-tab.git",
+    "commit": "75244903430f9fa49f185a16887318b19b866782",
+    "tag": "v1.0.0"
+  },
+  "repository": {
+    "url": "https://github.com/younesbenallal/paseo-ctrl-tab",
+    "commit": "75244903430f9fa49f185a16887318b19b866782"
+  },
+  "categories": [
+    "workspaces",
+    "utils"
+  ],
+  "submittedAt": "2026-11-28T11:31:01Z",
+  "submittedBy": "younesbenallal",
+  "publishedAt": "2026-11-28T12:03:07Z",
+  "reviewedAt": "2026-11-28T12:03:07Z"
+}

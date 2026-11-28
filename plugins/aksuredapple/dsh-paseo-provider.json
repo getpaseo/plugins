@@ -3,11 +3,11 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/AksuRedapple/dsh-paseo-provider.git",
-    "commit": "d97c54b055e4e2e56c415b26fc3d9f01cce1e177"
+    "commit": "3145a0e0b494cbe0e0cf1d86d7ea626ce5c91882"
   },
   "repository": {
     "url": "https://github.com/AksuRedapple/dsh-paseo-provider",
-    "commit": "d97c54b055e4e2e56c415b26fc3d9f01cce1e177"
+    "commit": "3145a0e0b494cbe0e0cf1d86d7ea626ce5c91882"
   },
   "categories": [
     "providers"

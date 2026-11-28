@@ -1,0 +1,16 @@
+{
+  "issue": 3618,
+  "title": "Update Tree Sidebar to v0.10.0",
+  "submittedBy": "NightWatcher314",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/NightWatcher314/paseo-tree-sidebar",
+    "ref": "73ba05c68df7ec706e624fd9a94e51e346d1659b"
+  },
+  "categories": [
+    "sidebar",
+    "workspaces",
+    "orchestration",
+    "utils"
+  ]
+}

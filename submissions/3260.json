@@ -1,0 +1,13 @@
+{
+  "issue": 3260,
+  "title": "Antigravity Usage",
+  "submittedBy": "SimpletonEminent",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/SimpletonEminent/paseo-antigravity-usage"
+  },
+  "categories": [
+    "sidebar",
+    "providers"
+  ]
+}

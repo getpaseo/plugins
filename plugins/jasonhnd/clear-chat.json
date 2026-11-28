@@ -3,12 +3,12 @@
   "artifact": {
     "kind": "git",
     "remote": "https://github.com/jasonhnd/paseo-clear-chat.git",
-    "commit": "b7d8ae9765bd82be3e525b2c05af38f595d91133",
-    "tag": "v0.17.5.2"
+    "commit": "fc6b5ded2b9b5f44788708ae4f5874da36c23617",
+    "tag": "v0.18.1.1"
   },
   "repository": {
     "url": "https://github.com/jasonhnd/paseo-clear-chat",
-    "commit": "b7d8ae9765bd82be3e525b2c05af38f595d91133"
+    "commit": "fc6b5ded2b9b5f44788708ae4f5874da36c23617"
   },
   "categories": [
     "utils"
@@ -16,22 +16,22 @@
   "submittedAt": "2026-11-03T13:36:07Z",
   "submittedBy": "jasonhnd",
   "publishedAt": "2026-11-03T14:02:47Z",
-  "reviewedAt": "2026-11-27T04:02:34Z",
+  "reviewedAt": "2026-11-28T10:20:00Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/35c4889852e96575df848362f4492127f43c2b02/docs/images/answer-card.png",
       "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/35c4889852e96575df848362f4492127f43c2b02/docs/images/answer-pill.png",
       "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/35c4889852e96575df848362f4492127f43c2b02/docs/images/answer-sheet-narrow.png",
-      "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/b7d8ae9765bd82be3e525b2c05af38f595d91133/docs/images/what-i-said-buttons.png"
+      "https://raw.githubusercontent.com/jasonhnd/paseo-clear-chat/fc6b5ded2b9b5f44788708ae4f5874da36c23617/docs/images/what-i-said-month-light.png"
     ],
     "translations": {
       "zh-CN": {
         "name": "Clear Chat",
-        "description": "回答卡片：回复里有字母选项题时，用卡片选题或自己写答案，预览后发送；另有「我说的话」整页：左边栏打开的整页列出你今天发的消息，点一行会打开那条消息所在的对话，每行都能复制或引用。不绘制对话。"
+        "description": "回答卡片：回复里有字母选项题时，用卡片选题或自己写答案，预览后发送；另有「我说的话」整页：左边栏打开的整页是一本日历，按每天发的消息多少上色，点任何一天列出那天你发的消息，点一行打开那条消息所在的对话，每行都能复制或引用。不绘制对话。"
       },
       "ja": {
         "name": "Clear Chat",
-        "description": "回答カード：返信にアルファベットの選択肢があるとき、カードで選ぶか自分で書き、プレビューして送信します。「自分の発言」は、サイドバーの画面で今日送ったメッセージを一覧し、行を押すとその会話が開き、各行をコピーまたは引用できます。会話は描きません。"
+        "description": "回答カード：返信にアルファベットの選択肢があるとき、カードで選ぶか自分で書き、プレビューして送信します。「自分の発言」は、サイドバーから開くカレンダーで、送ったメッセージの多い日ほど濃く表示し、日を選ぶとその日のメッセージを一覧し、行を押すとその会話が開き、各行をコピーまたは引用できます。会話は描きません。"
       }
     }
   }

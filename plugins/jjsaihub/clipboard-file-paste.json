@@ -1,0 +1,20 @@
+{
+  "id": "jjsaihub/clipboard-file-paste",
+  "artifact": {
+    "kind": "git",
+    "remote": "https://github.com/JJsAIhub/paseo-clipboard-file-paste.git",
+    "commit": "bbe9a73b245fc5f3cd24055cf58089139ce8ede5",
+    "tag": "v1.0.0"
+  },
+  "repository": {
+    "url": "https://github.com/JJsAIhub/paseo-clipboard-file-paste",
+    "commit": "bbe9a73b245fc5f3cd24055cf58089139ce8ede5"
+  },
+  "categories": [
+    "utils"
+  ],
+  "submittedAt": "2026-11-28T17:52:52Z",
+  "submittedBy": "JJsAIhub",
+  "publishedAt": "2026-11-28T18:05:02Z",
+  "reviewedAt": "2026-11-28T18:05:02Z"
+}

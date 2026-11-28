@@ -1,0 +1,12 @@
+{
+  "issue": 3639,
+  "title": "Clipboard File Paste",
+  "submittedBy": "JJsAIhub",
+  "source": {
+    "kind": "git",
+    "source": "https://github.com/JJsAIhub/paseo-clipboard-file-paste"
+  },
+  "categories": [
+    "utils"
+  ]
+}

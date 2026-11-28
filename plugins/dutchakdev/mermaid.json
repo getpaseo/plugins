@@ -3,13 +3,13 @@
   "artifact": {
     "kind": "npm",
     "package": "paseo-plugin-mermaid",
-    "version": "0.5.1",
-    "resolved": "https://registry.npmjs.org/paseo-plugin-mermaid/-/paseo-plugin-mermaid-0.5.1.tgz",
-    "integrity": "sha512-lbpuTEWdPoAMbUX8LRP8LBu6iRlD7dgG4wzIlX5Fxk2KUURgPtf8ZXHdz6l5uaYNUeVGCDXq6f/BUwGxTNmbyw=="
+    "version": "0.5.2",
+    "resolved": "https://registry.npmjs.org/paseo-plugin-mermaid/-/paseo-plugin-mermaid-0.5.2.tgz",
+    "integrity": "sha512-5GlzlBCAPqXyLBAxJHpbydfnMbzLkZdyBWdmEoNwldO60a9UcVl3xjoyB0In2quq5CNURkZtlajm85tvqjrwTQ=="
   },
   "repository": {
     "url": "https://github.com/dutchakdev/paseo-plugin-mermaid",
-    "commit": "1b77484d8773a4fc702406385649065871848ac7"
+    "commit": "36efcd105e8538f8ede7fb2b1906992af9b017dc"
   },
   "categories": [
     "utils"
@@ -17,7 +17,7 @@
   "submittedAt": "2026-10-05",
   "submittedBy": "dutchakdev",
   "publishedAt": "2026-10-05",
-  "reviewedAt": "2026-11-24T13:33:33Z",
+  "reviewedAt": "2026-11-28T00:04:41Z",
   "listing": {
     "media": [
       "https://raw.githubusercontent.com/dutchakdev/paseo-plugin-mermaid/b5390f229cf289249873ec345fe4e31ecc593f33/docs/preview.png"
